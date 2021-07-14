@@ -1,12 +1,31 @@
 import argparse
 
 def parse_args():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(prog='choice')
+
+    subparsers = parser.add_subparsers(help='sub-command help', dest='choice')
 
     # Common arguments among models
-    parser.add_argument('--youtube_url',
-        help='link for the channel to crawl, one each time',
-        required=True)
+    parent_parser = argparse.ArgumentParser(add_help=False)
+
+    parent_parser.add_argument('--youtube_url',
+        help='link for the channel to crawl, one each time'
+        )
+
+    # crawl video links
+    link_parser = subparsers.add_parser('link', parents=[parent_parser])
+
+    link_parser.add_argument('--out_path',
+        help='path for the output file')
+
+    # crawl descriptions
+    desc_parser = subparsers.add_parser('description', parents=[parent_parser])
+    desc_parser.add_argument('--links_path',
+        help='path for the file containg video links')
+    desc_parser.add_argument('--domain',
+        help='domain for the video')
+    desc_parser.add_argument('--channel_name',
+        help='channel name for the list')
 
     args = parser.parse_args()
     return args

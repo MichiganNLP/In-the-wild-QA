@@ -1,5 +1,6 @@
 import json
 import time
+import os
 
 import requests
 from selenium import webdriver
@@ -44,7 +45,7 @@ def get_video_links(channel_url, verbose, sleep_time):
                 print(tag.attrs['href'])
     
     driver.close()
-    
+
     return links
 
 
@@ -54,31 +55,27 @@ def get_video_info(video_url):
     response = requests.get(video_url)
     soup = bs(response.content, "html.parser")
 
-    description_tag = soup.find('p', id='eow-description')
-    if description_tag:
-        information['description'] = description_tag.text
+    scripts = soup.find_all('script')
+
+
+    def find_descr(scripts):
+        for script in scripts:
+            if "var ytInitialPlayerResponse" in script.text:
+                return script.text.strip('var ytInitialPlayerResponse = ').strip(';')
+    
+    descr = json.loads(find_descr(scripts))
+    descr_t = descr.get('microformat').get('playerMicroformatRenderer').get('description')
+
+    if descr_t:
+        information['description'] = descr_t.get('simpleText', '')
     else:
         information['description'] = ''
 
     return information
+ 
 
 
-def get_article_title(description):
-    """ gets a description of a video in 2 min paper channel and returns the title of article"""
-
-    keyword = 'The paper "'
-    try:
-        if keyword in description:
-            description = description[description.index(keyword) + len(keyword):]
-            title = description[0:description.index('"')]
-        else:
-            title = 'unknown'
-    except:
-        title = 'unknown'
-    return title
-
-
-def crawl_youtube_channel(channel_url, verbose=False, sleep_time=3, links_path=None):
+def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_path=None):
     """ gets a Youtube channel url and returns a dictionary containing info about the videos"""
 
     if links_path:
@@ -86,42 +83,52 @@ def crawl_youtube_channel(channel_url, verbose=False, sleep_time=3, links_path=N
         links_file = open(links_path, "r")
         lines = links_file.readlines()
         for line in lines:
+            line = line.strip('\n')
             links.append(line)
         links_file.close()
     else:
         links = get_video_links(channel_url, verbose=verbose, sleep_time=sleep_time)
+        if args.choice == 'link':
+            with open(args.out_path, 'w') as f:
+                f.write('\n'.join(links))
+            return None
 
-    # result = {}
-    # video_ID = 1
-    # unknowns = 0
-    # counter = 1
+    result = {}
+    video_ID = 1
+    unknowns = 0
+    counter = 1
 
-    # for link in links:
-    #     information = get_video_info("https://www.youtube.com/" + link)
-    #     information['article'] = get_article_title(information['description'])
-    #     del information['description']
-    #     if information['article'] != 'unknown':
-    #         result[video_ID] = information
-    #         video_ID += 1
-    #         if verbose:
-    #             print('>>> processing video : ' + str(counter) + ' success')
-    #     else:
-    #         if verbose:
-    #             print('>>> processing video : ' + str(counter) + ' Failed')
-    #         unknowns += 1
-    #     counter += 1
-    # print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
-    # print(str(unknowns) + ' failure')
-    # print(str(len(links) - unknowns) + ' out of ' + str(len(links)) + ' success')
-    # return result
+    for link in links:
+        information = get_video_info("https://www.youtube.com/" + link)
+        result[video_ID] = information
+        video_ID += 1
+        if information['description']:
+            if verbose:
+                print('>>> processing video : ' + str(counter) + ' with description')
+        else:
+            if verbose:
+                print('>>> processing video : ' + str(counter) + ' without description')
+            unknowns += 1
+        counter += 1
+    print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
+    print(str(unknowns) + ' without description')
+    print(str(len(links) - unknowns) + ' out of ' + str(len(links)) + ' with description')
+    return result
 
 
 if __name__ == '__main__':
     args = parse_args()
     # provide the youtube channel url here
     youtube_url = args.youtube_url
-    crawl_youtube_channel(youtube_url, verbose=True)
-    # data = crawl_youtube_channel(youtube_url, verbose=True)
+
+    if args.choice == 'link':
+        crawl_youtube_channel(args, youtube_url, verbose=True)
     
-    # with open('Data/' + youtube_url.split('/')[-1] + '.txt', 'w') as outfile:
-    #     json.dump(data, outfile, indent=4)
+    if args.choice == 'description':
+        data = crawl_youtube_channel(args, youtube_url, verbose=True, links_path=args.links_path)
+
+        if not os.path.exists(f'Description/{args.domain}'):
+            os.makedirs(f'Description/{args.domain}')
+
+        with open(f'Description/{args.domain}/{args.channel_name}.json', 'w') as outfile:
+            json.dump(data, outfile, indent=4)

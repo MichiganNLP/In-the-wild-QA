@@ -1,39 +1,53 @@
 #!/bin/bash
 ## declare an array variable
 declare -a urls=(    
-    "https://www.youtube.com/c/RealAgricultureMedia"
-    "https://www.youtube.com/c/MNMillennialFarmer"
-    "https://www.youtube.com/c/WelkerFarmsInc"
-    "https://www.youtube.com/c/HowFarmsWork"
-    "https://www.youtube.com/c/PetersonFarmBros"
-    "https://www.youtube.com/user/farmmarketing"
-    "https://www.youtube.com/c/Olly%E2%80%99sFarmLtd"
-    "https://www.youtube.com/c/HamiltonvilleFarm"
+    "https://www.youtube.com/c/GungHoVids"
+    "https://www.youtube.com/c/AiirSource"
+    "https://www.youtube.com/channel/UCG_iY6TpIw4M798sszuG25Q"
+    "https://www.youtube.com/c/WarLeaker"
+    "https://www.youtube.com/channel/UCT4layPPCzgR_99g5VYYvmQ"
+    "https://www.youtube.com/user/UsaMilitaryChannel"
+    "https://www.youtube.com/user/MilitaryNotes"
+    "https://www.youtube.com/c/SandboxxUs"
 )
 
 # corresponding channel names
 declare -a channel_names=(
-    "RealAgriculture"
-    "Millennial-Farmer"
-    "Welker-Farms-Inc"
-    "How-Farms-Work"
-    "Peterson-Farm-Bros"
-    "John-Suscovich"
-    "Olly's-Farm"
-    "Hamiltonville-Farm"
+    "Gung-Ho-Vids"
+    "AiirSource-Military"
+    "Army-military-2018"
+    "WarLeaks-Military-Blog"
+    "Military-Archive"
+    "USA-Military-Channel"
+    "MilitaryNotes"
+    "Sandboxx"
 )
 
-Domain=Agriculture
+Domain=Military
 
 mkdir -p All-links/${Domain}
 
 # get length of an array
 arraylength=${#urls[@]}
 
-# use for loop to read all values and indexes
+# # Crawl the links for videos of a channel
+# for (( i=0; i<${arraylength}; i++ ));
+# do
+#     echo "Processing: ${channel_names[$i]}, link: ${urls[$i]}"
+#     python crawler.py \
+#         link \
+#         --youtube_url ${urls[$i]} \
+#         --out_path All-links/${Domain}/${channel_names[$i]}.txt
+# done
+
+# Crawl the description for videos of a channel
 for (( i=0; i<${arraylength}; i++ ));
 do
     echo "Processing: ${channel_names[$i]}, link: ${urls[$i]}"
     python crawler.py \
-        --youtube_url ${urls[$i]} > All-links/${Domain}/${channel_names[$i]}.txt
+        description \
+        --links_path All-links/${Domain}/${channel_names[$i]}.txt \
+        --youtube_url ${urls[$i]} \
+        --domain ${Domain} \
+        --channel_name ${channel_names[$i]}
 done

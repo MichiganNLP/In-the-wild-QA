@@ -26,6 +26,8 @@ def parse_args():
         help='domain for the video')
     desc_parser.add_argument('--channel_name',
         help='channel name for the list')
+    desc_parser.add_argument('--video_ID',
+        help='video ID to start crawling, start from 1', default=1)
 
     args = parser.parse_args()
     return args

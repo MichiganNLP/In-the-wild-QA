@@ -75,7 +75,7 @@ def get_video_info(video_url):
  
 
 
-def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_path=None):
+def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_path=None, video_ID=1):
     """ gets a Youtube channel url and returns a dictionary containing info about the videos"""
 
     if links_path:
@@ -91,16 +91,13 @@ def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_
         if args.choice == 'link':
             with open(args.out_path, 'w') as f:
                 f.write('\n'.join(links))
-            return None
+            return
 
-    result = {}
-    video_ID = 1
     unknowns = 0
     counter = 1
 
     for link in links:
         information = get_video_info("https://www.youtube.com/" + link)
-        result[video_ID] = information
         video_ID += 1
         if information['description']:
             if verbose:
@@ -110,10 +107,14 @@ def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_
                 print('>>> processing video : ' + str(counter) + ' without description')
             unknowns += 1
         counter += 1
+        
+        # incrementally writing crawled information to the file
+        with open(f'Description/{args.domain}/{args.channel_name}.jsonl', 'a+') as f:
+            f.write(json.dumps(information) + '\n')
+
     print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
     print(str(unknowns) + ' without description')
     print(str(len(links) - unknowns) + ' out of ' + str(len(links)) + ' with description')
-    return result
 
 
 if __name__ == '__main__':
@@ -125,10 +126,6 @@ if __name__ == '__main__':
         crawl_youtube_channel(args, youtube_url, verbose=True)
     
     if args.choice == 'description':
-        data = crawl_youtube_channel(args, youtube_url, verbose=True, links_path=args.links_path)
-
         if not os.path.exists(f'Description/{args.domain}'):
             os.makedirs(f'Description/{args.domain}')
-
-        with open(f'Description/{args.domain}/{args.channel_name}.json', 'w') as outfile:
-            json.dump(data, outfile, indent=4)
+        crawl_youtube_channel(args, youtube_url, verbose=True, links_path=args.links_path, video_ID=args.video_ID)

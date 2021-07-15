@@ -24,29 +24,19 @@ declare -a channel_names=(
 )
 
 Domain=Military
+Iteration=18
 
-mkdir -p All-links/${Domain}
+mkdir -p Description/${Domain}
 
 # get length of an array
 arraylength=${#urls[@]}
 
-# # Crawl the links for videos of a channel
-# for (( i=0; i<${arraylength}; i++ ));
-# do
-#     echo "Processing: ${channel_names[$i]}, link: ${urls[$i]}"
-#     python crawler.py \
-#         link \
-#         --youtube_url ${urls[$i]} \
-#         --out_path All-links/${Domain}/${channel_names[$i]}.txt
-# done
-
-# Crawl the description for videos of a channel
 for (( i=0; i<${arraylength}; i++ ));
 do
     echo "Processing: ${channel_names[$i]}, link: ${urls[$i]}"
     python crawler.py \
         description \
-        --links_path All-links/${Domain}/${channel_names[$i]}.txt \
+        --links_path Selected-links/${Domain}/${channel_names[$i]}-${Iteration}-selected.txt \
         --youtube_url ${urls[$i]} \
         --domain ${Domain} \
         --channel_name ${channel_names[$i]}

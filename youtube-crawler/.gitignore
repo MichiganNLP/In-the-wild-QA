@@ -1,4 +1,5 @@
 .idea/
 venv/
+Selected-links/
 geckodriver.log
 __pycache__

@@ -7,10 +7,15 @@ random.seed(42)
 
 TOTAL_NUM = 100 # total video number in domain
 CHANNEL_NUM = 8 # channel number for the domain
-DOMAIN = 'Military' # domain name
-CHANNEL_NAMES = ["Gung-Ho-Vids", "AiirSource-Military", "Army-military-2018", 
-"WarLeaks-Military-Blog", "Military-Archive", "USA-Military-Channel", 
-"MilitaryNotes", "Sandboxx"] # channel names under that domain
+DOMAIN = 'Agriculture' # domain name
+CHANNEL_NAMES = ["RealAgriculture"
+                ,"Millennial-Farmer"
+                ,"Welker-Farms-Inc"
+                ,"How-Farms-Work"
+                ,"Peterson-Farm-Bros"
+                ,"John-Suscovich"
+                ,"Olly's-Farm"
+                ,"Hamiltonville-Farm"] # channel names under that domain
 
 
 def select(name, num, iteration=0):
@@ -26,18 +31,18 @@ def select(name, num, iteration=0):
     
     return sel_links, other_links
 
-ITERATION = 18
+ITERATION = 2
 
 # second to later iteration, how many videos need to be substituted
 SUBS_NUM = {
-    "Gung-Ho-Vids": 0, 
-    "AiirSource-Military": 0, 
-    "Army-military-2018": 0,
-    "WarLeaks-Military-Blog": 0, 
-    "Military-Archive": 0, 
-    "USA-Military-Channel": 10, 
-    "MilitaryNotes":0 , 
-    "Sandboxx": 10
+    "RealAgriculture": 0,
+    "Millennial-Farmer": 0 ,
+    "Welker-Farms-Inc": 0 ,
+    "How-Farms-Work": 0 ,
+    "Peterson-Farm-Bros": 0 ,
+    "John-Suscovich": 0 ,
+    "Olly's-Farm": 0 ,
+    "Hamiltonville-Farm": 0
 }
 
 if __name__ == "__main__":

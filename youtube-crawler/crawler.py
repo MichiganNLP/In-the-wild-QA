@@ -96,6 +96,10 @@ def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_
     unknowns = 0
     counter = 1
 
+    # To indicate new iteration of selection
+    with open(f'Description/{args.domain}/{args.channel_name}.jsonl', 'a+') as f:
+        f.write('\n')
+
     for link in links:
         information = get_video_info("https://www.youtube.com/" + link)
         video_ID += 1

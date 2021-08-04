@@ -3,3 +3,6 @@ venv/
 Selected-links/
 geckodriver.log
 __pycache__
+filter.py
+filtered-links/
+Videos/

@@ -1,14 +1,16 @@
 # corresponding channel names
 declare -a channel_names=(
-    "Welker-Farms-Inc"
-    "How-Farms-Work"
-    "Peterson-Farm-Bros"
-    "John-Suscovich"
-    "Olly's-Farm"
-    "Hamiltonville-Farm"
+    "Bertram-Craft"
+    "Survival-Instinct"
+    "Primitive-Technology"
+    "BC-Bushcraft"
+    "Survival-Skills-Primitive"
+    "King-Kong-Amaz"
+    "Joe-Robinet"
+    "Chad-Zuber"
 )
 
-Domain=Agriculture
+Domain=HumanSurvival
 
 path_to_output=Videos/${Domain}
 mkdir -p ${path_to_output}

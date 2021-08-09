@@ -31,7 +31,7 @@ def select(name, num, iteration=0):
     
     return sel_links, other_links
 
-ITERATION = 2
+ITERATION = 3
 
 # second to later iteration, how many videos need to be substituted
 SUBS_NUM = {
@@ -39,7 +39,7 @@ SUBS_NUM = {
     "Millennial-Farmer": 0 ,
     "Welker-Farms-Inc": 0 ,
     "How-Farms-Work": 0 ,
-    "Peterson-Farm-Bros": 0 ,
+    "Peterson-Farm-Bros": 5 ,
     "John-Suscovich": 0 ,
     "Olly's-Farm": 0 ,
     "Hamiltonville-Farm": 0

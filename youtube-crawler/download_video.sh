@@ -1,16 +1,9 @@
 # corresponding channel names
 declare -a channel_names=(
-    "Bertram-Craft"
-    "Survival-Instinct"
-    "Primitive-Technology"
-    "BC-Bushcraft"
-    "Survival-Skills-Primitive"
-    "King-Kong-Amaz"
-    "Joe-Robinet"
-    "Chad-Zuber"
+    "Virtual-Running-Videos"
 )
 
-Domain=HumanSurvival
+Domain=Geography
 
 path_to_output=Videos/${Domain}
 mkdir -p ${path_to_output}

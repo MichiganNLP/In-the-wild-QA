@@ -38,3 +38,23 @@
     "John-Suscovich"
     "Olly's-Farm"
     "Hamiltonville-Farm"
+
+# NaturalDisasters
+* Linkes:
+    "https://www.youtube.com/c/DisasterCompilations17"
+    "https://www.youtube.com/channel/UCPbyIYGQv3BQebWiC9mKOBA"
+    "https://www.youtube.com/user/SkipTalbot"
+    "https://www.youtube.com/c/TornadoTrackers"
+    "https://www.youtube.com/c/UltimateChase"
+    "https://www.youtube.com/c/stormhighwaycom/"
+    "https://www.youtube.com/channel/UCMqrWfhtN_CP903slwfmqwQ"
+    "https://www.youtube.com/c/weathershot"
+* Channel names:
+    "Disaster-Compilations"
+    "Climate-Change"
+    "Skip-Talbot"
+    "Tornado-Trackers"
+    "Ultimate-Chase"
+    "Dan-Robinson"
+    "Natural-Disaster"
+    "Weathershot"

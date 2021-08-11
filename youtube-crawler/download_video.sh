@@ -1,9 +1,9 @@
 # corresponding channel names
 declare -a channel_names=(
-    "Virtual-Running-Videos"
+    "Disaster-Compilations"
 )
 
-Domain=Geography
+Domain=NaturalDisasters
 
 path_to_output=Videos/${Domain}
 mkdir -p ${path_to_output}

@@ -1,0 +1,21 @@
+# Videos that need manual split:
+* Geography:
+  * Norwegian-Explorer_5
+  * Primal-Earth-Sounds_2
+  * TreadmillTV_12
+  * 4k-Relaxation_5
+  * 4k-Relaxation_8
+  * 4k-Relaxation_11
+  * 4k-Relaxation_10
+  * 4k-Relaxation_6
+  * Virtual-Running-Videos_0
+  * Virtual-Running-Videos_6
+* HumanSurvival:
+  * N/A
+* NaturalDisasters:
+  * Natural-Disaster_4
+  * Natural-Disaster_3
+  * Natural-Disaster_1
+  * Ultimate-Chase_6
+  * Disaster-Compilations_11
+  * Dan-Robinson_2

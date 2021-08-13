@@ -1,0 +1,130 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+
+<script>
+    function qb_checkValid() {
+        var c = document.querySelector('crowd-form'); 
+        var qbList = c.querySelectorAll('crowd-checkbox[name="question_base"]');
+        var num_checked = 0;
+        for (var i = 0; i < qbList.length; ++i) { 
+            if (qbList[i].checked){
+                num_checked += 1;
+            }
+        }
+        if (num_checked == 0){
+            qb_errorBox.innerHTML = '<crowd-alert type="error" dismissible>You must select at least one choice.</crowd-alert>';
+            qb_errorBox.scrollIntoView();
+            return false;
+        }
+        return true;
+    }
+
+    function qt_checkValid() {
+        var c = document.querySelector('crowd-form'); 
+        var qtList = c.querySelectorAll('crowd-checkbox[name="question_type"]');
+        var num_checked = 0;
+        for (var i = 0; i < qtList.length; ++i) { 
+            if (qtList[i].checked){
+                num_checked += 1;
+            }
+        }
+        if (num_checked == 0){
+            qt_errorBox.innerHTML = '<crowd-alert type="error" dismissible>You must select at least one choice.</crowd-alert>';
+            qt_errorBox.scrollIntoView();
+            return false;
+        }
+        return true;
+    }
+
+</script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects" id="mturk_form" onsubmit="return qb_checkValid()&&qt_checkValid()">
+
+    <p>
+      <strong>Instructions: </strong>
+      You are given a video that contains scenes from the Military domain as well as the description for the video. 
+      Please try to write your question utilizing information from the description. An example of this would be as follows:
+      <small>
+          <p>&emsp;&emsp;<strong>Video</strong>
+            <p><iframe src="https://drive.google.com/file/d/1q9-aoCsKTzXL5asNNJ8wNaJDmob5LWrG/preview" width="640" height="480" allow="autoplay"></iframe></p>
+          </p>
+          <p>&emsp;&emsp;<strong>Original Question: </strong>What is the target of the tank after it gets close to the river? </p>
+          <p>&emsp;&emsp;<strong>Video Description: </strong>US military M1 Abrams tanks …. .</p>
+          <p>&emsp;&emsp;<strong>Question Using Description: </strong>What is the target of the M1 Abrams tank after it gets close to the river?</p>
+      </small>
+      Here are some example questions and their corresponding categories:
+      <small>
+        <p>&emsp;&emsp;<strong>Types of Questions and Examples:</strong></p>
+        <p>&emsp;&emsp;&emsp;&emsp;<strong>Motion:</strong> What are the group of soldiers doing?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;<strong>Spatial Relationship:</strong> What is driving beside the motorcycle?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;<strong>Temporal Relationship:</strong> What happens before the black smoke rises?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;<strong>Free Form:</strong></p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong>Reasoning:</strong> What makes changing between targets possible for the missile?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong>Number:</strong> How many fighters are there flying near the Russian warship?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong>Object:</strong> What is the target of the bullet?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong>Time:</strong> How long can the missile fly?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong>Location:</strong> Where is the tank?</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<strong>Others:</strong> What does the man require the warship to do?</p>
+      </small>
+
+
+    </p>
+
+    <!-- Your image file URLs will be substituted for the "image_url" variable below 
+          when you publish a batch with a CSV input file containing multiple image file URLs.
+          To preview the element with an example image, try setting the src attribute to
+          "https://s3.amazonaws.com/cv-demo-images/basketball-outdoor.jpg" -->
+    
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yzXdxAN31Dc"></iframe>
+    <!--<p><video src="${https://www.youtube.com/watch?v=yzXdxAN31Dc}" style="max-width: 100%; max-height: 250px" /></p>-->
+    <!-- part for correct answering -->
+    <div>
+        <crowd-input label="Question 1" max-length="100" name="question_1" required></crowd-input>
+        <p>What was the question based on: (Check all that apply)</p>
+        
+        <div id="qb_errorBox"></div>
+        <div>
+            <crowd-checkbox type="checkbox" name="question_base" value="scene">Scene</crowd-checkbox>
+            <crowd-checkbox type="checkbox" name="question_base" value="audio">Audio</crowd-checkbox>
+            <crowd-checkbox type="checkbox" name="question_base" value="video_description">Video description</crowd-checkbox>
+        </div>
+
+        <p>How do you classify your questions: (Check all that applies)</p>
+            
+        <div id="qt_errorBox"></div>
+
+        <div>
+            <crowd-checkbox type="checkbox" name="question_type" value="motion-related">Motion related</crowd-checkbox>
+            <crowd-checkbox type="checkbox" name="question_type" value="spatial-relationship">Spatial relationship</crowd-checkbox>
+            <crowd-checkbox type="checkbox" name="question_type" value="temporal-relationship">Temporal relationship</crowd-checkbox>
+            <crowd-checkbox type="checkbox" name="question_type" value="others">Others</crowd-checkbox>
+        </div>
+
+        <crowd-input label="If the type is Others, write what you think your question belongs to (N/A if you cannot come up with a specific type)" max-length="50" name="other_type"></crowd-input>
+
+        <crowd-input label="Correct answer" max-length="100" name="correct_answer" required></crowd-input>
+        
+
+        <p>Please suggest how confident you are with your correct answer:</p>
+            <div>
+                <input type="radio" id="high_confidence" name="confidence" value="high_confidence" required>
+                <label for="high_confidence">High confidence</label>
+            </div>
+            <div>
+                <input type="radio" id="low_confidence" name="confidence" value="low_confidence">
+                <label for="low_confidence">Low confidence</label>
+            </div>
+        <crowd-input label="Comment (N/A if no comment)" max-length="250" name="comment_1"></crowd-input>
+    </div>
+
+    <div>
+        <crowd-input label="Incorrect answer 1 (must be related to this clip)" max-length="100" name="incorrect_answer_1" required></crowd-input>
+        <crowd-input label="Incorrect answer 2 (must be related to this clip)" max-length="100" name="incorrect_answer_2" required></crowd-input>
+        <crowd-input label="Incorrect answer 3 (must be related to this clip)" max-length="100" name="incorrect_answer_3" required></crowd-input>
+    </div>
+</crowd-form>

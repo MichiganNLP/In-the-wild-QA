@@ -1,21 +1,17 @@
-# Videos that need manual split:
-* Geography:
-  * Norwegian-Explorer_5
-  * Primal-Earth-Sounds_2
-  * TreadmillTV_12
-  * 4k-Relaxation_5
-  * 4k-Relaxation_8
-  * 4k-Relaxation_11
-  * 4k-Relaxation_10
-  * 4k-Relaxation_6
-  * Virtual-Running-Videos_0
-  * Virtual-Running-Videos_6
-* HumanSurvival:
-  * N/A
-* NaturalDisasters:
-  * Natural-Disaster_4
-  * Natural-Disaster_3
-  * Natural-Disaster_1
-  * Ultimate-Chase_6
-  * Disaster-Compilations_11
-  * Dan-Robinson_2
+## File usages:
+  * `detect_trans.py`: script to automatically detect the transition scenes and clip the original videos accordingly.
+  * `random_select.py`: randomly select clipped videos
+  * `stats.py`: calculate the stats of the selected videos
+  * `process_manual.py`: read the `manual_clip.txt` file and clip the original videos accordingly
+  * `manual_clip.txt`: video clips that we select manually.
+
+## Procedures:
+  * First clip the original videos into short clips by PySceneDetect (a command-line tool and Python library, which uses OpenCV to analyze a video to find scene changes or cuts. https://github.com/Breakthrough/PySceneDetect)
+  * Then we concatenate those short clips together so that it exceeds 1 min or it is towards the end (the last part could be shorter than 1 min if video ends there)
+  * Selection process of the clips:
+    * One clip for each original video is selected by the script, we will manually check:
+        * whether the video contains information we want 
+        * \>= 30 seconds and <= 4 minutes 
+    * If we do not want the clip, we delete it and run the script again to randomly select another.
+    * We iterate the first two steps until there is no more generated clips (We then manually select a duration in the original video for those videos with no clip selected during the process)
+

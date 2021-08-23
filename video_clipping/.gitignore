@@ -4,3 +4,5 @@ auto-clips-info/
 put_back.py
 selected_clips/
 selection_info/
+credentials.json
+__pycache__/

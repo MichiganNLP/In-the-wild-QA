@@ -68,6 +68,10 @@
         text-align: center;
     }
 
+    .description {
+      color:black;
+    }
+
     .question-label {
         font-size: 1.3rem;
     }
@@ -150,6 +154,12 @@
     width: 100%;
     height: 100%;
     border: 0;
+    }
+
+    .example-question {
+      margin-top: 10px;
+      color:gray;
+      border-bottom:1px solid gray;
     }
 </style>
 
@@ -318,8 +328,9 @@
   // we use Google drive video ids instead
   const videoIds = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1_id}"]
       .map(v => templateWasSubstituted(v) ? v : "1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt");
-  const descriptions = ["N/A", "${video1_description}"]
+  const descriptions = ["A storm produces multiple <span class=\"example-answer\">landspout</span> tornadoes in far eastern Colorado, north of Siebert. <span class=\"example-answer\">Landspouts</span> are a weaker type of tornado caused by a storm updraft stretching low-level vorticity on a boundary.  Copyright Dan Robinson. http://stormhighway.com", "${video1_description}"]
       .map(v => templateWasSubstituted(v) ? v : "N/A");
+
 
   const questions = ["_____", "${question1}"]
       .map((q, i) => templateWasSubstituted(q) ? q : "_____")
@@ -384,18 +395,19 @@
 
           <div class="form-group">
             <label class="question-label" for="answer-input-${0, i}">Your Question:</label>
-            <crowd-input label="Please type your question here" max-length="100" name="question_1" required></crowd-input>
+            ${i == 0 ? "<p class=\"example-question\">Which directions does the <span class=\"example-answer\">landspout</span> bend towards?</p>" : "<crowd-input label=\"Please type your question here\" max-length=\"100\" name=\"question_1\" required></crowd-input>"}
           </div>
 
           <hr>
 
           <div class="form-group">
             <label class="question-label" for="answer-input-${0, i}">What was the question based on: (Check all that apply):</label>
-        
+            
             <div>
-                <crowd-checkbox type="checkbox" class="question_base" name="question_base" value="scene">Scene</crowd-checkbox>
-                <crowd-checkbox type="checkbox" class="question_base" name="question_base" value="audio">Audio</crowd-checkbox>
-                <crowd-checkbox type="checkbox" class="question_base" name="question_base" value="video_description">Video description</crowd-checkbox>
+              ${i == 0 ? "<crowd-checkbox type=\"checkbox\" class=\"question_base\" name=\"question_base\" value=\"scene\" checked disabled>Scene</crowd-checkbox>" : "<crowd-checkbox type=\"checkbox\" class=\"question_base\" name=\"question_base\" value=\"scene\">Scene</crowd-checkbox>"}
+              ${i == 0 ? "<crowd-checkbox type=\"checkbox\" class=\"question_base\" name=\"question_base\" value=\"audio\" disabled>Audio</crowd-checkbox>" : "<crowd-checkbox type=\"checkbox\" class=\"question_base\" name=\"question_base\" value=\"audio\">Audio</crowd-checkbox>"}
+              ${i == 0 ? "<crowd-checkbox type=\"checkbox\" class=\"question_base\" name=\"question_base\" value=\"video_description\" checked disabled>Video description</crowd-checkbox>" : "<crowd-checkbox type=\"checkbox\" class=\"question_base\" name=\"question_base\" value=\"video_description\">Video description</crowd-checkbox>"}
+
             </div>
           </div>
         
@@ -404,27 +416,33 @@
             <label class="question-label" for="answer-input-${0, i}">How do you classify your questions: (Check all that applies)</label>
             
             <div>
-                <crowd-checkbox type="checkbox" class="question_type" name="question_type" value="motion-related">Motion related</crowd-checkbox>
-                <crowd-checkbox type="checkbox" class="question_type" name="question_type" value="spatial-relationship">Spatial relationship</crowd-checkbox>
-                <crowd-checkbox type="checkbox" class="question_type" name="question_type" value="temporal-relationship">Temporal relationship</crowd-checkbox>
-                <crowd-checkbox type="checkbox" class="question_type" name="question_type" value="others">Others</crowd-checkbox>
+              ${i == 0 ? "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"motion-related\" disabled>Motion related</crowd-checkbox>" : "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"motion-related\">Motion related</crowd-checkbox>"}
+              ${i == 0 ? "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"spatial-relationship\" disabled>Spatial relationship</crowd-checkbox>" : "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"spatial-relationship\">Spatial relationship</crowd-checkbox>"}
+              ${i == 0 ? "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"temporal-relationship\" disabled>Temporal relationship</crowd-checkbox>" : "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"temporal-relationship\">Temporal relationship</crowd-checkbox>"}
+              ${i == 0 ? "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"others\" checked disabled>Others</crowd-checkbox>" : "<crowd-checkbox type=\"checkbox\" class=\"question_type\" name=\"question_type\" value=\"others\"Others</crowd-checkbox>"}
             </div>
-            <crowd-input label="If the type is Others, write what you think your question belongs to (N/A if you cannot come up with a specific type)" max-length="50" name="other_type"></crowd-input>
+
+            ${i == 0 ? "<p class=\"example-question\">Direction</p>" : "<crowd-input label=\"If the type is Others, write what you think your question belongs to (N/A if you cannot come up with a specific type)\" max-length=\"50\" name=\"other_type\"></crowd-input>"}
+
           </div>
 
           <hr>
           <div class="form-group">
             <label class="question-label" for="answer-input-${0, i}">Correct Answer:</label>
-          <crowd-input label="Correct answer" max-length="100" name="correct_answer" required></crowd-input>
 
+            ${i == 0 ? "<p class=\"example-question\">Left</p>" : "<crowd-input label=\"Correct answer\" max-length=\"100\" name=\"correct_answer\" required></crowd-input>"}
+          
           <label class="question-label" for="answer-input-${0, i}">Please suggest how confident you are with your correct answer:</label>
 
             <div>
-                <input type="radio" id="high_confidence" name="confidence" value="high_confidence" required>
+              ${i == 0 ? "<input type=\"radio\" id=\"high_confidence\" name=\"confidence\" value=\"high_confidence\" checked disabled required>" : "<input type=\"radio\" id=\"high_confidence\" name=\"confidence\" value=\"high_confidence\" required>"}
+                
                 <label for="high_confidence">High confidence</label>
             </div>
             <div>
-                <input type="radio" id="low_confidence" name="confidence" value="low_confidence">
+
+              ${i == 0 ? "<input type=\"radio\" id=\"low_confidence\" name=\"confidence\" value=\"low_confidence\" disabled required>" : "<input type=\"radio\" id=\"low_confidence\" name=\"confidence\" value=\"low_confidence\" required>"}
+
                 <label for="low_confidence">Low confidence</label>
             </div>
 
@@ -434,9 +452,11 @@
 
           <div class="form-group">
             <div>
-                <crowd-input label="Incorrect answer 1 (must be related to this clip)" max-length="100" name="incorrect_answer_1" required></crowd-input>
-                <crowd-input label="Incorrect answer 2 (must be related to this clip)" max-length="100" name="incorrect_answer_2" required></crowd-input>
-                <crowd-input label="Incorrect answer 3 (must be related to this clip)" max-length="100" name="incorrect_answer_3" required></crowd-input>
+
+              ${i == 0 ? "<p class=\"example-question\">Right</p>" : "<crowd-input label=\"Incorrect answer 1 (must be related to this clip)\" max-length=\"100\" name=\"incorrect_answer_1\" required></crowd-input>"}
+              ${i == 0 ? "<p class=\"example-question\">Up</p>" : "<crowd-input label=\"Incorrect answer 2 (must be related to this clip)\" max-length=\"100\" name=\"incorrect_answer_2\" required></crowd-input>"}
+              ${i == 0 ? "<p class=\"example-question\">Down</p>" : "<crowd-input label=\"Incorrect answer 2 (must be related to this clip)\" max-length=\"100\" name=\"incorrect_answer_2\" required></crowd-input>"}
+
             </div>
           </div>
 

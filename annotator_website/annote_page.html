@@ -265,7 +265,7 @@
 
   const videos = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
       .map(v => templateWasSubstituted(v) ? `https://drive.google.com/file/d/${0,v}/preview` :
-       "https://drive.google.com/file/d/1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt/preview");
+       "./video1.mp4");
   const descriptions = ["A storm produces multiple <span class=\"example-answer\">landspout</span> tornadoes in far \
   eastern Colorado, north of Siebert. <span class=\"example-answer\">Landspouts</span> are a weaker type of tornado \
   caused by a storm updraft stretching low-level vorticity on a boundary.  Copyright Dan Robinson. http://stormhighway.com",
@@ -293,7 +293,7 @@
         <div class="instance" id="instance-${0, i}">
           <h2 class="instance-title">${0, title}</h2>
           <div class="video" id="video-${0, i}">
-            <iframe width="70%" height="370" src=${0,video}> </iframe>
+            <video width="65%" src=${0,video} controls> </video>
           </div>
         </br>
           <div class="video-relates">
@@ -352,10 +352,10 @@
 
           <div class="video-support" id="video-support-${0, i}">
             <div class="video">
-              <iframe width="50%" height="264" src=${0,video} id="refer-video-${0, i}"> </iframe>
+              <video width="50%" src=${0,video} id="refer-video-${0, i}" controls> </video>
             </div>
-            start time: <input type="range" name="start-bar-${0, i}" id="start-bar-${0, i}" value="0" max="100" disabled><br>
-            end   time: <input type="range" name="end-bar-${0, i}" id="end-bar-${0, i}" value="0" max="100" disabled>
+            start time: <input type="range" name="start-bar-${0, i}" id="start-bar-${0, i}" value="0" max="100" step="0.2"><br>
+            end   time: <input type="range" name="end-bar-${0, i}" id="end-bar-${0, i}" value="0" max="100" step="0.2">
 
           </div>
           <hr>
@@ -455,19 +455,54 @@
     });
   }
 
-  function startPreferVideos(){
-    videos.forEach((_, i) =>{
-        document.getElementById(`refer-video-${0, i}`).addEventListener("load", function() {
-          console.log(this.contentWindow);
-        });
+  function setUpVideoListeners() {
+    videos.forEach((_, i) => {
+      const $videoi = document.getElementById(`refer-video-${0, i}`);
+      const $startbari = document.getElementById(`start-bar-${0, i}`);
+      const $endbari = document.getElementById(`end-bar-${0, i}`);
+      $($startbari).mousedown(e =>{
+        $videoi.pause();
+        console.log($videoi.frameRate);
+        $startbari.onmousemove=function(){
+          $videoi.currentTime = $startbari.value / 100 * $videoi.duration;
+        }
+        $startbari.onmouseup=function(){
+          $videoi.currentTime = $startbari.value / 100 * $videoi.duration;
+          $startbari.onmousemove=null;
+          $startbari.onmouseup=null;
+        }
+      });
+      $($startbari).keydown(e => {
+        if (e.keyCode === 37 || e.keyCode === 39){
+          $videoi.currentTime = $startbari.value / 100 * $videoi.duration;
+        }
+      });
+      
+      $($endbari).mousedown(e =>{
+        $videoi.pause();
+        $endbari.onmousemove=function(){
+          $videoi.currentTime = $endbari.value / 100 * $videoi.duration;
+        }
+        $endbari.onmouseup=function(){
+          $videoi.currentTime = $endbari.value / 100 * $videoi.duration;
+          $endbari.onmousemove=null;
+          $endbari.onmouseup=null;
+        }
+      });
+      $($endbari).keydown(e => {
+        if (e.keyCode === 37 || e.keyCode === 39){
+          $videoi.currentTime = $endbari.value / 100 * $videoi.duration;
+        }
+      });
+
+
     });
   }
-  
 
   function onDomContentLoaded() {
     createInstances();
     setUpInputListeners();
-    startPreferVideos();
+    setUpVideoListeners();
   }
 
   function main() {
@@ -475,7 +510,6 @@
       document.addEventListener("DOMContentLoaded", onDomContentLoaded);
     } else {
       onDomContentLoaded();
-      window.onload = startPreferVideos();
     }
   }
 

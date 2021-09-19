@@ -349,6 +349,17 @@
                 ${isExample? "disabled":""}>${isExample? "Direction":""}</textarea></br>
           </div>
           <hr>
+
+          <div class="video-support" id="video-support-${0, i}">
+            <div class="video">
+              <iframe width="50%" height="264" src=${0,video} id="refer-video-${0, i}"> </iframe>
+            </div>
+            start time: <input type="range" name="start-bar-${0, i}" id="start-bar-${0, i}" value="0" max="100" disabled><br>
+            end   time: <input type="range" name="end-bar-${0, i}" id="end-bar-${0, i}" value="0" max="100" disabled>
+
+          </div>
+          <hr>
+
           <div class="alert alert-warning alert-answer" id="alert-${0, i}"></div></br>
 
           ${showNextButton ? `<button type="button" class="btn btn-info" id="next-instance-${0, i}">
@@ -444,9 +455,19 @@
     });
   }
 
+  function startPreferVideos(){
+    videos.forEach((_, i) =>{
+        document.getElementById(`refer-video-${0, i}`).addEventListener("load", function() {
+          console.log(this.contentWindow);
+        });
+    });
+  }
+  
+
   function onDomContentLoaded() {
     createInstances();
     setUpInputListeners();
+    startPreferVideos();
   }
 
   function main() {
@@ -454,6 +475,7 @@
       document.addEventListener("DOMContentLoaded", onDomContentLoaded);
     } else {
       onDomContentLoaded();
+      window.onload = startPreferVideos();
     }
   }
 

@@ -59,7 +59,7 @@
         border-radius: 15px;
     }
 
-    .video-instructions {
+    .annotate-instructions {
         list-style-type: none;
     }
 
@@ -140,9 +140,25 @@
       color:black;
     }
 
+    .video-progress-bar {
+      -webkit-appearance: none;
+      background-color: #bdc3c7;
+      border-radius: 10px;
+      height: 9px;
+      width: 50%;
+    }
+
+    .video-progress-bar:focus {
+      outline: none;
+    }
+
     #comments {
         border-radius: 15px;
         border: 4px dashed #cee3e9;
+    }
+
+    textarea {
+      text-align: center;
     }
 
 </style>
@@ -263,9 +279,12 @@
   const ENTER_KEY_CODE = 13;
   const BACKSPACE_KEY_CODE = 8;
 
-  const videos = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
+  // const videos = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
+  //     .map(v => templateWasSubstituted(v) ? `https://drive.google.com/file/d/${0,v}/preview` :
+  //      "./video0.mp4");
+  const videos = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1}", "${video2}"]
       .map(v => templateWasSubstituted(v) ? `https://drive.google.com/file/d/${0,v}/preview` :
-       "./video1.mp4");
+       "./video0.mp4");
   const descriptions = ["A storm produces multiple <span class=\"example-answer\">landspout</span> tornadoes in far \
   eastern Colorado, north of Siebert. <span class=\"example-answer\">Landspouts</span> are a weaker type of tornado \
   caused by a storm updraft stretching low-level vorticity on a boundary.  Copyright Dan Robinson. http://stormhighway.com",
@@ -300,7 +319,7 @@
             <ul class="description">
                 <big><b> Video Description </b></big>: ${0,description}
             </ul>
-            <ul class="video-instructions">
+            <ul class="annotate-instructions">
                 <li>
                   Please carefully read the
                 <a href="#instructions">instructions</a> before performing the task.</font>
@@ -318,44 +337,97 @@
           <hr>
 
           <div class="form-group">
-            <label class="question-label" for="event-input-${0, i}">Fill in one video event:</label>
-             <textarea class="form-control" id="event-input-${0, i}" name="event-input-${0, i}" 
-              rows="2" placeholder="Please type one event here" 
-              ${isExample? "disabled" :""}>${isExample? "The landspout bends toward left.":""}</textarea></br>
-              </crowd-input>
+            <h4>Your Question:</h4>
+             <textarea class="form-control" id="question-input-${0, i}" name="question-input-${0, i}" 
+              rows="2" placeholder="Please type your question here" 
+              ${isExample? "disabled" :""}>${isExample? "Which direction does the landspout bend towards?":""}</textarea></br>
           </div>
 
           <hr>
 
-          <div class="how-reason-group">
-            <h4>How do you classify this video event: (Check all that applies):</h4>
+          <div>
+            <h4>Which one is your question based on: (Check all that apply):</h4>
             <br>
-            <div class="how-reason">
+            <div>
+              <input type="checkbox" name="question-based-${0, i}" id="question-based-scene-${0, i}" 
+              value="scene"/ ${isExample? "disabled checked":""}>
+              <label for="question-based-scene-${0, i}">Scene </label>
+              <input type="checkbox" name="question-based-${0, i}" id="question-based-audio-${0, i}" 
+              value="audio"/ ${isExample? "disabled":""}>
+              <label for="question-based-audio-${0, i}">Audio </label>
+              <input type="checkbox" name="question-based-${0, i}" id="question-based-video_description-${0, i}" 
+              value="video_description"/ ${isExample? "disabled checked":""}>
+              <label for="question-based-video_description-${0, i}">Video description</label>
+            </div>
+          </div>
+
+          <hr>
+
+          <div>
+            <h4>How do you classify your question: (Check all that apply):</h4>
+            <br>
+            <div>
               <input type="checkbox" name="how-${0, i}" id="how-motion-${0, i}" 
-              value="Motion related"/ ${isExample? "disabled":""}>
+              value="Motion related" ${isExample? "disabled":""}>
               <label for="how-motion-${0, i}">Motion related</label>
               <input type="checkbox" name="how-${0, i}" id="how-spatial-${0, i}" 
-              value="Spatial relationship"/ ${isExample? "disabled":""}>
+              value="Spatial relationship" ${isExample? "disabled":""}>
               <label for="how-spatial-${0, i}">Spatial relationship</label>
               <input type="checkbox" name="how-${0, i}" id="how-temporal-${0, i}" 
-              value="Temporal relationship"/ ${isExample? "disabled":""}>
+              value="Temporal relationship" ${isExample? "disabled":""}>
               <label for="how-temporal-${0, i}">Temporal relationship</label>
               <input type="checkbox" name="how-${0, i}" id="how-other-${0, i}" 
-              value="Others" ${isExample? "checked disabled":""}/>
+              value="Others" ${isExample? "checked disabled":""}>
               <label for="how-other-${0, i}">Others</label>
             </div>
             <textarea class="form-control" id="others-${0, i}" name="others-${0, i}" rows="1"
-                placeholder="If select 'Others', write down what type this event belongs to (N/A if cannot come up with any specific type)"
+                placeholder="If select 'Others', write down what type your question belongs to (N/A if cannot come up with any specific type)"
                 ${isExample? "disabled":""}>${isExample? "Direction":""}</textarea></br>
           </div>
           <hr>
 
+          <div class="form-group">
+            <h4>Correct Answer:<h4>
+             <textarea class="form-control" id="correct-answer-${0, i}" name="correct-answer-${0, i}" 
+              rows="1" placeholder="Correct Answer" 
+              ${isExample? "disabled" :""}>${isExample? "Left":""}</textarea></br>
+            <h5>Please suggest how confident you are with your correct answer:</h5>
+            <br>
+            <div>
+              <input type="radio" name="confidence-${0, i}" id="confidence-high-${0, i}" 
+              value="high" ${isExample? "checked disabled":""} />
+              <label for="confidence-high-${0, i}">High Confidence</label>
+              <input type="radio" name="confidence-${0, i}" id="confidence-low-${0, i}" 
+              value="low" ${isExample? "disabled":""} />
+              <label for="confidence-low-${0, i}">Low Confidence</label>
+            </div>
+            <br>
+            <h5>Please suggest at least one potential <b>incorrect answer</b>:</h5>
+            <font color="gray">Should be related to your question</font>
+            <textarea class="form-control" id="incorrect-answer1-${0, i}" name="incorrect-answer1-${0, i}" 
+              rows="1" placeholder="Incorrect Answer 1 (must related to your question.)" 
+              ${isExample? "disabled" :""}>${isExample? "Up":""}</textarea>
+            <br style="display: block;margin-bottom: 3px;font-size:3px;line-height: 3px;">
+            <textarea class="form-control" id="incorrect-answer2-${0, i}" name="incorrect-answer2-${0, i}" 
+              rows="1" placeholder="Incorrect Answer 2 (must related to your question.)" 
+              ${isExample? "disabled" :""}>${isExample? "Right":""}</textarea>
+            <br style="display: block;margin-bottom: 3px;font-size:3px;line-height: 3px;">
+            <textarea class="form-control" id="incorrect-answer3-${0, i}" name="incorrect-answer3-${0, i}" 
+              rows="1" placeholder="Incorrect Answer 3 (must related to your question.)" 
+              ${isExample? "disabled" :""}>${isExample? "Down":""}</textarea></br>
+          </div>
+
+          <hr>
+
           <div class="video-support" id="video-support-${0, i}">
+            <h4>Locate the video support for your question and answer:</h4>
             <div class="video">
               <video width="50%" src=${0,video} id="refer-video-${0, i}" controls> </video>
             </div>
-            start time: <input type="range" name="start-bar-${0, i}" id="start-bar-${0, i}" value="0" max="100" step="0.2"><br>
-            end   time: <input type="range" name="end-bar-${0, i}" id="end-bar-${0, i}" value="0" max="100" step="0.2">
+            <label for="start-bar-${0, i}">Start point: </label> <input type="range" class="video-progress-bar" name="start-bar-${0, i}" id="start-bar-${0, i}"
+            ${isExample? "disabled value=20.56" :"value=0"} max="100" step="0.08"><br>
+            <label for="end-bar-${0, i}">End &nbsp;point: </label> <input type="range" class="video-progress-bar" name="end-bar-${0, i}" id="end-bar-${0, i}" 
+            ${isExample? "disabled value=20.96" :"value=0"} max="100" step="0.08">
 
           </div>
           <hr>
@@ -388,28 +460,64 @@
     window.location = "#top";
   }
 
+  function questionCompleted(i) {
+    const i_value = document.getElementById(`question-input-${0,i}`).value;
+    return i_value != null && i_value != "";
+  }
+
+  function basedCompleted(i){
+    return $(`[name="question-based-${0,i}"]:checked`).length > 0;
+  }
+
   function howCompleted(i) {
     return $(`[name="how-${0,i}"]:checked`).length > 0;
   }
 
-  function eventCompleted(i) {
-    const i_value = document.getElementById(`event-input-${0,i}`).value;
-    return i_value != null && i_value != "";
+  function correctansCompleted(i) {
+    const c_value = document.getElementById(`correct-answer-${0, i}`).value;
+    return c_value != null && c_value != "";
   }
 
-  function questionCompleted(i) {
-    return  eventCompleted(i) && howCompleted(i);
+  function confidenceCompleted(i) {
+    return $(`[name="confidence-${0,i}"]:checked`).length > 0;
+  }
+
+  function incorreceCompleted(i) {
+    const i1_value = document.getElementById(`incorrect-answer1-${0,i}`).value;
+    const i2_value = document.getElementById(`incorrect-answer2-${0,i}`).value;
+    const i3_value = document.getElementById(`incorrect-answer3-${0,i}`).value;
+    return (i1_value != null && i1_value != "") || (i2_value != null && i2_value != "")
+      || (i3_value != null && i3_value != "");
+  }
+
+  function videoCompleted(i) {
+    const $startbar_value = parseFloat(document.getElementById(`start-bar-${0, i}`).value);
+    const $endbar_value = parseFloat(document.getElementById(`end-bar-${0, i}`).value);
+    return ($endbar_value > 0) && ($startbar_value < $endbar_value);
+  }
+
+  function blankCompleted(i) {
+    return  questionCompleted(i) && basedCompleted(i) && howCompleted(i) && correctansCompleted(i) &&
+      confidenceCompleted(i) && incorreceCompleted(i) && videoCompleted(i);
   }
 
   function checkValid() {
     const completed = videos.map((_, i) => {
-      const completed = questionCompleted(i);
-      const message1 = completed ? "" :
-       "Please type into your event.";
-      document.getElementById(`event-input-${0, i}`).setCustomValidity(eventCompleted(i)? "" : message1);
-      const message2 = completed ? "" :
-       "Choose at least one option for the Calssification question.";
-      document.getElementById(`how-motion-${0, i}`).setCustomValidity(howCompleted(i)? "" : message2);
+      const completed = blankCompleted(i);
+      const message1 = "Please type into your question.";
+      const message2 = "Please choose at least one option."
+      const message3 = "Please choose at least one option.";
+      const message4 = "Please provide your correct answer.";
+      const message5 = "Please select your confidence level for your correct answer."
+      const message6 = "Please provide at least one potential incorrect answer."
+      const message7 = "Please finish the video support part.\nMake sure the end time > 0.\nMake sure the end time >= the start time.";
+      document.getElementById(`question-input-${0, i}`).setCustomValidity(questionCompleted(i)? "" : message1);
+      document.getElementById(`question-based-scene-${0, i}`).setCustomValidity(basedCompleted(i)? "" : message2);
+      document.getElementById(`how-motion-${0, i}`).setCustomValidity(howCompleted(i)? "" : message3);
+      document.getElementById(`correct-answer-${0, i}`).setCustomValidity(correctansCompleted(i)? "" : message4);
+      document.getElementById(`confidence-high-${0,i}`).setCustomValidity(confidenceCompleted(i)? "" : message5);
+      document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity(incorreceCompleted(i)? "" : message6);
+      document.getElementById(`start-bar-${0, i}`).setCustomValidity(videoCompleted(i)? "" : message7);
       return completed;
     }).every(Boolean);
 
@@ -420,11 +528,10 @@
 
   function checkValidationAlerts(i) {
     const $errorMessage = $(`#alert-${0, i}`);
-    if (questionCompleted(i)) {
+    if (blankCompleted(i)) {
       $errorMessage.fadeOut("fast");
     } else {
-      $errorMessage.text("Please Fill in the Event and choose at least one option "+
-      "for the Calssification question.").fadeIn();
+      $errorMessage.text("Please finish above fill-in and classification tasks.").fadeIn();
     }
   }
 
@@ -440,17 +547,70 @@
           checkValidationAlerts(i);
         });
       });
+
+      Array.from($(`[name="question-based-${0, i}"]`)).forEach(rease => 
+      { $(rease).click(e => 
+        {
+          document.getElementById(`question-based-scene-${0, i}`).setCustomValidity("");
+          $(document.getElementById(`question-based-scene-${0, i}`)).removeClass("is-invalid");
+          checkValidationAlerts(i);
+        });
+      });
+
+      Array.from($(`[name="confidence-${0, i}"]`)).forEach(rease => 
+      { $(rease).click(e => 
+        {
+          document.getElementById(`confidence-high-${0, i}`).setCustomValidity("");
+          $(document.getElementById(`confidence-high-${0, i}`)).removeClass("is-invalid");
+          checkValidationAlerts(i);
+        });
+      });
+
       checkValidationAlerts(i);
     });
     videos.forEach((_, i) => {
-      $(`[name="event-input-${0, i}"]`).keyup(e => 
+      $(`[name="question-input-${0, i}"]`).keyup(e => 
         {
           if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
-            document.getElementById(`event-input-${0, i}`).setCustomValidity("");
-            $(document.getElementById(`event-input-${0, i}`)).removeClass("is-invalid");
+            document.getElementById(`question-input-${0, i}`).setCustomValidity("");
+            $(document.getElementById(`question-input-${0, i}`)).removeClass("is-invalid");
           }
           checkValidationAlerts(i);
         });
+      
+      $(`[name="correct-answer-${0, i}"]`).keyup(e => 
+        {
+          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
+            document.getElementById(`correct-answer-${0, i}`).setCustomValidity("");
+            $(document.getElementById(`correct-answer-${0, i}`)).removeClass("is-invalid");
+          }
+          checkValidationAlerts(i);
+        });
+      $(`[name="incorrect-answer1-${0,i}"]`).keyup(e => 
+        {
+          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
+            document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity("");
+            $(document.getElementById(`incorrect-answer1-${0,i}`)).removeClass("is-invalid");
+          }
+          checkValidationAlerts(i);
+        });
+      $(`[name="incorrect-answer2-${0,i}"]`).keyup(e => 
+        {
+          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
+            document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity("");
+            $(document.getElementById(`incorrect-answer1-${0,i}`)).removeClass("is-invalid");
+          }
+          checkValidationAlerts(i);
+        });
+      $(`[name="incorrect-answer3-${0,i}"]`).keyup(e => 
+        {
+          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
+            document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity("");
+            $(document.getElementById(`incorrect-answer1-${0,i}`)).removeClass("is-invalid");
+          }
+          checkValidationAlerts(i);
+        });
+
       checkValidationAlerts(i);
     });
   }
@@ -460,39 +620,53 @@
       const $videoi = document.getElementById(`refer-video-${0, i}`);
       const $startbari = document.getElementById(`start-bar-${0, i}`);
       const $endbari = document.getElementById(`end-bar-${0, i}`);
+
       $($startbari).mousedown(e =>{
         $videoi.pause();
-        console.log($videoi.frameRate);
+        $startbari.setCustomValidity("");
+        $($startbari).removeClass("is-invalid");
         $startbari.onmousemove=function(){
-          $videoi.currentTime = $startbari.value / 100 * $videoi.duration;
+          $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
         }
         $startbari.onmouseup=function(){
-          $videoi.currentTime = $startbari.value / 100 * $videoi.duration;
-          $startbari.onmousemove=null;
+          $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
+          checkValidationAlerts(i);
           $startbari.onmouseup=null;
+          $startbari.onmousemove=null;
         }
+        checkValidationAlerts(i);
       });
       $($startbari).keydown(e => {
         if (e.keyCode === 37 || e.keyCode === 39){
-          $videoi.currentTime = $startbari.value / 100 * $videoi.duration;
+          $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
+          $startbari.setCustomValidity("");
+          $($startbari).removeClass("is-invalid");
         }
+        checkValidationAlerts(i);
       });
       
       $($endbari).mousedown(e =>{
         $videoi.pause();
+        $startbari.setCustomValidity("");
+        $($startbari).removeClass("is-invalid");
         $endbari.onmousemove=function(){
-          $videoi.currentTime = $endbari.value / 100 * $videoi.duration;
+          $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
         }
         $endbari.onmouseup=function(){
-          $videoi.currentTime = $endbari.value / 100 * $videoi.duration;
+          $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
+          checkValidationAlerts(i);
           $endbari.onmousemove=null;
           $endbari.onmouseup=null;
         }
+        checkValidationAlerts(i);
       });
       $($endbari).keydown(e => {
         if (e.keyCode === 37 || e.keyCode === 39){
-          $videoi.currentTime = $endbari.value / 100 * $videoi.duration;
+          $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
+          $startbari.setCustomValidity("");
+          $($startbari).removeClass("is-invalid");
         }
+        checkValidationAlerts(i);
       });
 
 

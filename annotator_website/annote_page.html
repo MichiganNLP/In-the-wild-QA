@@ -164,7 +164,7 @@
 </style>
 
 <div id="container" class="container">
-  <h1 id="top">Video Caption</h1>
+  <h1 id="top">Video Question answering</h1>
 
   <details id="instructions">
     <summary>Instructions</summary>
@@ -176,60 +176,77 @@
       <h3>Basic Instructions</h3>
 
       <ul>
-        <li>You need to provide events that happened in videos (one event for each video). Please utilze the description for the video if description exists.
+        <li>You need to provide questions with regard to the content in videos. Please utilize the description for the video if description exists.
             
-        <li>You need to classify your video event (whether it is related to Motion, Spatial relationship , Temporal relationship or Others).</li>
+        <li>You need to identify the source of your question (whether it is based on scene, audio, video description) and classify your questions.
+        </li>
+
+        <li>You need to provide correct answer to the question you asked and at least one potential incorrect answers (related to the video content and the question you asked but is not correct)
+        </li>
+
+        <li>You need to provide video evidences (video clips) to support your questions and answers.
+        </li>
             
       </ul>
 
-      <h3>How to provide event</h3>
+      <h3>How To Ask Your Question</h3>
 
-      Events you provide should happen in the video, and you should utilize <b>professional terminologies</b> in the <b>video description</b> if exists.
+      Questions you ask should utilize the <b>professional terminologies</b> in the video description if possible.
 
       <ul>
         <li>An example of using terminology is as follows:</li>
         <iframe src="https://drive.google.com/file/d/1q9-aoCsKTzXL5asNNJ8wNaJDmob5LWrG/preview" width="640" height="480" allow="autoplay"></iframe>
         <ul>
             <li><b>Video description:</b> US military <span class="example-answer">M1 Abrams tanks</span> ... </li>
-            <li><b>Event provided:</b> The target of the <span class="example-answer">M1 Abrams tank</span> is to cross the bridge.</li>
+            <li><b>Your Question:</b> What is the target of the <span class="example-answer">M1 Abrams tank</span> after it gets close to the river?</li>
         </ul>
 
       </ul>
 
-      <h3>How to identity event Category</h3>
+      <h3>How to identity Question Category</h3>
 
       We have four basic categories: <b>Motion</b>, <b>Spatial Relationship</b>, <b>Temporal Relationship</b>, <b>Free Form</b>. Their definitions are as follows:
 
       <ul>
-          <li><b>Motion:</b> Events ask motion of certain object in the video. </li>
-          <li><b>Spatial Relationship:</b> Events involve the spatial relationship of objects. Common patterns in this type include &quot;on the left of&quot;, &quot;next to&quot;.</li>
-          <li><b>Temporal Relationship:</b> Events involve temporal information about the video. Common patterns in this type include &quot;before&quot;.</li>
-          <li><b>Free Form:</b> Other types of events. You need to write a category yourself if you think your event is in this type. Possible subtypes of free form questions include: reasoning, number, object, time, location, others. </li>
+          <li><b>Motion:</b> Questions ask motion of certain object in the video. </li>
+          <li><b>Spatial Relationship:</b> Questions involve the spatial relationship of objects. Common patterns in this type include &quot;on the left of&quot;, &quot;next to&quot;.</li>
+          <li><b>Temporal Relationship:</b> Questions involve temporal information about the video. Common patterns in this type include &quot;before&quot;.</li>
+          <li><b>Free Form:</b> Other types of questions. You need to write a category yourself if you think your question is in this type. Possible subtypes of free form questions include: reasoning, number, object, time, location, others. </li>
       </ul>
 
-      If your events fall into <b>multiple categories</b>, please <u>check all categories that apply</u>.
+      If your questions  fall into <b>multiple categories</b>, please <u>check all categories that apply</u>.
       <p>Here are some events of questions under each category:</p>
       <ul>
-          <li><b>Motion:</b> The group of soldiers is <span class="example-answer">running</span>.</li>
-          <li><b>Spatial Relationship:</b> A truck is driving <span class="example-answer">beside</span> the motorcycle.</li>
-          <li><b>Temporal Relationship:</b> A man ignited the firewood <span class="example-answer">before</span> the black smoke rises.</li>
+          <li><b>Motion:</b> What are the group of soldiers <span class="example-answer">doing</span>?</li>
+          <li><b>Spatial Relationship:</b> What is driving <span class="example-answer">beside</span> the motorcycle?</li>
+          <li><b>Temporal Relationship:</b> What happens <span class="example-answer">before</span> the black smoke rises?</li>
           <li><b>Free Form:</b>
-          <ul>
-              <li><b>Reasoning:</b> The tornado <span class="example-answer"> causes </span> the driver to change direction.</li>
-              <li><b>Number:</b> <span class="example-answer">Two</span> fighters are flying.</li>
-              <li><b>Object:</b> The target of the bullet is a <span class="example-answer">dummy</span>.</li>
-              <li><b>Time:</b> The missle can fly for <span class="example-answer">helf an hour.</span> </li>
-              <li><b>Location:</b> The tank is <span class="example-answer"> in the pool</span>.</li>
-              <li><b>Others:</b> The man require the warship to duck.</li>
-          </ul></li>
+            <ul>
+              <li><b>Reasoning:</b> <span class="example-answer">What makes</span> changing between targets <span class="example-answer">possible</span> for the missile?</li>
+              <li><b>Number:</b> <span class="example-answer">How many</span> fighters are flying?</li>
+              <li><b>Object:</b> <span class="example-answer">What is the target</span> of the bullet?</li>
+              <li><b>Time:</b> <span class="example-answer">How long</span> can the missile fly?</li>
+              <li><b>Location:</b> <span class="example-answer">Where</span> is the tank?</li>
+              <li><b>Others:</b> What does the man require the warship to do?</li>
+            </ul></li>
       </ul>
+
+      <h3>How to provide video evidence</h3>
+      <ur>
+        <li> You need to provide both the <b>start point and end point</b> of your video evidence;</li>
+        <li> You could use your mouse or &larr;/&rarr; key to click or drag the process bars of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
+        <li> The end point should be greater than zero.</li>
+        <li> The end point should be greater or equal to the start point.</li>
+        <li> The video evidence clip (the time gap between the start point and the end point) should be as short as possible.</li>
+      </ur>
 
       <h3>HIT Acceptance</h3>
 
       Your HIT will be accepted based on:
       <ul>
-          <li>How well your event <u>related to the video content</u></li>
-          <li>Whether your event <u>involves professional terms provided in the video description</u> if possible</li>
+          <li>How well your questions <u>related to the video content</u></li>
+          <li>Whether your questions <u>involve professional terms provided in the video description</u> if possible</li>
+          <li>How well your video evidences support your questions and answers.</li>
       </ul>
 
       <h3>Bonuses</h3>
@@ -283,8 +300,8 @@
   //     .map(v => templateWasSubstituted(v) ? `https://drive.google.com/file/d/${0,v}/preview` :
   //      "./video0.mp4");
   const videos = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1}", "${video2}"]
-      .map(v => templateWasSubstituted(v) ? `https://drive.google.com/file/d/${0,v}/preview` :
-       "./video0.mp4");
+      .map(v => templateWasSubstituted(v) ? `./video0.mp4` :
+       "./video1.mp4");
   const descriptions = ["A storm produces multiple <span class=\"example-answer\">landspout</span> tornadoes in far \
   eastern Colorado, north of Siebert. <span class=\"example-answer\">Landspouts</span> are a weaker type of tornado \
   caused by a storm updraft stretching low-level vorticity on a boundary.  Copyright Dan Robinson. http://stormhighway.com",
@@ -331,6 +348,7 @@
                 <li>
                   When the video ends, <b>do not</b> click on any other video. Place your mouse on the video, control buttons will then appear.
                 </li>
+                <li>Please, consider the video description when filling the blank.</li>
               </ul>
           </div>
             
@@ -419,11 +437,22 @@
 
           <hr>
 
-          <div class="video-support" id="video-support-${0, i}">
-            <h4>Locate the video support for your question and answer:</h4>
+          <div class="video-evidence" id="video-evidence-${0, i}">
+            <h4>Locate the video evidence to support your question and answer:</h4>
             <div class="video">
               <video width="50%" src=${0,video} id="refer-video-${0, i}" controls> </video>
             </div>
+
+            <ur class="annotate-instructions">
+              <li> Provide both the <b>start point and end point</b> of your video evidence;</li>
+              <li> You could use your mouse or &larr;/&rarr; key to <b> click or drag the process bars </b> of start point and end point.</li>
+              <li> The end point should be <b> greater than zero. </b> </li>
+              <li> The end point should be greater or equal to the start point.</li>
+              <li> The video evidence clip (the time gap between the start point and the end point) should be as short as possible.</li>
+            </ul>
+
+            <br>
+            
             <label for="start-bar-${0, i}">Start point: </label> <input type="range" class="video-progress-bar" name="start-bar-${0, i}" id="start-bar-${0, i}"
             ${isExample? "disabled value=20.56" :"value=0"} max="100" step="0.08"><br>
             <label for="end-bar-${0, i}">End &nbsp;point: </label> <input type="range" class="video-progress-bar" name="end-bar-${0, i}" id="end-bar-${0, i}" 
@@ -493,7 +522,7 @@
   function videoCompleted(i) {
     const $startbar_value = parseFloat(document.getElementById(`start-bar-${0, i}`).value);
     const $endbar_value = parseFloat(document.getElementById(`end-bar-${0, i}`).value);
-    return ($endbar_value > 0) && ($startbar_value < $endbar_value);
+    return ($endbar_value > 0) && ($startbar_value <= $endbar_value);
   }
 
   function blankCompleted(i) {
@@ -510,7 +539,7 @@
       const message4 = "Please provide your correct answer.";
       const message5 = "Please select your confidence level for your correct answer."
       const message6 = "Please provide at least one potential incorrect answer."
-      const message7 = "Please finish the video support part.\nMake sure the end time > 0.\nMake sure the end time >= the start time.";
+      const message7 = "Please finish the video evidence part.\nMake sure the end time > 0.\nMake sure the end time >= the start time.";
       document.getElementById(`question-input-${0, i}`).setCustomValidity(questionCompleted(i)? "" : message1);
       document.getElementById(`question-based-scene-${0, i}`).setCustomValidity(basedCompleted(i)? "" : message2);
       document.getElementById(`how-motion-${0, i}`).setCustomValidity(howCompleted(i)? "" : message3);

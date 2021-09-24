@@ -164,71 +164,62 @@
 </style>
 
 <div id="container" class="container">
-  <h1 id="top">Video Question answering</h1>
+  <h1 id="top">Video Question Answering</h1>
 
   <details id="instructions">
     <summary>Instructions</summary>
 
     <div id="instructions-inner">
 
-      <p>We need help answering (&quot;filling&quot;) these blanks based on video content (including the audio).</p>
+      <p>We need help for this Video QA task based on video content (including the audio).
+      </p>
 
       <h3>Basic Instructions</h3>
 
       <ul>
-        <li>You need to provide questions with regard to the content in videos. Please utilize the description for the video if description exists.
+        <li>You need to provide questions with regard to the content in the videos. Please utilize the text description for the video if the description exists.
             
-        <li>You need to identify the source of your question (whether it is based on scene, audio, video description) and classify your questions.
+        <li>You need to identify the source of your question (whether it is based on the video scene, audio, or text description) and classify your questions.
         </li>
 
-        <li>You need to provide correct answer to the question you asked and at least one potential incorrect answers (related to the video content and the question you asked but is not correct)
+        <li>You need to provide correct answer to the question you asked.
         </li>
 
-        <li>You need to provide video evidences (video clips) to support your questions and answers.
+        <li>You need to provide video evidence (video clip) to support your question and answer.
         </li>
             
       </ul>
 
       <h3>How To Ask Your Question</h3>
 
-      Questions you ask should utilize the <b>professional terminologies</b> in the video description if possible.
+      Questions you ask should utilize the <b>professional terminologies</b> in the text description if possible.
 
       <ul>
         <li>An example of using terminology is as follows:</li>
         <iframe src="https://drive.google.com/file/d/1q9-aoCsKTzXL5asNNJ8wNaJDmob5LWrG/preview" width="640" height="480" allow="autoplay"></iframe>
         <ul>
-            <li><b>Video description:</b> US military <span class="example-answer">M1 Abrams tanks</span> ... </li>
+            <li><b>Text description:</b> US military <span class="example-answer">M1 Abrams tanks</span> ... </li>
             <li><b>Your Question:</b> What is the target of the <span class="example-answer">M1 Abrams tank</span> after it gets close to the river?</li>
         </ul>
 
       </ul>
 
-      <h3>How to identity Question Category</h3>
+      <h3>How to identity the Question Category</h3>
 
-      We have four basic categories: <b>Motion</b>, <b>Spatial Relationship</b>, <b>Temporal Relationship</b>, <b>Free Form</b>. Their definitions are as follows:
-
-      <ul>
-          <li><b>Motion:</b> Questions ask motion of certain object in the video. </li>
-          <li><b>Spatial Relationship:</b> Questions involve the spatial relationship of objects. Common patterns in this type include &quot;on the left of&quot;, &quot;next to&quot;.</li>
-          <li><b>Temporal Relationship:</b> Questions involve temporal information about the video. Common patterns in this type include &quot;before&quot;.</li>
-          <li><b>Free Form:</b> Other types of questions. You need to write a category yourself if you think your question is in this type. Possible subtypes of free form questions include: reasoning, number, object, time, location, others. </li>
-      </ul>
-
-      If your questions  fall into <b>multiple categories</b>, please <u>check all categories that apply</u>.
-      <p>Here are some events of questions under each category:</p>
+        We have some basic categories: <b>Motion, Spatial Relationship, Temporal Relationship, Reasoning, Number, Object, Time, Location, Other.</b>
+        <br>
+        If your questions fall into <b>multiple categories</b>, please <u>check all categories that apply</u>.
+      <p>Here are some questions under each category:</p>
       <ul>
           <li><b>Motion:</b> What are the group of soldiers <span class="example-answer">doing</span>?</li>
           <li><b>Spatial Relationship:</b> What is driving <span class="example-answer">beside</span> the motorcycle?</li>
           <li><b>Temporal Relationship:</b> What happens <span class="example-answer">before</span> the black smoke rises?</li>
-          <li><b>Free Form:</b>
-            <ul>
-              <li><b>Reasoning:</b> <span class="example-answer">What makes</span> changing between targets <span class="example-answer">possible</span> for the missile?</li>
-              <li><b>Number:</b> <span class="example-answer">How many</span> fighters are flying?</li>
-              <li><b>Object:</b> <span class="example-answer">What is the target</span> of the bullet?</li>
-              <li><b>Time:</b> <span class="example-answer">How long</span> can the missile fly?</li>
-              <li><b>Location:</b> <span class="example-answer">Where</span> is the tank?</li>
-              <li><b>Others:</b> What does the man require the warship to do?</li>
-            </ul></li>
+          <li><b>Reasoning:</b> <span class="example-answer">What makes</span> changing between targets <span class="example-answer">possible</span> for the missile?</li>
+          <li><b>Number:</b> <span class="example-answer">How many</span> fighters are flying?</li>
+          <li><b>Object:</b> <span class="example-answer">What is the target</span> of the bullet?</li>
+          <li><b>Time:</b> <span class="example-answer">How long</span> can the missile fly?</li>
+          <li><b>Location:</b> <span class="example-answer">Where</span> is the tank?</li>
+          <li><b>Other:</b> What does the man require the warship to do?</li>
       </ul>
 
       <h3>How to provide video evidence</h3>
@@ -237,21 +228,17 @@
         <li> You could use your mouse or &larr;/&rarr; key to click or drag the process bars of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
         <li> The end point should be greater than zero.</li>
         <li> The end point should be greater or equal to the start point.</li>
-        <li> The video evidence clip (the time gap between the start point and the end point) should be as short as possible.</li>
+        <li> The video evidence clip (the time gap between the start point and the end point) should be <span class="example-answer">as short as possible.</span></li>
       </ur>
 
       <h3>HIT Acceptance</h3>
 
       Your HIT will be accepted based on:
       <ul>
-          <li>How well your questions <u>related to the video content</u></li>
-          <li>Whether your questions <u>involve professional terms provided in the video description</u> if possible</li>
-          <li>How well your video evidences support your questions and answers.</li>
+          <li>How well your question <u>related to the video content</u></li>
+          <li>Whether your question <u>involves professional terms provided in the text description</u> if possible</li>
+          <li>How well your video evidence supports your question and answer.</li>
       </ul>
-
-      <h3>Bonuses</h3>
-
-      Need to be discussed.
 
       <h3>Example</h3>
       
@@ -334,7 +321,7 @@
         </br>
           <div class="video-relates">
             <ul class="description">
-                <big><b> Video Description </b></big>: ${0,description}
+                <big><b> Text Description </b></big>: ${0,description}
             </ul>
             <ul class="annotate-instructions">
                 <li>
@@ -348,7 +335,7 @@
                 <li>
                   When the video ends, <b>do not</b> click on any other video. Place your mouse on the video, control buttons will then appear.
                 </li>
-                <li>Please, consider the video description when filling the blank.</li>
+                <li>Please, consider the text description when filling the blank.</li>
               </ul>
           </div>
             
@@ -375,7 +362,7 @@
               <label for="question-based-audio-${0, i}">Audio </label>
               <input type="checkbox" name="question-based-${0, i}" id="question-based-video_description-${0, i}" 
               value="video_description"/ ${isExample? "disabled checked":""}>
-              <label for="question-based-video_description-${0, i}">Video description</label>
+              <label for="question-based-video_description-${0, i}">Text description</label>
             </div>
           </div>
 
@@ -386,20 +373,36 @@
             <br>
             <div>
               <input type="checkbox" name="how-${0, i}" id="how-motion-${0, i}" 
-              value="Motion related" ${isExample? "disabled":""}>
-              <label for="how-motion-${0, i}">Motion related</label>
+              value="Motion" ${isExample? "disabled":""}>
+              <label for="how-motion-${0, i}">Motion</label>
               <input type="checkbox" name="how-${0, i}" id="how-spatial-${0, i}" 
               value="Spatial relationship" ${isExample? "disabled":""}>
               <label for="how-spatial-${0, i}">Spatial relationship</label>
               <input type="checkbox" name="how-${0, i}" id="how-temporal-${0, i}" 
               value="Temporal relationship" ${isExample? "disabled":""}>
               <label for="how-temporal-${0, i}">Temporal relationship</label>
+              <input type="checkbox" name="how-${0, i}" id="how-reasoning-${0, i}" 
+              value="Reasoning" ${isExample? "disabled":""}>
+              <label for="how-reasoning-${0, i}">Reasoning</label>
+              <br>
+              <input type="checkbox" name="how-${0, i}" id="how-number-${0, i}" 
+              value="Number" ${isExample? "disabled":""}>
+              <label for="how-number-${0, i}">Number</label>
+              <input type="checkbox" name="how-${0, i}" id="how-object-${0, i}" 
+              value="Object" ${isExample? "disabled":""}>
+              <label for="how-object-${0, i}">Object</label>
+              <input type="checkbox" name="how-${0, i}" id="how-time-${0, i}" 
+              value="Time" ${isExample? "disabled":""}>
+              <label for="how-time-${0, i}">Time</label>
+              <input type="checkbox" name="how-${0, i}" id="how-location-${0, i}" 
+              value="Location" ${isExample? "disabled":""}>
+              <label for="how-location-${0, i}">Location</label>
               <input type="checkbox" name="how-${0, i}" id="how-other-${0, i}" 
-              value="Others" ${isExample? "checked disabled":""}>
-              <label for="how-other-${0, i}">Others</label>
+              value="Other" ${isExample? "checked disabled":""}>
+              <label for="how-other-${0, i}">Other</label>
             </div>
-            <textarea class="form-control" id="others-${0, i}" name="others-${0, i}" rows="1"
-                placeholder="If select 'Others', write down what type your question belongs to (N/A if cannot come up with any specific type)"
+            <textarea class="form-control" id="other-${0, i}" name="other-${0, i}" rows="1"
+                placeholder="If select 'Other', write down what type your question belongs to (N/A if cannot come up with any specific type)"
                 ${isExample? "disabled":""}>${isExample? "Direction":""}</textarea></br>
           </div>
           <hr>
@@ -418,21 +421,7 @@
               <input type="radio" name="confidence-${0, i}" id="confidence-low-${0, i}" 
               value="low" ${isExample? "disabled":""} />
               <label for="confidence-low-${0, i}">Low Confidence</label>
-            </div>
-            <br>
-            <h5>Please suggest at least one potential <b>incorrect answer</b>:</h5>
-            <font color="gray">Should be related to your question</font>
-            <textarea class="form-control" id="incorrect-answer1-${0, i}" name="incorrect-answer1-${0, i}" 
-              rows="1" placeholder="Incorrect Answer 1 (must related to your question.)" 
-              ${isExample? "disabled" :""}>${isExample? "Up":""}</textarea>
-            <br style="display: block;margin-bottom: 3px;font-size:3px;line-height: 3px;">
-            <textarea class="form-control" id="incorrect-answer2-${0, i}" name="incorrect-answer2-${0, i}" 
-              rows="1" placeholder="Incorrect Answer 2 (must related to your question.)" 
-              ${isExample? "disabled" :""}>${isExample? "Right":""}</textarea>
-            <br style="display: block;margin-bottom: 3px;font-size:3px;line-height: 3px;">
-            <textarea class="form-control" id="incorrect-answer3-${0, i}" name="incorrect-answer3-${0, i}" 
-              rows="1" placeholder="Incorrect Answer 3 (must related to your question.)" 
-              ${isExample? "disabled" :""}>${isExample? "Down":""}</textarea></br>
+            </div>    
           </div>
 
           <hr>
@@ -448,7 +437,7 @@
               <li> You could use your mouse or &larr;/&rarr; key to <b> click or drag the process bars </b> of start point and end point.</li>
               <li> The end point should be <b> greater than zero. </b> </li>
               <li> The end point should be greater or equal to the start point.</li>
-              <li> The video evidence clip (the time gap between the start point and the end point) should be as short as possible.</li>
+              <li> The video evidence clip (the time gap between the start point and the end point) should be <b>as short as possible.</b></li>
             </ul>
 
             <br>
@@ -511,14 +500,6 @@
     return $(`[name="confidence-${0,i}"]:checked`).length > 0;
   }
 
-  function incorreceCompleted(i) {
-    const i1_value = document.getElementById(`incorrect-answer1-${0,i}`).value;
-    const i2_value = document.getElementById(`incorrect-answer2-${0,i}`).value;
-    const i3_value = document.getElementById(`incorrect-answer3-${0,i}`).value;
-    return (i1_value != null && i1_value != "") || (i2_value != null && i2_value != "")
-      || (i3_value != null && i3_value != "");
-  }
-
   function videoCompleted(i) {
     const $startbar_value = parseFloat(document.getElementById(`start-bar-${0, i}`).value);
     const $endbar_value = parseFloat(document.getElementById(`end-bar-${0, i}`).value);
@@ -527,27 +508,25 @@
 
   function blankCompleted(i) {
     return  questionCompleted(i) && basedCompleted(i) && howCompleted(i) && correctansCompleted(i) &&
-      confidenceCompleted(i) && incorreceCompleted(i) && videoCompleted(i);
+      confidenceCompleted(i) && videoCompleted(i);
   }
 
   function checkValid() {
     const completed = videos.map((_, i) => {
-      const completed = blankCompleted(i);
+      const completi = blankCompleted(i);
       const message1 = "Please type into your question.";
       const message2 = "Please choose at least one option."
       const message3 = "Please choose at least one option.";
       const message4 = "Please provide your correct answer.";
       const message5 = "Please select your confidence level for your correct answer."
-      const message6 = "Please provide at least one potential incorrect answer."
-      const message7 = "Please finish the video evidence part.\nMake sure the end time > 0.\nMake sure the end time >= the start time.";
+      const message6 = "Please finish the video evidence part.\nMake sure the end time > 0.\nMake sure the end time >= the start time.";
       document.getElementById(`question-input-${0, i}`).setCustomValidity(questionCompleted(i)? "" : message1);
       document.getElementById(`question-based-scene-${0, i}`).setCustomValidity(basedCompleted(i)? "" : message2);
       document.getElementById(`how-motion-${0, i}`).setCustomValidity(howCompleted(i)? "" : message3);
       document.getElementById(`correct-answer-${0, i}`).setCustomValidity(correctansCompleted(i)? "" : message4);
       document.getElementById(`confidence-high-${0,i}`).setCustomValidity(confidenceCompleted(i)? "" : message5);
-      document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity(incorreceCompleted(i)? "" : message6);
-      document.getElementById(`start-bar-${0, i}`).setCustomValidity(videoCompleted(i)? "" : message7);
-      return completed;
+      document.getElementById(`start-bar-${0, i}`).setCustomValidity(videoCompleted(i)? "" : message6);
+      return completi;
     }).every(Boolean);
 
     document.getElementsByTagName("form")[0].reportValidity();
@@ -566,16 +545,15 @@
 
   function setUpInputListeners() 
   {
-    videos.forEach((_, i) => 
-    {
-      Array.from($(`[name="how-${0, i}"]`)).forEach(rease => 
-      { $(rease).click(e => 
+    videos.forEach((_, i) => {
+      $(`[name="question-input-${0, i}"]`).keyup(e => 
         {
-          document.getElementById(`how-motion-${0, i}`).setCustomValidity("");
-          $(document.getElementById(`how-motion-${0, i}`)).removeClass("is-invalid");
+          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
+            document.getElementById(`question-input-${0, i}`).setCustomValidity("");
+            $(document.getElementById(`question-input-${0, i}`)).removeClass("is-invalid");
+          }
           checkValidationAlerts(i);
         });
-      });
 
       Array.from($(`[name="question-based-${0, i}"]`)).forEach(rease => 
       { $(rease).click(e => 
@@ -586,27 +564,15 @@
         });
       });
 
-      Array.from($(`[name="confidence-${0, i}"]`)).forEach(rease => 
+      Array.from($(`[name="how-${0, i}"]`)).forEach(rease => 
       { $(rease).click(e => 
         {
-          document.getElementById(`confidence-high-${0, i}`).setCustomValidity("");
-          $(document.getElementById(`confidence-high-${0, i}`)).removeClass("is-invalid");
+          document.getElementById(`how-motion-${0, i}`).setCustomValidity("");
+          $(document.getElementById(`how-motion-${0, i}`)).removeClass("is-invalid");
           checkValidationAlerts(i);
         });
       });
 
-      checkValidationAlerts(i);
-    });
-    videos.forEach((_, i) => {
-      $(`[name="question-input-${0, i}"]`).keyup(e => 
-        {
-          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
-            document.getElementById(`question-input-${0, i}`).setCustomValidity("");
-            $(document.getElementById(`question-input-${0, i}`)).removeClass("is-invalid");
-          }
-          checkValidationAlerts(i);
-        });
-      
       $(`[name="correct-answer-${0, i}"]`).keyup(e => 
         {
           if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
@@ -615,30 +581,15 @@
           }
           checkValidationAlerts(i);
         });
-      $(`[name="incorrect-answer1-${0,i}"]`).keyup(e => 
+
+      Array.from($(`[name="confidence-${0, i}"]`)).forEach(rease => 
+      { $(rease).click(e => 
         {
-          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
-            document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity("");
-            $(document.getElementById(`incorrect-answer1-${0,i}`)).removeClass("is-invalid");
-          }
+          document.getElementById(`confidence-high-${0, i}`).setCustomValidity("");
+          $(document.getElementById(`confidence-high-${0, i}`)).removeClass("is-invalid");
           checkValidationAlerts(i);
         });
-      $(`[name="incorrect-answer2-${0,i}"]`).keyup(e => 
-        {
-          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
-            document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity("");
-            $(document.getElementById(`incorrect-answer1-${0,i}`)).removeClass("is-invalid");
-          }
-          checkValidationAlerts(i);
-        });
-      $(`[name="incorrect-answer3-${0,i}"]`).keyup(e => 
-        {
-          if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
-            document.getElementById(`incorrect-answer1-${0,i}`).setCustomValidity("");
-            $(document.getElementById(`incorrect-answer1-${0,i}`)).removeClass("is-invalid");
-          }
-          checkValidationAlerts(i);
-        });
+      });
 
       checkValidationAlerts(i);
     });

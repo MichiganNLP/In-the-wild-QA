@@ -228,7 +228,7 @@
         <li> You need to provide at least one and up to five video evidences for one question.</li>
         <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
         <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
-        <li> For each video evidence clip ,the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
+        <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
         <li> The video evidence clips (the time gap between the start point and the end point) should be <span class="example-answer">as short as possible.</span></li>
       </ur>
 
@@ -443,7 +443,7 @@
               <li> You need to provide at least one and up to five video evidences for one question.</li>
               <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
               <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point.</li>
-              <li> For each video evidence clip ,the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
+              <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
               <li> The video evidence clips (the time gap between the start point and the end point) should be <b>as short as possible.</b></li>
             </ur>
 
@@ -659,7 +659,7 @@
 
   function setUpVideoListeners() {
     videos.forEach((_, i) => {
-      return Array.from($(`[name="video-bar-${0, i}"]`)).map((eveele,) => {
+      Array.from($(`[name="video-bar-${0, i}"]`)).map((eveele,) => {
         const k = eveele.id.split("-")[3];
         const $videoi = document.getElementById(`refer-video-${0, i}`);
         const $startbari = document.getElementById(`start-bar-${0, i}-${0, k}`);

@@ -177,20 +177,24 @@
       <h3>Basic Instructions</h3>
 
       <ul>
-        <li>You need to provide questions with regard to the content in the videos. Please utilize the text description for the video if the description exists.
-            
-        <li>You need to identify the source of your question (whether it is based on the video scene, audio, or text description) and classify your questions.
+        <li>You will need to provide questions with regard to the content in the videos. Please also look at the text description for the video if the description exists.</li>
+        <li>You will need to provide at least one question for each video, <b>the more the better</b>.
         </li>
-
-        <li>You need to provide correct answer to the question you asked.
+        <li>You will need to identify the source of your question (whether it is based on the scene, audio, or text description) and classify your question accordingly.
         </li>
-
-        <li>You need to provide video evidence (video clip) to support your question and answer.
+        <li>You will need to provide the correct answer to the question you asked, as supported by the content in the video.
         </li>
-            
+        <li>You will need to provide video evidence (video clip) to support your question and answer.
+        </li>
       </ul>
 
       <h3>How To Ask Your Question</h3>
+
+      For each video, after you finish one question, you could click the <u>Add one more question for this video</u> button to 
+      continue to provide another question for this video. On the contrary, if you want to delete one question, you could click 
+      the <u>Delete The Question</u> button.
+
+    </br>
 
       Questions you ask should utilize the <b>professional terminologies</b> in the text description if possible.
 
@@ -224,21 +228,12 @@
 
       <h3>How to provide video evidence</h3>
       <ur>
-        <li> You need to provide both the <b>start point and end point</b> of your video evidence;</li>
-        <li> You could use your mouse or &larr;/&rarr; key to click or drag the process bars of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
-        <li> The end point should be greater than zero.</li>
-        <li> The end point should be greater or equal to the start point.</li>
-        <li> The video evidence clip (the time gap between the start point and the end point) should be <span class="example-answer">as short as possible.</span></li>
+        <li> You need to provide at least one and up to five video evidences for one question.</li>
+        <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
+        <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
+        <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
+        <li> The video evidence clips (the time gap between the start point and the end point) should be <span class="example-answer">as short as possible.</span></li>
       </ur>
-
-      <h3>HIT Acceptance</h3>
-
-      Your HIT will be accepted based on:
-      <ul>
-          <li>How well your question <u>related to the video content</u></li>
-          <li>Whether your question <u>involves professional terms provided in the text description</u> if possible</li>
-          <li>How well your video evidence supports your question and answer.</li>
-      </ul>
 
       <h3>Example</h3>
       
@@ -314,7 +309,7 @@
   function createInstanceElement(i, isExample, title, video, description) {
     return $(`
         <div class="instance" id="instance-${0, i}">
-          <h2 class="instance-title">${0, title}</h2>
+          <b><h1 class="instance-title">${0, title}</h1></b>
           <div class="video" id="video-${0, i}">
             <video width="65%" src=${0,video} controls> </video>
           </div>
@@ -326,7 +321,7 @@
             <ul class="annotate-instructions">
                 <li>
                   Please carefully read the
-                <a href="#instructions">instructions</a> before performing the task.</font>
+                <a href="#instructions">instructions</a> before performing the task.
                 </li>
                 <li>
                   Watch this video while you listen to its <b><u>audio</u></b> (you
@@ -335,7 +330,7 @@
                 <li>
                   When the video ends, <b>do not</b> click on any other video. Place your mouse on the video, control buttons will then appear.
                 </li>
-                <li>Please, consider the text description when filling the blank.</li>
+                <li>In addition to the video, please also consider the text description when performing the task.</li>
               </ul>
           </div>
             
@@ -353,7 +348,7 @@
           ${j==0? "":"</br><hr style=\"border: 2px dashed #cee3e9;\">"}
 
           ${ isDeletable?`<button type="button" class="btn btn-danger" 
-          id="delete-question-${0,i}-${0,j}" ${isExample? "disabled":""} > Delete This Question </button>`:""}
+          id="delete-question-${0,i}-${0,j}" ${isExample? "disabled":""} > click here to <u>Delete</u> This Question </button>`:""}
 
           <h3> Video${isExample? "-Exaple":`-${0,i}`} Question-${0,j+1} </h3>
           
@@ -368,7 +363,7 @@
           <hr>
 
           <div>
-            <h4>Which one is your question based on: (Check all that apply):</h4>
+            <h4>What is your question based on: (Check all that apply):</h4>
             <br>
             <div>
               <input type="checkbox" name="question-based-${0, i}-${0,j}" id="question-based-scene-${0, i}-${0,j}" 
@@ -429,62 +424,123 @@
              <textarea class="form-control" id="correct-answer-${0,i}-${0,j}" name="correct-answer-${0,i}-${0,j}" 
               rows="1" placeholder="Correct Answer" 
               ${isExample? "disabled" :""}>${isExample? "Left":""}</textarea></br>
-            <h5>Please suggest how confident you are with your correct answer:</h5>
+            <h5>Please suggest how confident you are with your answer:</h5>
             <br>
             <div>
-              <input type="radio" name="confidence-${0,i}-${0,j}" id="confidence-high-${0,i}-${0,j}" 
+              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-veryhigh-${0, i}-${0, j}" 
+              value="very_high" ${isExample? "disabled":""} />
+              <label for="confidence-veryhigh-${0, i}-${0, j}">Very High Confidence</label>
+              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-high-${0, i}-${0, j}" 
               value="high" ${isExample? "checked disabled":""} />
-              <label for="confidence-high-${0,i}-${0,j}">High Confidence</label>
-              <input type="radio" name="confidence-${0,i}-${0,j}" id="confidence-low-${0,i}-${0,j}" 
+              <label for="confidence-high-${0, i}-${0, j}">High Confidence</label>
+              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-moderate-${0, i}-${0, j}" 
+              value="moderate" ${isExample? "disabled":""} />
+              <label for="confidence-moderate-${0, i}-${0, j}">Moderate Confidence</label>
+              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-low-${0, i}-${0, j}" 
               value="low" ${isExample? "disabled":""} />
-              <label for="confidence-low-${0,i}-${0,j}">Low Confidence</label>
-            </div>    
+              <label for="confidence-low-${0, i}-${0, j}">Low Confidence</label>
+              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-verylow-${0, i}-${0, j}" 
+              value="very_low" ${isExample? "disabled":""} />
+              <label for="confidence-verylow-${0, i}-${0, j}">Very Low Confidence</label>
+            </div>
           </div>
 
           <hr>
 
           <div class="video-evidence" id="video-evidence-${0,i}-${0,j}">
-            <h4>Locate the video evidence to support your question and answer:</h4>
-            <div class="video">
-              <video width="50%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
-            </div>
-
+            <h4>Locate up to five video evidences to support your question and answer:</h4>
+            <video width="50%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
             <ur class="annotate-instructions">
-              <li> Provide both the <b>start point and end point</b> of your video evidence;</li>
-              <li> You could use your mouse or &larr;/&rarr; key to <b> click or drag the process bars </b> of start point and end point.</li>
-              <li> The end point should be <b> greater than zero. </b> </li>
-              <li> The end point should be greater or equal to the start point.</li>
-              <li> The video evidence clip (the time gap between the start point and the end point) should be <b>as short as possible.</b></li>
-            </ul>
+              <li> You need to provide at least one and up to five video evidences for one question.</li>
+              <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
+              <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point.</li>
+              <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
+              <li> The video evidence clips (the time gap between the start point and the end point) should be <b>as short as possible.</b></li>
+            </ur>
 
-            <br>
+            <div id="video-bars-${0,i}-${0,j}"></div>
             
-            <label for="start-bar-${0,i}-${0,j}">Start point: </label> <input type="range" class="video-progress-bar" name="start-bar-${0,i}-${0,j}" id="start-bar-${0,i}-${0,j}"
-            ${isExample? "disabled value=20.56" :"value=0"} max="100" step="0.08"><br>
-            <label for="end-bar-${0,i}-${0,j}">End &nbsp;point: </label> <input type="range" class="video-progress-bar" name="end-bar-${0,i}-${0,j}" id="end-bar-${0,i}-${0,j}" 
-            ${isExample? "disabled value=20.96" :"value=0"} max="100" step="0.08">
-
           </div>
           <hr>
 
           <div class="alert alert-warning alert-answer" id="alert-${0,i}-${0,j}"></div></br>
 
-         <button type="button" class="btn btn-info" id="create-question-${0,i}-${0,j}" ${isExample? "disabled":""} >
-                                Add one more question for this video</button>
+         <button type="button" name="create-question-${0,i}" class="btn btn-info" id="create-question-${0,i}-${0,j}" ${isExample? "disabled":""} >
+          click here to <font size="4"><b>Add one more<b></font> question for this video</button>
         </div>`
     )
+  }
+
+  function createBarElement(i, j, k, isExample, isDeletable, isAddable){
+    return $(`
+    <div class="video-bar" name="video-bar-${0, i}-${0, j}" id="video-bar-${0, i}-${0, j}-${0, k}">
+      ${isDeletable? "<hr>":""}
+
+      <label for="start-bar-${0, i}-${0, j}-${0, k}">Start point: </label> <input type="range" class="video-progress-bar" name="start-bar-${0, i}-${0, j}-${0, k}" id="start-bar-${0, i}-${0, j}-${0, k}"
+        ${isExample? "disabled value=20.56" :"value=0"} max="100" step="0.08"><br>
+      <label for="end-bar-${0, i}-${0, j}-${0, k}">End &nbsp;point: </label> <input type="range" class="video-progress-bar" name="end-bar-${0, i}-${0, j}-${0, k}" id="end-bar-${0, i}-${0, j}-${0, k}" 
+        ${isExample? "disabled value=20.96" :"value=0"} max="100" step="0.08"><br>
+      
+      ${ isDeletable?`<button type="button" class="btn btn-danger" 
+        name="delete-bar-${0,i}-${0, j}" id="delete-bar-${0,i}-${0, j}-${0,k}" style=" height:30px; padding-top:4px;" ${isExample? "disabled":""} > Click here to <u>Delete</u> this video evidence</button>`:""}
+      ${ isAddable?`<button type="button" class="btn btn-success"
+        name="create-bar-${0,i}-${0, j}" id="create-bar-${0,i}-${0, j}-${0,k}" style=" height:30px; padding-top:4px;" ${isExample? "disabled":""} > Click here to <font size="3"><b>Add one more</b></font> video evidence</button>`:""}
+    </div>
+    `);
+  }
+
+  function insertBarElement(i, j, k, isExample){
+    const isDeletable = k > 0;
+    const isAddable = Array.from($(`[name="video-bar-${0, i}-${0, j}"]`)).length <= 3;
+    createBarElement(i, j, k, isExample, isDeletable, isAddable).appendTo(`#video-bars-${0, i}-${0, j}`);
+    $(`#create-bar-${0, i}-${0, j}-${0,k}`).click(() => {
+      const $videobarsarray = Array.from($(`[name="video-bar-${0, i}-${0, j}"]`));
+      insertBarElement(i,j,parseInt($videobarsarray[$videobarsarray.length-1].id.split("-")[4]) + 1, isExample);
+      document.getElementById(`create-bar-${0, i}-${0, j}-${0,k}`).disabled = true;
+      checkValidationAlerts(i,j);
+      });
+    $(`#delete-bar-${0, i}-${0, j}-${0, k}`).click(() => {
+      if (confirm(`Do you really want to delete this video evidence?`)==true){
+        const $createbarsarray = Array.from($(`[name="create-bar-${0, i}-${0, j}"]`));
+        if($createbarsarray[$createbarsarray.length-1].id.split("-")[4] == k){ // delete last addable bar
+          $createbarsarray[$createbarsarray.length-2].disabled = false;
+        }
+        else{
+          if($createbarsarray[$createbarsarray.length-1].disabled == true){ // activate last addable bar
+            $createbarsarray[$createbarsarray.length-1].disabled = false;
+          }
+        }
+
+        const obj =  document.getElementById(`video-bar-${0, i}-${0, j}-${0,k}`);
+        const objparent = obj.parentNode;
+        objparent.removeChild(obj);
+      }
+      checkValidationAlerts(i,j);
+    });
+    setUpVideoListeners();
   }
 
   function insertQuestionElement(i, j, isExample, video){
     const isDeletable = j > 0;
     createQuestionElement(i, j, isExample, isDeletable, video).appendTo(`#inner-questions-${0,i}`);
+    insertBarElement(i, j, 0, isExample);
     $(`#create-question-${0,i}-${0,j}`).click(() => {
-      insertQuestionElement(i, j + 1, isExample, video);
+      const $questionsarray = Array.from($(`[name="inner-question-${0,i}"]`));
+      insertQuestionElement(i, parseInt($questionsarray[$questionsarray.length-1].id.split("-")[3]) + 1, isExample, video);
       document.getElementById(`create-question-${0,i}-${0,j}`).disabled = true;
       });
     $(`#delete-question-${0,i}-${0,j}`).click(() => {
       if (confirm(`Do you really want to delete Video-${0,i} Question-${0,j-1} ?`)==true){
-        document.getElementById(`create-question-${0,i}-${0,j-1}`).disabled = false;
+        const $createquestionsarray = Array.from($(`[name="create-question-${0,i}"]`));
+        if($createquestionsarray[$createquestionsarray.length-1].id.split("-")[3] == j){ // delete last addable question
+          $createquestionsarray[$createquestionsarray.length-2].disabled = false;
+        }
+        else{
+          if($createquestionsarray[$createquestionsarray.length-1].disabled == true){ // activate last addable question
+            $createquestionsarray[$createquestionsarray.length-1].disabled = false;
+          }
+        }
+
         const obj =  document.getElementById(`inner-question-${0,i}-${0,j}`);
         const objparent = obj.parentNode;
         objparent.removeChild(obj);
@@ -531,19 +587,27 @@
     return $(`[name="confidence-${0,i}-${0,j}"]:checked`).length > 0;
   }
 
-  function evidenceCompleted(i,j) {
-    const $startbar_value = parseFloat(document.getElementById(`start-bar-${0,i}-${0,j}`).value);
-    const $endbar_value = parseFloat(document.getElementById(`end-bar-${0,i}-${0,j}`).value);
+  function evidenceCompleted(i,j,k) {
+    const $startbar_value = parseFloat(document.getElementById(`start-bar-${0, i}-${0, j}-${0, k}`).value);
+    const $endbar_value = parseFloat(document.getElementById(`end-bar-${0, i}-${0, j}-${0, k}`).value);
     return ($endbar_value > 0) && ($startbar_value <= $endbar_value);
+  }
+
+  function evidencesCompleted(i,j) {
+    return Array.from($(`[name="video-bar-${0, i}-${0, j}"]`)).map((eveele,) => {
+      const k = eveele.id.split("-")[4];
+      return evidenceCompleted(i,j,k);
+    }).every(Boolean);
   }
 
   function blankCompleted(i,j) {
     return  questionCompleted(i,j) && basedCompleted(i,j) && howCompleted(i,j) && correctansCompleted(i,j) &&
-      confidenceCompleted(i,j) && evidenceCompleted(i,j);
+      confidenceCompleted(i,j) && evidencesCompleted(i,j);
   }
 
   function videoCompleted(i) {
-    return Array.from($(`[name="inner-question-${0, i}"]`)).map((_,j) => {
+    return Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
+      const j = queele.id.split("-")[3];
       return blankCompleted(i,j);
     }).every(Boolean);
   }
@@ -551,7 +615,8 @@
   function checkValid() {
     const completed = videos.map((_, i) => {
       const completi = videoCompleted(i);
-      Array.from($(`[name="inner-question-${0, i}"]`)).map((aaa,j) => {
+      Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
+        const j = queele.id.split("-")[3];
         const message1 = "Please type into your question.";
         const message2 = "Please choose at least one option."
         const message3 = "Please choose at least one option.";
@@ -563,11 +628,13 @@
         document.getElementById(`how-motion-${0,i}-${0,j}`).setCustomValidity(howCompleted(i,j)? "" : message3);
         document.getElementById(`correct-answer-${0,i}-${0,j}`).setCustomValidity(correctansCompleted(i,j)? "" : message4);
         document.getElementById(`confidence-high-${0,i}-${0,j}`).setCustomValidity(confidenceCompleted(i,j)? "" : message5);
-        document.getElementById(`start-bar-${0,i}-${0,j}`).setCustomValidity(evidenceCompleted(i,j)? "" : message6);
+        Array.from($(`[name="video-bar-${0, i}-${0, j}"]`)).map((eveele,) => {
+          const k = eveele.id.split("-")[4];
+          document.getElementById(`start-bar-${0, i}-${0, j}-${0, k}`).setCustomValidity(evidenceCompleted(i, j, k)? "" : message6);
+        });
       });
       return completi;
     }).every(Boolean);
-
 
     document.getElementsByTagName("form")[0].reportValidity();
 
@@ -586,7 +653,8 @@
   function setUpInputListeners() 
   {
     videos.forEach((_, i) => {
-      Array.from($(`[name="inner-question-${0, i}"]`)).map((_,j) => {
+      Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
+        const j = queele.id.split("-")[3];
         $(`[name="question-input-${0,i}-${0, j}"]`).keyup(e => 
           {
             if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
@@ -639,57 +707,61 @@
 
   function setUpVideoListeners() {
     videos.forEach((_, i) => {
-      Array.from($(`[name="inner-question-${0, i}"]`)).map((_,j) => {
-        const $videoi = document.getElementById(`refer-video-${0, i}-${0, j}`);
-        const $startbari = document.getElementById(`start-bar-${0, i}-${0, j}`);
-        const $endbari = document.getElementById(`end-bar-${0, i}-${0, j}`);
+      Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
+        const j = queele.id.split("-")[3];
+        Array.from($(`[name="video-bar-${0, i}-${0, j}"]`)).map((eveele,) => {
+          const k = eveele.id.split("-")[4];
+          const $videoi = document.getElementById(`refer-video-${0, i}-${0, j}`);
+          const $startbari = document.getElementById(`start-bar-${0, i}-${0, j}-${0, k}`);
+          const $endbari = document.getElementById(`end-bar-${0, i}-${0, j}-${0, k}`);
 
-        $($startbari).mousedown(e =>{
-          $videoi.pause();
-          $startbari.setCustomValidity("");
-          $($startbari).removeClass("is-invalid");
-          $startbari.onmousemove=function(){
-            $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
-          }
-          $startbari.onmouseup=function(){
-            $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
-            checkValidationAlerts(i,j);
-            $startbari.onmouseup=null;
-            $startbari.onmousemove=null;
-          }
-          checkValidationAlerts(i,j);
-        });
-        $($startbari).keydown(e => {
-          if (e.keyCode === 37 || e.keyCode === 39){
-            $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
+          $($startbari).mousedown(e =>{
+            $videoi.pause();
             $startbari.setCustomValidity("");
             $($startbari).removeClass("is-invalid");
-          }
-          checkValidationAlerts(i,j);
-        });
+            $startbari.onmousemove=function(){
+              $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
+            }
+            $startbari.onmouseup=function(){
+              $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
+              checkValidationAlerts(i,j);
+              $startbari.onmouseup=null;
+              $startbari.onmousemove=null;
+            }
+            checkValidationAlerts(i,j);
+          });
+          $($startbari).keydown(e => {
+            if (e.keyCode === 37 || e.keyCode === 39){
+              $videoi.currentTime = parseFloat($startbari.value) / 100 * parseFloat($videoi.duration);
+              $startbari.setCustomValidity("");
+              $($startbari).removeClass("is-invalid");
+            }
+            checkValidationAlerts(i,j);
+          });
         
-        $($endbari).mousedown(e =>{
-          $videoi.pause();
-          $startbari.setCustomValidity("");
-          $($startbari).removeClass("is-invalid");
-          $endbari.onmousemove=function(){
-            $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
-          }
-          $endbari.onmouseup=function(){
-            $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
-            checkValidationAlerts(i,j);
-            $endbari.onmousemove=null;
-            $endbari.onmouseup=null;
-          }
-          checkValidationAlerts(i,j);
-        });
-        $($endbari).keydown(e => {
-          if (e.keyCode === 37 || e.keyCode === 39){
-            $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
+          $($endbari).mousedown(e =>{
+            $videoi.pause();
             $startbari.setCustomValidity("");
             $($startbari).removeClass("is-invalid");
-          }
-          checkValidationAlerts(i,j);
+            $endbari.onmousemove=function(){
+              $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
+            }
+            $endbari.onmouseup=function(){
+              $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
+              checkValidationAlerts(i,j);
+              $endbari.onmousemove=null;
+              $endbari.onmouseup=null;
+            }
+            checkValidationAlerts(i,j);
+          });
+          $($endbari).keydown(e => {
+            if (e.keyCode === 37 || e.keyCode === 39){
+              $videoi.currentTime = parseFloat($endbari.value) / 100 * parseFloat($videoi.duration);
+              $startbari.setCustomValidity("");
+              $($startbari).removeClass("is-invalid");
+            }
+            checkValidationAlerts(i,j);
+          });
         });
       });
     });

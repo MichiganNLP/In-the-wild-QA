@@ -164,71 +164,71 @@
 </style>
 
 <div id="container" class="container">
-  <h1 id="top">Video Question Answering</h1>
+  <h1 id="top">Video Description</h1>
 
   <details id="instructions">
     <summary>Instructions</summary>
 
     <div id="instructions-inner">
 
-      <p>We need help for this Video QA task based on video content (including the audio).
+      <p>We need help for this Video Description task based on video content (including the audio).
       </p>
 
       <h3>Basic Instructions</h3>
 
       <ul>
-        <li>You will need to provide questions with regard to the content in the videos. Please also look at the text description for the video if the description exists.</li>
-        <li>You will need to provide at least one question for each video, <b>the more the better</b>.
+        <li>You will need to provide video descriptions with regard to the content in the videos. Please also look at the text description for the video if the description exists.</li>
+        <li>You will need to provide at least one description for each video, <b>the more the better</b>.
         </li>
-        <li>You will need to identify the source of your question (whether it is based on the scene, audio, or text description) and classify your question accordingly.
+        <li>You will need to identify the source of your description (whether it is based on the scene, audio, or text description) and classify your description accordingly.
         </li>
-        <li>You will need to provide the correct answer to the question you asked, as supported by the content in the video.
-        </li>
-        <li>You will need to provide video evidence (video clip) to support your question and answer.
+        <li>You will need to provide video evidence (video clip) to support your description.
         </li>
       </ul>
 
-      <h3>How To Ask Your Question</h3>
+      <h3>How To Provide Video Description</h3>
 
-      For each video, after you finish one question, you could click the <u>Add one more question for this video</u> button to 
-      continue to provide another question for this video. On the contrary, if you want to delete one question, you could click 
-      the <u>Delete this Question</u> button.
+      "Video Description" means one event happens in the video.
+    </br>
+      For each video, after you finish one description, you could click the <u>Add one more description for this video</u> button to 
+      continue to provide another description for this video. On the contrary, if you want to delete one description, you could click 
+      the <u>Delete this Description</u> button.
 
     </br>
 
-      Questions you ask should utilize the <b>professional terminologies</b> in the text description if possible.
+      Descriptions you provide should happen in video, and you should utilize the <b>professional terminologies</b> in the text description if possible.
 
       <ul>
         <li>An example of using terminology is as follows:</li>
         <iframe src="https://drive.google.com/file/d/1q9-aoCsKTzXL5asNNJ8wNaJDmob5LWrG/preview" width="640" height="480" allow="autoplay"></iframe>
         <ul>
             <li><b>Text description:</b> US military <span class="example-answer">M1 Abrams tanks</span> ... </li>
-            <li><b>Your Question:</b> What is the target of the <span class="example-answer">M1 Abrams tank</span> after it gets close to the river?</li>
+            <li><b>Description provided:</b> The mission of the <span class="example-answer">M1 Abrams tank</span> is to cross the bridge.</li>
         </ul>
 
       </ul>
 
-      <h3>How to identity the Question Category</h3>
+      <h3>How to identity the Description Category</h3>
 
         We have some basic categories: <b>Motion, Spatial Relationship, Temporal Relationship, Reasoning, Number, Object, Time, Location, Other.</b>
         <br>
-        If your questions fall into <b>multiple categories</b>, please <u>check all categories that apply</u>.
-      <p>Here are some questions under each category:</p>
+        If your descriptions fall into <b>multiple categories</b>, please <u>check all categories that apply</u>.
+      <p>Here are some descriptions under each category:</p>
       <ul>
-          <li><b>Motion:</b> What are the group of soldiers <span class="example-answer">doing</span>?</li>
-          <li><b>Spatial Relationship:</b> What is driving <span class="example-answer">beside</span> the motorcycle?</li>
-          <li><b>Temporal Relationship:</b> What happens <span class="example-answer">before</span> the black smoke rises?</li>
-          <li><b>Reasoning:</b> <span class="example-answer">What makes</span> changing between targets <span class="example-answer">possible</span> for the missile?</li>
-          <li><b>Number:</b> <span class="example-answer">How many</span> fighters are flying?</li>
-          <li><b>Object:</b> <span class="example-answer">What is the target</span> of the bullet?</li>
-          <li><b>Time:</b> <span class="example-answer">How long</span> can the missile fly?</li>
-          <li><b>Location:</b> <span class="example-answer">Where</span> is the tank?</li>
-          <li><b>Other:</b> What does the man require the warship to do?</li>
+          <li><b>Motion:</b> The group of soldiers is <span class="example-answer">running</span>.</li>
+          <li><b>Spatial Relationship:</b> A truck is driving <span class="example-answer">beside</span> the motorcycle.</li>
+          <li><b>Temporal Relationship:</b> A man ignited the firewood <span class="example-answer">before</span> the black smoke rises.</li>
+          <li><b>Reasoning:</b> The tornado <span class="example-answer"> causes </span> the driver to change direction.</li>
+          <li><b>Number:</b> <span class="example-answer">Two</span> fighters are flying.</li>
+          <li><b>Object:</b> The target of the bullet is a <span class="example-answer">dummy</span>.</li>
+          <li><b>Time:</b> The missile can fly for <span class="example-answer">half an hour.</span> </li>
+          <li><b>Location:</b> The tank is <span class="example-answer"> in the pool</span>.</li>
+          <li><b>Other:</b> The man requires the warship to duck.</li>
       </ul>
 
       <h3>How to provide video evidence</h3>
       <ur>
-        <li> You need to provide at least one and up to five video evidences for one question.</li>
+        <li> You need to provide at least one and up to five video evidences for one description.</li>
         <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
         <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
         <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
@@ -348,22 +348,22 @@
           ${j==0? "":"</br><hr style=\"border: 2px dashed #cee3e9;\">"}
 
           ${ isDeletable?`<button type="button" class="btn btn-danger" 
-          id="delete-question-${0,i}-${0,j}" ${isExample? "disabled":""} > click here to <u>Delete</u> this Question </button>`:""}
+          id="delete-question-${0,i}-${0,j}" ${isExample? "disabled":""} > click here to <u>Delete</u> this Description </button>`:""}
 
-          <h3> Video${isExample? "-Example":`-${0,i}`} Question-${0,j+1} </h3>
+          <h3> Video${isExample? "-Example":`-${0,i}`} Description-${0,j+1} </h3>
           
           <br>
           <div class="form-group">
-            <h4>Your Question:</h4>
+            <h4>Your Video Description:</h4>
              <textarea class="form-control" id="question-input-${0, i}-${0,j}" name="question-input-${0, i}-${0,j}" 
-              rows="2" placeholder="Please type your question here" 
-              ${isExample? "disabled" :""}>${isExample? "Which direction does the landspout bend towards?":""}</textarea></br>
+              rows="2" placeholder="Please type your description here" 
+              ${isExample? "disabled" :""}>${isExample? "The landspout bends toward left.":""}</textarea></br>
           </div>
 
           <hr>
 
           <div>
-            <h4>What is your question based on: (Check all that apply):</h4>
+            <h4>What is your description based on: (Check all that apply):</h4>
             <br>
             <div>
               <input type="checkbox" name="question-based-${0, i}-${0,j}" id="question-based-scene-${0, i}-${0,j}" 
@@ -381,7 +381,7 @@
           <hr>
 
           <div>
-            <h4>How do you classify your question: (Check all that apply):</h4>
+            <h4>How do you classify your description: (Check all that apply):</h4>
             <br>
             <div>
               <input type="checkbox" name="how-${0, i}-${0,j}" id="how-motion-${0,i}-${0,j}" 
@@ -414,44 +414,17 @@
               <label for="how-other-${0,i}-${0,j}">Other</label>
             </div>
             <textarea class="form-control" id="other-${0,i}-${0,j}" name="other-${0,i}-${0,j}" rows="1"
-                placeholder="If select 'Other', write down what type your question belongs to (N/A if cannot come up with any specific type)"
+                placeholder="If select 'Other', write down what type your description belongs to (N/A if cannot come up with any specific type)"
                 ${isExample? "disabled":""}>${isExample? "Direction":""}</textarea></br>
-          </div>
-          <hr>
-
-          <div class="form-group">
-            <h4>Correct Answer:<h4>
-             <textarea class="form-control" id="correct-answer-${0,i}-${0,j}" name="correct-answer-${0,i}-${0,j}" 
-              rows="1" placeholder="Correct Answer" 
-              ${isExample? "disabled" :""}>${isExample? "Left":""}</textarea></br>
-            <h5>Please suggest how confident you are with your answer:</h5>
-            <br>
-            <div>
-              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-veryhigh-${0, i}-${0, j}" 
-              value="very_high" ${isExample? "disabled":""} />
-              <label for="confidence-veryhigh-${0, i}-${0, j}">Very High Confidence</label>
-              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-high-${0, i}-${0, j}" 
-              value="high" ${isExample? "checked disabled":""} />
-              <label for="confidence-high-${0, i}-${0, j}">High Confidence</label>
-              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-moderate-${0, i}-${0, j}" 
-              value="moderate" ${isExample? "disabled":""} />
-              <label for="confidence-moderate-${0, i}-${0, j}">Moderate Confidence</label>
-              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-low-${0, i}-${0, j}" 
-              value="low" ${isExample? "disabled":""} />
-              <label for="confidence-low-${0, i}-${0, j}">Low Confidence</label>
-              <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-verylow-${0, i}-${0, j}" 
-              value="very_low" ${isExample? "disabled":""} />
-              <label for="confidence-verylow-${0, i}-${0, j}">Very Low Confidence</label>
-            </div>
           </div>
 
           <hr>
 
           <div class="video-evidence" id="video-evidence-${0,i}-${0,j}">
-            <h4>Locate up to five video evidences to support your question and answer:</h4>
+            <h4>Locate up to five video evidences to support your description:</h4>
             <video width="50%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
             <ur class="annotate-instructions">
-              <li> You need to provide at least one and up to five video evidences for one question.</li>
+              <li> You need to provide at least one and up to five video evidences for one description.</li>
               <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
               <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point.</li>
               <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
@@ -466,7 +439,7 @@
           <div class="alert alert-warning alert-answer" id="alert-${0,i}-${0,j}"></div></br>
 
          <button type="button" name="create-question-${0,i}" class="btn btn-info" id="create-question-${0,i}-${0,j}" ${isExample? "disabled":""} >
-          click here to <font size="4"><b>Add one more<b></font> question for this video</button>
+          click here to <font size="4"><b>Add one more<b></font> description for this video</button>
         </div>`
     )
   }
@@ -578,15 +551,6 @@
     return $(`[name="how-${0,i}-${0,j}"]:checked`).length > 0;
   }
 
-  function correctansCompleted(i,j) {
-    const c_value = document.getElementById(`correct-answer-${0,i}-${0,j}`).value;
-    return c_value != null && c_value != "";
-  }
-
-  function confidenceCompleted(i,j) {
-    return $(`[name="confidence-${0,i}-${0,j}"]:checked`).length > 0;
-  }
-
   function evidenceCompleted(i,j,k) {
     const $startbar_value = parseFloat(document.getElementById(`start-bar-${0, i}-${0, j}-${0, k}`).value);
     const $endbar_value = parseFloat(document.getElementById(`end-bar-${0, i}-${0, j}-${0, k}`).value);
@@ -601,8 +565,7 @@
   }
 
   function blankCompleted(i,j) {
-    return  questionCompleted(i,j) && basedCompleted(i,j) && howCompleted(i,j) && correctansCompleted(i,j) &&
-      confidenceCompleted(i,j) && evidencesCompleted(i,j);
+    return  questionCompleted(i,j) && basedCompleted(i,j) && howCompleted(i,j) && evidencesCompleted(i,j);
   }
 
   function videoCompleted(i) {
@@ -617,17 +580,13 @@
       const completi = videoCompleted(i);
       Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
         const j = queele.id.split("-")[3];
-        const message1 = "Please type into your question.";
+        const message1 = "Please type into your description.";
         const message2 = "Please choose at least one option."
         const message3 = "Please choose at least one option.";
-        const message4 = "Please provide your correct answer.";
-        const message5 = "Please select your confidence level for your correct answer."
         const message6 = "Please finish the video evidence part.\nMake sure the end time > 0.\nMake sure the end time >= the start time.";
         document.getElementById(`question-input-${0,i}-${0,j}`).setCustomValidity(questionCompleted(i,j)? "" : message1);
         document.getElementById(`question-based-scene-${0,i}-${0,j}`).setCustomValidity(basedCompleted(i,j)? "" : message2);
         document.getElementById(`how-motion-${0,i}-${0,j}`).setCustomValidity(howCompleted(i,j)? "" : message3);
-        document.getElementById(`correct-answer-${0,i}-${0,j}`).setCustomValidity(correctansCompleted(i,j)? "" : message4);
-        document.getElementById(`confidence-high-${0,i}-${0,j}`).setCustomValidity(confidenceCompleted(i,j)? "" : message5);
         Array.from($(`[name="video-bar-${0, i}-${0, j}"]`)).map((eveele,) => {
           const k = eveele.id.split("-")[4];
           document.getElementById(`start-bar-${0, i}-${0, j}-${0, k}`).setCustomValidity(evidenceCompleted(i, j, k)? "" : message6);
@@ -678,24 +637,6 @@
           {
             document.getElementById(`how-motion-${0, i}-${0, j}`).setCustomValidity("");
             $(document.getElementById(`how-motion-${0, i}-${0, j}`)).removeClass("is-invalid");
-            checkValidationAlerts(i,j);
-          });
-        });
-
-        $(`[name="correct-answer-${0, i}-${0, j}"]`).keyup(e => 
-          {
-            if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
-              document.getElementById(`correct-answer-${0, i}-${0, j}`).setCustomValidity("");
-              $(document.getElementById(`correct-answer-${0, i}-${0, j}`)).removeClass("is-invalid");
-            }
-            checkValidationAlerts(i,j);
-          });
-
-        Array.from($(`[name="confidence-${0, i}-${0, j}"]`)).forEach(rease => 
-        { $(rease).click(e => 
-          {
-            document.getElementById(`confidence-high-${0, i}-${0, j}`).setCustomValidity("");
-            $(document.getElementById(`confidence-high-${0, i}-${0, j}`)).removeClass("is-invalid");
             checkValidationAlerts(i,j);
           });
         });

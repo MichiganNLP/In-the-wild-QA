@@ -177,22 +177,50 @@
       <h3>Basic Instructions</h3>
 
       <ul>
-        <li>You will need to provide questions with regard to the content in the videos.</li>
-        <li>You will need to provide at least one question for each video, <b>the more the better</b>.
+        <li>You will need to propose a hypothetical objective (or topic, intention, motivation), to motivate the questions, that makes sense for the given video.
         </li>
-        <li>You will need to identify the source of your question (whether it is based on the scene, or the audio) and classify your question accordingly.
+        <li>You will need to provide questions with regard to the content in the videos and that seek to understand more about the proposed objective.</li>
+        <li>You will need to provide at least one question for each video. <b>The more the better</b>.
+        </li>
+        <li>You will need to identify the source of your question (whether it is based on the visual scene, or the audio) and classify your question accordingly.
         </li>
         <li>You will need to provide the correct answer to the question you asked, as supported by the content in the video.
         </li>
         <li>You will need to provide video evidence (video clip) to support your question and answer.
         </li>
+        <li>If one video doesn't make sense at all, or there's no possible objective for this video that makes sense, please <u>comment</u> at the bottom of this annotation page.(and fill the mandatory fields for the corresponding video with placeholder values).          
+        </li>
+      </ul>
+
+      <h3>How To Propose Hypothetical Objective</h3>
+      <ul>
+        <li>For each video, you need to come up with a hypothetical objective (or intention, motivation, topic) that makes sense for this video, and briefly explain it.</li>
+        <li>Your questions should all relate to this objective.</li>
+        <li>Example 1:
+          <ul>
+            <li>Objective: I want to learn about the water in the territory.</li>
+            <li>Question 1: How big is the lake? </li>
+            <li>Question 2: Are there any boats in the lake?</li>
+            <li>Question 3: Where is the river?</li>
+            <li> ...</li>
+          </ul>
+        </li>
+        <li>Example 2:
+          <ul>
+            <li>Objective: people/life movement</li>
+            <li>Question 1: Is there any sign that wildlife has passed this area? </li>
+            <li>Question 2: How much traffic is there on the road?</li>
+            <li>...</li>
+          </ul>
+        </li>
       </ul>
 
       <h3>How To Ask Your Question</h3>
       <ul>
+        <li>Your question should relate to your proposed objective.</li>
         <li>For each video, after you finish one question, you could click the <u>Add one more question for this video</u> button to 
         continue to provide another question for this video. On the contrary, if you want to delete one question, you could click 
-        the <u>Delete this Question</u> button.
+        the <u>Delete this Question</u> button.</li>
       </ul>
 
     </br>
@@ -200,25 +228,27 @@
 
       <h3>How to identity the Question Category</h3>
 
-        We have some basic categories: <b>Motion, Spatial Relationship, Temporal Relationship, Reasoning, Number, Object, Time, Location, Other.</b>
+        We have some basic categories: <b>Motion, Spatial Relationship, Temporal Relationship, Reasoning, Number, Entity, Existence, Time, Location, Other.</b>
         <br>
         If your questions fall into <b>multiple categories</b>, please <u>check all categories that apply</u>.
-      <p>Here are some questions under each category:</p>
+      <p>Here are some example questions under each category:</p>
       <ul>
           <li><b>Motion:</b> What are the group of soldiers <span class="example-answer">doing</span>?</li>
           <li><b>Spatial Relationship:</b> What is driving <span class="example-answer">beside</span> the motorcycle?</li>
           <li><b>Temporal Relationship:</b> What happens <span class="example-answer">before</span> the black smoke rises?</li>
           <li><b>Reasoning:</b> <span class="example-answer">What makes</span> changing between targets <span class="example-answer">possible</span> for the missile?</li>
           <li><b>Number:</b> <span class="example-answer">How many</span> fighters are flying?</li>
-          <li><b>Object:</b> <span class="example-answer">What is the target</span> of the bullet?</li>
+          <li><b>Entity:</b> <span class="example-answer">What is the target</span> of the bullet?</li>
+          <li><b>Existence:</b> <span class="example-answer">Is there a lake</span> by the mountain?</li>
           <li><b>Time:</b> <span class="example-answer">How long</span> can the missile fly?</li>
           <li><b>Location:</b> <span class="example-answer">Where</span> is the tank?</li>
-          <li><b>Other:</b> What does the man require the warship to do?</li>
+          <li><b>Other:</b></li>
       </ul>
 
       <h3>How to provide video evidence</h3>
       <ur>
-        <li> You need to provide at least one and up to five video evidences for one question.</li>
+        <li>The video evidence consists of all the parts of the video that support the answer to your given question.</li>
+        <li> You need to provide at least one and up to five video evidence clips (intervals within the video) for each question.</li>
         <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
         <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
         <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
@@ -268,8 +298,10 @@
   const ENTER_KEY_CODE = 13;
   const BACKSPACE_KEY_CODE = 8;
 
+  // const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
+    // "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
   const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
-    "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
+    "${video1}", "${video2}"]
       .map(v => templateWasSubstituted(v) ? v :
        "https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1");
   // const videos = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1}","${video2}"]
@@ -315,6 +347,15 @@
               </ul>
           </div>
             
+          <hr>
+
+          <div class="form-group">
+            <h4>Your Hypothetical Objective:</h4>
+             <textarea class="form-control" id="objective-input-${0, i}" name="objective-input-${0, i}" 
+              rows="2" placeholder="Please type your hypothetical objective (or topic, intention, motivation) here" 
+              ${isExample? "disabled" :""}>${isExample? "I want to track the movement of the landspout.":""}</textarea></br>
+          </div>
+
           <hr>
 
           <div id="inner-questions-${0,i}"></div>
@@ -378,9 +419,12 @@
               <input type="checkbox" name="how-${0,i}-${0,j}" id="how-number-${0,i}-${0,j}" 
               value="Number" ${isExample? "disabled":""}>
               <label for="how-number-${0,i}-${0,j}">Number</label>
-              <input type="checkbox" name="how-${0,i}-${0,j}" id="how-object-${0,i}-${0,j}" 
-              value="Object" ${isExample? "disabled":""}>
-              <label for="how-object-${0,i}-${0,j}">Object</label>
+              <input type="checkbox" name="how-${0,i}-${0,j}" id="how-entity-${0,i}-${0,j}" 
+              value="Entity" ${isExample? "disabled":""}>
+              <label for="how-entity-${0,i}-${0,j}">Entity</label>
+              <input type="checkbox" name="how-${0,i}-${0,j}" id="how-existence-${0,i}-${0,j}" 
+              value="Existence" ${isExample? "disabled":""}>
+              <label for="how-existence-${0,i}-${0,j}">Existence</label>
               <input type="checkbox" name="how-${0,i}-${0,j}" id="how-time-${0,i}-${0,j}" 
               value="Time" ${isExample? "disabled":""}>
               <label for="how-time-${0,i}-${0,j}">Time</label>
@@ -429,7 +473,8 @@
             <h4>Locate up to five video evidences to support your question and answer:</h4>
             <video width="50%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
             <ur class="annotate-instructions">
-              <li> You need to provide at least one and up to five video evidences for one question.</li>
+              <li>The video evidence consists of <b>all</b> the parts of the video that support the answer to your given question.</li>
+              <li> You need to provide at least one and up to five video evidence clips (intervals within the video) for one question.</li>
               <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
               <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point.</li>
               <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
@@ -543,6 +588,11 @@
     window.location = "#top";
   }
 
+  function objectiveCompleted(i) {
+    const o_value = document.getElementById(`objective-input-${0,i}`).value;
+    return o_value != null && o_value != "";
+  }
+
   function questionCompleted(i,j) {
     const i_value = document.getElementById(`question-input-${0,i}-${0,j}`).value;
     return i_value != null && i_value != "";
@@ -584,15 +634,17 @@
   }
 
   function videoCompleted(i) {
-    return Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
+    return objectiveCompleted(i) && (Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
       const j = queele.id.split("-")[3];
       return blankCompleted(i,j);
-    }).every(Boolean);
+    }).every(Boolean));
   }
 
   function checkValid() {
     const completed = videos.map((_, i) => {
       const completi = videoCompleted(i);
+      const message0 = "Please type into your intention/topic/objective."
+      document.getElementById(`objective-input-${0,i}`).setCustomValidity(objectiveCompleted(i)? "" : message0);
       Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
         const j = queele.id.split("-")[3];
         const message1 = "Please type into your question.";
@@ -631,6 +683,13 @@
   function setUpInputListeners() 
   {
     videos.forEach((_, i) => {
+      $(`[name="objective-input-${0,i}"]`).keyup(e => {
+            if (e.keyCode != ENTER_KEY_CODE && e.keyCode != BACKSPACE_KEY_CODE){
+              document.getElementById(`objective-input-${0, i}`).setCustomValidity("");
+              $(document.getElementById(`objective-input-${0, i}`)).removeClass("is-invalid");
+            }
+          });
+
       Array.from($(`[name="inner-question-${0, i}"]`)).map((queele,_) => {
         const j = queele.id.split("-")[3];
         $(`[name="question-input-${0,i}-${0, j}"]`).keyup(e => 

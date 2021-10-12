@@ -299,9 +299,9 @@
   const BACKSPACE_KEY_CODE = 8;
 
   // const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
-    // "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
+  //   "${video1}", "${video2}"]
   const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
-    "${video1}", "${video2}"]
+    "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
       .map(v => templateWasSubstituted(v) ? v :
        "https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1");
   // const videos = ["1WsdfOmM5L-7aXjyuxSqouYVkpNxXx4Lt", "${video1}","${video2}"]
@@ -328,7 +328,7 @@
         <div class="instance" id="instance-${0, i}">
           <b><h1 class="instance-title">${0, title}</h1></b>
           <div class="video" id="video-${0, i}">
-            <video width="65%" src=${0,video} controls> </video>
+            <video style="max-width:80%;max-height:100%" src=${0,video} controls> </video>
           </div>
         </br>
           <div class="video-relates">
@@ -471,7 +471,7 @@
 
           <div class="video-evidence" id="video-evidence-${0,i}-${0,j}">
             <h4>Locate up to five video evidences to support your question and answer:</h4>
-            <video width="50%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
+            <video style="max-width:50%;max-height:100%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
             <ur class="annotate-instructions">
               <li>The video evidence consists of <b>all</b> the parts of the video that support the answer to your given question.</li>
               <li> You need to provide at least one and up to five video evidence clips (intervals within the video) for one question.</li>

@@ -1,0 +1,36 @@
+
+Epoch 0:  10%|█████▎                                               | 2/20 [00:00<00:07,  2.51it/s, loss=9.1, v_num=509d]
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 222 M
+-----------------------------------------------------
+222 M     Trainable params
+0         Non-trainable params
+222 M     Total params
+891.614   Total estimated model params size (MB)
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:406: LightningDeprecationWarning: One of the returned values {'log'} has a `grad_fn`. We will detach it automatically but this behaviour will change in v1.6. Please detach it manually: `return {'loss': ..., 'something': something.detach()}`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 7:  75%|██████████████████████████████████████▎            | 15/20 [00:03<00:01,  4.36it/s, loss=7.86, v_num=509d]
+
+Epoch 8:  75%|██████████████████████████████████████▎            | 15/20 [00:03<00:01,  4.34it/s, loss=7.79, v_num=509d]
+
+Epoch 9:  75%|██████████████████████████████████████▎            | 15/20 [00:03<00:01,  4.34it/s, loss=8.78, v_num=509d]
+
+Validating:   0%|                                                                                 | 0/5 [00:00<?, ?it/s]

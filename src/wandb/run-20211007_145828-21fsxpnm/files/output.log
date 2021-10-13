@@ -1,0 +1,29 @@
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 222 M
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+Traceback (most recent call last):
+  File "main.py", line 22, in <module>
+    main()
+  File "main.py", line 18, in main
+    T5_train(args)
+  File "/home/dnaihao/In-the-wild-QA/src/T5/train.py", line 57, in T5_train
+    trainer.fit(model)
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 445, in fit
+    results = self.accelerator_backend.train()
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/accelerators/gpu_accelerator.py", line 64, in train
+    results = self.train_or_test()
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/accelerators/accelerator.py", line 66, in train_or_test
+    results = self.trainer.train()
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/trainer/trainer.py", line 494, in train
+    self.train_loop.run_training_epoch()
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/trainer/training_loop.py", line 561, in run_training_epoch
+    batch_output = self.run_training_batch(batch, batch_idx, dataloader_idx)
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/trainer/training_loop.py", line 728, in run_training_batch
+    self.optimizer_step(optimizer, opt_idx, batch_idx, train_step_and_backward_closure)
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/trainer/training_loop.py", line 470, in optimizer_step
+    optimizer, batch_idx, opt_idx, train_step_and_backward_closure, *args, **kwargs
+  File "/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/accelerators/accelerator.py", line 124, in optimizer_step
+    **kwargs,
+TypeError: optimizer_step() got an unexpected keyword argument 'optimizer_closure'
+Epoch 0:   0%|                                                                                                                                      | 0/3 [00:00<?, ?it/s]

@@ -1,0 +1,696 @@
+2021-10-08 15:28:41,230 INFO    MainThread:192828 [internal.py:wandb_internal():89] W&B internal server running at pid: 192828, started at: 2021-10-08 15:28:41.228251
+2021-10-08 15:28:41,232 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: check_version
+2021-10-08 15:28:41,232 INFO    WriterThread:192828 [datastore.py:open_for_write():77] open: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/run-32wk509d.wandb
+2021-10-08 15:28:41,238 DEBUG   SenderThread:192828 [sender.py:send():185] send: header
+2021-10-08 15:28:41,239 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: check_version
+2021-10-08 15:28:41,336 DEBUG   SenderThread:192828 [sender.py:send():185] send: run
+2021-10-08 15:28:41,342 INFO    SenderThread:192828 [sender.py:_maybe_setup_resume():428] checking resume status for None/In-the-wild-VQA/32wk509d
+2021-10-08 15:28:41,449 DEBUG   SenderThread:192828 [git.py:repo():33] git repository is invalid
+2021-10-08 15:28:41,553 INFO    SenderThread:192828 [dir_watcher.py:__init__():169] watching files in: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files
+2021-10-08 15:28:41,554 INFO    SenderThread:192828 [sender.py:_start_run_threads():749] run started: 32wk509d with start time 1633721320
+2021-10-08 15:28:41,554 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:41,556 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: run_start
+2021-10-08 15:28:41,556 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:41,565 DEBUG   HandlerThread:192828 [meta.py:__init__():40] meta init
+2021-10-08 15:28:41,566 DEBUG   HandlerThread:192828 [meta.py:__init__():54] meta init done
+2021-10-08 15:28:41,566 DEBUG   HandlerThread:192828 [meta.py:probe():211] probe
+2021-10-08 15:28:41,572 DEBUG   HandlerThread:192828 [git.py:repo():33] git repository is invalid
+2021-10-08 15:28:41,572 DEBUG   HandlerThread:192828 [meta.py:_save_pip():58] save pip
+2021-10-08 15:28:41,575 DEBUG   HandlerThread:192828 [meta.py:_save_pip():72] save pip done
+2021-10-08 15:28:41,575 DEBUG   HandlerThread:192828 [meta.py:_save_conda():79] save conda
+2021-10-08 15:28:42,558 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/conda-environment.yaml
+2021-10-08 15:28:42,559 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:28:42,560 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/requirements.txt
+2021-10-08 15:28:45,204 DEBUG   HandlerThread:192828 [meta.py:_save_conda():87] save conda done
+2021-10-08 15:28:45,204 DEBUG   HandlerThread:192828 [meta.py:probe():249] probe done
+2021-10-08 15:28:45,316 DEBUG   SenderThread:192828 [sender.py:send():185] send: files
+2021-10-08 15:28:45,317 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-08 15:28:45,328 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-08 15:28:45,328 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: stop_status
+2021-10-08 15:28:45,440 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:45,440 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:45,440 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:45,440 DEBUG   SenderThread:192828 [sender.py:send():185] send: config
+2021-10-08 15:28:45,564 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/conda-environment.yaml
+2021-10-08 15:28:45,564 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-metadata.json
+2021-10-08 15:28:45,564 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:28:45,690 INFO    Thread-11 :192828 [upload_job.py:push():137] Uploaded file /tmp/tmpqg0oqa93wandb/4tehkt4z-wandb-metadata.json
+2021-10-08 15:28:47,569 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:28:49,546 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,547 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,547 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:49,547 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,547 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,547 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,548 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,548 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:28:49,548 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:49,552 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:49,571 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:28:49,571 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:28:49,937 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,937 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,938 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:49,938 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,938 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,938 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:49,938 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:28:49,939 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:49,942 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:50,009 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,009 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,009 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:50,010 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:28:50,010 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:50,013 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:50,082 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,082 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,082 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:50,082 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:28:50,083 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:50,086 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:50,158 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,158 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,158 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:50,159 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:28:50,159 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:50,162 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:50,228 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,229 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,229 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:50,242 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:28:50,242 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:50,245 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:50,276 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,277 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,277 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:28:50,279 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,279 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,279 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:28:50,279 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:28:50,280 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:28:50,283 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:28:50,572 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:28:51,574 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:00,466 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-08 15:29:00,467 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: stop_status
+2021-10-08 15:29:08,390 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:10,013 DEBUG   SenderThread:192828 [sender.py:send():185] send: stats
+2021-10-08 15:29:12,846 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/config.yaml
+2021-10-08 15:29:15,631 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-08 15:29:15,632 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: stop_status
+2021-10-08 15:29:18,085 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:18,089 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:18,089 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:18,089 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:18,089 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:18,089 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:18,090 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:18,090 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:18,097 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:19,060 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:20,063 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:21,600 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:21,601 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:21,602 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:21,602 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:21,603 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:21,607 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:22,001 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,001 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,002 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:22,002 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:22,002 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:22,006 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:22,065 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:22,066 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:22,075 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,076 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,076 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:22,076 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:22,076 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:22,079 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:22,148 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,149 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,149 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:22,149 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:22,149 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:22,152 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:22,224 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,225 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,225 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:22,225 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:22,225 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:22,229 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:22,295 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,298 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,298 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:22,298 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:22,299 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:22,302 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:22,343 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,344 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,344 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:22,346 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:22,346 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:22,349 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:22,359 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,360 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:22,360 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:22,393 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:22,394 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:22,397 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:23,066 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:24,068 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:25,820 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:25,821 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:25,821 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:25,821 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:25,821 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:25,825 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:26,070 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:26,070 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:26,220 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,220 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,221 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:26,223 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:26,223 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:26,226 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:26,304 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,305 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,307 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:26,307 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:26,308 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:26,311 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:26,379 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,380 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,380 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:26,380 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:26,380 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:26,383 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:26,453 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,454 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,454 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:26,454 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:26,454 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:26,458 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:26,524 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,527 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,527 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:26,527 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:26,528 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:26,531 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:26,573 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,576 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,577 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:26,577 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:26,577 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:26,580 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:26,593 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,593 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:26,593 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:26,593 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:26,593 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:26,596 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:27,071 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:28,073 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:30,032 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,032 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,032 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,033 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,033 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,036 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,075 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:30,076 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:30,437 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,438 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,438 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,438 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,439 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,444 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,513 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,516 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,516 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,516 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,517 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,520 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,589 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,589 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,589 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,589 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,590 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,593 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,663 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,663 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,663 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,663 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,663 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,667 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,733 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,734 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,734 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,745 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,745 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,748 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,781 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,784 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,784 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,784 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,784 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,787 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,802 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,802 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:30,803 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:30,803 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:30,803 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:30,806 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:30,920 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-08 15:29:30,920 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: stop_status
+2021-10-08 15:29:31,076 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:32,078 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:34,081 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:34,243 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,243 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,244 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,244 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,244 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,247 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:34,610 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,611 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,611 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,611 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,611 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,616 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:34,687 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,687 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,688 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,688 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,688 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,691 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:34,763 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,764 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,764 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,764 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,764 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,768 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:34,836 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,836 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,836 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,836 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,837 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,840 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:34,906 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,920 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,921 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,921 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,921 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,925 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:34,955 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,955 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,956 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,957 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,957 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,960 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:34,977 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,977 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:34,977 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:34,977 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:34,978 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:34,981 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:35,081 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:36,083 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:38,086 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:38,397 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,400 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,401 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:38,401 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:38,401 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:38,404 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:38,754 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,754 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,754 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:38,754 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:38,754 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:38,758 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:38,829 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,830 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,830 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:38,830 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:38,830 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:38,834 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:38,906 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,906 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,906 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:38,907 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:38,907 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:38,911 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:38,980 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,980 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:38,981 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:38,981 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:38,981 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:38,984 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:39,051 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:39,051 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:39,054 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:39,054 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:39,054 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:39,081 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:39,087 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:39,101 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:39,103 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:39,103 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:39,103 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:39,103 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:39,106 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:39,117 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:39,117 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:39,117 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:39,151 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:39,151 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:39,155 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:40,089 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:40,090 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:40,503 DEBUG   SenderThread:192828 [sender.py:send():185] send: stats
+2021-10-08 15:29:42,092 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:42,579 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:42,699 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:42,699 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:42,699 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:42,699 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:42,702 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:42,929 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:42,929 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:42,930 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:42,930 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:42,930 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:42,933 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:43,003 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,004 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,004 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:43,004 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:43,004 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:43,008 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:43,080 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,081 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,081 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:43,081 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:43,081 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:43,084 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:43,093 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/config.yaml
+2021-10-08 15:29:43,093 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:43,154 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,155 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,155 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:43,155 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:43,155 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:43,159 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:43,225 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,233 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,233 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:43,233 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:43,233 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:43,237 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:43,274 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,275 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,275 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:43,278 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:43,278 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:43,281 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:43,291 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,292 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:43,294 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:43,294 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:43,295 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:43,298 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:44,095 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:44,095 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:46,063 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-08 15:29:46,063 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: stop_status
+2021-10-08 15:29:46,097 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:46,740 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:46,741 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:46,741 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:46,741 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:46,741 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:46,745 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:47,098 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:47,165 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,165 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,166 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:47,166 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:47,166 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:47,170 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:47,238 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,238 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,238 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:47,238 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:47,239 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:47,242 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:47,314 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,315 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,315 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:47,315 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:47,316 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:47,319 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:47,388 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,389 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,389 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:47,389 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:47,389 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:47,393 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:47,459 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,460 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,460 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:47,462 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:47,463 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:47,466 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:47,507 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,508 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,508 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:47,510 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:47,511 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:47,513 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:47,524 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,525 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:47,525 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:47,527 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:47,527 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:47,530 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:48,100 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:48,100 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:50,103 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:50,980 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:50,983 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:50,983 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:50,983 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:50,984 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:50,987 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:51,103 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:51,366 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,366 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,366 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:51,366 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:51,366 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:51,370 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:51,436 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,439 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,439 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:51,439 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:51,439 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:51,443 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:51,511 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,512 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,512 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:51,512 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:51,512 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:51,517 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:51,590 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,591 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,591 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:51,591 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:51,591 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:51,595 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:51,661 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,664 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,664 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:51,664 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:51,664 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:51,668 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:51,709 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,710 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,712 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:51,712 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:51,713 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:51,716 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:51,726 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,729 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:51,729 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:51,729 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:51,729 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:51,747 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:52,105 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:52,105 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:54,107 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:55,187 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,187 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,187 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,187 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,188 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,191 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:55,545 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,545 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,545 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,545 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,545 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,549 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:55,621 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,622 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,622 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,622 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,622 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,626 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:55,694 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,695 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,695 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,695 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,695 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,698 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:55,768 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,769 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,769 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,769 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,769 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,772 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:55,839 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,848 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,848 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,850 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,851 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,855 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:55,888 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,890 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,890 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,890 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,890 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,894 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:55,905 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,906 DEBUG   SenderThread:192828 [sender.py:send():185] send: metric
+2021-10-08 15:29:55,906 WARNING SenderThread:192828 [sender.py:send_metric():837] Seen metric with glob (shouldnt happen)
+2021-10-08 15:29:55,908 DEBUG   SenderThread:192828 [sender.py:send():185] send: history
+2021-10-08 15:29:55,909 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:29:55,911 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:29:56,110 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:29:56,110 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:29:58,112 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:30:00,383 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:00,383 DEBUG   SenderThread:192828 [sender.py:send():185] send: telemetry
+2021-10-08 15:30:00,384 DEBUG   SenderThread:192828 [sender.py:send():185] send: exit
+2021-10-08 15:30:00,384 INFO    SenderThread:192828 [sender.py:send_exit():294] handling exit code: 0
+2021-10-08 15:30:00,384 INFO    SenderThread:192828 [sender.py:send_exit():296] handling runtime: 78
+2021-10-08 15:30:00,390 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:30:00,391 INFO    SenderThread:192828 [sender.py:send_exit():306] send defer
+2021-10-08 15:30:00,391 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:00,392 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:00,392 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-08 15:30:00,392 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:00,392 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 0
+2021-10-08 15:30:00,392 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 1
+2021-10-08 15:30:00,393 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:00,393 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-08 15:30:00,504 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:00,504 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:00,505 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 1
+2021-10-08 15:30:00,505 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 2
+2021-10-08 15:30:00,505 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:00,506 DEBUG   SenderThread:192828 [sender.py:send():185] send: stats
+2021-10-08 15:30:00,506 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:00,507 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-08 15:30:00,507 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:00,507 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 2
+2021-10-08 15:30:00,507 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 3
+2021-10-08 15:30:00,508 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:00,508 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-08 15:30:00,508 DEBUG   SenderThread:192828 [sender.py:send():185] send: summary
+2021-10-08 15:30:00,512 INFO    SenderThread:192828 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-08 15:30:00,512 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:00,512 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 3
+2021-10-08 15:30:00,513 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 4
+2021-10-08 15:30:00,513 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:00,513 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-08 15:30:00,513 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:00,513 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 4
+2021-10-08 15:30:00,607 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:00,633 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 5
+2021-10-08 15:30:00,633 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:00,633 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:00,634 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 5
+2021-10-08 15:30:00,634 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:00,634 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 5
+2021-10-08 15:30:00,634 INFO    SenderThread:192828 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-08 15:30:00,735 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:01,115 INFO    Thread-8  :192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:30:01,116 INFO    SenderThread:192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/config.yaml
+2021-10-08 15:30:01,117 INFO    SenderThread:192828 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:30:01,117 INFO    SenderThread:192828 [dir_watcher.py:finish():313] scan: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files
+2021-10-08 15:30:01,117 INFO    SenderThread:192828 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/conda-environment.yaml conda-environment.yaml
+2021-10-08 15:30:01,118 INFO    SenderThread:192828 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/config.yaml config.yaml
+2021-10-08 15:30:01,124 INFO    SenderThread:192828 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-metadata.json wandb-metadata.json
+2021-10-08 15:30:01,127 INFO    SenderThread:192828 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/requirements.txt requirements.txt
+2021-10-08 15:30:01,128 INFO    SenderThread:192828 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log output.log
+2021-10-08 15:30:01,142 INFO    SenderThread:192828 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json wandb-summary.json
+2021-10-08 15:30:01,144 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 6
+2021-10-08 15:30:01,144 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:01,151 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:01,152 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 6
+2021-10-08 15:30:01,158 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:01,160 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 6
+2021-10-08 15:30:01,160 INFO    SenderThread:192828 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-08 15:30:01,252 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:01,252 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:01,354 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:01,354 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:01,456 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:01,457 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:01,501 INFO    Thread-12 :192828 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/conda-environment.yaml
+2021-10-08 15:30:01,528 INFO    Thread-14 :192828 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/requirements.txt
+2021-10-08 15:30:01,529 INFO    Thread-15 :192828 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/output.log
+2021-10-08 15:30:01,558 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:01,559 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:01,564 INFO    Thread-13 :192828 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/config.yaml
+2021-10-08 15:30:01,595 INFO    Thread-16 :192828 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/files/wandb-summary.json
+2021-10-08 15:30:01,660 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:01,661 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:01,763 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:01,763 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:01,795 INFO    Thread-7  :192828 [sender.py:transition_state():319] send defer: 7
+2021-10-08 15:30:01,796 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:01,796 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 7
+2021-10-08 15:30:01,796 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:01,797 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 7
+2021-10-08 15:30:01,865 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:02,078 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 8
+2021-10-08 15:30:02,078 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:02,078 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:02,079 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 8
+2021-10-08 15:30:02,079 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:02,079 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 8
+2021-10-08 15:30:02,079 INFO    SenderThread:192828 [sender.py:transition_state():319] send defer: 9
+2021-10-08 15:30:02,080 DEBUG   SenderThread:192828 [sender.py:send():185] send: final
+2021-10-08 15:30:02,081 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: defer
+2021-10-08 15:30:02,081 DEBUG   SenderThread:192828 [sender.py:send():185] send: footer
+2021-10-08 15:30:02,081 INFO    HandlerThread:192828 [handler.py:handle_request_defer():143] handle defer: 9
+2021-10-08 15:30:02,081 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: defer
+2021-10-08 15:30:02,081 INFO    SenderThread:192828 [sender.py:send_request_defer():315] handle sender defer: 9
+2021-10-08 15:30:02,180 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-08 15:30:02,180 DEBUG   SenderThread:192828 [sender.py:send_request():199] send_request: poll_exit
+2021-10-08 15:30:02,181 INFO    SenderThread:192828 [file_pusher.py:join():182] waiting for file pusher
+2021-10-08 15:30:02,413 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: get_summary
+2021-10-08 15:30:02,414 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: sampled_history
+2021-10-08 15:30:02,419 DEBUG   HandlerThread:192828 [handler.py:handle_request():126] handle_request: shutdown
+2021-10-08 15:30:02,419 INFO    HandlerThread:192828 [handler.py:finish():683] shutting down handler
+2021-10-08 15:30:03,081 INFO    WriterThread:192828 [datastore.py:close():281] close: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_152840-32wk509d/run-32wk509d.wandb
+2021-10-08 15:30:03,412 INFO    SenderThread:192828 [sender.py:finish():986] shutting down sender
+2021-10-08 15:30:03,412 INFO    SenderThread:192828 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-08 15:30:03,412 INFO    SenderThread:192828 [file_pusher.py:join():182] waiting for file pusher
+2021-10-08 15:30:03,415 INFO    MainThread:192828 [internal.py:handle_exit():76] Internal process exited

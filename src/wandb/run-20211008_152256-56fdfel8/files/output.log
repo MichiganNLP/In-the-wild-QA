@@ -1,0 +1,15 @@
+  | Name  | Type                       | Params
+-----------------------------------------------------
+0 | model | T5ForConditionalGeneration | 222 M
+-----------------------------------------------------
+222 M     Trainable params
+0         Non-trainable params
+222 M     Total params
+891.614   Total estimated model params size (MB)
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+Epoch 0:  60%|█████████████████████████████████▌                      | 3/5 [00:00<00:00,  8.11it/s, loss=nan, v_num=fel8]
+
+Epoch 1:  80%|████████████████████████████████████████████▊           | 4/5 [00:00<00:00, 10.66it/s, loss=nan, v_num=fel8]
+
+
+Validating:  50%|█████████████████████████████████████▌                                     | 1/2 [00:00<00:00,  1.82it/s]

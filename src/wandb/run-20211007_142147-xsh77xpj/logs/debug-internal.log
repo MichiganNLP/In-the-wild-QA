@@ -1,0 +1,128 @@
+2021-10-07 14:21:48,998 INFO    MainThread:190514 [internal.py:wandb_internal():89] W&B internal server running at pid: 190514, started at: 2021-10-07 14:21:48.997334
+2021-10-07 14:21:49,001 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: check_version
+2021-10-07 14:21:49,001 INFO    WriterThread:190514 [datastore.py:open_for_write():77] open: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/run-xsh77xpj.wandb
+2021-10-07 14:21:49,007 DEBUG   SenderThread:190514 [sender.py:send():185] send: header
+2021-10-07 14:21:49,007 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: check_version
+2021-10-07 14:21:49,089 DEBUG   SenderThread:190514 [sender.py:send():185] send: run
+2021-10-07 14:21:49,095 INFO    SenderThread:190514 [sender.py:_maybe_setup_resume():428] checking resume status for None/In-the-wild-VQA/xsh77xpj
+2021-10-07 14:21:49,202 DEBUG   SenderThread:190514 [git.py:repo():33] git repository is invalid
+2021-10-07 14:21:49,325 INFO    SenderThread:190514 [dir_watcher.py:__init__():169] watching files in: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files
+2021-10-07 14:21:49,325 INFO    SenderThread:190514 [sender.py:_start_run_threads():749] run started: xsh77xpj with start time 1633630907
+2021-10-07 14:21:49,326 DEBUG   SenderThread:190514 [sender.py:send():185] send: summary
+2021-10-07 14:21:49,328 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: run_start
+2021-10-07 14:21:49,329 INFO    SenderThread:190514 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-07 14:21:49,336 DEBUG   HandlerThread:190514 [meta.py:__init__():40] meta init
+2021-10-07 14:21:49,336 DEBUG   HandlerThread:190514 [meta.py:__init__():54] meta init done
+2021-10-07 14:21:49,336 DEBUG   HandlerThread:190514 [meta.py:probe():211] probe
+2021-10-07 14:21:49,343 DEBUG   HandlerThread:190514 [git.py:repo():33] git repository is invalid
+2021-10-07 14:21:49,343 DEBUG   HandlerThread:190514 [meta.py:_save_pip():58] save pip
+2021-10-07 14:21:49,346 DEBUG   HandlerThread:190514 [meta.py:_save_pip():72] save pip done
+2021-10-07 14:21:49,346 DEBUG   HandlerThread:190514 [meta.py:_save_conda():79] save conda
+2021-10-07 14:21:50,330 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/conda-environment.yaml
+2021-10-07 14:21:50,331 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/requirements.txt
+2021-10-07 14:21:50,331 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/wandb-summary.json
+2021-10-07 14:21:52,487 DEBUG   HandlerThread:190514 [meta.py:_save_conda():87] save conda done
+2021-10-07 14:21:52,487 DEBUG   HandlerThread:190514 [meta.py:probe():249] probe done
+2021-10-07 14:21:52,598 DEBUG   SenderThread:190514 [sender.py:send():185] send: files
+2021-10-07 14:21:52,599 INFO    SenderThread:190514 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-07 14:21:52,609 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:21:52,610 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:21:52,758 DEBUG   SenderThread:190514 [sender.py:send():185] send: config
+2021-10-07 14:21:52,984 INFO    Thread-11 :190514 [upload_job.py:push():137] Uploaded file /tmp/tmp2nkwbrrrwandb/3vnqbzkm-wandb-metadata.json
+2021-10-07 14:21:53,336 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/conda-environment.yaml
+2021-10-07 14:21:53,337 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:21:53,337 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/wandb-metadata.json
+2021-10-07 14:21:55,339 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:01,345 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:03,348 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:07,808 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:22:07,809 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:22:09,354 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:13,359 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:17,364 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:17,806 DEBUG   SenderThread:190514 [sender.py:send():185] send: stats
+2021-10-07 14:22:19,367 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:20,368 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/config.yaml
+2021-10-07 14:22:21,370 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:22,934 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:22:22,934 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:22:23,373 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:25,376 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:27,379 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:29,382 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:31,385 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:33,388 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:35,391 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:37,394 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:38,055 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:22:38,055 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:22:41,400 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:47,406 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:48,247 DEBUG   SenderThread:190514 [sender.py:send():185] send: stats
+2021-10-07 14:22:49,409 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:51,411 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:53,174 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:22:53,174 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:22:55,415 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:57,418 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:22:59,420 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:07,429 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:08,295 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:23:08,295 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:23:09,432 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:13,436 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:18,696 DEBUG   SenderThread:190514 [sender.py:send():185] send: stats
+2021-10-07 14:23:23,417 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:23:23,418 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:23:25,448 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:27,451 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:29,457 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:31,461 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:33,465 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:38,537 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:23:38,537 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:23:41,476 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:43,479 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:23:49,136 DEBUG   SenderThread:190514 [sender.py:send():185] send: stats
+2021-10-07 14:23:53,658 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:23:53,658 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:24:01,502 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:24:03,505 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:24:05,508 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:24:08,794 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:24:08,795 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:24:19,577 DEBUG   SenderThread:190514 [sender.py:send():185] send: stats
+2021-10-07 14:24:23,914 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:24:23,914 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:24:39,033 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:24:39,033 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:24:50,035 DEBUG   SenderThread:190514 [sender.py:send():185] send: stats
+2021-10-07 14:24:54,156 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:24:54,157 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:25:09,282 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:25:09,283 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:25:20,484 DEBUG   SenderThread:190514 [sender.py:send():185] send: stats
+2021-10-07 14:25:24,408 DEBUG   HandlerThread:190514 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:25:24,409 DEBUG   SenderThread:190514 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:25:27,584 INFO    Thread-8  :190514 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:25:27,906 WARNING MainThread:190514 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-10-07 14:25:28,387 WARNING MainThread:190514 [internal.py:wandb_internal():145] Internal process interrupt: 2
+2021-10-07 14:25:28,387 ERROR   MainThread:190514 [internal.py:wandb_internal():148] Internal process interrupted.
+2021-10-07 14:25:29,214 INFO    SenderThread:190514 [sender.py:finish():986] shutting down sender
+2021-10-07 14:25:29,215 INFO    WriterThread:190514 [datastore.py:close():281] close: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/run-xsh77xpj.wandb
+2021-10-07 14:25:29,215 INFO    SenderThread:190514 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-07 14:25:29,587 INFO    SenderThread:190514 [dir_watcher.py:finish():313] scan: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files
+2021-10-07 14:25:29,588 INFO    SenderThread:190514 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/conda-environment.yaml conda-environment.yaml
+2021-10-07 14:25:29,588 INFO    SenderThread:190514 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/config.yaml config.yaml
+2021-10-07 14:25:29,599 INFO    SenderThread:190514 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/wandb-metadata.json wandb-metadata.json
+2021-10-07 14:25:29,599 INFO    SenderThread:190514 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/requirements.txt requirements.txt
+2021-10-07 14:25:29,605 INFO    SenderThread:190514 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log output.log
+2021-10-07 14:25:29,606 INFO    SenderThread:190514 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/wandb-summary.json wandb-summary.json
+2021-10-07 14:25:29,624 INFO    SenderThread:190514 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-07 14:25:29,624 INFO    SenderThread:190514 [file_pusher.py:join():182] waiting for file pusher
+2021-10-07 14:25:30,017 INFO    Thread-12 :190514 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/conda-environment.yaml
+2021-10-07 14:25:30,045 INFO    Thread-14 :190514 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/requirements.txt
+2021-10-07 14:25:30,053 INFO    Thread-13 :190514 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/config.yaml
+2021-10-07 14:25:30,073 INFO    Thread-16 :190514 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/wandb-summary.json
+2021-10-07 14:25:30,171 INFO    Thread-15 :190514 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142147-xsh77xpj/files/output.log
+2021-10-07 14:25:30,752 INFO    MainThread:190514 [internal.py:handle_exit():76] Internal process exited

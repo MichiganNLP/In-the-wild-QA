@@ -1,0 +1,110 @@
+2021-10-07 14:28:13,082 INFO    MainThread:193741 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-07 14:28:13,083 INFO    MainThread:193741 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-07 14:28:13,083 INFO    MainThread:193741 [wandb_init.py:_log_setup():357] Logging user logs to /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142813-2qgfzlsz/logs/debug.log
+2021-10-07 14:28:13,083 INFO    MainThread:193741 [wandb_init.py:_log_setup():358] Logging internal logs to /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_142813-2qgfzlsz/logs/debug-internal.log
+2021-10-07 14:28:13,083 INFO    MainThread:193741 [wandb_init.py:init():390] calling init triggers
+2021-10-07 14:28:13,083 INFO    MainThread:193741 [wandb_init.py:init():397] wandb.init called with sweep_config: {}
+config: {}
+2021-10-07 14:28:13,083 INFO    MainThread:193741 [wandb_init.py:init():435] starting backend
+2021-10-07 14:28:13,084 INFO    MainThread:193741 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-07 14:28:13,123 INFO    MainThread:193741 [backend.py:ensure_launched():135] starting backend process...
+2021-10-07 14:28:13,155 INFO    MainThread:193741 [backend.py:ensure_launched():140] started backend process with pid: 193812
+2021-10-07 14:28:13,157 INFO    MainThread:193741 [wandb_init.py:init():440] backend started and connected
+2021-10-07 14:28:13,159 INFO    MainThread:193741 [wandb_init.py:init():499] updated telemetry
+2021-10-07 14:28:13,159 INFO    MainThread:193741 [wandb_init.py:init():522] communicating current version
+2021-10-07 14:28:14,261 INFO    MainThread:193741 [wandb_init.py:init():527] got version response 
+2021-10-07 14:28:14,261 INFO    MainThread:193741 [wandb_init.py:init():535] communicating run to backend with 30 second timeout
+2021-10-07 14:28:14,492 INFO    MainThread:193741 [wandb_init.py:init():562] starting run threads in backend
+2021-10-07 14:28:17,215 INFO    MainThread:193741 [wandb_run.py:_console_start():1651] atexit reg
+2021-10-07 14:28:17,218 INFO    MainThread:193741 [wandb_run.py:_redirect():1525] redirect: SettingsConsole.REDIRECT
+2021-10-07 14:28:17,218 INFO    MainThread:193741 [wandb_run.py:_redirect():1530] Redirecting console.
+2021-10-07 14:28:17,221 INFO    MainThread:193741 [wandb_run.py:_redirect():1586] Redirects installed.
+2021-10-07 14:28:17,221 INFO    MainThread:193741 [wandb_init.py:init():587] run started, returning control to user process
+2021-10-07 14:28:17,222 INFO    MainThread:193741 [wandb_run.py:_config_callback():878] config_cb None None {'model_type': 'T5', 'train_data': 'example_data/train.json', 'dev_data': 'example_data/dev.json', 'test_data': 'example_data/test.json', 'random_state': 42, 'output_ckpt_dir': 'T5/ckpt/', 'model_name_or_path': 't5-base', 'tokenizer_name_or_path': 't5-base', 'max_seq_length': 512, 'learning_rate': 0.0003, 'weight_decay': 0.0, 'adam_epsilon': 1e-08, 'warmup_steps': 0, 'train_batch_size': 8, 'eval_batch_size': 8, 'num_train_epochs': 10, 'gradient_accumulation_steps': 1, 'n_gpu': 1, 'early_stop_callback': False, 'fp_16': False, 'opt_level': '01', 'max_grad_norm': 1.0, 'seed': 42, 'use_tpu': False, 'wandb_project': 'In-the-wild-VQA', 'wandb_name': 'T5'}
+2021-10-07 14:29:44,816 INFO    MainThread:193741 [wandb_run.py:_atexit_cleanup():1621] got exitcode: 0
+2021-10-07 14:29:44,816 INFO    MainThread:193741 [wandb_run.py:_restore():1593] restore
+2021-10-07 14:29:47,432 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1006
+  total_bytes: 1006
+}
+
+2021-10-07 14:29:47,604 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1006
+  total_bytes: 1006
+}
+
+2021-10-07 14:29:47,706 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 1006
+  total_bytes: 15359
+}
+
+2021-10-07 14:29:47,808 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 5350
+  total_bytes: 15359
+}
+
+2021-10-07 14:29:47,910 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15359
+  total_bytes: 15359
+}
+
+2021-10-07 14:29:48,012 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15359
+  total_bytes: 15359
+}
+
+2021-10-07 14:29:48,114 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15359
+  total_bytes: 15359
+}
+
+2021-10-07 14:29:48,216 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15359
+  total_bytes: 15359
+}
+
+2021-10-07 14:29:48,368 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15359
+  total_bytes: 15359
+}
+
+2021-10-07 14:29:48,687 INFO    MainThread:193741 [wandb_run.py:_wait_for_finish():1746] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 15359
+  total_bytes: 15359
+}
+local_info {
+}
+

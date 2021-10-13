@@ -1,0 +1,143 @@
+2021-10-07 14:11:54,109 INFO    MainThread:183930 [internal.py:wandb_internal():89] W&B internal server running at pid: 183930, started at: 2021-10-07 14:11:54.107919
+2021-10-07 14:11:54,112 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: check_version
+2021-10-07 14:11:54,112 INFO    WriterThread:183930 [datastore.py:open_for_write():77] open: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/run-22akm4hj.wandb
+2021-10-07 14:11:54,118 DEBUG   SenderThread:183930 [sender.py:send():185] send: header
+2021-10-07 14:11:54,118 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: check_version
+2021-10-07 14:11:54,209 DEBUG   SenderThread:183930 [sender.py:send():185] send: run
+2021-10-07 14:11:54,214 INFO    SenderThread:183930 [sender.py:_maybe_setup_resume():428] checking resume status for None/In-the-wild-VQA/22akm4hj
+2021-10-07 14:11:54,321 DEBUG   SenderThread:183930 [git.py:repo():33] git repository is invalid
+2021-10-07 14:11:54,427 INFO    SenderThread:183930 [dir_watcher.py:__init__():169] watching files in: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files
+2021-10-07 14:11:54,428 INFO    SenderThread:183930 [sender.py:_start_run_threads():749] run started: 22akm4hj with start time 1633630312
+2021-10-07 14:11:54,428 DEBUG   SenderThread:183930 [sender.py:send():185] send: summary
+2021-10-07 14:11:54,430 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: run_start
+2021-10-07 14:11:54,433 INFO    SenderThread:183930 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-07 14:11:54,438 DEBUG   HandlerThread:183930 [meta.py:__init__():40] meta init
+2021-10-07 14:11:54,439 DEBUG   HandlerThread:183930 [meta.py:__init__():54] meta init done
+2021-10-07 14:11:54,439 DEBUG   HandlerThread:183930 [meta.py:probe():211] probe
+2021-10-07 14:11:54,445 DEBUG   HandlerThread:183930 [git.py:repo():33] git repository is invalid
+2021-10-07 14:11:54,445 DEBUG   HandlerThread:183930 [meta.py:_save_pip():58] save pip
+2021-10-07 14:11:54,448 DEBUG   HandlerThread:183930 [meta.py:_save_pip():72] save pip done
+2021-10-07 14:11:54,449 DEBUG   HandlerThread:183930 [meta.py:_save_conda():79] save conda
+2021-10-07 14:11:55,480 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/requirements.txt
+2021-10-07 14:11:55,481 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/wandb-summary.json
+2021-10-07 14:11:55,481 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/conda-environment.yaml
+2021-10-07 14:11:59,481 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/output.log
+2021-10-07 14:12:01,483 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/output.log
+2021-10-07 14:12:03,226 DEBUG   HandlerThread:183930 [meta.py:_save_conda():87] save conda done
+2021-10-07 14:12:03,226 DEBUG   HandlerThread:183930 [meta.py:probe():249] probe done
+2021-10-07 14:12:03,417 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-07 14:12:03,418 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: stop_status
+2021-10-07 14:12:03,485 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/output.log
+2021-10-07 14:12:03,486 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/conda-environment.yaml
+2021-10-07 14:12:03,486 INFO    Thread-8  :183930 [dir_watcher.py:_on_file_created():217] file/dir created: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/wandb-metadata.json
+2021-10-07 14:12:03,537 DEBUG   SenderThread:183930 [sender.py:send():185] send: config
+2021-10-07 14:12:03,538 DEBUG   SenderThread:183930 [sender.py:send():185] send: files
+2021-10-07 14:12:03,538 INFO    SenderThread:183930 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-07 14:12:03,936 INFO    Thread-11 :183930 [upload_job.py:push():137] Uploaded file /tmp/tmp87vsut2bwandb/1wmrsfz0-wandb-metadata.json
+2021-10-07 14:12:04,975 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:04,975 DEBUG   SenderThread:183930 [sender.py:send():185] send: telemetry
+2021-10-07 14:12:04,976 DEBUG   SenderThread:183930 [sender.py:send():185] send: exit
+2021-10-07 14:12:04,976 INFO    SenderThread:183930 [sender.py:send_exit():294] handling exit code: 1
+2021-10-07 14:12:04,976 INFO    SenderThread:183930 [sender.py:send_exit():296] handling runtime: 10
+2021-10-07 14:12:05,058 INFO    SenderThread:183930 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-07 14:12:05,058 INFO    SenderThread:183930 [sender.py:send_exit():306] send defer
+2021-10-07 14:12:05,058 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:05,059 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:05,059 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-07 14:12:05,059 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:05,060 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 0
+2021-10-07 14:12:05,060 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 1
+2021-10-07 14:12:05,060 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:05,060 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-07 14:12:05,140 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:05,140 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 1
+2021-10-07 14:12:05,140 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 2
+2021-10-07 14:12:05,140 DEBUG   SenderThread:183930 [sender.py:send():185] send: stats
+2021-10-07 14:12:05,141 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:05,142 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-07 14:12:05,142 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:05,142 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 2
+2021-10-07 14:12:05,142 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 3
+2021-10-07 14:12:05,142 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:05,143 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-07 14:12:05,143 DEBUG   SenderThread:183930 [sender.py:send():185] send: summary
+2021-10-07 14:12:05,147 INFO    SenderThread:183930 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-07 14:12:05,147 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:05,147 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 3
+2021-10-07 14:12:05,147 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 4
+2021-10-07 14:12:05,148 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:05,148 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-07 14:12:05,148 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:05,148 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 4
+2021-10-07 14:12:05,161 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:05,255 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 5
+2021-10-07 14:12:05,255 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:05,256 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:05,256 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 5
+2021-10-07 14:12:05,256 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:05,256 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 5
+2021-10-07 14:12:05,256 INFO    SenderThread:183930 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-07 14:12:05,357 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:05,488 INFO    SenderThread:183930 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/config.yaml
+2021-10-07 14:12:05,489 INFO    SenderThread:183930 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/wandb-summary.json
+2021-10-07 14:12:05,489 INFO    SenderThread:183930 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/output.log
+2021-10-07 14:12:05,489 INFO    SenderThread:183930 [dir_watcher.py:finish():313] scan: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files
+2021-10-07 14:12:05,490 INFO    SenderThread:183930 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/conda-environment.yaml conda-environment.yaml
+2021-10-07 14:12:05,490 INFO    SenderThread:183930 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/config.yaml config.yaml
+2021-10-07 14:12:05,491 INFO    SenderThread:183930 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/wandb-metadata.json wandb-metadata.json
+2021-10-07 14:12:05,500 INFO    SenderThread:183930 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/requirements.txt requirements.txt
+2021-10-07 14:12:05,505 INFO    SenderThread:183930 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/output.log output.log
+2021-10-07 14:12:05,506 INFO    SenderThread:183930 [dir_watcher.py:finish():327] scan save: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/wandb-summary.json wandb-summary.json
+2021-10-07 14:12:05,516 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 6
+2021-10-07 14:12:05,516 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:05,522 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:05,522 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 6
+2021-10-07 14:12:05,523 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:05,523 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 6
+2021-10-07 14:12:05,523 INFO    SenderThread:183930 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-07 14:12:05,618 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:05,618 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:05,720 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:05,720 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:05,822 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:05,822 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:05,875 INFO    Thread-13 :183930 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/config.yaml
+2021-10-07 14:12:05,892 INFO    Thread-15 :183930 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/output.log
+2021-10-07 14:12:05,893 INFO    Thread-12 :183930 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/conda-environment.yaml
+2021-10-07 14:12:05,895 INFO    Thread-14 :183930 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/requirements.txt
+2021-10-07 14:12:05,924 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:05,924 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:05,955 INFO    Thread-16 :183930 [upload_job.py:push():137] Uploaded file /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/files/wandb-summary.json
+2021-10-07 14:12:06,026 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:06,026 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:06,128 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:06,129 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:06,156 INFO    Thread-7  :183930 [sender.py:transition_state():319] send defer: 7
+2021-10-07 14:12:06,157 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:06,157 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 7
+2021-10-07 14:12:06,157 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:06,157 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 7
+2021-10-07 14:12:06,203 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 8
+2021-10-07 14:12:06,204 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:06,204 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 8
+2021-10-07 14:12:06,204 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:06,204 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 8
+2021-10-07 14:12:06,205 INFO    SenderThread:183930 [sender.py:transition_state():319] send defer: 9
+2021-10-07 14:12:06,205 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: defer
+2021-10-07 14:12:06,206 DEBUG   SenderThread:183930 [sender.py:send():185] send: final
+2021-10-07 14:12:06,206 INFO    HandlerThread:183930 [handler.py:handle_request_defer():143] handle defer: 9
+2021-10-07 14:12:06,206 DEBUG   SenderThread:183930 [sender.py:send():185] send: footer
+2021-10-07 14:12:06,206 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: defer
+2021-10-07 14:12:06,206 INFO    SenderThread:183930 [sender.py:send_request_defer():315] handle sender defer: 9
+2021-10-07 14:12:06,230 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-07 14:12:06,230 DEBUG   SenderThread:183930 [sender.py:send_request():199] send_request: poll_exit
+2021-10-07 14:12:06,231 INFO    SenderThread:183930 [file_pusher.py:join():182] waiting for file pusher
+2021-10-07 14:12:06,455 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: get_summary
+2021-10-07 14:12:06,456 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: sampled_history
+2021-10-07 14:12:06,457 DEBUG   HandlerThread:183930 [handler.py:handle_request():126] handle_request: shutdown
+2021-10-07 14:12:06,457 INFO    HandlerThread:183930 [handler.py:finish():683] shutting down handler
+2021-10-07 14:12:07,206 INFO    WriterThread:183930 [datastore.py:close():281] close: /home/dnaihao/In-the-wild-QA/src/wandb/run-20211007_141152-22akm4hj/run-22akm4hj.wandb
+2021-10-07 14:12:07,454 INFO    SenderThread:183930 [sender.py:finish():986] shutting down sender
+2021-10-07 14:12:07,455 INFO    SenderThread:183930 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-07 14:12:07,455 INFO    SenderThread:183930 [file_pusher.py:join():182] waiting for file pusher
+2021-10-07 14:12:07,457 INFO    MainThread:183930 [internal.py:handle_exit():76] Internal process exited

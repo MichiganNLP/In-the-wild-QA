@@ -11,11 +11,11 @@ args_dict = dict(
     select_path='selected_clips',
     ov_path="../youtube-crawler/Videos/",
     output_info_path="stats",
-    domain='All',
+    domain='NaturalDisasters',
 )
 
 DOMAINS = ["Agriculture", "Geography", "HumanSurvival", "Military", "NaturalDisasters"]
-COLORS = ["#048e85", "#d08e85", "#d02f85", "#d0b585", "#1b05f4"]
+COLORS = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
 
 
 def dm_info(args, domain, plot_all=False):
@@ -83,25 +83,26 @@ def plt_duration_hist(domain, durations, plot_all=False):
 
     fig, ax = plt.subplots()
     if isinstance(durations, list):
-        plt.hist(durations, color=color, ec='black', label=" ".join(re.findall("[A-Z][a-z]*", domain)))
+        # plt.hist(durations, color=color, ec='black', label=" ".join(re.findall("[A-Z][a-z]*", domain)))
+        plt.hist(durations, color=COLORS[DOMAINS.index(domain)], ec='black')
     else:
         assert isinstance(durations, dict)
         # plot all domain distributions
-        for i, (dm, ts) in enumerate(durations.items()):
-            plt.hist(ts, bins=np.arange(1, 300, 30), alpha=0.4, color=COLORS[i], ec='None', label=" ".join(re.findall("[A-Z][a-z]*", dm)))
+        all_ts = [ts for _, ts in durations.items()]
+        plt.hist(all_ts, bins=np.arange(1, 300, 30), alpha=1, color=COLORS, ec='None', stacked=True)
+        plt.legend({dm: color for dm, color in zip(DOMAINS, COLORS)})
     fig.canvas.draw()   # make label available
     labels = [item.get_text() for item in ax.get_xticklabels()]
 
     for idx, label in enumerate(labels):
         labels[idx] = str(round(int(re.sub(u"\u2212", "-", label))/60, 1))
     ax.set_xticklabels(labels)
-    plt.ylabel('Number of clips')
-    plt.xlabel('Durations (min)')
-    plt.legend()
+    # plt.ylabel('Number of clips')
+    # plt.xlabel('Durations (min)')
     if not plot_all:
-        plt.savefig(f'{args.output_info_path}/{domain}-distribution.png')
+        plt.savefig(f'{args.output_info_path}/{domain}-distribution.pdf')
     else:
-        plt.savefig(f'{args.output_info_path}/All-distribution.png')
+        plt.savefig(f'{args.output_info_path}/All-distribution.pdf')
 
 
 if __name__ == "__main__":

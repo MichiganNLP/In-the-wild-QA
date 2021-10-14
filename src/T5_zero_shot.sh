@@ -1,12 +1,12 @@
 #!/bin/bash
 
-pred_out_dir=T5/preds
+pred_out_dir=preds/T5/text_zero_shot
 pred_num=1
 beam_size=5
 CUDA_ID=0
 batch_size=8
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore main.py T5_zero_shot \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_zero_shot \
     --train_data example_data/train.json \
     --dev_data example_data/dev.json \
     --test_data example_data/test.json \

@@ -17,3 +17,8 @@ CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore main.py T5_eval \
     --pred_out_dir ${pred_out_dir} \
     --beam_size ${beam_size} \
     --pred_num ${pred_num}
+
+python -m utils.post_process_T5 \
+    --pred ${pred_out_dir}/preds-${pred_num}.txt \
+    --processed_pred ${pred_out_dir}/processed_pred-${pred_num}.txt \
+    --test_data example_data/test.json

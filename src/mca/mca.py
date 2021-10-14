@@ -3,7 +3,7 @@ from torch.utils.data import ConcatDataset
 import numpy as np
 
 from dataloader import VQADataset
-from evaluations.evaluations import Evaluation
+from evaluations.evaluations import evaluate
 from tqdm import tqdm
 from collections import defaultdict
 
@@ -27,16 +27,6 @@ def most_common_ans(args):
     mca = sorted_ans[0][0]
     
     preds = [mca for _ in range(len(test_data))]
+
+    evaluate("Most Common Ans Text", preds, test_data)
     
-    sources = [itm['source'] for itm in test_data]
-    labels = [[itm['target']] for itm in test_data]
-    evl = Evaluation(sources, preds, labels)    
-    
-    print("------------------Most Common Ans Text Baseline----------------------")
-    print(f"Exact Match: {round(evl.exact_match() * 100, 2)}%")
-    print(f"BLEU 1: {round(evl.BLEU(1) * 100, 2)}%")
-    print(f"BLEU 2: {round(evl.BLEU(2) * 100, 2)}%")
-    print(f"BLEU 3: {round(evl.BLEU(3) * 100, 2)}%")
-    print(f"ROUGE 1: {round(evl.ROUGE(1) * 100, 2)}%")
-    print(f"ROUGE 1: {round(evl.ROUGE(2) * 100, 2)}%")
-    print(f"ROUGE 3: {round(evl.ROUGE(3) * 100, 2)}%")

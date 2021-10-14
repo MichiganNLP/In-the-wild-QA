@@ -1,66 +1,0 @@
-[nltk_data] Downloading package punkt to /home/dnaihao/nltk_data...
-[nltk_data]   Package punkt is already up-to-date!
-GPU available: True, used: True
-TPU available: False, using: 0 TPU cores
-IPU available: False, using: 0 IPUs
-LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
-wandb: Currently logged in as: dnaihao (use `wandb login --relogin` to force relogin)
-WARNING: The conda.compat module is deprecated and will be removed in a future release.
-wandb: Tracking run with wandb version 0.12.4
-wandb: Syncing run T5
-wandb: ⭐️ View project at https://wandb.ai/dnaihao/In-the-wild-VQA
-wandb: 🚀 View run at https://wandb.ai/dnaihao/In-the-wild-VQA/runs/301pfl70
-wandb: Run data is saved locally in /home/dnaihao/In-the-wild-QA/src/wandb/run-20211008_182406-301pfl70
-wandb: Run `wandb offline` to turn off syncing.
-Set SLURM handle signals.
-
-  | Name  | Type                       | Params
------------------------------------------------------
-0 | model | T5ForConditionalGeneration | 222 M 
------------------------------------------------------
-222 M     Trainable params
-0         Non-trainable params
-222 M     Total params
-891.614   Total estimated model params size (MB)
-Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
-WARNING: The conda.compat module is deprecated and will be removed in a future release.
-/home/dnaihao/anaconda3/envs/442/lib/python3.7/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:406: LightningDeprecationWarning: One of the returned values {'log'} has a `grad_fn`. We will detach it automatically but this behaviour will change in v1.6. Please detach it manually: `return {'loss': ..., 'something': something.detach()}`
-  f"One of the returned values {set(extra.keys())} has a `grad_fn`. We will detach it automatically"
-wandb: Waiting for W&B process to finish, PID 260711... (success).
-wandb: - 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: \ 0.00MB of 0.00MB uploaded (0.00MB deduped)wandb: | 0.00MB of 0.01MB uploaded (0.00MB deduped)wandb: / 0.00MB of 0.01MB uploaded (0.00MB deduped)wandb: - 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: \ 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: | 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: / 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: - 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: \ 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb: | 0.01MB of 0.01MB uploaded (0.00MB deduped)wandb:                                                                                
-wandb: Run history:
-wandb:                      epoch ▁▁▁▁▂▂▂▂▃▃▃▃▃▃▃▃▄▄▄▄▅▅▅▅▆▆▆▆▆▆▆▆▇▇▇▇████
-wandb:            train_acc_epoch ▁▃▄▅▆▇▇███
-wandb:             train_acc_step ▁▅▅▅▅▅▅▅▇▅▇▄▅▅▅▅▅▇▆█▅▅▅▆▄▆▅▅▆▆▆▆▆▅▆▆▅█▇▆
-wandb:           train_loss_epoch █▅▄▃▂▂▂▁▁▁
-wandb:            train_loss_step █▃▅▃▄▄▅▃▂▃▁▄▄▃▅▄▃▂▂▁▃▄▂▁▃▃▄▂▂▃▁▃▄▃▂▂▃▁▂▂
-wandb:   train_sentence_acc_epoch ▁▂▃▄▅▆▆█▇█
-wandb:    train_sentence_acc_step ▁▁▁▁▁▁▁▁▅▁▅▁▁▁▁▅▅▅▅█▁▁▅▅▁▁▁▁▁▅▅▁▁▁▁▅▁█▅▅
-wandb:        trainer/global_step ▁▁▁▂▁▂▂▂▂▂▃▃▂▃▃▄▂▄▄▄▂▅▅▅▂▆▆▆▃▆▇▇▃▇▇▇▃██▃
-wandb:              val_acc_epoch ▃▅█▄▁▇▅▅█▇
-wandb:               val_acc_step ▅▅▆▄▅▆▆▅▄▅▆▅▅▁▅▅▅▅▅▄▅▅█▆▅▅▅▅▅▁▅▆▅▅▅▄▅▅▅▄
-wandb:             val_loss_epoch ▆▁▁▂▆▄▇███
-wandb:              val_loss_step ▅▂▃▃▂▃▁▁▃▂▂▂▄▇▃▃▅▄▃▃▃▄▁▁▄▂▂▂▄█▄▂▅▄▅▄▃▄▂▄
-wandb:     val_sentence_acc_epoch ▁▂▇▄▄▅▄▅██
-wandb:      val_sentence_acc_step ▁▁▅▁▅▅▅▁▁▁▅▁▁▁▁▁▁▁▅▁▁▁█▅▁▁▅▁▁▁▁▅▁▁▅▁▁▁▁▁
-wandb: 
-wandb: Run summary:
-wandb:                      epoch 9
-wandb:            train_acc_epoch 0.7391
-wandb:             train_acc_step 0.5
-wandb:           train_loss_epoch 1.11224
-wandb:            train_loss_step 1.99634
-wandb:   train_sentence_acc_epoch 0.3711
-wandb:    train_sentence_acc_step 0.0
-wandb:        trainer/global_step 499
-wandb:              val_acc_epoch 0.56026
-wandb:               val_acc_step 0.8
-wandb:             val_loss_epoch 2.52375
-wandb:              val_loss_step 1.3886
-wandb:     val_sentence_acc_epoch 0.2064
-wandb:      val_sentence_acc_step 0.5
-wandb: 
-wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
-wandb: Synced T5: https://wandb.ai/dnaihao/In-the-wild-VQA/runs/301pfl70
-wandb: Find logs at: ./wandb/run-20211008_182406-301pfl70/logs/debug.log
-wandb: 

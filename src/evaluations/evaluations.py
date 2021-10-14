@@ -6,6 +6,22 @@ import warnings
 warnings.filterwarnings("ignore")   # filter user warning for BLEU when overlap is 0
 
 
+def evaluate(model_name, preds, test_data):
+    sources = [itm['source'] for itm in test_data]
+    labels = [[itm['target']] for itm in test_data]
+
+    evl = Evaluation(sources, preds, labels)    
+    
+    print(f"------------------{model_name} Baseline----------------------")
+    print(f"Exact Match: {round(evl.exact_match() * 100, 2)}%")
+    print(f"BLEU 1: {round(evl.BLEU(1) * 100, 2)}%")
+    print(f"BLEU 2: {round(evl.BLEU(2) * 100, 2)}%")
+    print(f"BLEU 3: {round(evl.BLEU(3) * 100, 2)}%")
+    print(f"ROUGE 1: {round(evl.ROUGE(1) * 100, 2)}%")
+    print(f"ROUGE 1: {round(evl.ROUGE(2) * 100, 2)}%")
+    print(f"ROUGE 3: {round(evl.ROUGE(3) * 100, 2)}%")
+
+
 class Evaluation():
 
     def __init__(self, sources: list, preds: list, labels: list):

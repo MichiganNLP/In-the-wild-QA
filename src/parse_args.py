@@ -13,7 +13,10 @@ def parse_args():
     # random text baseline model arguments
     parser_rdn_text = subparsers.add_parser('random_text', help='random text baseline', parents=[parent_parser])
 
-    # random baseline model arguments
+    # most common answer text baseline model arguments
+    parser_rdn_text = subparsers.add_parser('most_common_ans', help='most common answer text baseline', parents=[parent_parser])
+
+    # closest retrieval baseline model arguments
     parser_rtr = subparsers.add_parser('closest_rtr', help='closest retrieve text baseline', parents=[parent_parser])
     parser_rtr.add_argument('--embedding_model', default="stsb-roberta-base", choices=['stsb-roberta-base', 
                         'stsb-bert-large', 'stsb-distilbert-base', 'stsb-roberta-large'],

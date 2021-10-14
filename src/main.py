@@ -22,6 +22,8 @@ def main():
         T5_train(args)
     elif args.model_type == "T5_eval":
         T5_eval(args)
+    elif args.model_type == "T5_zero_shot":
+        T5_eval(args)
 
 
 if __name__ == "__main__":

@@ -4,6 +4,10 @@ from dataloader import VQADataset
 
 class RTRDataset(VQADataset):
 
+    def __init__(self, data_dir, embedding_model):
+        self.embedding_model = embedding_model
+        super(RTRDataset, self).__init__(data_dir)
+
     def __getitem__(self, index):
         return {"source": self.inputs[index], "target": self.targets[index], "source_embeddings": self.input_embeddings[index]}
     

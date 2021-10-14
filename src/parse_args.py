@@ -64,5 +64,15 @@ def parse_args():
     parser_T5_eval.add_argument("--pred_num", type=int, help="number of predictions made")
     parser_T5_eval.add_argument("--beam_size", type=int, help="beam size for search")
 
+    # T5 model text zero shot arguments
+    parser_T5_zero_shot = subparsers.add_parser('T5_zero_shot', help='T5 text baseline', parents=[parent_parser])
+    parser_T5_zero_shot.add_argument("--max_seq_length", default=512, type=int)
+    parser_T5_zero_shot.add_argument("--batch_size", default=32, type=int)
+    parser_T5_zero_shot.add_argument("--pred_out_dir", help="prediction output directory")
+    parser_T5_zero_shot.add_argument("--pred_num", type=int, help="number of predictions made")
+    parser_T5_zero_shot.add_argument("--beam_size", type=int, help="beam size for search")
+    parser_T5_zero_shot.add_argument("--model_name_or_path", default='t5-base')
+    parser_T5_zero_shot.add_argument("--tokenizer_name_or_path", default='t5-base')
+    
     args = parser.parse_args()
     return args

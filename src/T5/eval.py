@@ -15,12 +15,18 @@ from T5.model import T5FineTuner
 
 def T5_eval(args):
     # load model from the ckpt path
-    model = T5FineTuner.load_from_checkpoint(args.ckpt_path)
+    if args.model_type != "T5_zero_shot":
+        model = T5FineTuner.load_from_checkpoint(args.ckpt_path)
+        dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True)
+    else:
+        model = T5FineTuner(args)
+        dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True, is_zero_shot=True)
+
     model.model.eval()
     # NOTE: assume we have GPU resources in testing
     model.model.cuda()
 
-    dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True)
+
     loader = DataLoader(dataset, batch_size=args.batch_size)
 
     outputs = []
@@ -48,5 +54,5 @@ def T5_eval(args):
     if not os.path.exists(args.pred_out_dir):
         os.makedirs(args.pred_out_dir)
 
-    with open(f'{args.pred_out_dir}/preds-{args.pred_num}.txt', 'w') as f:
+    with open(f'{args.pred_out_dir}/preds-{args.model_type}-{args.pred_num}.txt', 'w') as f:
         f.write('\n'.join(outputs))

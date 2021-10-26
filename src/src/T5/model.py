@@ -16,7 +16,7 @@ from transformers import (
     get_linear_schedule_with_warmup
 )
 
-from dataloader import DBDataset, get_dataset
+from src.T5.T5_dataloader import T5Dataset, get_dataset
 
 
 class T5FineTuner(pl.LightningModule):
@@ -32,36 +32,36 @@ class T5FineTuner(pl.LightningModule):
         return self.trainer.global_rank <= 0
     
     def forward(
-        self, input_ids, attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, lm_labels=None
+        self, input_ids, attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, labels=None
     ):
         return self.model(
             input_ids,
             attention_mask=attention_mask,
             decoder_input_ids=decoder_input_ids,
             decoder_attention_mask=decoder_attention_mask,
-            lm_labels=lm_labels,
+            labels=labels,
         )
 
     def _step(self, batch):
-        lm_labels = batch["target_ids"]
-        lm_labels[lm_labels[:, :] == self.tokenizer.pad_token_id] = -100
+        labels = batch["target_ids"]
+        labels[labels[:, :] == self.tokenizer.pad_token_id] = -100
 
         outputs = self(
                 input_ids=batch["source_ids"],
                 attention_mask=batch["source_mask"],
-                lm_labels=lm_labels,
+                labels=labels,
                 decoder_attention_mask=batch['target_mask']
         )
 
         loss = outputs[0]
 
         preds = torch.argmax(outputs[1].softmax(-1), dim=-1)
-        acc = torch.eq(preds, lm_labels).sum() / (lm_labels != -100).sum()  # token level acc
+        acc = torch.eq(preds, labels).sum() / (labels != -100).sum()  # token level acc
         N, l = preds.shape 
         sent_acc = []
         for i in np.arange(N):
             p = preds[i, :]
-            t = lm_labels[i, :]
+            t = labels[i, :]
             p[t[:] == -100] = -100
             sent_acc.append(torch.equal(p, t))
         sent_acc = sum(sent_acc) / len(sent_acc)
@@ -77,6 +77,8 @@ class T5FineTuner(pl.LightningModule):
         return {"loss": loss, "log": tensorboard_logs}
     
     def training_epoch_end(self, outputs):
+        # if outputs:
+        #TODO: fix this hacky solution
         avg_train_loss = torch.stack([x["loss"] for x in outputs]).mean()
         tensorboard_logs = {"avg_train_loss": avg_train_loss}
         # self.log('epoch_train_loss', avg_train_loss)
@@ -132,7 +134,7 @@ class T5FineTuner(pl.LightningModule):
         return tqdm_dict
 
     def train_dataloader(self):
-        train_dataset = get_dataset(tokenizer=self.tokenizer, type_path="train", args=self.hparams)
+        train_dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.hparams.train_data, args=self.hparams)
         dataloader = DataLoader(train_dataset, batch_size=self.hparams.train_batch_size, drop_last=True, shuffle=True, num_workers=4)
         t_total = (
             (len(dataloader.dataset) // (self.hparams.train_batch_size * max(1, self.hparams.n_gpu)))
@@ -146,5 +148,5 @@ class T5FineTuner(pl.LightningModule):
         return dataloader
 
     def val_dataloader(self):
-        val_dataset = get_dataset(tokenizer=self.tokenizer, type_path="dev", args=self.hparams)
+        val_dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.hparams.dev_data, args=self.hparams)
         return DataLoader(val_dataset, batch_size=self.hparams.eval_batch_size, num_workers=4)

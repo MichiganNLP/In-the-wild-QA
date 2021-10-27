@@ -172,6 +172,20 @@
     <div id="instructions-inner">
 
       <p>We need help for this Video QA task based on video content (including the audio).
+      </br>
+        In this task we suppose you can hypothetically send a robot to a place that you want, for many hours, 
+        so as to collect information that you need. In this hypothetical scenario, 
+        you have an objective that you want the robot to learn about. This robot can chart a territory, 
+        and is able to answer questions based on recorded videos. Therefore, after it comes back, 
+        you can ask questions to help you satisfy your objective, then this robot will provide you with answers, 
+        as well as video evidence clips to support the answers.
+      </br>
+        In this task, to simplify, the provided videos represent places where you could potentially have sent the robot to, 
+        and are much shorter (a few minutes). Given a recorded video, please help us provide one hypothetical objective that makes sense with it, 
+        along with questions, answers, and evidence. Specifically, you should pretend to be both the information-seeker and the robot, 
+        which means that as the robot, you could watch the recorded video, and you should provide answers and video evidence clips; 
+        as the information-seeker, you have a objective, <b>not</b> watch the whole video (because of practical reasons), 
+        and you can only ask questions and receive answers and video evidence clips as feedback.
       </p>
 
       <h3>Basic Instructions</h3>
@@ -179,7 +193,10 @@
       <ul>
         <li>You will need to propose a hypothetical objective (or topic, intention, motivation), to motivate the questions, that makes sense for the given video.
         </li>
-        <li>You will need to provide questions with regard to the content in the videos and that seek to understand more about the proposed objective.</li>
+        <li>You will need to provide as many questions as you need (to satisfy your objective) with regard to the content in the videos and that seek to understand more about the proposed objective.
+        </li>
+        <li>You will first watch the video, but when you are providing the objective and questions, please pretent you <b>haven't</b> seen it before.
+        </li>
         <li>You will need to provide at least one question for each video. <b>The more the better</b>.
         </li>
         <li>You will need to identify the source of your question (whether it is based on the visual scene, or the audio) and classify your question accordingly.
@@ -247,8 +264,8 @@
 
       <h3>How to provide video evidence</h3>
       <ur>
-        <li>The video evidence consists of all the parts of the video that support the answer to your given question.</li>
-        <li> You need to provide at least one and up to five video evidence clips (intervals within the video) for each question.</li>
+        <li>The video evidence consists of <b>all</b> the parts of the video that support the answer to your given question.</li>
+        <li> You need to provide at least one video evidence clip (intervals within the video) for each question.</li>
         <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
         <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
         <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
@@ -470,11 +487,11 @@
           <hr>
 
           <div class="video-evidence" id="video-evidence-${0,i}-${0,j}">
-            <h4>Locate up to five video evidences to support your question and answer:</h4>
+            <h4>Locate video evidences to support your question and answer:</h4>
             <video style="max-width:50%;max-height:100%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
             <ur class="annotate-instructions">
               <li>The video evidence consists of <b>all</b> the parts of the video that support the answer to your given question.</li>
-              <li> You need to provide at least one and up to five video evidence clips (intervals within the video) for one question.</li>
+              <li> You need to provide at least one video evidence clip (intervals within the video) for one question.</li>
               <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
               <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point.</li>
               <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
@@ -514,7 +531,7 @@
 
   function insertBarElement(i, j, k, isExample){
     const isDeletable = k > 0;
-    const isAddable = Array.from($(`[name="video-bar-${0, i}-${0, j}"]`)).length <= 3;
+    const isAddable = Array.from($(`[name="video-bar-${0, i}-${0, j}"]`)).length <= 1000;
     createBarElement(i, j, k, isExample, isDeletable, isAddable).appendTo(`#video-bars-${0, i}-${0, j}`);
     $(`#create-bar-${0, i}-${0, j}-${0,k}`).click(() => {
       const $videobarsarray = Array.from($(`[name="video-bar-${0, i}-${0, j}"]`));

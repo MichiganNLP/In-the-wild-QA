@@ -6,6 +6,7 @@ import torch.cuda
 from tqdm.auto import tqdm
 from sklearn import metrics
 from torch.utils.data import Dataset, DataLoader
+import pytorch_lightning as pl
 
 from src.T5.T5_dataloader import T5Dataset
 from src.T5.model import T5FineTuner
@@ -17,7 +18,12 @@ def T5_eval(args):
     # load model from the ckpt path
     if args.model_type != "T5_zero_shot":
         model = T5FineTuner.load_from_checkpoint(args.ckpt_path)
-        dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True)
+
+        if args.model_type == "T5_text_visual_eval":
+            dataset = T5Dataset(data_dir=args.test_data, is_test=True, tokenizer=model.tokenizer, include_visual=True, max_len=args.max_seq_length, \
+                max_vid_len=args.max_vid_length, path_to_visual_file=args.path_to_visual_file, visual_size=args.visual_size)
+        else:
+            dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True)
     else:
         model = T5FineTuner(args)
         dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True, is_zero_shot=True)
@@ -32,12 +38,23 @@ def T5_eval(args):
     outputs = []
     inputs = []
 
+
     for batch in tqdm(loader):
-        outs = model.model.generate(input_ids=batch['source_ids'].cuda(), 
-                                attention_mask=batch['source_mask'].cuda(), 
-                                max_length=args.max_seq_length,
-                                num_beams=args.beam_size,
-                                num_return_sequences=args.pred_num)
+
+        if args.model_type == "T5_text_visual_eval":
+            outs = model.model.generate(input_ids=batch['source_ids'].cuda(), 
+                                    attention_mask=batch['source_mask'].cuda(), 
+                                    visual=batch["visual_ids"].cuda(),
+                                    visual_attention_mask=batch['visual_mask'].cuda(),
+                                    max_length=args.max_seq_length,
+                                    num_beams=args.beam_size,
+                                    num_return_sequences=args.pred_num)
+        else:
+            outs = model.model.generate(input_ids=batch['source_ids'].cuda(), 
+                                    attention_mask=batch['source_mask'].cuda(), 
+                                    max_length=args.max_seq_length,
+                                    num_beams=args.beam_size,
+                                    num_return_sequences=args.pred_num)
 
         dec = [model.tokenizer.decode(ids) for ids in outs]
         

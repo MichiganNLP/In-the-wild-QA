@@ -24,7 +24,10 @@ def main():
         T5_eval(args)
     elif args.model_type == "T5_zero_shot":
         T5_eval(args)
-
+    elif args.model_type == "T5_text_and_visual":
+        T5_train(args)
+    elif args.model_type == "T5_text_visual_eval":
+        T5_eval(args)
 
 if __name__ == "__main__":
     main()

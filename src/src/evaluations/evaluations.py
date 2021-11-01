@@ -56,19 +56,26 @@ class Evaluation():
         return tt_bleus / len(self.preds)
         
     
-    def ROUGE(self, N, stats='p'):
+    def ROUGE(self, N, t='n', stats='p'):
         """ 
         stats: 'p': precision; 'r': recall; 'f': f1
+        t: Rouge type:
+            ROUGE-N: Overlap of N-grams between the system and reference summaries.
+            ROUGE-L: Longest Common Subsequence (LCS) based statistics. Longest common 
+                        subsequence problem takes into account sentence level structure
+                        similarity naturally and identifies longest co-occurring in 
+                        sequence n-grams automatically.
+            ROUGE-W: Weighted LCS-based statistics that favors consecutive LCSes .
         """
         assert N in [1, 2, 3, 4, 5, 'l']
-        evaluator = Rouge(metrics=[f'rouge-{N}'])
+        evaluator = Rouge(metrics=[f'rouge-{t}'], max_n=N)
 
         tt_rouge = 0
         for pred, labels in zip(self.preds, self.labels):
             rouge = []
             for label in labels:
                 score = evaluator.get_scores(pred, label)
-                rouge.append(score[0][f'rouge-{N}'][stats])
+                rouge.append(score[f'rouge-{N}'][stats])
             tt_rouge += max(rouge)
         return tt_rouge / len(self.preds)
 

@@ -1,5 +1,6 @@
 import json
 import torch
+import numpy as np
 
 from src.dataloader import VQADataset
 from src.utils.utils import read_hdf5
@@ -9,7 +10,8 @@ from torch.nn.utils.rnn import pad_sequence
 def get_dataset(tokenizer, data_dir, args):
     if args.model_type == "T5_text_and_visual":
         return T5Dataset(data_dir=data_dir, tokenizer=tokenizer, include_visual=True, max_len=args.max_seq_length, \
-            max_vid_len=args.max_vid_length, path_to_visual_file=args.path_to_visual_file, visual_size=args.visual_size)
+            max_vid_len=args.max_vid_length, path_to_visual_file=args.path_to_visual_file, visual_size=args.visual_size, \
+            sample_rate=args.sample_rate)
     return T5Dataset(data_dir=data_dir, tokenizer=tokenizer, max_len=args.max_seq_length)
 
 
@@ -21,7 +23,7 @@ def get_mask_from_sequence_lengths(lengths: torch.Tensor) -> torch.Tensor:
 class T5Dataset(VQADataset):
 
     def __init__(self, data_dir, tokenizer, is_test=False, is_zero_shot=False, include_visual=False, \
-        max_len=512, max_vid_len=None, path_to_visual_file=None, visual_size=None):
+        max_len=512, max_vid_len=None, path_to_visual_file=None, visual_size=None, sample_rate=None):
 
         self.tokenizer = tokenizer
         self.is_test = is_test
@@ -31,21 +33,40 @@ class T5Dataset(VQADataset):
         self.max_vid_len = max_vid_len
         self.visual_features = read_hdf5(path_to_visual_file)
 
+        self.sample_rate = sample_rate
+        self.visual_size = visual_size
+
         self._build_visual_features()
 
-        self.visual_size = visual_size
         assert all([x.shape[-1] == self.visual_size for _, x in self.visual_features.items()])
         self.input_visuals = []
         super(T5Dataset, self).__init__(data_dir)
 
     def _build_visual_features(self):
-        x = pad_sequence([torch.tensor(x[:self.max_vid_len, :]) for x in self.visual_features.values()], batch_first=True)
-        lengths = torch.Tensor([min(itm.shape[0], self.max_vid_len) for itm in self.visual_features.values()])
+        
+        sample_rate = self.sample_rate
+
+        vfs = self.visual_features.values()
+
+        if sample_rate:
+            # Sample video features
+            vfs = []
+            for x in self.visual_features.values():
+                repeat_times = sample_rate - x.shape[0] % sample_rate
+                supplement_itms = np.repeat(x[-1, :].reshape((1, -1)), repeat_times, axis=0)
+                full_x = np.concatenate((x, supplement_itms), axis=0)
+                downsampled_x = np.mean(full_x.reshape(-1, sample_rate, self.visual_size), axis=1)
+                vfs.append(downsampled_x)
+        
+        # Trim video features
+        processed_features = pad_sequence([torch.tensor(x[:self.max_vid_len, :]) for x in vfs], batch_first=True)
+        lengths = torch.Tensor([min(itm.shape[0], self.max_vid_len) for itm in vfs])
+
         attention_masks = get_mask_from_sequence_lengths(lengths)
-        assert attention_masks.shape[0] == x.shape[0]
+        assert attention_masks.shape[0] == processed_features.shape[0]
         self.visual_attention_masks = {}
-        for i, k in zip(range(x.shape[0]), self.visual_features):
-            self.visual_features[k] = x[i]
+        for i, k in zip(range(processed_features.shape[0]), self.visual_features):
+            self.visual_features[k] = processed_features[i]
             self.visual_attention_masks[k] = attention_masks[i]
     
     def __getitem__(self, index):

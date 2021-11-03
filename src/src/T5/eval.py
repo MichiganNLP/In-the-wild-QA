@@ -21,7 +21,7 @@ def T5_eval(args):
 
         if args.model_type == "T5_text_visual_eval":
             dataset = T5Dataset(data_dir=args.test_data, is_test=True, tokenizer=model.tokenizer, include_visual=True, max_len=args.max_seq_length, \
-                max_vid_len=args.max_vid_length, path_to_visual_file=args.path_to_visual_file, visual_size=args.visual_size)
+                max_vid_len=args.max_vid_length, path_to_visual_file=args.path_to_visual_file, visual_size=args.visual_size, sample_rate=args.sample_rate)
         else:
             dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True)
     else:

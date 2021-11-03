@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ckpt_path=ckpts/T5/text_visual_finetuned/epoch=2-val_loss=2.14.ckpt
+ckpt_path=ckpts/T5/text_visual_finetuned/epoch=2-val_loss=2.25-sr-60-mvl-2048.ckpt
 pred_out_dir=preds/T5/text_visual/
 pred_name=preds-T5_text_visual_eval
 pred_num=1
@@ -11,6 +11,7 @@ visual_size=1024
 max_seq_length=128
 max_vid_length=2048
 path_to_visual=example_data/LifeQA_I3D_avg_pool.hdf5
+sample_rate=60
 
 
 # CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_text_visual_eval \
@@ -25,6 +26,7 @@ path_to_visual=example_data/LifeQA_I3D_avg_pool.hdf5
 #     --pred_num ${pred_num} \
 #     --max_vid_length ${max_vid_length} \
 #     --path_to_visual_file ${path_to_visual} \
+#     --sample_rate ${sample_rate} \
 #     --visual_size ${visual_size}
 
 

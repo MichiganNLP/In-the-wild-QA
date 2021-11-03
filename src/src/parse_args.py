@@ -54,6 +54,7 @@ def parse_args():
 
     parser_T5.add_argument("--wandb_project", default='In-the-wild-VQA')
     parser_T5.add_argument("--wandb_name", required=True)
+    parser_T5.add_argument("--wandb_entity", required=True)
 
     # T5 model evaluate arguments
     parser_T5_eval = subparsers.add_parser('T5_eval', help='T5 text baseline', parents=[parent_parser])
@@ -104,11 +105,13 @@ def parse_args():
 
     # if you enable 16-bit training then set this to a sensible value, 0.5 is a good default
     parser_T5_text_visual.add_argument("--max_grad_norm", default=1.0)
-    parser_T5_text_visual.add_argument("--seed", default=42)
+    parser_T5_text_visual.add_argument("--seed", default=42, type=int)
     parser_T5_text_visual.add_argument("--use_tpu", default=False)
 
-    parser_T5_text_visual.add_argument("--wandb_project", default='In-the-wild-VQA')
+    parser_T5_text_visual.add_argument("--wandb_project", default='in-the-wild')
     parser_T5_text_visual.add_argument("--wandb_name", required=True)
+    parser_T5_text_visual.add_argument("--wandb_entity", required=True)
+    parser_T5_text_visual.add_argument("--sample_rate", type=int)
 
     # T5 visual model evaluate arguments
     parser_T5_text_visual_eval = subparsers.add_parser('T5_text_visual_eval', help='T5 visual + text baseline', parents=[parent_parser])
@@ -122,6 +125,7 @@ def parse_args():
     parser_T5_text_visual_eval.add_argument("--path_to_visual_file", required=True)
     parser_T5_text_visual_eval.add_argument("--visual_size", type=int, required=True)
     parser_T5_text_visual_eval.add_argument("--max_vid_length", type=int)
+    parser_T5_text_visual_eval.add_argument("--sample_rate", type=int)
     
     args = parser.parse_args()
     return args

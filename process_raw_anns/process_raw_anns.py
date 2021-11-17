@@ -6,8 +6,28 @@ MAX_VID_IDX = 5
 MAX_QUESTION_NUM = 100
 MAX_BAR_NUM = 5
 
+VIDEO_GENERAL_INFO_PATH = "/home/neo/fs/vqa/In-the-Wild-QA/In-the-wild-QA/annotator_website/drive_videos/general_info.json"
+
+
+def _minsec2sec(t):
+    mins, sec = t.split(":")
+    return float(mins) * 60 + float(sec)
+
 
 def process(data):
+
+    with open(VIDEO_GENERAL_INFO_PATH, 'r') as f:
+        general_info = json.load(f)
+    general_info = {itm["video_name"].split(".mp4")[0]: itm["time_in_original_video"] for itm in general_info}
+
+    # strip the \n in the time_in_original_video
+    for k, itm in general_info.items():
+        for t, ele in itm.items():
+            if t == "split-method":
+                continue
+            assert "end" in ele
+            general_info[k][t]["end"] = ele["end"].strip()
+
     worker_id_idx = data[0].split(",").index("\"WorkerId\"")
     title_idx = data[0].split(",").index("\"Title\"")
     time_spent_idx = data[0].split(",").index("\"WorkTimeInSeconds\"")
@@ -86,6 +106,15 @@ def process(data):
 
                     bar_idx += 1
                 q_idx += 1
+
+                end = general_info[video_ids[vid_idx]]["seconds"]["end"]
+                start = general_info[video_ids[vid_idx]]["seconds"]["start"]
+
+                if ":" not in start and ":" not in end:
+                    duration = float(end) - float(start)
+                else:
+                    duration = _minsec2sec(end) - _minsec2sec(start)
+                
                 questions.append({
                     "objective": objective,
                     "confidence": confidence,
@@ -98,7 +127,9 @@ def process(data):
                     "worker_id": worker_id,
                     "time_spent": time_spent,
                     "video_link": vid_links[vid_idx],
-                    "video_id": video_ids[vid_idx]
+                    "video_id": video_ids[vid_idx],
+                    "time_in_original_video": general_info[video_ids[vid_idx]],
+                    "duration": duration
                 })
             vid_idx += 1
     return questions

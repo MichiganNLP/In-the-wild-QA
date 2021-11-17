@@ -1,0 +1,5 @@
+raw_batches/*
+processed_result/*
+
+!raw_batches/.gitkeep
+!processed_result/.gitkeep

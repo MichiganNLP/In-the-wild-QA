@@ -126,6 +126,10 @@ def parse_args():
     parser_T5_text_visual_eval.add_argument("--visual_size", type=int, required=True)
     parser_T5_text_visual_eval.add_argument("--max_vid_length", type=int)
     parser_T5_text_visual_eval.add_argument("--sample_rate", type=int)
-    
+
+    # random evidence baseline model arguments
+    parser_rdn_evidence = subparsers.add_parser('random_evidence', help='random evidence baseline', parents=[parent_parser])
+    parser_rdn_evidence.add_argument("--pred_num", type=int, default=5)
+
     args = parser.parse_args()
     return args

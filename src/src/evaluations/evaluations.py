@@ -33,9 +33,11 @@ def evidence_evaluation(model_name: str, preds: list, test_data: list):
     """ 
     Evaluation for evidence finding
     """
-
-    gt_spans = [[[start, end] for span in itm["evidences"] for _, [start, end] in span] for itm in test_data]
+    gt_spans = [itm["target_period"] for itm in test_data]
     evl = Evidence_Evaluation(preds, gt_spans)    
+    
+    print(f"------------------{model_name} Baseline----------------------")
+    print(f"IOU F1: {round(evl.iou_f1() * 100, 2)}%")
 
 
 class Evaluation():

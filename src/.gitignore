@@ -4,3 +4,4 @@ example_data/
 lightning_logs/
 logs/
 preds/
+video_features/

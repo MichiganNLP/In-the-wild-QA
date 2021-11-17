@@ -46,6 +46,9 @@ def process(data):
         time_spent = info_toks[time_spent_idx][1:-1]
         vid_links = {vid_id: info_toks[pos][1: -1] for vid_id, pos in vids_idxs.items()}
 
+        # video_ids is for mapping of the visual features
+        video_ids = {vid_id: info_toks[pos][1: -1].split(".mp4")[0].split("/")[-1] for vid_id, pos in vids_idxs.items()}
+
         assert all([link.startswith("https://www.dropbox.com/s/") for _, link in vid_links.items()])
 
         # convert to question-answer-wise format
@@ -84,6 +87,7 @@ def process(data):
                     bar_idx += 1
                 q_idx += 1
                 questions.append({
+                    "objective": objective,
                     "confidence": confidence,
                     "question": question,
                     "correct_answer": correct_ans,
@@ -93,7 +97,8 @@ def process(data):
                     "domain": domain,
                     "worker_id": worker_id,
                     "time_spent": time_spent,
-                    "video_link": vid_links[vid_idx]
+                    "video_link": vid_links[vid_idx],
+                    "video_id": video_ids[vid_idx]
                 })
             vid_idx += 1
     return questions
@@ -102,7 +107,7 @@ def process(data):
 if __name__ == "__main__":
     raw_files = os.listdir("raw_batches")
     questions = []
-    for fn in raw_files:
+    for fn in [raw_file for raw_file in raw_files if raw_file.endswith(".csv")]:
         with open(f"raw_batches/{fn}", 'r') as f:
             data = f.readlines()
 

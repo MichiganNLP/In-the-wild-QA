@@ -31,8 +31,10 @@ def main():
     elif args.model_type == "T5_text_visual_eval":
         T5_eval(args)
     # Evidence models
-    elif args.model_type == 'random_evidence':
+    elif args.model_type == "random_evidence":
         random_evidence(args)
+    elif args.model_type == "T5_evidence":
+        T5_train(args)
 
 if __name__ == "__main__":
     main()

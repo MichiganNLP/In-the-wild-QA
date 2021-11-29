@@ -18,7 +18,7 @@ from transformers import (
     T5Tokenizer,
     get_linear_schedule_with_warmup
 )
-from transformers.models.t5.modeling_t5 import T5Stack
+from transformers.models.t5.modeling_t5 import T5Stack, T5EncoderModel
 from transformers.modeling_outputs import BaseModelOutputWithPastAndCrossAttentions, Seq2SeqLMOutput
 from transformers import T5Config, T5ForConditionalGeneration
 
@@ -89,6 +89,22 @@ class T5AndVisual(T5ForConditionalGeneration):
         return super().forward(attention_mask=attention_mask, labels=labels, **kwargs)  # noqa
 
 
+class T5AndVisualEvidence(T5EncoderModel):
+    def __init__(self, config: T5Config, visual_size: int) -> None:
+        super().__init__(config)
+        self.encoder = TextVisualEncoder(self.encoder, visual_size)
+    
+    @overrides
+    def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+        
+        outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
+                                        visual_attention_mask=visual_attention_mask, **kwargs)
+
+        # We only care about the last hidden state sequence
+        return outputs.last_hidden_state
+
 
 class T5FineTuner(pl.LightningModule):
     def __init__(self, hparams):
@@ -96,10 +112,12 @@ class T5FineTuner(pl.LightningModule):
 
         self.save_hyperparameters(hparams)
 
-        if self.hparams.model_type != "T5_text_and_visual":
-            self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
-        else:
+        if self.hparams.model_type == "T5_text_and_visual":
             self.model = T5AndVisual.from_pretrained(self.hparams.model_name_or_path, visual_size=self.hparams.visual_size)
+        elif self.hparams.model_type == "T5_evidence":
+            self.model = T5AndVisualEvidence.from_pretrained(self.hparams.model_name_or_path, visual_size=self.hparams.visual_size)
+        else:
+            self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
 
         self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
     
@@ -109,15 +127,7 @@ class T5FineTuner(pl.LightningModule):
     def forward(
         self, input_ids, attention_mask=None, visual=None, visual_attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, labels=None
     ):  
-        if self.hparams.model_type != "T5_text_and_visual":
-            return self.model(
-                input_ids,
-                attention_mask=attention_mask,
-                decoder_input_ids=decoder_input_ids,
-                decoder_attention_mask=decoder_attention_mask,
-                labels=labels,
-            )
-        else:
+        if self.hparams.model_type == "T5_text_and_visual":
             return self.model(
                 input_ids,
                 attention_mask=attention_mask,
@@ -125,41 +135,60 @@ class T5FineTuner(pl.LightningModule):
                 visual_attention_mask=visual_attention_mask,
                 labels=labels,
             )
-
-    def _step(self, batch):
-        labels = batch["target_ids"]
-        labels[labels[:, :] == self.tokenizer.pad_token_id] = -100
-
-        if self.hparams.model_type != "T5_text_and_visual":
-            outputs = self(
-                    input_ids=batch["source_ids"],
-                    attention_mask=batch["source_mask"],
-                    labels=labels,
-                    decoder_attention_mask=batch['target_mask']
+        elif self.hparams.model_type == "T5_evidence":
+            return self.model(
+                input_ids,
+                attention_mask=attention_mask,
+                visual=visual,
+                visual_attention_mask=visual_attention_mask
             )
         else:
-            outputs = self(
-                    input_ids=batch["source_ids"],
-                    attention_mask=batch["source_mask"],
-                    visual=batch["visual_ids"],
-                    visual_attention_mask=batch["visual_mask"],
-                    labels=labels,
-                    decoder_attention_mask=batch['target_mask']
-            )
+            return self.model(
+                input_ids,
+                attention_mask=attention_mask,
+                decoder_input_ids=decoder_input_ids,
+                decoder_attention_mask=decoder_attention_mask,
+                labels=labels,
+            )            
 
-        loss = outputs[0]
 
-        preds = torch.argmax(outputs[1].softmax(-1), dim=-1)
-        acc = torch.eq(preds, labels).sum() / (labels != -100).sum()  # token level acc
-        N, l = preds.shape 
-        sent_acc = []
-        for i in np.arange(N):
-            p = preds[i, :]
-            t = labels[i, :]
-            p[t[:] == -100] = -100
-            sent_acc.append(torch.equal(p, t))
-        sent_acc = sum(sent_acc) / len(sent_acc)
-        return loss, acc, sent_acc
+    def _step(self, batch):
+        if self.hparams.model_type == "T5_evidence": 
+            raise NotImplementedError
+        else:
+            labels = batch["target_ids"]
+            labels[labels[:, :] == self.tokenizer.pad_token_id] = -100
+
+            if self.hparams.model_type == "T5_text_and_visual":
+                outputs = self(
+                        input_ids=batch["source_ids"],
+                        attention_mask=batch["source_mask"],
+                        visual=batch["visual_ids"],
+                        visual_attention_mask=batch["visual_mask"],
+                        labels=labels,
+                        decoder_attention_mask=batch['target_mask']
+                )
+            else:
+                outputs = self(
+                        input_ids=batch["source_ids"],
+                        attention_mask=batch["source_mask"],
+                        labels=labels,
+                        decoder_attention_mask=batch['target_mask']
+                )            
+
+            loss = outputs[0]
+
+            preds = torch.argmax(outputs[1].softmax(-1), dim=-1)
+            acc = torch.eq(preds, labels).sum() / (labels != -100).sum()  # token level acc
+            N, l = preds.shape 
+            sent_acc = []
+            for i in np.arange(N):
+                p = preds[i, :]
+                t = labels[i, :]
+                p[t[:] == -100] = -100
+                sent_acc.append(torch.equal(p, t))
+            sent_acc = sum(sent_acc) / len(sent_acc)
+            return loss, acc, sent_acc
 
     def training_step(self, batch, batch_idx):
         loss, acc, sent_acc = self._step(batch)

@@ -1,4 +1,4 @@
-# Youtube video information crawler
+# YouTube video information crawler
   The code is adapted from https://github.com/qiisziilbash/YouTube-Channel-Video-Crawler .
 
   ## Instruction to use
@@ -16,8 +16,9 @@
   * Examine the description and videos manually to filter out unwanted videos, including:
     * videos of person taking interview
     * description of another language (Korean in some cases)
-    * Irrelavant videos (Some ads)
-  * Repeat the steps of running `random_selector.py` and `crawl_info.sh` and changing interation number in the files. Stop until we have expected number of video files for each channel. 
+    * Irrelevant videos (Some ads)
+  * Repeat the steps of running `random_selector.py` and `crawl_info.sh` and changing the interaction number in the 
+    files. Stop until we have expected number of video files for each channel. 
 
   ## Result
   * links are placed under `All-links` folder.

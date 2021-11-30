@@ -141,6 +141,7 @@ def parse_args():
     parser_T5_evidence.add_argument("--output_ckpt_dir", required=True)
     parser_T5_evidence.add_argument("--model_name_or_path", default='t5-base')
     parser_T5_evidence.add_argument("--tokenizer_name_or_path", default='t5-base')
+    parser_T5_evidence.add_argument("--hidden_size", default=768, type=int)
     parser_T5_evidence.add_argument("--max_seq_length", default=512, type=int)
     parser_T5_evidence.add_argument("--learning_rate", default=3e-4)
     parser_T5_evidence.add_argument("--weight_decay", default=0.0)

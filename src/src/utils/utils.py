@@ -8,3 +8,10 @@ def read_hdf5(path):
         for key in keys:
             weights[f[key].name.strip("/")] = f[key].value
     return weights
+
+def isfloat(ele):
+    try:
+        float(ele)
+    except ValueError:
+        return False
+    return True

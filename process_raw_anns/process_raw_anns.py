@@ -119,7 +119,7 @@ def process(data):
                     "objective": objective,
                     "confidence": confidence,
                     "question": question,
-                    "correct_answer": correct_ans,
+                    "answers": correct_ans,
                     "question_type": question_type,
                     "question_base": question_base,
                     "evidences": evidences,

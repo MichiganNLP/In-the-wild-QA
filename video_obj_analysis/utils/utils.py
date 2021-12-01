@@ -1,11 +1,10 @@
 from __future__ import division
+
 import math
-import time
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.autograd import Variable
+
 import numpy as np
+import torch
+
 
 #import matplotlib.pyplot as plt
 #import matplotlib.patches as patches

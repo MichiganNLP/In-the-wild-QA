@@ -1,8 +1,6 @@
 
-from sentence_transformers import SentenceTransformer, util
-from torch.utils.data import ConcatDataset
 import numpy as np
-
+from sentence_transformers import SentenceTransformer, util
 from src.closest_rtr.rtr_dataloader import RTRDataset
 from src.evaluations.evaluations import evaluate
 from tqdm import tqdm

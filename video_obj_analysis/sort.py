@@ -17,17 +17,18 @@
 """
 from __future__ import print_function
 
-from numba import jit
+import argparse
 import os.path
+import time
+
 import numpy as np
+from filterpy.kalman import KalmanFilter
+from numba import jit
+from scipy.optimize import linear_sum_assignment as linear_assignment
 ##import matplotlib.pyplot as plt
 ##import matplotlib.patches as patches
 from skimage import io
-from scipy.optimize import linear_sum_assignment as linear_assignment
-import glob
-import time
-import argparse
-from filterpy.kalman import KalmanFilter
+
 
 @jit
 def iou(bb_test,bb_gt):

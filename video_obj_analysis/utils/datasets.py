@@ -1,20 +1,15 @@
 import glob
-import random
 import os
+
 import numpy as np
-
 import torch
-
-from torch.utils.data import Dataset
 from PIL import Image
-import torchvision.transforms as transforms
+from skimage.transform import resize
+from torch.utils.data import Dataset
+
 
 ##import matplotlib.pyplot as plt
 ##import matplotlib.patches as patches
-
-from skimage.transform import resize
-
-import sys
 
 class ImageFolder(Dataset):
     def __init__(self, folder_path, img_size=416):

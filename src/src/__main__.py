@@ -1,13 +1,12 @@
-import argparse
 import random
 
-from src.parse_args import parse_args
-from src.rdm.random_text import random_text
-from src.rdm.random_evidence import random_evidence
+from src.T5.eval import T5_eval
+from src.T5.train import T5_train
 from src.closest_rtr.closest_rtr import closest_rtr
 from src.mca.mca import most_common_ans
-from src.T5.train import T5_train
-from src.T5.eval import T5_eval
+from src.parse_args import parse_args
+from src.rdm.random_evidence import random_evidence
+from src.rdm.random_text import random_text
 
 
 def main():

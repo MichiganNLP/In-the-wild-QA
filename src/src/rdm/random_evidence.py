@@ -1,5 +1,5 @@
 import random
-from math import floor
+
 from src.dataloader import VQADataset
 from src.evaluations.evaluations import evidence_evaluation
 

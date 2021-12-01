@@ -1,6 +1,6 @@
-import os
-from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from collections import defaultdict
+
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from tqdm import tqdm
 
 with open(f'manual_clip.txt', 'r') as f:

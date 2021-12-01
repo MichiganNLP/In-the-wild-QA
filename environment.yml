@@ -12,6 +12,7 @@ dependencies:
   - conda-forge::google-api-python-client
   - conda-forge::google-auth-oauthlib
   -              h5py
+  -              keras  # Not sure why it's needed, but it gives an import error otherwise.
   - conda-forge::matplotlib
   - conda-forge::moviepy
   -              nltk

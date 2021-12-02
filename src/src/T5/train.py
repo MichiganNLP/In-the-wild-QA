@@ -37,7 +37,7 @@ def T5_train(args):
         dirpath=args.output_ckpt_dir, filename="{epoch}-{val_loss:.2f}", monitor="val_loss", mode="min", save_top_k=1
     )
 
-    wandb_logger = WandbLogger(name=args.wandb_name,project=args.wandb_project)
+    wandb_logger = WandbLogger(name=args.wandb_name,project=args.wandb_project, entity=args.wandb_entity)
 
     train_params = dict(
         accumulate_grad_batches=args.gradient_accumulation_steps,

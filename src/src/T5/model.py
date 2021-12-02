@@ -7,7 +7,10 @@ import numpy as np
 import torch
 import pytorch_lightning as pl
 from torch.utils.data import Dataset, DataLoader
+from overrides import overrides
+import torch.nn as nn
 
+from typing import Any, Mapping, Optional, Tuple, Union
 
 from transformers import (
     AdamW,
@@ -15,8 +18,76 @@ from transformers import (
     T5Tokenizer,
     get_linear_schedule_with_warmup
 )
+from transformers.models.t5.modeling_t5 import T5Stack
+from transformers.modeling_outputs import BaseModelOutputWithPastAndCrossAttentions, Seq2SeqLMOutput
+from transformers import T5Config, T5ForConditionalGeneration
 
 from src.T5.T5_dataloader import T5Dataset, get_dataset
+
+
+
+def _combine_attention_masks(text_attention_mask: Optional[torch.Tensor] = None,
+                             visual_attention_mask: Optional[torch.Tensor] = None) -> Optional[torch.Tensor]:
+    if text_attention_mask is not None and visual_attention_mask is not None:
+        text_batch_size = text_attention_mask.shape[0]
+        visual_batch_size = visual_attention_mask.shape[0]
+        beam_size = text_batch_size // visual_batch_size
+        if beam_size > 1:
+            visual_attention_mask = visual_attention_mask.repeat(beam_size, 1)
+        return torch.cat([text_attention_mask, visual_attention_mask], dim=1)
+    else:
+        assert text_attention_mask is None and visual_attention_mask is None, \
+            "Can't set the text or visual attention mask as one is empty and the other one isn't."
+        return None
+
+
+class TextVisualEncoder(T5Stack):
+    def __init__(self, t5stack: T5Stack, visual_size: int) -> None:
+        super().__init__(t5stack.config, t5stack.embed_tokens)
+        self.embed_video = nn.Linear(visual_size, self.embed_tokens.embedding_dim)
+
+    @overrides
+    def forward(self, text_token_ids: torch.Tensor, visual: torch.Tensor,  # noqa
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                **kwargs) -> Union[BaseModelOutputWithPastAndCrossAttentions, Tuple[torch.Tensor, ...]]:
+        text_embedding = self.embed_tokens(text_token_ids)
+        visual_embedding = self.embed_video(visual)
+        embedding = torch.cat([text_embedding, visual_embedding], dim=1)
+        attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)
+
+        return super().forward(inputs_embeds=embedding, attention_mask=attention_mask, **kwargs)
+
+
+class T5AndVisual(T5ForConditionalGeneration):
+    def __init__(self, config: T5Config, visual_size: int) -> None:
+        super().__init__(config)
+        self.encoder = TextVisualEncoder(self.encoder, visual_size)
+
+    @overrides
+    def prepare_inputs_for_generation(self, input_ids: torch.Tensor, visual: Optional[torch.Tensor] = None,
+                                      visual_attention_mask: Optional[torch.Tensor] = None,
+                                      **kwargs) -> Mapping[str, Any]:
+        output = super().prepare_inputs_for_generation(input_ids, **kwargs)  # noqa
+        output["visual"] = visual
+        output["visual_attention_mask"] = visual_attention_mask
+        return output
+
+    @overrides
+    def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                labels: Optional[torch.Tensor] = None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+        if "encoder_outputs" not in kwargs:
+            kwargs["encoder_outputs"] = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
+                                                     visual_attention_mask=visual_attention_mask, **kwargs)
+
+        # The attention mask used in the encoder (the combined mask) is actually necessary for the decoder even when
+        # providing "encoder_outputs". We could compute it once in the encoder, return it as one of its fields and use
+        # it here. However, in `T5FillerModel.generative_step` we input the encoder outputs but without the mask
+        # since its constructed from the `generate` output which in turn only returns certain fields (not the mask).
+        attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)
+
+        return super().forward(attention_mask=attention_mask, labels=labels, **kwargs)  # noqa
+
 
 
 class T5FineTuner(pl.LightningModule):
@@ -25,33 +96,56 @@ class T5FineTuner(pl.LightningModule):
 
         self.save_hyperparameters(hparams)
 
-        self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
+        if self.hparams.model_type != "T5_text_and_visual":
+            self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
+        else:
+            self.model = T5AndVisual.from_pretrained(self.hparams.model_name_or_path, visual_size=self.hparams.visual_size)
+
         self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
     
     def is_logger(self):
         return self.trainer.global_rank <= 0
     
     def forward(
-        self, input_ids, attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, labels=None
-    ):
-        return self.model(
-            input_ids,
-            attention_mask=attention_mask,
-            decoder_input_ids=decoder_input_ids,
-            decoder_attention_mask=decoder_attention_mask,
-            labels=labels,
-        )
+        self, input_ids, attention_mask=None, visual=None, visual_attention_mask=None, decoder_input_ids=None, decoder_attention_mask=None, labels=None
+    ):  
+        if self.hparams.model_type != "T5_text_and_visual":
+            return self.model(
+                input_ids,
+                attention_mask=attention_mask,
+                decoder_input_ids=decoder_input_ids,
+                decoder_attention_mask=decoder_attention_mask,
+                labels=labels,
+            )
+        else:
+            return self.model(
+                input_ids,
+                attention_mask=attention_mask,
+                visual=visual,
+                visual_attention_mask=visual_attention_mask,
+                labels=labels,
+            )
 
     def _step(self, batch):
         labels = batch["target_ids"]
         labels[labels[:, :] == self.tokenizer.pad_token_id] = -100
 
-        outputs = self(
-                input_ids=batch["source_ids"],
-                attention_mask=batch["source_mask"],
-                labels=labels,
-                decoder_attention_mask=batch['target_mask']
-        )
+        if self.hparams.model_type != "T5_text_and_visual":
+            outputs = self(
+                    input_ids=batch["source_ids"],
+                    attention_mask=batch["source_mask"],
+                    labels=labels,
+                    decoder_attention_mask=batch['target_mask']
+            )
+        else:
+            outputs = self(
+                    input_ids=batch["source_ids"],
+                    attention_mask=batch["source_mask"],
+                    visual=batch["visual_ids"],
+                    visual_attention_mask=batch["visual_mask"],
+                    labels=labels,
+                    decoder_attention_mask=batch['target_mask']
+            )
 
         loss = outputs[0]
 
@@ -150,3 +244,4 @@ class T5FineTuner(pl.LightningModule):
     def val_dataloader(self):
         val_dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.hparams.dev_data, args=self.hparams)
         return DataLoader(val_dataset, batch_size=self.hparams.eval_batch_size, num_workers=4)
+    

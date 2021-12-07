@@ -182,20 +182,20 @@
         <li>You will need to provide at least one answer for each question (ignoring differences such as upper/lower case, or the article). <b>The more the better</b>, but every answer should be correct.</li>
         <li>You will need to identify the source of your answer (whether it is based on the visual scene, or the audio).</li>
         <li>You will need to provide video evidence (video clip) to support your answers.</li>
-        <li>If one video or question is not available, please <u>comment</u> at the bottom of this annotation page (and fill the mandatory fields for this video/question with placeholder values).          
+        <li>If one video or question is not available, please <u>comment</u> at the bottom of this annotation page (and fill the mandatory fields for this video/question with placeholder values).
         </li>
       </ul>
 
 
       <h3>How to provide video evidence</h3>
-      <ur>
+      <ul>
         <li>The video evidence consists of <b>all</b> the parts of the video that support the answer to your given question.</li>
         <li> You need to provide at least one video evidence clip (intervals within the video) for each question.</li>
         <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
         <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
         <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
         <li> The video evidence clips (the time gap between the start point and the end point) should be <span class="example-answer">as short as possible.</span></li>
-      </ur>
+      </ul>
 
       <h3>Example</h3>
       
@@ -240,16 +240,16 @@
   const ENTER_KEY_CODE = 13;
   const BACKSPACE_KEY_CODE = 8;
 
-  const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
-    "${video1}", "${video2}"]
   // const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
-  //   "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
+  //   "${video1}", "${video2}"]
+  const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
+    "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
       .map(v => templateWasSubstituted(v) ? v :
        "https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1");
-  const questions = ["Which direction does the landspout bend towards?", 
-    "${question1}", "${question2}"]
   // const questions = ["Which direction does the landspout bend towards?", 
-  //   "${question1}", "${question2}", "${question3}", "${question4}", "${question5}"]
+  //   "${question1}", "${question2}"]
+  const questions = ["Which direction does the landspout bend towards?", 
+    "${question1}", "${question2}", "${question3}", "${question4}", "${question5}"]
       .map(v => templateWasSubstituted(v) ? v :
        "Which direction does the landspout bend towards?").map(escapeHtml);
 

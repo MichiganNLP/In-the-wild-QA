@@ -6,9 +6,9 @@ CUDA_ID=0
 
 # params based on the params at the top
 output_ckpt_dir=ckpts/T5/evidence_finetuned/
-num_train_epochs=10
-train_batch_size=2
-eval_batch_size=2
+num_train_epochs=30
+train_batch_size=1
+eval_batch_size=1
 log_dir=logs/T5_evidence/
 log_path=logs/T5_evidence/baseline.log
 gradient_accumulation_steps=16

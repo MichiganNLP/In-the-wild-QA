@@ -86,7 +86,7 @@ class T5Dataset(VQADataset):
         visual_mask = torch.Tensor([])
         target_ids = torch.Tensor([])
         target_mask = torch.Tensor([])
-        evidences = None
+        evidences = []
 
         if self.include_visual:
             visual_ids = self.input_visuals[index]["input_ids"].squeeze()
@@ -96,8 +96,8 @@ class T5Dataset(VQADataset):
             target_ids = self.targets[index]["input_ids"].squeeze()
             target_mask = self.targets[index]["attention_mask"].squeeze()    # might need to squeeze
         
-        if self.is_evidence:
-            evidence = self.evidences[index]
+        if not self.is_test and self.is_evidence:
+            evidences = self.evidences[index]
 
         return {"source_ids": source_ids, 
                 "source_mask": src_mask, 
@@ -105,7 +105,7 @@ class T5Dataset(VQADataset):
                 "visual_mask": visual_mask,
                 "target_ids": target_ids, 
                 "target_mask": target_mask,
-                "evidence": evidence}
+                "evidence": evidences}
 
     def _build(self):
         self._buil_examples_from_files()

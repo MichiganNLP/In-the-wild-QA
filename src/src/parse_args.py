@@ -174,6 +174,20 @@ def parse_args():
     parser_T5_evidence.add_argument("--wandb_name", required=True)
     parser_T5_evidence.add_argument("--wandb_entity", required=True)
 
+    # T5 visual model evaluate arguments
+    parser_T5_evidence_eval = subparsers.add_parser('T5_evidence_eval', help='T5 evidence baseline', parents=[parent_parser])
+    parser_T5_evidence_eval.add_argument("--ckpt_path")
+    parser_T5_evidence_eval.add_argument("--max_seq_length", default=512, type=int)
+    parser_T5_evidence_eval.add_argument("--batch_size", default=32, type=int)
+    parser_T5_evidence_eval.add_argument("--pred_out_dir", help="prediction output directory")
+    parser_T5_evidence_eval.add_argument("--pred_num", type=int, help="number of predictions made")
+    parser_T5_evidence_eval.add_argument("--beam_size", type=int, help="beam size for search")
+    
+    parser_T5_evidence_eval.add_argument("--path_to_visual_file", required=True)
+    parser_T5_evidence_eval.add_argument("--visual_size", type=int, required=True)
+    parser_T5_evidence_eval.add_argument("--max_vid_length", type=int)
+    parser_T5_evidence_eval.add_argument("--sample_rate", type=int)
+
 
     args = parser.parse_args()
     return args

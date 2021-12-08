@@ -35,6 +35,8 @@ def main():
         random_evidence(args)
     elif args.model_type == "T5_evidence":
         T5_train(args)
+    elif args.model_type == "T5_evidence_eval":
+        T5_eval(args)
 
 if __name__ == "__main__":
     main()

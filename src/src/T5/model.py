@@ -77,6 +77,7 @@ class T5AndVisual(T5ForConditionalGeneration):
     def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
                 labels: Optional[torch.Tensor] = None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+
         if "encoder_outputs" not in kwargs:
             kwargs["encoder_outputs"] = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
                                                      visual_attention_mask=visual_attention_mask, **kwargs)
@@ -95,17 +96,15 @@ class T5AndVisualEvidence(T5EncoderModel):
         super().__init__(config)
         self.encoder = TextVisualEncoder(self.encoder, visual_size)
         #NOTE: problems here!
-        self.lgsm = nn.Softmax()  # calculate the probability
+        self.lgsm = nn.LogSoftmax(dim=2)
         self.start_vec = nn.Linear(hidden_size, 1)
-        self.end_vec = nn.Linear(hidden_size, 1)
-        self.loss = nn.CrossEntropyLoss()
-    
+        self.end_vec = nn.Linear(hidden_size, 1)    
 
     @overrides
     def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
                 evidence = None, evidence_mask = None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
-        
+
         outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
                                         visual_attention_mask=visual_attention_mask, **kwargs)
         # We only care about the last hidden state sequence
@@ -115,27 +114,26 @@ class T5AndVisualEvidence(T5EncoderModel):
 
         # assume it is batch_size * visual_leng
         
-        start_lgsm = self.lgsm(self.start_vec(visual_hidden))
-        end_lgsm = self.lgsm(self.end_vec(visual_hidden))
+        start = self.start_vec(visual_hidden)
+        end = self.end_vec(visual_hidden)
 
-        start_lgsm = torch.transpose(start_lgsm, 1, 2)   # batch_size * N = 1 * visual_len
-        end_lgsm = torch.transpose(end_lgsm, 1, 2)  # batch_size * N = 1 * visual_len
+        start = torch.transpose(start, 1, 2)   # batch_size * N = 1 * visual_len
+        end = torch.transpose(end, 1, 2)  # batch_size * N = 1 * visual_len
 
-        starts = evidence[:, :, 0].long()
-        ends = evidence[:, :, 1].long()
+        return start, end
+    
+    def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                evidence = None, evidence_mask = None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
 
-        start_lss, end_lss = [], []
+        start, end = self.forward(masked_caption_ids, visual, attention_mask, visual_attention_mask, evidence, evidence_mask)
 
-        for i in range(starts.shape[1]):
-            # multiple evidences (N >= 1)
-            start_lss.append(self.loss(start_lgsm.squeeze(), starts[:, i].squeeze()))
-            end_lss.append(self.loss(start_lgsm.squeeze(), ends[:, i].squeeze()))
+        # assume it is batch_size * visual_len
+        
+        start_lgsm = self.lgsm(start)
+        end_lgsm = self.lgsm(end)
 
-        # output start_pos: batch_size * N (number of evidences within an instance)
-        tt_start_lss = torch.sum(torch.stack(start_lss))
-        tt_end_lss = torch.sum(torch.stack(end_lss))
-
-        return tt_start_lss, tt_end_lss, torch.argmax(start_lgsm, dim=2), torch.argmax(end_lgsm, dim=2)
+        return start_lgsm, end_lgsm
 
 
 class T5FineTuner(pl.LightningModule):
@@ -148,6 +146,7 @@ class T5FineTuner(pl.LightningModule):
             self.model = T5AndVisual.from_pretrained(self.hparams.model_name_or_path, visual_size=self.hparams.visual_size)
         elif self.hparams.model_type == "T5_evidence":
             self.model = T5AndVisualEvidence.from_pretrained(self.hparams.model_name_or_path, visual_size=self.hparams.visual_size, hidden_size=self.hparams.hidden_size)
+            self.xentloss = nn.CrossEntropyLoss()
         else:
             self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
 
@@ -190,17 +189,40 @@ class T5FineTuner(pl.LightningModule):
 
     def _step(self, batch):
         if self.hparams.model_type == "T5_evidence": 
-            start_loss, end_loss, start_pos, end_pos = self(
+            raw_start, raw_end = self(
                 input_ids=batch["source_ids"],
                 attention_mask=batch["source_mask"],
                 visual=batch["visual_ids"],
-                visual_attention_mask=batch["visual_mask"],
-                evidence = batch["evidence"],
-                evidence_mask = batch["evidence_mask"]
+                visual_attention_mask=batch["visual_mask"]
             )
+
+            evidence = batch["evidence"]
+            evidence_mask = batch["evidence_mask"]  # shape: batch_size * N
+
+            starts = evidence[:, :, 0].long()
+            ends = evidence[:, :, 1].long()
+
+            start_lss, end_lss = [], []
+
+            batch_size, N = starts.shape
+            for b in range(batch_size):
+                # for i in range(N):
+                    # multiple evidences (N >= 1)
+
+                    if int(evidence_mask[b][i].item()):
+                        # otherwise we should not care about the cross entropy loss
+                        start_lss.append(self.xentloss(raw_start[b], starts[b][0].unsqueeze(dim=0)))
+                        end_lss.append(self.xentloss(raw_end[b], ends[b][0].unsqueeze(dim=0)))
+
+            # output start_pos: batch_size * N (number of evidences within an instance)
+            tt_start_lss = torch.sum(torch.stack(start_lss))
+            tt_end_lss = torch.sum(torch.stack(end_lss))
+
             # following the BERT paper of using the average of start and end loss
             # no accuracy or sentence accuracy available here
-            return (start_loss + end_loss) / 2, 0, 0
+
+            return (tt_start_lss + tt_end_lss) / 2, 0, 0
+            # return tt_end_lss, 0, 0
 
         else:
             labels = batch["target_ids"]
@@ -328,17 +350,31 @@ def my_collate(examples):
     # len(examples) == specified batch_size
     evidence = [ex["evidence"] for ex in examples]
     max_len = max([len(ev) for ev in evidence])
-    evidence_mask = [torch.Tensor([1 for _ in range(len(ev))] + [0 for _ in range(max_len - len(ev))]) for ev in evidence]
-    evidence = [torch.Tensor(ev + [[0, 0] for _ in range(max_len - len(ev))]) for ev in evidence]
-    batch = {
-        "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),
-        "source_mask": torch.stack([ex["source_mask"] for ex in examples], dim=0),
-        "visual_ids": torch.stack([ex["visual_ids"] for ex in examples], dim=0),
-        "visual_mask": torch.stack([ex["visual_mask"] for ex in examples], dim=0),
-        "target_ids": torch.stack([ex["target_ids"] for ex in examples], dim=0),
-        "target_mask": torch.stack([ex["target_mask"] for ex in examples], dim=0),
-        "evidence": torch.stack(evidence, dim=0),
-        "evidence_mask": torch.stack(evidence_mask, dim=0)
-    }
+    if evidence[0]:
+        # whether the evidence should be used for training
+        evidence_mask = [torch.Tensor([1 for _ in range(len(ev))] + [0 for _ in range(max_len - len(ev))]) for ev in evidence]
+        evidence = [torch.Tensor(ev + [[0, 0] for _ in range(max_len - len(ev))]) for ev in evidence]
+        batch = {
+            "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),
+            "source_mask": torch.stack([ex["source_mask"] for ex in examples], dim=0),
+            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples], dim=0),
+            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples], dim=0),
+            "target_ids": torch.stack([ex["target_ids"] for ex in examples], dim=0),
+            "target_mask": torch.stack([ex["target_mask"] for ex in examples], dim=0),
+            "evidence": torch.stack(evidence, dim=0),
+            "evidence_mask": torch.stack(evidence_mask, dim=0)
+        }
+    else:
+        assert not examples[0]["target_ids"].nelement()
+        batch = {
+            "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),
+            "source_mask": torch.stack([ex["source_mask"] for ex in examples], dim=0),
+            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples], dim=0),
+            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples], dim=0),
+            "target_ids": torch.Tensor([]),
+            "target_mask": torch.Tensor([]),
+            "evidence": torch.Tensor([]),
+            "evidence_mask": torch.Tensor([])
+        }
     return batch
     

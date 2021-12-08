@@ -5,6 +5,7 @@ import warnings
 import numpy as np
 from tqdm import tqdm
 from collections import defaultdict
+from src.dataloader import VQADataset
 
 
 warnings.filterwarnings("ignore")   # filter user warning for BLEU when overlap is 0
@@ -29,9 +30,13 @@ def evaluate(model_name, preds, test_data):
     print(f"ROUGE 3: {round(evl.ROUGE(3) * 100, 2)}%")
 
 
-def evidence_evaluation(model_name: str, preds: list, test_data: list):
+def evidence_evaluation(model_name: str, preds: list, test_data: VQADataset):
     """ 
     Evaluation for evidence finding
+    preds: list of list of span list, that is: [[[start1, end1], [start2, end2]], ...]
+        The most inner list gives the predicted start, end
+        The second inner list gives all the span predictions for an instance
+        The outmost list is the predictions for all instances
     """
     gt_spans = [itm["target_period"] for itm in test_data]
     evl = Evidence_Evaluation(preds, gt_spans)    

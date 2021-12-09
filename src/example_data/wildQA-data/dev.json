@@ -1,0 +1,472 @@
+[
+    {
+        "objective": "topography",
+        "confidence": "very_high",
+        "question": "Are there any other manmade features?",
+        "answers": "Yes, there are farmfields. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "8.08"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/pgkvfz88xs9o0pk/TK-Hinshaw_1-clip-1.mp4?raw=1",
+        "video_id": "TK-Hinshaw_1-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:53.380",
+                "end": "00:03:04.351"
+            },
+            "seconds": {
+                "start": "113.38004469669885",
+                "end": "184.3510144053152"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.97096970861635
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "Are there any people? How many? ",
+        "answers": "Yes, there are three. ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "65.36",
+                    "70.32"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
+        "video_id": "TreadmillTV_7-clip-15",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:30:20.886",
+                "end": "00:32:21.439"
+            },
+            "seconds": {
+                "start": "1820.8857333333333",
+                "end": "1941.4395"
+            },
+            "split-method": "auto"
+        },
+        "duration": 120.55376666666666
+    },
+    {
+        "objective": "Takeoff's should be smooth and controlled.",
+        "confidence": "moderate",
+        "question": "WHy should takeoffs be smooth and controlled?",
+        "answers": "A smooth takeoff will eliminate some mechanical difficulties that may be caused by failure or unseen elements in the takeoff.",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "21.36"
+                ]
+            },
+            {
+                "1": [
+                    "21.6",
+                    "98"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "2113",
+        "video_link": "https://www.dropbox.com/s/stziiixua79t37j/Gung-Ho-Vids_11-clip-4.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_11-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:43.000",
+                "end": "00:05:46.100"
+            },
+            "seconds": {
+                "start": "283.0",
+                "end": "346.1"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.10000000000002
+    },
+    {
+        "objective": "water",
+        "confidence": "very_high",
+        "question": "What kind of water features are there",
+        "answers": "There is a creek and a pond",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "5.68"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/a3ewq55teqdujtq/4k-Relaxation_11-manual.mp4?raw=1",
+        "video_id": "4k-Relaxation_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "25:00",
+                "end": "27:00"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0
+    },
+    {
+        "objective": "I wish to learn about the terrain",
+        "confidence": "high",
+        "question": "What kind of roads do they have?",
+        "answers": "Dirt roads covered with water",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "20.72",
+                    "23.44"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "904",
+        "video_link": "https://www.dropbox.com/s/eonwwz2x75dtd5z/Military-Archive_1-clip-3.mp4?raw=1",
+        "video_id": "Military-Archive_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.157",
+                "end": "00:04:10.951"
+            },
+            "seconds": {
+                "start": "190.15663333333333",
+                "end": "250.9507"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.79406666666668
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "What are they doing?",
+        "answers": "Two of them are hiking and one of them is running. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "64.4",
+                    "70.32"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
+        "video_id": "TreadmillTV_7-clip-15",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:30:20.886",
+                "end": "00:32:21.439"
+            },
+            "seconds": {
+                "start": "1820.8857333333333",
+                "end": "1941.4395"
+            },
+            "split-method": "auto"
+        },
+        "duration": 120.55376666666666
+    },
+    {
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "question": "Are the airplanes turned on?",
+        "answers": "The airplanes are on ",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "5.84"
+                ]
+            },
+            {
+                "1": [
+                    "46.96",
+                    "53.36"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "How many people are there?",
+        "answers": "Three. ",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "4.48"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/3hwxyoh8rf9tl46/Norwegian-Explorer_7-clip-0.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3
+    },
+    {
+        "objective": "How to train for hostile entrance of a small room.",
+        "confidence": "high",
+        "question": "Why do we move slowly when training for specialized entrances?",
+        "answers": "The slowness of training versus the speed of a real life evolution to help each team member to better understand their responsibilities and to learn how their team members should be reacting. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "10.08",
+                    "53.44"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "2113",
+        "video_link": "https://www.dropbox.com/s/9jcf1lynv4d6taz/WarLeaks-Military-Blog_1-clip-0.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.379"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.37931034482759"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.37931034482759
+    },
+    {
+        "objective": "Topography ",
+        "confidence": "very_high",
+        "question": "What sort of features are present here?",
+        "answers": "Islands, mountains, forest, and an ocean. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "8.88"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/vi8cpvegr791wem/Primal-Earth-Sounds_3-clip-48.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_3-clip-48",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:39.250",
+                "end": "00:59:46.042"
+            },
+            "seconds": {
+                "start": "3519.25",
+                "end": "3586.0416666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.79166666666652
+    },
+    {
+        "objective": "Hostage recover training",
+        "confidence": "high",
+        "question": "Why do we practice hostage recovery?",
+        "answers": "To have a greater chance of a successful recovery.",
+        "question_type": [
+            "Location",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "79.52",
+                    "100"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "8333",
+        "video_link": "https://www.dropbox.com/s/s6ny2899m00cujy/WarLeaks-Military-Blog_6-clip-0.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:44.069"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "44.06896551724138"
+            },
+            "split-method": "auto"
+        },
+        "duration": 44.06896551724138
+    },
+    {
+        "objective": "I am curious about all the people walking the other way",
+        "confidence": "moderate",
+        "question": "Is this a park of some kind?",
+        "answers": "I think that because of the number of people walking in both directions, this must be a park that people can visit and walk",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "1.68",
+                    "4"
+                ]
+            },
+            {
+                "1": [
+                    "31.2",
+                    "36"
+                ]
+            },
+            {
+                "2": [
+                    "69.04",
+                    "76.72"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "2888",
+        "video_link": "https://www.dropbox.com/s/zbsd5jknzovwcoj/TreadmillTV_6-clip-2.mp4?raw=1",
+        "video_id": "TreadmillTV_6-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:41:04.195",
+                "end": "00:42:28.146"
+            },
+            "seconds": {
+                "start": "2464.1950666666667",
+                "end": "2548.1456"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.95053333333317
+    }
+]

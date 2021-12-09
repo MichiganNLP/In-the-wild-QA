@@ -1,0 +1,4384 @@
+[
+    {
+        "objective": "water",
+        "confidence": "very_high",
+        "question": "Where are they in relation to one another?",
+        "answers": "The creek leads into the pond. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "5.84"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/a3ewq55teqdujtq/4k-Relaxation_11-manual.mp4?raw=1",
+        "video_id": "4k-Relaxation_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "25:00",
+                "end": "27:00"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0
+    },
+    {
+        "objective": "I am interested in the different ways these bodies of water are moving.",
+        "confidence": "moderate",
+        "question": "Could this video be used in a lecture to supplement teaching/learning about hydrology/hydrologic cycle?",
+        "answers": "Since this video shows some of the many ways water can move, I think it would be an interesting clip to see in a lecture about hydrology",
+        "question_type": [
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "7.28",
+                    "16.96"
+                ]
+            },
+            {
+                "1": [
+                    "50.32",
+                    "59.76"
+                ]
+            },
+            {
+                "2": [
+                    "79.2",
+                    "86.24"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1643",
+        "video_link": "https://www.dropbox.com/s/fxzmuaiq26hq2jk/Primal-Earth-Sounds_4-clip-30.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_4-clip-30",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:33:57.292",
+                "end": "00:34:58.208"
+            },
+            "seconds": {
+                "start": "2037.2916666666667",
+                "end": "2098.2083333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.91666666666674
+    },
+    {
+        "objective": "Topography",
+        "confidence": "very_high",
+        "question": "What kind of environment is this?",
+        "answers": "Savannah. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "25.2",
+                    "32.32"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/3e4d0vw7fvlvxm2/TreadmillTV_12-manual.mp4?raw=1",
+        "video_id": "TreadmillTV_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:30"
+            },
+            "split-method": "manual"
+        },
+        "duration": 90.0
+    },
+    {
+        "objective": "This is more than likely a boot camp live fire of the newly adopted Sig Sauer P320. It was the replacement from the long time 9mm Beretta 92. Live fire training is done after a few days practice of a laser/ mechanical simulated pistol that will have kickback to simulate live fire training. The soldiers in the video are more than likely doing their live fire 9mm qualifications",
+        "confidence": "very_high",
+        "question": "Are they training for timed quick target acquisition?",
+        "answers": "More than likely this is not a timed scenario. Usually there is about 10 seconds to fire about 15 rounds etc. This video does not show a sense of hurry or quick means. This is probably a pre-qualification day that is used to get the soldier use to firing a pistol.",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "13.44",
+                    "29.68"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "3676",
+        "video_link": "https://www.dropbox.com/s/79lfbls3gmycbmm/USA-Military-Channel_5-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_5-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:01.421",
+                "end": "00:02:57.310"
+            },
+            "seconds": {
+                "start": "121.42098042905533",
+                "end": "177.31"
+            },
+            "split-method": "auto"
+        },
+        "duration": 55.88901957094467
+    },
+    {
+        "objective": "I wish to learn about the ceremony",
+        "confidence": "high",
+        "question": "What songs were playing?",
+        "answers": "National Anthems",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "30.64",
+                    "34.16"
+                ]
+            },
+            {
+                "1": [
+                    "46.96",
+                    "52.96"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/v35dxwq64vf8jxp/MilitaryNotes_9-manual.mp4?raw=1",
+        "video_id": "MilitaryNotes_9-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:09",
+                "end": "1:55"
+            },
+            "split-method": "manual"
+        },
+        "duration": 46.0
+    },
+    {
+        "objective": "This is obviously the Army National Guard physical fitness test as indicated in the video other indicators are the highly shiny glow belts required by military installations during mandatory group fitness testing for safety precautions. Physical fitness tests are done at a minimum of once every 6 months. Each branch has their own fitness tests. Navy is a 1.5 mile run as the Army is 2 miles. ",
+        "confidence": "high",
+        "question": "Is this a pre deployment physical fitness test? ",
+        "answers": "I believe that it is not a pre deployment physical fitness test. Typically when there is that test there is a lot more in depth on time standards and upper chain of command involvement to ensure accurate times are being recorded. There does not seem to be anything higher than a specialist within these videos",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "51.28",
+                    "66.08"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "3676",
+        "video_link": "https://www.dropbox.com/s/5s233h8nrym5smv/MilitaryNotes_8-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:09.599"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "69.59945518590999"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.59945518590999
+    },
+    {
+        "objective": "Shows the helicopter crew doing prechecks on their minigun. He appears to be mounting a night vision locating light used for aiming with low light conditions, similar to a laser light. By the fact that there is no blank firing device on the barrel of the minigun it indicates that this is probably a live action contact scenario. More than likely an insertion or extraction of a squad of Army rangers or green beret.",
+        "confidence": "high",
+        "question": "Is this a live contact scenario?",
+        "answers": "More than likely this is a live contact scenario based on the fact that there is no blank firing device on the weapon. Strange things are that there are a minigun in the beginning on the right or starboard side yet in the video appears to be a M60 on the left or port side, indicates might be a mash up of two different scenarios. This is more than likely used to show the level of night vision quality.",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "3.92",
+                    "15.44"
+                ]
+            },
+            {
+                "1": [
+                    "81.04",
+                    "96.96"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "3676",
+        "video_link": "https://www.dropbox.com/s/h2g4ftqne1quizy/Gung-Ho-Vids_8-clip-0.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.600"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.6"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6
+    },
+    {
+        "objective": "Testing the accuracy of ships' close quarter weapons.",
+        "confidence": "high",
+        "question": "Why do we live fire test the ships close quarter weapons systems?",
+        "answers": "To keep our skills honed and to know what the effect of water motion has on the equipment accuracy.",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "35.28",
+                    "91.2"
+                ]
+            },
+            {
+                "1": [
+                    "92.72",
+                    "99.44"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "8333",
+        "video_link": "https://www.dropbox.com/s/474ae3k619n5whz/Military-Archive_4-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:02.996"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "62.99626666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.99626666666667
+    },
+    {
+        "objective": "Roads",
+        "confidence": "very_high",
+        "question": "Where are they?",
+        "answers": "There are two in the forest and two in the mountains. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "4.88"
+                ]
+            },
+            {
+                "1": [
+                    "37.68",
+                    "40.4"
+                ]
+            },
+            {
+                "2": [
+                    "45.6",
+                    "50.32"
+                ]
+            },
+            {
+                "3": [
+                    "54.88",
+                    "58.56"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/12df7z0fn35rmm9/Primal-Earth-Sounds_0-clip-44.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_0-clip-44",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:53:18.625",
+                "end": "01:56:59.083"
+            },
+            "seconds": {
+                "start": "6798.625",
+                "end": "7019.083333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 220.45833333333303
+    },
+    {
+        "objective": "topography",
+        "confidence": "very_high",
+        "question": "Are there any towns? If so, where?",
+        "answers": "Yes, there is one along the ocean. ",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "1.12",
+                    "5.44"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/pgkvfz88xs9o0pk/TK-Hinshaw_1-clip-1.mp4?raw=1",
+        "video_id": "TK-Hinshaw_1-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:53.380",
+                "end": "00:03:04.351"
+            },
+            "seconds": {
+                "start": "113.38004469669885",
+                "end": "184.3510144053152"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.97096970861635
+    },
+    {
+        "objective": "I am curious how often this person exercises",
+        "confidence": "moderate",
+        "question": "Are they physically fit?",
+        "answers": "Judging by the pace of running and the controlled breathing, I would assume they work out often and thus are in decent physical shape.",
+        "question_type": [
+            "Entity",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "20.88",
+                    "32.16"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1132",
+        "video_link": "https://www.dropbox.com/s/3eyvz0a3wglx5oj/Virtual-Running-Videos_4-clip-16.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_4-clip-16",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:59:15.419",
+                "end": "01:00:22.352"
+            },
+            "seconds": {
+                "start": "3555.4185333333335",
+                "end": "3622.352066666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.93353333333334
+    },
+    {
+        "objective": "Marine boot camp teaching land navigation. Most branches of the service will teach land nav including the air force and navy as well.",
+        "confidence": "very_high",
+        "question": "How long does this training event last?",
+        "answers": "Typically land nav is a two day course. One that will consist of teaching the fundamentals of the land nav. The second day teaches application during the day and another event that takes place during the night.",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "63.52",
+                    "74.64"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "2440",
+        "video_link": "https://www.dropbox.com/s/26k2r8v1ibrmgzl/Sandboxx_7-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.294"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.29356666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.29356666666667
+    },
+    {
+        "objective": "I want to learn about the planes",
+        "confidence": "high",
+        "question": "How many pilots were in the fighters?",
+        "answers": "one",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "18.88",
+                    "20.64"
+                ]
+            },
+            {
+                "1": [
+                    "56.88",
+                    "58.4"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/bx1mh840yx4z843/Sandboxx_2-clip-2.mp4?raw=1",
+        "video_id": "Sandboxx_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:18.800",
+                "end": "00:03:20.033"
+            },
+            "seconds": {
+                "start": "138.8",
+                "end": "200.03333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.23333333333332
+    },
+    {
+        "objective": "water",
+        "confidence": "very_high",
+        "question": "Are there any boats?",
+        "answers": "No",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "63.12",
+                    "71.28"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/a3ewq55teqdujtq/4k-Relaxation_11-manual.mp4?raw=1",
+        "video_id": "4k-Relaxation_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "25:00",
+                "end": "27:00"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0
+    },
+    {
+        "objective": "More than likely this would be a bombing type scenario. In most cases there will be a large aircraft carrying either very important essentials or bombs to be dropped. ",
+        "confidence": "very_high",
+        "question": "What is the purpose of the smaller aircraft?",
+        "answers": "There are other aircrafts near them to be able to fight off possible enemy forces that have come to stop the high level bomber or transport vehicle. ",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "16",
+                    "29.36"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "2440",
+        "video_link": "https://www.dropbox.com/s/ms9n9l7tal5ist0/USA-Military-Channel_10-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_10-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:13.694",
+                "end": "00:04:15.689"
+            },
+            "seconds": {
+                "start": "193.6935",
+                "end": "255.68876666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.99526666666668
+    },
+    {
+        "objective": "Learning some of the capabilities of our allies or enemies equipment.\n",
+        "confidence": "low",
+        "question": "Why do we watch propaganda displays?",
+        "answers": "To see what the expected uses of their equipment and their capabilities. ",
+        "question_type": [
+            "Motion",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "22.8",
+                    "31.28"
+                ]
+            },
+            {
+                "1": [
+                    "62.16",
+                    "100"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "5580",
+        "video_link": "https://www.dropbox.com/s/2ff3colvum39jly/WarLeaks-Military-Blog_10-clip-3.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_10-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.655",
+                "end": "00:04:15.345"
+            },
+            "seconds": {
+                "start": "190.6551724137931",
+                "end": "255.3448275862069"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.68965517241378
+    },
+    {
+        "objective": "actions",
+        "confidence": "very_high",
+        "question": "What equipment did they use? ",
+        "answers": "A parachute and a wingsuit. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "70.4",
+                    "76.8"
+                ]
+            },
+            {
+                "1": [
+                    "85.6",
+                    "91.52"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/67w4tjhtbcyywlt/TK-Hinshaw_7-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:03.697"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "63.69696666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.69696666666667
+    },
+    {
+        "objective": "Wildlife. ",
+        "confidence": "very_high",
+        "question": "What type of environment is this?",
+        "answers": "Temperate rainforest. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "51.2",
+                    "60.4"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/28hl6e4g3wnpwtl/The-Flying-Dutchman_4-clip-9.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_4-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:07.540",
+                "end": "00:11:18.945"
+            },
+            "seconds": {
+                "start": "607.5402666666666",
+                "end": "678.9449333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.40466666666669
+    },
+    {
+        "objective": "What are the planes doing?",
+        "confidence": "very_high",
+        "question": "Are there any vehicles?",
+        "answers": "There are planes.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "13.04",
+                    "17.6"
+                ]
+            },
+            {
+                "1": [
+                    "39.28",
+                    "43.2"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/vfe6ekx3mwx0dt0/AiirSource-Military_3-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:02.062"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "62.062"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.062
+    },
+    {
+        "objective": "Learn about the environment",
+        "confidence": "very_high",
+        "question": "What type of vegetation is around?",
+        "answers": "Island vegetation and palm trees",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "29.2",
+                    "31.76"
+                ]
+            },
+            {
+                "1": [
+                    "41.36",
+                    "43.44"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "2333",
+        "video_link": "https://www.dropbox.com/s/zbzyid4gcs74gxn/AiirSource-Military_10-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:04.667"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "64.66666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.66666666666667
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "Where are they? ",
+        "answers": "They are on a road in a snowy forest. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "6.64"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
+        "video_id": "TreadmillTV_7-clip-15",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:30:20.886",
+                "end": "00:32:21.439"
+            },
+            "seconds": {
+                "start": "1820.8857333333333",
+                "end": "1941.4395"
+            },
+            "split-method": "auto"
+        },
+        "duration": 120.55376666666666
+    },
+    {
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "question": "How does it load it's ammo?",
+        "answers": "Through a winch to hoist the containers up",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "84.56",
+                    "92.32"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "904",
+        "video_link": "https://www.dropbox.com/s/vbgjhntc8qt9isu/WarLeaks-Military-Blog_4-clip-1.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.966",
+                "end": "00:02:07.138"
+            },
+            "seconds": {
+                "start": "64.96551724137932",
+                "end": "127.13793103448276"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.172413793103445
+    },
+    {
+        "objective": "Safely rig a heavy object",
+        "confidence": "high",
+        "question": "How do you safely rig a heavy object to be moved?",
+        "answers": "By using proper equipment and hookups.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "4.08",
+                    "26.08"
+                ]
+            },
+            {
+                "1": [
+                    "59.36",
+                    "87.6"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3433",
+        "video_link": "https://www.dropbox.com/s/0chhm3u99lki06m/MilitaryNotes_3-manual.mp4?raw=1",
+        "video_id": "MilitaryNotes_3-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:15",
+                "end": "2:08"
+            },
+            "split-method": "manual"
+        },
+        "duration": 113.0
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "Where are they at? ",
+        "answers": "They are in a canyon in Norway. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "28.8",
+                    "36.16"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/3hwxyoh8rf9tl46/Norwegian-Explorer_7-clip-0.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "What are they doing?",
+        "answers": "Tightrope walking, mountain climbing, dancing, skiing, and driving. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "19.92",
+                    "23.04"
+                ]
+            },
+            {
+                "1": [
+                    "34.24",
+                    "42.64"
+                ]
+            },
+            {
+                "2": [
+                    "46.4",
+                    "51.28"
+                ]
+            },
+            {
+                "3": [
+                    "56.08",
+                    "62.24"
+                ]
+            },
+            {
+                "4": [
+                    "92.64",
+                    "96.56"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/zdjda8vochay0aw/Nick-Gaillard_5-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.960"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.96
+    },
+    {
+        "objective": "Learn about the people",
+        "confidence": "high",
+        "question": "What are they doing?",
+        "answers": "Training",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "20.96",
+                    "24.88"
+                ]
+            },
+            {
+                "1": [
+                    "39.12",
+                    "42.4"
+                ]
+            },
+            {
+                "2": [
+                    "61.52",
+                    "63.44"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "2333",
+        "video_link": "https://www.dropbox.com/s/zuh527iupofj9og/Sandboxx_5-manual.mp4?raw=1",
+        "video_id": "Sandboxx_5-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:22",
+                "end": "2:20"
+            },
+            "split-method": "manual"
+        },
+        "duration": 58.0
+    },
+    {
+        "objective": "I wish to learn about the helicopter",
+        "confidence": "high",
+        "question": "What kind of things can it transport?",
+        "answers": "People and cargo",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "16.88",
+                    "19.2"
+                ]
+            },
+            {
+                "1": [
+                    "32.24",
+                    "36.16"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "904",
+        "video_link": "https://www.dropbox.com/s/2q0cd43sma3a7d1/MilitaryNotes_11-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.495",
+                "end": "00:02:03.123"
+            },
+            "seconds": {
+                "start": "61.49476666666667",
+                "end": "123.123"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.628233333333334
+    },
+    {
+        "objective": "This is a Navy live fire training exercise. Typically there are no targets that are being engaged or shot at. Bullets are just shot at the water sometimes tracing rounds are used during night time live fires. Additionally safety glasses are being worn that indicates a training environment. Lastly the white gloves that you see in the video are fire retardant fire fighting gloves being used incase of hot brass hitting there uniform to prevent a fire from starting.",
+        "confidence": "very_high",
+        "question": "Where are the safety Petty officers? ",
+        "answers": "There doesn't seem to be any safety Petty Officers that wear the indicator by white hats or vests. This is an extremely unusual training environment as they are usually within arm's reach to ensure safe training. ",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "17.04",
+                    "22.4"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "3676",
+        "video_link": "https://www.dropbox.com/s/dytf23ox0t25cxu/WarLeaks-Military-Blog_9-clip-0.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:11.071"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "71.071"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.071
+    },
+    {
+        "objective": "Learn about the people",
+        "confidence": "high",
+        "question": "What language are they speaking?",
+        "answers": "English",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "11.6",
+                    "17.76"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "2333",
+        "video_link": "https://www.dropbox.com/s/zjkrk5vhk9qi6fn/MilitaryNotes_6-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:08.133",
+                "end": "00:02:09.433"
+            },
+            "seconds": {
+                "start": "68.13333333333334",
+                "end": "129.43333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3
+    },
+    {
+        "objective": "I am interested in all of the colors of the trees",
+        "confidence": "moderate",
+        "question": "Could this video be used as inspiration for an art class?",
+        "answers": "I think that with all the contrasting colors, this would make for a beautiful scene to try to paint.",
+        "question_type": [
+            "Location",
+            "Other"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "25.6",
+                    "39.36"
+                ]
+            },
+            {
+                "1": [
+                    "56.24",
+                    "75.92"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1643",
+        "video_link": "https://www.dropbox.com/s/oque5hvt006sgie/4k-Relaxation_5-manual.mp4?raw=1",
+        "video_id": "4k-Relaxation_5-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "11:40",
+                "end": "13:00"
+            },
+            "split-method": "manual"
+        },
+        "duration": 80.0
+    },
+    {
+        "objective": "How to protect further injury for a broken bone.",
+        "confidence": "very_high",
+        "question": "What is one way we can help to protect further injury from a broken bone?",
+        "answers": "By using a SAM splint that the Combat Medic carries in their field medical bag.",
+        "question_type": [
+            "Motion",
+            "Reasoning",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "28.24"
+                ]
+            },
+            {
+                "1": [
+                    "46",
+                    "83.68"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "2113",
+        "video_link": "https://www.dropbox.com/s/vp0okfmj0bwk1my/MilitaryNotes_4-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:07.534"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "67.53413333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.53413333333333
+    },
+    {
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "question": "What type of equipment are they using?",
+        "answers": "Night vision goggles and grenades",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "45.2",
+                    "47.92"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589027
+    },
+    {
+        "objective": "actions",
+        "confidence": "very_high",
+        "question": "What is happening?",
+        "answers": "They are skydiving.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "20.24"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/67w4tjhtbcyywlt/TK-Hinshaw_7-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:03.697"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "63.69696666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.69696666666667
+    },
+    {
+        "objective": "I'm curious about the weather/climate here.",
+        "confidence": "moderate",
+        "question": "Is that clouds, fog, or smoke?",
+        "answers": "Judging by the elevation of the mountains, I believe they are clouds",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "35.6",
+                    "46"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1132",
+        "video_link": "https://www.dropbox.com/s/6123xp6c5l3guio/Nick-Gaillard_6-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.958",
+                "end": "00:01:28.000"
+            },
+            "seconds": {
+                "start": "64.95833333333333",
+                "end": "88.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 23.04166666666667
+    },
+    {
+        "objective": "I want to establish that there is a purpose to the firing of guns.",
+        "confidence": "very_high",
+        "question": "Why are they firing weapons?",
+        "answers": "They are firing the weapons for training purposes.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "17.52",
+                    "22.8"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/3b5uek23f0aav4u/AiirSource-Military_11-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:58.825"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "58.825433333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 58.825433333333336
+    },
+    {
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "question": "What kinds of vegetation are there in the different terrains?",
+        "answers": "There are deciduous and coniferous forests, shrubbery, and grasses. ",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "10.64",
+                    "17.2"
+                ]
+            },
+            {
+                "1": [
+                    "33.68",
+                    "41.04"
+                ]
+            },
+            {
+                "2": [
+                    "82.96",
+                    "89.28"
+                ]
+            },
+            {
+                "3": [
+                    "28.24",
+                    "33.36"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/fdn7bg0btcrsman/Primal-Earth-Sounds_11-clip-7.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:29.917",
+                "end": "00:34:02.667"
+            },
+            "seconds": {
+                "start": "1889.9166666666667",
+                "end": "2042.6666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 152.75
+    },
+    {
+        "objective": "Topography",
+        "confidence": "very_high",
+        "question": "Is there any wildlife?",
+        "answers": "Yes. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "8.08"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/3e4d0vw7fvlvxm2/TreadmillTV_12-manual.mp4?raw=1",
+        "video_id": "TreadmillTV_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:30"
+            },
+            "split-method": "manual"
+        },
+        "duration": 90.0
+    },
+    {
+        "objective": "I think this video could be used to promote motivation to get outdoors more.",
+        "confidence": "moderate",
+        "question": "Could a video like this be used to inspire people to explore outside more?",
+        "answers": "I think that the combination of the sound and video could help people want to spend more time outdoors.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "53.52",
+                    "58.64"
+                ]
+            },
+            {
+                "1": [
+                    "82.48",
+                    "89.04"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "2888",
+        "video_link": "https://www.dropbox.com/s/gf0dfjlhox3dxkq/Nick-Gaillard_11-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.720",
+                "end": "00:02:05.840"
+            },
+            "seconds": {
+                "start": "61.72",
+                "end": "125.84"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.12
+    },
+    {
+        "objective": "To observe the flight start/stop of a certain aircraft.",
+        "confidence": "high",
+        "question": "Are there aircraft that can have a vertical takeoff and landing off of an Aircraft Carrier that is not a fixed blade device?",
+        "answers": "Yes there is. The Harrier jet can do vertical takeoffs/landings.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "55.12",
+                    "61.28"
+                ]
+            },
+            {
+                "1": [
+                    "71.6",
+                    "100"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3766",
+        "video_link": "https://www.dropbox.com/s/cwgk7dtobywqwvd/Military-Archive_10-clip-4.mp4?raw=1",
+        "video_id": "Military-Archive_10-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:25.031",
+                "end": "00:05:30.664"
+            },
+            "seconds": {
+                "start": "265.0314333333333",
+                "end": "330.6636666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.63223333333337
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "Are there people?",
+        "answers": "Yes",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "21.52",
+                    "25.28"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/zdjda8vochay0aw/Nick-Gaillard_5-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.960"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.96
+    },
+    {
+        "objective": "Determine what the vehicles are doing.",
+        "confidence": "very_high",
+        "question": "Are there vehicles in the water?",
+        "answers": "There are vehicles in the water?",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "35.28",
+                    "45.44"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/j0jeypnrg5kyar5/USA-Military-Channel_7-clip-0.mp4?raw=1",
+        "video_id": "USA-Military-Channel_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:20.581"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "80.58053085276269"
+            },
+            "split-method": "auto"
+        },
+        "duration": 80.58053085276269
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "Did they interact?",
+        "answers": "Yes, they greeted each other. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "69.04",
+                    "71.76"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
+        "video_id": "TreadmillTV_7-clip-15",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:30:20.886",
+                "end": "00:32:21.439"
+            },
+            "seconds": {
+                "start": "1820.8857333333333",
+                "end": "1941.4395"
+            },
+            "split-method": "auto"
+        },
+        "duration": 120.55376666666666
+    },
+    {
+        "objective": "I want to learn about the planes",
+        "confidence": "high",
+        "question": "How many engines did the fighters have?",
+        "answers": "two",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "35.04",
+                    "36.16"
+                ]
+            },
+            {
+                "1": [
+                    "47.6",
+                    "48.72"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/bx1mh840yx4z843/Sandboxx_2-clip-2.mp4?raw=1",
+        "video_id": "Sandboxx_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:18.800",
+                "end": "00:03:20.033"
+            },
+            "seconds": {
+                "start": "138.8",
+                "end": "200.03333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.23333333333332
+    },
+    {
+        "objective": "I wish to learn about the terrain",
+        "confidence": "high",
+        "question": "What type of land is it?",
+        "answers": "A valley in some hills covered with mud",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "14.64",
+                    "17.2"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "904",
+        "video_link": "https://www.dropbox.com/s/eonwwz2x75dtd5z/Military-Archive_1-clip-3.mp4?raw=1",
+        "video_id": "Military-Archive_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.157",
+                "end": "00:04:10.951"
+            },
+            "seconds": {
+                "start": "190.15663333333333",
+                "end": "250.9507"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.79406666666668
+    },
+    {
+        "objective": "I want to know where this is",
+        "confidence": "moderate",
+        "question": "Where is this video taking place?",
+        "answers": "The scenery leads me to believe this could be found on the western side of the United States, maybe around Colorado",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "48.88",
+                    "56.72"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "2888",
+        "video_link": "https://www.dropbox.com/s/wr43c8j1v59lhmv/Norwegian-Explorer_6-clip-59.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_6-clip-59",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:04:26.267",
+                "end": "01:05:18.400"
+            },
+            "seconds": {
+                "start": "3866.266666666667",
+                "end": "3918.4"
+            },
+            "split-method": "auto"
+        },
+        "duration": 52.13333333333321
+    },
+    {
+        "objective": "This appears to be a Air Force base that specializes in Nuclear weapons. There is consistent training that indicates a high level pressure similar to a forward deployed carrier division. ",
+        "confidence": "high",
+        "question": "Do they only work on specifically the nuclear warhead portion here or do they also work on the projection portion of the missiles here as well?",
+        "answers": "Yes, I believe they work with both portions of the nuclear warhead here.",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "12.16",
+                    "19.04"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "3676",
+        "video_link": "https://www.dropbox.com/s/l03443ldxyl07fb/Sandboxx_4-manual.mp4?raw=1",
+        "video_id": "Sandboxx_4-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:27"
+            },
+            "split-method": "manual"
+        },
+        "duration": 87.0
+    },
+    {
+        "objective": "Learn about the military capabilities",
+        "confidence": "very_high",
+        "question": "how many weapons emplacements are there?",
+        "answers": "At least 3",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "9.44",
+                    "11.92"
+                ]
+            },
+            {
+                "1": [
+                    "42.32",
+                    "48.08"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "2333",
+        "video_link": "https://www.dropbox.com/s/96jiv53rnzeyt9x/Army-military-2018_10-clip-0.mp4?raw=1",
+        "video_id": "Army-military-2018_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.828"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.82836034846273"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.82836034846273
+    },
+    {
+        "objective": "Different methods of personal protection.",
+        "confidence": "high",
+        "question": "Why do we practice different methods of protection?",
+        "answers": "Because if the mechanical protection fails, we will have to use our physical protection training.",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "32.72",
+                    "100"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3766",
+        "video_link": "https://www.dropbox.com/s/2n9xz30nsptl1tb/Gung-Ho-Vids_7-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.900",
+                "end": "00:02:02.667"
+            },
+            "seconds": {
+                "start": "60.9",
+                "end": "122.66666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.76666666666667
+    },
+    {
+        "objective": "roads",
+        "confidence": "very_high",
+        "question": "What kind of roads are there?",
+        "answers": "A two-lane road",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "14.24",
+                    "17.36"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/ds6rnnub95z7s5c/Nick-Gaillard_12-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.746",
+                "end": "00:02:06.498"
+            },
+            "seconds": {
+                "start": "62.746187124211765",
+                "end": "126.49765361489955"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.75146649068778
+    },
+    {
+        "objective": "Roads",
+        "confidence": "very_high",
+        "question": "Are there any roads? What kinds?",
+        "answers": "Yes, there are paved and unpaved roads. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "4.64"
+                ]
+            },
+            {
+                "1": [
+                    "46.8",
+                    "49.68"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/12df7z0fn35rmm9/Primal-Earth-Sounds_0-clip-44.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_0-clip-44",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:53:18.625",
+                "end": "01:56:59.083"
+            },
+            "seconds": {
+                "start": "6798.625",
+                "end": "7019.083333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 220.45833333333303
+    },
+    {
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "question": "Are they wearing kevlar?",
+        "answers": "yes",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "28.8",
+                    "30.88"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589027
+    },
+    {
+        "objective": "Learn about the weaponry being used",
+        "confidence": "high",
+        "question": "What types of small arms?",
+        "answers": "M4's",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "6.16",
+                    "8.88"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "2333",
+        "video_link": "https://www.dropbox.com/s/q8313eyls50sury/Army-military-2018_0-clip-8.mp4?raw=1",
+        "video_id": "Army-military-2018_0-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:42.067",
+                "end": "00:09:43.033"
+            },
+            "seconds": {
+                "start": "522.0666666666667",
+                "end": "583.0333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.96666666666658
+    },
+    {
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "question": "Is the airplane moving?",
+        "answers": "The airplane is moving.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "3.52",
+                    "12.16"
+                ]
+            },
+            {
+                "1": [
+                    "51.6",
+                    "63.44"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6
+    },
+    {
+        "objective": "Establishing the leader",
+        "confidence": "moderate",
+        "question": "Why do we have people sit during explanations?",
+        "answers": "To subconsciously have them look up at the presenter. This automatically puts them in a higher status. ",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "21.76",
+                    "43.68"
+                ]
+            },
+            {
+                "1": [
+                    "44.4",
+                    "57.52"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "5580",
+        "video_link": "https://www.dropbox.com/s/4rh2823saoa458p/AiirSource-Military_4-manual.mp4?raw=1",
+        "video_id": "AiirSource-Military_4-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:40",
+                "end": "1:35"
+            },
+            "split-method": "manual"
+        },
+        "duration": 55.0
+    },
+    {
+        "objective": "Training on weapons use.",
+        "confidence": "high",
+        "question": "How do we perform weapons usage with live fire?",
+        "answers": "The most effective weapons training is with live fire training.",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "26.32",
+                    "51.36"
+                ]
+            },
+            {
+                "1": [
+                    "51.76",
+                    "97.36"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3433",
+        "video_link": "https://www.dropbox.com/s/60m3ucq2ex10rkj/Army-military-2018_9-clip-34.mp4?raw=1",
+        "video_id": "Army-military-2018_9-clip-34",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:39:23.267",
+                "end": "00:40:23.400"
+            },
+            "seconds": {
+                "start": "2363.266666666667",
+                "end": "2423.4"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.13333333333321
+    },
+    {
+        "objective": "Determine what is happening to the tank.",
+        "confidence": "moderate",
+        "question": "What are they doing to the tank?",
+        "answers": "They are lining up the barrel for a shot.",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "10.4",
+                    "18.4"
+                ]
+            },
+            {
+                "1": [
+                    "88.4",
+                    "100"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/bjjggxoc628jt7u/USA-Military-Channel_12-clip-7.mp4?raw=1",
+        "video_id": "USA-Military-Channel_12-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:27.741",
+                "end": "00:09:35.075"
+            },
+            "seconds": {
+                "start": "507.74056666666667",
+                "end": "575.0745000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.33393333333339
+    },
+    {
+        "objective": "Wildlife. ",
+        "confidence": "very_high",
+        "question": "What kinds of wildlife are there?",
+        "answers": "Birds, insects, large trees and other vegetation. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "37.92",
+                    "43.2"
+                ]
+            },
+            {
+                "1": [
+                    "88.4",
+                    "94.16"
+                ]
+            },
+            {
+                "2": [
+                    "11.44",
+                    "19.44"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/28hl6e4g3wnpwtl/The-Flying-Dutchman_4-clip-9.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_4-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:07.540",
+                "end": "00:11:18.945"
+            },
+            "seconds": {
+                "start": "607.5402666666666",
+                "end": "678.9449333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.40466666666669
+    },
+    {
+        "objective": "Training on safety procedures while live firing.",
+        "confidence": "moderate",
+        "question": "Why do we practice live firing our weapons in different situations?",
+        "answers": "So we do not have mishaps on the field.",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "8.56"
+                ]
+            },
+            {
+                "1": [
+                    "11.2",
+                    "88.24"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3433",
+        "video_link": "https://www.dropbox.com/s/b57xv7sp391tau7/Army-military-2018_5-clip-0.mp4?raw=1",
+        "video_id": "Army-military-2018_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.427"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.42696423136489"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.42696423136489
+    },
+    {
+        "objective": "I wish to learn about the ceremony",
+        "confidence": "high",
+        "question": "How many flags were there?",
+        "answers": "8",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "6.96",
+                    "8.48"
+                ]
+            },
+            {
+                "1": [
+                    "22.56",
+                    "24.64"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/v35dxwq64vf8jxp/MilitaryNotes_9-manual.mp4?raw=1",
+        "video_id": "MilitaryNotes_9-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:09",
+                "end": "1:55"
+            },
+            "split-method": "manual"
+        },
+        "duration": 46.0
+    },
+    {
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "question": "What type of weapons are they carrying?",
+        "answers": "M4's",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "24.8",
+                    "27.92"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589027
+    },
+    {
+        "objective": "Water",
+        "confidence": "very_high",
+        "question": "Where are the rivers?",
+        "answers": "They are in a deciduous forest environment. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "8.08"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
+            },
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
+        },
+        "duration": 117.45063994777661
+    },
+    {
+        "objective": "To determine the payload of the B21 bomber.",
+        "confidence": "moderate",
+        "question": "What type of bombs will the B21 carry?",
+        "answers": "The B21 will carry the same as the B1B did, with additions of newer technology.",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "44.24",
+                    "89.04"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3766",
+        "video_link": "https://www.dropbox.com/s/t7k3pzytr8fhqww/Sandboxx_0-clip-4.mp4?raw=1",
+        "video_id": "Sandboxx_0-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:10.000",
+                "end": "00:05:21.933"
+            },
+            "seconds": {
+                "start": "250.0",
+                "end": "321.93333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.93333333333334
+    },
+    {
+        "objective": "To learn finger control.",
+        "confidence": "high",
+        "question": "Why is finger control important?",
+        "answers": "Firing rounds downrange is good for cover, but it wastes ammunition.",
+        "question_type": [
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "38.64"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3433",
+        "video_link": "https://www.dropbox.com/s/xxnvo5brqcpkntx/Military-Archive_2-clip-1.mp4?raw=1",
+        "video_id": "Military-Archive_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:00.933",
+                "end": "00:03:01.300"
+            },
+            "seconds": {
+                "start": "120.93333333333334",
+                "end": "181.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.366666666666674
+    },
+    {
+        "objective": "Evaluating the F35 aircraft versus operating cost of other aircraft",
+        "confidence": "moderate",
+        "question": "Is the F35 worth the cost?",
+        "answers": "For some operations the F35 has advantages over current model aircraft, but for the most part, the operating costs exceed the replacement of the whole fleet of aircraft.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "9.6",
+                    "22.56"
+                ]
+            },
+            {
+                "1": [
+                    "21.76",
+                    "48.16"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "8333",
+        "video_link": "https://www.dropbox.com/s/mftxy61zrwayk3z/Sandboxx_9-clip-4.mp4?raw=1",
+        "video_id": "Sandboxx_9-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:14.171",
+                "end": "00:05:18.109"
+            },
+            "seconds": {
+                "start": "254.17058333333333",
+                "end": "318.1094583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.93887499999997
+    },
+    {
+        "objective": "Topography ",
+        "confidence": "very_high",
+        "question": "What sort of environment is this?",
+        "answers": "Tropical",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "8.72"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/vi8cpvegr791wem/Primal-Earth-Sounds_3-clip-48.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_3-clip-48",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:39.250",
+                "end": "00:59:46.042"
+            },
+            "seconds": {
+                "start": "3519.25",
+                "end": "3586.0416666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.79166666666652
+    },
+    {
+        "objective": "water",
+        "confidence": "very_high",
+        "question": "Is there any wildlife?",
+        "answers": "Yes. There are grasses, small trees, and birds. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "5.44"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/a3ewq55teqdujtq/4k-Relaxation_11-manual.mp4?raw=1",
+        "video_id": "4k-Relaxation_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "25:00",
+                "end": "27:00"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0
+    },
+    {
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "question": "Is the vegetation sparse or dense? ",
+        "answers": "It is dense. ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "6.08"
+                ]
+            },
+            {
+                "1": [
+                    "27.76",
+                    "31.92"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/fdn7bg0btcrsman/Primal-Earth-Sounds_11-clip-7.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:29.917",
+                "end": "00:34:02.667"
+            },
+            "seconds": {
+                "start": "1889.9166666666667",
+                "end": "2042.6666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 152.75
+    },
+    {
+        "objective": "I am curious about how/how long it took for the person to get on top of that steep hill ",
+        "confidence": "moderate",
+        "question": "Is this part of a ski resort?",
+        "answers": "Judging by al the snow and mountains and the chair lift shown, I believe this to be part of a ski resort.",
+        "question_type": [
+            "Location",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "1.36",
+                    "8.24"
+                ]
+            },
+            {
+                "1": [
+                    "10.56",
+                    "16.48"
+                ]
+            },
+            {
+                "2": [
+                    "18",
+                    "32.16"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1643",
+        "video_link": "https://www.dropbox.com/s/p1rlx3dl7u9hds2/Nick-Gaillard_4-clip-2.mp4?raw=1",
+        "video_id": "Nick-Gaillard_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:06.542",
+                "end": "00:03:29.917"
+            },
+            "seconds": {
+                "start": "126.54166666666667",
+                "end": "209.91666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.37499999999999
+    },
+    {
+        "objective": "These are live fire tactical exercises that are designed to simulate enemy contacts. They simulate jams, changing mags, and gun swapping from primary to secondary.",
+        "confidence": "very_high",
+        "question": "What is the purpose of these exercises? ",
+        "answers": "These are designed to effectively train soldiers and sailors the ability to make changes in the field of battle with minimal effort or thought",
+        "question_type": [
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "14.72",
+                    "53.28"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "2440",
+        "video_link": "https://www.dropbox.com/s/6v21s2trr9mqlpf/AiirSource-Military_6-clip-1.mp4?raw=1",
+        "video_id": "AiirSource-Military_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:12.272",
+                "end": "00:02:06.460"
+            },
+            "seconds": {
+                "start": "72.2722",
+                "end": "126.45966666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 54.187466666666666
+    },
+    {
+        "objective": "I am curious about this game",
+        "confidence": "moderate",
+        "question": "Is this dangerous to play?",
+        "answers": "Seeing how far you have to lean over to hit the ball, and taking into account how high you are off the ground and how heavy a horse is, I think this game would be dangerous to play",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "2.32",
+                    "4.48"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1132",
+        "video_link": "https://www.dropbox.com/s/p6o6mix1ei04jtr/TK-Hinshaw_0-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:06.934"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "66.93353333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.93353333333333
+    },
+    {
+        "objective": "I wish to learn about the terrain",
+        "confidence": "very_high",
+        "question": "Where are they?",
+        "answers": "Clearing in a forest",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "78.08",
+                    "81.04"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/dlahkdeub6u4oeb/WarLeaks-Military-Blog_7-clip-1.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.665",
+                "end": "00:01:25.185"
+            },
+            "seconds": {
+                "start": "64.66460000000001",
+                "end": "85.1851"
+            },
+            "split-method": "auto"
+        },
+        "duration": 20.5205
+    },
+    {
+        "objective": "What are the planes doing?",
+        "confidence": "very_high",
+        "question": "Are the planes moving?",
+        "answers": "The airplanes are moving?",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "18.32",
+                    "24.88"
+                ]
+            },
+            {
+                "1": [
+                    "39.12",
+                    "41.04"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/vfe6ekx3mwx0dt0/AiirSource-Military_3-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:02.062"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "62.062"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.062
+    },
+    {
+        "objective": "I wish to learn about the equipment",
+        "confidence": "moderate",
+        "question": "What type of equipment is it?",
+        "answers": "Rocket artillery ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "3.36",
+                    "4.88"
+                ]
+            },
+            {
+                "1": [
+                    "76.72",
+                    "78.8"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "904",
+        "video_link": "https://www.dropbox.com/s/vbgjhntc8qt9isu/WarLeaks-Military-Blog_4-clip-1.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.966",
+                "end": "00:02:07.138"
+            },
+            "seconds": {
+                "start": "64.96551724137932",
+                "end": "127.13793103448276"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.172413793103445
+    },
+    {
+        "objective": "One of the steps to help keep members safe is to speak loudly.",
+        "confidence": "moderate",
+        "question": "Why do we yell our intentions?",
+        "answers": "So members can hear over the loudness of the exercise and not move into danger areas.",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "70.4",
+                    "100"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "2113",
+        "video_link": "https://www.dropbox.com/s/hnab3x0y3gs3wa3/USA-Military-Channel_4-clip-0.mp4?raw=1",
+        "video_id": "USA-Military-Channel_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:02.663"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "62.6626"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.6626
+    },
+    {
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "question": "How fast is the airplane moving?",
+        "answers": "The airplane is moving slowly.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "1.52",
+                    "14.72"
+                ]
+            },
+            {
+                "1": [
+                    "49.04",
+                    "56.4"
+                ]
+            },
+            {
+                "2": [
+                    "65.36",
+                    "72.96"
+                ]
+            },
+            {
+                "3": [
+                    "92",
+                    "95.12"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6
+    },
+    {
+        "objective": "Topography",
+        "confidence": "very_high",
+        "question": "What kind of environment is this?",
+        "answers": "Arboreal mountain environment. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "80.96",
+                    "90.48"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/8ysb4k9ur0jm46s/Nick-Gaillard_9-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.395"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.394666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.394666666666666
+    },
+    {
+        "objective": "Determine what the vehicles are doing.",
+        "confidence": "very_high",
+        "question": "Is there a body of water?",
+        "answers": "There is a body of water?",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "24.4",
+                    "37.36"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/j0jeypnrg5kyar5/USA-Military-Channel_7-clip-0.mp4?raw=1",
+        "video_id": "USA-Military-Channel_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:20.581"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "80.58053085276269"
+            },
+            "split-method": "auto"
+        },
+        "duration": 80.58053085276269
+    },
+    {
+        "objective": "topography",
+        "confidence": "very_high",
+        "question": "What kinds of natural features are there?",
+        "answers": "There are mountains and an ocean. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "28.64",
+                    "33.76"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/pgkvfz88xs9o0pk/TK-Hinshaw_1-clip-1.mp4?raw=1",
+        "video_id": "TK-Hinshaw_1-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:53.380",
+                "end": "00:03:04.351"
+            },
+            "seconds": {
+                "start": "113.38004469669885",
+                "end": "184.3510144053152"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.97096970861635
+    },
+    {
+        "objective": "I wish to learn about the weapons",
+        "confidence": "moderate",
+        "question": "What types of guns are there?",
+        "answers": "Mounted LMG and an AR",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "2.16",
+                    "3.2"
+                ]
+            },
+            {
+                "1": [
+                    "39.52",
+                    "41.2"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "904",
+        "video_link": "https://www.dropbox.com/s/rflxk5pa4019fki/Army-military-2018_1-clip-3.mp4?raw=1",
+        "video_id": "Army-military-2018_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:04.080",
+                "end": "00:04:05.640"
+            },
+            "seconds": {
+                "start": "184.08",
+                "end": "245.64"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.559999999999974
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "What are they doing?",
+        "answers": "They are skiing. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "6.08"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/3hwxyoh8rf9tl46/Norwegian-Explorer_7-clip-0.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3
+    },
+    {
+        "objective": "Learn about the people",
+        "confidence": "high",
+        "question": "Where are they from?",
+        "answers": "USA",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "2.96",
+                    "8.72"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "2333",
+        "video_link": "https://www.dropbox.com/s/zjkrk5vhk9qi6fn/MilitaryNotes_6-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:08.133",
+                "end": "00:02:09.433"
+            },
+            "seconds": {
+                "start": "68.13333333333334",
+                "end": "129.43333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "What kind of environments are they in?",
+        "answers": "Snowy mountains, a cliff face, racetrack, and on top of a building. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "19.92",
+                    "22.4"
+                ]
+            },
+            {
+                "1": [
+                    "33.84",
+                    "41.04"
+                ]
+            },
+            {
+                "2": [
+                    "46.56",
+                    "50.72"
+                ]
+            },
+            {
+                "3": [
+                    "91.44",
+                    "96"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/zdjda8vochay0aw/Nick-Gaillard_5-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.960"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.96
+    },
+    {
+        "objective": "I want to learn about the people",
+        "confidence": "high",
+        "question": "What branch are they training to join?",
+        "answers": "Marines",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "33.68",
+                    "34.72"
+                ]
+            },
+            {
+                "1": [
+                    "77.28",
+                    "80"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/yvn0z1ofkemt6wa/Sandboxx_10-clip-1.mp4?raw=1",
+        "video_id": "Sandboxx_10-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.644",
+                "end": "00:01:36.888"
+            },
+            "seconds": {
+                "start": "60.64391666666666",
+                "end": "96.88845833333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 36.24454166666667
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "Are there people? How many?",
+        "answers": "Yes, there are two. ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "22.16",
+                    "28.48"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/opaigjq242y9tkq/TK-Hinshaw_9-clip-2.mp4?raw=1",
+        "video_id": "TK-Hinshaw_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:48.001",
+                "end": "00:03:06.553"
+            },
+            "seconds": {
+                "start": "168.00116666666668",
+                "end": "186.55303333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 18.551866666666655
+    },
+    {
+        "objective": "I want to learn about the planes",
+        "confidence": "high",
+        "question": "How many types of aircraft were there?",
+        "answers": "2",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "1.52",
+                    "2.8"
+                ]
+            },
+            {
+                "1": [
+                    "7.76",
+                    "7.92"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "1241",
+        "video_link": "https://www.dropbox.com/s/bx1mh840yx4z843/Sandboxx_2-clip-2.mp4?raw=1",
+        "video_id": "Sandboxx_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:18.800",
+                "end": "00:03:20.033"
+            },
+            "seconds": {
+                "start": "138.8",
+                "end": "200.03333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.23333333333332
+    },
+    {
+        "objective": "Topography",
+        "confidence": "very_high",
+        "question": "What kinds of features are there?",
+        "answers": "There are mountains, creeks, and waterfalls. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "45.76",
+                    "54.72"
+                ]
+            },
+            {
+                "1": [
+                    "66.4",
+                    "73.92"
+                ]
+            },
+            {
+                "2": [
+                    "38.88",
+                    "43.68"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/8ysb4k9ur0jm46s/Nick-Gaillard_9-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.395"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.394666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.394666666666666
+    },
+    {
+        "objective": "Real life training",
+        "confidence": "moderate",
+        "question": "What is the ultimate purpose of real life training?",
+        "answers": "To have a greater feel of how things should operate. ",
+        "question_type": [
+            "Motion",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "50.72",
+                    "59.12"
+                ]
+            },
+            {
+                "1": [
+                    "59.52",
+                    "99.12"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "5580",
+        "video_link": "https://www.dropbox.com/s/hjt66m0yfyi2eom/Military-Archive_8-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.427"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.42691122867071"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.42691122867071
+    },
+    {
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "question": "How does it travel?",
+        "answers": "Through use of tracks like a tank",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "31.44",
+                    "32.96"
+                ]
+            },
+            {
+                "1": [
+                    "65.76",
+                    "69.28"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "904",
+        "video_link": "https://www.dropbox.com/s/vbgjhntc8qt9isu/WarLeaks-Military-Blog_4-clip-1.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.966",
+                "end": "00:02:07.138"
+            },
+            "seconds": {
+                "start": "64.96551724137932",
+                "end": "127.13793103448276"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.172413793103445
+    },
+    {
+        "objective": "I feel like this area would be nice to see in person",
+        "confidence": "moderate",
+        "question": "Do people come vacation here?",
+        "answers": "Judging by how beautiful the scenery is and it being a tropical area, people probably take vacation trips here.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "4.08",
+                    "11.12"
+                ]
+            },
+            {
+                "1": [
+                    "46.56",
+                    "55.36"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1132",
+        "video_link": "https://www.dropbox.com/s/0s03ul8axnoagos/Primal-Earth-Sounds_2-manual.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_2-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "5:55",
+                "end": "6:43"
+            },
+            "split-method": "manual"
+        },
+        "duration": 48.0
+    },
+    {
+        "objective": "Learn about the environment",
+        "confidence": "very_high",
+        "question": "What type of weather is experienced?",
+        "answers": "Partly cloudy",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "11.2",
+                    "15.12"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "time_spent": "2333",
+        "video_link": "https://www.dropbox.com/s/zbzyid4gcs74gxn/AiirSource-Military_10-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:04.667"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "64.66666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.66666666666667
+    },
+    {
+        "objective": "I want to establish that there is a purpose to the firing of guns.",
+        "confidence": "very_high",
+        "question": "Are there guns firing in the video?",
+        "answers": "There are guns firing in the video.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "24.16",
+                    "33.36"
+                ]
+            },
+            {
+                "1": [
+                    "55.28",
+                    "59.84"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/3b5uek23f0aav4u/AiirSource-Military_11-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:58.825"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "58.825433333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 58.825433333333336
+    },
+    {
+        "objective": "I want to establish that there is a purpose to the firing of guns.",
+        "confidence": "high",
+        "question": "What are they firing at?",
+        "answers": "Practice tummy targets.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "60.32",
+                    "68.72"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/3b5uek23f0aav4u/AiirSource-Military_11-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:58.825"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "58.825433333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 58.825433333333336
+    },
+    {
+        "objective": "Wildlife. ",
+        "confidence": "very_high",
+        "question": "Is there any human activity here? If so, what?",
+        "answers": "Yes, there is a hiking trail. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "23.12",
+                    "25.84"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/28hl6e4g3wnpwtl/The-Flying-Dutchman_4-clip-9.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_4-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:07.540",
+                "end": "00:11:18.945"
+            },
+            "seconds": {
+                "start": "607.5402666666666",
+                "end": "678.9449333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.40466666666669
+    },
+    {
+        "objective": "This is an amphibious ship. They can launch and receive smaller ships within the ship that can be used for smaller missions",
+        "confidence": "high",
+        "question": "What are they receiving?",
+        "answers": "It appears that they are receiving a smaller vehicle on board their amphibious vessel. That vehicle could have completed a mission or might be carrying supplies for replenishment.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "8.48",
+                    "18.24"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "time_spent": "2440",
+        "video_link": "https://www.dropbox.com/s/n8f5xi35juv1vkv/AiirSource-Military_2-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_2-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:02.296"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "62.295566666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.295566666666666
+    },
+    {
+        "objective": "Water",
+        "confidence": "very_high",
+        "question": "What kinds of water features are there?",
+        "answers": "There are rivers. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "7.04"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
+            },
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
+        },
+        "duration": 117.45063994777661
+    },
+    {
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "question": "Is the airplane on the ground?",
+        "answers": "The airplane is on the ground.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "13.28",
+                    "17.76"
+                ]
+            },
+            {
+                "1": [
+                    "78.72",
+                    "90.72"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6
+    },
+    {
+        "objective": "The vegetation and sounds signify this is a warm, tropical region",
+        "confidence": "moderate",
+        "question": "Is this taken in another country?",
+        "answers": "Seeing the scooter driving in the opposite lane as the United States, coupled with the palm trees, leads me to believe this was taken in a tropical country.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "73.92",
+                    "77.52"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "2888",
+        "video_link": "https://www.dropbox.com/s/0mburxs2scgvtxy/TreadmillTV_9-clip-2.mp4?raw=1",
+        "video_id": "TreadmillTV_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:40.560",
+                "end": "00:10:52.252"
+            },
+            "seconds": {
+                "start": "460.56010000000003",
+                "end": "652.2516"
+            },
+            "split-method": "auto"
+        },
+        "duration": 191.69150000000002
+    },
+    {
+        "objective": "actions",
+        "confidence": "very_high",
+        "question": "What did the man do in the beginning?",
+        "answers": "He jumped out of the plane.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "11.12"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "3598",
+        "video_link": "https://www.dropbox.com/s/67w4tjhtbcyywlt/TK-Hinshaw_7-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:03.697"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "63.69696666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.69696666666667
+    },
+    {
+        "objective": "Water",
+        "confidence": "very_high",
+        "question": "Are there any signs of human activity? If so what. ",
+        "answers": "Yes, there are small roads and paths. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "3.2"
+                ]
+            },
+            {
+                "1": [
+                    "63.76",
+                    "67.68"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
+            },
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
+        },
+        "duration": 117.45063994777661
+    },
+    {
+        "objective": "Topography",
+        "confidence": "very_high",
+        "question": "What kinds of major features are present?",
+        "answers": "There is a lake, a river, and several small trails. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "18.72",
+                    "23.44"
+                ]
+            },
+            {
+                "1": [
+                    "65.2",
+                    "70.88"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/3e4d0vw7fvlvxm2/TreadmillTV_12-manual.mp4?raw=1",
+        "video_id": "TreadmillTV_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:30"
+            },
+            "split-method": "manual"
+        },
+        "duration": 90.0
+    },
+    {
+        "objective": "Topography",
+        "confidence": "very_high",
+        "question": "What kind of wildlife?",
+        "answers": "There are grasses, shrubs, and small trees. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "6.24"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/3e4d0vw7fvlvxm2/TreadmillTV_12-manual.mp4?raw=1",
+        "video_id": "TreadmillTV_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:30"
+            },
+            "split-method": "manual"
+        },
+        "duration": 90.0
+    },
+    {
+        "objective": "To describe some of the jobs of a Combat Controller.",
+        "confidence": "high",
+        "question": "What are some of the jobs of a Combat Controller?",
+        "answers": "There are many to include: air-to-ground liaison, blowing up enemy assets, manning different equipment on a day by day basis, high altitude-high opening night jump.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "30.56",
+                    "55.84"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3766",
+        "video_link": "https://www.dropbox.com/s/l08l6iuyan5g76p/Sandboxx_6-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.594"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.59386666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.59386666666667
+    },
+    {
+        "objective": "I am curious about the time of year this video was taken",
+        "confidence": "moderate",
+        "question": "Is this video set during the Fall Season?",
+        "answers": "Judging from the colors of the leaves on the trees, I believe it to be Fall time.",
+        "question_type": [
+            "Location",
+            "Temporal relationship",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "51.28",
+                    "60.24"
+                ]
+            },
+            {
+                "1": [
+                    "68.56",
+                    "77.68"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "time_spent": "1132",
+        "video_link": "https://www.dropbox.com/s/lefp9rdbecxboyn/Nick-Gaillard_1-clip-2.mp4?raw=1",
+        "video_id": "Nick-Gaillard_1-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:08.929",
+                "end": "00:03:18.065"
+            },
+            "seconds": {
+                "start": "128.9288",
+                "end": "198.06453333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.13573333333335
+    },
+    {
+        "objective": "Determine what is happening to the tank.",
+        "confidence": "very_high",
+        "question": "Is there a vehicle?",
+        "answers": "There is a tank",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "7.28"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "time_spent": "14177",
+        "video_link": "https://www.dropbox.com/s/bjjggxoc628jt7u/USA-Military-Channel_12-clip-7.mp4?raw=1",
+        "video_id": "USA-Military-Channel_12-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:27.741",
+                "end": "00:09:35.075"
+            },
+            "seconds": {
+                "start": "507.74056666666667",
+                "end": "575.0745000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.33393333333339
+    },
+    {
+        "objective": "Roads",
+        "confidence": "very_high",
+        "question": "Are there any cars on the roads?",
+        "answers": "Yes. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "0",
+                    "4.88"
+                ]
+            },
+            {
+                "1": [
+                    "46.8",
+                    "49.92"
+                ]
+            },
+            {
+                "2": [
+                    "54.08",
+                    "57.6"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "4548",
+        "video_link": "https://www.dropbox.com/s/12df7z0fn35rmm9/Primal-Earth-Sounds_0-clip-44.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_0-clip-44",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:53:18.625",
+                "end": "01:56:59.083"
+            },
+            "seconds": {
+                "start": "6798.625",
+                "end": "7019.083333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 220.45833333333303
+    },
+    {
+        "objective": "To give a brief description of US Air Force Beast training.",
+        "confidence": "high",
+        "question": "What is BEAST training in a nutshell?",
+        "answers": "A week away from normal Basic Training to learn weapon usage.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "29.12",
+                    "100"
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "time_spent": "3433",
+        "video_link": "https://www.dropbox.com/s/rfj7b3r57v5nv8n/Sandboxx_8-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.06"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06
+    },
+    {
+        "objective": "People",
+        "confidence": "very_high",
+        "question": "What are they doing?",
+        "answers": "They are parachuting. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    "28.8",
+                    "34.32"
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "time_spent": "2713",
+        "video_link": "https://www.dropbox.com/s/opaigjq242y9tkq/TK-Hinshaw_9-clip-2.mp4?raw=1",
+        "video_id": "TK-Hinshaw_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:48.001",
+                "end": "00:03:06.553"
+            },
+            "seconds": {
+                "start": "168.00116666666668",
+                "end": "186.55303333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 18.551866666666655
+    }
+]

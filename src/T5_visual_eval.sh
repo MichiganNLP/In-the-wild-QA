@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ckpt_path=ckpts/T5/text_visual_finetuned/epoch=2-val_loss=2.25-sr-60-mvl-2048.ckpt
 pred_out_dir=preds/T5/text_visual/

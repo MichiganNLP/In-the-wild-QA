@@ -1,9 +1,8 @@
-import re
-import os
-import glob
 import json
 from torch.utils.data import Dataset
+import json
 
+from torch.utils.data import Dataset
 
 
 class VQADataset(Dataset):

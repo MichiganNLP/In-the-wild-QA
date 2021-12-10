@@ -1,10 +1,10 @@
 import json
-import time
 import os
+import time
 
 import requests
-from selenium import webdriver
 from bs4 import BeautifulSoup as bs
+from selenium import webdriver
 
 from parse_args import parse_args
 

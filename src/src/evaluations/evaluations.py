@@ -1,12 +1,12 @@
-from nltk.translate.bleu_score import sentence_bleu
-from nltk import word_tokenize
-from rouge import Rouge
 import warnings
-import numpy as np
-from tqdm import tqdm
 from collections import defaultdict
 from src.dataloader import VQADataset
 
+import numpy as np
+from nltk import word_tokenize
+from nltk.translate.bleu_score import sentence_bleu
+from rouge import Rouge
+from tqdm import tqdm
 
 warnings.filterwarnings("ignore")   # filter user warning for BLEU when overlap is 0
 

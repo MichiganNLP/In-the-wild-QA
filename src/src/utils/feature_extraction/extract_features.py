@@ -6,16 +6,15 @@ import math
 import cv2 as cv
 import h5py
 import numpy as np
-from overrides import overrides
 import torch
 import torch.nn
 import torch.utils.data
 import torchvision
-from tqdm import tqdm
-
+from overrides import overrides
 from src.utils.feature_extraction.c3d import C3D
 from src.utils.feature_extraction.i3d import I3D
 from src.utils.feature_extraction.wildqa_dataset import WildQaFrameDataset
+from tqdm import tqdm
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

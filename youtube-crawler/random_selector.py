@@ -1,7 +1,7 @@
 # Randomly select videos links from each channel
 
-import random
 import os
+import random
 
 random.seed(42)
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # ckpt_path=ckpts/T5/text_finetuned/epoch=0-val_loss=8.81.ckpt
 pred_out_dir=preds/T5/text_zero_shot/

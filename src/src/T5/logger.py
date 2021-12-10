@@ -1,6 +1,7 @@
-import pytorch_lightning as pl
-import os
 import logging
+import os
+
+import pytorch_lightning as pl
 
 logger = logging.getLogger(__name__)
 

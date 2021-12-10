@@ -9,7 +9,7 @@ from src.rdm.random_evidence import random_evidence
 from src.rdm.random_text import random_text
 
 
-def main():
+def main() -> None:
     args = parse_args()
     random.seed(args.random_state)
     # QA models
@@ -36,6 +36,9 @@ def main():
         T5_train(args)
     elif args.model_type == "T5_evidence_eval":
         T5_eval(args)
+    else:
+        raise ValueError(f"Unknown model type: {args.model_type}")
+
 
 if __name__ == "__main__":
     main()

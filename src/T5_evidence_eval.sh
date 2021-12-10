@@ -3,7 +3,7 @@
 CUDA_ID=0
 
 
-ckpt_path=ckpts/T5/evidence_finetuned/epoch=23-val_loss=5.95.ckpt
+ckpt_path=ckpts/T5/evidence_finetuned/epoch=77-train_loss=8.63.ckpt
 pred_out_dir=preds/T5/evidence/
 pred_name=preds-T5_evidence_eval
 pred_num=1
@@ -32,8 +32,8 @@ CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_evidence_eval \
     --visual_size ${visual_size}
 
 
-# python -m src.utils.post_process_T5_evidence \
-#     --pred ${pred_out_dir}/${pred_name}-${pred_num}.txt \
-#     --processed_pred ${pred_out_dir}/processed_pred-${pred_num}.txt \
-#     --test_data example_data/wildQA-data/train.json \
-#     --model_name T5_evidence
+python -m src.utils.post_process_T5_evidence \
+    --pred ${pred_out_dir}/${pred_name}-${pred_num}.txt \
+    --processed_pred ${pred_out_dir}/processed_pred-${pred_num}.txt \
+    --test_data example_data/wildQA-data/train.json \
+    --model_name T5_evidence

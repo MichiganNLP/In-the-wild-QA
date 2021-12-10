@@ -34,7 +34,7 @@ def set_seed(seed):
 def T5_train(args):
 
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
-        dirpath=args.output_ckpt_dir, filename="{epoch}-{val_loss:.2f}", monitor="val_loss", mode="min", save_top_k=1
+        dirpath=args.output_ckpt_dir, filename="{epoch}-{train_loss:.2f}", monitor="train_loss", mode="min", save_top_k=1
     )
 
     wandb_logger = WandbLogger(name=args.wandb_name,project=args.wandb_project, entity=args.wandb_entity)

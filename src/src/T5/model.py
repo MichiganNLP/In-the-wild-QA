@@ -52,7 +52,9 @@ class TextVisualEncoder(T5Stack):
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
                 **kwargs) -> Union[BaseModelOutputWithPastAndCrossAttentions, Tuple[torch.Tensor, ...]]:
         text_embedding = self.embed_tokens(text_token_ids)
-        visual_embedding = self.embed_video(visual)
+        # visual_embedding = self.embed_video(visual)
+        # NOTE: for debugging purpose
+        visual_embedding = self.embed_tokens(visual)
         embedding = torch.cat([text_embedding, visual_embedding], dim=1)
         attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)
 
@@ -109,7 +111,7 @@ class T5AndVisualEvidence(T5EncoderModel):
                                         visual_attention_mask=visual_attention_mask, **kwargs)
         # We only care about the last hidden state sequence
         batch_size, visual_start = masked_caption_ids.shape
-        _, visual_len, _ = visual.shape
+
         visual_hidden = outputs.last_hidden_state[:,visual_start:,:]
 
         # assume it is batch_size * visual_leng
@@ -206,13 +208,12 @@ class T5FineTuner(pl.LightningModule):
 
             batch_size, N = starts.shape
             for b in range(batch_size):
-                # for i in range(N):
+                for i in range(N):
                     # multiple evidences (N >= 1)
-
                     if int(evidence_mask[b][i].item()):
                         # otherwise we should not care about the cross entropy loss
-                        start_lss.append(self.xentloss(raw_start[b], starts[b][0].unsqueeze(dim=0)))
-                        end_lss.append(self.xentloss(raw_end[b], ends[b][0].unsqueeze(dim=0)))
+                        start_lss.append(self.xentloss(raw_start[b], starts[b][i].unsqueeze(dim=0)))
+                        end_lss.append(self.xentloss(raw_end[b], ends[b][i].unsqueeze(dim=0)))
 
             # output start_pos: batch_size * N (number of evidences within an instance)
             tt_start_lss = torch.sum(torch.stack(start_lss))
@@ -221,8 +222,7 @@ class T5FineTuner(pl.LightningModule):
             # following the BERT paper of using the average of start and end loss
             # no accuracy or sentence accuracy available here
 
-            return (tt_start_lss + tt_end_lss) / 2, 0, 0
-            # return tt_end_lss, 0, 0
+            return tt_start_lss + tt_end_lss, 0, 0
 
         else:
             labels = batch["target_ids"]
@@ -273,7 +273,7 @@ class T5FineTuner(pl.LightningModule):
         # if outputs:
         #TODO: fix this hacky solution
         avg_train_loss = torch.stack([x["loss"] for x in outputs]).mean()
-        tensorboard_logs = {"avg_train_loss": avg_train_loss}
+        tensorboard_logs = {"train_loss": avg_train_loss}
         # self.log('epoch_train_loss', avg_train_loss)
         # self.log('epoch_train_acc', self.accuracy.compute(), on_step=False, on_epoch=True)
         # return {"avg_train_loss": avg_train_loss, "log": tensorboard_logs, 'progress_bar': tensorboard_logs}

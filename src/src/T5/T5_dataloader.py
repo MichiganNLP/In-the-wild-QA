@@ -116,8 +116,9 @@ class T5Dataset(VQADataset):
         
         for d in data:
             question = d["question"]
-
-            video_id = d["video_id"]
+            
+            # NOTE: for debugging
+            # video_id = d["video_id"]
 
             if self.is_zero_shot:
                 question += " <extra_id_0>"
@@ -132,14 +133,22 @@ class T5Dataset(VQADataset):
                         [question], max_length=self.max_len, pad_to_max_length=True, return_tensors="pt"
                 )
 
+                # start_with_zero = False
+
                 if self.is_evidence:
                     # only return the start and end position as the int
                     evidences = d["evidences"]
                     this_example_evidences = []
-                    for evidence in evidences:
+                    
+                    #NOTE: debugging purpose, only use the single evidence
+                    for evidence in [evidences[0]]:
                         for _, [start_time, end_time] in evidence.items():
                             assert isfloat(start_time) and isfloat(end_time)
+                            # if round(float(start_time)) == 0:
+                            #     start_with_zero = True
                             this_example_evidences.append([round(float(start_time)), round(float(end_time))])
+                    # if start_with_zero:
+                    #     continue
                     self.evidences.append(this_example_evidences)
 
                 else:
@@ -151,13 +160,38 @@ class T5Dataset(VQADataset):
 
                 # for training, each input and target will be added
                 self.inputs.append(tokenized_inputs)
-
-                if self.include_visual:
-                    self.input_visuals.append({
-                        "input_ids": self.visual_features[video_id],
-                        "attention_mask": self.visual_attention_masks[video_id]})
+            
+                # NOTE: for debugging
+                # if self.include_visual:
+                #     self.input_visuals.append({
+                #         "input_ids": self.visual_features[video_id],
+                #         "attention_mask": self.visual_attention_masks[video_id]})
+                context = d["context"]
+                tokenized_context = self.tokenizer.batch_encode_plus(
+                        [context], max_length=self.max_len, pad_to_max_length=True, return_tensors="pt"
+                )
+                self.input_visuals.append(tokenized_context)
 
             else:
+                # ###############################
+                # # NOTE: just for debugging
+                # start_with_zero = False
+
+                # if self.is_evidence:
+                #     # only return the start and end position as the int
+                #     evidences = d["evidences"]
+                #     this_example_evidences = []
+                    
+                #     #NOTE: debugging purpose, only use the single evidence
+                #     for evidence in [evidences[0]]:
+                #         for _, [start_time, end_time] in evidence.items():
+                #             assert isfloat(start_time) and isfloat(end_time)
+                #             if round(float(start_time)) == 0:
+                #                 start_with_zero = True
+                #             this_example_evidences.append([round(float(start_time)), round(float(end_time))])
+                #     if start_with_zero:
+                #         continue
+                # #####################################
                 # for testing time, inputs should not be repeatly added 
                 tokenized_inputs = self.tokenizer.batch_encode_plus(
                         [question], max_length=self.max_len, pad_to_max_length=True, return_tensors="pt"

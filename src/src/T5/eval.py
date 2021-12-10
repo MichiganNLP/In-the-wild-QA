@@ -88,10 +88,10 @@ def T5_eval(args):
                     for j in range(i + 1, vid_len[b].item()):
                         end_score = outs[1][b, 0, j]
                         end = j
-                        # if start_score + end_score > predicted_span["score"]:
-                        if end_score > predicted_span["score"]:
-                            # predicted_span["score"] = (start_score + end_score).item()
-                            predicted_span["score"] = end_score.item()
+                        if start_score + end_score > predicted_span["score"]:
+                        # if start_score > predicted_span["score"]:
+                            predicted_span["score"] = (start_score + end_score).item()
+                            # predicted_span["score"] = start_score.item()
                             predicted_span["start"] = start
                             predicted_span["end"] = end
             outputs.append(predicted_span)

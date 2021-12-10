@@ -39,3 +39,4 @@ dependencies:
   -     pytorch::torchvision
   -              tqdm
   - HuggingFace::transformers
+  - conda-forge::wandb

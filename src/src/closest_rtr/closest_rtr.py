@@ -2,9 +2,10 @@ import argparse
 
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
+from tqdm import tqdm
+
 from src.closest_rtr.rtr_dataloader import RTRDataset
 from src.evaluations.evaluations import evaluate
-from tqdm import tqdm
 
 
 def closest_rtr(args: argparse.Namespace) -> None:

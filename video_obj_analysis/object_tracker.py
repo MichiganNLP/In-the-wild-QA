@@ -1,13 +1,10 @@
 import argparse
 import os
 import time
-from collections import defaultdict
 
 import cv2
-import torch
 from PIL import Image
 from moviepy.editor import VideoFileClip
-from torch.autograd import Variable
 from torchvision import transforms
 
 from models import *

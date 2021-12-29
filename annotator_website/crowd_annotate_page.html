@@ -152,6 +152,14 @@
       outline: none;
     }
 
+    .character-remain{
+      text-align: right;
+      color: grey;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
     #comments {
         border-radius: 15px;
         border: 4px dashed #cee3e9;
@@ -171,30 +179,59 @@
 
     <div id="instructions-inner">
 
-      <p>We need help for this Video QA task based on video content (including the audio).
+      <p>We need help for this Video Question Answering task based on video content (including the audio).
       </p>
 
       <h3>Basic Instructions</h3>
 
       <ul>
-        <li>There are five questions, you need to finish all five questions according to the content in the video (including audio).</li>
-        <li>You will first watch the video, then answer its question.</li>
-        <li>You will need to provide at least one answer for each question (ignoring differences such as upper/lower case, or the article). <b>The more the better</b>, but every answer should be correct.</li>
-        <li>You will need to identify the source of your answer (whether it is based on the visual scene, or the audio).</li>
-        <li>You will need to provide video evidence (video clip) to support your answers.</li>
-        <li>If one video or question is not available, please <u>comment</u> at the bottom of this annotation page (and fill the mandatory fields for this video/question with placeholder values).
+        <li>You will first watch the video, then answer the questions, each question in turn.</li>
+        <li>You will need to provide at least one answer for each question (ignoring differences such as upper/lower case, or the article). <b>The more answers the better</b>, but every answer should be correct.</li>
+        <li>You will need to identify the source of your answer (whether it is based on the visual scene or the audio).</li>
+        <li>For each answer, you will need to provide video evidence (video clip) to support your answers. See below for additional information.</li>
+        <li>If one video or question is not available, please <u>comment</u> at the bottom of this annotation page (and fill the mandatory fields for this video/question with placeholder values).          
         </li>
+        <li>There are five questions, you need to finish all five questions according to the content in the video (including audio).</li>
+
       </ul>
 
+      <h3>How To Answer</h3>
+      <ul>
+        <li>Provide one or more answers for each question.</li>
+        <li>Each answer should be written as <b>full sentences</b> (at least one).
+          <ul>
+            <li>E.g.,<i>&quot;<span class="counterexample-answer">Left</span>&quot;</i> ->
+              <i>&quot;<span class="example-answer">The landspout bends toward the left.</span>&quot;</i>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Respond matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.
+          <ul>
+            <li>E.g., <i>&quot;<span class="counterexample-answer">beautiful</span>&quot;</i> is likely <u>not</u> a
+              good word to use within an answer.
+            </li>
+          </ul>
+        </li>
+        <li>
+          When you enter numbers, please enter digits instead of text.
+
+          <ul>
+            <li><i>&quot;<span class="counterexample-answer">Seventeen</span>&quot;</i> ->
+              <i>&quot;<span class="example-answer">17</span>&quot;</i></li>
+          </ul>
+        </li>
+        <li>Use your best judgment.</li>
+      </ul>
 
       <h3>How to provide video evidence</h3>
       <ul>
-        <li>The video evidence consists of <b>all</b> the parts of the video that support the answer to your given question.</li>
-        <li> You need to provide at least one video evidence clip (intervals within the video) for each question.</li>
+        <li>The video evidence consists of <b>all</b> the frame intervals of the video that support the answer to your given question.</li>
+        <li> You need to provide at least one video evidence clip (interval within the video) for each question.</li>
         <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
-        <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
+        <li> You can use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point. When you click or drag the bar, the above video will change accordingly, so you could locate the points according to the video screen.</li>
         <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
-        <li> The video evidence clips (the time gap between the start point and the end point) should be <span class="example-answer">as short as possible.</span></li>
+        <li> The video evidence clips (the time gap between the start point and the end point) should only cover the actual evidence and not more (in other words, it should be <span class="example-answer">as short as possible</span>).</li>
       </ul>
 
       <h3>Example</h3>
@@ -239,6 +276,7 @@
 
   const ENTER_KEY_CODE = 13;
   const BACKSPACE_KEY_CODE = 8;
+  const MAX_ANSWER_LEN = 500;
 
   // const videos = ["https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1", 
   //   "${video1}", "${video2}"]
@@ -246,12 +284,12 @@
     "${video1}", "${video2}", "${video3}", "${video4}", "${video5}"]
       .map(v => templateWasSubstituted(v) ? v :
        "https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1");
-  // const questions = ["Which direction does the landspout bend towards?", 
+  // const questions = ["Which direction does the landspout bend toward?", 
   //   "${question1}", "${question2}"]
-  const questions = ["Which direction does the landspout bend towards?", 
+  const questions = ["Which direction does the landspout bend toward?", 
     "${question1}", "${question2}", "${question3}", "${question4}", "${question5}"]
       .map(v => templateWasSubstituted(v) ? v :
-       "Which direction does the landspout bend towards?").map(escapeHtml);
+       "Which direction does the landspout bend toward?").map(escapeHtml);
 
   function templateWasSubstituted(s) {
     return !s.startsWith("${") || !s.endsWith("}");
@@ -321,8 +359,15 @@
           <div class="form-group">
             <h4>Your Answer:</h4>
              <textarea class="form-control" id="answer-input-${0, i}-${0,j}" name="answer-input-${0, i}-${0,j}" 
-              rows="1" placeholder="Please type your answer here" 
-              ${isExample? "disabled" :""}>${isExample? "Left":""}</textarea></br>
+              rows="3" placeholder="Please type your answer here" 
+              ${isExample? "disabled" :""}>${isExample? "The landspout bends toward the left.":""}</textarea>
+            <div id="remain-character-${0,i}-${0,j}" class="character-remain">
+              ${isExample? `${0,MAX_ANSWER_LEN-"The landspout bends toward the left.".length}/${0,MAX_ANSWER_LEN} characters remaining`:`${0,MAX_ANSWER_LEN}/${0,MAX_ANSWER_LEN} characters remaining`}
+            </div>
+            <ur class="annotate-instructions">
+              <li>Your answer should be written as <b>full sentences</b> (at least one).</li>
+              <li>Respond matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.</li>
+            </ur>
           </div>
 
           <hr>
@@ -370,12 +415,12 @@
             <h4>Locate video evidences to support your answer:</h4>
             <video style="max-width:50%;max-height:100%" src=${0,video} id="refer-video-${0,i}-${0,j}" controls> </video>
             <ur class="annotate-instructions">
-              <li>The video evidence consists of <b>all</b> the parts of the video that support the answer to your given question.</li>
-              <li> You need to provide at least one video evidence clip (intervals within the video) for one question.</li>
+              <li>The video evidence consists of <b>all</b> the frame intervals of the video that support the answer to your given question.</li>
+              <li> You need to provide at least one video evidence clip (interval within the video) for one question.</li>
               <li> You need to provide both the <b>start point and end point</b> for all the video evidences you identify in the video;</li>
-              <li> You could use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point.</li>
+              <li> You can use your mouse or &larr;/&rarr; key to <b>click or drag the process bars</b> of start point and end point.</li>
               <li> For each video evidence clip, the end point should be <b>greater than zero</b>, and the end point should be greater or equal to the start point.</li>
-              <li> The video evidence clips (the time gap between the start point and the end point) should be <b>as short as possible.</b></li>
+              <li> The video evidence clips (the time gap between the start point and the end point) should only cover the actual evidence and not more (in other words, it should be <b>as short as possible</b>).</b></li>
             </ur>
 
             <div id="video-bars-${0,i}-${0,j}"></div>
@@ -506,7 +551,6 @@
             .map($e => $e.value)
             .map(normalizeAnswer)
       );
-    console.log(i_answers);
     return !i_answers.has(i_value);
   }
 
@@ -585,6 +629,15 @@
     });
   }
 
+  function countRemainCharacters(i,j){
+    const inputfield = document.getElementById(`answer-input-${0,i}-${0,j}`);
+    const countfield = document.getElementById(`remain-character-${0,i}-${0,j}`);
+    if (inputfield.value.length > MAX_ANSWER_LEN) {
+      inputfield.value = inputfield.value.substring(0, MAX_ANSWER_LEN);
+    } else {
+      countfield.textContent = `${0,MAX_ANSWER_LEN-inputfield.value.length}/${0,MAX_ANSWER_LEN} characters remaining`;
+    }
+  }
 
   function setUpInputListeners() 
   {
@@ -592,7 +645,8 @@
       Array.from($(`[name="inner-answer-${0, i}"]`)).map((queele,_) => {
         const j = queele.id.split("-")[3];
         $(`[name="answer-input-${0,i}-${0, j}"]`).keyup(e => {
-            activateCheckAnswers(i)
+            countRemainCharacters(i,j);
+            activateCheckAnswers(i);
             checkValidationAlerts(i,j);
           });
 

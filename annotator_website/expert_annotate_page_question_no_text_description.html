@@ -238,10 +238,13 @@
         <li>For each video, after you finish one question, you could click the <u>Add one more question for this video</u> button to 
         continue to provide another question for this video. On the contrary, if you want to delete one question, you could click 
         the <u>Delete this Question</u> button.</li>
+        <li>
+          When you provide multiple questions for the same video, make sure these questions are <b>independently</b> asked.
+          <ul>
+            <li>E.g., "What is growing on pine trees?" and "What is their color?" are <u>not</u> independent.</li>
+          </ul>
+        </li>
       </ul>
-
-    </br>
-
 
       <h3>How to identity the Question Category</h3>
 
@@ -259,7 +262,34 @@
           <li><b>Existence:</b> <span class="example-answer">Is there a lake</span> by the mountain?</li>
           <li><b>Time:</b> <span class="example-answer">How long</span> can the missile fly?</li>
           <li><b>Location:</b> <span class="example-answer">Where</span> is the tank?</li>
-          <li><b>Other:</b></li>
+          <li><b>Other</b></li>
+      </ul>
+
+      <h3>How To Provide Correct Answer</h3>
+      <ul>
+        <li>Your answer should be written as <b>full sentences</b> (at least one).
+          <ul>
+            <li>E.g.,<i>&quot;<span class="counterexample-answer">Left</span>&quot;</i> ->
+              <i>&quot;<span class="example-answer">The landspout bends toward the left.</span>&quot;</i>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Provide answers matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.
+          <ul>
+            <li>E.g., <i>&quot;<span class="counterexample-answer">beautiful</span>&quot;</i> is likely <u>not</u> a
+              good word to use within an answer.
+            </li>
+          </ul>
+        </li>
+        <li>
+          When you enter numbers, please enter digits instead of text.
+
+          <ul>
+            <li><i>&quot;<span class="counterexample-answer">Seventeen</span>&quot;</i> ->
+              <i>&quot;<span class="example-answer">17</span>&quot;</i></li>
+          </ul>
+        </li>
       </ul>
 
       <h3>How to provide video evidence</h3>
@@ -396,7 +426,7 @@
             <h4>Your Question:</h4>
              <textarea class="form-control" id="question-input-${0, i}-${0,j}" name="question-input-${0, i}-${0,j}" 
               rows="2" placeholder="Please type your question here" 
-              ${isExample? "disabled" :""}>${isExample? "Which direction does the landspout bend towards?":""}</textarea></br>
+              ${isExample? "disabled" :""}>${isExample? "Which direction does the landspout bend toward?":""}</textarea></br>
           </div>
 
           <hr>
@@ -459,11 +489,15 @@
           <hr>
 
           <div class="form-group">
-            <h4>Correct Answer:<h4>
+            <h4>Correct Answer:</h4>
              <textarea class="form-control" id="correct-answer-${0,i}-${0,j}" name="correct-answer-${0,i}-${0,j}" 
-              rows="1" placeholder="Correct Answer" 
-              ${isExample? "disabled" :""}>${isExample? "Left":""}</textarea></br>
-            <h5>Please suggest how confident you are with your answer:</h5>
+              rows="2" placeholder="Correct Answer" 
+              ${isExample? "disabled" :""}>${isExample? "The landspout bends toward the left.":""}</textarea>
+            <ul class="annotate-instructions">
+              <li> Your answer should be written as <b>full sentences</b> (at least one)</li>
+              <li> Provide answers matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.</li>
+            </ul></br>
+            <h5>Please suggest how confident you are with your correct answer:</h5>
             <br>
             <div>
               <input type="radio" name="confidence-${0, i}-${0, j}" id="confidence-veryhigh-${0, i}-${0, j}" 

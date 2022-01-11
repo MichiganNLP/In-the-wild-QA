@@ -5,6 +5,9 @@ dependencies:
   - pip:
     -            rouge
     -            scenedetect
+    -            keras==2.6.0
+    -            ipdb
+    -            ipython
   -              beautifulsoup4
   - conda-forge::cached_path
   - conda-forge::cudatoolkit

@@ -1,18 +1,12 @@
 import os
-import json
-import textwrap
-import argparse
+
 import torch
 import torch.cuda
+from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
-from sklearn import metrics
-from torch.utils.data import Dataset, DataLoader
-import pytorch_lightning as pl
 
 from src.T5.T5_dataloader import T5Dataset
-from src.T5.model import T5FineTuner, my_collate
-
-
+from src.T5.model import T5FineTuner
 
 
 def T5_eval(args):
@@ -33,7 +27,7 @@ def T5_eval(args):
             sample_rate=args.sample_rate, is_evidence=True)
         else:
             dataset = T5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True)
-        
+
     model.model.eval()
     # NOTE: assume we have GPU resources in testing
     model.model.cuda()
@@ -58,8 +52,8 @@ def T5_eval(args):
                                     num_beams=args.beam_size,
                                     num_return_sequences=args.pred_num)
         elif args.model_type == "T5_evidence_eval":
-            outs = model.model.predict(masked_caption_ids=batch['source_ids'].cuda(), 
-                                attention_mask=batch['source_mask'].cuda(), 
+            outs = model.model.predict(masked_caption_ids=batch['source_ids'].cuda(),
+                                attention_mask=batch['source_mask'].cuda(),
                                 visual=batch["visual_ids"].cuda(),
                                 visual_attention_mask=batch['visual_mask'].cuda(),
                                 evidence = None,
@@ -70,7 +64,7 @@ def T5_eval(args):
                                     max_length=args.max_seq_length,
                                     num_beams=args.beam_size,
                                     num_return_sequences=args.pred_num)
-       
+
         if args.model_type == "T5_evidence_eval":
             batch_size, N, _ = outs[0].shape
             assert N == 1

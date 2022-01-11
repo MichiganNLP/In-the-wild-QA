@@ -1,11 +1,11 @@
-import os
-import re
 import argparse
 import datetime
-import numpy as np
-import matplotlib.pyplot as plt
-from moviepy.editor import VideoFileClip
+import os
+import re
 
+import matplotlib.pyplot as plt
+import numpy as np
+from moviepy.editor import VideoFileClip
 
 args_dict = dict(
     select_path='selected_clips',

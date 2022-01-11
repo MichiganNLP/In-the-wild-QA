@@ -1,13 +1,11 @@
 # Standard PySceneDetect imports:
-import numpy as np
-import os
 import argparse
-from scenedetect import VideoManager
-from scenedetect import SceneManager
+import os
 
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+from scenedetect import SceneManager, VideoManager
 # For content-aware scene detection:
 from scenedetect.detectors import ContentDetector
-from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 
 
 def find_scenes(video_path, threshold=16.0):

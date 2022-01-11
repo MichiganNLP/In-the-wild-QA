@@ -1,9 +1,9 @@
 import json
-import torch
-import numpy as np
 
+import numpy as np
+import torch
 from src.dataloader import VQADataset
-from src.utils.utils import read_hdf5, isfloat
+from src.utils.utils import isfloat, read_hdf5
 from torch.nn.utils.rnn import pad_sequence
 
 

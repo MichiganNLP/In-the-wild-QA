@@ -1,11 +1,7 @@
-
-from torch.utils.data import ConcatDataset
-import numpy as np
+from collections import defaultdict
 
 from src.dataloader import VQADataset
 from src.evaluations.evaluations import evaluate
-from tqdm import tqdm
-from collections import defaultdict
 
 
 def most_common_ans(args):

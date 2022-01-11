@@ -1,7 +1,6 @@
+import argparse
 import os
 import random
-import argparse
-
 
 args_dict = dict(
     seed=42,

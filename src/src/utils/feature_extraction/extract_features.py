@@ -2,6 +2,7 @@
 """Script to extract ResNet features from video frames."""
 import argparse
 import math
+from typing import Optional
 
 import cv2 as cv
 import h5py
@@ -11,10 +12,11 @@ import torch.nn
 import torch.utils.data
 import torchvision
 from overrides import overrides
+from tqdm import tqdm
+
 from src.utils.feature_extraction.c3d import C3D
 from src.utils.feature_extraction.i3d import I3D
 from src.utils.feature_extraction.wildqa_dataset import WildQaFrameDataset
-from tqdm import tqdm
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -71,7 +73,7 @@ def save_resnet_features():
             res5c_features_file.create_dataset(video_id, shape=(video_frame_count, 2048, 7, 7))
             pool5_features_file.create_dataset(video_id, shape=(video_frame_count, 2048))
 
-        res5c_output = None
+        res5c_output: Optional[torch.Tensor] = None
 
         def avg_pool_hook(_module, input_, _output):
             nonlocal res5c_output

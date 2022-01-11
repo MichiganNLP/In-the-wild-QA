@@ -1,8 +1,9 @@
 import random
 
+from torch.utils.data import ConcatDataset
+
 from src.dataloader import VQADataset
 from src.evaluations.evaluations import evaluate
-from torch.utils.data import ConcatDataset
 
 
 def random_text(args):

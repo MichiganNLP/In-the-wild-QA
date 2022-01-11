@@ -1,7 +1,7 @@
 import argparse
 
 
-def parse_args():
+def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(prog='model_type')
     subparsers = parser.add_subparsers(help='sub-command help', dest='model_type')
 
@@ -16,11 +16,10 @@ def parse_args():
     # Model for QA
 
     # random text baseline model arguments
-    parser_rdn_text = subparsers.add_parser('random_text', help='random text baseline', parents=[parent_parser])
+    subparsers.add_parser('random_text', help='random text baseline', parents=[parent_parser])
 
     # most common answer text baseline model arguments
-    parser_rdn_text = subparsers.add_parser('most_common_ans', help='most common answer text baseline',
-                                            parents=[parent_parser])
+    subparsers.add_parser('most_common_ans', help='most common answer text baseline', parents=[parent_parser])
 
     # closest retrieval baseline model arguments
     parser_rtr = subparsers.add_parser('closest_rtr', help='closest retrieve text baseline', parents=[parent_parser])
@@ -146,7 +145,6 @@ def parse_args():
     parser_T5_evidence.add_argument("--output_ckpt_dir", required=True)
     parser_T5_evidence.add_argument("--model_name_or_path", default='t5-base')
     parser_T5_evidence.add_argument("--tokenizer_name_or_path", default='t5-base')
-    parser_T5_evidence.add_argument("--hidden_size", default=768, type=int)
     parser_T5_evidence.add_argument("--max_seq_length", default=512, type=int)
     parser_T5_evidence.add_argument("--learning_rate", default=3e-4)
     parser_T5_evidence.add_argument("--weight_decay", default=0.0)

@@ -1,5 +1,3 @@
-from __future__ import division
-
 from collections import defaultdict
 
 import numpy as np
@@ -9,10 +7,6 @@ from torch.autograd import Variable
 
 from utils.parse_config import *
 from utils.utils import build_targets
-
-
-##import matplotlib.pyplot as plt
-##import matplotlib.patches as patches
 
 
 def create_modules(module_defs):

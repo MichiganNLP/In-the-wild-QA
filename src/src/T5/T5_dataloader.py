@@ -2,9 +2,10 @@ import json
 
 import numpy as np
 import torch
+from torch.nn.utils.rnn import pad_sequence
+
 from src.dataloader import VQADataset
 from src.utils.utils import isfloat, read_hdf5
-from torch.nn.utils.rnn import pad_sequence
 
 
 def get_dataset(tokenizer, data_dir, args):

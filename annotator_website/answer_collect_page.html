@@ -205,11 +205,40 @@
             </li>
           </ul>
         </li>
+        <li>The answer should be derived from the video (visual or audio).
+          <ul>
+            <li>
+              E.g.,
+              <i>&quot;<span class="counterexample-answer">These plants are green because they contain chlorophyll.</span>&quot;</i>
+              is <u>not</u> a good answer.
+            </li>
+          </ul>
+        </li>
         <li>
-          Respond matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.
+          Respond matter-of-factly (as <b>objectively</b> as possible). Stick to what you can see or hear from the video.
           <ul>
             <li>E.g., <i>&quot;<span class="counterexample-answer">beautiful</span>&quot;</i> is likely <u>not</u> a
               good word to use within an answer.
+            </li>
+            <li>E.g., 
+              <i>&quot;<span class="counterexample-answer">This takes some bravery to do.</span>&quot;</i> 
+              is somehow subjective.
+            </li>
+          </ul>
+        </li>
+        <li>Answer in 3rd person point of view.
+          <ul>
+            <li>E.g.,&quot;<i><span class="counterexample-answer">We</span></i> raise cattle on this farm.&quot; ->
+              &quot;<i><span class="example-answer">They</span></i> raise cattle on this farm.&quot;
+            </li>
+          </ul>
+        </li>
+        <li><u>Don't</u> answer about how's the video being recorded, the camera-person, or the camera itself. Answer about the content itself. 
+          Ignore what the camera-person is doing.
+          <ul>
+            <li>
+              E.g., &quot;There are two people, i.e. a running child, and the <i><span class="counterexample-answer">cameraman</span></i>.&quot; 
+                / &quot;The <i><span class="counterexample-answer">camera</span></i> is moving fast.&quot; are <u>not</u> good answers.
             </li>
           </ul>
         </li>
@@ -365,8 +394,11 @@
               ${isExample? `${0,MAX_ANSWER_LEN-"The landspout bends toward the left.".length}/${0,MAX_ANSWER_LEN} characters remaining`:`${0,MAX_ANSWER_LEN}/${0,MAX_ANSWER_LEN} characters remaining`}
             </div>
             <ur class="annotate-instructions">
-              <li>Your answer should be written as <b>full sentences</b> (at least one).</li>
+              <li>Answer in 3rd person point of view.</li>
               <li>Respond matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.</li>
+              <li>Your answer should be written as <b>full sentences</b> (at least one).</li>
+              <li>Answer about the content itself (<u>not</u> the video making process,
+              the camera-person, or the camera itself)</li>
             </ur>
           </div>
 

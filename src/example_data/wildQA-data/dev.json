@@ -1,87 +1,12 @@
 [
     {
-        "objective": "topography",
-        "confidence": "very_high",
-        "question": "Are there any other manmade features?",
-        "answers": "Yes, there are farmfields. ",
+        "question": "What is the man doing?",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0MFXRI",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man doing?",
+        "answer": "Surviving in the wilderness",
         "question_type": [
-            "Existence"
-        ],
-        "question_base": [
-            "scene"
-        ],
-        "evidences": [
-            {
-                "0": [
-                    "0",
-                    "8.08"
-                ]
-            }
-        ],
-        "domain": "Geography",
-        "worker_id": "A3CYKU3BMX9HWQ",
-        "time_spent": "3598",
-        "video_link": "https://www.dropbox.com/s/pgkvfz88xs9o0pk/TK-Hinshaw_1-clip-1.mp4?raw=1",
-        "video_id": "TK-Hinshaw_1-clip-1",
-        "time_in_original_video": {
-            "frames": {
-                "start": "00:01:53.380",
-                "end": "00:03:04.351"
-            },
-            "seconds": {
-                "start": "113.38004469669885",
-                "end": "184.3510144053152"
-            },
-            "split-method": "auto"
-        },
-        "duration": 70.97096970861635
-    },
-    {
-        "objective": "People",
-        "confidence": "very_high",
-        "question": "Are there any people? How many? ",
-        "answers": "Yes, there are three. ",
-        "question_type": [
-            "Existence",
-            "Number"
-        ],
-        "question_base": [
-            "scene"
-        ],
-        "evidences": [
-            {
-                "0": [
-                    "65.36",
-                    "70.32"
-                ]
-            }
-        ],
-        "domain": "Geography",
-        "worker_id": "A3CYKU3BMX9HWQ",
-        "time_spent": "4548",
-        "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
-        "video_id": "TreadmillTV_7-clip-15",
-        "time_in_original_video": {
-            "frames": {
-                "start": "00:30:20.886",
-                "end": "00:32:21.439"
-            },
-            "seconds": {
-                "start": "1820.8857333333333",
-                "end": "1941.4395"
-            },
-            "split-method": "auto"
-        },
-        "duration": 120.55376666666666
-    },
-    {
-        "objective": "Takeoff's should be smooth and controlled.",
-        "confidence": "moderate",
-        "question": "WHy should takeoffs be smooth and controlled?",
-        "answers": "A smooth takeoff will eliminate some mechanical difficulties that may be caused by failure or unseen elements in the takeoff.",
-        "question_type": [
-            "Location",
-            "Motion",
             "Reasoning"
         ],
         "question_base": [
@@ -90,40 +15,56 @@
         "evidences": [
             {
                 "0": [
-                    "0",
-                    "21.36"
+                    5.102,
+                    6.173
                 ]
             },
             {
                 "1": [
-                    "21.6",
-                    "98"
+                    36.529,
+                    38.008
                 ]
             }
         ],
-        "domain": "Military",
-        "worker_id": "A110G7DCN8782Y",
-        "time_spent": "2113",
-        "video_link": "https://www.dropbox.com/s/stziiixua79t37j/Gung-Ho-Vids_11-clip-4.mp4?raw=1",
-        "video_id": "Gung-Ho-Vids_11-clip-4",
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.102",
+                    "00:06.173"
+                ]
+            },
+            {
+                "1": [
+                    "00:36.529",
+                    "00:38.008"
+                ]
+            }
+        ],
+        "time_spent": 934.0,
+        "video_link": "https://www.dropbox.com/s/u6ws16tvnva3ezs/Bertram-Craft_8-clip-5.mp4?raw=1",
+        "video_id": "Bertram-Craft_8-clip-5",
         "time_in_original_video": {
             "frames": {
-                "start": "00:04:43.000",
-                "end": "00:05:46.100"
+                "start": "00:05:03.929",
+                "end": "00:06:07.701"
             },
             "seconds": {
-                "start": "283.0",
-                "end": "346.1"
+                "start": "303.92862499999995",
+                "end": "367.7006666666666"
             },
             "split-method": "auto"
         },
-        "duration": 63.10000000000002
+        "duration": 63.77204166666667
     },
     {
-        "objective": "water",
+        "question": "What kinds of water features are there?",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Water",
         "confidence": "very_high",
-        "question": "What kind of water features are there",
-        "answers": "There is a creek and a pond",
+        "original_question": "What kinds of water features are there?",
+        "answer": "There are rivers. ",
         "question_type": [
             "Existence"
         ],
@@ -133,30 +74,340 @@
         "evidences": [
             {
                 "0": [
-                    "0",
-                    "5.68"
+                    0.0,
+                    8.269
                 ]
             }
         ],
         "domain": "Geography",
         "worker_id": "A3CYKU3BMX9HWQ",
-        "time_spent": "4548",
-        "video_link": "https://www.dropbox.com/s/a3ewq55teqdujtq/4k-Relaxation_11-manual.mp4?raw=1",
-        "video_id": "4k-Relaxation_11-manual",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.269"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
         "time_in_original_video": {
-            "seconds": {
-                "start": "25:00",
-                "end": "27:00"
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
             },
-            "split-method": "manual"
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
         },
-        "duration": 120.0
+        "duration": 117.45063994777658
     },
     {
-        "objective": "I wish to learn about the terrain",
+        "question": "Are there people?",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there people?",
+        "answer": "Yes",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.334,
+                    15.663
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.334",
+                    "00:15.663"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/zdjda8vochay0aw/Nick-Gaillard_5-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.960"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.96
+    },
+    {
+        "question": "What kind of campfire is there?",
+        "assignment_id": "3SKEMFQBZ34Y8H0EB9MNF5NKELCK84",
+        "objective": "I wish to learn about the camp",
         "confidence": "high",
-        "question": "What kind of roads do they have?",
-        "answers": "Dirt roads covered with water",
+        "original_question": "What kind of campfire is there?",
+        "answer": "Fire surrounded by rocks",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.455,
+                    23.401
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.455",
+                    "00:23.401"
+                ]
+            }
+        ],
+        "time_spent": 1035.0,
+        "video_link": "https://www.dropbox.com/s/iqjg3rhda1d14qc/Joe-Robinet_9-clip-2.mp4?raw=1",
+        "video_id": "Joe-Robinet_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:34.921",
+                "end": "00:03:40.654"
+            },
+            "seconds": {
+                "start": "154.9214311932413",
+                "end": "220.653763618545"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.73233242530371
+    },
+    {
+        "question": "What language are they speaking?",
+        "assignment_id": "38BQUHLA9WZWJXNX32OZR45OHQZOMT",
+        "objective": "Learn about the people",
+        "confidence": "high",
+        "original_question": "What language are they speaking?",
+        "answer": "English",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.111,
+                    10.887
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.111",
+                    "00:10.887"
+                ]
+            }
+        ],
+        "time_spent": 2333.0,
+        "video_link": "https://www.dropbox.com/s/zjkrk5vhk9qi6fn/MilitaryNotes_6-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:08.133",
+                "end": "00:02:09.433"
+            },
+            "seconds": {
+                "start": "68.13333333333334",
+                "end": "129.43333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3
+    },
+    {
+        "question": "Are they creating notches in the bamboo?",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What are the notches in the bamboo for?",
+        "confidence": "very_high",
+        "original_question": "Are they creating notches in the bamboo?",
+        "answer": "Yes, they are using creating notches in the bamboo.",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.962,
+                    12.659
+                ]
+            },
+            {
+                "1": [
+                    7.077,
+                    8.373
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.962",
+                    "00:12.659"
+                ]
+            },
+            {
+                "1": [
+                    "00:07.077",
+                    "00:08.373"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/kqqa6mi21ua6jvp/Survival-Skills-Primitive_5-clip-3.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_5-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:30.300",
+                "end": "00:04:32.600"
+            },
+            "seconds": {
+                "start": "210.3",
+                "end": "272.6"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.30000000000001
+    },
+    {
+        "question": "Are there cars in the video?",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "roads",
+        "confidence": "very_high",
+        "original_question": "How many cars are there?",
+        "answer": "6",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.466,
+                    14.943
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.466",
+                    "00:14.943"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/ds6rnnub95z7s5c/Nick-Gaillard_12-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.746",
+                "end": "00:02:06.498"
+            },
+            "seconds": {
+                "start": "62.746187124211765",
+                "end": "126.49765361489955"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.75146649068778
+    },
+    {
+        "question": "Did this man teach himself how to make a trap like this?",
+        "assignment_id": "39N5ACM9HEMZXDG4TTX9BI4US25P96",
+        "objective": "I am wondering how he learned how to make such a trap",
+        "confidence": "moderate",
+        "original_question": "Did this man teach himself how to make a trap like this?",
+        "answer": "I am assuming that the information needed to knw how to make this trap was likely passed down knowledge from someone else, otherwise it was likely trial and error trying to make the trap function properly to catch food.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.344,
+                    11.851
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.344",
+                    "00:11.851"
+                ]
+            }
+        ],
+        "time_spent": 2770.0,
+        "video_link": "https://www.dropbox.com/s/9jiix9w1s3upsov/King-Kong-Amazon_2-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_2-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:52.500",
+                "end": "00:09:05.833"
+            },
+            "seconds": {
+                "start": "472.5",
+                "end": "545.8333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 73.33333333333337
+    },
+    {
+        "question": "Is there a campfire?",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the man doing?",
+        "confidence": "very_high",
+        "original_question": "Is there a campfire?",
+        "answer": "Yes",
         "question_type": [
             "Existence"
         ],
@@ -166,34 +417,363 @@
         "evidences": [
             {
                 "0": [
-                    "20.72",
-                    "23.44"
+                    11.994,
+                    15.092
+                ]
+            },
+            {
+                "1": [
+                    21.089,
+                    24.787
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.994",
+                    "00:15.092"
+                ]
+            },
+            {
+                "1": [
+                    "00:21.089",
+                    "00:24.787"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/zkcpbq7twet0qut/Survival-Instinct_1-clip-10.mp4?raw=1",
+        "video_id": "Survival-Instinct_1-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:26.100",
+                "end": "00:12:28.567"
+            },
+            "seconds": {
+                "start": "686.1",
+                "end": "748.5666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.4666666666667
+    },
+    {
+        "question": "What kind of craft were there?",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the watercraft",
+        "confidence": "moderate",
+        "original_question": "What kind of craft were there?",
+        "answer": "speedboats, water apc's, rescue craft",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.334,
+                    3.607
+                ]
+            },
+            {
+                "1": [
+                    22.966,
+                    24.504
+                ]
+            },
+            {
+                "2": [
+                    43.227,
+                    45.031
                 ]
             }
         ],
         "domain": "Military",
         "worker_id": "A2KD4I8N1E3F0B",
-        "time_spent": "904",
-        "video_link": "https://www.dropbox.com/s/eonwwz2x75dtd5z/Military-Archive_1-clip-3.mp4?raw=1",
-        "video_id": "Military-Archive_1-clip-3",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.334",
+                    "00:03.607"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.966",
+                    "00:24.504"
+                ]
+            },
+            {
+                "2": [
+                    "00:43.227",
+                    "00:45.031"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/5ekimeu9dpjq22s/USA-Military-Channel_0-clip-6.mp4?raw=1",
+        "video_id": "USA-Military-Channel_0-clip-6",
         "time_in_original_video": {
             "frames": {
-                "start": "00:03:10.157",
-                "end": "00:04:10.951"
+                "start": "00:06:56.850",
+                "end": "00:08:03.149"
             },
             "seconds": {
-                "start": "190.15663333333333",
-                "end": "250.9507"
+                "start": "416.84976666666665",
+                "end": "483.14933333333335"
             },
             "split-method": "auto"
         },
-        "duration": 60.79406666666668
+        "duration": 66.29956666666669
     },
     {
+        "question": "Is the man working with wood.",
+        "assignment_id": "31Z0PCVWUKETBMLIVD892WELMEI7TV",
+        "objective": "determine what the man is doing",
+        "confidence": "very_high",
+        "original_question": "Is the man working with wood.",
+        "answer": "Yes the man is working with wood.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.113,
+                    33.79
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.113",
+                    "00:33.790"
+                ]
+            }
+        ],
+        "time_spent": 2510.0,
+        "video_link": "https://www.dropbox.com/s/appulo0qwp51dfs/BC-Bushcraft_8-clip-6.mp4?raw=1",
+        "video_id": "BC-Bushcraft_8-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:23.343",
+                "end": "00:08:26.573"
+            },
+            "seconds": {
+                "start": "443.3429",
+                "end": "506.57273333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.22983333333339
+    },
+    {
+        "question": "Where is the person in the hat at?",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
         "objective": "People",
         "confidence": "very_high",
-        "question": "What are they doing?",
-        "answers": "Two of them are hiking and one of them is running. ",
+        "original_question": "Where is the person in the hat at?",
+        "answer": "In a city. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.501,
+                    44.177
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.501",
+                    "00:44.177"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/c7mgg4tew4eupk6/Tornado-Trackers_11-clip-1.mp4?raw=1",
+        "video_id": "Tornado-Trackers_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.231",
+                "end": "00:02:27.648"
+            },
+            "seconds": {
+                "start": "64.23084228141124",
+                "end": "147.6475205689583"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.41667828754706
+    },
+    {
+        "question": "What kind of shelter is there?",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the camp",
+        "confidence": "high",
+        "original_question": "What kind of shelter is there?",
+        "answer": "Tent",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.344,
+                    29.926
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.344",
+                    "00:29.926"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/x9o9if18def7t9w/Bertram-Craft_12-clip-25.mp4?raw=1",
+        "video_id": "Bertram-Craft_12-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:25.717",
+                "end": "00:32:31.575"
+            },
+            "seconds": {
+                "start": "1885.7171666666666",
+                "end": "1951.574625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.8574583333334
+    },
+    {
+        "question": "How are the people being affected by the weather?",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "People ",
+        "confidence": "very_high",
+        "original_question": "How are they being affected by the weather?",
+        "answer": "The windshield is cracked. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.449,
+                    18.275
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.449",
+                    "00:18.275"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/2wn7c2nm229afhp/Tornado-Trackers_5-clip-3.mp4?raw=1",
+        "video_id": "Tornado-Trackers_5-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:45.375",
+                "end": "00:04:49.542"
+            },
+            "seconds": {
+                "start": "225.375",
+                "end": "289.5416666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.16666666666669
+    },
+    {
+        "question": "Where is the weather occurring?",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the weather occurring?",
+        "answer": "In a suburb. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.138,
+                    11.316
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.138",
+                    "00:11.316"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/1wnvnh4h43d2sef/Weathershot_3-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.160",
+                "end": "00:02:06.880"
+            },
+            "seconds": {
+                "start": "60.16",
+                "end": "126.88"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.72
+    },
+    {
+        "question": "What did the storm cause?",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Storm damage",
+        "confidence": "very_high",
+        "original_question": "What did the storm cause?",
+        "answer": "Flooding, rain, high wind, damage, and sand drifts. ",
         "question_type": [
             "Motion"
         ],
@@ -203,14 +783,765 @@
         "evidences": [
             {
                 "0": [
-                    "64.4",
-                    "70.32"
+                    0.0,
+                    6.19
+                ]
+            },
+            {
+                "1": [
+                    18.22,
+                    27.754
+                ]
+            },
+            {
+                "2": [
+                    57.055,
+                    62.396
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.190"
+                ]
+            },
+            {
+                "1": [
+                    "00:18.220",
+                    "00:27.754"
+                ]
+            },
+            {
+                "2": [
+                    "00:57.055",
+                    "01:02.396"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/w1l7ee0rofeew76/Ultimate-Chase_3-clip-4.mp4?raw=1",
+        "video_id": "Ultimate-Chase_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:35.969",
+                "end": "00:06:38.365"
+            },
+            "seconds": {
+                "start": "335.9689666666667",
+                "end": "398.36463333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.39566666666667
+    },
+    {
+        "question": "What type of equipment is it?",
+        "assignment_id": "3E7TUJ2EGCLQ8GDEOK6EBON5DD69D3",
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "original_question": "What type of equipment is it?",
+        "answer": "Artillery emplacement",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.976,
+                    8.985
+                ]
+            },
+            {
+                "1": [
+                    32.096,
+                    33.009
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.976",
+                    "00:08.985"
+                ]
+            },
+            {
+                "1": [
+                    "00:32.096",
+                    "00:33.009"
+                ]
+            }
+        ],
+        "time_spent": 970.0,
+        "video_link": "https://www.dropbox.com/s/k41dzrdoivmq2ya/Military-Archive_11-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.059999999999995"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06
+    },
+    {
+        "question": "Were there structures affected by the storm?",
+        "assignment_id": "30ZX6P7VF8USBIS7D7DA4ZA4DWNJ24",
+        "objective": "Structures",
+        "confidence": "very_high",
+        "original_question": "Were there structures affected by the storm?",
+        "answer": "Yes",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.777,
+                    14.093
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.777",
+                    "00:14.093"
+                ]
+            }
+        ],
+        "time_spent": 1822.0,
+        "video_link": "https://www.dropbox.com/s/q2uaun37tyh7gzc/Dan-Robinson_11-clip-0.mp4?raw=1",
+        "video_id": "Dan-Robinson_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:34.542"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "34.541666666666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 34.541666666666664
+    },
+    {
+        "question": "What affects did the waterspout have?",
+        "assignment_id": "30ZX6P7VF8USBIS7D7DA4ZA4DWNJ24",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What affects did the waterspout have?",
+        "answer": "Increased wind speed. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.274,
+                    51.066
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.274",
+                    "00:51.066"
+                ]
+            }
+        ],
+        "time_spent": 1822.0,
+        "video_link": "https://www.dropbox.com/s/pvya5c2b53ed91w/Ultimate-Chase_8-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.333"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.333333333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.33333333333334
+    },
+    {
+        "question": "What types of topographical features are there?",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Topography",
+        "confidence": "very_high",
+        "original_question": "What types of topographical features are there?",
+        "answer": "There is a canyon and a shallow stream. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.591
                 ]
             }
         ],
         "domain": "Geography",
         "worker_id": "A3CYKU3BMX9HWQ",
-        "time_spent": "4548",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.591"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/fjwuqxzw0soj5im/4k-Relaxation_4-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:32.999",
+                "end": "00:06:42.193"
+            },
+            "seconds": {
+                "start": "332.9993333333333",
+                "end": "402.1934583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.19412499999999
+    },
+    {
+        "question": "Are they wearing kevlar?",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6OJZEKB",
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "original_question": "Are they wearing kevlar?",
+        "answer": "yes",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.835,
+                    19.124
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.835",
+                    "00:19.124"
+                ]
+            }
+        ],
+        "time_spent": 1241.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.928624325890276
+    },
+    {
+        "question": "What type of environment is it located in?",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What type of environment is it located in?",
+        "answer": "Savannah/grassland. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.338
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.338"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/7vvm4korgwg9366/Virtual-Running-Videos_6-manual.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_6-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "4:50",
+                "end": "5:47"
+            },
+            "split-method": "manual"
+        },
+        "duration": 57.0
+    },
+    {
+        "question": "What kind of structures are there?",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the terrain",
+        "confidence": "high",
+        "original_question": "What kind of structures are there?",
+        "answer": "Tent",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    25.641,
+                    27.491
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:25.641",
+                    "00:27.491"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/b63zpwusw0ih69e/Chad-Zuber_7-clip-7.mp4?raw=1",
+        "video_id": "Chad-Zuber_7-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:45.965",
+                "end": "00:08:50.196"
+            },
+            "seconds": {
+                "start": "465.96519633537986",
+                "end": "530.1959878101816"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.23079147480172
+    },
+    {
+        "question": "What are they doing?",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6OJZEKB",
+        "objective": "I want to learn about the people",
+        "confidence": "high",
+        "original_question": "What are they doing?",
+        "answer": "Training to join the military",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.132,
+                    3.943
+                ]
+            },
+            {
+                "1": [
+                    10.728,
+                    12.004
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.132",
+                    "00:03.943"
+                ]
+            },
+            {
+                "1": [
+                    "00:10.728",
+                    "00:12.004"
+                ]
+            }
+        ],
+        "time_spent": 1241.0,
+        "video_link": "https://www.dropbox.com/s/yvn0z1ofkemt6wa/Sandboxx_10-clip-1.mp4?raw=1",
+        "video_id": "Sandboxx_10-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.644",
+                "end": "00:01:36.888"
+            },
+            "seconds": {
+                "start": "60.64391666666666",
+                "end": "96.88845833333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 36.24454166666667
+    },
+    {
+        "question": "How does the rocket artillery load it's ammo?",
+        "assignment_id": "36ZN444YTRXANEX6INQ7ZBY70HGIO8",
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "original_question": "How does it load it's ammo?",
+        "answer": "Through a winch to hoist the containers up",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    52.573,
+                    57.398
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:52.573",
+                    "00:57.398"
+                ]
+            }
+        ],
+        "time_spent": 904.0,
+        "video_link": "https://www.dropbox.com/s/vbgjhntc8qt9isu/WarLeaks-Military-Blog_4-clip-1.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.966",
+                "end": "00:02:07.138"
+            },
+            "seconds": {
+                "start": "64.96551724137932",
+                "end": "127.13793103448276"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.17241379310346
+    },
+    {
+        "question": "What tool was the man making?",
+        "assignment_id": "3PPTZCWALQJZ3GZWX46XOBWXC0BZQG",
+        "objective": "I wish to learn about the tools",
+        "confidence": "high",
+        "original_question": "What tool was the man making?",
+        "answer": "Chisel",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.985,
+                    9.944
+                ]
+            },
+            {
+                "1": [
+                    26.702,
+                    28.57
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.985",
+                    "00:09.944"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.702",
+                    "00:28.570"
+                ]
+            }
+        ],
+        "time_spent": 1136.0,
+        "video_link": "https://www.dropbox.com/s/6mw6pkqtulqm5rh/Primitive-Technology_3-clip-1.mp4?raw=1",
+        "video_id": "Primitive-Technology_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.329",
+                "end": "00:02:05.425"
+            },
+            "seconds": {
+                "start": "62.32893333333333",
+                "end": "125.42530000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.09636666666668
+    },
+    {
+        "question": "Could this video be used in a lecture to supplement teaching/learning about hydrology/hydrologic cycle?",
+        "assignment_id": "3RJSC4XJ10TD89A89I52K1YKXSX50Y",
+        "objective": "I am interested in the different ways these bodies of water are moving.",
+        "confidence": "moderate",
+        "original_question": "Could this video be used in a lecture to supplement teaching/learning about hydrology/hydrologic cycle?",
+        "answer": "Since this video shows some of the many ways water can move, I think it would be an interesting clip to see in a lecture about hydrology",
+        "question_type": [
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.435,
+                    10.331
+                ]
+            },
+            {
+                "1": [
+                    30.653,
+                    36.404
+                ]
+            },
+            {
+                "2": [
+                    48.246,
+                    52.535
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.435",
+                    "00:10.331"
+                ]
+            },
+            {
+                "1": [
+                    "00:30.653",
+                    "00:36.404"
+                ]
+            },
+            {
+                "2": [
+                    "00:48.246",
+                    "00:52.535"
+                ]
+            }
+        ],
+        "time_spent": 1643.0,
+        "video_link": "https://www.dropbox.com/s/fxzmuaiq26hq2jk/Primal-Earth-Sounds_4-clip-30.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_4-clip-30",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:33:57.292",
+                "end": "00:34:58.208"
+            },
+            "seconds": {
+                "start": "2037.2916666666667",
+                "end": "2098.2083333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.91666666666675
+    },
+    {
+        "question": "Where is this video taking place?",
+        "assignment_id": "3C5W7UE9CFPJD61P4TBVAHWHTU7XMA",
+        "objective": "I want to know where this is",
+        "confidence": "moderate",
+        "original_question": "Where is this video taking place?",
+        "answer": "The scenery leads me to believe this could be found on the western side of the United States, maybe around Colorado",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    25.483,
+                    29.57
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:25.483",
+                    "00:29.570"
+                ]
+            }
+        ],
+        "time_spent": 2888.0,
+        "video_link": "https://www.dropbox.com/s/wr43c8j1v59lhmv/Norwegian-Explorer_6-clip-59.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_6-clip-59",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:04:26.267",
+                "end": "01:05:18.400"
+            },
+            "seconds": {
+                "start": "3866.266666666667",
+                "end": "3918.4"
+            },
+            "split-method": "auto"
+        },
+        "duration": 52.133333333333205
+    },
+    {
+        "question": "What are the people doing there?",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What are they doing?",
+        "answer": "Walking/hiking. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    20.974,
+                    35.581
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:20.974",
+                    "00:35.581"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/n1lcmdttr1qe45h/TreadmillTV_4-clip-5.mp4?raw=1",
+        "video_id": "TreadmillTV_4-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:19:48.487",
+                "end": "00:22:24.543"
+            },
+            "seconds": {
+                "start": "1188.4873",
+                "end": "1344.5432"
+            },
+            "split-method": "auto"
+        },
+        "duration": 156.0559000000001
+    },
+    {
+        "question": "What are the people doing there?",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What are they doing?",
+        "answer": "Two of them are hiking and one of them is running. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    77.637,
+                    84.773
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:17.637",
+                    "01:24.773"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
         "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
         "video_id": "TreadmillTV_7-clip-15",
         "time_in_original_video": {
@@ -227,55 +1558,15 @@
         "duration": 120.55376666666666
     },
     {
-        "objective": "Determine what the jets are getting ready to do.",
+        "question": "What structures were affected?",
+        "assignment_id": "30ZX6P7VF8USBIS7D7DA4ZA4DWNJ24",
+        "objective": "Structures",
         "confidence": "very_high",
-        "question": "Are the airplanes turned on?",
-        "answers": "The airplanes are on ",
+        "original_question": "What structures were affected?",
+        "answer": "Buildings and electrical poles. ",
         "question_type": [
-            "Other"
-        ],
-        "question_base": [
-            "audio"
-        ],
-        "evidences": [
-            {
-                "0": [
-                    "0",
-                    "5.84"
-                ]
-            },
-            {
-                "1": [
-                    "46.96",
-                    "53.36"
-                ]
-            }
-        ],
-        "domain": "Military",
-        "worker_id": "A35LVQB4S4W7ZB",
-        "time_spent": "14177",
-        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
-        "video_id": "Gung-Ho-Vids_12-clip-1",
-        "time_in_original_video": {
-            "frames": {
-                "start": "00:01:01.167",
-                "end": "00:02:01.767"
-            },
-            "seconds": {
-                "start": "61.166666666666664",
-                "end": "121.76666666666667"
-            },
-            "split-method": "auto"
-        },
-        "duration": 60.6
-    },
-    {
-        "objective": "People",
-        "confidence": "very_high",
-        "question": "How many people are there?",
-        "answers": "Three. ",
-        "question_type": [
-            "Number"
+            "Existence",
+            "Motion"
         ],
         "question_base": [
             "scene"
@@ -283,34 +1574,317 @@
         "evidences": [
             {
                 "0": [
-                    "0",
-                    "4.48"
+                    19.868,
+                    23.323
                 ]
             }
         ],
-        "domain": "Geography",
+        "domain": "Natural Disaster",
         "worker_id": "A3CYKU3BMX9HWQ",
-        "time_spent": "3598",
-        "video_link": "https://www.dropbox.com/s/3hwxyoh8rf9tl46/Norwegian-Explorer_7-clip-0.mp4?raw=1",
-        "video_id": "Norwegian-Explorer_7-clip-0",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:19.868",
+                    "00:23.323"
+                ]
+            }
+        ],
+        "time_spent": 1822.0,
+        "video_link": "https://www.dropbox.com/s/q2uaun37tyh7gzc/Dan-Robinson_11-clip-0.mp4?raw=1",
+        "video_id": "Dan-Robinson_11-clip-0",
         "time_in_original_video": {
             "frames": {
                 "start": "00:00:00.000",
-                "end": "00:01:01.300"
+                "end": "00:00:34.542"
             },
             "seconds": {
                 "start": "0.0",
-                "end": "61.3"
+                "end": "34.541666666666664"
             },
             "split-method": "auto"
         },
-        "duration": 61.3
+        "duration": 34.541666666666664
     },
     {
-        "objective": "How to train for hostile entrance of a small room.",
-        "confidence": "high",
-        "question": "Why do we move slowly when training for specialized entrances?",
-        "answers": "The slowness of training versus the speed of a real life evolution to help each team member to better understand their responsibilities and to learn how their team members should be reacting. ",
+        "question": "Is there an oven with fire in it?",
+        "assignment_id": "3G2UL9A02DDN9OA6Z00GRMM726976M",
+        "objective": "What is the man doing?",
+        "confidence": "very_high",
+        "original_question": "Is there there an oven with fire in it?",
+        "answer": "Yes there is.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.463,
+                    31.541
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.463",
+                    "00:31.541"
+                ]
+            }
+        ],
+        "time_spent": 2194.0,
+        "video_link": "https://www.dropbox.com/s/r6jogq9rygw78ot/Chad-Zuber_0-clip-1.mp4?raw=1",
+        "video_id": "Chad-Zuber_0-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:13.407",
+                "end": "00:02:13.600"
+            },
+            "seconds": {
+                "start": "73.40666666666667",
+                "end": "133.60013333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.19346666666666
+    },
+    {
+        "question": "How many engines does it have?",
+        "assignment_id": "3E7TUJ2EGCLQ8GDEOK6EBON5DD69D3",
+        "objective": "I wish to learn about the aircraft",
+        "confidence": "very_high",
+        "original_question": "How many engines does it have?",
+        "answer": "two",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.105,
+                    16.213
+                ]
+            },
+            {
+                "1": [
+                    43.215,
+                    44.207
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.105",
+                    "00:16.213"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.215",
+                    "00:44.207"
+                ]
+            }
+        ],
+        "time_spent": 970.0,
+        "video_link": "https://www.dropbox.com/s/revet1kwgtt2db2/Gung-Ho-Vids_3-clip-0.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:12.900"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "72.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 72.9
+    },
+    {
+        "question": "Is the man cooking the animal on the fire?",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the man doing?",
+        "confidence": "very_high",
+        "original_question": "Is the man cooking the animal on the fire?",
+        "answer": "Yes he is",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    59.068,
+                    61.017
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:59.068",
+                    "01:01.017"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/zkcpbq7twet0qut/Survival-Instinct_1-clip-10.mp4?raw=1",
+        "video_id": "Survival-Instinct_1-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:26.100",
+                "end": "00:12:28.567"
+            },
+            "seconds": {
+                "start": "686.1",
+                "end": "748.5666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.4666666666667
+    },
+    {
+        "question": "What type of weapons are they carrying?",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6OJZEKB",
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "original_question": "What type of weapons are they carrying?",
+        "answer": "M4's",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.358,
+                    17.29
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.358",
+                    "00:17.290"
+                ]
+            }
+        ],
+        "time_spent": 1241.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.928624325890276
+    },
+    {
+        "question": "What is the man gethering?",
+        "assignment_id": "3G2UL9A02DDN9OA6Z00GRMM726976M",
+        "objective": "Determine what the man is doing.",
+        "confidence": "very_high",
+        "original_question": "What is the man gethering?",
+        "answer": "The man is gathering berries and seeds that can be consumed.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    18.95,
+                    21.899
+                ]
+            },
+            {
+                "1": [
+                    51.387,
+                    53.756
+                ]
+            },
+            {
+                "2": [
+                    56.511,
+                    58.3
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:18.950",
+                    "00:21.899"
+                ]
+            },
+            {
+                "1": [
+                    "00:51.387",
+                    "00:53.756"
+                ]
+            },
+            {
+                "2": [
+                    "00:56.511",
+                    "00:58.300"
+                ]
+            }
+        ],
+        "time_spent": 2194.0,
+        "video_link": "https://www.dropbox.com/s/d29an7v08etfk08/Chad-Zuber_8-clip-3.mp4?raw=1",
+        "video_id": "Chad-Zuber_8-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:02.282",
+                "end": "00:04:02.709"
+            },
+            "seconds": {
+                "start": "182.2821",
+                "end": "242.70913333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.42703333333333
+    },
+    {
+        "question": "what type of weather is happening?",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "people",
+        "confidence": "very_high",
+        "original_question": "what type of weather is happening?",
+        "answer": "tornado.",
         "question_type": [
             "Motion"
         ],
@@ -320,34 +1894,518 @@
         "evidences": [
             {
                 "0": [
-                    "10.08",
-                    "53.44"
+                    6.528,
+                    15.758
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.528",
+                    "00:15.758"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rqzsz03t4pn1gzd/Ultimate-Chase_9-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:33.800"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "93.8"
+            },
+            "split-method": "auto"
+        },
+        "duration": 93.8
+    },
+    {
+        "question": "how many weapons emplacements are there?",
+        "assignment_id": "38BQUHLA9WZWJXNX32OZR45OHQZOMT",
+        "objective": "Learn about the military capabilities",
+        "confidence": "very_high",
+        "original_question": "how many weapons emplacements are there?",
+        "answer": "At least 3",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.837,
+                    7.37
+                ]
+            },
+            {
+                "1": [
+                    26.166,
+                    29.727
                 ]
             }
         ],
         "domain": "Military",
-        "worker_id": "A110G7DCN8782Y",
-        "time_spent": "2113",
-        "video_link": "https://www.dropbox.com/s/9jcf1lynv4d6taz/WarLeaks-Military-Blog_1-clip-0.mp4?raw=1",
-        "video_id": "WarLeaks-Military-Blog_1-clip-0",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.837",
+                    "00:07.370"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.166",
+                    "00:29.727"
+                ]
+            }
+        ],
+        "time_spent": 2333.0,
+        "video_link": "https://www.dropbox.com/s/96jiv53rnzeyt9x/Army-military-2018_10-clip-0.mp4?raw=1",
+        "video_id": "Army-military-2018_10-clip-0",
         "time_in_original_video": {
             "frames": {
                 "start": "00:00:00.000",
-                "end": "00:01:00.379"
+                "end": "00:01:01.828"
             },
             "seconds": {
                 "start": "0.0",
-                "end": "60.37931034482759"
+                "end": "61.82836034846273"
             },
             "split-method": "auto"
         },
-        "duration": 60.37931034482759
+        "duration": 61.82836034846272
     },
     {
-        "objective": "Topography ",
+        "question": "How are the men catching the crabs?",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMPZVOX0",
+        "objective": "I wish to learn about the mens task",
+        "confidence": "high",
+        "original_question": "How are the men catching the crabs?",
+        "answer": "A stick to dig out holes",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    41.591,
+                    45.465
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:41.591",
+                    "00:45.465"
+                ]
+            }
+        ],
+        "time_spent": 1144.0,
+        "video_link": "https://www.dropbox.com/s/wyq3ms4t3ouqlcw/Survival-Skills-Primitive_4-clip-54.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_4-clip-54",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:05:30.467",
+                "end": "01:07:52.900"
+            },
+            "seconds": {
+                "start": "3930.4666666666667",
+                "end": "4072.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 142.4333333333334
+    },
+    {
+        "question": "what type of weather phenomenon is happening?",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "Weather",
         "confidence": "very_high",
-        "question": "What sort of features are present here?",
-        "answers": "Islands, mountains, forest, and an ocean. ",
+        "original_question": "What type of weather phenomenon is happening>",
+        "answer": "Rain and wind. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    4.285
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:04.285"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/ukcqw0wjtmmm43f/Dan-Robinson_12-clip-0.mp4?raw=1",
+        "video_id": "Dan-Robinson_12-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:06.132"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "66.13233357536642"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.13233357536642
+    },
+    {
+        "question": "Were there any windows?",
+        "assignment_id": "3LS2AMNW5FPN4CLPVVVG8DPTSW8OQ3",
+        "objective": "I wish to learn about the structure",
+        "confidence": "very_high",
+        "original_question": "Were there any windows?",
+        "answer": "yes",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    29.421,
+                    30.908
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:29.421",
+                    "00:30.908"
+                ]
+            }
+        ],
+        "time_spent": 1217.0,
+        "video_link": "https://www.dropbox.com/s/agzg677wvoggww4/Chad-Zuber_12-clip-12.mp4?raw=1",
+        "video_id": "Chad-Zuber_12-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:13.092",
+                "end": "00:14:21.961"
+            },
+            "seconds": {
+                "start": "793.0923",
+                "end": "861.9611"
+            },
+            "split-method": "auto"
+        },
+        "duration": 68.86879999999996
+    },
+    {
+        "question": "What are they using to cook the food",
+        "assignment_id": "3LS2AMNW5FPN4CLPVVVG8DPTSW8OQ3",
+        "objective": "I wish to learn about the dishware",
+        "confidence": "high",
+        "original_question": "What are they using to cook the food",
+        "answer": "Ceramic bowl",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.257,
+                    6.795
+                ]
+            },
+            {
+                "1": [
+                    50.131,
+                    51.349
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.257",
+                    "00:06.795"
+                ]
+            },
+            {
+                "1": [
+                    "00:50.131",
+                    "00:51.349"
+                ]
+            }
+        ],
+        "time_spent": 1217.0,
+        "video_link": "https://www.dropbox.com/s/jbiu244u4s2s032/Survival-Skills-Primitive_1-clip-7.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_1-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:14.333",
+                "end": "00:10:34.467"
+            },
+            "seconds": {
+                "start": "554.3333333333334",
+                "end": "634.4666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 80.13333333333333
+    },
+    {
+        "question": "How were the cities affected by the weather?",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Cities",
+        "confidence": "very_high",
+        "original_question": "How were the cities affected by the weather?",
+        "answer": "There was flooding and buildings were destroyed. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.493,
+                    17.341
+                ]
+            },
+            {
+                "1": [
+                    33.055,
+                    38.649
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.493",
+                    "00:17.341"
+                ]
+            },
+            {
+                "1": [
+                    "00:33.055",
+                    "00:38.649"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/k3epb44gopmvhyt/Climate-Change_6-clip-7.mp4?raw=1",
+        "video_id": "Climate-Change_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:21.867",
+                "end": "00:08:25.433"
+            },
+            "seconds": {
+                "start": "441.8666666666667",
+                "end": "505.43333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.56666666666666
+    },
+    {
+        "question": "What is the man using as tools?",
+        "assignment_id": "3SKEMFQBZ34Y8H0EB9MNF5NKELCK84",
+        "objective": "I wish to learn about the man",
+        "confidence": "very_high",
+        "original_question": "What is the man using as tools?",
+        "answer": "A saw and handaxe",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    37.038,
+                    38.887
+                ]
+            },
+            {
+                "1": [
+                    51.183,
+                    52.632
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:37.038",
+                    "00:38.887"
+                ]
+            },
+            {
+                "1": [
+                    "00:51.183",
+                    "00:52.632"
+                ]
+            }
+        ],
+        "time_spent": 1035.0,
+        "video_link": "https://www.dropbox.com/s/wwfnh1sbre1j7b1/BC-Bushcraft_4-clip-4.mp4?raw=1",
+        "video_id": "BC-Bushcraft_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:00.503",
+                "end": "00:08:02.982"
+            },
+            "seconds": {
+                "start": "420.5034166666666",
+                "end": "482.98249999999996"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.47908333333334
+    },
+    {
+        "question": "Did the weather events cause any damage?",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Did they cause any damage?",
+        "answer": "Yes. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    47.442,
+                    52.986
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:47.442",
+                    "00:52.986"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rrn4t636heho9c5/Climate-Change_2-clip-4.mp4?raw=1",
+        "video_id": "Climate-Change_2-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:05.000",
+                "end": "00:05:05.267"
+            },
+            "seconds": {
+                "start": "245.0",
+                "end": "305.26666666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.26666666666665
+    },
+    {
+        "question": "What color was the bird?",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the bird",
+        "confidence": "high",
+        "original_question": "What color was the bird?",
+        "answer": "Brown with black spots",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    25.683,
+                    27.809
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:25.683",
+                    "00:27.809"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/rigr5eg2e8hdbq6/Survival-Instinct_5-clip-12.mp4?raw=1",
+        "video_id": "Survival-Instinct_5-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:07.800",
+                "end": "00:14:15.960"
+            },
+            "seconds": {
+                "start": "787.8",
+                "end": "855.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 68.16000000000008
+    },
+    {
+        "question": "Are there any signs of human activity?",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Are there any signs of human activity? If so what.",
+        "answer": "Yes, there are small roads and paths. ",
         "question_type": [
             "Entity",
             "Existence"
@@ -358,36 +2416,175 @@
         "evidences": [
             {
                 "0": [
-                    "0",
-                    "8.88"
+                    0.0,
+                    3.758
+                ]
+            },
+            {
+                "1": [
+                    74.887,
+                    79.491
                 ]
             }
         ],
         "domain": "Geography",
         "worker_id": "A3CYKU3BMX9HWQ",
-        "time_spent": "2713",
-        "video_link": "https://www.dropbox.com/s/vi8cpvegr791wem/Primal-Earth-Sounds_3-clip-48.mp4?raw=1",
-        "video_id": "Primal-Earth-Sounds_3-clip-48",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:03.758"
+                ]
+            },
+            {
+                "1": [
+                    "01:14.887",
+                    "01:19.491"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
         "time_in_original_video": {
             "frames": {
-                "start": "00:58:39.250",
-                "end": "00:59:46.042"
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
             },
             "seconds": {
-                "start": "3519.25",
-                "end": "3586.0416666666665"
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
             },
             "split-method": "auto"
         },
-        "duration": 66.79166666666652
+        "duration": 117.45063994777658
     },
     {
-        "objective": "Hostage recover training",
-        "confidence": "high",
-        "question": "Why do we practice hostage recovery?",
-        "answers": "To have a greater chance of a successful recovery.",
+        "question": "Are the planes moving?",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "What are the planes doing?",
+        "confidence": "very_high",
+        "original_question": "Are the planes moving?",
+        "answer": "The airplanes are moving?",
         "question_type": [
-            "Location",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.37,
+                    15.441
+                ]
+            },
+            {
+                "1": [
+                    24.279,
+                    25.47
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.370",
+                    "00:15.441"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.279",
+                    "00:25.470"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/vfe6ekx3mwx0dt0/AiirSource-Military_3-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:02.062"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "62.062"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.062
+    },
+    {
+        "question": "Does the man have a fish on the stick?",
+        "assignment_id": "3FE2ERCCZX7240KAVIGR88ZJN09OPZ",
+        "objective": "Determine what the man is using the fire for.",
+        "confidence": "very_high",
+        "original_question": "Does the man have a fish on the stick?",
+        "answer": "Yes the man does.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.665,
+                    5.748
+                ]
+            },
+            {
+                "1": [
+                    6.48,
+                    10.347
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.665",
+                    "00:05.748"
+                ]
+            },
+            {
+                "1": [
+                    "00:06.480",
+                    "00:10.347"
+                ]
+            }
+        ],
+        "time_spent": 2045.0,
+        "video_link": "https://www.dropbox.com/s/ggxnopo5oxd00qq/Bertram-Craft_9-clip-11.mp4?raw=1",
+        "video_id": "Bertram-Craft_9-clip-11",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:59.600",
+                "end": "00:17:04.920"
+            },
+            "seconds": {
+                "start": "959.6",
+                "end": "1024.92"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.32000000000005
+    },
+    {
+        "question": "What did the natural disasters cause?",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "Natural Phenomenon",
+        "confidence": "very_high",
+        "original_question": "What did the natural disasters cause?",
+        "answer": "Flooding, rain, ground shaking and sinking",
+        "question_type": [
             "Motion"
         ],
         "question_base": [
@@ -396,36 +2593,58 @@
         "evidences": [
             {
                 "0": [
-                    "79.52",
-                    "100"
+                    39.382,
+                    45.726
+                ]
+            },
+            {
+                "1": [
+                    14.347,
+                    18.349
                 ]
             }
         ],
-        "domain": "Military",
-        "worker_id": "A110G7DCN8782Y",
-        "time_spent": "8333",
-        "video_link": "https://www.dropbox.com/s/s6ny2899m00cujy/WarLeaks-Military-Blog_6-clip-0.mp4?raw=1",
-        "video_id": "WarLeaks-Military-Blog_6-clip-0",
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:39.382",
+                    "00:45.726"
+                ]
+            },
+            {
+                "1": [
+                    "00:14.347",
+                    "00:18.349"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/axe5805abov9osm/Climate-Change_7-clip-3.mp4?raw=1",
+        "video_id": "Climate-Change_7-clip-3",
         "time_in_original_video": {
             "frames": {
-                "start": "00:00:00.000",
-                "end": "00:00:44.069"
+                "start": "00:03:08.767",
+                "end": "00:04:09.767"
             },
             "seconds": {
-                "start": "0.0",
-                "end": "44.06896551724138"
+                "start": "188.76666666666668",
+                "end": "249.76666666666668"
             },
             "split-method": "auto"
         },
-        "duration": 44.06896551724138
+        "duration": 61.0
     },
     {
-        "objective": "I am curious about all the people walking the other way",
-        "confidence": "moderate",
-        "question": "Is this a park of some kind?",
-        "answers": "I think that because of the number of people walking in both directions, this must be a park that people can visit and walk",
+        "question": "Where is this?",
+        "assignment_id": "3SKEMFQBZ34Y8H0EB9MNF5NKELCK84",
+        "objective": "I wish to learn about the location",
+        "confidence": "high",
+        "original_question": "Where is this?",
+        "answer": "On a beach near the ocean",
         "question_type": [
-            "Location",
+            "Existence",
             "Reasoning"
         ],
         "question_base": [
@@ -434,39 +2653,1061 @@
         "evidences": [
             {
                 "0": [
-                    "1.68",
-                    "4"
+                    20.019,
+                    22.325
                 ]
             },
             {
                 "1": [
-                    "31.2",
-                    "36"
+                    39.204,
+                    40.873
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:20.019",
+                    "00:22.325"
+                ]
+            },
+            {
+                "1": [
+                    "00:39.204",
+                    "00:40.873"
+                ]
+            }
+        ],
+        "time_spent": 1035.0,
+        "video_link": "https://www.dropbox.com/s/ehylmhmqxttx2rq/Survival-Skills-Primitive_10-clip-4.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_10-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:10.167",
+                "end": "00:05:11.500"
+            },
+            "seconds": {
+                "start": "250.16666666666666",
+                "end": "311.5"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.33333333333334
+    },
+    {
+        "question": "Are there people?",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "What are the helicopter's doing.",
+        "confidence": "very_high",
+        "original_question": "Are there people?",
+        "answer": "Yes there are",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    61.214,
+                    63.195
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:01.214",
+                    "01:03.195"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/8chxfvc7s1to4jk/Gung-Ho-Vids_2-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:17.067",
+                "end": "00:03:20.567"
+            },
+            "seconds": {
+                "start": "137.06666666666666",
+                "end": "200.56666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.5
+    },
+    {
+        "question": "What types of explosives",
+        "assignment_id": "38BQUHLA9WZWJXNX32OZR45OHQZOMT",
+        "objective": "Learn about the weaponry being used",
+        "confidence": "high",
+        "original_question": "What types of explosives",
+        "answer": "Grenades and satchel charges",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.632,
+                    14.144
+                ]
+            },
+            {
+                "1": [
+                    28.289,
+                    39.311
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.632",
+                    "00:14.144"
+                ]
+            },
+            {
+                "1": [
+                    "00:28.289",
+                    "00:39.311"
+                ]
+            }
+        ],
+        "time_spent": 2333.0,
+        "video_link": "https://www.dropbox.com/s/q8313eyls50sury/Army-military-2018_0-clip-8.mp4?raw=1",
+        "video_id": "Army-military-2018_0-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:42.067",
+                "end": "00:09:43.033"
+            },
+            "seconds": {
+                "start": "522.0666666666667",
+                "end": "583.0333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.966666666666576
+    },
+    {
+        "question": "Are there any structures around?",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0MFXRI",
+        "objective": "I wish to learn about the environment",
+        "confidence": "moderate",
+        "original_question": "Are there any structures around?",
+        "answer": "Yes a stone structure",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.423,
+                    17.269
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.423",
+                    "00:17.269"
+                ]
+            }
+        ],
+        "time_spent": 934.0,
+        "video_link": "https://www.dropbox.com/s/dyot1l740rvhgh8/Survival-Skills-Primitive_2-clip-2.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.600",
+                "end": "00:03:20.033"
+            },
+            "seconds": {
+                "start": "125.6",
+                "end": "200.03333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.43333333333334
+    },
+    {
+        "question": "What type of terrain is it?",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0MFXRI",
+        "objective": "I wish to learn about the environment",
+        "confidence": "moderate",
+        "original_question": "What type of terrain is it?",
+        "answer": "forest",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    20.067,
+                    22.27
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:20.067",
+                    "00:22.270"
+                ]
+            }
+        ],
+        "time_spent": 934.0,
+        "video_link": "https://www.dropbox.com/s/dyot1l740rvhgh8/Survival-Skills-Primitive_2-clip-2.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.600",
+                "end": "00:03:20.033"
+            },
+            "seconds": {
+                "start": "125.6",
+                "end": "200.03333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.43333333333334
+    },
+    {
+        "question": "What are the people doing there?",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What are they doing?",
+        "answer": "Hiking. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    46.234,
+                    51.004
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:46.234",
+                    "00:51.004"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/gc3wgfu6ifunhy9/The-Flying-Dutchman_6-clip-7.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:04.275",
+                "end": "00:09:07.714"
+            },
+            "seconds": {
+                "start": "484.2754583333333",
+                "end": "547.7138333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.43837499999995
+    },
+    {
+        "question": "What is he doing?",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is he doing?",
+        "answer": "cutting sticks off a chopped tree",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    18.259,
+                    19.549
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:18.259",
+                    "00:19.549"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/mbbrzen37buxrz7/BC-Bushcraft_5-clip-10.mp4?raw=1",
+        "video_id": "BC-Bushcraft_5-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:28.730",
+                "end": "00:12:30.750"
+            },
+            "seconds": {
+                "start": "688.7297083333333",
+                "end": "750.75"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.02029166666671
+    },
+    {
+        "question": "What was the roof made out of?",
+        "assignment_id": "3LS2AMNW5FPN4CLPVVVG8DPTSW8OQ3",
+        "objective": "I wish to learn about the structure",
+        "confidence": "moderate",
+        "original_question": "What was the roof made out of?",
+        "answer": "Straw tied together",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.039,
+                    3.636
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.039",
+                    "00:03.636"
+                ]
+            }
+        ],
+        "time_spent": 1217.0,
+        "video_link": "https://www.dropbox.com/s/agzg677wvoggww4/Chad-Zuber_12-clip-12.mp4?raw=1",
+        "video_id": "Chad-Zuber_12-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:13.092",
+                "end": "00:14:21.961"
+            },
+            "seconds": {
+                "start": "793.0923",
+                "end": "861.9611"
+            },
+            "split-method": "auto"
+        },
+        "duration": 68.86879999999996
+    },
+    {
+        "question": "What is the man using for his task?",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man using for his task?",
+        "answer": "A hatchet",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    40.04,
+                    42.372
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:40.040",
+                    "00:42.372"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/mbbrzen37buxrz7/BC-Bushcraft_5-clip-10.mp4?raw=1",
+        "video_id": "BC-Bushcraft_5-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:28.730",
+                "end": "00:12:30.750"
+            },
+            "seconds": {
+                "start": "688.7297083333333",
+                "end": "750.75"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.02029166666671
+    },
+    {
+        "question": "Is there coal or charcoal?",
+        "assignment_id": "35USIKEBNRFCC92TF7H5NJ8X2LE6NW",
+        "objective": "What us the stick used for?",
+        "confidence": "very_high",
+        "original_question": "Is there coal or charcoal?",
+        "answer": "Yes there is.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    2.918
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:02.918"
+                ]
+            }
+        ],
+        "time_spent": 2540.0,
+        "video_link": "https://www.dropbox.com/s/dyot1l740rvhgh8/Survival-Skills-Primitive_2-clip-2.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.600",
+                "end": "00:03:20.033"
+            },
+            "seconds": {
+                "start": "125.6",
+                "end": "200.03333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.43333333333334
+    },
+    {
+        "question": "Is the F35 worth the cost?",
+        "assignment_id": "3FK0YFF9PZFAZ4Q3I6B49SI94CNVVY",
+        "objective": "Evaluating the F35 aircraft versus operating cost of other aircraft",
+        "confidence": "moderate",
+        "original_question": "Is the F35 worth the cost?",
+        "answer": "For some operations the F35 has advantages over current model aircraft, but for the most part, the operating costs exceed the replacement of the whole fleet of aircraft.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.138,
+                    14.425
+                ]
+            },
+            {
+                "1": [
+                    13.913,
+                    30.793
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.138",
+                    "00:14.425"
+                ]
+            },
+            {
+                "1": [
+                    "00:13.913",
+                    "00:30.793"
+                ]
+            }
+        ],
+        "time_spent": 8333.0,
+        "video_link": "https://www.dropbox.com/s/mftxy61zrwayk3z/Sandboxx_9-clip-4.mp4?raw=1",
+        "video_id": "Sandboxx_9-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:14.171",
+                "end": "00:05:18.109"
+            },
+            "seconds": {
+                "start": "254.17058333333333",
+                "end": "318.1094583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.938874999999975
+    },
+    {
+        "question": "What is the most prominent type of vegetation?",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What is the most prominent type of vegetation? What seems to be the environment?",
+        "answer": "Grasses. Savannah/grassland environment. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    16.186
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:16.186"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/47iq9fga59x2z07/Virtual-Running-Videos_5-clip-20.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_5-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:24:53.993",
+                "end": "00:26:55.147"
+            },
+            "seconds": {
+                "start": "1493.9925",
+                "end": "1615.1468666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 121.15436666666665
+    },
+    {
+        "question": "Where were the planes flying over?",
+        "assignment_id": "3E7TUJ2EGCLQ8GDEOK6EBON5DD69D3",
+        "objective": "I wish to learn about the planes",
+        "confidence": "high",
+        "original_question": "Where were they flying over?",
+        "answer": "Coastal City",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    40.086,
+                    41.744
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:40.086",
+                    "00:41.744"
+                ]
+            }
+        ],
+        "time_spent": 970.0,
+        "video_link": "https://www.dropbox.com/s/328thx2ytzycboa/Military-Archive_7-clip-4.mp4?raw=1",
+        "video_id": "Military-Archive_7-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:07.960",
+                "end": "00:07:19.440"
+            },
+            "seconds": {
+                "start": "367.96",
+                "end": "439.44"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.48000000000002
+    },
+    {
+        "question": "What human features are there and where are they?",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Topography. ",
+        "confidence": "very_high",
+        "original_question": "What is it and where are they?",
+        "answer": "There are houses, a bridge, and a dam. They are in a valley within the temperate environment. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.1,
+                    55.782
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.100",
+                    "00:55.782"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/mmnsaqbi73hui3j/Primal-Earth-Sounds_5-clip-20.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_5-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:44:24.667",
+                "end": "00:45:55.458"
+            },
+            "seconds": {
+                "start": "2664.6666666666665",
+                "end": "2755.4583333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 90.79166666666694
+    },
+    {
+        "question": "How is the man making his tool?",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the man",
+        "confidence": "moderate",
+        "original_question": "How is the man making his tool?",
+        "answer": "Using an axe to chop at it",
+        "question_type": [
+            "Entity",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    32.543,
+                    36.471
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:32.543",
+                    "00:36.471"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/kxn4sa9nmrrp84d/Bertram-Craft_5-clip-33.mp4?raw=1",
+        "video_id": "Bertram-Craft_5-clip-33",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:40:48.404",
+                "end": "00:42:16.075"
+            },
+            "seconds": {
+                "start": "2448.4042916666663",
+                "end": "2536.075208333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 87.67091666666694
+    },
+    {
+        "question": "What kind of body of water is there?",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the terrain",
+        "confidence": "high",
+        "original_question": "What kind of body of water is there?",
+        "answer": "Ocean",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.373,
+                    46.966
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.373",
+                    "00:46.966"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/b63zpwusw0ih69e/Chad-Zuber_7-clip-7.mp4?raw=1",
+        "video_id": "Chad-Zuber_7-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:45.965",
+                "end": "00:08:50.196"
+            },
+            "seconds": {
+                "start": "465.96519633537986",
+                "end": "530.1959878101816"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.23079147480172
+    },
+    {
+        "question": "What type of weather is happening?",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "People ",
+        "confidence": "very_high",
+        "original_question": "What type of weather is happening?",
+        "answer": "Hail",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.852
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.852"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/2wn7c2nm229afhp/Tornado-Trackers_5-clip-3.mp4?raw=1",
+        "video_id": "Tornado-Trackers_5-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:45.375",
+                "end": "00:04:49.542"
+            },
+            "seconds": {
+                "start": "225.375",
+                "end": "289.5416666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.16666666666669
+    },
+    {
+        "question": "Is this part of a ski resort?",
+        "assignment_id": "3RJSC4XJ10TD89A89I52K1YKXSX50Y",
+        "objective": "I am curious about how/how long it took for the person to get on top of that steep hill ",
+        "confidence": "moderate",
+        "original_question": "Is this part of a ski resort?",
+        "answer": "Judging by al the snow and mountains and the chair lift shown, I believe this to be part of a ski resort.",
+        "question_type": [
+            "Location",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.134,
+                    6.87
+                ]
+            },
+            {
+                "1": [
+                    8.804,
+                    13.74
                 ]
             },
             {
                 "2": [
-                    "69.04",
-                    "76.72"
+                    15.007,
+                    26.813
                 ]
             }
         ],
         "domain": "Geography",
         "worker_id": "A3VTSFIMHEWR0L",
-        "time_spent": "2888",
-        "video_link": "https://www.dropbox.com/s/zbsd5jknzovwcoj/TreadmillTV_6-clip-2.mp4?raw=1",
-        "video_id": "TreadmillTV_6-clip-2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.134",
+                    "00:06.870"
+                ]
+            },
+            {
+                "1": [
+                    "00:08.804",
+                    "00:13.740"
+                ]
+            },
+            {
+                "2": [
+                    "00:15.007",
+                    "00:26.813"
+                ]
+            }
+        ],
+        "time_spent": 1643.0,
+        "video_link": "https://www.dropbox.com/s/p1rlx3dl7u9hds2/Nick-Gaillard_4-clip-2.mp4?raw=1",
+        "video_id": "Nick-Gaillard_4-clip-2",
         "time_in_original_video": {
             "frames": {
-                "start": "00:41:04.195",
-                "end": "00:42:28.146"
+                "start": "00:02:06.542",
+                "end": "00:03:29.917"
             },
             "seconds": {
-                "start": "2464.1950666666667",
-                "end": "2548.1456"
+                "start": "126.54166666666667",
+                "end": "209.91666666666666"
             },
             "split-method": "auto"
         },
-        "duration": 83.95053333333317
+        "duration": 83.37499999999999
+    },
+    {
+        "question": "Where do they put the food to cool down?",
+        "assignment_id": "3LS2AMNW5FPN4CLPVVVG8DPTSW8OQ3",
+        "objective": "I wish to learn about the dishware",
+        "confidence": "high",
+        "original_question": "Where do they put the food to cool down?",
+        "answer": "A ceramic bowl and a leaf as a plate",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    73.274,
+                    75.774
+                ]
+            },
+            {
+                "1": [
+                    63.081,
+                    65.581
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:13.274",
+                    "01:15.774"
+                ]
+            },
+            {
+                "1": [
+                    "01:03.081",
+                    "01:05.581"
+                ]
+            }
+        ],
+        "time_spent": 1217.0,
+        "video_link": "https://www.dropbox.com/s/jbiu244u4s2s032/Survival-Skills-Primitive_1-clip-7.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_1-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:14.333",
+                "end": "00:10:34.467"
+            },
+            "seconds": {
+                "start": "554.3333333333334",
+                "end": "634.4666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 80.13333333333333
+    },
+    {
+        "question": "What happened before the hotel flooded?",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What happened before the hotel flooded?",
+        "answer": "There was a storm surge. ",
+        "question_type": [
+            "Motion",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    46.14,
+                    54.068
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:46.140",
+                    "00:54.068"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/jho0knentfkgpwo/Ultimate-Chase_0-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:06.066"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "66.066"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.066
+    },
+    {
+        "question": "What is BEAST training in a nutshell?",
+        "assignment_id": "3ZY8KE4ISJ2IUWUMW7HU35J1NK8VQ4",
+        "objective": "To give a brief description of US Air Force Beast training.",
+        "confidence": "high",
+        "original_question": "What is BEAST training in a nutshell?",
+        "answer": "A week away from normal Basic Training to learn weapon usage.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.489,
+                    60.06
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.489",
+                    "01:00.060"
+                ]
+            }
+        ],
+        "time_spent": 3433.0,
+        "video_link": "https://www.dropbox.com/s/rfj7b3r57v5nv8n/Sandboxx_8-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.06"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06
     }
 ]

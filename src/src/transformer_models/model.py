@@ -12,7 +12,7 @@ from transformers.modeling_outputs import BaseModelOutputWithPastAndCrossAttenti
 from transformers.models.t5.modeling_t5 import T5EncoderModel, T5Stack
 from transformers import BertTokenizer, VisualBertForQuestionAnswering
 
-from src.T5.T5_dataloader import get_dataset
+from src.transformer_models.T5_dataloader import get_dataset
 
 
 def _combine_attention_masks(text_attention_mask: Optional[torch.Tensor] = None,
@@ -40,9 +40,7 @@ class TextVisualEncoder(T5Stack):  # noqa
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
                 **kwargs) -> Union[BaseModelOutputWithPastAndCrossAttentions, Tuple[torch.Tensor, ...]]:
         text_embedding = self.embed_tokens(text_token_ids)
-        # visual_embedding = self.embed_video(visual)
-        # NOTE: for debugging purpose
-        visual_embedding = self.embed_tokens(visual)
+        visual_embedding = self.embed_video(visual)
         embedding = torch.cat([text_embedding, visual_embedding], dim=1)
         attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)
 
@@ -124,7 +122,7 @@ class T5AndVisualEvidence(T5EncoderModel):  # noqa
         return start_lgsm, end_lgsm
 
 
-class T5FineTuner(pl.LightningModule):  # noqa
+class FineTuner(pl.LightningModule):  # noqa
     def __init__(self, hparams: argparse.Namespace) -> None:
         super().__init__()
 
@@ -301,6 +299,10 @@ class T5FineTuner(pl.LightningModule):  # noqa
         val_dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.hparams.dev_data, args=self.hparams)
         return DataLoader(val_dataset, batch_size=self.hparams.eval_batch_size, collate_fn=my_collate, num_workers=4,
                           pin_memory=True, persistent_workers=True)
+    
+    def is_logger(self) -> bool:
+        """ Ask logger to log """
+        return True
 
 
 def my_collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
@@ -322,7 +324,19 @@ def my_collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
             "evidence": torch.stack(evidence, dim=0),
             "evidence_mask": torch.stack(evidence_mask, dim=0)
         }
+    elif examples[0]["target_ids"].nelement():
+        batch = {
+            "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),
+            "source_mask": torch.stack([ex["source_mask"] for ex in examples], dim=0),
+            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples], dim=0),
+            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples], dim=0),
+            "target_ids": torch.stack([ex["target_ids"] for ex in examples], dim=0),
+            "target_mask": torch.stack([ex["target_mask"] for ex in examples], dim=0),
+            "evidence": torch.Tensor([]),
+            "evidence_mask": torch.Tensor([])
+        }
     else:
+        # evidence is not used for training
         assert not examples[0]["target_ids"].nelement()
         batch = {
             "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),

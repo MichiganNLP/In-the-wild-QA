@@ -39,16 +39,16 @@ class T5Dataset(VQADataset):
         self.max_len = max_len
         self.include_visual = include_visual
         self.max_vid_len = max_vid_len
-        self.visual_features = read_hdf5(path_to_visual_file)
+        
+        if self.include_visual:
+            self.visual_features = read_hdf5(path_to_visual_file)
+            self.sample_rate = sample_rate
+            self.visual_size = visual_size
+            self._build_visual_features()
 
-        self.sample_rate = sample_rate
-        self.visual_size = visual_size
-
-        self._build_visual_features()
-
-        assert all([x.shape[-1] == self.visual_size for _, x in self.visual_features.items()])
-        self.input_visuals = []
-        self.evidences = []
+            assert all([x.shape[-1] == self.visual_size for _, x in self.visual_features.items()])
+            self.input_visuals = []
+            self.evidences = []
 
         super(T5Dataset, self).__init__(data_dir)
 
@@ -119,13 +119,13 @@ class T5Dataset(VQADataset):
             question = d["question"]
             
             # NOTE: for debugging
-            # video_id = d["video_id"]
+            video_id = d["video_id"]
 
             if self.is_zero_shot:
                 question += " <extra_id_0>"
             elif not self.is_evidence:
                 question += " </s>"
-                answer = d["answers"]
+                answer = d["answer"]
                 answer += " </s>"
 
             if not self.is_test:
@@ -162,16 +162,16 @@ class T5Dataset(VQADataset):
                 # for training, each input and target will be added
                 self.inputs.append(tokenized_inputs)
             
+                if self.include_visual:
+                    self.input_visuals.append({
+                        "input_ids": self.visual_features[video_id],
+                        "attention_mask": self.visual_attention_masks[video_id]})
                 # NOTE: for debugging
-                # if self.include_visual:
-                #     self.input_visuals.append({
-                #         "input_ids": self.visual_features[video_id],
-                #         "attention_mask": self.visual_attention_masks[video_id]})
-                context = d["context"]
-                tokenized_context = self.tokenizer.batch_encode_plus(
-                        [context], max_length=self.max_len, pad_to_max_length=True, return_tensors="pt"
-                )
-                self.input_visuals.append(tokenized_context)
+                # context = d["context"]
+                # tokenized_context = self.tokenizer.batch_encode_plus(
+                #         [context], max_length=self.max_len, pad_to_max_length=True, return_tensors="pt"
+                # )
+                # self.input_visuals.append(tokenized_context)
 
             else:
                 # ###############################

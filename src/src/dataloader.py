@@ -32,9 +32,9 @@ class VQADataset(Dataset):
 
         # corpus of the answers
         self.inputs.extend(d["question"] for d in data)
-        self.targets.extend(d["answers"] for d in data)
+        self.targets.extend(d.get("answer") for d in data)
         self.target_periods.extend([[float(v[0]), float(v[1])] for span in d["evidences"] for v in span.values()]
                                    for d in data)
-        self.durations.extend(float(d["duration"]) for d in data)
+        self.durations.extend(float(d.get("duration", 0)) for d in data)
 
         assert len(self.inputs) == len(self.targets) == len(self.target_periods) == len(self.durations)

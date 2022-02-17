@@ -22,7 +22,7 @@ wandb_name=T5_evidence_sr-${sample_rate}_mvl-${max_vid_length}_sd-${seed}
 wandb_entity=in-the-wild-vqa-um
 wandb_project=trial
 
-data_dir=processed_squad1.1
+data_dir=wildQA-data
 
 mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}

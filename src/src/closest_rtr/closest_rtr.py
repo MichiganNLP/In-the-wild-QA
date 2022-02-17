@@ -23,7 +23,7 @@ def closest_rtr(args: argparse.Namespace) -> None:
     for test_d in tqdm(test_data):
         question_emb = test_d["source_embeddings"]
         similarity_scores = [util.pytorch_cos_sim(question_emb, itm["source_embeddings"]) for itm in train_data]
-        max_idx = np.argmax(similarity_scores)[0]
+        max_idx = np.argmax([s.cpu() for s in similarity_scores])
 
         pred = train_data[max_idx]["target"]
         preds.append(pred)

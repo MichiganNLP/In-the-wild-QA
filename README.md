@@ -19,3 +19,10 @@ If you add or change packages, you can edit the `environment.yml` file and then 
 ```bash
 mamba env update
 ```
+
+### Issues with mamba
+
+Sometimes `mamba` changes `torch` version to CPU. If that happens, do
+```
+mamba install pytorch::pytorch
+```

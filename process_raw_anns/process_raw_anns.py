@@ -1,7 +1,7 @@
 import json
 import os
 
-DOMAINS = ["Geography", "Military"]
+DOMAINS = ["Geography", "Military", "Natural Disaster"]
 MAX_VID_IDX = 5
 MAX_QUESTION_NUM = 100
 MAX_BAR_NUM = 5

@@ -37,7 +37,7 @@ class WildQaFrameDataset(torch.utils.data.Dataset):
         return f'video_features/features/WildQA_{model_name.upper()}_{layer_name}.hdf5'
 
     @overrides
-    def __getitem__(self, index) -> Dict[str, object]:
+    def __getitem__(self, index) -> dict[str, object]:
         domain, channel, video_id = self.video_ids[index]
 
         frames = None

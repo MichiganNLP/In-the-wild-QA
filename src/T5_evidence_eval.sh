@@ -17,7 +17,7 @@ sample_rate=1
 data_dir=wildQA-data
 
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_evidence_eval \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src T5_evidence_eval \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \

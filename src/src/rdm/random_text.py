@@ -2,8 +2,8 @@ import random
 
 from torch.utils.data import ConcatDataset
 
-from src.dataloader import VQADataset
-from src.evaluations.evaluations import evaluate
+from src.vqa_dataset import VQADataset
+from src.evaluations.evaluations import evaluate_qa
 
 
 def random_text(args):
@@ -18,4 +18,4 @@ def random_text(args):
     preds = random.choices(train_dev_data, k=len(test_data))
     preds = [pred['target'] for pred in preds]
 
-    evaluate("Random Text", preds, test_data)
+    evaluate_qa("Random Text", preds, test_data)

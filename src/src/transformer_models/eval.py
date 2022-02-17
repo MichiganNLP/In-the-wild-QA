@@ -7,7 +7,7 @@ import torch.cuda
 from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 
-from src.transformer_models.T5_dataloader import T5Dataset
+from src.transformer_models.t5_dataloader import T5Dataset
 from src.transformer_models.model import FineTuner, my_collate
 
 

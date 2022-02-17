@@ -43,17 +43,18 @@ class ImageFolder(Dataset):
 
 class ListDataset(Dataset):
     def __init__(self, list_path, img_size=416):
-        with open(list_path, 'r') as file:
+        with open(list_path) as file:
             self.img_files = file.readlines()
-        self.label_files = [path.replace('images', 'labels').replace('.png', '.txt').replace('.jpg', '.txt') for path in self.img_files]
+        self.label_files = [path.replace('images', 'labels').replace('.png', '.txt').replace('.jpg', '.txt') for path in
+                            self.img_files]
         self.img_shape = (img_size, img_size)
         self.max_objects = 50
 
     def __getitem__(self, index):
 
-        #---------
+        # ---------
         #  Image
-        #---------
+        # ---------
 
         img_path = self.img_files[index % len(self.img_files)].rstrip()
         img = np.array(Image.open(img_path))
@@ -80,9 +81,9 @@ class ListDataset(Dataset):
         # As pytorch tensor
         input_img = torch.from_numpy(input_img).float()
 
-        #---------
+        # ---------
         #  Label
-        #---------
+        # ---------
 
         label_path = self.label_files[index % len(self.img_files)].rstrip()
 
@@ -90,10 +91,10 @@ class ListDataset(Dataset):
         if os.path.exists(label_path):
             labels = np.loadtxt(label_path).reshape(-1, 5)
             # Extract coordinates for unpadded + unscaled image
-            x1 = w * (labels[:, 1] - labels[:, 3]/2)
-            y1 = h * (labels[:, 2] - labels[:, 4]/2)
-            x2 = w * (labels[:, 1] + labels[:, 3]/2)
-            y2 = h * (labels[:, 2] + labels[:, 4]/2)
+            x1 = w * (labels[:, 1] - labels[:, 3] / 2)
+            y1 = h * (labels[:, 2] - labels[:, 4] / 2)
+            x2 = w * (labels[:, 1] + labels[:, 3] / 2)
+            y2 = h * (labels[:, 2] + labels[:, 4] / 2)
             # Adjust for added padding
             x1 += pad[1][0]
             y1 += pad[0][0]

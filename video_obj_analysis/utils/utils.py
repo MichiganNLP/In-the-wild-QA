@@ -8,7 +8,7 @@ def load_classes(path):
     """
     Loads class labels at 'path'
     """
-    fp = open(path, "r")
+    fp = open(path)
     names = fp.read().split("\n")[:-1]
     return names
 
@@ -26,7 +26,7 @@ def compute_ap(recall, precision):
     """ Compute the average precision, given the recall and precision curves.
     Code originally from https://github.com/rbgirshick/py-faster-rcnn.
 
-    # Arguments
+    # dataclass_types
         recall:    The recall curve (list).
         precision: The precision curve (list).
     # Returns
@@ -88,13 +88,13 @@ def bbox_iou_numpy(box1, box2):
     Parameters
     ----------
     box1 : ndarray
-        (N, 4) shaped array with bboxes
+        (n, 4) shaped array with bboxes
     box2 : ndarray
         (M, 4) shaped array with bboxes
     Returns
     -------
     : ndarray
-        (N, M) shaped array with IoUs
+        (n, M) shaped array with IoUs
     """
     area = (box2[:, 2] - box2[:, 0]) * (box2[:, 3] - box2[:, 1])
 

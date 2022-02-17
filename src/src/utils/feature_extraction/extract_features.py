@@ -126,7 +126,7 @@ def save_resof_features():
             video_frame_counts = batch['frame_count']
             frames = batch['frames']
 
-            frames = frames.transpose(1, 2)  # ReplicationPad3d expects (N, C, T, H, W)
+            frames = frames.transpose(1, 2)  # ReplicationPad3d expects (n, C, T, H, W)
             frames = torch.nn.ReplicationPad3d(padding)(frames)
             frames = frames.permute(0, 2, 3, 4, 1)  # OpenCV expects (H, W, C)
 
@@ -148,7 +148,7 @@ def save_resof_features():
                     flow_image = cv.cvtColor(hsv[i_video, i_frame_pair], cv.COLOR_HSV2RGB) / 255.0
                     flow_images[i_video, i_frame_pair] = torch.from_numpy(flow_image)
 
-            flow_images = flow_images.permute(0, 1, 4, 2, 3)  # ResNet and the transformations expect (N, C, H, W)
+            flow_images = flow_images.permute(0, 1, 4, 2, 3)  # ResNet and the transformations expect (n, C, H, W)
 
             for i_video, (video_id, video_frame_count) in enumerate(zip(video_ids, video_frame_counts)):
                 for i_frame_pair in range(video_frame_count.item() - 1):
@@ -184,7 +184,7 @@ def save_c3d_features():
             video_ids = batch['id']
             video_frame_counts = batch['frame_count']
             frames = batch['frames'].to(DEVICE)
-            frames = frames.transpose(1, 2)  # C3D and ReplicationPad3d expect (N, C, T, H, W)
+            frames = frames.transpose(1, 2)  # C3D and ReplicationPad3d expect (n, C, T, H, W)
             frames = torch.nn.ReplicationPad3d(padding)(frames)
 
             for i_video, (video_id, video_frame_count) in enumerate(zip(video_ids, video_frame_counts)):
@@ -217,7 +217,7 @@ def save_i3d_features():
             video_ids = batch['id']
             video_frame_counts = batch['frame_count']
             frames = batch['frames'].to(DEVICE)
-            frames = frames.transpose(1, 2)  # I3D and ReplicationPad3d expects (N, C, T, H, W)
+            frames = frames.transpose(1, 2)  # I3D and ReplicationPad3d expects (n, C, T, H, W)
             frames = torch.nn.ReplicationPad3d(padding)(frames)
 
             for i_video, (video_id, video_frame_count) in enumerate(zip(video_ids, video_frame_counts)):

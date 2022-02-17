@@ -9,6 +9,7 @@ from tabulate import tabulate
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly']
 
+
 def get_gdrive_service():
     creds = None
     # The file token.pickle stores the user's access and refresh tokens, and is
@@ -58,10 +59,10 @@ def list_files(items):
                 size = "N/A"
             # get the Google Drive type of file
             # mime_type = item["mimeType"]
-            mime_type=None
+            mime_type = None
             # get last modified date time
             # modified_time = item["modifiedTime"]
-            modified_time=None
+            modified_time = None
             # append everything to the list
             rows.append((id, name, parents, size, mime_type, modified_time))
         print("Files:")
@@ -79,11 +80,13 @@ def main():
     service = get_gdrive_service()
     # Call the Drive v3 API
     results = service.files().list(
-        q="mimeType='video/mp4'", includeItemsFromAllDrives=True, supportsAllDrives=True, fields = "nextPageToken, files(id, name)", pageToken=page_token, pageSize=500).execute()
+        q="mimeType='video/mp4'", includeItemsFromAllDrives=True, supportsAllDrives=True,
+        fields="nextPageToken, files(id, name)", pageToken=page_token, pageSize=500).execute()
     # get the results
     items = results.get('files', [])
     # list all 20 files & folders
     list_files(items)
+
 
 if __name__ == '__main__':
     main()

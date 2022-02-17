@@ -15,6 +15,6 @@
 #SBATCH --partition=gpu
 #SBATCH --output=/home/%u/In-the-wild-QA/src/%x-%j.log
 
-# The application(s) to execute along with its input arguments and options: 
+# The application(s) to execute along with its input dataclass_types and options:
 # source /etc/profile.d/http_proxy.sh
 bash extract_features.sh

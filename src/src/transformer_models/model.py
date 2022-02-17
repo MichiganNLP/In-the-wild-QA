@@ -6,13 +6,14 @@ import pytorch_lightning as pl
 import torch
 import torch.nn as nn
 from overrides import overrides
+from torch.optim import AdamW
 from torch.utils.data import DataLoader
-from transformers import AdamW, T5Config, T5ForConditionalGeneration, T5Tokenizer, get_linear_schedule_with_warmup
+from transformers import AutoTokenizer, T5Config, T5ForConditionalGeneration, VisualBertForQuestionAnswering, \
+    get_linear_schedule_with_warmup
 from transformers.modeling_outputs import BaseModelOutputWithPastAndCrossAttentions, Seq2SeqLMOutput
 from transformers.models.t5.modeling_t5 import T5EncoderModel, T5Stack
-from transformers import BertTokenizer, VisualBertForQuestionAnswering
 
-from src.transformer_models.T5_dataloader import get_dataset
+from src.transformer_models.t5_dataloader import get_dataset
 
 
 def _combine_attention_masks(text_attention_mask: Optional[torch.Tensor] = None,
@@ -38,7 +39,7 @@ class TextVisualEncoder(T5Stack):  # noqa
     @overrides(check_signature=False)
     def forward(self, text_token_ids: torch.Tensor, visual: torch.Tensor,  # noqa
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                **kwargs) -> Union[BaseModelOutputWithPastAndCrossAttentions, Tuple[torch.Tensor, ...]]:
+                **kwargs) -> Union[BaseModelOutputWithPastAndCrossAttentions, tuple[torch.Tensor, ...]]:
         text_embedding = self.embed_tokens(text_token_ids)
         visual_embedding = self.embed_video(visual)
         embedding = torch.cat([text_embedding, visual_embedding], dim=1)
@@ -64,7 +65,7 @@ class T5AndVisual(T5ForConditionalGeneration):
     @overrides(check_signature=False)
     def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                labels: Optional[torch.Tensor] = None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+                labels: Optional[torch.Tensor] = None, **kwargs) -> Union[Seq2SeqLMOutput, tuple[torch.Tensor, ...]]:
         if "encoder_outputs" not in kwargs:
             kwargs["encoder_outputs"] = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
                                                      visual_attention_mask=visual_attention_mask, **kwargs)
@@ -90,7 +91,7 @@ class T5AndVisualEvidence(T5EncoderModel):  # noqa
     @overrides(check_signature=False)
     def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                evidence=None, evidence_mask=None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+                evidence=None, evidence_mask=None, **kwargs) -> Union[Seq2SeqLMOutput, tuple[torch.Tensor, ...]]:
         outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
                                visual_attention_mask=visual_attention_mask, **kwargs)
         # We only care about the last hidden state sequence
@@ -98,19 +99,19 @@ class T5AndVisualEvidence(T5EncoderModel):  # noqa
         # _, visual_len, _ = visual.shape
         visual_hidden = outputs.last_hidden_state[:, visual_start:, :]
 
-        # assume it is batch_size * visual_leng
+        # assume it is batch_size * visual_lang
 
         start = self.start_vec(visual_hidden)
         end = self.end_vec(visual_hidden)
 
-        start = torch.transpose(start, 1, 2)  # batch_size * N = 1 * visual_len
-        end = torch.transpose(end, 1, 2)  # batch_size * N = 1 * visual_len
+        start = torch.transpose(start, 1, 2)  # batch_size * n = 1 * visual_len
+        end = torch.transpose(end, 1, 2)  # batch_size * n = 1 * visual_len
 
         return start, end
 
     def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                evidence=None, evidence_mask=None) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+                evidence=None, evidence_mask=None) -> Union[Seq2SeqLMOutput, tuple[torch.Tensor, ...]]:
         start, end = self.forward(masked_caption_ids, visual, attention_mask, visual_attention_mask, evidence,
                                   evidence_mask)
 
@@ -131,22 +132,17 @@ class FineTuner(pl.LightningModule):  # noqa
         if self.hparams.model_type == "T5_text_and_visual":
             self.model = T5AndVisual.from_pretrained(self.hparams.model_name_or_path,
                                                      visual_size=self.hparams.visual_size)
-            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
-
         elif self.hparams.model_type == "T5_evidence":
             self.model = T5AndVisualEvidence.from_pretrained(self.hparams.model_name_or_path,
                                                              visual_size=self.hparams.visual_size)
-            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
             self.xentloss = nn.CrossEntropyLoss()
-
         elif self.hparams.model_type == "visual_bert_QA":
-            self.model = VisualBertForQuestionAnswering.from_pretrained(self.hparams.model_name_or_path, 
+            self.model = VisualBertForQuestionAnswering.from_pretrained(self.hparams.model_name_or_path,
                                                                         visual_size=self.hparams.visual_size)
-            self.tokenizer = BertTokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
-            
         else:
             self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
-            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
+
+        self.tokenizer = AutoTokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
 
     def forward(
             self, input_ids, attention_mask=None, visual=None, visual_attention_mask=None,
@@ -179,7 +175,7 @@ class FineTuner(pl.LightningModule):  # noqa
                 labels=labels,
             )
 
-    def _step(self, batch: Mapping[str, Any]) -> Tuple[torch.Tensor, float, float]:
+    def _step(self, batch: Mapping[str, Any]) -> tuple[torch.Tensor, float, float]:
         if self.hparams.model_type == "T5_evidence":
             raw_start, raw_end = self(
                 input_ids=batch["source_ids"],
@@ -189,7 +185,7 @@ class FineTuner(pl.LightningModule):  # noqa
             )
 
             evidence = batch["evidence"]
-            evidence_mask = batch["evidence_mask"]  # shape: batch_size * N
+            evidence_mask = batch["evidence_mask"]  # shape: batch_size * n
 
             starts = evidence[:, :, 0].long()
             ends = evidence[:, :, 1].long()
@@ -198,15 +194,15 @@ class FineTuner(pl.LightningModule):  # noqa
 
             batch_size, N = starts.shape
             for b in range(batch_size):
-                # for i in range(N):
-                # multiple evidences (N >= 1)
+                # for i in range(n):
+                # multiple evidences (n >= 1)
 
                 if int(evidence_mask[b][0].item()):
                     # otherwise, we should not care about the cross entropy loss
                     start_lss.append(self.xentloss(raw_start[b], starts[b][0].unsqueeze(dim=0)))
                     end_lss.append(self.xentloss(raw_end[b], ends[b][0].unsqueeze(dim=0)))
 
-            # output start_pos: batch_size * N (number of evidences within an instance)
+            # output start_pos: batch_size * n (number of evidences within an instance)
             tt_start_lss = torch.sum(torch.stack(start_lss))
             tt_end_lss = torch.sum(torch.stack(end_lss))
 
@@ -299,7 +295,7 @@ class FineTuner(pl.LightningModule):  # noqa
         val_dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.hparams.dev_data, args=self.hparams)
         return DataLoader(val_dataset, batch_size=self.hparams.eval_batch_size, collate_fn=my_collate, num_workers=4,
                           pin_memory=True, persistent_workers=True)
-    
+
     def is_logger(self) -> bool:
         """ Ask logger to log """
         return True
@@ -311,27 +307,26 @@ def my_collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
     max_len = max(len(ev) for ev in evidence)
     if evidence[0]:
         # whether the evidence should be used for training
-        evidence_mask = [torch.Tensor([1 for _ in range(len(ev))] + [0 for _ in range(max_len - len(ev))])
-                         for ev in evidence]
-        evidence = [torch.Tensor(ev + [[0, 0] for _ in range(max_len - len(ev))]) for ev in evidence]
+        evidence_mask = [torch.Tensor([1] * len(ev) + [0] * (max_len - len(ev))) for ev in evidence]
+        evidence = [torch.Tensor(ev + [(0, 0)] * (max_len - len(ev))) for ev in evidence]
         batch = {
-            "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),
-            "source_mask": torch.stack([ex["source_mask"] for ex in examples], dim=0),
-            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples], dim=0),
-            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples], dim=0),
-            "target_ids": torch.stack([ex["target_ids"] for ex in examples], dim=0),
-            "target_mask": torch.stack([ex["target_mask"] for ex in examples], dim=0),
-            "evidence": torch.stack(evidence, dim=0),
-            "evidence_mask": torch.stack(evidence_mask, dim=0)
+            "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
+            "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
+            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
+            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
+            "target_ids": torch.stack([ex["target_ids"] for ex in examples]),
+            "target_mask": torch.stack([ex["target_mask"] for ex in examples]),
+            "evidence": torch.stack(evidence),
+            "evidence_mask": torch.stack(evidence_mask)
         }
     elif examples[0]["target_ids"].nelement():
         batch = {
-            "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),
-            "source_mask": torch.stack([ex["source_mask"] for ex in examples], dim=0),
-            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples], dim=0),
-            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples], dim=0),
-            "target_ids": torch.stack([ex["target_ids"] for ex in examples], dim=0),
-            "target_mask": torch.stack([ex["target_mask"] for ex in examples], dim=0),
+            "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
+            "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
+            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
+            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
+            "target_ids": torch.stack([ex["target_ids"] for ex in examples]),
+            "target_mask": torch.stack([ex["target_mask"] for ex in examples]),
             "evidence": torch.Tensor([]),
             "evidence_mask": torch.Tensor([])
         }
@@ -339,10 +334,10 @@ def my_collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
         # evidence is not used for training
         assert not examples[0]["target_ids"].nelement()
         batch = {
-            "source_ids": torch.stack([ex["source_ids"] for ex in examples], dim=0),
-            "source_mask": torch.stack([ex["source_mask"] for ex in examples], dim=0),
-            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples], dim=0),
-            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples], dim=0),
+            "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
+            "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
+            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
+            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
             "target_ids": torch.Tensor([]),
             "target_mask": torch.Tensor([]),
             "evidence": torch.Tensor([]),

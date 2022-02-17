@@ -5,6 +5,7 @@ import torch.nn as nn
 # Copied from https://github.com/DavideA/c3d-pytorch/
 class C3D(nn.Module):
     """The C3D network as described in [1]."""
+
     def __init__(self, pretrained=False):
         super().__init__()
 
@@ -71,6 +72,7 @@ class C3D(nn.Module):
 
     def extract_features(self, x):
         return self.forward(x, extract_features=True)
+
 
 """
 References

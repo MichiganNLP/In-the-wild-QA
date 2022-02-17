@@ -3,7 +3,6 @@
 # params needs to be modified
 CUDA_ID=0
 
-
 # params based on the params at the top
 output_ckpt_dir=ckpts/T5/text_visual_finetuned/
 num_train_epochs=10
@@ -25,8 +24,7 @@ data_dir=wildQA-data
 mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}
 
-
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_text_and_visual\
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src T5_text_and_visual\
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \

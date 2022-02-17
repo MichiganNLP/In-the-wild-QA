@@ -1,7 +1,7 @@
 import random
 
-from src.dataloader import VQADataset
-from src.evaluations.evaluations import evidence_evaluation
+from src.vqa_dataset import VQADataset
+from src.evaluations.evaluations import evaluate_evidence
 
 
 def _predict_random(d):
@@ -13,7 +13,6 @@ def _predict_random(d):
 
 
 def random_evidence(args):
-
     test_data = VQADataset(args.test_data)
 
     preds = []
@@ -22,4 +21,4 @@ def random_evidence(args):
         prediction = [_predict_random(d) for _ in range(args.pred_num)]
         preds.append(prediction)
 
-    evidence_evaluation("Random Evidence", preds, test_data)
+    evaluate_evidence("Random Evidence", preds, test_data)

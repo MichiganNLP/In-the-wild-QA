@@ -14,7 +14,7 @@ class LoggingCallback(pl.Callback):
             # Log results
             for key in sorted(metrics):
                 if key not in ["log", "progress_bar"]:
-                    logger.info("{} = {}\n".format(key, str(metrics[key])))
+                    logger.info(f"{key} = {str(metrics[key])}\n")
 
     def on_test_end(self, trainer, pl_module):
         logger.info("***** Test results *****")
@@ -27,5 +27,5 @@ class LoggingCallback(pl.Callback):
             with open(output_test_results_file, "w") as writer:
                 for key in sorted(metrics):
                     if key not in ["log", "progress_bar"]:
-                        logger.info("{} = {}\n".format(key, str(metrics[key])))
-                        writer.write("{} = {}\n".format(key, str(metrics[key])))
+                        logger.info(f"{key} = {str(metrics[key])}\n")
+                        writer.write(f"{key} = {str(metrics[key])}\n")

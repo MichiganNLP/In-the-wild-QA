@@ -3,11 +3,13 @@ from collections import defaultdict
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from tqdm import tqdm
 
-with open(f'manual_clip.txt', 'r') as f:
+with open(f'manual_clip.txt') as f:
     raw_data = f.readlines()
 
+
 def str2t(time):
-    return sum(x * int(t) for x, t in zip([60, 1], time.split(":"))) 
+    return sum(x * int(t) for x, t in zip([60, 1], time.split(":")))
+
 
 data = defaultdict(list)
 dm_name = None

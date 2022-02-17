@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer, util
 from tqdm import tqdm
 
 from src.closest_rtr.rtr_dataloader import RTRDataset
-from src.evaluations.evaluations import evaluate
+from src.evaluations.evaluations import evaluate_qa
 
 
 def closest_rtr(args: argparse.Namespace) -> None:
@@ -27,6 +27,5 @@ def closest_rtr(args: argparse.Namespace) -> None:
 
         pred = train_data[max_idx]["target"]
         preds.append(pred)
-    
-    evaluate("Closest Retrieval Text", preds, test_data)
-    
+
+    evaluate_qa("Closest Retrieval Text", preds, test_data)

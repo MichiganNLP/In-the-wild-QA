@@ -1,7 +1,7 @@
 import json
 from typing import Any, Mapping
 
-from src.dataloader import VQADataset
+from src.vqa_dataset import VQADataset
 
 
 class RTRDataset(VQADataset):

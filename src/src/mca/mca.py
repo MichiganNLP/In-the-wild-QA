@@ -1,11 +1,10 @@
 from collections import defaultdict
 
-from src.dataloader import VQADataset
-from src.evaluations.evaluations import evaluate
+from src.vqa_dataset import VQADataset
+from src.evaluations.evaluations import evaluate_qa
 
 
 def most_common_ans(args):
-
     train_data = VQADataset(args.train_data)
 
     # NOTE: here we only use train data as the corpus
@@ -21,8 +20,7 @@ def most_common_ans(args):
 
     sorted_ans = sorted(ans.items(), key=lambda kv: kv[1], reverse=True)
     mca = sorted_ans[0][0]
-    
+
     preds = [mca for _ in range(len(test_data))]
 
-    evaluate("Most Common Ans Text", preds, test_data)
-    
+    evaluate_qa("Most Common Ans Text", preds, test_data)

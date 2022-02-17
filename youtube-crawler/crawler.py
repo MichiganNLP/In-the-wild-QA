@@ -43,7 +43,7 @@ def get_video_links(channel_url, verbose, sleep_time):
             links.append(tag.attrs['href'])
             if verbose:
                 print(tag.attrs['href'])
-    
+
     driver.close()
 
     return links
@@ -57,12 +57,11 @@ def get_video_info(video_url):
 
     scripts = soup.find_all('script')
 
-
     def find_descr(scripts):
         for script in scripts:
             if "var ytInitialPlayerResponse" in script.text:
                 return script.text.strip('var ytInitialPlayerResponse = ').strip(';')
-    
+
     descr = json.loads(find_descr(scripts))
     descr_t = descr.get('microformat').get('playerMicroformatRenderer').get('description')
 
@@ -72,7 +71,6 @@ def get_video_info(video_url):
         information['description'] = ''
 
     return information
- 
 
 
 def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_path=None, video_ID=1):
@@ -80,7 +78,7 @@ def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_
 
     if links_path:
         links = []
-        links_file = open(links_path, "r")
+        links_file = open(links_path)
         lines = links_file.readlines()
         for line in lines:
             line = line.strip('\n')
@@ -111,7 +109,7 @@ def crawl_youtube_channel(args, channel_url, verbose=False, sleep_time=3, links_
                 print('>>> processing video : ' + str(counter) + ' without description')
             unknowns += 1
         counter += 1
-        
+
         # incrementally writing crawled information to the file
         with open(f'Description/{args.domain}/{args.channel_name}.jsonl', 'a+') as f:
             f.write(json.dumps(information) + '\n')
@@ -128,7 +126,7 @@ if __name__ == '__main__':
 
     if args.choice == 'link':
         crawl_youtube_channel(args, youtube_url, verbose=True)
-    
+
     if args.choice == 'description':
         if not os.path.exists(f'Description/{args.domain}'):
             os.makedirs(f'Description/{args.domain}')

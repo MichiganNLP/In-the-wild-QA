@@ -1,19 +1,14 @@
-from models import *
-from utils import *
-from sort import *
-
-import os, sys, time, datetime, random
 import argparse
-import torch
+import os
+import time
+
 import cv2
-from torch.utils.data import DataLoader
-from torchvision import datasets, transforms
-from torch.autograd import Variable
-
 from PIL import Image
-
 from moviepy.editor import VideoFileClip
-from collections import defaultdict
+from torchvision import transforms
+
+from models import *
+from sort import *
 
 
 def parse_args():

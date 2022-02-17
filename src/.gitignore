@@ -5,3 +5,4 @@ lightning_logs/
 logs/
 preds/
 video_features/
+video_features_framerate_25/

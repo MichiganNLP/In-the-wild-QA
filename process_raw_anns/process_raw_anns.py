@@ -1,7 +1,7 @@
 import json
 import os
 
-DOMAINS = ["Geography", "Military"]
+DOMAINS = ["Geography", "Military", "Natural Disaster"]
 MAX_VID_IDX = 5
 MAX_QUESTION_NUM = 100
 MAX_BAR_NUM = 5
@@ -119,7 +119,7 @@ def process(data):
                     "objective": objective,
                     "confidence": confidence,
                     "question": question,
-                    "correct_answer": correct_ans,
+                    "answers": correct_ans,
                     "question_type": question_type,
                     "question_base": question_base,
                     "evidences": evidences,

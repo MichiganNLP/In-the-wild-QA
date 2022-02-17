@@ -1,13 +1,15 @@
-from nltk.translate.bleu_score import sentence_bleu
-from nltk import word_tokenize
-from rouge import Rouge
 import warnings
-import numpy as np
-from tqdm import tqdm
 from collections import defaultdict
 
+import numpy as np
+from nltk import word_tokenize
+from nltk.translate.bleu_score import sentence_bleu
+from rouge import Rouge
+from tqdm import tqdm
 
-warnings.filterwarnings("ignore")   # filter user warning for BLEU when overlap is 0
+from src.dataloader import VQADataset
+
+warnings.filterwarnings("ignore")  # filter user warning for BLEU when overlap is 0
 
 
 def evaluate(model_name, preds, test_data):
@@ -17,8 +19,8 @@ def evaluate(model_name, preds, test_data):
     sources = [itm['source'] for itm in test_data]
     labels = [[itm['target']] for itm in test_data]
 
-    evl = Evaluation(sources, preds, labels)    
-    
+    evl = Evaluation(sources, preds, labels)
+
     print(f"------------------{model_name} Baseline----------------------")
     print(f"Exact Match: {round(evl.exact_match() * 100, 2)}%")
     print(f"BLEU 1: {round(evl.BLEU(1) * 100, 2)}%")
@@ -29,13 +31,17 @@ def evaluate(model_name, preds, test_data):
     print(f"ROUGE 3: {round(evl.ROUGE(3) * 100, 2)}%")
 
 
-def evidence_evaluation(model_name: str, preds: list, test_data: list):
+def evidence_evaluation(model_name: str, preds: list, test_data: VQADataset):
     """ 
     Evaluation for evidence finding
+    preds: list of list of span list, that is: [[[start1, end1], [start2, end2]], ...]
+        The most inner list gives the predicted start, end
+        The second inner list gives all the span predictions for an instance
+        The outmost list is the predictions for all instances
     """
     gt_spans = [itm["target_period"] for itm in test_data]
-    evl = Evidence_Evaluation(preds, gt_spans)    
-    
+    evl = Evidence_Evaluation(preds, gt_spans)
+
     print(f"------------------{model_name} Baseline----------------------")
     print(f"IOU F1: {round(evl.iou_f1() * 100, 2)}%")
 
@@ -44,7 +50,7 @@ class Evaluation():
     """ Evaluation class for QA """
 
     def __init__(self, sources: list, preds: list, labels: list):
-        
+
         assert isinstance(labels[0], list)
         self.sources = sources
         self.preds = preds
@@ -57,24 +63,23 @@ class Evaluation():
             if pred in label:
                 corrects += 1
         return corrects / len(self.preds)
-    
-    def BLEU(self,N):
+
+    def BLEU(self, N):
         # individual BLEU N-gram score
         self.pred_toks = [word_tokenize(pred) for pred in self.preds]
         self.label_toks = [[word_tokenize(label) for label in llabels] for llabels in self.labels]
 
-        assert N >=1 and N <= 4
+        assert N >= 1 and N <= 4
         weights = [0, 0, 0, 0]
         weights[N - 1] = 1
 
         tt_bleus = 0
 
         for pred_tok, label_tok in zip(self.pred_toks, self.label_toks):
-            bleu = sentence_bleu(label_tok, pred_tok, weights = tuple(weights))
+            bleu = sentence_bleu(label_tok, pred_tok, weights=tuple(weights))
             tt_bleus += bleu
         return tt_bleus / len(self.preds)
-        
-    
+
     def ROUGE(self, N, t='n', stats='p'):
         """ 
         stats: 'p': precision; 'r': recall; 'f': f1
@@ -103,7 +108,7 @@ class Evidence_Evaluation():
     """ Evaluation for evidence finding """
 
     def __init__(self, preds: list, labels: list):
-        self.preds = preds 
+        self.preds = preds
         self.labels = labels
 
     def _f1(self, _p, _r):
@@ -113,8 +118,8 @@ class Evidence_Evaluation():
 
     def _calculate_iou(self, span_1, span_2):
         num = len(
-                set(range(round(span_1[0]), round(span_1[1])))
-                & set(range(round(span_2[0]), round(span_2[1])))
+            set(range(round(span_1[0]), round(span_1[1])))
+            & set(range(round(span_2[0]), round(span_2[1])))
         )
         denom = len(
             set(range(round(span_1[0]), round(span_1[1])))
@@ -158,7 +163,6 @@ class Evidence_Evaluation():
                     if iou > pred_threshold:
                         overlapped.append((i, j))
 
-
             for i, pred_span in enumerate(pred_spans):
                 best_iou = 0.0
                 for gold_span in gold_spans:
@@ -168,7 +172,7 @@ class Evidence_Evaluation():
                     if iou > best_iou:
                         best_iou = iou
                 ious[i] = best_iou
-            
+
             # delete overlapped predictions
             for (i, j) in overlapped:
                 assert i in ious and j in ious
@@ -190,7 +194,6 @@ class Evidence_Evaluation():
         return np.mean(all_f1_vals)
 
 
-
 ###########################################################
 ###########################################################
 # testing for the evaluation class
@@ -203,7 +206,6 @@ TEST_LABELS = [["he began by asd", "he began asd ads"]]
 TEST_EVIDENCE_PREDS = [[[1.2, 3.1], [4.5, 6.7]]]
 TEST_EVIDENCE_LABELS = [[[1.2, 3.5], [2.3, 5.0]]]
 
-
 if __name__ == "__main__":
     evl = Evaluation(TEST_SOURCE, TEST_PREDS, TEST_LABELS)
     print(evl.exact_match())
@@ -212,12 +214,3 @@ if __name__ == "__main__":
 
     ev_evl = Evidence_Evaluation(TEST_EVIDENCE_PREDS, TEST_EVIDENCE_LABELS)
     print(ev_evl.iou_f1())
-    
-
-
-
-
-
-
-
-

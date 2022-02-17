@@ -1,7 +1,8 @@
-from pytube import YouTube 
-import os
 import argparse
-import json, requests
+import json
+import os
+
+from pytube import YouTube
 
 
 def download(url, idx, channel_name, output_path):

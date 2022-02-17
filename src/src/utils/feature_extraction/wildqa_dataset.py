@@ -1,11 +1,10 @@
-import json
 import os
 from typing import Callable, Dict
 
-from overrides import overrides
 import PIL.Image
 import torch
 import torch.utils.data
+from overrides import overrides
 
 
 class WildQaFrameDataset(torch.utils.data.Dataset):

@@ -1,19 +1,12 @@
-from __future__ import division
+from collections import defaultdict
 
+import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from torch.autograd import Variable
-import numpy as np
-
-from PIL import Image
 
 from utils.parse_config import *
 from utils.utils import build_targets
-from collections import defaultdict
-
-##import matplotlib.pyplot as plt
-##import matplotlib.patches as patches
 
 
 def create_modules(module_defs):

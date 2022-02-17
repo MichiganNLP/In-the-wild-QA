@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ## declare an array variable
 declare -a urls=(    
     "https://www.youtube.com/channel/UCMqrWfhtN_CP903slwfmqwQ"

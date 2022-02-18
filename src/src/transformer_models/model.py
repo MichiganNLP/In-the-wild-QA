@@ -1,5 +1,5 @@
 import argparse
-from typing import Any, Mapping, Optional, Sequence, Tuple, Union
+from typing import Any, Mapping, Optional, Sequence, Union
 
 import numpy as np
 import pytorch_lightning as pl
@@ -124,10 +124,10 @@ class T5AndVisualEvidence(T5EncoderModel):  # noqa
 
 
 class FineTuner(pl.LightningModule):  # noqa
-    def __init__(self, hparams: argparse.Namespace) -> None:
+    def __init__(self, args: argparse.Namespace) -> None:  # noqa
         super().__init__()
 
-        self.save_hyperparameters(hparams)
+        self.save_hyperparameters()
 
         if self.hparams.model_type == "T5_text_and_visual":
             self.model = T5AndVisual.from_pretrained(self.hparams.model_name_or_path,
@@ -192,7 +192,7 @@ class FineTuner(pl.LightningModule):  # noqa
 
             start_lss, end_lss = [], []
 
-            batch_size, N = starts.shape
+            batch_size, n = starts.shape
             for b in range(batch_size):
                 # for i in range(n):
                 # multiple evidences (n >= 1)
@@ -235,13 +235,13 @@ class FineTuner(pl.LightningModule):  # noqa
 
             preds = torch.argmax(outputs[1].softmax(-1), dim=-1)
             acc = torch.eq(preds, labels).sum() / (labels != -100).sum()  # token level acc
-            N, l = preds.shape
+            n, length = preds.shape
             sent_acc = []
-            for i in np.arange(N):
-                p = preds[i, :]
-                t = labels[i, :]
+            for i in np.arange(n):
+                p = preds[i]
+                t = labels[i]
                 p[t[:] == -100] = -100
-                sent_acc.append(torch.equal(p, t))
+                sent_acc.append(p == t)
             sent_acc = sum(sent_acc) / len(sent_acc)
             return loss, acc, sent_acc
 
@@ -296,7 +296,8 @@ class FineTuner(pl.LightningModule):  # noqa
         return DataLoader(val_dataset, batch_size=self.hparams.eval_batch_size, collate_fn=my_collate, num_workers=4,
                           pin_memory=True, persistent_workers=True)
 
-    def is_logger(self) -> bool:
+    @staticmethod
+    def is_logger() -> bool:
         """ Ask logger to log """
         return True
 
@@ -309,7 +310,7 @@ def my_collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
         # whether the evidence should be used for training
         evidence_mask = [torch.Tensor([1] * len(ev) + [0] * (max_len - len(ev))) for ev in evidence]
         evidence = [torch.Tensor(ev + [(0, 0)] * (max_len - len(ev))) for ev in evidence]
-        batch = {
+        return {
             "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
             "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
             "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
@@ -320,27 +321,24 @@ def my_collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
             "evidence_mask": torch.stack(evidence_mask)
         }
     elif examples[0]["target_ids"].nelement():
-        batch = {
+        return {
             "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
             "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
             "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
             "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
             "target_ids": torch.stack([ex["target_ids"] for ex in examples]),
             "target_mask": torch.stack([ex["target_mask"] for ex in examples]),
-            "evidence": torch.Tensor([]),
-            "evidence_mask": torch.Tensor([])
+            "evidence": torch.tensor([]),
+            "evidence_mask": torch.tensor([])
         }
     else:
-        # evidence is not used for training
-        assert not examples[0]["target_ids"].nelement()
-        batch = {
+        return {
             "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
             "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
             "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
             "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
-            "target_ids": torch.Tensor([]),
-            "target_mask": torch.Tensor([]),
-            "evidence": torch.Tensor([]),
-            "evidence_mask": torch.Tensor([])
+            "target_ids": torch.tensor([]),
+            "target_mask": torch.tensor([]),
+            "evidence": torch.tensor([]),
+            "evidence_mask": torch.tensor([])
         }
-    return batch

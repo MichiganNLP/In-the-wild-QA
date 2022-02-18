@@ -19,7 +19,7 @@ from src.transformer_models.train import transformer_train
 def run_model(dataclass_types: Union[DataClassType, Iterable[DataClassType]],
               model_function: Callable[[argparse.Namespace], None], model_type: str) -> None:
     parser = HfArgumentParser(dataclass_types)
-    args, _ = parser.parse_args_into_dataclasses(return_remaining_strings=True)
+    args = parser.parse_args_into_dataclasses(return_remaining_strings=True)[0]
     args.model_type = model_type
     model_function(args)
 

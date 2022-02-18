@@ -273,3 +273,7 @@ class WandbArguments:
         default=None,
         metadata={"help": "your account to for wandb."}
     )
+    wandb_offline: bool = field(
+        default=False,
+        metadata={"help": "if set true, we will not have wandb record online"}
+    )

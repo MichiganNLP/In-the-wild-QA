@@ -6,3 +6,5 @@ logs/
 preds/
 video_features/
 video_features_framerate_25/
+ckpts/
+video_features

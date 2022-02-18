@@ -6,7 +6,7 @@ CUDA_ID=0
 
 # params based on the params at the top
 output_ckpt_dir=ckpts/T5/evidence_finetuned/
-num_train_epochs=100
+num_train_epochs=50
 train_batch_size=1
 eval_batch_size=1
 log_dir=logs/T5_evidence/

@@ -1,6 +1,6 @@
 import warnings
 from collections import defaultdict
-from typing import Iterable, Literal, Mapping, Tuple
+from typing import Iterable, Literal, Mapping
 
 import numpy as np
 from nltk import word_tokenize

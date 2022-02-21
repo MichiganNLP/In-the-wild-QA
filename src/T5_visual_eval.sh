@@ -14,7 +14,7 @@ path_to_visual=/home/dnaihao/In-the-wild-QA/src/video_features/features/WildQA_I
 data_dir=wildQA-data
 sample_rate=60
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src T5_text_visual_eval \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -m src T5_text_visual_eval \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \

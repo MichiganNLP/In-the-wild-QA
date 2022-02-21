@@ -9,7 +9,7 @@ beam_size=5
 CUDA_ID=0
 batch_size=8
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src T5_eval \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -m src T5_eval \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \

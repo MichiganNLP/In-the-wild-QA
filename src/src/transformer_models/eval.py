@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 
@@ -5,13 +6,12 @@ import torch
 import torch.cuda
 from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
-from transformers.hf_argparser import DataClassType
 
 from src.transformer_models.model import FineTuner, my_collate
 from src.transformer_models.t5_dataloader import T5Dataset
 
 
-def transformer_eval(args: DataClassType) -> None:
+def transformer_eval(args: argparse.Namespace) -> None:
     model_class = FineTuner
 
     # load model from the ckpt path

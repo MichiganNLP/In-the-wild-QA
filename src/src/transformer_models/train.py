@@ -1,13 +1,14 @@
 #!/usr/bin/env python
+import argparse
+
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
-from transformers.hf_argparser import DataClassType
 
 from src.transformer_models.logger import LoggingCallback
 from src.transformer_models.model import FineTuner
 
 
-def transformer_train(args: DataClassType) -> None:
+def transformer_train(args: argparse.Namespace) -> None:
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
         dirpath=args.output_ckpt_dir, filename="{epoch}-{train_loss:.2f}", monitor="train_loss", mode="min",
         save_top_k=1)

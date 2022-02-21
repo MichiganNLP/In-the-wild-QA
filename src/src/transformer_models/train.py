@@ -16,18 +16,15 @@ def transformer_train(args: argparse.Namespace) -> None:
     wandb_logger = WandbLogger(name=args.wandb_name, project=args.wandb_project, entity=args.wandb_entity,
                                offline=args.wandb_offline)
 
-    train_params = dict(
-        accumulate_grad_batches=args.gradient_accumulation_steps,
-        gpus=args.n_gpu,
-        max_epochs=args.num_train_epochs,
-        precision=16 if args.fp_16 else 32,
-        amp_level=args.opt_level,
-        gradient_clip_val=args.max_grad_norm,
-        callbacks=[LoggingCallback(), checkpoint_callback],
-        logger=wandb_logger,
-        log_every_n_steps=1
-    )
+    trainer = pl.Trainer(accumulate_grad_batches=args.gradient_accumulation_steps,
+                         gpus=args.n_gpu,
+                         max_epochs=args.num_train_epochs,
+                         precision=16 if args.fp_16 else 32,
+                         amp_level=args.opt_level,
+                         gradient_clip_val=args.max_grad_norm,
+                         callbacks=[LoggingCallback(), checkpoint_callback],
+                         logger=wandb_logger,
+                         log_every_n_steps=1)
 
     model = FineTuner(**args.__dict__)
-    trainer = pl.Trainer(**train_params)
     trainer.fit(model)

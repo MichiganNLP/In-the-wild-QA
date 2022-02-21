@@ -98,7 +98,7 @@ class EvidenceEvaluation:
         return 2 * _p * _r / (_p + _r)
 
     @staticmethod
-    def _calculate_iou(span_1: Tuple[float, float], span_2: Tuple[float, float]) -> float:
+    def _calculate_iou(span_1: tuple[float, float], span_2: tuple[float, float]) -> float:
         num = len(
             set(range(round(span_1[0]), round(span_1[1])))
             & set(range(round(span_2[0]), round(span_2[1])))

@@ -35,8 +35,8 @@ class MaxPool3dSamePadding(nn.MaxPool3d):
 
 
 class Unit3D(nn.Module):
-    def __init__(self, in_channels: int, output_channels: int, kernel_shape: Tuple[int, int, int] = (1, 1, 1),
-                 stride: Tuple[int, int, int] = (1, 1, 1), padding: int = 0,
+    def __init__(self, in_channels: int, output_channels: int, kernel_shape: tuple[int, int, int] = (1, 1, 1),
+                 stride: tuple[int, int, int] = (1, 1, 1), padding: int = 0,
                  activation_fn: Callable[[torch.Tensor], torch.Tensor] = F.relu, use_batch_norm: bool = True,
                  use_bias: bool = False, name: str = "unit_3d") -> None:
         super().__init__()
@@ -91,7 +91,7 @@ class Unit3D(nn.Module):
 
 
 class InceptionModule(nn.Module):
-    def __init__(self, in_channels, out_channels: Tuple[int, int, int, int, int, int], name: str) -> None:
+    def __init__(self, in_channels, out_channels: tuple[int, int, int, int, int, int], name: str) -> None:
         super().__init__()
 
         self.b0 = Unit3D(in_channels=in_channels, output_channels=out_channels[0], kernel_shape=(1, 1, 1), padding=0,

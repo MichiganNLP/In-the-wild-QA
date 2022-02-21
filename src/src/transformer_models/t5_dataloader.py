@@ -73,7 +73,8 @@ class T5Dataset(VQADataset):
         self._build_examples_from_files()
 
     def _tokenize(self, text: str) -> Mapping[str, torch.Tensor]:
-        return self.tokenizer(text, max_length=self.max_len, pad_to_max_length=True, return_tensors="pt")
+        return self.tokenizer(text, max_length=self.max_len, truncation=True, pad_to_max_length=True,
+                              return_tensors="pt")
 
     def _build_examples_from_files(self) -> None:
         with open(self.data_dir) as file:

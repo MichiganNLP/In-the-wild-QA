@@ -3,7 +3,6 @@ variables:
   PYTHONPATH: .
 dependencies:
   - pip:
-    -            rouge
     -            scenedetect
   -              beautifulsoup4
   - conda-forge::cached_path
@@ -23,6 +22,7 @@ dependencies:
   -              pandas
   -              pip
   -              pillow
+  - conda-forge::py-rouge=1.1
   -              python
   -     pytorch::pytorch
   - conda-forge::pytorch-lightning

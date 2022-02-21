@@ -1,7 +1,7 @@
 import argparse
 
-from src.vqa_dataset import VQADataset
 from src.evaluations.evaluations import evaluate_qa
+from src.vqa_dataset import VQADataset
 
 
 def parse_args():
@@ -27,7 +27,7 @@ def post_process(args):
         d = d.split("<extra_id_0>")[-1]
         processed_data.append(d)
 
-    with open(args.processed_pred, 'w') as f:
+    with open(args.processed_pred, "w") as f:
         f.write("\n".join(processed_data))
 
     test_data = VQADataset(args.test_data)

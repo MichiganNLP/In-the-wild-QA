@@ -13,27 +13,18 @@ from sort import *
 
 def parse_args():
     parser = argparse.ArgumentParser()
-
-    # Common dataclass_types among models
-    parser.add_argument('--video_path',
-                        help='path to video')
-
-    parser.add_argument('--out_vid_dir',
-                        help='output directory for the video file')
-
-    parser.add_argument('--output_dir',
-                        help='output directory for the detected object file')
-
-    args = parser.parse_args()
-    return args
+    parser.add_argument("--video_path", help="path to video")
+    parser.add_argument("--out_vid_dir", help="output directory for the video file")
+    parser.add_argument("--output_dir", help="output directory for the detected object file")
+    return parser.parse_args()
 
 
 args = parse_args()
 
 # load weights and set defaults
-config_path = 'config/yolov3.cfg'
-weights_path = 'config/yolov3.weights'
-class_path = 'config/coco.names'
+config_path = "config/yolov3.cfg"
+weights_path = "config/yolov3.weights"
+class_path = "config/coco.names"
 img_size = 416
 conf_thres = 0.8
 nms_thres = 0.4
@@ -80,10 +71,10 @@ colors = [(255, 0, 0), (0, 255, 0), (0, 0, 255), (255, 0, 255), (128, 0, 0), (0,
 vid = cv2.VideoCapture(videopath)
 mot_tracker = Sort()
 
-# cv2.namedWindow('Stream',cv2.WINDOW_NORMAL)
-# cv2.resizeWindow('Stream', (800,600))
+# cv2.namedWindow("Stream",cv2.WINDOW_NORMAL)
+# cv2.resizeWindow("Stream", (800,600))
 
-fourcc = cv2.VideoWriter_fourcc(*'MPEG')
+fourcc = cv2.VideoWriter_fourcc(*"MPEG")
 ret, frame = vid.read()
 vw = frame.shape[1]
 vh = frame.shape[0]
@@ -96,7 +87,7 @@ detect_objs = defaultdict(dict)
 
 frames = 0
 starttime = time.time()
-while (True):
+while True:
     ret, frame = vid.read()
     if not ret:
         break
@@ -130,12 +121,12 @@ while (True):
 
             obj_name = cls + "-" + str(int(obj_id))
             if obj_name not in detect_objs:
-                detect_objs[obj_name]['start'] = frames
-                detect_objs[obj_name]['end'] = frames
+                detect_objs[obj_name]["start"] = frames
+                detect_objs[obj_name]["end"] = frames
             else:
-                detect_objs[obj_name]['end'] = frames  # as long as the object appears before, update the end frame
+                detect_objs[obj_name]["end"] = frames  # as long as the object appears before, update the end frame
 
-    # cv2.imshow('Stream', frame)
+    # cv2.imshow("Stream", frame)
     outvideo.write(frame)
     ch = 0xFF & cv2.waitKey(1)
     if ch == 27:
@@ -144,13 +135,13 @@ while (True):
 # convert detection frames to time
 f_per_t = vid_duration / frames
 for obj_name, _ in detect_objs.items():
-    detect_objs[obj_name]['start'] *= f_per_t
-    detect_objs[obj_name]['end'] *= f_per_t
+    detect_objs[obj_name]["start"] *= f_per_t
+    detect_objs[obj_name]["end"] *= f_per_t
 
 # write the detected information to a file
-with open(f'{args.output_dir}/{os.path.basename(videopath).strip(".mp4")}.txt', 'w') as f:
+with open(f"{args.output_dir}/{os.path.basename(videopath).strip('.mp4')}.txt", "w") as f:
     for obj_name, _ in detect_objs.items():
-        st, ed = detect_objs[obj_name]['start'], detect_objs[obj_name]['end']
+        st, ed = detect_objs[obj_name]["start"], detect_objs[obj_name]["end"]
         f.write(f"{obj_name} : {st} - {ed}\n")
 
 totaltime = time.time() - starttime

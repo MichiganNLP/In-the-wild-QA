@@ -8,8 +8,8 @@ from overrides import overrides
 from torch.nn.utils.rnn import pad_sequence
 from transformers import PreTrainedTokenizerBase
 
-from src.vqa_dataset import VQADataset
 from src.utils.utils import read_hdf5
+from src.vqa_dataset import VQADataset
 
 
 def get_mask_from_sequence_lengths(lengths: torch.Tensor) -> torch.Tensor:

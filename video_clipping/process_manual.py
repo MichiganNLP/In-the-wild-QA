@@ -1,33 +1,39 @@
+#!/usr/bin/env python
+import os
 from collections import defaultdict
 
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from tqdm import tqdm
 
-with open(f'manual_clip.txt') as f:
-    raw_data = f.readlines()
 
-
-def str2t(time):
+def str2t(time: str) -> int:
     return sum(x * int(t) for x, t in zip([60, 1], time.split(":")))
 
 
-data = defaultdict(list)
-dm_name = None
-for d in raw_data:
-    toks = d.split()
-    if len(toks) == 1:
-        dm_name = toks[0]
-    elif "(whole video)" in d or not toks:
-        # already manually added
-        continue
-    else:
-        v_name, start, _, end = toks
-        data[dm_name].append([v_name, str2t(start), str2t(end)])
+def main() -> None:
+    data = defaultdict(list)
+    dm_name = None
 
-for dm, itms in tqdm(iter(data.items())):
-    for itm in tqdm(iter(itms)):
-        v_name, start, end = itm
-        ch, _ = v_name.split("_")
-        source = f"../youtube-crawler/Videos/{dm}/{ch}/{v_name}.mp4"
-        target = f"selected_clips/{dm}/{ch}/{v_name}-manual.mp4"
-        ffmpeg_extract_subclip(source, start, end, targetname=target)
+    with open("manual_clip.txt") as file:
+        for d in file:
+            tokens = d.split()
+            if len(tokens) == 1:
+                dm_name = tokens[0]
+            elif "(whole video)" in d or not tokens:
+                # already manually added
+                continue
+            else:
+                v_name, start, _, end = tokens
+                data[dm_name].append([v_name, str2t(start), str2t(end)])
+
+    for dm, items in tqdm(data.items()):
+        for item in tqdm(items):
+            v_name, start, end = item
+            ch, _ = v_name.split("_")
+            source = os.path.join("../youtube-crawler/Videos", dm, ch, v_name)
+            target = os.path.join("selected_clips", dm, ch, f"{v_name}-manual.mp4")
+            ffmpeg_extract_subclip(source, start, end, targetname=target)
+
+
+if __name__ == "__main__":
+    main()

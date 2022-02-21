@@ -149,7 +149,7 @@ class FineTuner(pl.LightningModule):  # noqa
             decoder_input_ids=None, decoder_attention_mask=None, labels=None,
             evidence=None, evidence_mask=None
     ):
-        if self.hparams.model_type in ["T5_text_and_visual", "visual_bert_QA"]:
+        if self.hparams.model_type in {"T5_text_and_visual", "visual_bert_QA"}:
             return self.model(
                 input_ids,
                 attention_mask=attention_mask,
@@ -221,14 +221,14 @@ class FineTuner(pl.LightningModule):  # noqa
                     visual=batch["visual_ids"],
                     visual_attention_mask=batch["visual_mask"],
                     labels=labels,
-                    decoder_attention_mask=batch['target_mask']
+                    decoder_attention_mask=batch["target_mask"]
                 )
             else:
                 outputs = self(
                     input_ids=batch["source_ids"],
                     attention_mask=batch["source_mask"],
                     labels=labels,
-                    decoder_attention_mask=batch['target_mask']
+                    decoder_attention_mask=batch["target_mask"]
                 )
 
             loss = outputs[0]
@@ -241,16 +241,16 @@ class FineTuner(pl.LightningModule):  # noqa
                 p = preds[i]
                 t = labels[i]
                 p[t[:] == -100] = -100
-                sent_acc.append(p == t)
+                sent_acc.append(torch.equal(p, t))
             sent_acc = sum(sent_acc) / len(sent_acc)
             return loss, acc, sent_acc
 
     def training_step(self, batch: Mapping[str, Any], batch_idx: int = 0) -> torch.Tensor:
         loss, acc, sent_acc = self._step(batch)
-        self.log('train_loss', loss, on_step=True, on_epoch=True)
+        self.log("train_loss", loss, on_step=True, on_epoch=True)
         if not self.hparams.model_type == "T5_evidence":
-            self.log('train_acc', acc, on_step=True, on_epoch=True)
-            self.log('train_sentence_acc', sent_acc, on_step=True, on_epoch=True)
+            self.log("train_acc", acc, on_step=True, on_epoch=True)
+            self.log("train_sentence_acc", sent_acc, on_step=True, on_epoch=True)
         return loss
 
     def validation_step(self, batch: Mapping[str, Any], batch_idx) -> None:
@@ -297,7 +297,7 @@ class FineTuner(pl.LightningModule):  # noqa
                           pin_memory=True, persistent_workers=True)
 
     @staticmethod
-    def is_logger() -> bool:
+    def should_log() -> bool:
         """ Ask logger to log """
         return True
 

@@ -47,21 +47,21 @@ def transformer_eval(args: argparse.Namespace) -> None:
 
     for batch in tqdm(loader):
         if args.model_type == "T5_text_visual_eval":
-            outs = model.model.generate(input_ids=batch['source_ids'].cuda(),
-                                        attention_mask=batch['source_mask'].cuda(),
+            outs = model.model.generate(input_ids=batch["source_ids"].cuda(),
+                                        attention_mask=batch["source_mask"].cuda(),
                                         visual=batch["visual_ids"].cuda(),
-                                        visual_attention_mask=batch['visual_mask'].cuda(),
+                                        visual_attention_mask=batch["visual_mask"].cuda(),
                                         max_length=args.max_seq_length,
                                         num_beams=args.beam_size,
                                         num_return_sequences=args.pred_num)
         elif args.model_type == "T5_evidence_eval":
-            outs = model.model.predict(masked_caption_ids=batch['source_ids'].cuda(),
-                                       attention_mask=batch['source_mask'].cuda(),
+            outs = model.model.predict(masked_caption_ids=batch["source_ids"].cuda(),
+                                       attention_mask=batch["source_mask"].cuda(),
                                        visual=batch["visual_ids"].cuda(),
-                                       visual_attention_mask=batch['visual_mask'].cuda())
+                                       visual_attention_mask=batch["visual_mask"].cuda())
         else:
-            outs = model.model.generate(input_ids=batch['source_ids'].cuda(),
-                                        attention_mask=batch['source_mask'].cuda(),
+            outs = model.model.generate(input_ids=batch["source_ids"].cuda(),
+                                        attention_mask=batch["source_mask"].cuda(),
                                         max_length=args.max_seq_length,
                                         num_beams=args.beam_size,
                                         num_return_sequences=args.pred_num)
@@ -70,7 +70,7 @@ def transformer_eval(args: argparse.Namespace) -> None:
             batch_size, N, _ = outs[0].shape
             assert N == 1
             predicted_span = {
-                "score": -float('inf'),
+                "score": -float("inf"),
                 "start": -1,
                 "end": -1
             }

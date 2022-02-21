@@ -1,7 +1,7 @@
 from collections import defaultdict
 
-from src.vqa_dataset import VQADataset
 from src.evaluations.evaluations import evaluate_qa
+from src.vqa_dataset import VQADataset
 
 
 def most_common_ans(args):

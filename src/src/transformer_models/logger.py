@@ -3,29 +3,25 @@ import os
 
 import pytorch_lightning as pl
 
+from src.transformer_models.model import FineTuner
+
 logger = logging.getLogger(__name__)
 
 
 class LoggingCallback(pl.Callback):
-    def on_validation_end(self, trainer, pl_module):
+    def on_validation_end(self, trainer: pl.Trainer, pl_module: FineTuner) -> None:
         logger.info("***** Validation results *****")
-        if pl_module.is_logger():
-            metrics = trainer.callback_metrics
-            # Log results
-            for key in sorted(metrics):
-                if key not in ["log", "progress_bar"]:
-                    logger.info(f"{key} = {str(metrics[key])}\n")
+        if pl_module.should_log():
+            for k, v in sorted(trainer.callback_metrics.items(), key=lambda x: x[0]):
+                if k not in {"log", "progress_bar"}:
+                    logger.info(f"{k} = {v}")
 
-    def on_test_end(self, trainer, pl_module):
+    def on_test_end(self, trainer: pl.Trainer, pl_module: FineTuner) -> None:
         logger.info("***** Test results *****")
-
-        if pl_module.is_logger():
-            metrics = trainer.callback_metrics
-
-            # Log and save results to file
-            output_test_results_file = os.path.join(pl_module.hparams.output_dir, "test_results.txt")
-            with open(output_test_results_file, "w") as writer:
-                for key in sorted(metrics):
-                    if key not in ["log", "progress_bar"]:
-                        logger.info(f"{key} = {str(metrics[key])}\n")
-                        writer.write(f"{key} = {str(metrics[key])}\n")
+        if pl_module.should_log():
+            with open(os.path.join(pl_module.hparams.output_dir, "test_results.txt"), "w") as writer:
+                for k, v in sorted(trainer.callback_metrics.items(), key=lambda x: x[0]):
+                    if k not in {"log", "progress_bar"}:
+                        message = f"{k} = {v}"
+                        logger.info(message)
+                        writer.write(f"{message}\n")

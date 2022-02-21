@@ -4,7 +4,7 @@ from typing import Optional
 
 @dataclass
 class DataPathArguments:
-    """ dataclass_types for path to data """
+    """ Arguments for path to data """
 
     train_data: str = field(
         default=None,
@@ -35,7 +35,7 @@ MODEL_CHOICES = [
     "T5_text_visual_eval",
     "random_evidence",
     "T5_evidence",
-    "T5_evidence_eval"
+    "T5_evidence_eval",
 ]
 
 #########################################################################################
@@ -43,16 +43,16 @@ MODEL_CHOICES = [
 # Argument classes for Video QA part.
 
 EMBEDDING_CHOICES = [
-    'stsb-roberta-base',
-    'stsb-bert-large',
-    'stsb-distilbert-base',
-    'stsb-roberta-large'
+    "stsb-roberta-base",
+    "stsb-bert-large",
+    "stsb-distilbert-base",
+    "stsb-roberta-large",
 ]
 
 
 @dataclass
 class ClostRtrModelArguments:
-    """ dataclass_types for closest retrieval model """
+    """ Arguments for closest retrieval model """
 
     embedding_model: str = field(
         default="stsb-roberta-base",
@@ -67,7 +67,7 @@ class ClostRtrModelArguments:
 
 @dataclass
 class T5TrainArguments:
-    """ dataclass_types for T5 text model training. """
+    """ Arguments for T5 text model training. """
 
     output_ckpt_dir: str = field(
         metadata={"help": "path to the output checkpoints"}
@@ -149,7 +149,7 @@ class T5TrainArguments:
 
 @dataclass
 class _T5EvalBaseArguments:
-    """ Common dataclass_types for the evaluation phase of T5 model """
+    """ Common arguments for the evaluation phase of T5 model """
 
     max_seq_length: int = field(
         default=512,
@@ -175,7 +175,7 @@ class _T5EvalBaseArguments:
 
 @dataclass
 class T5EvalArguments(_T5EvalBaseArguments):
-    """ dataclass_types for T5 evaluation """
+    """ Arguments for T5 evaluation """
 
     ckpt_path: str = field(
         default=None,
@@ -185,7 +185,7 @@ class T5EvalArguments(_T5EvalBaseArguments):
 
 @dataclass
 class T5ZeroShotArguments(_T5EvalBaseArguments):
-    """ dataclass_types for T5 zero shot """
+    """ Arguments for T5 zero shot """
 
     model_name_or_path: str = field(
         default="t5-base",
@@ -199,7 +199,7 @@ class T5ZeroShotArguments(_T5EvalBaseArguments):
 
 @dataclass
 class _VisualBaseArguments:
-    """ Common dataclass_types used in the visual models """
+    """ Common arguments used in the visual models """
 
     path_to_visual_file: str = field(
         metadata={"help": "path to visual input files"}
@@ -217,13 +217,13 @@ class _VisualBaseArguments:
 
 @dataclass
 class T5TextVisualTrainArguments(T5TrainArguments, _VisualBaseArguments):
-    """ T5 model text + visual dataclass_types for training phase """
+    """ T5 model text + visual Arguments for training phase """
     pass
 
 
 @dataclass
 class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
-    """ T5 visual model evaluate dataclass_types """
+    """ T5 visual model evaluate Arguments """
     pass
 
 
@@ -233,7 +233,7 @@ class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
 
 @dataclass
 class RandomEvidenceArguments:
-    """ dataclass_types for the random evidence baseline model. """
+    """ Arguments for the random evidence baseline model. """
 
     pred_num: int = field(
         default=5,
@@ -243,13 +243,13 @@ class RandomEvidenceArguments:
 
 @dataclass
 class T5EvidenceFindingTrainArguments(T5TextVisualTrainArguments):
-    """ dataclass_types of T5 evidence finding model for the training phase. """
+    """ Arguments of T5 evidence finding model for the training phase. """
     pass
 
 
 @dataclass
 class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
-    """ dataclass_types of T5 evidence finding model for the eval phase. """
+    """ Arguments of T5 evidence finding model for the eval phase. """
     pass
 
 
@@ -260,7 +260,7 @@ class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
 
 @dataclass
 class WandbArguments:
-    """ dataclass_types for Wandb records. """
+    """ Arguments for Wandb records. """
 
     wandb_project: str = field(
         default="In-the-wild-QA",

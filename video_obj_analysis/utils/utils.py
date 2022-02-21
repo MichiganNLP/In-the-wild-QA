@@ -6,11 +6,10 @@ import torch
 
 def load_classes(path):
     """
-    Loads class labels at 'path'
+    Loads class labels at `path`
     """
-    fp = open(path)
-    names = fp.read().split("\n")[:-1]
-    return names
+    with open(path) as fp:
+        return fp.read().split("\n")[:-1]
 
 
 def weights_init_normal(m):

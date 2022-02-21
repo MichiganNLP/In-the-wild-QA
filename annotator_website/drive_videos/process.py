@@ -3,10 +3,10 @@ import os
 
 
 def main():
-    with open('dr_video_ids.txt') as f:
+    with open("dr_video_ids.txt") as f:
         data = f.readlines()
     data = data[3:]
-    drive_ids = dict()  # google drive ids for each video clip
+    drive_ids = dict()  # Google Drive ids for each video clip
     for d in data:
         dr_id, name, _, _ = d.split()
         drive_ids[name] = dr_id
@@ -38,7 +38,7 @@ def main():
                 raw_data = f.readlines()
             data = [json.loads(d) for d in raw_data]
             for i, itm in enumerate(data):
-                ov_infos[ch.split('.json')[0] + "_" + str(i)] = itm
+                ov_infos[ch.split(".json")[0] + "_" + str(i)] = itm
 
     v_se = dict()
     # get the selected video clips start and end time
@@ -112,7 +112,7 @@ def main():
             "time_in_original_video": v_se[name]
         })
 
-    with open("general_info.json", 'w') as f:
+    with open("general_info.json", "w") as f:
         json.dump(info, f, sort_keys=False, indent=4,
                   ensure_ascii=False)
 

@@ -144,5 +144,5 @@ if __name__ == "__main__":
 
         questions.extend(process(data))
 
-    with open("processed_result/annotations.json", 'w') as f:
+    with open("processed_result/annotations.json", "w") as f:
         json.dump(questions, f, indent=4)

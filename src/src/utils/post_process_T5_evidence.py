@@ -1,8 +1,8 @@
 import argparse
 import json
 
-from src.vqa_dataset import VQADataset
 from src.evaluations.evaluations import evaluate_evidence
+from src.vqa_dataset import VQADataset
 
 
 def parse_args():

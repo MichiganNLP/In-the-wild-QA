@@ -7,7 +7,7 @@ random.seed(42)
 
 TOTAL_NUM = 100  # total video number in domain
 CHANNEL_NUM = 8  # channel number for the domain
-DOMAIN = 'Agriculture'  # domain name
+DOMAIN = "Agriculture"  # domain name
 CHANNEL_NAMES = ["RealAgriculture"
     , "Millennial-Farmer"
     , "Welker-Farms-Inc"
@@ -20,10 +20,10 @@ CHANNEL_NAMES = ["RealAgriculture"
 
 def select(name, num, iteration=0):
     if iteration == 0:
-        with open(f'All-links/{DOMAIN}/{name}.txt') as f:
+        with open(f"All-links/{DOMAIN}/{name}.txt") as f:
             links = f.readlines()
     else:
-        with open(f'Selected-links/{DOMAIN}/{name}-{iteration - 1}-others.txt') as f:
+        with open(f"Selected-links/{DOMAIN}/{name}-{iteration - 1}-others.txt") as f:
             links = f.readlines()
 
     sel_links = random.sample(links, num)
@@ -51,7 +51,6 @@ if __name__ == "__main__":
     ch1 = random.sample(CHANNEL_NAMES, TOTAL_NUM % CHANNEL_NUM)
 
     for name in CHANNEL_NAMES:
-
         if ITERATION == 0:
             num = TOTAL_NUM // CHANNEL_NUM
             if name in ch1:
@@ -62,10 +61,10 @@ if __name__ == "__main__":
 
         sel_links, other_links = select(name, num, iteration=ITERATION)
 
-        if not os.path.exists(f'Selected-links/{DOMAIN}'):
-            os.makedirs(f'Selected-links/{DOMAIN}')
+        if not os.path.exists(f"Selected-links/{DOMAIN}"):
+            os.makedirs(f"Selected-links/{DOMAIN}")
 
-        with open(f'Selected-links/{DOMAIN}/{name}-{ITERATION}-selected.txt', 'w') as f:
-            f.write(''.join(sel_links))
-        with open(f'Selected-links/{DOMAIN}/{name}-{ITERATION}-others.txt', 'w') as f:
-            f.write(''.join(other_links))
+        with open(f"Selected-links/{DOMAIN}/{name}-{ITERATION}-selected.txt", "w") as f:
+            f.write("".join(sel_links))
+        with open(f"Selected-links/{DOMAIN}/{name}-{ITERATION}-others.txt", "w") as f:
+            f.write("".join(other_links))

@@ -85,7 +85,7 @@ def create_modules(module_defs):
 
 
 class EmptyLayer(nn.Module):
-    """Placeholder for 'route' and 'shortcut' layers"""
+    """Placeholder for "route" and "shortcut" layers"""
 
     def __init__(self):
         super().__init__()
@@ -263,18 +263,17 @@ class Darknet(nn.Module):
         return sum(output) if is_training else torch.cat(output, 1)
 
     def load_weights(self, weights_path):
-        """Parses and loads the weights stored in 'weights_path'"""
+        """Parses and loads the weights stored in `weights_path`"""
 
         # Open the weights file
-        fp = open(weights_path, "rb")
-        header = np.fromfile(fp, dtype=np.int32, count=5)  # First five are header values
+        with open(weights_path, "rb") as fp:
+            header = np.fromfile(fp, dtype=np.int32, count=5)  # First five are header values
 
-        # Needed to write header when saving weights
-        self.header_info = header
+            # Needed to write header when saving weights
+            self.header_info = header
 
-        self.seen = header[3]
-        weights = np.fromfile(fp, dtype=np.float32)  # The rest are weights
-        fp.close()
+            self.seen = header[3]
+            weights = np.fromfile(fp, dtype=np.float32)  # The rest are weights
 
         ptr = 0
         for i, (module_def, module) in enumerate(zip(self.module_defs, self.module_list)):

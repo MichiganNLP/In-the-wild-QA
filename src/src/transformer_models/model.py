@@ -1,4 +1,3 @@
-import argparse
 from typing import Any, Mapping, Optional, Sequence, Union
 
 import numpy as np
@@ -124,7 +123,7 @@ class T5AndVisualEvidence(T5EncoderModel):  # noqa
 
 
 class FineTuner(pl.LightningModule):  # noqa
-    def __init__(self, args: argparse.Namespace) -> None:  # noqa
+    def __init__(self, **kwargs) -> None:  # noqa
         super().__init__()
 
         self.save_hyperparameters()

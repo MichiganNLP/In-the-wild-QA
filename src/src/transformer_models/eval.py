@@ -1,4 +1,3 @@
-import argparse
 import json
 import os
 
@@ -6,17 +5,18 @@ import torch
 import torch.cuda
 from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
+from transformers.hf_argparser import DataClassType
 
 from src.transformer_models.model import FineTuner, my_collate
 from src.transformer_models.t5_dataloader import T5Dataset
 
 
-def transformer_eval(args: argparse.Namespace) -> None:
+def transformer_eval(args: DataClassType) -> None:
     model_class = FineTuner
 
     # load model from the ckpt path
     if args.model_type == "T5_zero_shot":
-        model = model_class(args)
+        model = model_class(**args.__dict__)
         dataset_kwargs = {"is_zero_shot": True}
     else:
         model = model_class.load_from_checkpoint(args.ckpt_path)

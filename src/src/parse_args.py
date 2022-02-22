@@ -1,4 +1,3 @@
-
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -9,50 +8,50 @@ class DataPathArguments:
 
     train_data: str = field(
         default=None,
-        metadata = {"help": "train data path"}
+        metadata={"help": "train data path"}
     )
     dev_data: str = field(
         default=None,
-        metadata = {"help": "dev data path"}
+        metadata={"help": "dev data path"}
     )
     test_data: str = field(
         default=None,
-        metadata = {"help": "test data paht"}
+        metadata={"help": "test data path"}
     )
     random_state: int = field(
         default=42,
-        metadata = {"help": "random state number"}
+        metadata={"help": "random state number"}
     )
 
 
 MODEL_CHOICES = [
-    "random_text", 
-    "most_common_ans", 
-    "closest_rtr", 
-    "T5_train", 
-    "T5_eval", 
+    "random_text",
+    "most_common_ans",
+    "closest_rtr",
+    "T5_train",
+    "T5_eval",
     "T5_zero_shot",
     "T5_text_and_visual",
     "T5_text_visual_eval",
     "random_evidence",
     "T5_evidence",
-    "T5_evidence_eval"
+    "T5_evidence_eval",
 ]
-
 
 #########################################################################################
 #########################################################################################
 # Argument classes for Video QA part.
 
 EMBEDDING_CHOICES = [
-    'stsb-roberta-base', 
-    'stsb-bert-large', 
-    'stsb-distilbert-base', 
-    'stsb-roberta-large'
+    "stsb-roberta-base",
+    "stsb-bert-large",
+    "stsb-distilbert-base",
+    "stsb-roberta-large",
 ]
 
+
 @dataclass
-class ClostRtrModelArguments:
+class ClosestRtrModelArguments:
     """ Arguments for closest retrieval model """
 
     embedding_model: str = field(
@@ -65,6 +64,7 @@ class ClostRtrModelArguments:
         if self.embedding_model not in EMBEDDING_CHOICES:
             raise ValueError(f"Please select from {', '.join(EMBEDDING_CHOICES)}")
 
+
 @dataclass
 class T5TrainArguments:
     """ Arguments for T5 text model training. """
@@ -73,19 +73,19 @@ class T5TrainArguments:
         metadata={"help": "path to the output checkpoints"}
     )
     model_name_or_path: str = field(
-        default="t5-base", 
+        default="t5-base",
         metadata={"help": "types of T5"}
     )
     tokenizer_name_or_path: str = field(
-        default="t5-base", 
+        default="t5-base",
         metadata={"help": "types of tokenizer for T5"}
     )
     max_seq_length: int = field(
-        default=512, 
+        default=512,
         metadata={"help": "maximum of the text sequence. Truncate if exceeded part."}
     )
     learning_rate: float = field(
-        default=3e-4, 
+        default=3e-4,
         metadata={"help": "learning rate for the training."}
     )
     weight_decay: float = field(
@@ -126,7 +126,8 @@ class T5TrainArguments:
     )
     opt_level: Optional[int] = field(
         default=None,
-        metadata={"help": "optimization level. you can find out more on optimisation levels here https://nvidia.github.io/apex/amp.html#opt-levels-and-properties"}
+        metadata={"help": "optimization level. you can find out more on optimisation levels here"
+                          " https://nvidia.github.io/apex/amp.html#opt-levels-and-properties"}
     )
     fp_16: bool = field(
         default=False,
@@ -144,12 +145,12 @@ class T5TrainArguments:
         default=False,
         metadata={"help": "whether to use TPU. We do not support TPU."}
     )
-   
 
-@dataclass 
+
+@dataclass
 class _T5EvalBaseArguments:
     """ Common arguments for the evaluation phase of T5 model """
-    
+
     max_seq_length: int = field(
         default=512,
         metadata={"help": "maximum length of the text length. Truncate the exceeded part."}
@@ -170,7 +171,7 @@ class _T5EvalBaseArguments:
         default=None,
         metadata={"help": "beam size for search."}
     )
-   
+
 
 @dataclass
 class T5EvalArguments(_T5EvalBaseArguments):
@@ -180,7 +181,7 @@ class T5EvalArguments(_T5EvalBaseArguments):
         default=None,
         metadata={"help": "path to checkpoint to load."}
     )
-    
+
 
 @dataclass
 class T5ZeroShotArguments(_T5EvalBaseArguments):
@@ -189,11 +190,12 @@ class T5ZeroShotArguments(_T5EvalBaseArguments):
     model_name_or_path: str = field(
         default="t5-base",
         metadata={"help": "T5 model type for zero shot."}
-    )    
+    )
     tokenizer_name_or_path: str = field(
         default="t5-base",
         metadata={"help": "T5 tokenizer type for zero shot."}
     )
+
 
 @dataclass
 class _VisualBaseArguments:
@@ -212,18 +214,18 @@ class _VisualBaseArguments:
         metadata={"help": "sampling rate for visual features."}
     )
 
+
 @dataclass
 class T5TextVisualTrainArguments(T5TrainArguments, _VisualBaseArguments):
-
-    """ T5 model text + visual arguments for training phase """ 
+    """ T5 model text + visual Arguments for training phase """
     pass
 
 
 @dataclass
 class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
-    
-    """ T5 visual model evaluate arguments """
+    """ T5 visual model evaluate Arguments """
     pass
+
 
 #########################################################################################
 #########################################################################################
@@ -241,13 +243,12 @@ class RandomEvidenceArguments:
 
 @dataclass
 class T5EvidenceFindingTrainArguments(T5TextVisualTrainArguments):
-
     """ Arguments of T5 evidence finding model for the training phase. """
     pass
 
+
 @dataclass
 class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
-
     """ Arguments of T5 evidence finding model for the eval phase. """
     pass
 

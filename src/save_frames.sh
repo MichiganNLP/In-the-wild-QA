@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-pushd "${SCRIPT_DIR}/.." > /dev/null
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
+pushd "${SCRIPT_DIR}/.." > /dev/null || exit
 
 videos_folder_path=video_clipping/selected_clips
 frames_folder_path=src/video_features/frames
@@ -18,4 +18,4 @@ for video_file_path in "${videos_folder_path}"/*/*/*."${ext}"; do
     ffmpeg -i "${video_file_path}" -r ${framerate} "${video_frames_folder_path}/%05d.jpg"
 done
 
-popd > /dev/null
+popd > /dev/null || exit

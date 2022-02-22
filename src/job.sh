@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# The interpreter used to execute the script
-
-#“#SBATCH” directives that convey submission options:
-
 #SBATCH --job-name=visual_feature_extraction
 #SBATCH --mail-user=dnaihao@umich.edu
 #SBATCH --mail-type=BEGIN,END
@@ -15,6 +11,5 @@
 #SBATCH --partition=gpu
 #SBATCH --output=/home/%u/In-the-wild-QA/src/%x-%j.log
 
-# The application(s) to execute along with its input arguments and options: 
 # source /etc/profile.d/http_proxy.sh
 bash extract_features.sh

@@ -5,7 +5,7 @@ from overrides import overrides
 from torch.utils.data import Dataset
 
 
-class VQADataset(Dataset):
+class VideoQAWithEvidenceDataset(Dataset):
     def __init__(self, data_dir: str) -> None:
         self.data_dir = data_dir
 

@@ -2,17 +2,17 @@ import argparse
 from collections import defaultdict
 
 from src.evaluations.evaluations import evaluate_qa
-from src.vqa_dataset import VQADataset
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 
 def most_common_ans(args: argparse.Namespace) -> None:
-    train_data = VQADataset(args.train_data)
+    train_data = VideoQAWithEvidenceDataset(args.train_data)
 
     # NOTE: here we only use train data as the corpus
     # as dev data is the same as test data in our testing
     # train_dev_data = ConcatDataset([train_data, dev_data])
 
-    test_data = VQADataset(args.test_data)
+    test_data = VideoQAWithEvidenceDataset(args.test_data)
 
     ans = defaultdict(int)
     for data in train_data:

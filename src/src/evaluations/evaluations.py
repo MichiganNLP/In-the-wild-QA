@@ -8,7 +8,7 @@ from nltk.translate.bleu_score import sentence_bleu
 from rouge import Rouge
 from tqdm import tqdm
 
-from src.vqa_dataset import VQADataset
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 warnings.filterwarnings("ignore")  # filter user warning for BLEU when overlap is 0
 
@@ -29,7 +29,7 @@ def evaluate_qa(model_name: str, preds: list, test_data: Iterable[Mapping[str, s
     print(f"ROUGE 3: {round(evaluation.rouge(3) * 100, 2)}%")
 
 
-def evaluate_evidence(model_name: str, preds: list, test_data: VQADataset):
+def evaluate_evidence(model_name: str, preds: list, test_data: VideoQAWithEvidenceDataset):
     """ 
     QAEvaluation for evidence finding.
 

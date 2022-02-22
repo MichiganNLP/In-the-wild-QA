@@ -2,7 +2,7 @@ import argparse
 import json
 
 from src.evaluations.evaluations import evaluate_evidence
-from src.vqa_dataset import VQADataset
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 
 def parse_args():
@@ -27,7 +27,7 @@ def post_process(args):
     for instance in data:
         processed_data.append([[instance["start"], instance["end"]]])
 
-    test_data = VQADataset(args.test_data)
+    test_data = VideoQAWithEvidenceDataset(args.test_data)
 
     evaluate_evidence(f"{args.model_name}", processed_data, test_data)
 

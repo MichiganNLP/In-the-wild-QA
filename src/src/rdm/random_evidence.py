@@ -3,7 +3,7 @@ import random
 from typing import Any, Iterable, Mapping
 
 from src.evaluations.evaluations import evaluate_evidence
-from src.vqa_dataset import VQADataset
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 
 def _predict_random(d: Mapping[str, Any]) -> Iterable[float]:
@@ -14,6 +14,6 @@ def _predict_random(d: Mapping[str, Any]) -> Iterable[float]:
 
 
 def random_evidence(args: argparse.Namespace) -> None:
-    test_data = VQADataset(args.test_data)
+    test_data = VideoQAWithEvidenceDataset(args.test_data)
     preds = [[_predict_random(d) for _ in range(args.pred_num)] for d in test_data]
     evaluate_evidence("Random Evidence", preds, test_data)

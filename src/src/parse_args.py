@@ -51,7 +51,7 @@ EMBEDDING_CHOICES = [
 
 
 @dataclass
-class ClostRtrModelArguments:
+class ClosestRtrModelArguments:
     """ Arguments for closest retrieval model """
 
     embedding_model: str = field(

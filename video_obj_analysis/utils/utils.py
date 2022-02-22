@@ -45,8 +45,7 @@ def compute_ap(recall, precision):
     i = np.where(mrec[1:] != mrec[:-1])[0]
 
     # and sum (\Delta recall) * prec
-    ap = np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])
-    return ap
+    return np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])
 
 
 def bbox_iou(box1, box2, x1y1x2y2=True):

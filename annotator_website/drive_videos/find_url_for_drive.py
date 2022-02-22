@@ -12,7 +12,7 @@ SCOPES = ["https://www.googleapis.com/auth/drive.metadata.readonly"]
 
 def get_gdrive_service():
     creds = None
-    # The file token.pickle stores the user"s access and refresh tokens, and is
+    # The file token.pickle stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
     # time.
     if os.path.exists("token.pickle"):
@@ -48,7 +48,7 @@ def list_files(items):
                 # parent directory ID
                 parents = item["parents"]
             except:
-                # has no parrents
+                # has no parents
                 parents = "N/A"
             try:
                 # get the size in nice bytes format (KB, MB, etc.)

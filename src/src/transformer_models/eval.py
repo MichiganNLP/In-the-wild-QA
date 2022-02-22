@@ -46,11 +46,7 @@ def transformer_eval(args: argparse.Namespace) -> None:
             if args.model_type == "T5_evidence_eval":
                 batch_size, N, _ = outs[0].shape
                 assert N == 1
-                predicted_span = {
-                    "score": -float("inf"),
-                    "start": -1,
-                    "end": -1
-                }
+                predicted_span = {"score": -float("inf"), "start": -1, "end": -1}
                 vid_len = torch.count_nonzero(batch["visual_mask"], dim=1)
 
                 for b in range(batch_size):

@@ -18,6 +18,7 @@ from src.transformer_models.train import transformer_train
 
 def run_model(dataclass_types: Union[DataClassType, Iterable[DataClassType]],
               model_function: Callable[[argparse.Namespace], None], model_type: str) -> None:
+    # Don't pass a generator here as it misbehaves. See https://github.com/huggingface/transformers/pull/15758
     parser = HfArgumentParser(dataclass_types)
     args_in_dataclasses_and_extra_args = parser.parse_args_into_dataclasses(return_remaining_strings=True)
     args_in_dataclasses, extra_args = args_in_dataclasses_and_extra_args[:-1], args_in_dataclasses_and_extra_args[-1]

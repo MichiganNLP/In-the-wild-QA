@@ -216,13 +216,13 @@ class VideoQAWithEvidenceForT5DataModule(pl.LightningDataModule):  # noqa
     @overrides
     def val_dataloader(self) -> DataLoader:
         dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.args.dev_data, args=self.args)
-        return DataLoader(dataset, batch_size=self.args.eval_batch_size,
+        return DataLoader(dataset, batch_size=getattr(self.args, "eval_batch_size", self.args.batch_size),
                           collate_fn=getattr(dataset, "collate_fn", None), num_workers=self.num_workers,
                           pin_memory=True, persistent_workers=self.num_workers > 0)
 
     @overrides
     def test_dataloader(self) -> DataLoader:
         dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.args.test_data, args=self.args, is_test=True)
-        return DataLoader(dataset, batch_size=self.args.eval_batch_size,
+        return DataLoader(dataset, batch_size=getattr(self.args, "eval_batch_size", self.args.batch_size),
                           collate_fn=getattr(dataset, "collate_fn", None), num_workers=self.num_workers,
                           pin_memory=True, persistent_workers=self.num_workers > 0)

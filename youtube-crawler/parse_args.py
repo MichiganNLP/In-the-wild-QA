@@ -6,7 +6,7 @@ def parse_args():
 
     subparsers = parser.add_subparsers(help="sub-command help", dest="choice")
 
-    # Common dataclass_types among models
+    # Common arguments among models
     parent_parser = argparse.ArgumentParser(add_help=False)
 
     parent_parser.add_argument("--youtube_url", help="link for the channel to crawl, one each time")

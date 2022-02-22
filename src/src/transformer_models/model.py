@@ -1,3 +1,4 @@
+import os
 from typing import Any, Mapping, Optional, Union
 
 import numpy as np
@@ -138,6 +139,7 @@ class FineTuner(pl.LightningModule):  # noqa
         else:
             self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
 
+        os.environ["TOKENIZERS_PARALLELISM"] = "0"
         self.tokenizer = AutoTokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
 
     def forward(

@@ -1,5 +1,6 @@
 import argparse
 import json
+import multiprocessing
 from typing import Any, Mapping, Optional, Sequence
 
 import numpy as np
@@ -200,7 +201,8 @@ def get_dataset(tokenizer: PreTrainedTokenizerBase, data_dir: str,
 
 
 class VideoQAWithEvidenceForT5DataModule(pl.LightningDataModule):  # noqa
-    def __init__(self, args: argparse.Namespace, tokenizer: PreTrainedTokenizerBase, num_workers: int = 4) -> None:
+    def __init__(self, args: argparse.Namespace, tokenizer: PreTrainedTokenizerBase,
+                 num_workers: int = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)) -> None:
         super().__init__()
         self.args = args
         self.tokenizer = tokenizer

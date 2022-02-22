@@ -182,17 +182,21 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
 
 
 def get_dataset(tokenizer: PreTrainedTokenizerBase, data_dir: str,
-                args: argparse.Namespace) -> VideoQAWithEvidenceForT5Dataset:
+                args: argparse.Namespace, is_test: bool = False) -> VideoQAWithEvidenceForT5Dataset:
     if args.model_type == "T5_text_and_visual":
-        kwargs = {"max_vid_len": args.max_vid_length, "path_to_visual_file": args.path_to_visual_file,
-                  "visual_size": args.visual_size, "sample_rate": args.sample_rate}
+        kwargs = {"include_visual": True, "max_len": args.max_seq_length, "max_vid_len": args.max_vid_length,
+                  "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size, "sample_rate":
+                      args.sample_rate}
     elif args.model_type == "T5_evidence":
-        kwargs = {"max_vid_len": args.max_vid_length, "path_to_visual_file": args.path_to_visual_file,
-                  "visual_size": args.visual_size, "sample_rate": args.sample_rate, "is_evidence": True}
+        kwargs = {"include_visual": True, "max_len": args.max_seq_length, "max_vid_len": args.max_vid_length,
+                  "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size, "sample_rate":
+                      args.sample_rate, "is_evidence": True}
+    elif args.model_type == "T5_zero_shot":
+        kwargs = {"is_zero_shot": True}
     else:
         kwargs = {}
     return VideoQAWithEvidenceForT5Dataset(data_dir=data_dir, tokenizer=tokenizer, max_len=args.max_seq_length,
-                                           **kwargs)
+                                           is_test=is_test, **kwargs)
 
 
 class VideoQAWithEvidenceForT5DataModule(pl.LightningDataModule):  # noqa
@@ -218,7 +222,7 @@ class VideoQAWithEvidenceForT5DataModule(pl.LightningDataModule):  # noqa
 
     @overrides
     def test_dataloader(self) -> DataLoader:
-        dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.args.test_data, args=self.args)
+        dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.args.test_data, args=self.args, is_test=True)
         return DataLoader(dataset, batch_size=self.args.eval_batch_size,
                           collate_fn=getattr(dataset, "collate_fn", None), num_workers=self.num_workers,
                           pin_memory=True, persistent_workers=self.num_workers > 0)

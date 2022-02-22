@@ -4,48 +4,31 @@ import os
 
 import torch
 import torch.cuda
-from torch.utils.data import DataLoader
 from tqdm.auto import tqdm
 
 from src.transformer_models.model import FineTuner
-from src.transformer_models.video_qa_with_evidence_dataset import VideoQAWithEvidenceForT5Dataset, my_collate
+from src.transformer_models.video_qa_with_evidence_dataset import VideoQAWithEvidenceForT5DataModule
+
+
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def transformer_eval(args: argparse.Namespace) -> None:
     model_class = FineTuner
 
-    # load model from the ckpt path
-    if args.model_type == "T5_zero_shot":
-        model = model_class(**args.__dict__)
-        dataset_kwargs = {"is_zero_shot": True}
-    else:
-        model = model_class.load_from_checkpoint(args.ckpt_path)
-
-        if args.model_type == "T5_text_visual_eval":
-            dataset_kwargs = {"include_visual": True, "max_len": args.max_seq_length,
-                              "max_vid_len": args.max_vid_length, "path_to_visual_file": args.path_to_visual_file,
-                              "visual_size": args.visual_size, "sample_rate": args.sample_rate}
-        elif args.model_type == "T5_evidence_eval":
-            dataset_kwargs = {"include_visual": True, "max_len": args.max_seq_length,
-                              "max_vid_len": args.max_vid_length, "path_to_visual_file": args.path_to_visual_file,
-                              "visual_size": args.visual_size, "sample_rate": args.sample_rate, "is_evidence": True}
-        else:
-            dataset_kwargs = {}
-
-    dataset = VideoQAWithEvidenceForT5Dataset(tokenizer=model.tokenizer, data_dir=args.test_data, is_test=True,
-                                              **dataset_kwargs)
+    model = model_class(**args.__dict__) if args.model_type == "T5_zero_shot" \
+        else model_class.load_from_checkpoint(args.ckpt_path)
 
     model.model.eval()
-    model.model.cuda()  # NOTE: assume we have GPU resources in testing
+    model.model.to(DEVICE)
 
-    loader = DataLoader(dataset, batch_size=args.batch_size,
-                        collate_fn=my_collate if args.model_type == "T5_evidence_eval" else None)
+    data_loader = VideoQAWithEvidenceForT5DataModule(args, tokenizer=model.tokenizer).test_dataloader()
 
     outputs = []
 
     with torch.inference_mode():
-        for batch in tqdm(loader):
-            batch = {k: v.cuda() if torch.is_tensor(v) else v for k, v in batch.items()}
+        for batch in tqdm(data_loader):
+            batch = {k: v.to(DEVICE) if torch.is_tensor(v) else v for k, v in batch.items()}
 
             if args.model_type == "T5_text_visual_eval":
                 outs = model.model.generate(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],

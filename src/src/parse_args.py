@@ -1,27 +1,25 @@
+import multiprocessing
 from dataclasses import dataclass, field
 from typing import Optional
+
+import torch
 
 
 @dataclass
 class DataPathArguments:
-    """ Arguments for path to data """
-
     train_data: str = field(
-        default=None,
+        default="example_data/wildQA-data/train.json",
         metadata={"help": "train data path"}
     )
     dev_data: str = field(
-        default=None,
+        default="example_data/wildQA-data/dev.json",
         metadata={"help": "dev data path"}
     )
     test_data: str = field(
-        default=None,
+        default="example_data/wildQA-data/test.json",
         metadata={"help": "test data path"}
     )
-    random_state: int = field(
-        default=42,
-        metadata={"help": "random state number"}
-    )
+    num_workers: int = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)
 
 
 MODEL_CHOICES = [
@@ -51,9 +49,7 @@ EMBEDDING_CHOICES = [
 
 
 @dataclass
-class ClosestRtrModelArguments:
-    """ Arguments for closest retrieval model """
-
+class ClosestRetrievalArguments:
     embedding_model: str = field(
         default="stsb-roberta-base",
         metadata={"help": "model types for calculating embedding, more models available at\
@@ -67,18 +63,13 @@ class ClosestRtrModelArguments:
 
 @dataclass
 class T5TrainArguments:
-    """ Arguments for T5 text model training. """
-
     output_ckpt_dir: str = field(
+        default=None,
         metadata={"help": "path to the output checkpoints"}
     )
     model_name_or_path: str = field(
         default="t5-base",
         metadata={"help": "types of T5"}
-    )
-    tokenizer_name_or_path: str = field(
-        default="t5-base",
-        metadata={"help": "types of tokenizer for T5"}
     )
     max_seq_length: int = field(
         default=512,
@@ -149,8 +140,6 @@ class T5TrainArguments:
 
 @dataclass
 class _T5EvalBaseArguments:
-    """ Common arguments for the evaluation phase of T5 model """
-
     max_seq_length: int = field(
         default=512,
         metadata={"help": "maximum length of the text length. Truncate the exceeded part."}
@@ -175,8 +164,6 @@ class _T5EvalBaseArguments:
 
 @dataclass
 class T5EvalArguments(_T5EvalBaseArguments):
-    """ Arguments for T5 evaluation """
-
     ckpt_path: str = field(
         default=None,
         metadata={"help": "path to checkpoint to load."}
@@ -185,45 +172,38 @@ class T5EvalArguments(_T5EvalBaseArguments):
 
 @dataclass
 class T5ZeroShotArguments(_T5EvalBaseArguments):
-    """ Arguments for T5 zero shot """
-
     model_name_or_path: str = field(
         default="t5-base",
         metadata={"help": "T5 model type for zero shot."}
-    )
-    tokenizer_name_or_path: str = field(
-        default="t5-base",
-        metadata={"help": "T5 tokenizer type for zero shot."}
     )
 
 
 @dataclass
 class _VisualBaseArguments:
-    """ Common arguments used in the visual models """
-
+    sample_rate: int = field(
+        metadata={"help": "sampling rate for visual features."}
+    )
     path_to_visual_file: str = field(
+        default="https://www.dropbox.com/s/vt2kjdqr7mnxg2q/WildQA_I3D_avg_pool.hdf5?dl=1",
         metadata={"help": "path to visual input files"}
     )
     visual_size: int = field(
+        default=1024,
         metadata={"help": "visual embedding dimension."}
     )
     max_vid_length: int = field(
+        default=2048,
         metadata={"help": "maximum length of the visual input. Truncate the exceeded part."}
-    )
-    sample_rate: int = field(
-        metadata={"help": "sampling rate for visual features."}
     )
 
 
 @dataclass
 class T5TextVisualTrainArguments(T5TrainArguments, _VisualBaseArguments):
-    """ T5 model text + visual Arguments for training phase """
     pass
 
 
 @dataclass
 class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
-    """ T5 visual model evaluate Arguments """
     pass
 
 
@@ -233,8 +213,6 @@ class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
 
 @dataclass
 class RandomEvidenceArguments:
-    """ Arguments for the random evidence baseline model. """
-
     pred_num: int = field(
         default=5,
         metadata={"help": "number of predicted evidence"}
@@ -243,13 +221,11 @@ class RandomEvidenceArguments:
 
 @dataclass
 class T5EvidenceFindingTrainArguments(T5TextVisualTrainArguments):
-    """ Arguments of T5 evidence finding model for the training phase. """
     pass
 
 
 @dataclass
 class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
-    """ Arguments of T5 evidence finding model for the eval phase. """
     pass
 
 
@@ -260,8 +236,6 @@ class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
 
 @dataclass
 class WandbArguments:
-    """ Arguments for Wandb records. """
-
     wandb_project: str = field(
         default="In-the-wild-QA",
         metadata={"help": "wandb project name."}

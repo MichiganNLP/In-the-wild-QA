@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 import argparse
+import os
 
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import RichProgressBar
 from pytorch_lightning.loggers import WandbLogger
+from transformers import AutoTokenizer
 
 from src.transformer_models.logger import LoggingCallback
 from src.transformer_models.model import FineTuner
@@ -11,9 +13,15 @@ from src.transformer_models.video_qa_with_evidence_dataset import VideoQAWithEvi
 
 
 def transformer_train(args: argparse.Namespace) -> None:
+    os.environ["TOKENIZERS_PARALLELISM"] = "0"
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+
+    data_module = VideoQAWithEvidenceForT5DataModule(args, tokenizer=tokenizer)
+
+    model = FineTuner(tokenizer=tokenizer, **args.__dict__)
+
     checkpoint_callback = pl.callbacks.ModelCheckpoint(dirpath=args.output_ckpt_dir,
-                                                       filename="{epoch}-{train_loss:.2f}", monitor="train_loss",
-                                                       mode="min", save_top_k=1)
+                                                       filename="{epoch}-{train_loss:.2f}", monitor="train_loss")
 
     wandb_logger = WandbLogger(name=args.wandb_name, project=args.wandb_project, entity=args.wandb_entity,
                                offline=args.wandb_offline)
@@ -23,9 +31,5 @@ def transformer_train(args: argparse.Namespace) -> None:
                          amp_level=args.opt_level, gradient_clip_val=args.max_grad_norm,
                          callbacks=[RichProgressBar(), LoggingCallback(), checkpoint_callback], logger=wandb_logger,
                          log_every_n_steps=1)
-
-    model = FineTuner(**args.__dict__)
-
-    data_module = VideoQAWithEvidenceForT5DataModule(args, tokenizer=model.tokenizer)
 
     trainer.fit(model, datamodule=data_module)

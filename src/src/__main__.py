@@ -7,7 +7,7 @@ from transformers.hf_argparser import DataClassType
 
 from src.closest_rtr.closest_rtr import closest_rtr
 from src.mca.mca import most_common_ans
-from src.parse_args import ClosestRtrModelArguments, DataPathArguments, MODEL_CHOICES, RandomEvidenceArguments, \
+from src.parse_args import ClosestRetrievalArguments, DataPathArguments, MODEL_CHOICES, RandomEvidenceArguments, \
     T5EvalArguments, T5EvidenceFindingEvalArguments, T5EvidenceFindingTrainArguments, T5TextVisualEvalArguments, \
     T5TextVisualTrainArguments, T5TrainArguments, T5ZeroShotArguments, WandbArguments
 from src.rdm.random_evidence import random_evidence
@@ -37,7 +37,7 @@ def main() -> None:
     elif model_type == "most_common_ans":
         run_model(DataPathArguments, most_common_ans, "most_common_ans")
     elif model_type == "closest_rtr":
-        run_model([DataPathArguments, ClosestRtrModelArguments], closest_rtr, "closest_rtr")
+        run_model([DataPathArguments, ClosestRetrievalArguments], closest_rtr, "closest_rtr")
     elif model_type == "T5_train":
         run_model([DataPathArguments, T5TrainArguments, WandbArguments], transformer_train, "T5_train")
     elif model_type == "T5_eval":

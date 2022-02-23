@@ -65,6 +65,9 @@ class FineTuner(pl.LightningModule):  # noqa
                 visual: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
                 decoder_input_ids: Optional[torch.Tensor] = None,
                 decoder_attention_mask: Optional[torch.Tensor] = None, labels: Optional[torch.Tensor] = None) -> Any:
+        if labels is not None:
+            labels[labels == self.tokenizer.pad_token_id] = -100  # For the loss computation.
+
         if self.hparams.model_type in {"T5_text_and_visual", "visual_bert_QA"}:
             return self.model(input_ids, attention_mask=attention_mask, visual=visual,
                               visual_attention_mask=visual_attention_mask, labels=labels)
@@ -91,15 +94,15 @@ class FineTuner(pl.LightningModule):  # noqa
             loss = start_loss + end_loss
         else:
             labels = batch["target_ids"]
-            labels[labels == self.tokenizer.pad_token_id] = -100
 
+            # We clone `label_ids` because `forward` modifies it, but later we need to use it.
             if self.hparams.model_type in {"T5_text_and_visual", "visual_bert_QA"}:
                 outputs = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
-                               visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"], labels=labels,
-                               decoder_attention_mask=batch["target_mask"])
+                               visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"],
+                               labels=labels.clone(), decoder_attention_mask=batch["target_mask"])
             else:
-                outputs = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"], labels=labels,
-                               decoder_attention_mask=batch["target_mask"])
+                outputs = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
+                               labels=labels.clone(), decoder_attention_mask=batch["target_mask"])
 
             loss = outputs[0]
 
@@ -107,12 +110,8 @@ class FineTuner(pl.LightningModule):  # noqa
 
             preds = outputs[1].argmax(dim=-1)
 
-            token_level_acc = (preds == labels).sum() / (labels != -100).sum()  # noqa
-            self.log(f"{split}_acc", token_level_acc)
-
-            preds[labels == -100] = -100
-            sent_acc = (preds == labels).all(dim=-1).to(dtype).mean()  # noqa
-            self.log(f"{split}_sentence_acc", sent_acc)
+            exact_match = (preds == labels).all(dim=-1).to(dtype).mean()  # noqa
+            self.log(f"{split}_em", exact_match, prog_bar=True)
 
         self.log(f"{split}_loss", loss)
 

@@ -20,11 +20,16 @@ def run_model(dataclass_types: Union[DataClassType, Iterable[DataClassType]],
               model_function: Callable[[argparse.Namespace], None], model_type: str) -> None:
     # Don't pass a generator here as it misbehaves. See https://github.com/huggingface/transformers/pull/15758
     parser = HfArgumentParser(dataclass_types)
+
     args_in_dataclasses_and_extra_args = parser.parse_args_into_dataclasses(return_remaining_strings=True)
     args_in_dataclasses, extra_args = args_in_dataclasses_and_extra_args[:-1], args_in_dataclasses_and_extra_args[-1]
-    assert len(extra_args) == 1, f"Unknown arguments: {extra_args}"
+
+    extra_args.remove(model_type)
+    assert not extra_args, f"Unknown arguments: {extra_args}"
+
     args = argparse.Namespace(**{k: v for args in args_in_dataclasses for k, v in args.__dict__.items()})
     args.model_type = model_type
+
     model_function(args)
 
 

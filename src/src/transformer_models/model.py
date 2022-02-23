@@ -103,19 +103,16 @@ class FineTuner(pl.LightningModule):  # noqa
 
             loss = outputs[0]
 
+            dtype = loss.dtype
+
             preds = outputs[1].argmax(dim=-1)
 
             token_level_acc = (preds == labels).sum() / (labels != -100).sum()  # noqa
             self.log(f"{split}_acc", token_level_acc)
 
-            n = preds.shape[0]
-            sent_acc = []
-            for i in range(n):
-                p = preds[i]
-                t = labels[i]
-                p[t == -100] = -100
-                sent_acc.append(torch.equal(p, t))
-            self.log(f"{split}_sentence_acc", sum(sent_acc) / n)
+            preds[labels == -100] = -100
+            sent_acc = (preds == labels).all(dim=-1).to(dtype).mean()  # noqa
+            self.log(f"{split}_sentence_acc", sent_acc)
 
         self.log(f"{split}_loss", loss)
 

@@ -1,11 +1,11 @@
 import argparse
 import json
-import multiprocessing
 from typing import Any, Mapping, Optional, Sequence
 
 import numpy as np
 import pytorch_lightning as pl
 import torch
+from cached_path import cached_path
 from overrides import overrides
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader
@@ -15,46 +15,33 @@ from src.utils.utils import read_hdf5
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 
-def my_collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
-    # len(examples) == specified batch_size
+def collate(examples: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
     evidence = [ex["evidence"] for ex in examples]
-    max_len = max(len(ev) for ev in evidence)
     if evidence[0]:
-        # whether the evidence should be used for training
-        evidence_mask = [torch.Tensor([1] * len(ev) + [0] * (max_len - len(ev))) for ev in evidence]
-        evidence = [torch.Tensor(ev + [(0, 0)] * (max_len - len(ev))) for ev in evidence]
-        return {
-            "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
-            "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
-            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
-            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
-            "target_ids": torch.stack([ex["target_ids"] for ex in examples]),
-            "target_mask": torch.stack([ex["target_mask"] for ex in examples]),
-            "evidence": torch.stack(evidence),
-            "evidence_mask": torch.stack(evidence_mask)
-        }
-    elif examples[0]["target_ids"].nelement():
-        return {
-            "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
-            "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
-            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
-            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
-            "target_ids": torch.stack([ex["target_ids"] for ex in examples]),
-            "target_mask": torch.stack([ex["target_mask"] for ex in examples]),
-            "evidence": torch.tensor([]),
-            "evidence_mask": torch.tensor([])
-        }
+        max_len = max(len(ev) for ev in evidence)
+        evidence_mask = torch.stack([torch.tensor([1] * len(ev) + [0] * (max_len - len(ev))) for ev in evidence])
+        evidence = torch.stack([torch.tensor(ev + [(0, 0)] * (max_len - len(ev))) for ev in evidence])
     else:
-        return {
-            "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
-            "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
-            "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
-            "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
-            "target_ids": torch.tensor([]),
-            "target_mask": torch.tensor([]),
-            "evidence": torch.tensor([]),
-            "evidence_mask": torch.tensor([])
-        }
+        evidence = torch.tensor([])
+        evidence_mask = torch.tensor([])
+
+    if examples[0]["target_ids"].nelement():
+        target_ids = torch.stack([ex["target_ids"] for ex in examples])
+        target_mask = torch.stack([ex["target_mask"] for ex in examples])
+    else:
+        target_ids = torch.tensor([])
+        target_mask = torch.tensor([])
+
+    return {
+        "source_ids": torch.stack([ex["source_ids"] for ex in examples]),
+        "source_mask": torch.stack([ex["source_mask"] for ex in examples]),
+        "visual_ids": torch.stack([ex["visual_ids"] for ex in examples]),
+        "visual_mask": torch.stack([ex["visual_mask"] for ex in examples]),
+        "target_ids": target_ids,
+        "target_mask": target_mask,
+        "evidence": evidence,
+        "evidence_mask": evidence_mask,
+    }
 
 
 def get_mask_from_sequence_lengths(lengths: torch.Tensor) -> torch.Tensor:
@@ -77,7 +64,7 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
         self.max_vid_len = max_vid_len
 
         if self.include_visual:
-            self.visual_features = read_hdf5(path_to_visual_file)
+            self.visual_features = read_hdf5(cached_path(path_to_visual_file))
             self.sample_rate = sample_rate
             self.visual_size = visual_size
             self._build_visual_features()
@@ -88,7 +75,7 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
 
         super().__init__(data_dir)
 
-        self.collate_fn = my_collate
+        self.collate_fn = collate
 
     def _build_visual_features(self) -> None:
         sample_rate = self.sample_rate
@@ -185,13 +172,13 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
 def get_dataset(tokenizer: PreTrainedTokenizerBase, data_dir: str,
                 args: argparse.Namespace, is_test: bool = False) -> VideoQAWithEvidenceForT5Dataset:
     if args.model_type == "T5_text_and_visual":
-        kwargs = {"include_visual": True, "max_len": args.max_seq_length, "max_vid_len": args.max_vid_length,
-                  "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size, "sample_rate":
-                      args.sample_rate}
+        kwargs = {"include_visual": True, "max_vid_len": args.max_vid_length,
+                  "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size,
+                  "sample_rate": args.sample_rate}
     elif args.model_type == "T5_evidence":
-        kwargs = {"include_visual": True, "max_len": args.max_seq_length, "max_vid_len": args.max_vid_length,
-                  "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size, "sample_rate":
-                      args.sample_rate, "is_evidence": True}
+        kwargs = {"include_visual": True, "max_vid_len": args.max_vid_length,
+                  "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size,
+                  "sample_rate": args.sample_rate, "is_evidence": True}
     elif args.model_type == "T5_zero_shot":
         kwargs = {"is_zero_shot": True}
     else:
@@ -201,12 +188,13 @@ def get_dataset(tokenizer: PreTrainedTokenizerBase, data_dir: str,
 
 
 class VideoQAWithEvidenceForT5DataModule(pl.LightningDataModule):  # noqa
-    def __init__(self, args: argparse.Namespace, tokenizer: PreTrainedTokenizerBase,
-                 num_workers: int = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)) -> None:
+    def __init__(self, args: argparse.Namespace, tokenizer: PreTrainedTokenizerBase) -> None:
         super().__init__()
         self.args = args
         self.tokenizer = tokenizer
-        self.num_workers = num_workers
+        self.num_workers = args.num_workers
+
+        self.eval_batch_size = getattr(self.args, "eval_batch_size", getattr(self.args, "batch_size", 1))
 
     @overrides
     def train_dataloader(self) -> DataLoader:
@@ -218,13 +206,11 @@ class VideoQAWithEvidenceForT5DataModule(pl.LightningDataModule):  # noqa
     @overrides
     def val_dataloader(self) -> DataLoader:
         dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.args.dev_data, args=self.args)
-        return DataLoader(dataset, batch_size=getattr(self.args, "eval_batch_size", self.args.batch_size),
-                          collate_fn=getattr(dataset, "collate_fn", None), num_workers=self.num_workers,
-                          pin_memory=True, persistent_workers=self.num_workers > 0)
+        return DataLoader(dataset, batch_size=self.eval_batch_size, collate_fn=getattr(dataset, "collate_fn", None),
+                          num_workers=self.num_workers, pin_memory=True, persistent_workers=self.num_workers > 0)
 
     @overrides
     def test_dataloader(self) -> DataLoader:
         dataset = get_dataset(tokenizer=self.tokenizer, data_dir=self.args.test_data, args=self.args, is_test=True)
-        return DataLoader(dataset, batch_size=getattr(self.args, "eval_batch_size", self.args.batch_size),
-                          collate_fn=getattr(dataset, "collate_fn", None), num_workers=self.num_workers,
-                          pin_memory=True, persistent_workers=self.num_workers > 0)
+        return DataLoader(dataset, batch_size=self.eval_batch_size, collate_fn=getattr(dataset, "collate_fn", None),
+                          num_workers=self.num_workers, pin_memory=True, persistent_workers=self.num_workers > 0)

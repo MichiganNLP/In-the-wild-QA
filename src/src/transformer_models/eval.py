@@ -5,6 +5,7 @@ import os
 import torch
 import torch.cuda
 from tqdm.auto import tqdm
+from transformers import AutoTokenizer
 
 from src.transformer_models.model import FineTuner
 from src.transformer_models.video_qa_with_evidence_dataset import VideoQAWithEvidenceForT5DataModule
@@ -14,15 +15,17 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def transformer_eval(args: argparse.Namespace) -> None:
-    model_class = FineTuner
+    os.environ["TOKENIZERS_PARALLELISM"] = "0"
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
 
-    model = model_class(**args.__dict__) if args.model_type == "T5_zero_shot" \
+    data_loader = VideoQAWithEvidenceForT5DataModule(args, tokenizer=tokenizer).test_dataloader()
+
+    model_class = FineTuner
+    model = model_class(tokenizer=tokenizer, **args.__dict__) if args.model_type == "T5_zero_shot" \
         else model_class.load_from_checkpoint(args.ckpt_path)
 
     model.model.eval()
     model.model.to(DEVICE)
-
-    data_loader = VideoQAWithEvidenceForT5DataModule(args, tokenizer=model.tokenizer).test_dataloader()
 
     outputs = []
 

@@ -7,7 +7,7 @@ from transformers.hf_argparser import DataClassType
 
 from src.closest_rtr.closest_rtr import closest_rtr
 from src.mca.mca import most_common_ans
-from src.parse_args import ClosestRtrModelArguments, DataPathArguments, MODEL_CHOICES, RandomEvidenceArguments, \
+from src.parse_args import ClosestRetrievalArguments, DataPathArguments, MODEL_CHOICES, RandomEvidenceArguments, \
     T5EvalArguments, T5EvidenceFindingEvalArguments, T5EvidenceFindingTrainArguments, T5TextVisualEvalArguments, \
     T5TextVisualTrainArguments, T5TrainArguments, T5ZeroShotArguments, WandbArguments
 from src.rdm.random_evidence import random_evidence
@@ -20,11 +20,16 @@ def run_model(dataclass_types: Union[DataClassType, Iterable[DataClassType]],
               model_function: Callable[[argparse.Namespace], None], model_type: str) -> None:
     # Don't pass a generator here as it misbehaves. See https://github.com/huggingface/transformers/pull/15758
     parser = HfArgumentParser(dataclass_types)
+
     args_in_dataclasses_and_extra_args = parser.parse_args_into_dataclasses(return_remaining_strings=True)
     args_in_dataclasses, extra_args = args_in_dataclasses_and_extra_args[:-1], args_in_dataclasses_and_extra_args[-1]
-    assert len(extra_args) == 1, f"Unknown arguments: {extra_args}"
+
+    extra_args.remove(model_type)
+    assert not extra_args, f"Unknown arguments: {extra_args}"
+
     args = argparse.Namespace(**{k: v for args in args_in_dataclasses for k, v in args.__dict__.items()})
     args.model_type = model_type
+
     model_function(args)
 
 
@@ -37,7 +42,7 @@ def main() -> None:
     elif model_type == "most_common_ans":
         run_model(DataPathArguments, most_common_ans, "most_common_ans")
     elif model_type == "closest_rtr":
-        run_model([DataPathArguments, ClosestRtrModelArguments], closest_rtr, "closest_rtr")
+        run_model([DataPathArguments, ClosestRetrievalArguments], closest_rtr, "closest_rtr")
     elif model_type == "T5_train":
         run_model([DataPathArguments, T5TrainArguments, WandbArguments], transformer_train, "T5_train")
     elif model_type == "T5_eval":

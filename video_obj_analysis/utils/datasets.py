@@ -8,9 +8,6 @@ from skimage.transform import resize
 from torch.utils.data import Dataset
 
 
-##import matplotlib.pyplot as plt
-##import matplotlib.patches as patches
-
 class ImageFolder(Dataset):
     def __init__(self, folder_path, img_size=416):
         self.files = sorted(glob.glob(f"{folder_path}/*.*"))

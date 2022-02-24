@@ -97,22 +97,15 @@ class FineTuner(pl.LightningModule):  # noqa
         elif self.hparams.model_type == "T5_evidence":
             self.model = T5AndVisualEvidence.from_pretrained(self.hparams.model_name_or_path,
                                                              visual_size=self.hparams.visual_size)
-<<<<<<< HEAD
             self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
-            self.xentloss = nn.CrossEntropyLoss()
+            self.cross_entropy_loss = nn.CrossEntropyLoss()
 
         elif self.hparams.model_type == "T5_evidence_IO":
             self.model = T5AndVisualEvidenceIO.from_pretrained(self.hparams.model_name_or_path,
                                                                 visual_size=self.hparams.visual_size)   
             self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
-            self.xentloss = nn.CrossEntropyLoss()
-            
-=======
             self.cross_entropy_loss = nn.CrossEntropyLoss()
-        elif self.hparams.model_type == "visual_bert_QA":
-            self.model = VisualBertForQuestionAnswering.from_pretrained(self.hparams.model_name_or_path,
-                                                                        visual_size=self.hparams.visual_size)
->>>>>>> d78b61ca48a4d11c0b0b03f4654ef6203a5b774f
+            
         else:
             assert self.hparams.model_type in ["T5_train", "T5_zero_shot"]
             self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)

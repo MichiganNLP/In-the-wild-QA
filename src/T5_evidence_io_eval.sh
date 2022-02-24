@@ -3,9 +3,9 @@
 CUDA_ID=0
 
 
-ckpt_path=ckpts/T5/evidence_finetuned/epoch=47-train_loss=2.73.ckpt
-pred_out_dir=preds/T5/evidence/
-pred_name=preds-T5_evidence_eval
+ckpt_path=ckpts/T5/evidence_IO_finetuned/epoch=47-train_loss=2.73.ckpt
+pred_out_dir=preds/T5/evidence_IO/
+pred_name=preds-T5_evidence_IO_eval
 pred_num=1
 beam_size=5
 batch_size=1
@@ -17,7 +17,7 @@ sample_rate=1
 data_dir=wildQA-data
 
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_evidence_eval \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_evidence_IO_eval \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \
@@ -37,4 +37,4 @@ python -m src.utils.post_process_T5_evidence \
     --pred ${pred_out_dir}/${pred_name}-${pred_num}.txt \
     --processed_pred ${pred_out_dir}/processed_pred-${pred_num}.txt \
     --test_data example_data/${data_dir}/test.json \
-    --model_name T5_evidence
+    --model_name T5_evidence_IO

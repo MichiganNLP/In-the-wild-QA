@@ -225,9 +225,11 @@ class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
     """ T5 visual model evaluate arguments """
     pass
 
+
 #########################################################################################
 #########################################################################################
 # Argument classes for Video Evidence Finding part.
+
 
 @dataclass
 class RandomEvidenceArguments:
@@ -245,10 +247,25 @@ class T5EvidenceFindingTrainArguments(T5TextVisualTrainArguments):
     """ Arguments of T5 evidence finding model for the training phase. """
     pass
 
+
 @dataclass
 class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
 
     """ Arguments of T5 evidence finding model for the eval phase. """
+    pass
+
+
+@dataclass
+class T5EvidenceIOTrainArguments(T5TextVisualEvalArguments):
+
+    """ Arguments of T5 evidence IO model for the training phase """
+    pass
+
+
+@dataclass
+class T5EvidenceIOEvalArguments(T5TextVisualEvalArguments):
+
+    """ Arguments of T5 evidence IO model for the eval phase. """
     pass
 
 
@@ -272,4 +289,8 @@ class WandbArguments:
     wandb_entity: str = field(
         default=None,
         metadata={"help": "your account to for wandb."}
+    )
+    wandb_offline: bool = field(
+        default=False,
+        metadata={"help": "if set true, we will not have wandb record online"}
     )

@@ -10,7 +10,6 @@ from torch.utils.data import DataLoader
 from transformers import AdamW, T5Config, T5ForConditionalGeneration, T5Tokenizer, get_linear_schedule_with_warmup
 from transformers.modeling_outputs import BaseModelOutputWithPastAndCrossAttentions, Seq2SeqLMOutput
 from transformers.models.t5.modeling_t5 import T5EncoderModel, T5Stack
-from transformers import BertTokenizer, VisualBertForQuestionAnswering
 
 from src.transformer_models.T5_dataloader import get_dataset
 
@@ -122,6 +121,50 @@ class T5AndVisualEvidence(T5EncoderModel):  # noqa
         return start_lgsm, end_lgsm
 
 
+class T5AndVisualEvidenceIO(T5EncoderModel):  # noqa
+    def __init__(self, config: T5Config, visual_size: int) -> None:
+        super().__init__(config)
+        self.encoder = TextVisualEncoder(self.encoder, visual_size)
+        # NOTE: problems here!
+        self.lgsm = nn.LogSoftmax(dim=2)
+        self.start_vec = nn.Linear(self.config.d_model, 1)
+        self.end_vec = nn.Linear(self.config.d_model, 1)
+
+    @overrides(check_signature=False)
+    def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                evidence=None, evidence_mask=None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+        outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
+                               visual_attention_mask=visual_attention_mask, **kwargs)
+        # We only care about the last hidden state sequence
+        batch_size, visual_start = masked_caption_ids.shape
+        # _, visual_len, _ = visual.shape
+        visual_hidden = outputs.last_hidden_state[:, visual_start:, :]
+
+        # assume it is batch_size * visual_leng
+
+        start = self.start_vec(visual_hidden)
+        end = self.end_vec(visual_hidden)
+
+        start = torch.transpose(start, 1, 2)  # batch_size * N = 1 * visual_len
+        end = torch.transpose(end, 1, 2)  # batch_size * N = 1 * visual_len
+
+        return start, end
+
+    def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                evidence=None, evidence_mask=None) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+        start, end = self.forward(masked_caption_ids, visual, attention_mask, visual_attention_mask, evidence,
+                                  evidence_mask)
+
+        # assume it is batch_size * visual_len
+
+        start_lgsm = self.lgsm(start)
+        end_lgsm = self.lgsm(end)
+
+        return start_lgsm, end_lgsm
+
+
 class FineTuner(pl.LightningModule):  # noqa
     def __init__(self, hparams: argparse.Namespace) -> None:
         super().__init__()
@@ -139,12 +182,14 @@ class FineTuner(pl.LightningModule):  # noqa
             self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
             self.xentloss = nn.CrossEntropyLoss()
 
-        elif self.hparams.model_type == "visual_bert_QA":
-            self.model = VisualBertForQuestionAnswering.from_pretrained(self.hparams.model_name_or_path, 
-                                                                        visual_size=self.hparams.visual_size)
-            self.tokenizer = BertTokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
+        elif self.hparams.model_type == "T5_evidence_IO":
+            self.model = T5AndVisualEvidenceIO.from_pretrained(self.hparams.model_name_or_path,
+                                                                visual_size=self.hparams.visual_size)   
+            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
+            self.xentloss = nn.CrossEntropyLoss()
             
         else:
+            assert self.hparams.model_type in ["T5_train", "T5_zero_shot"]
             self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
             self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
 

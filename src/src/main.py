@@ -16,6 +16,8 @@ from src.parse_args import (
     RandomEvidenceArguments,
     T5EvidenceFindingTrainArguments,
     T5EvidenceFindingEvalArguments,
+    T5EvidenceIOTrainArguments,
+    T5EvidenceIOEvalArguments,
     WandbArguments
 )
 
@@ -31,6 +33,7 @@ from src.transformer_models.eval import transformer_eval
 def run_model(Arguments: list, model_function, model_type: str):
     parser = HfArgumentParser((Argument for Argument in Arguments))
     args, _ = parser.parse_args_into_dataclasses(return_remaining_strings=True)
+    breakpoint()
     args.model_type = model_type
     model_function(args)
 
@@ -74,6 +77,12 @@ def main():
 
     elif model_type == "T5_evidence_eval":
         run_model([DataPathArguments, T5EvidenceFindingEvalArguments], transformer_eval, "T5_evidence_eval")
+    
+    elif model_type == "T5_evidence_IO":
+        run_model([DataPathArguments, T5EvidenceIOTrainArguments, WandbArguments], transformer_train, "T5_evidence_IO")
+
+    elif model_type == "T5_evidence_IO_eval":
+        run_model([DataPathArguments, T5EvidenceIOEvalArguments], transformer_eval, "T5_evidence_IO_eval")
 
 
 if __name__ == "__main__":

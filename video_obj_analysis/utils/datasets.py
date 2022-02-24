@@ -8,12 +8,9 @@ from skimage.transform import resize
 from torch.utils.data import Dataset
 
 
-##import matplotlib.pyplot as plt
-##import matplotlib.patches as patches
-
 class ImageFolder(Dataset):
     def __init__(self, folder_path, img_size=416):
-        self.files = sorted(glob.glob('%s/*.*' % folder_path))
+        self.files = sorted(glob.glob(f"{folder_path}/*.*"))
         self.img_shape = (img_size, img_size)
 
     def __getitem__(self, index):
@@ -27,9 +24,9 @@ class ImageFolder(Dataset):
         # Determine padding
         pad = ((pad1, pad2), (0, 0), (0, 0)) if h <= w else ((0, 0), (pad1, pad2), (0, 0))
         # Add padding
-        input_img = np.pad(img, pad, 'constant', constant_values=127.5) / 255.
+        input_img = np.pad(img, pad, "constant", constant_values=127.5) / 255.
         # Resize and normalize
-        input_img = resize(input_img, (*self.img_shape, 3), mode='reflect')
+        input_img = resize(input_img, (*self.img_shape, 3), mode="reflect")
         # Channels-first
         input_img = np.transpose(input_img, (2, 0, 1))
         # As pytorch tensor
@@ -43,25 +40,23 @@ class ImageFolder(Dataset):
 
 class ListDataset(Dataset):
     def __init__(self, list_path, img_size=416):
-        with open(list_path, 'r') as file:
-            self.img_files = file.readlines()
-        self.label_files = [path.replace('images', 'labels').replace('.png', '.txt').replace('.jpg', '.txt') for path in self.img_files]
+        with open(list_path) as file:
+            self.label_files = [path.replace("images", "labels").replace(".png", ".txt").replace(".jpg", ".txt")
+                                for path in file]
         self.img_shape = (img_size, img_size)
         self.max_objects = 50
 
-    def __getitem__(self, index):
-
-        #---------
+    def __getitem__(self, i: int):
+        # ---------
         #  Image
-        #---------
+        # ---------
 
-        img_path = self.img_files[index % len(self.img_files)].rstrip()
+        img_path = self.img_files[i % len(self.img_files)].rstrip()
         img = np.array(Image.open(img_path))
 
-        # Handles images with less than three channels
-        while len(img.shape) != 3:
-            index += 1
-            img_path = self.img_files[index % len(self.img_files)].rstrip()
+        while len(img.shape) != 3:  # It handles images with less than 3 channels.
+            i += 1
+            img_path = self.img_files[i % len(self.img_files)].rstrip()
             img = np.array(Image.open(img_path))
 
         h, w, _ = img.shape
@@ -71,29 +66,29 @@ class ListDataset(Dataset):
         # Determine padding
         pad = ((pad1, pad2), (0, 0), (0, 0)) if h <= w else ((0, 0), (pad1, pad2), (0, 0))
         # Add padding
-        input_img = np.pad(img, pad, 'constant', constant_values=128) / 255.
+        input_img = np.pad(img, pad, "constant", constant_values=128) / 255.
         padded_h, padded_w, _ = input_img.shape
         # Resize and normalize
-        input_img = resize(input_img, (*self.img_shape, 3), mode='reflect')
+        input_img = resize(input_img, (*self.img_shape, 3), mode="reflect")
         # Channels-first
         input_img = np.transpose(input_img, (2, 0, 1))
         # As pytorch tensor
         input_img = torch.from_numpy(input_img).float()
 
-        #---------
+        # ---------
         #  Label
-        #---------
+        # ---------
 
-        label_path = self.label_files[index % len(self.img_files)].rstrip()
+        label_path = self.label_files[i % len(self.img_files)].rstrip()
 
         labels = None
         if os.path.exists(label_path):
             labels = np.loadtxt(label_path).reshape(-1, 5)
             # Extract coordinates for unpadded + unscaled image
-            x1 = w * (labels[:, 1] - labels[:, 3]/2)
-            y1 = h * (labels[:, 2] - labels[:, 4]/2)
-            x2 = w * (labels[:, 1] + labels[:, 3]/2)
-            y2 = h * (labels[:, 2] + labels[:, 4]/2)
+            x1 = w * (labels[:, 1] - labels[:, 3] / 2)
+            y1 = h * (labels[:, 2] - labels[:, 4] / 2)
+            x2 = w * (labels[:, 1] + labels[:, 3] / 2)
+            y2 = h * (labels[:, 2] + labels[:, 4] / 2)
             # Adjust for added padding
             x1 += pad[1][0]
             y1 += pad[0][0]

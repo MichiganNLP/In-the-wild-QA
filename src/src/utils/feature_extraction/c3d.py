@@ -1,3 +1,5 @@
+from typing import Union
+
 import torch
 import torch.nn as nn
 
@@ -5,7 +7,8 @@ import torch.nn as nn
 # Copied from https://github.com/DavideA/c3d-pytorch/
 class C3D(nn.Module):
     """The C3D network as described in [1]."""
-    def __init__(self, pretrained=False):
+
+    def __init__(self, pretrained: bool = False) -> None:
         super().__init__()
 
         self.conv1 = nn.Conv3d(3, 64, kernel_size=(3, 3, 3), padding=(1, 1, 1))
@@ -36,9 +39,10 @@ class C3D(nn.Module):
         self.softmax = nn.Softmax()
 
         if pretrained:
-            self.load_state_dict(torch.load('data/features/c3d.pickle'))
+            self.load_state_dict(torch.load("data/features/c3d.pickle"))
 
-    def forward(self, x, extract_features=False):
+    def forward(self, x: torch.Tensor, extract_features: bool = False) -> Union[torch.Tensor,
+                                                                                tuple[torch.Tensor, torch.Tensor]]:
         h = self.relu(self.conv1(x))
         h = self.pool1(h)
 
@@ -69,8 +73,9 @@ class C3D(nn.Module):
         logits = self.fc8(h)
         return self.softmax(logits)
 
-    def extract_features(self, x):
+    def extract_features(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
         return self.forward(x, extract_features=True)
+
 
 """
 References

@@ -1,10 +1,10 @@
 import json
 from typing import Any, Mapping
 
-from src.dataloader import VQADataset
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 
-class RTRDataset(VQADataset):
+class RTRDataset(VideoQAWithEvidenceDataset):
     def __init__(self, data_dir: str, embedding_model) -> None:
         self.embedding_model = embedding_model
         super().__init__(data_dir)

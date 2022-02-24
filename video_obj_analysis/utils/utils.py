@@ -6,11 +6,10 @@ import torch
 
 def load_classes(path):
     """
-    Loads class labels at 'path'
+    Loads class labels at `path`
     """
-    fp = open(path, "r")
-    names = fp.read().split("\n")[:-1]
-    return names
+    with open(path) as fp:
+        return fp.read().split("\n")[:-1]
 
 
 def weights_init_normal(m):
@@ -26,7 +25,7 @@ def compute_ap(recall, precision):
     """ Compute the average precision, given the recall and precision curves.
     Code originally from https://github.com/rbgirshick/py-faster-rcnn.
 
-    # Arguments
+    # arguments
         recall:    The recall curve (list).
         precision: The precision curve (list).
     # Returns
@@ -46,8 +45,7 @@ def compute_ap(recall, precision):
     i = np.where(mrec[1:] != mrec[:-1])[0]
 
     # and sum (\Delta recall) * prec
-    ap = np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])
-    return ap
+    return np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])
 
 
 def bbox_iou(box1, box2, x1y1x2y2=True):
@@ -88,13 +86,13 @@ def bbox_iou_numpy(box1, box2):
     Parameters
     ----------
     box1 : ndarray
-        (N, 4) shaped array with bboxes
+        (n, 4) shaped array with bboxes
     box2 : ndarray
         (M, 4) shaped array with bboxes
     Returns
     -------
     : ndarray
-        (N, M) shaped array with IoUs
+        (n, M) shaped array with IoUs
     """
     area = (box2[:, 2] - box2[:, 0]) * (box2[:, 3] - box2[:, 1])
 

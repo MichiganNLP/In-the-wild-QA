@@ -4,6 +4,7 @@ variables:
 dependencies:
   - pip:
     -            scenedetect
+  - conda-forge::accimage
   -              beautifulsoup4
   - conda-forge::cached_path
   - conda-forge::cudatoolkit
@@ -23,9 +24,9 @@ dependencies:
   -              pip
   -              pillow
   - conda-forge::py-rouge=1.1
-  -              python
-  -     pytorch::pytorch
-  - conda-forge::pytorch-lightning
+  -              python=3.9
+  -     pytorch::pytorch=*=*cuda*
+  - conda-forge::pytorch-lightning=1.6
   - conda-forge::pytube
   -              requests
   - conda-forge::rich  # For fancy output.
@@ -33,6 +34,7 @@ dependencies:
   - conda-forge::sentence-transformers
   -              scikit-image
   -              scikit-learn
+  -              scikit-learn-intelex
   -              scipy
   -              tabulate
   -              tensorboard

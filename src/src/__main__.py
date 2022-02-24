@@ -1,17 +1,20 @@
+from __future__ import annotations
+
 import argparse
 import sys
-from typing import Callable, Iterable, Union
+from collections.abc import Iterable
+from typing import Callable
 
 from transformers import HfArgumentParser
 from transformers.hf_argparser import DataClassType
 
 from src.closest_rtr.closest_rtr import closest_rtr
 from src.mca.mca import most_common_ans
-from src.parse_args import ClosestRetrievalArguments, DataPathArguments, MODEL_CHOICES, RandomEvidenceArguments, \
-    T5EvalArguments, T5EvidenceFindingEvalArguments, T5EvidenceFindingTrainArguments, T5TextVisualEvalArguments, \
-    T5TextVisualTrainArguments, T5TrainArguments, T5ZeroShotArguments, T5EvidenceIOTrainArguments, \
-    VIOLETDecoderTrainArguments, VIOLETDecoderEvalArguments, T5EvidenceIOEvalArguments, T5MultiTaskTrainArguments, \
-    CLIPDecoderTrainArguments, CLIPDecoderEvalArguments, T5MultiTaskEvalArguments, WandbArguments
+from src.parse_args import CLIPDecoderEvalArguments, CLIPDecoderTrainArguments, ClosestRetrievalArguments, \
+    DataPathArguments, MODEL_CHOICES, RandomEvidenceArguments, T5EvalArguments, T5EvidenceFindingEvalArguments, \
+    T5EvidenceFindingTrainArguments, T5EvidenceIOEvalArguments, T5EvidenceIOTrainArguments, T5MultiTaskEvalArguments, \
+    T5MultiTaskTrainArguments, T5TextVisualEvalArguments, T5TextVisualTrainArguments, T5TrainArguments, \
+    T5ZeroShotArguments, VIOLETDecoderTrainArguments, WandbArguments
 from src.rdm.random_evidence import random_evidence
 from src.rdm.random_text import random_text
 from src.transformer_models.eval import transformer_eval
@@ -19,7 +22,7 @@ from src.transformer_models.train import transformer_train
 from src.utils.timer import Timer, duration
 
 
-def run_model(dataclass_types: Union[DataClassType, Iterable[DataClassType]],
+def run_model(dataclass_types: DataClassType | Iterable[DataClassType],
               model_function: Callable[[argparse.Namespace], None], model_type: str, timer: Timer) -> None:
     # Don't pass a generator here as it misbehaves. See https://github.com/huggingface/transformers/pull/15758
     parser = HfArgumentParser(dataclass_types)

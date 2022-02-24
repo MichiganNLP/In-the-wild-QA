@@ -1,288 +1,301 @@
-from typing import Any, Literal, Mapping, Optional, Union, Tuple
+from __future__ import annotations
+
+import inspect
+from collections.abc import Mapping
+from typing import Any, Literal
 
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
 from overrides import overrides
+from pytorch_lightning.utilities.types import EPOCH_OUTPUT
 from torch.optim import AdamW
-from transformers import PreTrainedTokenizerBase, T5Config, T5ForConditionalGeneration, \
-    VisualBertForQuestionAnswering, get_linear_schedule_with_warmup
-from transformers.models.t5.modeling_t5 import T5EncoderModel
-from transformers.modeling_outputs import Seq2SeqLMOutput
-from collections import defaultdict
+from torchmetrics import BLEUScore, Metric, SQuAD
+from torchmetrics.text import ROUGEScore
+from transformers import PreTrainedTokenizerBase, T5ForConditionalGeneration, get_linear_schedule_with_warmup
 
-from src.transformer_models.t5_and_visual import T5AndVisual, TextVisualEncoder, _combine_attention_masks
-from src.transformer_models.violet_decoder.model import VioletWithDecoder
+from src.decoding import compute_answer_prob, compute_answer_probs
+from src.metrics import IouF1, Perplexity, get_best_evidence_spans, normalize_answer
 from src.transformer_models.clip_decoder import CLIPWithDecoder
-from src.utils.utils import device
+from src.transformer_models.t5_and_visual import T5AndVisual, T5AndVisualEvidence, T5AndVisualEvidenceIO, T5MultiTask
+from src.transformer_models.violet_decoder.model import VioletWithDecoder
+
+TYPE_SPLIT = Literal["train", "val", "test"]
+TYPE_BATCH = Mapping[str, torch.Tensor]
 
 
-class T5AndVisualEvidence(T5EncoderModel):  # noqa
-    def __init__(self, config: T5Config, visual_size: int) -> None:
-        super().__init__(config)
-        self.encoder = TextVisualEncoder(self.encoder, visual_size)
-        self.start_end = nn.Linear(self.config.d_model, 2)
-
-    @overrides(check_signature=False)
-    def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                **kwargs) -> tuple[torch.Tensor, torch.Tensor]:
-        outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
-                               visual_attention_mask=visual_attention_mask, **kwargs)
-
-        visual_start = masked_caption_ids.shape[1]
-        visual_hidden = outputs.last_hidden_state[:, visual_start:, :]
-
-        start_end = self.start_end(visual_hidden)
-
-        return start_end[..., 0], start_end[..., 1]
-
-    def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None,
-                visual_attention_mask: Optional[torch.Tensor] = None) -> tuple[torch.Tensor, torch.Tensor]:
-        start, end = self(masked_caption_ids, visual, attention_mask, visual_attention_mask)
-        return start.log_softmax(dim=-1), end.log_softmax(dim=-1)
+def log_lr(pl_module: pl.LightningModule, **kwargs) -> None:
+    for i, optimizer in enumerate(pl_module.trainer.optimizers):
+        for j, param_group in enumerate(optimizer.param_groups):
+            if (lr := param_group.get("lr")) is not None:
+                pl_module.log(f"lr_{i}_group_{j}", lr, **kwargs)
 
 
-class T5AndVisualEvidenceIO(T5EncoderModel):  # noqa
-    def __init__(self, config: T5Config, visual_size: int) -> None:
-        super().__init__(config)
-        self.encoder = TextVisualEncoder(self.encoder, visual_size)
-        self.linear = nn.Linear(self.config.d_model, 1)
-
-    @overrides(check_signature=False)
-    def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                **kwargs) -> tuple[torch.Tensor, torch.Tensor]:
-        outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
-                               visual_attention_mask=visual_attention_mask, **kwargs)
-        visual_start = masked_caption_ids.shape[1]
-        visual_hidden = outputs.last_hidden_state[:, visual_start:, :]
-        transformed_hidden = self.linear(visual_hidden) # reduce feature dimension to 1
-        prob_in = torch.sigmoid(transformed_hidden[..., 0])   # calculate the probability that the frame is "I"
-        return prob_in
-
-    def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None,
-                visual_attention_mask: Optional[torch.Tensor] = None) -> tuple[torch.Tensor, torch.Tensor]:
-        prob_in = self(masked_caption_ids, visual, attention_mask, visual_attention_mask)
-        in_index = (prob_in >= 0.5).nonzero(as_tuple=False).cpu()   # move variables to cpu to append to list
-        results = defaultdict(list)
-        # get the position for each frame that is within the evidence
-        for [batch_idx, frame_idx] in in_index:
-            batch_idx, frame_idx = int(batch_idx), int(frame_idx)
-            if not results[batch_idx]:
-                results[batch_idx].append([frame_idx, frame_idx])
-            else:
-                last_frame_idx = results[batch_idx][-1][1]
-                if last_frame_idx + 1 == frame_idx:
-                    results[batch_idx][-1][1] = frame_idx
-                else:
-                    results[batch_idx].append([frame_idx, frame_idx])
-
-        results_with_score = defaultdict(list)
-        # get the score of the evidence
-        for b, start_ends in results.items():
-            for [start_idx, end_idx] in start_ends:
-                score = torch.mean(prob_in[b][start_idx: end_idx + 1]).cpu()
-                results_with_score[b].append([start_idx, end_idx, float(score)])
-        
-        # sort the evidence based on the score
-        for b in results_with_score:
-            results_with_score[b].sort(key=lambda x: x[-1], reverse=True)
-        return results_with_score
-
-class T5MultiTask(T5ForConditionalGeneration):
-
-    def __init__(self, config: T5Config, visual_size: int) -> None:
-        super().__init__(config)
-        self.encoder = TextVisualEncoder(self.encoder, visual_size)  # noqa
-        self.start_end = nn.Linear(self.config.d_model, 2)
-
-    @overrides(check_signature=False)
-    def prepare_inputs_for_generation(self, input_ids: torch.Tensor, visual: Optional[torch.Tensor] = None,
-                                      visual_attention_mask: Optional[torch.Tensor] = None,
-                                      **kwargs) -> Mapping[str, Any]:
-        output = super().prepare_inputs_for_generation(input_ids, **kwargs)  # noqa
-        output["visual"] = visual
-        output["visual_attention_mask"] = visual_attention_mask
-        return output
-
-    @overrides(check_signature=False)
-    def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                labels: Optional[torch.Tensor] = None, **kwargs) -> Union[Seq2SeqLMOutput, tuple[torch.Tensor, ...]]:
-        start = end = None
-        if "encoder_outputs" not in kwargs:
-            # only here when doing the multi-task training
-            start, end, encoder_outputs = self._evidence_forward(masked_caption_ids, visual=visual, attention_mask=attention_mask,
-                                visual_attention_mask=visual_attention_mask, **kwargs)
-            kwargs["encoder_outputs"] = encoder_outputs
-
-        # The attention mask used in the encoder (the combined mask) is actually necessary for the decoder even when
-        # providing "encoder_outputs". We could compute it once in the encoder, return it as one of its fields and use
-        # it here. However, in `T5FillerModel.generative_step` we input the encoder outputs but without the mask
-        # since it's constructed from the `generate` output which in turn only returns certain fields (not the mask).
-        attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)
-        outputs = super().forward(attention_mask=attention_mask, labels=labels, **kwargs) # noqa
-
-        # add variables on the fly
-        if start and end:
-            setattr(outputs, "start", start)
-            setattr(outputs, "end", end)
-        return outputs
-    
-    def _evidence_forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                labels: Optional[torch.Tensor] = None, **kwargs) -> tuple[torch.Tensor, torch.Tensor, Seq2SeqLMOutput]: 
-        encoder_outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
-                                        visual_attention_mask=visual_attention_mask, **kwargs)
-        visual_start = masked_caption_ids.shape[1]
-        visual_hidden = encoder_outputs.last_hidden_state[:, visual_start:, :]
-
-        start_end = self.start_end(visual_hidden)
-        return start_end[..., 0], start_end[..., 1], encoder_outputs
-
-    
-    def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                **kwargs) -> tuple[torch.Tensor, torch.Tensor]:
-        start, end, _ = self._evidence_forward(masked_caption_ids, visual=visual, attention_mask=attention_mask,
-                         visual_attention_mask=visual_attention_mask, **kwargs)
-        return start.log_softmax(dim=-1), end.log_softmax(dim=-1)
+def model_type_to_class(model_type: str) -> type[T5ForConditionalGeneration]:  # noqa
+    return {
+        "T5_text_and_visual": T5AndVisual,
+        "T5_evidence": T5AndVisualEvidence,
+        "T5_evidence_IO": T5AndVisualEvidenceIO,
+        "T5_multi_task": T5MultiTask,
+        "T5_train": T5ForConditionalGeneration,
+        "T5_zero_shot": T5ForConditionalGeneration,
+        "violet_decoder": VioletWithDecoder,
+        "clip_decoder": CLIPWithDecoder,
+    }[model_type]
 
 
-class FineTuner(pl.LightningModule):  # noqa
-    def __init__(self, tokenizer: Union[PreTrainedTokenizerBase, dict], **kwargs) -> None:  # noqa
+class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
+    def __init__(self, tokenizer: PreTrainedTokenizerBase, generate_kwargs: Mapping[str, Any] | None = None,
+                 **kwargs) -> None:  # noqa
         super().__init__()
-
-        self.tokenizer = tokenizer
 
         self.save_hyperparameters()
 
-        if self.hparams.model_type == "T5_text_and_visual":
-            self.model = T5AndVisual.from_pretrained(self.hparams.model_name_or_path,
-                                                     visual_size=self.hparams.visual_size)
-        elif self.hparams.model_type == "T5_evidence":
-            self.model = T5AndVisualEvidence.from_pretrained(self.hparams.model_name_or_path,
-                                                             visual_size=self.hparams.visual_size)
-            self.cross_entropy_loss = nn.CrossEntropyLoss()
+        self.tokenizer = tokenizer
 
-        elif self.hparams.model_type == "T5_evidence_IO":
-            self.model = T5AndVisualEvidenceIO.from_pretrained(self.hparams.model_name_or_path,
-                                                                visual_size=self.hparams.visual_size)   
-            self.cross_entropy_loss = nn.CrossEntropyLoss()
-        elif self.hparams.model_type == "T5_multi_task":
-            self.model = T5MultiTask.from_pretrained(self.hparams.model_name_or_path,
-                                                    visual_size=self.hparams.visual_size)
-            self.cross_entropy_loss = nn.CrossEntropyLoss()
-        elif self.hparams.model_type == "violet_decoder":
-            self.model = VioletWithDecoder.from_pretrained(self.hparams.model_name_or_path, 
-                                        pretrained_violet_ckpt_path=self.hparams.pretrained_violet_ckpt_path)
+        model_class = model_type_to_class(self.hparams.model_type)
+        model_kwargs = {}
+        if "visual_size" in inspect.signature(model_class.__init__).parameters:
+            model_kwargs["visual_size"] = self.hparams.visual_size
+        if self.hparams.model_type == "violet_decoder":
+            model_kwargs["pretrained_violet_ckpt_path"] = self.hparams.pretrained_violet_ckpt_path
         elif self.hparams.model_type == "clip_decoder":
-            self.model = CLIPWithDecoder.from_pretrained(self.hparams.model_name_or_path,
-                                        pretrained_clip_ckpt_path=self.hparams.pretrained_clip_ckpt_path,
-                                        max_seq=self.hparams.max_seq_length)
-        else:
-            assert self.hparams.model_type in ["T5_train", "T5_zero_shot"]
-            self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
+            model_kwargs["pretrained_clip_ckpt_path"] = self.hparams.pretrained_clip_ckpt_path
+        self.model = model_class.from_pretrained(self.hparams.model_name_or_path, **model_kwargs)
+
+        self.answers_generation_enabled = isinstance(self.model, T5ForConditionalGeneration)
+        self.evidence_selection_enabled = "evidence" in self.hparams.model_type or "multi" in self.hparams.model_type
+
+        self.visual_input_enabled = "visual" in self.hparams.model_type or self.evidence_selection_enabled
+
+        self.cross_entropy_loss = nn.CrossEntropyLoss()
+
+        self.answer_metrics: Mapping[str, Metric] = nn.ModuleDict({"bleu1": BLEUScore(1), "bleu2": BLEUScore(2),
+                                                                   "bleu3": BLEUScore(3)})
+        self.rouge = ROUGEScore()
+        # TODO: uncomment when torchmetrics releases this fix: https://github.com/PyTorchLightning/metrics/pull/912
+        # self.bert_score = BERTScore(num_threads=0)
+        self.perplexity = Perplexity()
+        self.squad = SQuAD()
+
+        self.iou_f1 = IouF1()
+
+        self.generate_kwargs = generate_kwargs or {}
+
+        self.generate_kwargs.setdefault("return_dict_in_generate", True)
+        self.generate_kwargs.setdefault("output_scores", True)
+
+        # The following are useful to compute the encoder layer output only once.
+        self.generate_kwargs.setdefault("output_hidden_states", True)
+        self.generate_kwargs.setdefault("output_attentions", True)
 
     @overrides(check_signature=False)
-    def forward(self, input_ids: torch.Tensor, attention_mask: Optional[torch.Tensor] = None,
-                visual: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                decoder_input_ids: Optional[torch.Tensor] = None,
-                decoder_attention_mask: Optional[torch.Tensor] = None, labels: Optional[torch.Tensor] = None) -> Any:
-        if labels is not None:
-            if isinstance(self.tokenizer, dict):
-                labels[labels == self.tokenizer["decoder_tokenizer"].pad_token_id] = -100  # For the loss computation.
-            else:
-                labels[labels == self.tokenizer.pad_token_id] == -100
-        
-        if self.hparams.model_type in {"T5_text_and_visual", "T5_multi_task", "violet_decoder", "clip_decoder"}:
-            kwargs = {"attention_mask": attention_mask, "visual": visual,
-                        "visual_attention_mask": visual_attention_mask, "labels": labels}
-        elif self.hparams.model_type in {"T5_evidence", "T5_evidence_IO"}:
-            kwargs = {"attention_mask": attention_mask, "visual": visual,
-                        "visual_attention_mask": visual_attention_mask}
-        else:
-            kwargs = {"attention_mask": attention_mask, "labels": labels}
+    def forward(self, input_ids: torch.Tensor, attention_mask: torch.Tensor | None = None,
+                visual: torch.Tensor | None = None, visual_attention_mask: torch.Tensor | None = None,
+                answer_ids: torch.Tensor | None = None, **kwargs) -> Any:
+        if answer_ids is not None:
+            answer_ids = answer_ids.clone()
+            answer_ids[answer_ids == self.tokenizer.pad_token_id] = -100  # For the loss computation.
 
-        return self.model(input_ids, **kwargs)
-    
-    def _evidence_loss(self, raw_start, raw_end, batch):
+        if self.visual_input_enabled:
+            kwargs["visual"] = visual
+            kwargs["visual_attention_mask"] = visual_attention_mask
+
+        if self.answers_generation_enabled:
+            kwargs["labels"] = answer_ids
+
+        return self.model(input_ids, attention_mask=attention_mask, **kwargs)
+
+    def _evidence_loss(self, start_scores: torch.Tensor, end_scores: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
         evidence = batch["evidence"]
 
         starts = evidence[:, :, 0]
         ends = evidence[:, :, 1]
 
-        start_loss = self.cross_entropy_loss(raw_start, starts[:, 0])  # FIXME: we predict only one evidence.
-        end_loss = self.cross_entropy_loss(raw_end, ends[:, 0])
-        
+        start_loss = self.cross_entropy_loss(start_scores, starts[:, 0])  # FIXME: we predict only one evidence.
+        end_loss = self.cross_entropy_loss(end_scores, ends[:, 0])
+
         return start_loss + end_loss
 
-    def _evidence_IO_loss(self, prob_in, batch):
-        # construct the groundtruth sequence
-        gold = torch.zeros(prob_in.shape)
+    def _evidence_io_loss(self, prob_in: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
         evidence = batch["evidence"]
         starts = evidence[:, :, 0]
         ends = evidence[:, :, 1]
         batch_size, evidence_number = starts.shape
-        
+
+        ground_truth = torch.zeros_like(prob_in)
         for b_idx in range(batch_size):
             for e_idx in range(evidence_number):
-                gold[b_idx][starts[b_idx][e_idx]: ends[b_idx][e_idx]] = 1.0
-        gold = gold.to(device)
-        loss = self.cross_entropy_loss(prob_in, gold)
+                ground_truth[b_idx, starts[b_idx][e_idx]: ends[b_idx][e_idx]] = 1
 
-    def _seq2seq_loss_exact_match(self, batch, outputs, split):
-        labels = batch["target_ids"]
-        loss = outputs.loss
-        dtype = loss.dtype
-        preds = outputs[1].argmax(dim=-1)
-        exact_match = (preds == labels).all(dim=-1).to(dtype).mean()  # noqa
-        self.log(f"{split}_em", exact_match, prog_bar=True)
+        return self.cross_entropy_loss(prob_in, ground_truth)
+
+    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> Mapping[str, torch.Tensor]:
+        kwargs = {}
+
+        if split != "train":
+            kwargs["output_attentions"] = True
+            kwargs["output_hidden_states"] = True
+
+        model_output = self(input_ids=batch["question_ids"], attention_mask=batch["question_mask"],
+                            visual=batch.get("visual"), visual_attention_mask=batch.get("visual_mask"),
+                            answer_ids=batch["answer_ids"], **kwargs)
+
+        output = {}
+
+        if split != "train":
+            output["encoder_hidden_states"] = model_output.encoder_hidden_states
+            output["encoder_attentions"] = model_output.encoder_attentions
+
+        if self.answers_generation_enabled:
+            answer_loss = model_output.loss
+            output["answer_logits"] = model_output.logits
+        else:
+            answer_loss = 0
+
+        if self.evidence_selection_enabled:
+            if self.hparams.model_type in {"T5_evidence", "T5_multi_task"}:
+                if self.hparams.model_type == "T5_evidence":
+                    start_scores, end_scores = model_output
+                else:
+                    start_scores, end_scores = model_output.start, model_output.end
+
+                output["start_scores"] = start_scores
+                output["end_scores"] = end_scores
+
+                evidence_loss = self._evidence_loss(start_scores, end_scores, batch)
+            elif self.hparams.model_type == "T5_evidence_IO":
+                evidence_loss = self._evidence_io_loss(model_output, batch)
+            else:
+                raise ValueError(f"Unknown model type: {self.hparams.model_type}")
+        else:
+            evidence_loss = 0
+
+        output["loss"] = (getattr(self.hparams, "vqa_weight", 1) * answer_loss
+                          + getattr(self.hparams, "evidence_weight", 1) * evidence_loss)
+        self.log(f"loss/{split}", output["loss"])
+
+        return output
+
+    @overrides(check_signature=False)
+    def training_step(self, batch: TYPE_BATCH, batch_idx: int = 0) -> torch.Tensor:
+        loss = self._step(batch, split="train")["loss"]
+
+        batch_size = len(batch["question"])
+        self.log("batch_size", float(batch_size))
+
+        log_lr(self)
+
         return loss
 
-    def _step(self, batch: Mapping[str, Any], split: Literal["train", "val", "test"]) -> Optional[torch.Tensor]:
-        # We clone `label_ids` because `forward` modifies it, but later we need to use it.
-        outputs = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
-                        visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"],
-                        labels=batch["target_ids"].clone(), decoder_attention_mask=batch["target_mask"])
-    
-        if self.hparams.model_type == "T5_evidence":
-            raw_start, raw_end = outputs
-            loss = self._evidence_loss(raw_start, raw_end, batch)
+    def _generative_step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> None:
+        step_output = self._step(batch, split=split)
 
-            
-        elif self.hparams.model_type == "T5_evidence_IO":
+        if self.answers_generation_enabled:
+            id_ = batch["id"]
+            answer_ids = batch["answer_ids"]
+            answers = batch["answers"]
 
-            loss = self._evidence_IO_loss(outputs, batch)
+            model_config = self.model.config
 
-        elif self.hparams.model_type == "T5_multi_task":
-            evidence_loss = self._evidence_loss(outputs.start, outputs.end, batch)
-            seq2seq_loss = self._seq2seq_loss_exact_match(batch, outputs, split)
-            loss = self.hparams.vqa_weight * seq2seq_loss + self.hparams.evidence_weight * evidence_loss
-        elif self.hparams.model_type in ["violet_decoder", "clip_decoder"]:
-            seq2seq_loss = self._seq2seq_loss_exact_match(batch, outputs, split)
-            loss = seq2seq_loss
-        else:
-            loss = self._seq2seq_loss_exact_match(batch, outputs, split)
+            ground_truth_logits = step_output["answer_logits"]
+            ground_truth_probs = compute_answer_probs(ground_truth_logits, answer_ids, model_config,
+                                                      ignore_eos_token=True)
+            ground_truth_prob = compute_answer_prob(ground_truth_probs)
+            self.log(f"ground_truth_prob/{split}", ground_truth_prob)
 
-        self.log(f"{split}_loss", loss)
+            perplexity_mask = ((answer_ids != model_config.pad_token_id) & (answer_ids != model_config.eos_token_id))
+            self.perplexity(ground_truth_probs, perplexity_mask)
+            self.log(f"perplexity/{split}", self.perplexity)
 
-        return loss if split == "train" else None
+            # Generate the answer and compute metrics based on it:
+
+            kwargs = {}
+
+            if self.visual_input_enabled:
+                kwargs["visual"] = batch["visual"]
+                kwargs["visual_attention_mask"] = batch["visual_mask"]
+
+            # FIXME: this doesn't work with all models, because the encoders are different. We should call first the
+            #  encoder and save the result. But for it to work, the models need to implement the encoder well.
+            # if model_config.is_encoder_decoder:  # Reuse the encoder output to avoid computing it twice.
+            #     kwargs["encoder_outputs"] = BaseModelOutput(last_hidden_state=step_output["encoder_hidden_states"][-1]
+            #                                                 hidden_states=step_output["encoder_hidden_states"],
+            #                                                 attentions=step_output["encoder_attentions"])
+
+            generated_output = self.model.generate(batch["question_ids"], attention_mask=batch["question_mask"],
+                                                   **self.generate_kwargs, **kwargs)
+            generated_ids = generated_output.sequences
+            generated = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+
+            generated_logits = torch.stack(generated_output.scores, dim=1)
+            generated_probs = compute_answer_probs(generated_logits, generated_ids, model_config, ignore_eos_token=True)
+            generated_prob = compute_answer_prob(generated_probs)
+            self.log(f"generated_prob/{split}", generated_prob)
+
+            # We normalize the generated and the ground truth answers before computing the metrics.
+            #
+            # Note BLEU, ROUGE, and SQuAD metrics perform different normalizations by default, some of them can't be
+            # changed. Still, it doesn't matter because they do basic stuff, as we do, that's good enough for
+            # evaluation (similar for the tokenization). But we do something on our end because BLEU doesn't do
+            # any normalization.
+            normalized_generated = [normalize_answer(generated_instance) for generated_instance in generated]
+            normalized_answers = [[normalize_answer(answer_instance) for answer_instance in answers_instance]
+                                  for answers_instance in answers]
+
+            for name, metric in self.answer_metrics.items():
+                metric(normalized_generated, normalized_answers)
+                self.log(f"{name}/{split}", metric)
+
+            # BERTScore doesn't support multiple targets, and we have a variable number of answer.
+            # We don't complicate it much and just evaluate the first answer (the original one). It's good enough.
+            # first_normalized_answer = [normalized_answers_instance[0]
+            #                            for normalized_answers_instance in normalized_answers]
+            # self.bert_score(normalized_generated, first_normalized_answer)
+            # self.log(f"bert_score_first_answer/{split}", self.bert_score)
+
+            # We handle the following metrics manually by doing `update`, `compute` and `reset` because it returns a
+            # dictionary of tensors instead of a single tensor, so it can't be done automatically by PL.
+
+            self.rouge.update(normalized_generated, normalized_answers)
+
+            squad_format_generated = [{"prediction_text": generated_instance, "id": id_instance}
+                                      for generated_instance, id_instance in zip(normalized_generated, id_)]
+            squad_format_answers = [{"answers": {"text": answers_instance}, "id": id_instance}
+                                    for answers_instance, id_instance in zip(normalized_answers, id_)]
+            self.squad.update(squad_format_generated, squad_format_answers)
+
+        if self.evidence_selection_enabled:
+            start_scores, end_scores = step_output["start_scores"], step_output["end_scores"]
+            start, end = get_best_evidence_spans(start_scores, end_scores, mask=batch["visual_mask"])
+            pred_spans = [list(zip(start_instance, end_instance))
+                          for start_instance, end_instance in zip(start.tolist(), end.tolist())]
+
+            self.iou_f1(pred_spans, batch["evidence"].tolist())
+            self.log(f"iou_f1/{split}", self.iou_f1)
 
     @overrides(check_signature=False)
-    def training_step(self, batch: Mapping[str, Any], batch_idx: int = 0) -> torch.Tensor:
-        return self._step(batch, split="train")
+    def validation_step(self, batch: TYPE_BATCH, batch_idx) -> None:
+        self._generative_step(batch, split="val")
 
     @overrides(check_signature=False)
-    def validation_step(self, batch: Mapping[str, Any], batch_idx) -> None:
-        return self._step(batch, split="val")
+    def test_step(self, batch: TYPE_BATCH, batch_idx) -> None:
+        self._generative_step(batch, split="test")
+
+    def _generative_epoch_end(self, split: TYPE_SPLIT) -> None:
+        self.log_dict({f"{k}/{split}": v for k, v in self.rouge.compute().items()})
+        self.rouge.reset()
+
+        self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()})
+        self.squad.reset()
 
     @overrides(check_signature=False)
-    def test_step(self, batch: Mapping[str, Any], batch_idx) -> None:
-        return self._step(batch, split="test")
+    def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
+        self._generative_epoch_end(split="val")
+
+    @overrides(check_signature=False)
+    def test_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
+        self._generative_epoch_end(split="test")
 
     @overrides
     def configure_optimizers(self) -> Mapping[str, Any]:
@@ -299,16 +312,8 @@ class FineTuner(pl.LightningModule):  # noqa
         ]
         optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate, eps=self.hparams.adam_epsilon)
 
-        self.trainer.reset_train_dataloader()
-
-        t_total = (
-                (len(self.trainer.train_dataloader.loaders)
-                 // (self.hparams.train_batch_size * max(1, self.hparams.n_gpu)))
-                // self.hparams.gradient_accumulation_steps
-                * float(self.hparams.num_train_epochs)
-        )
         scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=self.hparams.warmup_steps,
-                                                    num_training_steps=t_total)
+                                                    num_training_steps=self.trainer.estimated_stepping_batches)
 
         return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "step"}}
 

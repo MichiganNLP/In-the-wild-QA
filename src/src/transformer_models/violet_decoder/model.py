@@ -13,7 +13,6 @@ class VioletWithDecoder(T5ForConditionalGeneration):
         super().__init__(config)
         self.encoder = VIOLET_Base()    # use VIOLET encoder instead
         self.encoder.load_ckpt(pretrained_violet_ckpt_path)
-
     
     @overrides(check_signature=False)
     def forward(self, txt: Optional[torch.Tensor] = None, attention_mask: Optional[torch.Tensor] = None,

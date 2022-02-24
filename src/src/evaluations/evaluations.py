@@ -1,21 +1,17 @@
 import warnings
-from collections import defaultdict
-from typing import Iterable, Literal, Mapping
+from collections.abc import Iterable, Mapping, Sequence
+from typing import Literal
 
-import numpy as np
 from nltk import word_tokenize
 from nltk.translate.bleu_score import sentence_bleu
 from rouge import Rouge
-from tqdm import tqdm
-
-from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 warnings.filterwarnings("ignore")  # filter user warning for BLEU when overlap is 0
 
 
-def evaluate_qa(model_name: str, preds: list, test_data: Iterable[Mapping[str, str]]) -> None:
-    sources = [itm["source"] for itm in test_data]
-    labels = [[itm["target"]] for itm in test_data]
+def evaluate_qa(model_name: str, preds: Sequence[str], dataset: Iterable[Mapping[str, str]]) -> None:
+    sources = [instance["source"] for instance in dataset]
+    labels = [[instance["target"]] for instance in dataset]
 
     evaluation = QAEvaluation(sources, preds, labels)
 
@@ -29,7 +25,8 @@ def evaluate_qa(model_name: str, preds: list, test_data: Iterable[Mapping[str, s
     print(f"ROUGE 3: {round(evaluation.rouge(3) * 100, 2)}%")
 
 
-def evaluate_evidence(model_name: str, preds: list, test_data: VideoQAWithEvidenceDataset):
+def evaluate_evidence(model_name: str, preds: Sequence[Sequence[tuple[float, float]]],
+                      dataset: Iterable[Mapping[str, str]]) -> None:
     """ 
     QAEvaluation for evidence finding.
 
@@ -38,7 +35,7 @@ def evaluate_evidence(model_name: str, preds: list, test_data: VideoQAWithEviden
         The second innermost list gives all the span predictions for an instance.
         The outermost list is the predictions for all instances.
     """
-    gt_spans = [itm["target_period"] for itm in test_data]
+    gt_spans = [instance["evidence"] for instance in dataset]
     evidence_evaluation = EvidenceEvaluation(preds, gt_spans)
 
     print(f"------------------{model_name} Baseline----------------------")
@@ -46,11 +43,13 @@ def evaluate_evidence(model_name: str, preds: list, test_data: VideoQAWithEviden
 
 
 class QAEvaluation:
-    def __init__(self, sources: list, preds: list, labels: list):
-        assert isinstance(labels[0], list)
+    def __init__(self, sources: Sequence[str], preds: Sequence[str], labels: Sequence[Sequence[str]]) -> None:
+        assert isinstance(labels[0], Sequence)
+
         self.sources = sources
         self.preds = preds
         self.labels = labels
+
         assert len(self.sources) == len(self.preds) == len(self.labels)
 
     def exact_match(self) -> float:
@@ -87,7 +86,8 @@ class QAEvaluation:
 
 
 class EvidenceEvaluation:
-    def __init__(self, preds: list, labels: list) -> None:
+    def __init__(self, preds: Sequence[Sequence[tuple[float, float]]],
+                 labels: Sequence[Sequence[tuple[float, float]]]) -> None:
         self.preds = preds
         self.labels = labels
 
@@ -109,7 +109,7 @@ class EvidenceEvaluation:
         )
         return 0 if denominator == 0 else num / denominator
 
-    def iou_f1(self, threshold: float = 0.5, pred_threshold: float = 1.0) -> np.ndarray:
+    def iou_f1(self, threshold: float = 0.5, pred_threshold: float = 1.0) -> float:
         """
         IoU-F1
         
@@ -117,81 +117,56 @@ class EvidenceEvaluation:
             A Case Study on Mental Health by Lee et al.
         Reference: https://github.com/MichiganNLP/micromodels/blob/empathy/empathy/run_experiments.py#L292-L333
         
-        threshold: take into account the prediction when its iou with gold span is larger than
-            this threshold.
+        threshold: take into account the prediction when its iou with gold span is larger than this threshold.
         pred_threshold: if two predictions' IoU smaller than it, will only consider the prediction span with the
         larger value. '1' means that all prediction spans will be considered.
         """
-        predictions = self.preds
-        gold = self.labels
-        assert len(predictions) == len(gold)
-        all_f1_vals = []
+        assert len(self.preds) == len(self.labels)
 
-        for idx, pred_spans in tqdm(enumerate(predictions)):
-            gold_spans = gold[idx]
+        f1_sum = 0
 
-            iou_s = defaultdict(float)
-
-            # repeated predictions
-            overlapped = []
-
-            for i in range(len(pred_spans)):
-                ps_1 = pred_spans[i]
-                for j in range(i + 1, len(pred_spans)):
-                    ps_2 = pred_spans[j]
-                    iou = self._calculate_iou(ps_1, ps_2)
-                    if iou > pred_threshold:
-                        overlapped.append((i, j))
-
-            for i, pred_span in enumerate(pred_spans):
-                best_iou = 0.0
-                for gold_span in gold_spans:
-                    iou = self._calculate_iou(pred_span, gold_span)
-                    if iou > best_iou:
-                        best_iou = iou
-                iou_s[i] = best_iou
-
-            # delete overlapped predictions
-            for i, j in overlapped:
-                assert i in iou_s and j in iou_s
-                if iou_s[i] >= iou_s[j]:
-                    del iou_s[j]
-                else:
-                    del iou_s[i]
-
-            threshold_tps = sum(int(x >= threshold) for x in iou_s.values())
-
-            micro_r = threshold_tps / len(gold_spans) if len(gold_spans) > 0 else 0
-            micro_p = threshold_tps / len(pred_spans) if len(pred_spans) > 0 else 0
-            micro_f1 = self._f1(micro_r, micro_p)
+        for pred_spans, gold_spans in zip(self.preds, self.labels):
             if len(pred_spans) == 0 and len(gold_spans) == 0:
-                all_f1_vals.append(1)
+                micro_f1 = 1
             else:
-                all_f1_vals.append(micro_f1)
+                iou_s = {i: max((self._calculate_iou(pred_span, gold_span) for gold_span in gold_spans), default=0)
+                         for i, pred_span in enumerate(pred_spans)}
 
-        return np.mean(all_f1_vals)
+                for i in range(len(pred_spans)):  # Delete the repeated predictions.
+                    ps_1 = pred_spans[i]
+                    for j in range(i + 1, len(pred_spans)):
+                        ps_2 = pred_spans[j]
+                        if self._calculate_iou(ps_1, ps_2) > pred_threshold:
+                            del iou_s[j if iou_s[i] >= iou_s[j] else i]
+
+                threshold_tps = sum(x >= threshold for x in iou_s.values())
+                micro_p = threshold_tps / len(pred_spans) if len(pred_spans) > 0 else 0
+                micro_r = threshold_tps / len(gold_spans) if len(gold_spans) > 0 else 0
+                micro_f1 = self._f1(micro_p, micro_r)
+
+            f1_sum += micro_f1
+
+        return f1_sum / len(self.preds)
 
 
 ###########################################################
-###########################################################
-# testing for the evaluation class
-
-
-TEST_SOURCE = ["he began by starting"]
-TEST_PREDS = ["he began by starting"]
-TEST_LABELS = [["he began by asd", "he began asd ads"]]
-
-TEST_EVIDENCE_PREDS = [[[1.2, 3.1], [4.5, 6.7]]]
-TEST_EVIDENCE_LABELS = [[[1.2, 3.5], [2.3, 5.0]]]
 
 
 def test() -> None:
-    evl = QAEvaluation(TEST_SOURCE, TEST_PREDS, TEST_LABELS)
-    print(evl.exact_match())
-    print(evl.bleu(2))
-    print(evl.rouge(2))
-    ev_evl = EvidenceEvaluation(TEST_EVIDENCE_PREDS, TEST_EVIDENCE_LABELS)
-    print(ev_evl.iou_f1())
+    TEST_SOURCE = ["he began by starting"]
+    TEST_PREDS = ["he began by starting"]
+    TEST_LABELS = [["he began by asd", "he began asd ads"]]
+
+    TEST_EVIDENCE_PREDS = [[(1.2, 3.1), (4.5, 6.7)]]
+    TEST_EVIDENCE_LABELS = [[(1.2, 3.5), (2.3, 5.0)]]
+
+    qa_evaluation = QAEvaluation(TEST_SOURCE, TEST_PREDS, TEST_LABELS)
+    print(qa_evaluation.exact_match())
+    print(qa_evaluation.bleu(2))
+    print(qa_evaluation.rouge(2))
+
+    evidence_evaluation = EvidenceEvaluation(TEST_EVIDENCE_PREDS, TEST_EVIDENCE_LABELS)
+    print(evidence_evaluation.iou_f1())
 
 
 if __name__ == "__main__":

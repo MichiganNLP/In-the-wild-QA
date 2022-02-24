@@ -1,9 +1,13 @@
 import argparse
+import os
 import random
-from typing import Any, Iterable, Mapping
+from collections.abc import Iterable, Mapping
+from typing import Any
+
+from transformers import AutoTokenizer
 
 from src.evaluations.evaluations import evaluate_evidence
-from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
 
 
 def _predict_random(d: Mapping[str, Any]) -> Iterable[float]:
@@ -14,6 +18,9 @@ def _predict_random(d: Mapping[str, Any]) -> Iterable[float]:
 
 
 def random_evidence(args: argparse.Namespace) -> None:
-    test_data = VideoQAWithEvidenceDataset(args.test_data)
-    preds = [[_predict_random(d) for _ in range(args.pred_num)] for d in test_data]
-    evaluate_evidence("Random Evidence", preds, test_data)
+    os.environ["TOKENIZERS_PARALLELISM"] = "0"
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+    dataset = VideoQAWithEvidenceDataModule(args, tokenizer).test_dataloader().dataset
+
+    preds = [[_predict_random(d) for _ in range(args.pred_num)] for d in dataset]
+    evaluate_evidence("Random Evidence", preds, dataset)

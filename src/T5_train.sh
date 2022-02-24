@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-# params needs to be modified
-CUDA_ID=0
+export CUDA_VISIBLE_DEVICES=0
 
-# params based on the params at the top
-data_dir=wildQA-data
 output_ckpt_dir=ckpts/T5/text_finetuned/
 num_train_epochs=10
 train_batch_size=2
@@ -19,10 +16,7 @@ mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}
 
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -m src T5_train\
-    --train_data example_data/${data_dir}/train.json \
-    --dev_data example_data/${data_dir}/dev.json \
-    --test_data example_data/${data_dir}/test.json \
+python -m src T5_train \
     --gradient_accumulation_steps ${gradient_accumulation_steps} \
     --output_ckpt_dir ${output_ckpt_dir} \
     --num_train_epochs ${num_train_epochs} \

@@ -1,40 +1,44 @@
 import argparse
 
+from transformers import AutoTokenizer
+
 from src.evaluations.evaluations import evaluate_qa
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 
-def parse_args():
+def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pred", help="prediction file path")
     parser.add_argument("--processed_pred", help="processed file (output file) path")
-    parser.add_argument("--test_data", help="path to the test data")
-    parser.add_argument("--model_name", default="T5_Text",
-                        type=str, help="Name of the model, just for output")
-    args = parser.parse_args()
-
-    return args
+    parser.add_argument("--dataset", help="path to the test data")
+    parser.add_argument("--model_name_or_path", default="t5-base")
+    parser.add_argument("--model_type", default="T5_Text", help="Model type, just for output")
+    return parser.parse_args()
 
 
-def post_process(args):
-    with open(args.pred) as f:
-        data = f.readlines()
+def post_process(args: argparse.Namespace) -> None:
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
 
-    processed_data = []
-    for d in data:
-        d = d.split("</s>")[0]
-        d = d.split("<pad> ")[-1]
-        d = d.split("<extra_id_0>")[-1]
-        processed_data.append(d)
+    extra_id_0_token = tokenizer.additional_special_tokens[0]
 
-    with open(args.processed_pred, "w") as f:
-        f.write("\n".join(processed_data))
+    with open(args.pred) as file:
+        processed_data = [generated_answer.split(tokenizer.eos_token,
+                                                 maxsplit=1)[0].rsplit(tokenizer.pad_token,
+                                                                       maxsplit=1)[-1].rsplit(extra_id_0_token,
+                                                                                              maxsplit=1)[-1].strip()
+                          for generated_answer in file]
 
-    test_data = VideoQAWithEvidenceDataset(args.test_data)
+    with open(args.processed_pred, "w") as file:
+        file.write("\n".join(processed_data))
 
-    evaluate_qa(f"{args.model_name}", processed_data, test_data)
+    dataset = VideoQAWithEvidenceDataset(args.test_data_path)  # FIXME
+
+    evaluate_qa(args.model_type, processed_data, dataset)
+
+
+def main() -> None:
+    post_process(parse_args())
 
 
 if __name__ == "__main__":
-    args = parse_args()
-    post_process(args)
+    main()

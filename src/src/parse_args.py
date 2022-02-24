@@ -4,21 +4,15 @@ from typing import Optional
 
 import torch
 
+# Can't use `from __future__ import annotations` here. See https://github.com/huggingface/transformers/pull/15795
+# From the next version of transformers (after v4.17.0) it should be possible.
+
 
 @dataclass
 class DataPathArguments:
-    train_data: str = field(
-        default="example_data/wildQA-data/train.json",
-        metadata={"help": "train data path"}
-    )
-    dev_data: str = field(
-        default="example_data/wildQA-data/dev.json",
-        metadata={"help": "dev data path"}
-    )
-    test_data: str = field(
-        default="example_data/wildQA-data/test.json",
-        metadata={"help": "test data path"}
-    )
+    train_data_path: str = "example_data/wildQA-data/train.json"
+    dev_data_path: str = "example_data/wildQA-data/dev.json"
+    test_data_path: str = "example_data/wildQA-data/test.json"
     num_workers: int = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)
 
 
@@ -63,54 +57,21 @@ class ClosestRetrievalArguments:
 
 @dataclass
 class T5TrainArguments:
-    output_ckpt_dir: str = field(
-        default=None,
-        metadata={"help": "path to the output checkpoints"}
-    )
-    model_name_or_path: str = field(
-        default="t5-base",
-        metadata={"help": "types of T5"}
-    )
+    output_ckpt_dir: Optional[str] = None
+    model_name_or_path: str = "t5-base"
     max_seq_length: int = field(
         default=512,
-        metadata={"help": "maximum of the text sequence. Truncate if exceeded part."}
+        metadata={"help": "maximum of the text sequence. Truncate if exceeded."}
     )
-    learning_rate: float = field(
-        default=3e-4,
-        metadata={"help": "learning rate for the training."}
-    )
-    weight_decay: float = field(
-        default=0.0,
-        metadata={"help": "weight decay for the training phase."}
-    )
-    adam_epsilon: float = field(
-        default=1e-8,
-        metadata={"help": "adam epsilon for the training phase."}
-    )
-    warmup_steps: int = field(
-        default=0,
-        metadata={"help": "steps for warming up in the training."}
-    )
-    train_batch_size: int = field(
-        default=8,
-        metadata={"help": "batch size for training."}
-    )
-    eval_batch_size: int = field(
-        default=8,
-        metadata={"help": "batch size for evaluation."}
-    )
-    num_train_epochs: int = field(
-        default=100,
-        metadata={"help": "maximum number of epochs for training."}
-    )
-    gradient_accumulation_steps: int = field(
-        default=16,
-        metadata={"help": "number of steps taken before gradient updates."}
-    )
-    n_gpu: int = field(
-        default=1,
-        metadata={"help": "number of gpus to use."}
-    )
+    learning_rate: float = 3e-4
+    weight_decay: float = 0.0
+    adam_epsilon: float = 1e-8
+    warmup_steps: int = 0
+    train_batch_size: int = 8
+    eval_batch_size: int = 8
+    num_train_epochs: int = 100
+    gradient_accumulation_steps: int = 16
+    n_gpu: int = 1
     early_stop_callback: bool = field(
         default=False,
         metadata={"help": "whether we allow early stop in training."}
@@ -124,18 +85,10 @@ class T5TrainArguments:
         default=False,
         metadata={"help": "if you want to enable 16-bit training then install apex and set this to true."}
     )
-    max_grad_norm: float = field(
-        default=1.0,
-        metadata={"help": "if you enable 16-bit training then set this to a sensible value, 0.5 is a good default."}
-    )
-    seed: int = field(
-        default=42,
-        metadata={"help": "random seed for T5 training phase."}
-    )
-    use_tpu: bool = field(
-        default=False,
-        metadata={"help": "whether to use TPU. We do not support TPU."}
-    )
+    max_grad_norm: float = 1.0
+    seed: int = 42
+    use_tpu: bool = False
+    test_after_train: bool = False
 
 
 @dataclass
@@ -144,49 +97,29 @@ class _T5EvalBaseArguments:
         default=512,
         metadata={"help": "maximum length of the text length. Truncate the exceeded part."}
     )
-    batch_size: int = field(
-        default=32,
-        metadata={"help": "batch size for testing."}
-    )
-    pred_out_dir: str = field(
-        default=None,
-        metadata={"help": "prediction output directory."}
-    )
+    batch_size: int = 32
+    pred_out_dir: Optional[str] = None
     pred_num: int = field(
         default=None,
         metadata={"help": "number of predictions made."}
     )
-    beam_size: int = field(
-        default=None,
-        metadata={"help": "beam size for search."}
-    )
+    beam_size: Optional[int] = None
 
 
 @dataclass
 class T5EvalArguments(_T5EvalBaseArguments):
-    ckpt_path: str = field(
-        default=None,
-        metadata={"help": "path to checkpoint to load."}
-    )
+    ckpt_path: Optional[str] = None
 
 
 @dataclass
 class T5ZeroShotArguments(_T5EvalBaseArguments):
-    model_name_or_path: str = field(
-        default="t5-base",
-        metadata={"help": "T5 model type for zero shot."}
-    )
+    model_name_or_path: str = "t5-base"
 
 
 @dataclass
 class _VisualBaseArguments:
-    sample_rate: int = field(
-        metadata={"help": "sampling rate for visual features."}
-    )
-    path_to_visual_file: str = field(
-        default="https://www.dropbox.com/s/vt2kjdqr7mnxg2q/WildQA_I3D_avg_pool.hdf5?dl=1",
-        metadata={"help": "path to visual input files"}
-    )
+    visual_avg_pool_size: int = field(metadata={"help": "sampling rate for visual features."})
+    visual_features_path: str = "https://www.dropbox.com/s/vt2kjdqr7mnxg2q/WildQA_I3D_avg_pool.hdf5?dl=1"
     visual_size: int = field(
         default=1024,
         metadata={"help": "visual embedding dimension."}
@@ -316,10 +249,7 @@ class CLIPDecoderEvalArguments(CLIPDecoderBasics, T5TextVisualEvalArguments):
 
 @dataclass
 class WandbArguments:
-    wandb_project: str = field(
-        default="In-the-wild-QA",
-        metadata={"help": "wandb project name."}
-    )
+    wandb_project: str = "In-the-wild-QA"
     wandb_name: str = field(
         default=None,
         metadata={"help": "name of this run."}

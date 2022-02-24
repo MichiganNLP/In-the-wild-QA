@@ -1,4 +1,4 @@
-from typing import Any, Literal, Mapping, Optional
+from typing import Any, Literal, Mapping, Optional, Union, Tuple
 
 import pytorch_lightning as pl
 import torch
@@ -8,6 +8,7 @@ from torch.optim import AdamW
 from transformers import PreTrainedTokenizerBase, T5Config, T5ForConditionalGeneration, \
     VisualBertForQuestionAnswering, get_linear_schedule_with_warmup
 from transformers.models.t5.modeling_t5 import T5EncoderModel
+from transformers.modeling_outputs import Seq2SeqLMOutput
 
 from src.transformer_models.t5_and_visual import T5AndVisual, TextVisualEncoder
 
@@ -97,13 +98,11 @@ class FineTuner(pl.LightningModule):  # noqa
         elif self.hparams.model_type == "T5_evidence":
             self.model = T5AndVisualEvidence.from_pretrained(self.hparams.model_name_or_path,
                                                              visual_size=self.hparams.visual_size)
-            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
             self.cross_entropy_loss = nn.CrossEntropyLoss()
 
         elif self.hparams.model_type == "T5_evidence_IO":
             self.model = T5AndVisualEvidenceIO.from_pretrained(self.hparams.model_name_or_path,
                                                                 visual_size=self.hparams.visual_size)   
-            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
             self.cross_entropy_loss = nn.CrossEntropyLoss()
             
         else:

@@ -171,11 +171,11 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
 
 def get_dataset(tokenizer: PreTrainedTokenizerBase, data_dir: str,
                 args: argparse.Namespace, is_test: bool = False) -> VideoQAWithEvidenceForT5Dataset:
-    if args.model_type == "T5_text_and_visual":
+    if args.model_type in ["T5_text_and_visual", "T5_text_visual_eval"]:
         kwargs = {"include_visual": True, "max_vid_len": args.max_vid_length,
                   "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size,
                   "sample_rate": args.sample_rate}
-    elif args.model_type == "T5_evidence":
+    elif args.model_type in ["T5_evidence", "T5_evidence_eval"]:
         kwargs = {"include_visual": True, "max_vid_len": args.max_vid_length,
                   "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size,
                   "sample_rate": args.sample_rate, "is_evidence": True}

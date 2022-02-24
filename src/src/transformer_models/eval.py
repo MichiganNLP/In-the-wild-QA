@@ -16,13 +16,16 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def transformer_eval(args: argparse.Namespace) -> None:
     os.environ["TOKENIZERS_PARALLELISM"] = "0"
-    tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+    model_class = FineTuner
+
+    if args.model_type == "T5_zero_shot":
+        tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+        model = model_class(tokenizer=tokenizer, **args.__dict__)
+    else:
+        model = model_class.load_from_checkpoint(args.ckpt_path)
+        tokenizer = model.tokenizer
 
     data_loader = VideoQAWithEvidenceForT5DataModule(args, tokenizer=tokenizer).test_dataloader()
-
-    model_class = FineTuner
-    model = model_class(tokenizer=tokenizer, **args.__dict__) if args.model_type == "T5_zero_shot" \
-        else model_class.load_from_checkpoint(args.ckpt_path)
 
     model.model.eval()
     model.model.to(DEVICE)
@@ -47,17 +50,16 @@ def transformer_eval(args: argparse.Namespace) -> None:
                                             num_return_sequences=args.pred_num)
 
             if args.model_type == "T5_evidence_eval":
-                batch_size, N, _ = outs[0].shape
-                assert N == 1
+                batch_size = outs[0].shape[0]
                 predicted_span = {"score": -float("inf"), "start": -1, "end": -1}
                 vid_len = torch.count_nonzero(batch["visual_mask"], dim=1)
 
                 for b in range(batch_size):
                     for i in range(vid_len[b].item()):
-                        start_score = outs[0][b, 0, i]
+                        start_score = outs[0][b, i]
                         start = i
                         for j in range(i + 1, vid_len[b].item()):
-                            end_score = outs[1][b, 0, j]
+                            end_score = outs[1][b, j]
                             end = j
                             if start_score + end_score > predicted_span["score"]:
                                 # if start_score > predicted_span["score"]:

@@ -3,7 +3,7 @@
 CUDA_ID=0
 
 
-ckpt_path=ckpts/T5/evidence_IO_finetuned/epoch=47-train_loss=2.73.ckpt
+ckpt_path=ckpts/T5/evidence_IO_finetuned/epoch=38-train_loss=4.52.ckpt
 pred_out_dir=preds/T5/evidence_IO/
 pred_name=preds-T5_evidence_IO_eval
 pred_num=1
@@ -17,7 +17,7 @@ sample_rate=1
 data_dir=wildQA-data
 
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_evidence_IO_eval \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src T5_evidence_IO_eval \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \

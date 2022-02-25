@@ -231,16 +231,12 @@ class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
 
 
 @dataclass
-class T5EvidenceIOTrainArguments(T5TextVisualEvalArguments):
-
-    """ Arguments of T5 evidence IO model for the training phase """
+class T5EvidenceIOTrainArguments(T5TextVisualTrainArguments):
     pass
 
 
 @dataclass
 class T5EvidenceIOEvalArguments(T5TextVisualEvalArguments):
-
-    """ Arguments of T5 evidence IO model for the eval phase. """
     pass
 
 

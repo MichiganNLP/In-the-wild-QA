@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ckpt_path=ckpts/T5/text_visual_finetuned/epoch=5-train_loss=1.98.ckpt
+ckpt_path=ckpts/T5/text_visual_finetuned/epoch=2-train_loss=0.85.ckpt
 pred_out_dir=preds/T5/text_visual/
 pred_name=preds-T5_text_visual_eval
 pred_num=1

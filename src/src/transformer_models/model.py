@@ -1,4 +1,4 @@
-from typing import Any, Literal, Mapping, Optional
+from typing import Any, Literal, Mapping, Optional, Union, Tuple
 
 import pytorch_lightning as pl
 import torch
@@ -8,8 +8,11 @@ from torch.optim import AdamW
 from transformers import PreTrainedTokenizerBase, T5Config, T5ForConditionalGeneration, \
     VisualBertForQuestionAnswering, get_linear_schedule_with_warmup
 from transformers.models.t5.modeling_t5 import T5EncoderModel
+from transformers.modeling_outputs import Seq2SeqLMOutput
+from collections import defaultdict
 
 from src.transformer_models.t5_and_visual import T5AndVisual, TextVisualEncoder
+from src.utils.utils import device
 
 
 class T5AndVisualEvidence(T5EncoderModel):  # noqa
@@ -43,44 +46,49 @@ class T5AndVisualEvidenceIO(T5EncoderModel):  # noqa
     def __init__(self, config: T5Config, visual_size: int) -> None:
         super().__init__(config)
         self.encoder = TextVisualEncoder(self.encoder, visual_size)
-        # NOTE: problems here!
-        self.lgsm = nn.LogSoftmax(dim=2)
-        self.start_vec = nn.Linear(self.config.d_model, 1)
-        self.end_vec = nn.Linear(self.config.d_model, 1)
+        self.linear = nn.Linear(self.config.d_model, 1)
 
     @overrides(check_signature=False)
     def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
                 attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                evidence=None, evidence_mask=None, **kwargs) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
+                **kwargs) -> tuple[torch.Tensor, torch.Tensor]:
         outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
                                visual_attention_mask=visual_attention_mask, **kwargs)
-        # We only care about the last hidden state sequence
-        batch_size, visual_start = masked_caption_ids.shape
-        # _, visual_len, _ = visual.shape
+        visual_start = masked_caption_ids.shape[1]
         visual_hidden = outputs.last_hidden_state[:, visual_start:, :]
-
-        # assume it is batch_size * visual_leng
-
-        start = self.start_vec(visual_hidden)
-        end = self.end_vec(visual_hidden)
-
-        start = torch.transpose(start, 1, 2)  # batch_size * N = 1 * visual_len
-        end = torch.transpose(end, 1, 2)  # batch_size * N = 1 * visual_len
-
-        return start, end
+        transformed_hidden = self.linear(visual_hidden) # reduce feature dimension to 1
+        prob_in = torch.sigmoid(transformed_hidden[..., 0])   # calculate the probability that the frame is "I"
+        return prob_in
 
     def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
-                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
-                evidence=None, evidence_mask=None) -> Union[Seq2SeqLMOutput, Tuple[torch.Tensor, ...]]:
-        start, end = self.forward(masked_caption_ids, visual, attention_mask, visual_attention_mask, evidence,
-                                  evidence_mask)
+                attention_mask: Optional[torch.Tensor] = None,
+                visual_attention_mask: Optional[torch.Tensor] = None) -> tuple[torch.Tensor, torch.Tensor]:
+        prob_in = self(masked_caption_ids, visual, attention_mask, visual_attention_mask)
+        in_index = (prob_in >= 0.5).nonzero(as_tuple=False).cpu()   # move variables to cpu to append to list
+        results = defaultdict(list)
+        # get the position for each frame that is within the evidence
+        for [batch_idx, frame_idx] in in_index:
+            batch_idx, frame_idx = int(batch_idx), int(frame_idx)
+            if not results[batch_idx]:
+                results[batch_idx].append([frame_idx, frame_idx])
+            else:
+                last_frame_idx = results[batch_idx][-1][1]
+                if last_frame_idx + 1 == frame_idx:
+                    results[batch_idx][-1][1] = frame_idx
+                else:
+                    results[batch_idx].append([frame_idx, frame_idx])
 
-        # assume it is batch_size * visual_len
-
-        start_lgsm = self.lgsm(start)
-        end_lgsm = self.lgsm(end)
-
-        return start_lgsm, end_lgsm
+        results_with_score = defaultdict(list)
+        # get the score of the evidence
+        for b, start_ends in results.items():
+            for [start_idx, end_idx] in start_ends:
+                score = torch.mean(prob_in[b][start_idx: end_idx + 1]).cpu()
+                results_with_score[b].append([start_idx, end_idx, float(score)])
+        
+        # sort the evidence based on the score
+        for b in results_with_score:
+            results_with_score[b].sort(key=lambda x: x[-1], reverse=True)
+        return results_with_score
 
 
 class FineTuner(pl.LightningModule):  # noqa
@@ -97,13 +105,11 @@ class FineTuner(pl.LightningModule):  # noqa
         elif self.hparams.model_type == "T5_evidence":
             self.model = T5AndVisualEvidence.from_pretrained(self.hparams.model_name_or_path,
                                                              visual_size=self.hparams.visual_size)
-            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
             self.cross_entropy_loss = nn.CrossEntropyLoss()
 
         elif self.hparams.model_type == "T5_evidence_IO":
             self.model = T5AndVisualEvidenceIO.from_pretrained(self.hparams.model_name_or_path,
                                                                 visual_size=self.hparams.visual_size)   
-            self.tokenizer = T5Tokenizer.from_pretrained(self.hparams.tokenizer_name_or_path)
             self.cross_entropy_loss = nn.CrossEntropyLoss()
             
         else:
@@ -118,10 +124,10 @@ class FineTuner(pl.LightningModule):  # noqa
         if labels is not None:
             labels[labels == self.tokenizer.pad_token_id] = -100  # For the loss computation.
 
-        if self.hparams.model_type in {"T5_text_and_visual", "visual_bert_QA"}:
+        if self.hparams.model_type in {"T5_text_and_visual"}:
             return self.model(input_ids, attention_mask=attention_mask, visual=visual,
                               visual_attention_mask=visual_attention_mask, labels=labels)
-        elif self.hparams.model_type == "T5_evidence":
+        elif self.hparams.model_type in {"T5_evidence", "T5_evidence_IO"}:
             return self.model(input_ids, attention_mask=attention_mask, visual=visual,
                               visual_attention_mask=visual_attention_mask)
         else:
@@ -142,6 +148,21 @@ class FineTuner(pl.LightningModule):  # noqa
             end_loss = self.cross_entropy_loss(raw_end, ends[:, 0])
 
             loss = start_loss + end_loss
+        elif self.hparams.model_type == "T5_evidence_IO":
+            prob_in = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
+                            visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"])
+            # construct the groundtruth sequence
+            gold = torch.zeros(prob_in.shape)
+            evidence = batch["evidence"]
+            starts = evidence[:, :, 0]
+            ends = evidence[:, :, 1]
+            batch_size, evidence_number = starts.shape
+            
+            for b_idx in range(batch_size):
+                for e_idx in range(evidence_number):
+                    gold[b_idx][starts[b_idx][e_idx]: ends[b_idx][e_idx]] = 1.0
+            gold = gold.to(device)
+            loss = self.cross_entropy_loss(prob_in, gold)
         else:
             labels = batch["target_ids"]
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 data_dir=wildQA-data
-ckpt_path=ckpts/T5/text_finetuned/epoch=6-train_loss=1.98.ckpt
+ckpt_path=ckpts/T5/text_finetuned/epoch=5-train_loss=0.36.ckpt
 pred_out_dir=preds/T5/text_finetuned/
 pred_name=preds-T5_eval
 pred_num=1

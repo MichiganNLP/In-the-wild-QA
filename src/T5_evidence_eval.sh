@@ -3,7 +3,7 @@
 CUDA_ID=0
 
 
-ckpt_path=ckpts/T5/evidence_finetuned/epoch=47-train_loss=2.73.ckpt
+ckpt_path=ckpts/T5/evidence_finetuned/epoch=45-train_loss=0.03.ckpt
 pred_out_dir=preds/T5/evidence/
 pred_name=preds-T5_evidence_eval
 pred_num=1

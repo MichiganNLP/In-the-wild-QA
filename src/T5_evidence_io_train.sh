@@ -28,7 +28,7 @@ mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}
 
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} CUDA_LAUNCH_BLOCKING=1 python -W ignore -m src.main T5_evidence_IO \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} CUDA_LAUNCH_BLOCKING=1 python -W ignore -m src T5_evidence_IO \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/dev.json \

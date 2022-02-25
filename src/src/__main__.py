@@ -9,7 +9,8 @@ from src.closest_rtr.closest_rtr import closest_rtr
 from src.mca.mca import most_common_ans
 from src.parse_args import ClosestRetrievalArguments, DataPathArguments, MODEL_CHOICES, RandomEvidenceArguments, \
     T5EvalArguments, T5EvidenceFindingEvalArguments, T5EvidenceFindingTrainArguments, T5TextVisualEvalArguments, \
-    T5TextVisualTrainArguments, T5TrainArguments, T5ZeroShotArguments, WandbArguments
+    T5TextVisualTrainArguments, T5TrainArguments, T5ZeroShotArguments, T5EvidenceIOTrainArguments, \
+    T5EvidenceIOEvalArguments, WandbArguments
 from src.rdm.random_evidence import random_evidence
 from src.rdm.random_text import random_text
 from src.transformer_models.eval import transformer_eval
@@ -62,6 +63,10 @@ def main() -> None:
                   "T5_evidence")
     elif model_type == "T5_evidence_eval":
         run_model([DataPathArguments, T5EvidenceFindingEvalArguments], transformer_eval, "T5_evidence_eval")
+    elif model_type == "T5_evidence_IO":
+        run_model([DataPathArguments, T5EvidenceIOTrainArguments, WandbArguments], transformer_train, "T5_evidence_IO")
+    elif model_type == "T5_evidence_IO_eval":
+        run_model([DataPathArguments, T5EvidenceIOEvalArguments], transformer_eval, "T5_evidence_IO_eval")
     else:
         raise ValueError(f"Unknown model type, you need to pick from {', '.join(MODEL_CHOICES)}")
 

@@ -12,15 +12,15 @@ import torch.nn
 import torch.utils.data
 import torchvision
 from overrides import overrides
-from tqdm import tqdm
+from tqdm.auto import tqdm
 
 from src.utils.feature_extraction.c3d import C3D
 from src.utils.feature_extraction.i3d import I3D
 from src.utils.feature_extraction.wildqa_dataset import WildQaFrameDataset
 
-DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-IMAGENET_NORMALIZATION_PARAMS = {'mean': [0.485, 0.456, 0.406], 'std': [0.229, 0.224, 0.225]}
+IMAGENET_NORMALIZATION_PARAMS = {"mean": [0.485, 0.456, 0.406], "std": [0.229, 0.224, 0.225]}
 
 
 def pretrained_resnet152() -> torch.nn.Module:
@@ -65,8 +65,8 @@ def save_resnet_features():
     resnet = pretrained_resnet152().to(DEVICE)
     resnet.fc = Identity()  # Trick to avoid computing the fc1000 layer, as we don't need it here.
 
-    with h5py.File(WildQaFrameDataset.features_file_path('resnet', 'res5c'), 'w') as res5c_features_file, \
-            h5py.File(WildQaFrameDataset.features_file_path('resnet', 'pool5'), 'w') as pool5_features_file:
+    with h5py.File(WildQaFrameDataset.features_file_path("resnet", "res5c"), "w") as res5c_features_file, \
+            h5py.File(WildQaFrameDataset.features_file_path("resnet", "pool5"), "w") as pool5_features_file:
 
         for video_id in dataset.video_ids:
             video_frame_count = dataset.frame_count_by_video_id[video_id]
@@ -83,8 +83,8 @@ def save_resnet_features():
 
         # tqdm reports an inaccurate ETA if we update it frame by frame.
         for batch in tqdm(torch.utils.data.DataLoader(dataset), desc="Extracting ResNet features"):
-            video_ids = batch['id']
-            frames = batch['frames'].to(DEVICE)
+            video_ids = batch["id"]
+            frames = batch["frames"].to(DEVICE)
 
             for video_id, video_frames in zip(video_ids, frames):
                 frame_batch_size = 32
@@ -115,18 +115,18 @@ def save_resof_features():
 
     imagenet_normalization = torchvision.transforms.Normalize(**IMAGENET_NORMALIZATION_PARAMS)
 
-    with h5py.File(WildQaFrameDataset.features_file_path('resof', 'pool5'), 'w') as features_file:
+    with h5py.File(WildQaFrameDataset.features_file_path("resof", "pool5"), "w") as features_file:
         for video_id in dataset.video_ids:
             video_frame_count = dataset.frame_count_by_video_id[video_id]
             features_file.create_dataset(video_id, shape=(video_frame_count, 2048))
 
         # tqdm reports an inaccurate ETA if we update it frame by frame.
         for batch in tqdm(torch.utils.data.DataLoader(dataset), desc="Extracting ResOF features"):
-            video_ids = batch['id']
-            video_frame_counts = batch['frame_count']
-            frames = batch['frames']
+            video_ids = batch["id"]
+            video_frame_counts = batch["frame_count"]
+            frames = batch["frames"]
 
-            frames = frames.transpose(1, 2)  # ReplicationPad3d expects (N, C, T, H, W)
+            frames = frames.transpose(1, 2)  # ReplicationPad3d expects (n, C, T, H, W)
             frames = torch.nn.ReplicationPad3d(padding)(frames)
             frames = frames.permute(0, 2, 3, 4, 1)  # OpenCV expects (H, W, C)
 
@@ -148,7 +148,7 @@ def save_resof_features():
                     flow_image = cv.cvtColor(hsv[i_video, i_frame_pair], cv.COLOR_HSV2RGB) / 255.0
                     flow_images[i_video, i_frame_pair] = torch.from_numpy(flow_image)
 
-            flow_images = flow_images.permute(0, 1, 4, 2, 3)  # ResNet and the transformations expect (N, C, H, W)
+            flow_images = flow_images.permute(0, 1, 4, 2, 3)  # ResNet and the transformations expect (n, C, H, W)
 
             for i_video, (video_id, video_frame_count) in enumerate(zip(video_ids, video_frame_counts)):
                 for i_frame_pair in range(video_frame_count.item() - 1):
@@ -172,8 +172,8 @@ def save_c3d_features():
     filter_size = 16
     padding = (0, 0, 0, 0, math.ceil((filter_size - 1) / 2), (filter_size - 1) // 2)
 
-    with h5py.File(WildQaFrameDataset.features_file_path('c3d', 'fc6'), 'w') as fc6_features_file, \
-            h5py.File(WildQaFrameDataset.features_file_path('c3d', 'conv5b'), 'w') as conv5b_features_file:
+    with h5py.File(WildQaFrameDataset.features_file_path("c3d", "fc6"), "w") as fc6_features_file, \
+            h5py.File(WildQaFrameDataset.features_file_path("c3d", "conv5b"), "w") as conv5b_features_file:
         for video_id in dataset.video_ids:
             video_frame_count = dataset.frame_count_by_video_id[video_id]
             fc6_features_file.create_dataset(video_id, shape=(video_frame_count, 4096))
@@ -181,10 +181,10 @@ def save_c3d_features():
 
         # tqdm reports an inaccurate ETA if we update it frame by frame.
         for batch in tqdm(torch.utils.data.DataLoader(dataset), desc="Extracting C3D features"):
-            video_ids = batch['id']
-            video_frame_counts = batch['frame_count']
-            frames = batch['frames'].to(DEVICE)
-            frames = frames.transpose(1, 2)  # C3D and ReplicationPad3d expect (N, C, T, H, W)
+            video_ids = batch["id"]
+            video_frame_counts = batch["frame_count"]
+            frames = batch["frames"].to(DEVICE)
+            frames = frames.transpose(1, 2)  # C3D and ReplicationPad3d expect (n, C, T, H, W)
             frames = torch.nn.ReplicationPad3d(padding)(frames)
 
             for i_video, (video_id, video_frame_count) in enumerate(zip(video_ids, video_frame_counts)):
@@ -208,16 +208,16 @@ def save_i3d_features():
     filter_size = 16
     padding = (0, 0, 0, 0, math.ceil((filter_size - 1) / 2), (filter_size - 1) // 2)
 
-    with h5py.File(WildQaFrameDataset.features_file_path('i3d', 'avg_pool'), 'w') as features_file:
+    with h5py.File(WildQaFrameDataset.features_file_path("i3d", "avg_pool"), "w") as features_file:
         for _, _, video_id in dataset.video_ids:
             video_frame_count = dataset.frame_count_by_video_id[video_id]
             features_file.create_dataset(video_id, shape=(video_frame_count, 1024))
         # tqdm reports an inaccurate ETA if we update it frame by frame.
         for batch in tqdm(torch.utils.data.DataLoader(dataset), desc="Extracting I3D features"):
-            video_ids = batch['id']
-            video_frame_counts = batch['frame_count']
-            frames = batch['frames'].to(DEVICE)
-            frames = frames.transpose(1, 2)  # I3D and ReplicationPad3d expects (N, C, T, H, W)
+            video_ids = batch["id"]
+            video_frame_counts = batch["frame_count"]
+            frames = batch["frames"].to(DEVICE)
+            frames = frames.transpose(1, 2)  # I3D and ReplicationPad3d expects (n, C, T, H, W)
             frames = torch.nn.ReplicationPad3d(padding)(frames)
 
             for i_video, (video_id, video_frame_count) in enumerate(zip(video_ids, video_frame_counts)):
@@ -228,23 +228,23 @@ def save_i3d_features():
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Extract video features.")
-    parser.add_argument('network', choices=['resnet', 'resof', 'c3d', 'i3d'])
+    parser.add_argument("network", choices=["resnet", "resof", "c3d", "i3d"])
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
-    if args.network == 'resnet':
+    if args.network == "resnet":
         save_resnet_features()
-    elif args.network == 'resof':
+    elif args.network == "resof":
         save_resof_features()
-    elif args.network == 'c3d':
+    elif args.network == "c3d":
         save_c3d_features()
-    elif args.network == 'i3d':
+    elif args.network == "i3d":
         save_i3d_features()
     else:
         raise ValueError("Network type not supported.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,7 +1,7 @@
 import argparse
 
-from src.dataloader import VQADataset
-from src.evaluations.evaluations import evaluate
+from src.evaluations.evaluations import evaluate_qa
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
 
 
 def parse_args():
@@ -17,7 +17,7 @@ def parse_args():
 
 
 def post_process(args):
-    with open(args.pred, 'r') as f:
+    with open(args.pred) as f:
         data = f.readlines()
 
     processed_data = []
@@ -27,12 +27,12 @@ def post_process(args):
         d = d.split("<extra_id_0>")[-1]
         processed_data.append(d)
 
-    with open(args.processed_pred, 'w') as f:
+    with open(args.processed_pred, "w") as f:
         f.write("\n".join(processed_data))
 
-    test_data = VQADataset(args.test_data)
+    test_data = VideoQAWithEvidenceDataset(args.test_data)
 
-    evaluate(f"{args.model_name}", processed_data, test_data)
+    evaluate_qa(f"{args.model_name}", processed_data, test_data)
 
 
 if __name__ == "__main__":

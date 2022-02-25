@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ckpt_path=ckpts/T5/text_visual_finetuned/epoch=5-train_loss=1.98.ckpt
+ckpt_path=ckpts/T5/text_visual_finetuned/epoch=2-train_loss=0.85.ckpt
 pred_out_dir=preds/T5/text_visual/
 pred_name=preds-T5_text_visual_eval
 pred_num=1
@@ -14,8 +14,7 @@ path_to_visual=/home/dnaihao/In-the-wild-QA/src/video_features/features/WildQA_I
 data_dir=wildQA-data
 sample_rate=60
 
-
-CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_text_visual_eval \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -m src T5_text_visual_eval \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \
@@ -29,7 +28,6 @@ CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src.main T5_text_visual_eval
     --path_to_visual_file ${path_to_visual} \
     --sample_rate ${sample_rate} \
     --visual_size ${visual_size}
-
 
 python -m src.utils.post_process_T5 \
     --pred ${pred_out_dir}/${pred_name}-${pred_num}.txt \

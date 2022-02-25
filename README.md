@@ -6,11 +6,10 @@ With Conda and [Mamba](https://github.com/mamba-org/mamba) installed:
 
 ```bash
 mamba env create
-conda activate wildqa
+mamba activate wildqa
 ```
 
 Mamba is a Conda CLI drop-in replacement that's much faster.
-It implements most operations. Some exceptions are `activate` and `deactivate`.
 
 ### Adding/changing packages
 
@@ -23,6 +22,7 @@ mamba env update
 ### Issues with mamba
 
 Sometimes `mamba` changes `torch` version to CPU. If that happens, do
-```
+
+```bash
 mamba install pytorch::pytorch
 ```

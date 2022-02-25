@@ -3,11 +3,7 @@ variables:
   PYTHONPATH: .
 dependencies:
   - pip:
-    -            rouge
     -            scenedetect
-    -            keras==2.6.0
-    -            ipdb
-    -            ipython
   -              beautifulsoup4
   - conda-forge::cached_path
   - conda-forge::cudatoolkit
@@ -15,7 +11,8 @@ dependencies:
   - conda-forge::google-api-python-client
   - conda-forge::google-auth-oauthlib
   -              h5py
-  -              keras  # Not sure why it's needed, but it gives an import error otherwise.
+  -              ipython
+  -              keras=2.6  # Not sure why it's needed, but it gives an import error otherwise.
   - conda-forge::matplotlib
   - conda-forge::moviepy
   -              nltk
@@ -25,6 +22,7 @@ dependencies:
   -              pandas
   -              pip
   -              pillow
+  - conda-forge::py-rouge=1.1
   -              python
   -     pytorch::pytorch
   - conda-forge::pytorch-lightning

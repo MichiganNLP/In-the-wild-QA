@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer, util
 from tqdm import tqdm
 
 from src.closest_rtr.rtr_dataloader import RTRDataset
-from src.evaluations.evaluations import evaluate
+from src.evaluations.evaluations import evaluate_qa
 
 
 def closest_rtr(args: argparse.Namespace) -> None:
@@ -23,10 +23,9 @@ def closest_rtr(args: argparse.Namespace) -> None:
     for test_d in tqdm(test_data):
         question_emb = test_d["source_embeddings"]
         similarity_scores = [util.pytorch_cos_sim(question_emb, itm["source_embeddings"]) for itm in train_data]
-        max_idx = np.argmax([s.cpu() for s in similarity_scores])
+        max_idx = np.argmax([s.cpu() for s in similarity_scores]).item()
 
         pred = train_data[max_idx]["target"]
         preds.append(pred)
-    
-    evaluate("Closest Retrieval Text", preds, test_data)
-    
+
+    evaluate_qa("Closest Retrieval Text", preds, test_data)

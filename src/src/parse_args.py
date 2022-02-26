@@ -242,6 +242,27 @@ class T5EvidenceIOEvalArguments(T5TextVisualEvalArguments):
 
 #########################################################################################
 #########################################################################################
+# Argument classes for Multi-Tasking part.
+
+
+@dataclass
+class T5MultiTaskTrainArguments(T5TextVisualTrainArguments):
+    vqa_weight: float = field(
+        default=1.0,
+        metadata={"help": "weight for VQA part"}
+    )
+    evidence_weight: float = field(
+        default=1.0,
+        metadata={"help": "weight for evidence finding part"}
+    )
+
+
+@dataclass
+class T5MultiTaskEvalArguments(T5TextVisualEvalArguments):
+    pass
+
+#########################################################################################
+#########################################################################################
 # Argument classes for others.
 
 

@@ -8,8 +8,8 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=24:00:00
 #SBATCH --account=mihalcea0
-#SBATCH --partition=gpu
+#SBATCH --partition=spgpu
 #SBATCH --output=/home/%u/In-the-wild-QA/src/%x-%j.log
 
-# source /etc/profile.d/http_proxy.sh
-bash extract_features.sh
+source /etc/profile.d/http_proxy.sh
+bash T5_multi_task_train.sh

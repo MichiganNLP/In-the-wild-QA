@@ -51,13 +51,15 @@ def get_mask_from_sequence_lengths(lengths: torch.Tensor) -> torch.Tensor:
 
 class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
     def __init__(self, data_dir: str, tokenizer: PreTrainedTokenizerBase, is_test: bool = False,
-                 is_zero_shot: bool = False, is_evidence: bool = False, include_visual: bool = False,
-                 max_len: int = 512, max_vid_len: Optional[int] = None, path_to_visual_file: Optional[str] = None,
-                 visual_size: Optional[int] = None, sample_rate: Optional[int] = None) -> None:
+                 is_zero_shot: bool = False, is_evidence: bool = False, is_multitask: bool = False,
+                 include_visual: bool = False, max_len: int = 512, max_vid_len: Optional[int] = None, 
+                 path_to_visual_file: Optional[str] = None, visual_size: Optional[int] = None, 
+                 sample_rate: Optional[int] = None) -> None:
         self.tokenizer = tokenizer
         self.is_test = is_test
         self.is_zero_shot = is_zero_shot
         self.is_evidence = is_evidence
+        self.is_multitask = is_multitask
 
         self.max_len = max_len
         self.include_visual = include_visual
@@ -132,6 +134,11 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
                     self.evidences.append([[round(float(start_time)), round(float(end_time))]
                                            for evidence in d["evidences"]
                                            for start_time, end_time in evidence.values()])
+                elif self.is_multitask:
+                    self.evidences.append([[round(float(start_time)), round(float(end_time))]
+                                           for evidence in d["evidences"]
+                                           for start_time, end_time in evidence.values()])
+                    self.targets.append(self._tokenize(f"{d['answer']} {self.tokenizer.eos_token}"))         
                 else:  # not finding evidence, thus tokenize the targets
                     self.targets.append(self._tokenize(f"{d['answer']} {self.tokenizer.eos_token}"))
 
@@ -161,6 +168,10 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
         if not self.is_test:
             if self.is_evidence:
                 evidences = self.evidences[i]
+            elif self.is_multitask:
+                evidences = self.evidences[i]
+                target_ids = self.targets[i]["input_ids"].squeeze()
+                target_mask = self.targets[i]["attention_mask"].squeeze()
             else:
                 target_ids = self.targets[i]["input_ids"].squeeze()
                 target_mask = self.targets[i]["attention_mask"].squeeze()
@@ -171,14 +182,18 @@ class VideoQAWithEvidenceForT5Dataset(VideoQAWithEvidenceDataset):
 
 def get_dataset(tokenizer: PreTrainedTokenizerBase, data_dir: str,
                 args: argparse.Namespace, is_test: bool = False) -> VideoQAWithEvidenceForT5Dataset:
-    if args.model_type in ["T5_text_and_visual", "T5_text_visual_eval"]:
+    if args.model_type in {"T5_text_and_visual", "T5_text_visual_eval"}:
         kwargs = {"include_visual": True, "max_vid_len": args.max_vid_length,
                   "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size,
                   "sample_rate": args.sample_rate}
-    elif args.model_type in ["T5_evidence", "T5_evidence_eval", "T5_evidence_IO", "T5_evidence_IO_eval"]:
+    elif args.model_type in {"T5_evidence", "T5_evidence_eval", "T5_evidence_IO", "T5_evidence_IO_eval"}:
         kwargs = {"include_visual": True, "max_vid_len": args.max_vid_length,
                   "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size,
                   "sample_rate": args.sample_rate, "is_evidence": True}
+    elif args.model_type in {"T5_multi_task", "T5_multi_task_eval"}:
+        kwargs = {"include_visual": True, "max_vid_len": args.max_vid_length,
+                  "path_to_visual_file": args.path_to_visual_file, "visual_size": args.visual_size,
+                  "sample_rate": args.sample_rate, "is_multitask": True}
     elif args.model_type == "T5_zero_shot":
         kwargs = {"is_zero_shot": True}
     else:

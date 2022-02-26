@@ -5,12 +5,12 @@ CUDA_ID=0
 
 
 # params based on the params at the top
-output_ckpt_dir=ckpts/T5/evidence_IO_finetuned/
+output_ckpt_dir=ckpts/T5/T5_multi_task/
 num_train_epochs=50
 train_batch_size=1
 eval_batch_size=1
-log_dir=logs/T5_evidence_IO/
-log_path=logs/T5_evidence_IO/baseline.log
+log_dir=logs/T5_multi_task/
+log_path=logs/T5_multi_task/baseline.log
 gradient_accumulation_steps=16
 path_to_visual=video_features/features/WildQA_I3D_avg_pool.hdf5
 visual_size=1024
@@ -18,7 +18,7 @@ max_seq_length=512
 max_vid_length=2048
 sample_rate=1
 seed=42
-wandb_name=T5_evidence_sr-${sample_rate}_mvl-${max_vid_length}_sd-${seed}
+wandb_name=T5_multi_task_sr-${sample_rate}_mvl-${max_vid_length}_sd-${seed}
 wandb_entity=in-the-wild-vqa-um
 wandb_project=trial
 
@@ -28,7 +28,7 @@ mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}
 
 
-CUDA_VISIBLE_DEVICES=${CUDA_ID} CUDA_LAUNCH_BLOCKING=1 python -W ignore -m src T5_evidence_IO \
+CUDA_VISIBLE_DEVICES=${CUDA_ID} CUDA_LAUNCH_BLOCKING=1 python -W ignore -m src T5_multi_task \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
     --test_data example_data/${data_dir}/test.json \

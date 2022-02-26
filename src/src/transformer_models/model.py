@@ -11,7 +11,7 @@ from transformers.models.t5.modeling_t5 import T5EncoderModel
 from transformers.modeling_outputs import Seq2SeqLMOutput
 from collections import defaultdict
 
-from src.transformer_models.t5_and_visual import T5AndVisual, TextVisualEncoder
+from src.transformer_models.t5_and_visual import T5AndVisual, TextVisualEncoder, _combine_attention_masks
 from src.utils.utils import device
 
 
@@ -90,6 +90,65 @@ class T5AndVisualEvidenceIO(T5EncoderModel):  # noqa
             results_with_score[b].sort(key=lambda x: x[-1], reverse=True)
         return results_with_score
 
+class T5MultiTask(T5ForConditionalGeneration):
+
+    def __init__(self, config: T5Config, visual_size: int) -> None:
+        super().__init__(config)
+        self.encoder = TextVisualEncoder(self.encoder, visual_size)  # noqa
+        self.start_end = nn.Linear(self.config.d_model, 2)
+
+    @overrides(check_signature=False)
+    def prepare_inputs_for_generation(self, input_ids: torch.Tensor, visual: Optional[torch.Tensor] = None,
+                                      visual_attention_mask: Optional[torch.Tensor] = None,
+                                      **kwargs) -> Mapping[str, Any]:
+        output = super().prepare_inputs_for_generation(input_ids, **kwargs)  # noqa
+        output["visual"] = visual
+        output["visual_attention_mask"] = visual_attention_mask
+        return output
+
+    @overrides(check_signature=False)
+    def forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                labels: Optional[torch.Tensor] = None, **kwargs) -> Union[Seq2SeqLMOutput, tuple[torch.Tensor, ...]]:
+        start = end = None
+        if "encoder_outputs" not in kwargs:
+            # only here when doing the multi-task training
+            start, end, encoder_outputs = self._evidence_forward(masked_caption_ids, visual=visual, attention_mask=attention_mask,
+                                visual_attention_mask=visual_attention_mask, **kwargs)
+            kwargs["encoder_outputs"] = encoder_outputs
+
+        # The attention mask used in the encoder (the combined mask) is actually necessary for the decoder even when
+        # providing "encoder_outputs". We could compute it once in the encoder, return it as one of its fields and use
+        # it here. However, in `T5FillerModel.generative_step` we input the encoder outputs but without the mask
+        # since it's constructed from the `generate` output which in turn only returns certain fields (not the mask).
+        attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)
+        outputs = super().forward(attention_mask=attention_mask, labels=labels, **kwargs) # noqa
+
+        # add variables on the fly
+        if start and end:
+            setattr(outputs, "start", start)
+            setattr(outputs, "end", end)
+        return outputs
+    
+    def _evidence_forward(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                labels: Optional[torch.Tensor] = None, **kwargs) -> tuple[torch.Tensor, torch.Tensor, Seq2SeqLMOutput]: 
+        encoder_outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
+                                        visual_attention_mask=visual_attention_mask, **kwargs)
+        visual_start = masked_caption_ids.shape[1]
+        visual_hidden = encoder_outputs.last_hidden_state[:, visual_start:, :]
+
+        start_end = self.start_end(visual_hidden)
+        return start_end[..., 0], start_end[..., 1], encoder_outputs
+
+    
+    def predict(self, masked_caption_ids: Optional[torch.Tensor] = None, visual: Optional[torch.Tensor] = None,
+                attention_mask: Optional[torch.Tensor] = None, visual_attention_mask: Optional[torch.Tensor] = None,
+                **kwargs) -> tuple[torch.Tensor, torch.Tensor]:
+        start, end, _ = self._evidence_forward(masked_caption_ids, visual=visual, attention_mask=attention_mask,
+                         visual_attention_mask=visual_attention_mask, **kwargs)
+        return start.log_softmax(dim=-1), end.log_softmax(dim=-1)
+
 
 class FineTuner(pl.LightningModule):  # noqa
     def __init__(self, tokenizer: PreTrainedTokenizerBase, **kwargs) -> None:  # noqa
@@ -111,7 +170,10 @@ class FineTuner(pl.LightningModule):  # noqa
             self.model = T5AndVisualEvidenceIO.from_pretrained(self.hparams.model_name_or_path,
                                                                 visual_size=self.hparams.visual_size)   
             self.cross_entropy_loss = nn.CrossEntropyLoss()
-            
+        elif self.hparams.model_type == "T5_multi_task":
+            self.model = T5MultiTask.from_pretrained(self.hparams.model_name_or_path,
+                                                    visual_size=self.hparams.visual_size)
+            self.cross_entropy_loss = nn.CrossEntropyLoss()
         else:
             assert self.hparams.model_type in ["T5_train", "T5_zero_shot"]
             self.model = T5ForConditionalGeneration.from_pretrained(self.hparams.model_name_or_path)
@@ -123,66 +185,73 @@ class FineTuner(pl.LightningModule):  # noqa
                 decoder_attention_mask: Optional[torch.Tensor] = None, labels: Optional[torch.Tensor] = None) -> Any:
         if labels is not None:
             labels[labels == self.tokenizer.pad_token_id] = -100  # For the loss computation.
-
-        if self.hparams.model_type in {"T5_text_and_visual"}:
-            return self.model(input_ids, attention_mask=attention_mask, visual=visual,
-                              visual_attention_mask=visual_attention_mask, labels=labels)
+        
+        if self.hparams.model_type in {"T5_text_and_visual", "T5_multi_task"}:
+            kwargs = {"attention_mask": attention_mask, "visual": visual,
+                        "visual_attention_mask": visual_attention_mask, "labels": labels}
         elif self.hparams.model_type in {"T5_evidence", "T5_evidence_IO"}:
-            return self.model(input_ids, attention_mask=attention_mask, visual=visual,
-                              visual_attention_mask=visual_attention_mask)
+            kwargs = {"attention_mask": attention_mask, "visual": visual,
+                        "visual_attention_mask": visual_attention_mask}
         else:
-            return self.model(input_ids, attention_mask=attention_mask, decoder_input_ids=decoder_input_ids,
-                              decoder_attention_mask=decoder_attention_mask, labels=labels)
+            kwargs = {"attention_mask": attention_mask, "labels": labels}
+
+        return self.model(input_ids, **kwargs)
+    
+    def _evidence_loss(self, raw_start, raw_end, batch):
+        evidence = batch["evidence"]
+
+        starts = evidence[:, :, 0]
+        ends = evidence[:, :, 1]
+
+        start_loss = self.cross_entropy_loss(raw_start, starts[:, 0])  # FIXME: we predict only one evidence.
+        end_loss = self.cross_entropy_loss(raw_end, ends[:, 0])
+        
+        return start_loss + end_loss
+
+    def _evidence_IO_loss(self, prob_in, batch):
+        # construct the groundtruth sequence
+        gold = torch.zeros(prob_in.shape)
+        evidence = batch["evidence"]
+        starts = evidence[:, :, 0]
+        ends = evidence[:, :, 1]
+        batch_size, evidence_number = starts.shape
+        
+        for b_idx in range(batch_size):
+            for e_idx in range(evidence_number):
+                gold[b_idx][starts[b_idx][e_idx]: ends[b_idx][e_idx]] = 1.0
+        gold = gold.to(device)
+        loss = self.cross_entropy_loss(prob_in, gold)
+
+    def _seq2seq_loss_exact_match(self, batch, outputs, split):
+        labels = batch["target_ids"]
+        loss = outputs.loss
+        dtype = loss.dtype
+        preds = outputs[1].argmax(dim=-1)
+        exact_match = (preds == labels).all(dim=-1).to(dtype).mean()  # noqa
+        self.log(f"{split}_em", exact_match, prog_bar=True)
+        return loss
 
     def _step(self, batch: Mapping[str, Any], split: Literal["train", "val", "test"]) -> Optional[torch.Tensor]:
+        # We clone `label_ids` because `forward` modifies it, but later we need to use it.
+        outputs = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
+                        visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"],
+                        labels=batch["target_ids"].clone(), decoder_attention_mask=batch["target_mask"])
+    
         if self.hparams.model_type == "T5_evidence":
-            raw_start, raw_end = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
-                                      visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"])
+            raw_start, raw_end = outputs
+            loss = self._evidence_loss(raw_start, raw_end, batch)
 
-            evidence = batch["evidence"]
-
-            starts = evidence[:, :, 0]
-            ends = evidence[:, :, 1]
-
-            start_loss = self.cross_entropy_loss(raw_start, starts[:, 0])  # FIXME: we predict only one evidence.
-            end_loss = self.cross_entropy_loss(raw_end, ends[:, 0])
-
-            loss = start_loss + end_loss
-        elif self.hparams.model_type == "T5_evidence_IO":
-            prob_in = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
-                            visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"])
-            # construct the groundtruth sequence
-            gold = torch.zeros(prob_in.shape)
-            evidence = batch["evidence"]
-            starts = evidence[:, :, 0]
-            ends = evidence[:, :, 1]
-            batch_size, evidence_number = starts.shape
             
-            for b_idx in range(batch_size):
-                for e_idx in range(evidence_number):
-                    gold[b_idx][starts[b_idx][e_idx]: ends[b_idx][e_idx]] = 1.0
-            gold = gold.to(device)
-            loss = self.cross_entropy_loss(prob_in, gold)
+        elif self.hparams.model_type == "T5_evidence_IO":
+
+            loss = self._evidence_IO_loss(outputs, batch)
+
+        elif self.hparams.model_type == "T5_multi_task":
+            evidence_loss = self._evidence_loss(outputs.start, outputs.end, batch)
+            seq2seq_loss = self._seq2seq_loss_exact_match(batch, outputs, split)
+            loss = self.hparams.vqa_weight * seq2seq_loss + self.hparams.evidence_weight * evidence_loss
         else:
-            labels = batch["target_ids"]
-
-            # We clone `label_ids` because `forward` modifies it, but later we need to use it.
-            if self.hparams.model_type in {"T5_text_and_visual", "visual_bert_QA"}:
-                outputs = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
-                               visual=batch["visual_ids"], visual_attention_mask=batch["visual_mask"],
-                               labels=labels.clone(), decoder_attention_mask=batch["target_mask"])
-            else:
-                outputs = self(input_ids=batch["source_ids"], attention_mask=batch["source_mask"],
-                               labels=labels.clone(), decoder_attention_mask=batch["target_mask"])
-
-            loss = outputs[0]
-
-            dtype = loss.dtype
-
-            preds = outputs[1].argmax(dim=-1)
-
-            exact_match = (preds == labels).all(dim=-1).to(dtype).mean()  # noqa
-            self.log(f"{split}_em", exact_match, prog_bar=True)
+            loss = self._seq2seq_loss_exact_match(batch, outputs, split)
 
         self.log(f"{split}_loss", loss)
 

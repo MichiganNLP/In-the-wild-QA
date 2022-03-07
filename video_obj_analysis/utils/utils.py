@@ -1,23 +1,15 @@
-from __future__ import division
 import math
-import time
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.autograd import Variable
-import numpy as np
 
-#import matplotlib.pyplot as plt
-#import matplotlib.patches as patches
+import numpy as np
+import torch
 
 
 def load_classes(path):
     """
-    Loads class labels at 'path'
+    Loads class labels at `path`
     """
-    fp = open(path, "r")
-    names = fp.read().split("\n")[:-1]
-    return names
+    with open(path) as fp:
+        return fp.read().split("\n")[:-1]
 
 
 def weights_init_normal(m):
@@ -33,7 +25,7 @@ def compute_ap(recall, precision):
     """ Compute the average precision, given the recall and precision curves.
     Code originally from https://github.com/rbgirshick/py-faster-rcnn.
 
-    # Arguments
+    # arguments
         recall:    The recall curve (list).
         precision: The precision curve (list).
     # Returns
@@ -53,8 +45,7 @@ def compute_ap(recall, precision):
     i = np.where(mrec[1:] != mrec[:-1])[0]
 
     # and sum (\Delta recall) * prec
-    ap = np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])
-    return ap
+    return np.sum((mrec[i + 1] - mrec[i]) * mpre[i + 1])
 
 
 def bbox_iou(box1, box2, x1y1x2y2=True):
@@ -95,13 +86,13 @@ def bbox_iou_numpy(box1, box2):
     Parameters
     ----------
     box1 : ndarray
-        (N, 4) shaped array with bboxes
+        (n, 4) shaped array with bboxes
     box2 : ndarray
         (M, 4) shaped array with bboxes
     Returns
     -------
     : ndarray
-        (N, M) shaped array with IoUs
+        (n, M) shaped array with IoUs
     """
     area = (box2[:, 2] - box2[:, 0]) * (box2[:, 3] - box2[:, 1])
 
@@ -149,7 +140,7 @@ def non_max_suppression(prediction, num_classes, conf_thres=0.5, nms_thres=0.4):
         if not image_pred.size(0):
             continue
         # Get score and class with highest confidence
-        class_conf, class_pred = torch.max(image_pred[:, 5 : 5 + num_classes], 1, keepdim=True)
+        class_conf, class_pred = torch.max(image_pred[:, 5: 5 + num_classes], 1, keepdim=True)
         # Detections ordered as (x1, y1, x2, y2, obj_conf, class_conf, class_pred)
         detections = torch.cat((image_pred[:, :5], class_conf.float(), class_pred.float()), 1)
         # Iterate through all predicted classes
@@ -185,7 +176,7 @@ def non_max_suppression(prediction, num_classes, conf_thres=0.5, nms_thres=0.4):
 
 
 def build_targets(
-    pred_boxes, pred_conf, pred_cls, target, anchors, num_anchors, num_classes, grid_size, ignore_thres, img_dim
+        pred_boxes, pred_conf, pred_cls, target, anchors, num_anchors, num_classes, grid_size, ignore_thres, img_dim
 ):
     nB = target.size(0)
     nA = num_anchors

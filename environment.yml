@@ -1,0 +1,44 @@
+name: wildqa
+variables:
+  PYTHONPATH: .
+dependencies:
+  - pip:
+    -            scenedetect
+  -              beautifulsoup4
+  - conda-forge::cached_path
+  - conda-forge::cudatoolkit
+  - conda-forge::filterpy
+  - conda-forge::google-api-python-client
+  - conda-forge::google-auth-oauthlib
+  -              h5py
+  -              ipython
+  -              keras=2.6  # Not sure why it's needed, but it gives an import error otherwise.
+  - conda-forge::matplotlib
+  - conda-forge::moviepy
+  -              nltk
+  -              numpy
+  -              opencv
+  - conda-forge::overrides
+  -              pandas
+  -              pip
+  -              pillow
+  - conda-forge::py-rouge=1.1
+  -              python
+  -     pytorch::pytorch
+  - conda-forge::pytorch-lightning
+  - conda-forge::pytube
+  -              requests
+  - conda-forge::rich  # For fancy output.
+  -              selenium
+  - conda-forge::sentence-transformers
+  -              scikit-image
+  -              scikit-learn
+  -              scipy
+  -              tabulate
+  -              tensorboard
+  -              tensorflow  # For more capabilities in TensorBoard.
+  - conda-forge::torchmetrics
+  -     pytorch::torchvision
+  -              tqdm
+  - HuggingFace::transformers
+  - conda-forge::wandb

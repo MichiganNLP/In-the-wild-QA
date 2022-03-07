@@ -1,19 +1,17 @@
+import argparse
 
-from sentence_transformers import SentenceTransformer, util
-from torch.utils.data import ConcatDataset
 import numpy as np
-
-from src.closest_rtr.rtr_dataloader import RTRDataset
-from src.evaluations.evaluations import evaluate
+from sentence_transformers import SentenceTransformer, util
 from tqdm import tqdm
 
+from src.closest_rtr.rtr_dataloader import RTRDataset
+from src.evaluations.evaluations import evaluate_qa
 
-def closest_rtr(args):
 
+def closest_rtr(args: argparse.Namespace) -> None:
     embedding_model = SentenceTransformer(args.embedding_model)
 
     train_data = RTRDataset(args.train_data, embedding_model=embedding_model)
-    dev_data = RTRDataset(args.dev_data, embedding_model=embedding_model)
 
     # NOTE: here we only use train data as the corpus
     # as dev data is the same as test data in our testing
@@ -22,13 +20,12 @@ def closest_rtr(args):
     test_data = RTRDataset(args.test_data, embedding_model=embedding_model)
 
     preds = []
-    for test_d in tqdm(iter(test_data)):
-        question_emb = test_d['source_embeddings']
+    for test_d in tqdm(test_data):
+        question_emb = test_d["source_embeddings"]
         similarity_scores = [util.pytorch_cos_sim(question_emb, itm["source_embeddings"]) for itm in train_data]
-        max_idx = np.argmax(similarity_scores)
+        max_idx = np.argmax([s.cpu() for s in similarity_scores]).item()
 
-        pred = train_data[max_idx]['target']
+        pred = train_data[max_idx]["target"]
         preds.append(pred)
-    
-    evaluate("Closest Retrieval Text", preds, test_data)
-    
+
+    evaluate_qa("Closest Retrieval Text", preds, test_data)

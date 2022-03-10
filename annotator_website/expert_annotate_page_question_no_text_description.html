@@ -239,9 +239,44 @@
         continue to provide another question for this video. On the contrary, if you want to delete one question, you could click 
         the <u>Delete this Question</u> button.</li>
         <li>
-          When you provide multiple questions for the same video, make sure these questions are <b>independently</b> asked.
+          Ask one question at a time.
+          <ul>
+            <li>E.g., <i>&quot;<span class="counterexample-answer">Are there any people? What are they doing?</span>&quot;</i> is <u>not</u> appropriate.
+          </ul>
+        </li>
+        <li>
+          When you provide multiple questions for the same video, make sure these questions are <u><b>independently</b></u> asked.
           <ul>
             <li>E.g., "What is growing on pine trees?" and "What is their color?" are <u>not</u> independent.</li>
+          </ul>
+        </li>
+        <li>
+          The answer should be derived from the video (visual or audio).
+          <ul>
+            <li>E.g., <i>&quot;<span class="counterexample-answer">Why do they run every morning?</span>&quot;</i> is <u>not</u> a good question.
+          </ul>
+        </li>
+        <li>
+          Ask from the 3rd person point of view.
+          <ul>
+            <li>E.g., &quot;What do <i><span class="counterexample-answer">we</span></i> have on this farm?&quot; ->
+              &quot;What do <i><span class="example-answer">They</span></i> have on this farm?&quot;
+            </li>
+          </ul>
+        </li>
+        <li>
+          Try to balance the questions such that the answers are not too repetitive (E.g., too many 'yes' answers).
+        </li>
+        <li>
+          Ask questions matter-of-factly (as <b>objectively</b> as possible). Stick to what you can see or hear from the video.
+          <ul>
+            <li>E.g., <i>&quot;<span class="counterexample-answer">Does it make people feel good here?</span>&quot;</i> is somehow subjective.
+          </ul>
+        </li>
+        <li>
+          <u>Don't</u> ask questions about how's the video being recorded, the camera-person or the camera itself. Ask about the content itself. Ignore what the camera-person is doing.
+          <ul>
+            <li>E.g., &quot;What's the <i><span class="counterexample-answer">cameraman</span></i> doing?&quot; / &quot;How fast is the <i><span class="counterexample-answer">camera</span></i> moving?&quot; are <u>not</u> good questions.
           </ul>
         </li>
       </ul>
@@ -269,8 +304,15 @@
       <ul>
         <li>Your answer should be written as <b>full sentences</b> (at least one).
           <ul>
-            <li>E.g.,<i>&quot;<span class="counterexample-answer">Left</span>&quot;</i> ->
+            <li>E.g., <i>&quot;<span class="counterexample-answer">Left</span>&quot;</i> ->
               <i>&quot;<span class="example-answer">The landspout bends toward the left.</span>&quot;</i>
+            </li>
+          </ul>
+        </li>
+        <li>
+          The answer should be derived from the video (visual or audio).
+          <ul>
+            <li>E.g., <i>&quot;<span class="counterexample-answer">These plants are green because they contain chlorophyll.</span>&quot;</i> is <u>not</u> a good answer.
             </li>
           </ul>
         </li>
@@ -278,13 +320,21 @@
           Provide answers matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.
           <ul>
             <li>E.g., <i>&quot;<span class="counterexample-answer">beautiful</span>&quot;</i> is likely <u>not</u> a
-              good word to use within an answer.
+              good word to use within an answer.</li>
+            <li>E.g., <i>&quot;<span class="counterexample-answer">This takes some bravery to do.</span>&quot;</i> is somehow subjective.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <u>Don't</u> answer about how's the video being recorded, the camera-person, or the camera itself. Answer about the content itself. Ignore what the camera-person is doing.
+          <ul>
+            <li>
+              E.g., &quot;There are two people, i.e. a running child, and the <i><span class="counterexample-answer">cameraman</span></i>.&quot; is <u>not</u> a good answer.
             </li>
           </ul>
         </li>
         <li>
           When you enter numbers, please enter digits instead of text.
-
           <ul>
             <li><i>&quot;<span class="counterexample-answer">Seventeen</span>&quot;</i> ->
               <i>&quot;<span class="example-answer">17</span>&quot;</i></li>
@@ -426,7 +476,14 @@
             <h4>Your Question:</h4>
              <textarea class="form-control" id="question-input-${0, i}-${0,j}" name="question-input-${0, i}-${0,j}" 
               rows="2" placeholder="Please type your question here" 
-              ${isExample? "disabled" :""}>${isExample? "Which direction does the landspout bend toward?":""}</textarea></br>
+              ${isExample? "disabled" :""}>${isExample? "Which direction does the landspout bend toward?":""}</textarea>
+              <ur class="annotate-instructions">
+                <li>Ask from the 3rd person point of view </li>
+                <li>The answer to this question should be derived from the video (visual or audio).</li>
+                <li>Questions for the same video should be <b>independent</b> of each other.</li>
+                <li>Ask questions matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.</li>
+                <li>Ask about the content itself (<u>not</u> the video making process, the camera-person, or the camera itself)</li>
+              </ur></br>
           </div>
 
           <hr>
@@ -493,10 +550,12 @@
              <textarea class="form-control" id="correct-answer-${0,i}-${0,j}" name="correct-answer-${0,i}-${0,j}" 
               rows="2" placeholder="Correct Answer" 
               ${isExample? "disabled" :""}>${isExample? "The landspout bends toward the left.":""}</textarea>
-            <ul class="annotate-instructions">
-              <li> Your answer should be written as <b>full sentences</b> (at least one)</li>
-              <li> Provide answers matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.</li>
-            </ul></br>
+            <ur class="annotate-instructions">
+              <li>Provide answers matter-of-factly (as objectively as possible). Stick to what you can see or hear from the video.</li>
+              <li>Your answer should be written as <b>full sentences</b> (at least one).</li>
+              <li>Answer about the content itself (<u>not</u> the video making process,
+              the camera-person, or the camera itself)</li>
+            </ur></br>
             <h5>Please suggest how confident you are with your correct answer:</h5>
             <br>
             <div>

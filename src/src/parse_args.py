@@ -242,6 +242,75 @@ class T5EvidenceIOEvalArguments(T5TextVisualEvalArguments):
 
 #########################################################################################
 #########################################################################################
+# Argument classes for Multi-Tasking part.
+
+
+@dataclass
+class T5MultiTaskTrainArguments(T5TextVisualTrainArguments):
+    vqa_weight: float = field(
+        default=1.0,
+        metadata={"help": "weight for VQA part"}
+    )
+    evidence_weight: float = field(
+        default=1.0,
+        metadata={"help": "weight for evidence finding part"}
+    )
+
+
+@dataclass
+class T5MultiTaskEvalArguments(T5TextVisualEvalArguments):
+    pass
+
+
+#########################################################################################
+#########################################################################################
+# Argument classes for Pre-trained model, VIOLET encoder + T5 decoder and CLIP encoder + T5 decoder
+
+
+@dataclass
+class VIOLETDecoderTrainArguments(T5TextVisualTrainArguments):
+    pretrained_violet_ckpt_path: str = field(
+        default="ckpts/pre-trained_violet/ckpt_violet_pretrain.pt",
+        metadata={"help": "path to the pre-trained VIOLET model checkpoint"}
+    )
+    path_to_frames: str = field(
+        default="video_features/frames",
+        metadata={"help": "path to the directory that contains all the extracted frames"}
+    )
+    size_img: int = field(
+        default=224,
+        metadata={"help": "image size to convert. We use the default 224 consistent with the original Violet paper."}
+    )
+
+
+@dataclass
+class VIOLETDecoderEvalArguments(T5TextVisualEvalArguments):
+    pass
+
+
+@dataclass
+class CLIPDecoderBasics:
+    pretrained_clip_ckpt_path: str = field(
+        default="openai/clip-vit-base-patch32",
+        metadata={"help": "ckpt name to the pre-trained CLIP model"}
+    )
+    path_to_frames: str = field(
+        default="video_features/frames",
+        metadata={"help": "path to the directory that contains all the extracted frames"}
+    )
+
+@dataclass
+class CLIPDecoderTrainArguments(CLIPDecoderBasics, T5TextVisualTrainArguments):
+    pass
+
+
+@dataclass
+class CLIPDecoderEvalArguments(CLIPDecoderBasics, T5TextVisualEvalArguments):
+    pass
+
+
+#########################################################################################
+#########################################################################################
 # Argument classes for others.
 
 

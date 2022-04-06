@@ -67,5 +67,4 @@ class T5AndVisual(T5ForConditionalGeneration):
         # it here. However, in `T5FillerModel.generative_step` we input the encoder outputs but without the mask
         # since it's constructed from the `generate` output which in turn only returns certain fields (not the mask).
         attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)
-
         return super().forward(attention_mask=attention_mask, labels=labels, **kwargs)  # noqa

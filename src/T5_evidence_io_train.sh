@@ -31,7 +31,7 @@ mkdir -p ${log_dir}
 CUDA_VISIBLE_DEVICES=${CUDA_ID} CUDA_LAUNCH_BLOCKING=1 python -W ignore -m src T5_evidence_IO \
     --train_data example_data/${data_dir}/train.json \
     --dev_data example_data/${data_dir}/dev.json \
-    --test_data example_data/${data_dir}/dev.json \
+    --test_data example_data/${data_dir}/test.json \
     --gradient_accumulation_steps ${gradient_accumulation_steps} \
     --output_ckpt_dir ${output_ckpt_dir} \
     --num_train_epochs ${num_train_epochs} \

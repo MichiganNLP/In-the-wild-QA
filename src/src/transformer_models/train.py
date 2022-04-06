@@ -39,15 +39,15 @@ def transformer_train(args: argparse.Namespace) -> None:
     checkpoint_callback = pl.callbacks.ModelCheckpoint(dirpath=args.output_ckpt_dir,
                                                        filename="{epoch}-{loss/train:.2f}", monitor="loss/train")
 
-    logger = [
+    loggers = [
         WandbLogger(name=args.wandb_name, project=args.wandb_project, entity=args.wandb_entity,
                     offline=args.wandb_offline),
-        TensorBoardLogger(save_dir=".")
+        TensorBoardLogger(save_dir="."),
     ]
 
     trainer = pl.Trainer(accumulate_grad_batches=args.gradient_accumulation_steps, gpus=args.n_gpu,
                          max_epochs=args.num_train_epochs, precision=16 if args.fp_16 else 32,
-                         amp_level=args.opt_level, gradient_clip_val=args.max_grad_norm, logger=logger,
+                         amp_level=args.opt_level, gradient_clip_val=args.max_grad_norm, logger=loggers,
                          callbacks=[RichProgressBar(), LoggingCallback(), checkpoint_callback], log_every_n_steps=1)
 
     duration("Initializing the trainer…", args.timer)

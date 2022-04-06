@@ -193,7 +193,10 @@ class FineTuner(pl.LightningModule):  # noqa
                 decoder_input_ids: Optional[torch.Tensor] = None,
                 decoder_attention_mask: Optional[torch.Tensor] = None, labels: Optional[torch.Tensor] = None) -> Any:
         if labels is not None:
-            labels[labels == self.tokenizer["decoder_tokenizer"].pad_token_id] = -100  # For the loss computation.
+            if isinstance(self.tokenizer, dict):
+                labels[labels == self.tokenizer["decoder_tokenizer"].pad_token_id] = -100  # For the loss computation.
+            else:
+                labels[labels == self.tokenizer.pad_token_id] == -100
         
         if self.hparams.model_type in {"T5_text_and_visual", "T5_multi_task", "violet_decoder", "clip_decoder"}:
             kwargs = {"attention_mask": attention_mask, "visual": visual,

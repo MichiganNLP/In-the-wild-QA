@@ -17,20 +17,20 @@ sample_rate=1
 data_dir=wildQA-data
 
 
-# CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src T5_multi_task_eval \
-#     --train_data example_data/${data_dir}/train.json \
-#     --dev_data example_data/${data_dir}/dev.json \
-#     --test_data example_data/${data_dir}/test.json \
-#     --ckpt_path ${ckpt_path} \
-#     --batch_size ${batch_size} \
-#     --max_seq_length ${max_seq_length} \
-#     --pred_out_dir ${pred_out_dir} \
-#     --beam_size ${beam_size} \
-#     --pred_num ${pred_num} \
-#     --max_vid_length ${max_vid_length} \
-#     --path_to_visual_file ${path_to_visual} \
-#     --sample_rate ${sample_rate} \
-#     --visual_size ${visual_size}
+CUDA_VISIBLE_DEVICES=${CUDA_ID} python -W ignore -m src T5_multi_task_eval \
+    --train_data example_data/${data_dir}/train.json \
+    --dev_data example_data/${data_dir}/dev.json \
+    --test_data example_data/${data_dir}/test.json \
+    --ckpt_path ${ckpt_path} \
+    --batch_size ${batch_size} \
+    --max_seq_length ${max_seq_length} \
+    --pred_out_dir ${pred_out_dir} \
+    --beam_size ${beam_size} \
+    --pred_num ${pred_num} \
+    --max_vid_length ${max_vid_length} \
+    --path_to_visual_file ${path_to_visual} \
+    --sample_rate ${sample_rate} \
+    --visual_size ${visual_size}
 
 
 python -m src.utils.post_process_T5_evidence \

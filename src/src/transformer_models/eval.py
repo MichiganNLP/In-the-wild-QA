@@ -88,7 +88,7 @@ def transformer_eval(args: argparse.Namespace) -> None:
                 seq2seq_outputs.extend(model.tokenizer.decode(ids) for ids in seq2seq_outs)
                 evidence_outputs.extend(get_best_evidence_span(evidence_outs, batch))
             elif args.model_type == "clip_decoder_eval":
-                outputs.extend(model.tokenizer["decoder_tokenizer"].decode(ids) for ids in outs)
+                outputs.extend(model.tokenizer["decoder"].decode(ids) for ids in outs)
             else:  # QA part answer generation
                 outputs.extend(model.tokenizer.decode(ids) for ids in outs)
 

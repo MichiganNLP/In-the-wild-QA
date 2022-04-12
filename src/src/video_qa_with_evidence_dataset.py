@@ -9,14 +9,14 @@ from typing import Any, Callable
 import h5py
 import pytorch_lightning as pl
 import torch
-import torchvision
 import torchvision.datasets
-import torchvision.transforms.functional
 from cached_path import cached_path
 from overrides import overrides
 from torch import nn
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader, Dataset
+from torchvision.datasets.folder import default_loader
+from torchvision.transforms.functional import to_tensor
 from transformers import PreTrainedTokenizerBase
 
 torchvision.set_image_backend("accimage")
@@ -34,11 +34,11 @@ def pad_sequence_and_get_mask(sequence: Sequence[torch.Tensor]) -> tuple[torch.T
 
 
 class VideoQAWithEvidenceDataset(Dataset):
-    def __init__(self, data_path: str, tokenizer: PreTrainedTokenizerBase, use_t5_format: bool = False,
+    def __init__(self, data_path: str, tokenizer: PreTrainedTokenizerBase,
+                 transform: Callable[[torch.Tensor], torch.Tensor] | None = None, use_t5_format: bool = False,
                  include_visual: bool = False, max_len: int = 512, max_vid_len: int | None = None,
                  visual_features_path: str | None = None, frames_path: str | None = None,
-                 visual_avg_pool_size: int | None = None,
-                 transform: Callable[[torch.Tensor], torch.Tensor] | None = None) -> None:
+                 visual_avg_pool_size: int | None = None) -> None:
         super().__init__()
 
         with open(data_path) as file:
@@ -96,9 +96,9 @@ class VideoQAWithEvidenceDataset(Dataset):
         if self.visual_features:
             output["visual"] = self.visual_avg_pool(self.visual_features[video_id])[:self.max_vid_len]
         elif self.frames_path_by_video_id:
-            frames_tensor = torch.stack([torchvision.transforms.functional.to_tensor(torchvision.datasets.folder.default_loader(video_frame_path))
+            frames_tensor = torch.stack([to_tensor(default_loader(video_frame_path))
                                          for video_frame_path in self.frames_path_by_video_id[video_id]])
-            output["visual"] = self.transform(frames_tensor)  # TODO: continue
+            output["visual"] = self.transform(frames_tensor)
 
         return output
 
@@ -106,28 +106,30 @@ class VideoQAWithEvidenceDataset(Dataset):
         keys = next(iter(instances), {})
         batch = {k: [instance[k] for instance in instances] for k in keys}
 
-        for k in ["question", "answers"]:
+        for k in keys:
             stack = batch[k]
 
             if self.tokenizer:
-                if k == "question":
-                    if self.use_t5_format:
+                first_val = next(iter(stack), None)
+                if isinstance(first_val, str) or (isinstance(first_val, Sequence)
+                                                  and isinstance(next(iter(first_val), None), str)):
+                    if k == "answers":
+                        stack = [answers[0] for answers in stack]  # We tokenize only the first answer.
+                        k = "answer"
+
+                    if self.use_t5_format and k == "question":
                         # It's more efficient to use the private attribute (`_additional_special_tokens`) than the
                         # public one.
-                        to_tokenize = [f"{s} {self.tokenizer._additional_special_tokens[0]}" for s in stack]
+                        to_tokenize = [f"{q} {self.tokenizer._additional_special_tokens[0]}" for q in stack]
+                    elif self.use_t5_format and k == "answers":
+                        raise NotImplementedError  # TODO: should add extra IDs for the answer.
                     else:
                         to_tokenize = stack
-                elif k == "answers":
-                    # FIXME: should add extra IDs for the answer if `self.use_t5_format`.
-                    to_tokenize = [e[0] for e in stack]  # We tokenize only the first answer.
-                    k = "answer"
-                else:
-                    raise ValueError(f"Unknown key: {k}")
 
-                tokenization = self.tokenizer(to_tokenize, max_length=self.max_len, truncation=True, padding=True,
-                                              return_tensors="pt")
-                batch[f"{k}_ids"] = tokenization["input_ids"]
-                batch[f"{k}_mask"] = tokenization["attention_mask"]
+                    tokenization = self.tokenizer(to_tokenize, max_length=self.max_len, truncation=True, padding=True,
+                                                  return_tensors="pt")
+                    batch[f"{k}_ids"] = tokenization["input_ids"]
+                    batch[f"{k}_mask"] = tokenization["attention_mask"]
 
         batch["evidence"], batch["evidence_mask"] = pad_sequence_and_get_mask(batch["evidence"])
 

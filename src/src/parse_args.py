@@ -21,13 +21,14 @@ MODEL_CHOICES = [
     "most_common_ans",
     "closest_rtr",
     "T5_train",
-    "T5_eval",
     "T5_zero_shot",
     "T5_text_and_visual",
-    "T5_text_visual_eval",
     "random_evidence",
     "T5_evidence",
-    "T5_evidence_eval",
+    "T5_evidence_IO",
+    "T5_multi_task",
+    "violet_decoder",
+    "clip_decoder",
 ]
 
 #########################################################################################
@@ -67,8 +68,8 @@ class T5TrainArguments:
     weight_decay: float = 0.0
     adam_epsilon: float = 1e-8
     warmup_steps: int = 0
-    train_batch_size: int = 8
-    eval_batch_size: int = 8
+    train_batch_size: Optional[int] = 8
+    eval_batch_size: Optional[int] = 8
     num_train_epochs: int = 100
     gradient_accumulation_steps: int = 16
     n_gpu: int = 1

@@ -40,13 +40,17 @@ def transformer_train(args: argparse.Namespace) -> None:
         TensorBoardLogger(save_dir="."),
     ]
 
+    callbacks = [RichProgressBar(), LoggingCallback(), checkpoint_callback]
+
     trainer = pl.Trainer(accumulate_grad_batches=args.gradient_accumulation_steps, gpus=args.n_gpu,
                          max_epochs=args.num_train_epochs, precision=16 if args.fp_16 else 32,
-                         amp_level=args.opt_level, gradient_clip_val=args.max_grad_norm, logger=loggers,
-                         profiler=args.profiler, log_every_n_steps=1,
-                         callbacks=[RichProgressBar(), LoggingCallback(), checkpoint_callback])
+                         amp_level=args.opt_level, gradient_clip_val=args.max_grad_norm, profiler=args.profiler,
+                         log_every_n_steps=1, logger=loggers, callbacks=callbacks)
 
-    trainer.fit(model, datamodule=data_module)
+    if args.model_type == "T5_zero_shot":
+        trainer.validate(model, datamodule=data_module)
+    else:
+        trainer.fit(model, datamodule=data_module)
 
     if args.test_after_train:
         trainer.test(model, datamodule=data_module)

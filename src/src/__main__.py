@@ -9,13 +9,12 @@ from transformers import HfArgumentParser
 from transformers.hf_argparser import DataClassType
 
 from src.closest_rtr.closest_rtr import closest_rtr
-from src.mca.mca import most_common_ans
+from src.mca.mca import evaluate_most_common_answer
 from src.parse_args import CLIPDecoderTrainArguments, ClosestRetrievalArguments, DataPathArguments, MODEL_CHOICES, \
     RandomEvidenceArguments, T5EvidenceFindingTrainArguments, T5EvidenceIOTrainArguments, T5MultiTaskTrainArguments, \
     T5TextVisualTrainArguments, T5TrainArguments, T5ZeroShotArguments, VIOLETDecoderTrainArguments, WandbArguments
 from src.rdm.random_evidence import random_evidence
 from src.rdm.random_text import random_text
-from src.transformer_models.eval import transformer_eval
 from src.transformer_models.train import transformer_train
 
 
@@ -39,38 +38,34 @@ def run_model(dataclass_types: DataClassType | Iterable[DataClassType],
 def main() -> None:
     model_type = sys.argv[1]
 
-    # QA models
     if model_type == "random_text":
-        run_model(DataPathArguments, random_text, "random_text")
+        dataclass_types = DataPathArguments
+        model_function = random_text
     elif model_type == "most_common_ans":
-        run_model(DataPathArguments, most_common_ans, "most_common_ans")
+        dataclass_types = DataPathArguments
+        model_function = evaluate_most_common_answer
     elif model_type == "closest_rtr":
-        run_model([DataPathArguments, ClosestRetrievalArguments], closest_rtr, "closest_rtr")
-    elif model_type == "T5_train":
-        run_model([DataPathArguments, T5TrainArguments, WandbArguments], transformer_train, "T5_train")
-    elif model_type == "T5_zero_shot":
-        run_model([DataPathArguments, T5ZeroShotArguments], transformer_eval, "T5_zero_shot")  # FIXME
-    elif model_type == "T5_text_and_visual":
-        run_model([DataPathArguments, T5TextVisualTrainArguments, WandbArguments], transformer_train,
-                  "T5_text_and_visual")
-    # Evidence models
+        dataclass_types = [DataPathArguments, ClosestRetrievalArguments]
+        model_function = closest_rtr
     elif model_type == "random_evidence":
-        run_model([DataPathArguments, RandomEvidenceArguments], random_evidence, "random_evidence")
-    elif model_type == "T5_evidence":
-        run_model([DataPathArguments, T5EvidenceFindingTrainArguments, WandbArguments], transformer_train,
-                  "T5_evidence")
-    elif model_type == "T5_evidence_IO":
-        run_model([DataPathArguments, T5EvidenceIOTrainArguments, WandbArguments], transformer_train, "T5_evidence_IO")
-    # Multi-Task models
-    elif model_type == "T5_multi_task":
-        run_model([DataPathArguments, T5MultiTaskTrainArguments, WandbArguments], transformer_train, "T5_multi_task")
-    # Pre-trained models
-    elif model_type == "violet_decoder":
-        run_model([DataPathArguments, VIOLETDecoderTrainArguments, WandbArguments], transformer_train, "violet_decoder")
-    elif model_type == "clip_decoder":
-        run_model([DataPathArguments, CLIPDecoderTrainArguments, WandbArguments], transformer_train, "clip_decoder")
+        dataclass_types = [DataPathArguments, RandomEvidenceArguments]
+        model_function = random_evidence
+    elif model_type in MODEL_CHOICES:
+        dataclass_types = {
+            "T5_train": [DataPathArguments, T5TrainArguments, WandbArguments],
+            "T5_zero_shot": [DataPathArguments, T5ZeroShotArguments],
+            "T5_text_and_visual": [DataPathArguments, T5TextVisualTrainArguments, WandbArguments],
+            "T5_evidence": [DataPathArguments, T5EvidenceFindingTrainArguments, WandbArguments],
+            "T5_evidence_IO": [DataPathArguments, T5EvidenceIOTrainArguments, WandbArguments],
+            "T5_multi_task": [DataPathArguments, T5MultiTaskTrainArguments, WandbArguments],
+            "violet_decoder": [DataPathArguments, VIOLETDecoderTrainArguments, WandbArguments],
+            "clip_decoder": [DataPathArguments, CLIPDecoderTrainArguments, WandbArguments],
+        }[model_type]
+        model_function = transformer_train
     else:
-        raise ValueError(f"Unknown model type, you need to pick from {', '.join(MODEL_CHOICES)}")
+        raise ValueError(f"Unknown model type, you need to pick from: {', '.join(MODEL_CHOICES)}")
+
+    run_model(dataclass_types, model_function, model_type)
 
 
 if __name__ == "__main__":

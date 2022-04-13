@@ -34,7 +34,7 @@ def pad_sequence_and_get_mask(sequence: Sequence[torch.Tensor]) -> tuple[torch.T
 
 
 class VideoQAWithEvidenceDataset(Dataset):
-    def __init__(self, data_path: str, tokenizer: PreTrainedTokenizerBase,
+    def __init__(self, data_path: str, tokenizer: PreTrainedTokenizerBase | None = None,
                  transform: Callable[[torch.Tensor], torch.Tensor] | None = None, use_t5_format: bool = False,
                  include_visual: bool = False, max_len: int = 512, max_vid_len: int | None = None,
                  visual_features_path: str | None = None, frames_path: str | None = None,
@@ -143,7 +143,7 @@ class VideoQAWithEvidenceDataset(Dataset):
 
 
 class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
-    def __init__(self, args: argparse.Namespace, tokenizer: PreTrainedTokenizerBase) -> None:
+    def __init__(self, args: argparse.Namespace, tokenizer: PreTrainedTokenizerBase | None = None) -> None:
         super().__init__()
         self.args = args
         self.tokenizer = tokenizer

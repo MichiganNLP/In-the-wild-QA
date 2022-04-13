@@ -1,23 +1,17 @@
 import argparse
 import random
 
-from torch.utils.data import ConcatDataset
-
 from src.evaluations.evaluations import evaluate_qa
-from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataset
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
 
 
 def random_text(args: argparse.Namespace) -> None:
-    # FIXME
-    train_data_path = VideoQAWithEvidenceDataset(args.train_data_path)
-    dev_data_path = VideoQAWithEvidenceDataset(args.dev_data_path)
+    data_module = VideoQAWithEvidenceDataModule(args)
+    train_dataset = data_module.train_dataloader()
+    test_dataset = data_module.test_dataloader()
 
-    train_dev_dataset = ConcatDataset([train_data_path, dev_data_path])
+    preds = random.choices([target_instance
+                            for batch in train_dataset
+                            for target_instance in batch["target"]], k=len(test_dataset))  # noqa
 
-    train_dataset = VideoQAWithEvidenceDataset(args.test_data_path)
-
-    # evaluate the test data
-    preds = random.choices(train_dev_dataset, k=len(train_dataset))  # noqa
-    preds = [pred["target"] for pred in preds]
-
-    evaluate_qa("Random Text", preds, train_dataset)
+    evaluate_qa("Random Text", preds, test_dataset)

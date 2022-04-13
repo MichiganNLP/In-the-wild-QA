@@ -18,10 +18,6 @@ def closest_rtr(args: argparse.Namespace) -> None:
 
     train_data_path = RTRDataset(args.train_data_path, tokenizer=tokenizer, embedding_model=embedding_model)
 
-    # NOTE: here we only use train data as the corpus
-    # as dev data is the same as test data in our testing
-    # train_dev_data = ConcatDataset([train_data_path, dev_data_path])
-
     dataset = RTRDataset(args.test_data_path, tokenizer=tokenizer, embedding_model=embedding_model)
 
     preds = []

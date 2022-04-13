@@ -1,6 +1,6 @@
 import multiprocessing
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Literal, Optional
 
 import torch
 
@@ -87,6 +87,7 @@ class T5TrainArguments:
     )
     max_grad_norm: float = 1.0
     seed: int = 42
+    profiler: Optional[Literal["simple", "advanced", "pytorch"]] = None
     use_tpu: bool = False
     test_after_train: bool = False
 

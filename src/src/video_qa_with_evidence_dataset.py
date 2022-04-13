@@ -122,7 +122,7 @@ class VideoQAWithEvidenceDataset(Dataset):
                         # public one.
                         to_tokenize = [f"{q} {self.tokenizer._additional_special_tokens[0]}" for q in stack]
                     elif self.use_t5_format and k == "answers":
-                        raise NotImplementedError  # TODO: should add extra IDs for the answer.
+                        to_tokenize = [f"<extra_id_0> {a} <extra_id_1>" for a in stack]
                     else:
                         to_tokenize = stack
 

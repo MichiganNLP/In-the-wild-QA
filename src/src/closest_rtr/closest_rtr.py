@@ -1,33 +1,37 @@
 import argparse
-import os
+import multiprocessing
 
-import numpy as np
-from sentence_transformers import SentenceTransformer, util
-from tqdm import tqdm
-from transformers import AutoTokenizer
+import sentence_transformers.util
+import torch
 
-from src.closest_rtr.rtr_dataloader import RTRDataset
 from src.evaluations.evaluations import evaluate_qa
+from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
+
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+NUM_WORKERS = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)
 
 
 def evaluate_closest_rtr(args: argparse.Namespace) -> None:
-    embedding_model = SentenceTransformer(args.embedding_model)
+    data_module = VideoQAWithEvidenceDataModule(args)
+    train_data_loader = data_module.train_dataloader()
+    test_data_loader = data_module.test_dataloader()
 
-    os.environ["TOKENIZERS_PARALLELISM"] = "0"
-    tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+    embedding_model = sentence_transformers.SentenceTransformer(args.embedding_model)
+    embedding_model.eval()
 
-    train_data_path = RTRDataset(args.train_data_path, tokenizer=tokenizer, embedding_model=embedding_model)
+    with torch.inference_mode():
+        train_embeddings = embedding_model.encode([question_instance for batch in train_data_loader
+                                                   for question_instance in batch["question"]],
+                                                  convert_to_tensor=True)
+        test_embeddings = embedding_model.encode([question_instance for batch in test_data_loader
+                                                  for question_instance in batch["question"]],
+                                                 convert_to_tensor=True)
 
-    dataset = RTRDataset(args.test_data_path, tokenizer=tokenizer, embedding_model=embedding_model)
+        similarity_scores = sentence_transformers.util.pytorch_cos_sim(test_embeddings, train_embeddings)
 
-    preds = []
-    for instance in tqdm(dataset):
-        question_emb = instance["source_embeddings"]
-        similarity_scores = [util.pytorch_cos_sim(question_emb, instance["source_embeddings"])
-                             for instance in train_data_path]
-        max_idx = np.argmax([s.cpu() for s in similarity_scores]).item()
+        train_answers = [answer_instance for batch in train_data_loader for answer_instance in batch["answer"]]
 
-        pred = train_data_path[max_idx]["target"]
-        preds.append(pred)
+        most_similar_ids = similarity_scores.argmax(dim=-1)
+        predictions = [train_answers[most_similar_id.item()] for most_similar_id in most_similar_ids]
 
-    evaluate_qa("Closest Retrieval Text", preds, dataset)
+        evaluate_qa("Closest Retrieval Text", predictions, test_data_loader.dataset)

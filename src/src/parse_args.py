@@ -1,15 +1,13 @@
-from __future__ import annotations
-
 import multiprocessing
 from dataclasses import dataclass, field
-from typing import Iterable, Literal, Optional
+from typing import Iterable, Literal, Optional, Union
 
 import torch
+from transformers.hf_argparser import DataClassType
+
 
 # Can't use `from __future__ import annotations` here. See https://github.com/huggingface/transformers/pull/15795
 # From the next version of transformers (after v4.17.0) it should be possible.
-from transformers.hf_argparser import DataClassType
-
 
 @dataclass
 class DataPathArguments:
@@ -269,7 +267,7 @@ class WandbArguments:
     )
 
 
-def model_type_to_dataclass_types(model_type: str) -> DataClassType | Iterable[DataClassType]:
+def model_type_to_dataclass_types(model_type: str) -> Union[DataClassType, Iterable[DataClassType]]:
     return {
         "random_text": DataPathArguments,
         "most_common_ans": DataPathArguments,

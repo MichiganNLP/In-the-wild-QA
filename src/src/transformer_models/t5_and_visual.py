@@ -33,10 +33,10 @@ class TextVisualEncoder(T5Stack):  # noqa
         self.embed_video = nn.Linear(visual_size, self.embed_tokens.embedding_dim)
 
     @overrides(check_signature=False)
-    def forward(self, text_token_ids: torch.Tensor, visual: torch.Tensor,  # noqa
+    def forward(self, input_ids: torch.Tensor, visual: torch.Tensor,  # noqa
                 attention_mask: torch.Tensor | None = None, visual_attention_mask: torch.Tensor | None = None,
                 **kwargs) -> BaseModelOutputWithPastAndCrossAttentions | tuple[torch.Tensor, ...]:
-        text_embedding = self.embed_tokens(text_token_ids)
+        text_embedding = self.embed_tokens(input_ids)
         visual_embedding = self.embed_video(visual)
         embedding = torch.cat([text_embedding, visual_embedding], dim=1)
         attention_mask = _combine_attention_masks(attention_mask, visual_attention_mask)

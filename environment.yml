@@ -42,5 +42,5 @@ dependencies:
   - conda-forge::torchmetrics
   -     pytorch::torchvision
   -              tqdm
-  - HuggingFace::transformers
+  - conda-forge::transformers=4.15
   - conda-forge::wandb

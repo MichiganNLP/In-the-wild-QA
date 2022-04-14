@@ -10,7 +10,7 @@ from src.closest_rtr.rtr_dataloader import RTRDataset
 from src.evaluations.evaluations import evaluate_qa
 
 
-def closest_rtr(args: argparse.Namespace) -> None:
+def evaluate_closest_rtr(args: argparse.Namespace) -> None:
     embedding_model = SentenceTransformer(args.embedding_model)
 
     os.environ["TOKENIZERS_PARALLELISM"] = "0"

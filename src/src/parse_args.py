@@ -1,11 +1,14 @@
+from __future__ import annotations
+
 import multiprocessing
 from dataclasses import dataclass, field
-from typing import Literal, Optional
+from typing import Iterable, Literal, Optional
 
 import torch
 
 # Can't use `from __future__ import annotations` here. See https://github.com/huggingface/transformers/pull/15795
 # From the next version of transformers (after v4.17.0) it should be possible.
+from transformers.hf_argparser import DataClassType
 
 
 @dataclass
@@ -264,3 +267,20 @@ class WandbArguments:
         default=False,
         metadata={"help": "if set true, we will not have wandb record online"}
     )
+
+
+def model_type_to_dataclass_types(model_type: str) -> DataClassType | Iterable[DataClassType]:
+    return {
+        "random_text": DataPathArguments,
+        "most_common_ans": DataPathArguments,
+        "closest_rtr":  [DataPathArguments, ClosestRetrievalArguments],
+        "random_evidence": [DataPathArguments, RandomEvidenceArguments],
+        "T5_train": [DataPathArguments, T5TrainArguments, WandbArguments],
+        "T5_zero_shot": [DataPathArguments, T5ZeroShotArguments],
+        "T5_text_and_visual": [DataPathArguments, T5TextVisualTrainArguments, WandbArguments],
+        "T5_evidence": [DataPathArguments, T5EvidenceFindingTrainArguments, WandbArguments],
+        "T5_evidence_IO": [DataPathArguments, T5EvidenceIOTrainArguments, WandbArguments],
+        "T5_multi_task": [DataPathArguments, T5MultiTaskTrainArguments, WandbArguments],
+        "violet_decoder": [DataPathArguments, VIOLETDecoderTrainArguments, WandbArguments],
+        "clip_decoder": [DataPathArguments, CLIPDecoderTrainArguments, WandbArguments],
+    }[model_type]

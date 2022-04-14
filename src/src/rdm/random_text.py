@@ -5,7 +5,7 @@ from src.evaluations.evaluations import evaluate_qa
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
 
 
-def random_text(args: argparse.Namespace) -> None:
+def evaluate_random_text(args: argparse.Namespace) -> None:
     data_module = VideoQAWithEvidenceDataModule(args)
     train_dataset = data_module.train_dataloader()
     test_dataset = data_module.test_dataloader()

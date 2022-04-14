@@ -12,7 +12,7 @@ from src.transformer_models.model import AnswerWithEvidenceModule
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
 
 
-def transformer_train(args: argparse.Namespace) -> None:
+def train_transformer(args: argparse.Namespace) -> None:
     os.environ["TOKENIZERS_PARALLELISM"] = "0"
     if args.model_type == "violet_decoder":
         tokenizer = {

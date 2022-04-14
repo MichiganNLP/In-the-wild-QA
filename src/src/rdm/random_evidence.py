@@ -17,7 +17,7 @@ def _predict_random(d: Mapping[str, Any]) -> Iterable[float]:
     return sorted(pred_span)
 
 
-def random_evidence(args: argparse.Namespace) -> None:
+def evaluate_random_evidence(args: argparse.Namespace) -> None:
     os.environ["TOKENIZERS_PARALLELISM"] = "0"
     tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
     dataset = VideoQAWithEvidenceDataModule(args, tokenizer).test_dataloader().dataset

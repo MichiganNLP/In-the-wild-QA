@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import argparse
+import logging
 import os
+import re
 
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import RichProgressBar
@@ -12,7 +14,15 @@ from src.transformer_models.model import AnswerWithEvidenceModule
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
 
 
+class ShouldTrainFilter(logging.Filter):
+    def filter(self, record: logging.LogRecord) -> bool:
+        return record.levelno != logging.WARNING \
+               or re.match(r"^Some weights of \w+ were not initialized from the model .+", record.getMessage()) is None
+
+
 def train_transformer(args: argparse.Namespace) -> None:
+    should_train = args.model_type != "T5_zero_shot"
+
     os.environ["TOKENIZERS_PARALLELISM"] = "0"
     if args.model_type == "violet_decoder":
         tokenizer = {
@@ -29,6 +39,8 @@ def train_transformer(args: argparse.Namespace) -> None:
 
     data_module = VideoQAWithEvidenceDataModule(args, tokenizer=tokenizer)
 
+    if should_train:
+        logging.getLogger("transformers.modeling_utils").addFilter(ShouldTrainFilter())
     model = AnswerWithEvidenceModule(tokenizer=tokenizer, **args.__dict__)
 
     checkpoint_callback = pl.callbacks.ModelCheckpoint(dirpath=args.output_ckpt_dir,
@@ -47,10 +59,10 @@ def train_transformer(args: argparse.Namespace) -> None:
                          amp_level=args.opt_level, gradient_clip_val=args.max_grad_norm, profiler=args.profiler,
                          log_every_n_steps=1, logger=loggers, callbacks=callbacks)
 
-    if args.model_type == "T5_zero_shot":
-        trainer.validate(model, datamodule=data_module)
-    else:
+    if should_train:
         trainer.fit(model, datamodule=data_module)
+    else:
+        trainer.validate(model, datamodule=data_module)
 
     if args.test_after_train:
         trainer.test(model, datamodule=data_module)

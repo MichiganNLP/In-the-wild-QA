@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import inspect
-from collections.abc import Mapping
+from collections.abc import Mapping, MutableMapping
 from typing import Any
 
 import pytorch_lightning as pl
@@ -115,8 +115,12 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
         return self.cross_entropy_loss(prob_in, ground_truth)
 
-    @overrides
-    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> Mapping[str, torch.Tensor]:
+    # Don't check the signature here because a transitive dependency has a bug when an argument has a `Literal` type
+    # with a string. See https://github.com/bojiang/typing_utils/issues/10
+    @overrides(check_signature=False)
+    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> MutableMapping[str, torch.Tensor]:
+        output = super()._step(batch, split)
+
         kwargs = {}
 
         if split != "train":
@@ -126,8 +130,6 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         model_output = self(input_ids=batch["question_ids"], attention_mask=batch["question_mask"],
                             visual=batch.get("visual"), visual_attention_mask=batch.get("visual_mask"),
                             answer_ids=batch["answer_ids"], **kwargs)
-
-        output = {}
 
         if split != "train":
             output["encoder_hidden_states"] = model_output.encoder_hidden_states
@@ -175,7 +177,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         return loss
 
     @overrides
-    def _generative_step(self, batch: TYPE_BATCH, step_output: Mapping[str, torch.Tensor]) -> Mapping[str, Any]:
+    def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         output = {}
 
         if self.answers_generation_enabled:
@@ -207,8 +209,10 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
         return output
 
-    @overrides
-    def _update_metrics(self, batch: TYPE_BATCH, step_output: Mapping[str, torch.Tensor],
+    # Don't check the signature here because a transitive dependency has a bug when an argument has a `Literal` type
+    # with a string. See https://github.com/bojiang/typing_utils/issues/10
+    @overrides(check_signature=False)
+    def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],
                         generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
         super()._update_metrics(batch, step_output, generative_step_output, split)
 
@@ -253,7 +257,3 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
                                                     num_training_steps=self.trainer.estimated_stepping_batches)
 
         return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "step"}}
-
-    @staticmethod
-    def should_log() -> bool:
-        return True

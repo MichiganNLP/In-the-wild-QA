@@ -39,7 +39,7 @@ dependencies:
   -              tabulate
   -              tensorboard
   -              tensorflow  # For more capabilities in TensorBoard.
-  - conda-forge::torchmetrics
+  - conda-forge::torchmetrics=0.8
   -     pytorch::torchvision
   -              tqdm
   - conda-forge::transformers=4.15

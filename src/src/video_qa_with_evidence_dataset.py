@@ -168,7 +168,8 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
         include_visual = args.model_type.startswith(("T5_text_and_visual", "T5_evidence", "T5_multi_task", "clip_",
                                                      "violet_"))
         return VideoQAWithEvidenceDataset(data_path=data_path, encoder_tokenizer=encoder_tokenizer,
-                                          decoder_tokenizer=decoder_tokenizer, max_len=args.max_seq_length,
+                                          decoder_tokenizer=decoder_tokenizer,
+                                          max_len=getattr(args, "max_seq_length", 512),
                                           max_vid_len=getattr(args, "max_vid_length", None),
                                           visual_avg_pool_size=getattr(args, "visual_avg_pool_size", None),
                                           visual_features_path=getattr(args, "visual_features_path", None),

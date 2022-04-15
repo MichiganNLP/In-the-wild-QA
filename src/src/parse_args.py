@@ -9,32 +9,20 @@ from transformers.hf_argparser import DataClassType
 # Can't use `from __future__ import annotations` here. See https://github.com/huggingface/transformers/pull/15795
 # From the next version of transformers (after v4.17.0) it should be possible.
 
-@dataclass
-class DataPathArguments:
-    train_data_path: str = "example_data/wildQA-data/train.json"
-    dev_data_path: str = "example_data/wildQA-data/dev.json"
-    test_data_path: str = "example_data/wildQA-data/test.json"
-    num_workers: int = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)
-
 
 MODEL_CHOICES = [
-    "random_text",
+    "random",
     "most_common_ans",
     "closest_rtr",
     "T5_train",
     "T5_zero_shot",
     "T5_text_and_visual",
-    "random_evidence",
     "T5_evidence",
     "T5_evidence_IO",
     "T5_multi_task",
     "violet_decoder",
     "clip_decoder",
 ]
-
-#########################################################################################
-#########################################################################################
-# Argument classes for Video QA part.
 
 EMBEDDING_CHOICES = [
     "stsb-roberta-base",
@@ -45,20 +33,11 @@ EMBEDDING_CHOICES = [
 
 
 @dataclass
-class ClosestRetrievalArguments:
-    embedding_model: str = field(
-        default="stsb-roberta-base",
-        metadata={"help": "model types for calculating embedding, more models available at\
-                        https://docs.google.com/spreadsheets/d/14QplCdTCDwEmTqrn1LH4yrbKvdogK4oQvYO1K1aPR5M/edit#gid=0"}
-    )
-
-    def __post_init__(self):
-        if self.embedding_model not in EMBEDDING_CHOICES:
-            raise ValueError(f"Please select from {', '.join(EMBEDDING_CHOICES)}")
-
-
-@dataclass
-class T5TrainArguments:
+class TrainAndTestArguments:
+    train_data_path: str = "example_data/wildQA-data/train.json"
+    dev_data_path: str = "example_data/wildQA-data/dev.json"
+    test_data_path: str = "example_data/wildQA-data/test.json"
+    num_workers: int = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)
     output_ckpt_dir: Optional[str] = None
     model_name_or_path: str = "t5-base"
     max_seq_length: int = field(
@@ -92,10 +71,36 @@ class T5TrainArguments:
     profiler: Optional[Literal["simple", "advanced", "pytorch"]] = None
     use_tpu: bool = False
     test_after_train: bool = False
+    wandb_project: str = "In-the-wild-QA"
+    wandb_name: str = field(
+        default=None,
+        metadata={"help": "name of this run."}
+    )
+    wandb_entity: str = field(
+        default=None,
+        metadata={"help": "your account to for wandb."}
+    )
+    wandb_offline: bool = field(
+        default=False,
+        metadata={"help": "if set true, we will not have wandb record online"}
+    )
 
 
 @dataclass
-class _T5EvalBaseArguments:
+class ClosestRetrievalArguments:
+    embedding_model: str = field(
+        default="stsb-roberta-base",
+        metadata={"help": "model types for calculating embedding, more models available at\
+                        https://docs.google.com/spreadsheets/d/14QplCdTCDwEmTqrn1LH4yrbKvdogK4oQvYO1K1aPR5M/edit#gid=0"}
+    )
+
+    def __post_init__(self):
+        if self.embedding_model not in EMBEDDING_CHOICES:
+            raise ValueError(f"Please select from {', '.join(EMBEDDING_CHOICES)}")
+
+
+@dataclass
+class T5ZeroShotArguments:
     max_seq_length: int = field(
         default=512,
         metadata={"help": "maximum length of the text length. Truncate the exceeded part."}
@@ -107,15 +112,6 @@ class _T5EvalBaseArguments:
         metadata={"help": "number of predictions made."}
     )
     beam_size: Optional[int] = None
-
-
-@dataclass
-class T5EvalArguments(_T5EvalBaseArguments):
-    ckpt_path: Optional[str] = None
-
-
-@dataclass
-class T5ZeroShotArguments(_T5EvalBaseArguments):
     model_name_or_path: str = "t5-base"
 
 
@@ -134,12 +130,7 @@ class _VisualBaseArguments:
 
 
 @dataclass
-class T5TextVisualTrainArguments(T5TrainArguments, _VisualBaseArguments):
-    pass
-
-
-@dataclass
-class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
+class T5TextVisualTrainArguments(TrainAndTestArguments, _VisualBaseArguments):
     pass
 
 
@@ -149,12 +140,11 @@ class T5TextVisualEvalArguments(T5EvalArguments, _VisualBaseArguments):
 
 
 @dataclass
-class RandomEvidenceArguments:
-    pred_num: int = field(
+class RandomArguments:
+    span_prediction_count: int = field(
         default=5,
         metadata={"help": "number of predicted evidence"}
     )
-
 
 @dataclass
 class T5EvidenceFindingTrainArguments(T5TextVisualTrainArguments):
@@ -162,17 +152,7 @@ class T5EvidenceFindingTrainArguments(T5TextVisualTrainArguments):
 
 
 @dataclass
-class T5EvidenceFindingEvalArguments(T5TextVisualEvalArguments):
-    pass
-
-
-@dataclass
 class T5EvidenceIOTrainArguments(T5TextVisualTrainArguments):
-    pass
-
-
-@dataclass
-class T5EvidenceIOEvalArguments(T5TextVisualEvalArguments):
     pass
 
 
@@ -191,11 +171,6 @@ class T5MultiTaskTrainArguments(T5TextVisualTrainArguments):
         default=1.0,
         metadata={"help": "weight for evidence finding part"}
     )
-
-
-@dataclass
-class T5MultiTaskEvalArguments(T5TextVisualEvalArguments):
-    pass
 
 
 #########################################################################################
@@ -220,11 +195,6 @@ class VIOLETDecoderTrainArguments(T5TextVisualTrainArguments):
 
 
 @dataclass
-class VIOLETDecoderEvalArguments(T5TextVisualEvalArguments):
-    pass
-
-
-@dataclass
 class CLIPDecoderBasics:
     pretrained_clip_ckpt_path: str = field(
         default="openai/clip-vit-base-patch32",
@@ -240,45 +210,17 @@ class CLIPDecoderTrainArguments(CLIPDecoderBasics, T5TextVisualTrainArguments):
     pass
 
 
-@dataclass
-class CLIPDecoderEvalArguments(CLIPDecoderBasics, T5TextVisualEvalArguments):
-    pass
-
-
-#########################################################################################
-#########################################################################################
-# Argument classes for others.
-
-
-@dataclass
-class WandbArguments:
-    wandb_project: str = "In-the-wild-QA"
-    wandb_name: str = field(
-        default=None,
-        metadata={"help": "name of this run."}
-    )
-    wandb_entity: str = field(
-        default=None,
-        metadata={"help": "your account to for wandb."}
-    )
-    wandb_offline: bool = field(
-        default=False,
-        metadata={"help": "if set true, we will not have wandb record online"}
-    )
-
-
 def model_type_to_dataclass_types(model_type: str) -> Union[DataClassType, Iterable[DataClassType]]:
     return {
-        "random_text": DataPathArguments,
-        "most_common_ans": DataPathArguments,
-        "closest_rtr":  [DataPathArguments, ClosestRetrievalArguments],
-        "random_evidence": [DataPathArguments, RandomEvidenceArguments],
-        "T5_train": [DataPathArguments, T5TrainArguments, WandbArguments],
-        "T5_zero_shot": [DataPathArguments, T5ZeroShotArguments],
-        "T5_text_and_visual": [DataPathArguments, T5TextVisualTrainArguments, WandbArguments],
-        "T5_evidence": [DataPathArguments, T5EvidenceFindingTrainArguments, WandbArguments],
-        "T5_evidence_IO": [DataPathArguments, T5EvidenceIOTrainArguments, WandbArguments],
-        "T5_multi_task": [DataPathArguments, T5MultiTaskTrainArguments, WandbArguments],
-        "violet_decoder": [DataPathArguments, VIOLETDecoderTrainArguments, WandbArguments],
-        "clip_decoder": [DataPathArguments, CLIPDecoderTrainArguments, WandbArguments],
+        "random": [TrainAndTestArguments, RandomArguments],
+        "most_common_ans": TrainAndTestArguments,
+        "closest_rtr":  [TrainAndTestArguments, ClosestRetrievalArguments],
+        "T5_train": TrainAndTestArguments,
+        "T5_zero_shot": [TrainAndTestArguments, T5ZeroShotArguments],
+        "T5_text_and_visual": [TrainAndTestArguments, T5TextVisualTrainArguments],
+        "T5_evidence": [TrainAndTestArguments, T5EvidenceFindingTrainArguments],
+        "T5_evidence_IO": [TrainAndTestArguments, T5EvidenceIOTrainArguments],
+        "T5_multi_task": [TrainAndTestArguments, T5MultiTaskTrainArguments],
+        "violet_decoder": [TrainAndTestArguments, VIOLETDecoderTrainArguments],
+        "clip_decoder": [TrainAndTestArguments, CLIPDecoderTrainArguments],
     }[model_type]

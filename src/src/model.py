@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
-from typing import Any, Literal, Mapping
+from collections.abc import Mapping, MutableMapping
+from typing import Any, Literal
 
 import pytorch_lightning as pl
 import torch
@@ -9,42 +10,50 @@ from overrides import overrides
 from pytorch_lightning.utilities.types import EPOCH_OUTPUT
 from torch import nn as nn
 from torchmetrics import BLEUScore, Metric, SQuAD
-from torchmetrics.text import ROUGEScore
+from torchmetrics.text import BERTScore, ROUGEScore
 
-from src.metrics import IouF1, Perplexity, normalize_answer
+from src.metrics import IouF1, normalize_answer
 
 TYPE_SPLIT = Literal["train", "val", "test"]
-TYPE_BATCH = Mapping[str, torch.Tensor]
+TYPE_BATCH = Mapping[str, Any]
 
 
 class AnswerWithEvidenceModule(pl.LightningModule, ABC):
+    answers_generation_enabled = False
+    evidence_selection_enabled = False
+
     def __init__(self, **kwargs) -> None:  # noqa
         super().__init__()
 
         self.save_hyperparameters()
 
-        self.answers_generation_enabled = False
-        self.evidence_selection_enabled = False
-
         self.answer_metrics: Mapping[str, Metric] = nn.ModuleDict({"bleu1": BLEUScore(1), "bleu2": BLEUScore(2),
                                                                    "bleu3": BLEUScore(3)})
         self.rouge = ROUGEScore()
-        # TODO: uncomment when torchmetrics releases this fix: https://github.com/PyTorchLightning/metrics/pull/912
-        # self.bert_score = BERTScore(num_threads=0)
-        self.perplexity = Perplexity()
+        self.bert_score = BERTScore(model_name_or_path="roberta-large", num_threads=0)
         self.squad = SQuAD()
 
         self.iou_f1 = IouF1()
 
-    @abstractmethod
-    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> Mapping[str, torch.Tensor]:
-        raise NotImplementedError
+    def _on_eval_start(self) -> None:
+        self.bert_score.embedding_device = self.device
+
+    @overrides
+    def on_validation_start(self) -> None:
+        self._on_eval_start()
+
+    @overrides
+    def on_test_start(self) -> None:
+        self._on_eval_start()
+
+    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> MutableMapping[str, torch.Tensor]:
+        return {}
 
     @abstractmethod
-    def _generative_step(self, batch: TYPE_BATCH, step_output: Mapping[str, torch.Tensor]) -> Mapping[str, Any]:
+    def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         raise NotImplementedError
 
-    def _update_metrics(self, batch: TYPE_BATCH, step_output: Mapping[str, torch.Tensor],
+    def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],
                         generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
         if generated := generative_step_output.get("generated"):
             id_ = batch["id"]
@@ -64,13 +73,6 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
                 metric(normalized_generated, normalized_answers)
                 self.log(f"{name}/{split}", metric)
 
-            # BERTScore doesn't support multiple targets, and we have a variable number of answer.
-            # We don't complicate it much and just evaluate the first answer (the original one). It's good enough.
-            # first_normalized_answer = [normalized_answers_instance[0]
-            #                            for normalized_answers_instance in normalized_answers]
-            # self.bert_score(normalized_generated, first_normalized_answer)
-            # self.log(f"bert_score_first_answer/{split}", self.bert_score)
-
             # We handle the following metrics manually by doing `update`, `compute` and `reset` because they return a
             # dictionary of tensors instead of a single tensor, so it can't be done automatically by PL.
 
@@ -81,6 +83,12 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
             squad_format_answers = [{"answers": {"text": answers_instance}, "id": id_instance}
                                     for answers_instance, id_instance in zip(normalized_answers, id_)]
             self.squad.update(squad_format_generated, squad_format_answers)
+
+            # BERTScore doesn't support multiple targets, and we have a variable number of answer.
+            # We don't complicate it much and just evaluate the first answer (the original one). It's good enough.
+            first_normalized_answer = [normalized_answers_instance[0]
+                                       for normalized_answers_instance in normalized_answers]
+            self.bert_score.update(normalized_generated, first_normalized_answer)
 
         if pred_spans := generative_step_output.get("pred_spans"):
             self.iou_f1(pred_spans, batch["evidence"].tolist())
@@ -105,6 +113,10 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
         self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()})
         self.squad.reset()
+
+        self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
+                       for k, v in self.bert_score.compute().items()})
+        self.bert_score.reset()
 
     @overrides(check_signature=False)
     def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:

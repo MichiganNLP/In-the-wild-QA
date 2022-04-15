@@ -216,7 +216,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
                         generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
         super()._update_metrics(batch, step_output, generative_step_output, split)
 
-        if generated_ids := generative_step_output.get("generated_ids"):
+        if (generated_ids := generative_step_output.get("generated_ids")) is not None:
             answer_ids = batch["answer_ids"]
 
             model_config = self.model.config

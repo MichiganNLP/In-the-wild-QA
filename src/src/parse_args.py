@@ -129,7 +129,7 @@ class _VisualBaseArguments:
 
 
 @dataclass
-class T5TextVisualTrainArguments(TrainAndTestArguments, _VisualBaseArguments):
+class T5TextVisualTrainArguments(_VisualBaseArguments):
     pass
 
 

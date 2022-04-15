@@ -254,7 +254,7 @@ class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
             # self.bert_score(normalized_generated, first_normalized_answer)
             # self.log(f"bert_score_first_answer/{split}", self.bert_score)
 
-            # We handle the following metrics manually by doing `update`, `compute` and `reset` because it returns a
+            # We handle the following metrics manually by doing `update`, `compute` and `reset` because they return a
             # dictionary of tensors instead of a single tensor, so it can't be done automatically by PL.
 
             self.rouge.update(normalized_generated, normalized_answers)

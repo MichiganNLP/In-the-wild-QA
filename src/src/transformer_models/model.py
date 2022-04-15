@@ -45,13 +45,13 @@ def model_type_to_class(model_type: str) -> type[T5ForConditionalGeneration]:  #
 
 
 class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
-    def __init__(self, tokenizer: PreTrainedTokenizerBase, generate_kwargs: Mapping[str, Any] | None = None,
+    def __init__(self, decoder_tokenizer: PreTrainedTokenizerBase, generate_kwargs: Mapping[str, Any] | None = None,
                  **kwargs) -> None:  # noqa
         super().__init__()
 
         self.save_hyperparameters()
 
-        self.tokenizer = tokenizer
+        self.decoder_tokenizer = decoder_tokenizer
 
         model_class = model_type_to_class(self.hparams.model_type)
         model_kwargs = {}
@@ -95,7 +95,7 @@ class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
                 answer_ids: torch.Tensor | None = None, **kwargs) -> Any:
         if answer_ids is not None:
             answer_ids = answer_ids.clone()
-            answer_ids[answer_ids == self.tokenizer.pad_token_id] = -100  # For the loss computation.
+            answer_ids[answer_ids == self.decoder_tokenizer.pad_token_id] = -100  # For the loss computation.
 
         if self.visual_input_enabled:
             kwargs["visual"] = visual
@@ -226,7 +226,7 @@ class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
             generated_output = self.model.generate(batch["question_ids"], attention_mask=batch["question_mask"],
                                                    **self.generate_kwargs, **kwargs)
             generated_ids = generated_output.sequences
-            generated = self.tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+            generated = self.decoder_tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
 
             generated_logits = torch.stack(generated_output.scores, dim=1)
             generated_probs = compute_answer_probs(generated_logits, generated_ids, model_config, ignore_eos_token=True)

@@ -25,23 +25,20 @@ def train_transformer(args: argparse.Namespace) -> None:
 
     os.environ["TOKENIZERS_PARALLELISM"] = "0"
     if args.model_type == "violet_decoder":
-        tokenizer = {
-            "encoder": AutoTokenizer.from_pretrained("bert-base-uncased"),
-            "decoder": AutoTokenizer.from_pretrained(args.model_name_or_path),
-        }
+        encoder_tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+        decoder_tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
     elif args.model_type == "clip_decoder":
-        tokenizer = {
-            "encoder": AutoTokenizer.from_pretrained(args.pretrained_clip_ckpt_path),
-            "decoder": AutoTokenizer.from_pretrained(args.model_name_or_path),
-        }
+        encoder_tokenizer = AutoTokenizer.from_pretrained(args.pretrained_clip_ckpt_path)
+        decoder_tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
     else:
-        tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+        encoder_tokenizer = decoder_tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
 
-    data_module = VideoQAWithEvidenceDataModule(args, tokenizer=tokenizer)
+    data_module = VideoQAWithEvidenceDataModule(args, encoder_tokenizer=encoder_tokenizer,
+                                                decoder_tokenizer=decoder_tokenizer)
 
     if should_train:
         logging.getLogger("transformers.modeling_utils").addFilter(ShouldTrainFilter())
-    model = AnswerWithEvidenceModule(tokenizer=tokenizer, **args.__dict__)
+    model = AnswerWithEvidenceModule(decoder_tokenizer=decoder_tokenizer, **args.__dict__)
 
     checkpoint_callback = pl.callbacks.ModelCheckpoint(dirpath=args.output_ckpt_dir,
                                                        filename="{epoch}-{loss/train:.2f}", monitor="loss/train")

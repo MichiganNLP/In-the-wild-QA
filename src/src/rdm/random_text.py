@@ -12,6 +12,6 @@ def evaluate_random_text(args: argparse.Namespace) -> None:
 
     preds = random.choices([target_instance
                             for batch in train_dataset
-                            for target_instance in batch["target"]], k=len(test_dataset))  # noqa
+                            for target_instance in batch["answer"]], k=len(test_dataset))
 
     evaluate_qa("Random Text", preds, test_dataset)

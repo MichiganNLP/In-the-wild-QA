@@ -10,8 +10,8 @@ warnings.filterwarnings("ignore")  # filter user warning for BLEU when overlap i
 
 
 def evaluate_qa(model_name: str, preds: Sequence[str], dataset: Iterable[Mapping[str, str]]) -> None:
-    sources = [instance["source"] for instance in dataset]
-    labels = [[instance["target"]] for instance in dataset]
+    sources = [instance["question"] for instance in dataset]
+    labels = [[instance["answer"]] for instance in dataset]
 
     evaluation = QAEvaluation(sources, preds, labels)
 
@@ -30,7 +30,7 @@ def evaluate_evidence(model_name: str, preds: Sequence[Sequence[tuple[float, flo
     """ 
     QAEvaluation for evidence finding.
 
-    preds: list of lists of span list, that is: [[[start1, end1], [start2, end2]], ...]
+    predictions: list of lists of span list, that is: [[[start1, end1], [start2, end2]], ...]
         The innermost list gives the predicted start, end.
         The second innermost list gives all the span predictions for an instance.
         The outermost list is the predictions for all instances.

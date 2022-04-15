@@ -12,7 +12,7 @@ def evaluate_most_common_answer(args: argparse.Namespace) -> None:
 
     answer_counts = Counter(target_instance
                             for batch in train_dataset
-                            for target_instance in batch["target"])
+                            for target_instance in batch["answer"])
 
     preds = [answer_counts.most_common(n=1)[0][0]] * len(test_dataset)
 

@@ -34,7 +34,8 @@ def pad_sequence_and_get_mask(sequence: Sequence[torch.Tensor]) -> tuple[torch.T
 
 
 class VideoQAWithEvidenceDataset(Dataset):
-    def __init__(self, data_path: str, tokenizer: PreTrainedTokenizerBase | None = None,
+    def __init__(self, data_path: str, encoder_tokenizer: PreTrainedTokenizerBase | None = None,
+                 decoder_tokenizer: PreTrainedTokenizerBase | None = None,
                  transform: Callable[[torch.Tensor], torch.Tensor] | None = None, use_t5_format: bool = False,
                  include_visual: bool = False, max_len: int = 512, max_vid_len: int | None = None,
                  visual_features_path: str | None = None, frames_path: str | None = None,
@@ -44,7 +45,8 @@ class VideoQAWithEvidenceDataset(Dataset):
         with open(data_path) as file:
             self.instances = json.load(file)
 
-        self.tokenizer = tokenizer
+        self.encoder_tokenizer = encoder_tokenizer
+        self.decoder_tokenizer = decoder_tokenizer
         self.max_len = max_len  # FIXME: why defining it?
         self.use_t5_format = use_t5_format
 
@@ -109,25 +111,31 @@ class VideoQAWithEvidenceDataset(Dataset):
         for k in keys:
             stack = batch[k]
 
-            if self.tokenizer:
-                first_val = next(iter(stack), None)
-                if isinstance(first_val, str) or (isinstance(first_val, Sequence)
-                                                  and isinstance(next(iter(first_val), None), str)):
-                    if k == "answers":
-                        stack = [answers[0] for answers in stack]  # We tokenize only the first answer.
-                        k = "answer"
+            first_val = next(iter(stack), None)
+            if isinstance(first_val, str) or (isinstance(first_val, Sequence)
+                                              and isinstance(next(iter(first_val), None), str)):
+                if k == "answers":
+                    stack = [answers[0] for answers in stack]  # We tokenize only the first answer.
+                    k = "answer"
 
+                    tokenizer = self.decoder_tokenizer
+                elif k == "question":
+                    tokenizer = self.encoder_tokenizer
+                else:
+                    raise ValueError(f"Unsupported key {k}")
+
+                if tokenizer:
                     if self.use_t5_format and k == "question":
                         # It's more efficient to use the private attribute (`_additional_special_tokens`) than the
                         # public one.
-                        to_tokenize = [f"{q} {self.tokenizer._additional_special_tokens[0]}" for q in stack]
+                        to_tokenize = [f"{q} {tokenizer._additional_special_tokens[0]}" for q in stack]
                     elif self.use_t5_format and k == "answers":
                         to_tokenize = [f"<extra_id_0> {a} <extra_id_1>" for a in stack]
                     else:
                         to_tokenize = stack
 
-                    tokenization = self.tokenizer(to_tokenize, max_length=self.max_len, truncation=True, padding=True,
-                                                  return_tensors="pt")
+                    tokenization = tokenizer(to_tokenize, max_length=self.max_len, truncation=True, padding=True,
+                                             return_tensors="pt")
                     batch[f"{k}_ids"] = tokenization["input_ids"]
                     batch[f"{k}_mask"] = tokenization["attention_mask"]
 
@@ -143,20 +151,24 @@ class VideoQAWithEvidenceDataset(Dataset):
 
 
 class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
-    def __init__(self, args: argparse.Namespace, tokenizer: PreTrainedTokenizerBase | None = None) -> None:
+    def __init__(self, args: argparse.Namespace, encoder_tokenizer: PreTrainedTokenizerBase | None = None,
+                 decoder_tokenizer: PreTrainedTokenizerBase | None = None) -> None:
         super().__init__()
         self.args = args
-        self.tokenizer = tokenizer
+        self.encoder_tokenizer = encoder_tokenizer
+        self.decoder_tokenizer = decoder_tokenizer
         self.num_workers = args.num_workers
 
         self.eval_batch_size = getattr(self.args, "eval_batch_size", getattr(self.args, "batch_size", 1))
 
     @staticmethod
-    def _create_dataset(tokenizer: PreTrainedTokenizerBase, data_path: str,
-                        args: argparse.Namespace) -> VideoQAWithEvidenceDataset:
+    def _create_dataset(data_path: str, args: argparse.Namespace,
+                        encoder_tokenizer: PreTrainedTokenizerBase | None = None,
+                        decoder_tokenizer: PreTrainedTokenizerBase | None = None) -> VideoQAWithEvidenceDataset:
         include_visual = args.model_type.startswith(("T5_text_and_visual", "T5_evidence", "T5_multi_task", "clip_",
                                                      "violet_"))
-        return VideoQAWithEvidenceDataset(data_path=data_path, tokenizer=tokenizer, max_len=args.max_seq_length,
+        return VideoQAWithEvidenceDataset(data_path=data_path, encoder_tokenizer=encoder_tokenizer,
+                                          decoder_tokenizer=decoder_tokenizer, max_len=args.max_seq_length,
                                           max_vid_len=getattr(args, "max_vid_length", None),
                                           visual_avg_pool_size=getattr(args, "visual_avg_pool_size", None),
                                           visual_features_path=getattr(args, "visual_features_path", None),
@@ -165,7 +177,8 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
                                           use_t5_format=args.model_type == "T5_zero_shot")
 
     def _create_data_loader(self, data_path: str, is_train: bool = True) -> DataLoader:
-        dataset = self._create_dataset(tokenizer=self.tokenizer, data_path=data_path, args=self.args)
+        dataset = self._create_dataset(encoder_tokenizer=self.encoder_tokenizer,
+                                       decoder_tokenizer=self.decoder_tokenizer, data_path=data_path, args=self.args)
         return DataLoader(dataset, batch_size=self.args.train_batch_size if is_train else self.eval_batch_size,
                           drop_last=is_train, shuffle=is_train, collate_fn=getattr(dataset, "collate", None),
                           num_workers=self.num_workers, pin_memory=True, persistent_workers=self.num_workers > 0)

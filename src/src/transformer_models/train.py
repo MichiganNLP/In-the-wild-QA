@@ -9,8 +9,8 @@ from pytorch_lightning.callbacks import RichProgressBar
 from pytorch_lightning.loggers import TensorBoardLogger, WandbLogger
 from transformers import AutoTokenizer
 
-from src.transformer_models.logger import LoggingCallback
-from src.transformer_models.model import AnswerWithEvidenceModule
+from src.logger import LoggingCallback
+from src.transformer_models.model import TransformersAnswerWithEvidenceModule
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
 
 
@@ -38,7 +38,7 @@ def train_transformer(args: argparse.Namespace) -> None:
 
     if should_train:
         logging.getLogger("transformers.modeling_utils").addFilter(ShouldTrainFilter())
-    model = AnswerWithEvidenceModule(decoder_tokenizer=decoder_tokenizer, **args.__dict__)
+    model = TransformersAnswerWithEvidenceModule(decoder_tokenizer=decoder_tokenizer, **args.__dict__)
 
     checkpoint_callback = pl.callbacks.ModelCheckpoint(dirpath=args.output_ckpt_dir,
                                                        filename="{epoch}-{loss/train:.2f}", monitor="loss/train")

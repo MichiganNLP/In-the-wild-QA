@@ -2,26 +2,21 @@ from __future__ import annotations
 
 import inspect
 from collections.abc import Mapping
-from typing import Any, Literal
+from typing import Any
 
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
 from overrides import overrides
-from pytorch_lightning.utilities.types import EPOCH_OUTPUT
 from torch.optim import AdamW
-from torchmetrics import BLEUScore, Metric, SQuAD
-from torchmetrics.text import ROUGEScore
 from transformers import PreTrainedTokenizerBase, T5ForConditionalGeneration, get_linear_schedule_with_warmup
 
 from src.decoding import compute_answer_prob, compute_answer_probs
-from src.metrics import IouF1, Perplexity, get_best_evidence_spans, normalize_answer
+from src.metrics import Perplexity, get_best_evidence_spans
+from src.model import AnswerWithEvidenceModule, TYPE_BATCH, TYPE_SPLIT
 from src.transformer_models.clip_decoder import CLIPWithDecoder
 from src.transformer_models.t5_and_visual import T5AndVisual, T5AndVisualEvidence, T5AndVisualEvidenceIO, T5MultiTask
 from src.transformer_models.violet_decoder.model import VioletWithDecoder
-
-TYPE_SPLIT = Literal["train", "val", "test"]
-TYPE_BATCH = Mapping[str, torch.Tensor]
 
 
 def log_lr(pl_module: pl.LightningModule, **kwargs) -> None:
@@ -44,12 +39,10 @@ def model_type_to_class(model_type: str) -> type[T5ForConditionalGeneration]:  #
     }[model_type]
 
 
-class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
+class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
     def __init__(self, decoder_tokenizer: PreTrainedTokenizerBase, generate_kwargs: Mapping[str, Any] | None = None,
                  **kwargs) -> None:  # noqa
-        super().__init__()
-
-        self.save_hyperparameters()
+        super().__init__(**kwargs)
 
         self.decoder_tokenizer = decoder_tokenizer
 
@@ -70,15 +63,7 @@ class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
 
         self.cross_entropy_loss = nn.CrossEntropyLoss()
 
-        self.answer_metrics: Mapping[str, Metric] = nn.ModuleDict({"bleu1": BLEUScore(1), "bleu2": BLEUScore(2),
-                                                                   "bleu3": BLEUScore(3)})
-        self.rouge = ROUGEScore()
-        # TODO: uncomment when torchmetrics releases this fix: https://github.com/PyTorchLightning/metrics/pull/912
-        # self.bert_score = BERTScore(num_threads=0)
         self.perplexity = Perplexity()
-        self.squad = SQuAD()
-
-        self.iou_f1 = IouF1()
 
         self.generate_kwargs = generate_kwargs or {}
 
@@ -130,6 +115,7 @@ class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
 
         return self.cross_entropy_loss(prob_in, ground_truth)
 
+    @overrides
     def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> Mapping[str, torch.Tensor]:
         kwargs = {}
 
@@ -188,28 +174,11 @@ class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
 
         return loss
 
-    def _generative_step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> None:
-        step_output = self._step(batch, split=split)
+    @overrides
+    def _generative_step(self, batch: TYPE_BATCH, step_output: Mapping[str, torch.Tensor]) -> Mapping[str, Any]:
+        output = {}
 
         if self.answers_generation_enabled:
-            id_ = batch["id"]
-            answer_ids = batch["answer_ids"]
-            answers = batch["answers"]
-
-            model_config = self.model.config
-
-            ground_truth_logits = step_output["answer_logits"]
-            ground_truth_probs = compute_answer_probs(ground_truth_logits, answer_ids, model_config,
-                                                      ignore_eos_token=True)
-            ground_truth_prob = compute_answer_prob(ground_truth_probs)
-            self.log(f"ground_truth_prob/{split}", ground_truth_prob)
-
-            perplexity_mask = ((answer_ids != model_config.pad_token_id) & (answer_ids != model_config.eos_token_id))
-            self.perplexity(ground_truth_probs, perplexity_mask)
-            self.log(f"perplexity/{split}", self.perplexity)
-
-            # Generate the answer and compute metrics based on it:
-
             kwargs = {}
 
             if self.visual_input_enabled:
@@ -225,77 +194,45 @@ class AnswerWithEvidenceModule(pl.LightningModule):  # noqa
 
             generated_output = self.model.generate(batch["question_ids"], attention_mask=batch["question_mask"],
                                                    **self.generate_kwargs, **kwargs)
-            generated_ids = generated_output.sequences
-            generated = self.decoder_tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+            output["generated_ids"] = generated_output.sequences
+            output["generated"] = self.decoder_tokenizer.batch_decode(output["generated_ids"], skip_special_tokens=True)
+            output["generated_scores"] = generated_output.scores
 
-            generated_logits = torch.stack(generated_output.scores, dim=1)
+        if self.evidence_selection_enabled:
+            # FIXME: it doesn't work with IO.
+            start_scores, end_scores = step_output["start_scores"], step_output["end_scores"]
+            start, end = get_best_evidence_spans(start_scores, end_scores, mask=batch["visual_mask"])
+            output["pred_spans"] = [list(zip(start_instance, end_instance))
+                                    for start_instance, end_instance in zip(start.tolist(), end.tolist())]
+
+        return output
+
+    @overrides
+    def _update_metrics(self, batch: TYPE_BATCH, step_output: Mapping[str, torch.Tensor],
+                        generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
+        super()._update_metrics(batch, step_output, generative_step_output, split)
+
+        if generated_ids := generative_step_output.get("generated_ids"):
+            answer_ids = batch["answer_ids"]
+
+            model_config = self.model.config
+
+            ground_truth_logits = step_output["answer_logits"]
+            ground_truth_probs = compute_answer_probs(ground_truth_logits, answer_ids, model_config,
+                                                      ignore_eos_token=True)
+            ground_truth_prob = compute_answer_prob(ground_truth_probs)
+            self.log(f"ground_truth_prob/{split}", ground_truth_prob)
+
+            perplexity_mask = ((answer_ids != model_config.pad_token_id) & (answer_ids != model_config.eos_token_id))
+            self.perplexity(ground_truth_probs, perplexity_mask)
+            self.log(f"perplexity/{split}", self.perplexity)
+
+            # Generate the answer and compute metrics based on it:
+
+            generated_logits = torch.stack(generative_step_output["generated_scores"], dim=1)
             generated_probs = compute_answer_probs(generated_logits, generated_ids, model_config, ignore_eos_token=True)
             generated_prob = compute_answer_prob(generated_probs)
             self.log(f"generated_prob/{split}", generated_prob)
-
-            # We normalize the generated and the ground truth answers before computing the metrics.
-            #
-            # Note BLEU, ROUGE, and SQuAD metrics perform different normalizations by default, some of them can't be
-            # changed. Still, it doesn't matter because they do basic stuff, as we do, that's good enough for
-            # evaluation (similar for the tokenization). But we do something on our end because BLEU doesn't do
-            # any normalization.
-            normalized_generated = [normalize_answer(generated_instance) for generated_instance in generated]
-            normalized_answers = [[normalize_answer(answer_instance) for answer_instance in answers_instance]
-                                  for answers_instance in answers]
-
-            for name, metric in self.answer_metrics.items():
-                metric(normalized_generated, normalized_answers)
-                self.log(f"{name}/{split}", metric)
-
-            # BERTScore doesn't support multiple targets, and we have a variable number of answer.
-            # We don't complicate it much and just evaluate the first answer (the original one). It's good enough.
-            # first_normalized_answer = [normalized_answers_instance[0]
-            #                            for normalized_answers_instance in normalized_answers]
-            # self.bert_score(normalized_generated, first_normalized_answer)
-            # self.log(f"bert_score_first_answer/{split}", self.bert_score)
-
-            # We handle the following metrics manually by doing `update`, `compute` and `reset` because they return a
-            # dictionary of tensors instead of a single tensor, so it can't be done automatically by PL.
-
-            self.rouge.update(normalized_generated, normalized_answers)
-
-            squad_format_generated = [{"prediction_text": generated_instance, "id": id_instance}
-                                      for generated_instance, id_instance in zip(normalized_generated, id_)]
-            squad_format_answers = [{"answers": {"text": answers_instance}, "id": id_instance}
-                                    for answers_instance, id_instance in zip(normalized_answers, id_)]
-            self.squad.update(squad_format_generated, squad_format_answers)
-
-        if self.evidence_selection_enabled:
-            start_scores, end_scores = step_output["start_scores"], step_output["end_scores"]
-            start, end = get_best_evidence_spans(start_scores, end_scores, mask=batch["visual_mask"])
-            pred_spans = [list(zip(start_instance, end_instance))
-                          for start_instance, end_instance in zip(start.tolist(), end.tolist())]
-
-            self.iou_f1(pred_spans, batch["evidence"].tolist())
-            self.log(f"iou_f1/{split}", self.iou_f1)
-
-    @overrides(check_signature=False)
-    def validation_step(self, batch: TYPE_BATCH, batch_idx) -> None:
-        self._generative_step(batch, split="val")
-
-    @overrides(check_signature=False)
-    def test_step(self, batch: TYPE_BATCH, batch_idx) -> None:
-        self._generative_step(batch, split="test")
-
-    def _generative_epoch_end(self, split: TYPE_SPLIT) -> None:
-        self.log_dict({f"{k}/{split}": v for k, v in self.rouge.compute().items()})
-        self.rouge.reset()
-
-        self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()})
-        self.squad.reset()
-
-    @overrides(check_signature=False)
-    def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
-        self._generative_epoch_end(split="val")
-
-    @overrides(check_signature=False)
-    def test_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
-        self._generative_epoch_end(split="test")
 
     @overrides
     def configure_optimizers(self) -> Mapping[str, Any]:

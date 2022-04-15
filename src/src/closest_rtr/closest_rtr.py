@@ -31,10 +31,12 @@ class ClosestAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         self.embedding_model_kwargs["device"] = self.device
         # We compute them here and not in `__init__` because here the model is already in the device.
         batch_size = 32
-        train_embeddings = torch.cat([self.embedding_model.encode([instance["question"] for instance in instances],
+        train_embeddings = torch.cat([self.embedding_model.encode([instance["question"]
+                                                                   for instance in instances
+                                                                   if instance],
                                                                   **self.embedding_model_kwargs)
-                                      for instances in track(iter_utils.batch_sequence(self.train_instances,
-                                                                                       batch_size),
+                                      for instances in track(iter_utils.batch_iter(self.train_instances, batch_size,
+                                                                                   incomplete="fill"),
                                                          total=math.ceil(len(self.train_instances) / batch_size),
                                                          description="Encoding the training questions", transient=True,
                                                          disable=not self.trainer.is_global_zero)])
@@ -53,5 +55,5 @@ class ClosestAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         test_embeddings = self.embedding_model.encode(batch["question"], **self.embedding_model_kwargs)
         similarity_scores = test_embeddings @ self.train_embeddings.T
         most_similar_ids = similarity_scores.argmax(dim=-1)
-        return {"generated": [self.train_instances[most_similar_id.item()]["answer"]
+        return {"generated": [self.train_instances[most_similar_id.item()]["answers"][0]
                               for most_similar_id in most_similar_ids]}

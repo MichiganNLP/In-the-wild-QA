@@ -1,10 +1,9 @@
-import multiprocessing
+import os
 from dataclasses import dataclass, field
 from typing import Iterable, Literal, Optional, Union
 
 import torch
 from transformers.hf_argparser import DataClassType
-
 
 # Can't use `from __future__ import annotations` here. See https://github.com/huggingface/transformers/pull/15795
 # From the next version of transformers (after v4.17.0) it should be possible.
@@ -37,7 +36,7 @@ class TrainAndTestArguments:
     train_data_path: str = "example_data/wildQA-data/train.json"
     dev_data_path: str = "example_data/wildQA-data/dev.json"
     test_data_path: str = "example_data/wildQA-data/test.json"
-    num_workers: int = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)
+    num_workers: int = len(os.sched_getaffinity(0)) // max(torch.cuda.device_count(), 1)
     output_ckpt_dir: Optional[str] = None
     model_name_or_path: str = "t5-base"
     max_seq_length: int = field(

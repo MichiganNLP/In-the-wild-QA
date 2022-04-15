@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Script to extract I3D features from video frames."""
 import math
-import multiprocessing
+import os
 
 import h5py
 import torch
@@ -15,7 +15,7 @@ from src.utils.feature_extraction.i3d import I3D
 from src.utils.feature_extraction.wildqa_dataset import WildQaFrameDataset
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-NUM_WORKERS = multiprocessing.cpu_count() // max(torch.cuda.device_count(), 1)
+NUM_WORKERS = len(os.sched_getaffinity(0)) // max(torch.cuda.device_count(), 1)
 
 
 def main() -> None:

@@ -161,7 +161,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
         output["loss"] = (getattr(self.hparams, "vqa_weight", 1) * answer_loss
                           + getattr(self.hparams, "evidence_weight", 1) * evidence_loss)
-        self.log(f"loss/{split}", output["loss"])
+        self.log(f"loss/{split}", output["loss"], batch_size=len(batch["question"]))
 
         return output
 
@@ -170,9 +170,9 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         loss = self._step(batch, split="train")["loss"]
 
         batch_size = len(batch["question"])
-        self.log("batch_size", float(batch_size))
+        self.log("batch_size", float(batch_size), batch_size=batch_size)
 
-        log_lr(self)
+        log_lr(self, batch_size=batch_size)
 
         return loss
 
@@ -219,24 +219,26 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         if (generated_ids := generative_step_output.get("generated_ids")) is not None:
             answer_ids = batch["answer_ids"]
 
+            batch_size = len(answer_ids)
+
             model_config = self.model.config
 
             ground_truth_logits = step_output["answer_logits"]
             ground_truth_probs = compute_answer_probs(ground_truth_logits, answer_ids, model_config,
                                                       ignore_eos_token=True)
             ground_truth_prob = compute_answer_prob(ground_truth_probs)
-            self.log(f"ground_truth_prob/{split}", ground_truth_prob)
+            self.log(f"ground_truth_prob/{split}", ground_truth_prob, batch_size=batch_size)
 
             perplexity_mask = ((answer_ids != model_config.pad_token_id) & (answer_ids != model_config.eos_token_id))
             self.perplexity(ground_truth_probs, perplexity_mask)
-            self.log(f"perplexity/{split}", self.perplexity)
+            self.log(f"perplexity/{split}", self.perplexity, batch_size=batch_size)
 
             # Generate the answer and compute metrics based on it:
 
             generated_logits = torch.stack(generative_step_output["generated_scores"], dim=1)
             generated_probs = compute_answer_probs(generated_logits, generated_ids, model_config, ignore_eos_token=True)
             generated_prob = compute_answer_prob(generated_probs)
-            self.log(f"generated_prob/{split}", generated_prob)
+            self.log(f"generated_prob/{split}", generated_prob, batch_size=batch_size)
 
     @overrides
     def configure_optimizers(self) -> Mapping[str, Any]:

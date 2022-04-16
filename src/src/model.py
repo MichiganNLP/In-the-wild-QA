@@ -55,6 +55,8 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
     def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],
                         generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
+        batch_size = len(batch["question"])
+
         if generated := generative_step_output.get("generated"):
             id_ = batch["id"]
             answers = batch["answers"]
@@ -71,7 +73,7 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
             for name, metric in self.answer_metrics.items():
                 metric(normalized_generated, normalized_answers)
-                self.log(f"{name}/{split}", metric)
+                self.log(f"{name}/{split}", metric, batch_size=batch_size)
 
             # We handle the following metrics manually by doing `update`, `compute` and `reset` because they return a
             # dictionary of tensors instead of a single tensor, so it can't be done automatically by PL.
@@ -92,7 +94,7 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
         if pred_spans := generative_step_output.get("pred_spans"):
             self.iou_f1(pred_spans, batch["evidence"].tolist())
-            self.log(f"iou_f1/{split}", self.iou_f1)
+            self.log(f"iou_f1/{split}", self.iou_f1, batch_size=batch_size)
 
     def _eval_step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> None:
         step_output = self._step(batch, split=split)
@@ -108,14 +110,16 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
         self._eval_step(batch, split="test")
 
     def _eval_epoch_end(self, split: TYPE_SPLIT) -> None:
-        self.log_dict({f"{k}/{split}": v for k, v in self.rouge.compute().items()})
+        instance_count = sum(t.shape[0] for t in self.bert_score.preds_input_ids)
+
+        self.log_dict({f"{k}/{split}": v for k, v in self.rouge.compute().items()}, batch_size=instance_count)
         self.rouge.reset()
 
-        self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()})
+        self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()}, batch_size=instance_count)
         self.squad.reset()
 
         self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
-                       for k, v in self.bert_score.compute().items()})
+                       for k, v in self.bert_score.compute().items()}, batch_size=instance_count)
         self.bert_score.reset()
 
     @overrides(check_signature=False)

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 from abc import ABC, abstractmethod
 from collections.abc import Mapping, MutableMapping
 from typing import Any, Literal
@@ -13,6 +14,7 @@ from torchmetrics import BLEUScore, Metric, SQuAD
 from torchmetrics.text import BERTScore, ROUGEScore
 
 from src.metrics import IouF1, normalize_answer
+from src.utils.logger_utils import UnusedWeightsFilter
 
 TYPE_SPLIT = Literal["train", "val", "test"]
 TYPE_BATCH = Mapping[str, Any]
@@ -118,8 +120,14 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
         self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()}, batch_size=instance_count)
         self.squad.reset()
 
+        unused_weights_filter = UnusedWeightsFilter()
+        logging.getLogger("transformers.modeling_utils").addFilter(unused_weights_filter)
+
         self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
                        for k, v in self.bert_score.compute().items()}, batch_size=instance_count)
+
+        logging.getLogger("transformers.modeling_utils").removeFilter(unused_weights_filter)
+
         self.bert_score.reset()
 
     @overrides(check_signature=False)

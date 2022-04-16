@@ -2,7 +2,6 @@
 import argparse
 import logging
 import os
-import re
 
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import RichProgressBar
@@ -14,13 +13,8 @@ from src.mca.mca import MostCommonAnswerWithEvidenceModule
 from src.model import AnswerWithEvidenceModule
 from src.rdm.random import RandomAnswerWithEvidenceModule
 from src.transformer_models.model import TransformersAnswerWithEvidenceModule
+from src.utils.logger_utils import UninitializedWeightsFilter
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
-
-
-class ShouldTrainFilter(logging.Filter):
-    def filter(self, record: logging.LogRecord) -> bool:
-        return record.levelno != logging.WARNING \
-               or re.match(r"^Some weights of \w+ were not initialized from the model .+", record.getMessage()) is None
 
 
 def model_type_to_class(model_type: str) -> type[AnswerWithEvidenceModule]:  # noqa
@@ -58,9 +52,16 @@ def train_and_test(args: argparse.Namespace) -> None:
         args.decoder_tokenizer = decoder_tokenizer
 
     if should_train:
-        logging.getLogger("transformers.modeling_utils").addFilter(ShouldTrainFilter())
+        uninitialized_weights_filter = UninitializedWeightsFilter()
+        logging.getLogger("transformers.modeling_utils").addFilter(uninitialized_weights_filter)
+    else:
+        uninitialized_weights_filter = None
+
     model_class = model_type_to_class(args.model_type)
     model = model_class(**args.__dict__)
+
+    if uninitialized_weights_filter:
+        logging.getLogger("transformers.modeling_utils").removeFilter(uninitialized_weights_filter)
 
     loggers = [
         WandbLogger(name=args.wandb_name, project=args.wandb_project, entity=args.wandb_entity,

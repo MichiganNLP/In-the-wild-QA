@@ -1,4 +1,5 @@
 import torch
+from cached_path import cached_path
 from torch import nn
 from torchvision.transforms import Normalize
 from transformers import AutoModel, AutoModelForMaskedLM
@@ -13,11 +14,10 @@ class EncImg(nn.Module):
         super().__init__()
 
         self.swin = SwinTransformer3D()
-        params = torch.load(
-            'src/transformer_models/violet_decoder/pytorch_violet/_snapshot/swin_base_patch244_window1677_sthv2.pth',
-            map_location='cpu')
+        params = torch.load(cached_path("https://github.com/SwinTransformer/storage/releases/download/v1.0.4"
+                                        "/swin_base_patch244_window1677_sthv2.pth"), map_location="cpu")
         # TODO: double check this part
-        self.swin.load_state_dict(params['state_dict'], strict=False)
+        self.swin.load_state_dict(params["state_dict"], strict=False)
 
         self.emb_cls = torch.nn.Parameter(0.02 * torch.randn(1, 1, 1, 768))
         self.emb_pos = torch.nn.Parameter(0.02 * torch.randn(1, 1, 1 + 14 ** 2, 768))
@@ -78,7 +78,7 @@ class VIOLET_Base(nn.Module):
             print('===== Init VIOLET =====')
             return
 
-        ckpt_new, ckpt_old = torch.load(ckpt, map_location='cpu'), self.state_dict()
+        ckpt_new, ckpt_old = torch.load(cached_path(ckpt), map_location='cpu'), self.state_dict()
         key_old = set(ckpt_old.keys())
         for k in ckpt_new:
             if k in ckpt_old and ckpt_new[k].shape == ckpt_old[k].shape:

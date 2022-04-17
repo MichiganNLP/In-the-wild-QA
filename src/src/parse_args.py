@@ -166,7 +166,7 @@ class T5MultiTaskTrainArguments(T5TextVisualTrainArguments):
 @dataclass
 class VIOLETDecoderTrainArguments(T5TextVisualTrainArguments):
     pretrained_violet_ckpt_path: str = field(
-        default="ckpts/pre-trained_violet/ckpt_violet_pretrain.pt",
+        default="https://www.dropbox.com/s/pot01hsefgbzlud/ckpt_violet_pretrain.pt?dl=1",
         metadata={"help": "path to the pre-trained VIOLET model checkpoint"}
     )
     frames_path: str = field(

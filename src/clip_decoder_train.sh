@@ -10,9 +10,9 @@ log_dir=logs/clip_decoder/
 log_path=logs/clip_decoder/baseline.log
 max_seq_length=16
 max_vid_length=2048
-sample_rate=60
+visual_avg_pool_size=60
 seed=42
-wandb_name=t5_clip_decoder-${sample_rate}_mvl-${max_vid_length}_sd-${seed}
+wandb_name=t5_clip_decoder-${visual_avg_pool_size}_mvl-${max_vid_length}_sd-${seed}
 wandb_entity=in-the-wild-vqa-um
 
 mkdir -p ${output_ckpt_dir}
@@ -28,6 +28,6 @@ python -m src clip_decoder \
     --wandb_name ${wandb_name} \
     --wandb_entity ${wandb_entity} \
     --max_vid_length ${max_vid_length} \
-    --sample_rate ${sample_rate}
+    --visual_avg_pool_size ${visual_avg_pool_size}
 
 # > ${log_path}

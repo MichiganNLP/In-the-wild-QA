@@ -114,21 +114,22 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
     def _eval_epoch_end(self, split: TYPE_SPLIT) -> None:
         instance_count = sum(t.shape[0] for t in self.bert_score.preds_input_ids)
 
-        self.log_dict({f"{k}/{split}": v for k, v in self.rouge.compute().items()}, batch_size=instance_count)
-        self.rouge.reset()
+        if instance_count:
+            self.log_dict({f"{k}/{split}": v for k, v in self.rouge.compute().items()}, batch_size=instance_count)
+            self.rouge.reset()
 
-        self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()}, batch_size=instance_count)
-        self.squad.reset()
+            self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()}, batch_size=instance_count)
+            self.squad.reset()
 
-        unused_weights_filter = UnusedWeightsFilter()
-        logging.getLogger("transformers.modeling_utils").addFilter(unused_weights_filter)
+            unused_weights_filter = UnusedWeightsFilter()
+            logging.getLogger("transformers.modeling_utils").addFilter(unused_weights_filter)
 
-        self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
-                       for k, v in self.bert_score.compute().items()}, batch_size=instance_count)
+            self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
+                           for k, v in self.bert_score.compute().items()}, batch_size=instance_count)
 
-        logging.getLogger("transformers.modeling_utils").removeFilter(unused_weights_filter)
+            logging.getLogger("transformers.modeling_utils").removeFilter(unused_weights_filter)
 
-        self.bert_score.reset()
+            self.bert_score.reset()
 
     @overrides(check_signature=False)
     def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:

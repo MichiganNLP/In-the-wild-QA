@@ -51,15 +51,7 @@ class VideoQAWithEvidenceDataset(Dataset):
         self.use_t5_format = use_t5_format
 
         if include_visual:
-            assert not (visual_features_path and frames_path)
-
             self.max_vid_len = max_vid_len
-
-            if visual_features_path:
-                with h5py.File(cached_path(visual_features_path)) as file:
-                    self.visual_features = {v.name.strip("/"): torch.from_numpy(v[:]) for v in file.values()}
-            else:
-                self.visual_features = None
 
             if frames_path:
                 self.transform = transform
@@ -70,7 +62,15 @@ class VideoQAWithEvidenceDataset(Dataset):
                                                 for domain in os.listdir(frames_path)
                                                 for channel in os.listdir(os.path.join(frames_path, domain))
                                                 for video_id in os.listdir(os.path.join(frames_path, domain, channel))}
+
+                self.visual_features = None
+            elif visual_features_path:
+                with h5py.File(cached_path(visual_features_path)) as file:
+                    self.visual_features = {v.name.strip("/"): torch.from_numpy(v[:]) for v in file.values()}
+
+                self.frames_path_by_video_id = None
             else:
+                self.visual_features = None
                 self.frames_path_by_video_id = None
 
             if visual_avg_pool_size:

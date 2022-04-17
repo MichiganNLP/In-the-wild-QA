@@ -126,7 +126,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
                             visual=batch.get("visual"), visual_attention_mask=batch.get("visual_mask"),
                             answer_ids=batch["answer_ids"], **kwargs)
 
-        if split != "train":
+        if self.answers_generation_enabled and split != "train":
             output["encoder_hidden_states"] = model_output.encoder_hidden_states
             output["encoder_attentions"] = model_output.encoder_attentions
 

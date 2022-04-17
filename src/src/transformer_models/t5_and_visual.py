@@ -113,10 +113,9 @@ class T5AndVisualEvidenceIO(T5EncoderModel):  # noqa
                 **kwargs) -> tuple[torch.Tensor, torch.Tensor]:
         outputs = self.encoder(masked_caption_ids, visual=visual, attention_mask=attention_mask,
                                visual_attention_mask=visual_attention_mask, **kwargs)
-        visual_start = masked_caption_ids.shape[1]
-        visual_hidden = outputs.last_hidden_state[:, visual_start:, :]
-        score = self.linear(visual_hidden)
-        return torch.sigmoid(score[..., 0])  # calculate the probability that the frame is "I"
+        visual_start_idx = masked_caption_ids.shape[1]
+        visual_indices = outputs.last_hidden_state[:, visual_start_idx:, :]
+        return self.linear(visual_indices)[..., 0]  # Score that the visual feature is "inside" the evidence.
 
     def predict(self, masked_caption_ids: torch.Tensor | None = None, visual: torch.Tensor | None = None,
                 attention_mask: torch.Tensor | None = None,

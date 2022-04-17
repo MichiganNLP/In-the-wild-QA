@@ -28,12 +28,12 @@ def log_lr(pl_module: pl.LightningModule, **kwargs) -> None:
 
 def model_type_to_class(model_type: str) -> type[T5ForConditionalGeneration]:  # noqa
     return {
-        "T5_text_and_visual": T5AndVisual,
-        "T5_evidence": T5AndVisualEvidence,
-        "T5_evidence_IO": T5AndVisualEvidenceIO,
-        "T5_multi_task": T5MultiTask,
-        "T5_train": T5ForConditionalGeneration,
-        "T5_zero_shot": T5ForConditionalGeneration,
+        "t5_text_and_visual": T5AndVisual,
+        "t5_evidence": T5AndVisualEvidence,
+        "t5_evidence_io": T5AndVisualEvidenceIO,
+        "t5_multi_task": T5MultiTask,
+        "t5_train": T5ForConditionalGeneration,
+        "t5_zero_shot": T5ForConditionalGeneration,
         "violet_decoder": VioletWithDecoder,
         "clip_decoder": CLIPWithDecoder,
     }[model_type]
@@ -92,28 +92,23 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         return self.model(input_ids, attention_mask=attention_mask, **kwargs)
 
     def _evidence_loss(self, start_scores: torch.Tensor, end_scores: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
-        evidence = batch["evidence"]
-
-        starts = evidence[:, :, 0]
-        ends = evidence[:, :, 1]
+        starts, ends = batch["evidence"][..., :]
 
         start_loss = self.cross_entropy_loss(start_scores, starts[:, 0])  # FIXME: we predict only one evidence.
         end_loss = self.cross_entropy_loss(end_scores, ends[:, 0])
 
         return start_loss + end_loss
 
-    def _evidence_io_loss(self, prob_in: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
-        evidence = batch["evidence"]
-        starts = evidence[:, :, 0]
-        ends = evidence[:, :, 1]
+    def _evidence_io_loss(self, visual_scores: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
+        starts, ends = batch["evidence"][..., :]
         batch_size, evidence_number = starts.shape
 
-        ground_truth = torch.zeros_like(prob_in)
+        ground_truth = torch.zeros_like(visual_scores)
         for b_idx in range(batch_size):
             for e_idx in range(evidence_number):
                 ground_truth[b_idx, starts[b_idx][e_idx]: ends[b_idx][e_idx]] = 1
 
-        return self.cross_entropy_loss(prob_in, ground_truth)
+        return self.cross_entropy_loss(visual_scores, ground_truth)
 
     # Don't check the signature here because a transitive dependency has a bug when an argument has a `Literal` type
     # with a string. See https://github.com/bojiang/typing_utils/issues/10
@@ -142,8 +137,8 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
             answer_loss = 0
 
         if self.evidence_selection_enabled:
-            if self.hparams.model_type in {"T5_evidence", "T5_multi_task"}:
-                if self.hparams.model_type == "T5_evidence":
+            if self.hparams.model_type in {"t5_evidence", "t5_multi_task"}:
+                if self.hparams.model_type == "t5_evidence":
                     start_scores, end_scores = model_output
                 else:
                     start_scores, end_scores = model_output.start, model_output.end
@@ -152,8 +147,9 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
                 output["end_scores"] = end_scores
 
                 evidence_loss = self._evidence_loss(start_scores, end_scores, batch)
-            elif self.hparams.model_type == "T5_evidence_IO":
-                evidence_loss = self._evidence_io_loss(model_output, batch)
+            elif self.hparams.model_type == "t5_evidence_io":
+                output["visual_scores"] = model_output
+                evidence_loss = self._evidence_io_loss(output["visual_scores"], batch)
             else:
                 raise ValueError(f"Unknown model type: {self.hparams.model_type}")
         else:
@@ -201,8 +197,25 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
             output["generated_scores"] = generated_output.scores
 
         if self.evidence_selection_enabled:
-            # FIXME: it doesn't work with IO.
-            start_scores, end_scores = step_output["start_scores"], step_output["end_scores"]
+            if (visual_scores := step_output.get("visual_scores")) is None:
+                start_scores, end_scores = step_output["start_scores"], step_output["end_scores"]
+            else:
+                # The start and end scores can be expressed in terms of the inside and outside scores. The score that
+                # a span starts at a given moment is the moment inside score plus the outside score of the previous
+                # moment. Similar reasoning for the end score.
+
+                # The visual inside probability is binary, and we model it from sigmoid. The probability of outside (
+                # the opposite) comes from the negation, which in sigmoid can be seen as negating the score as it's
+                # symmetrical.
+                neg_visual_scores = -visual_scores
+                start_scores = torch.empty_like(visual_scores)
+                start_scores[0] = visual_scores[0]
+                start_scores[1:] = visual_scores[1:] + neg_visual_scores[:-1]
+
+                end_scores = torch.empty_like(visual_scores)
+                end_scores[-1] = visual_scores[-1]
+                end_scores[:-1] = visual_scores[:-1] + neg_visual_scores[1:]
+
             start, end = get_best_evidence_spans(start_scores, end_scores, mask=batch["visual_mask"])
             output["pred_spans"] = [list(zip(start_instance, end_instance))
                                     for start_instance, end_instance in zip(start.tolist(), end.tolist())]

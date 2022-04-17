@@ -29,7 +29,7 @@ def model_type_to_class(model_type: str) -> type[AnswerWithEvidenceModule]:  # n
 
 
 def train_and_test(args: argparse.Namespace) -> None:
-    should_train = args.model_type not in {"random", "most_common_ans", "closest_rtr", "T5_zero_shot"}
+    should_train = args.model_type not in {"random", "most_common_ans", "closest_rtr", "t5_zero_shot"}
 
     os.environ["TOKENIZERS_PARALLELISM"] = "0"
     if args.model_type == "violet_decoder":

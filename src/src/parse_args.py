@@ -13,12 +13,12 @@ MODEL_CHOICES = [
     "random",
     "most_common_ans",
     "closest_rtr",
-    "T5_train",
-    "T5_zero_shot",
-    "T5_text_and_visual",
-    "T5_evidence",
-    "T5_evidence_IO",
-    "T5_multi_task",
+    "t5_train",
+    "t5_zero_shot",
+    "t5_text_and_visual",
+    "t5_evidence",
+    "t5_evidence_io",
+    "t5_multi_task",
     "violet_decoder",
     "clip_decoder",
 ]
@@ -43,6 +43,7 @@ class TrainAndTestArguments:
         default=512,
         metadata={"help": "maximum of the text sequence. Truncate if exceeded."}
     )
+    beam_size: Optional[int] = None
     learning_rate: float = 3e-4
     weight_decay: float = 0.0
     adam_epsilon: float = 1e-8
@@ -89,29 +90,14 @@ class TrainAndTestArguments:
 class ClosestRetrievalArguments:
     embedding_model: str = field(
         default="stsb-roberta-base",
-        metadata={"help": "model types for calculating embedding, more models available at\
-                        https://docs.google.com/spreadsheets/d/14QplCdTCDwEmTqrn1LH4yrbKvdogK4oQvYO1K1aPR5M/edit#gid=0"}
+        metadata={"help": "model types for calculating embedding, more models available at "
+                          "https://docs.google.com/spreadsheets/d/14QplCdTCDwEmTqrn1LH4yrbKvdogK4oQvYO1K1aPR5M/"
+                          "edit#gid=0"}
     )
 
     def __post_init__(self):
         if self.embedding_model not in EMBEDDING_CHOICES:
             raise ValueError(f"Please select from {', '.join(EMBEDDING_CHOICES)}")
-
-
-@dataclass
-class T5ZeroShotArguments:
-    max_seq_length: int = field(
-        default=512,
-        metadata={"help": "maximum length of the text length. Truncate the exceeded part."}
-    )
-    batch_size: int = 32
-    pred_out_dir: Optional[str] = None
-    pred_num: int = field(
-        default=None,
-        metadata={"help": "number of predictions made."}
-    )
-    beam_size: Optional[int] = None
-    model_name_or_path: str = "t5-base"
 
 
 @dataclass
@@ -214,12 +200,12 @@ def model_type_to_dataclass_types(model_type: str) -> Union[DataClassType, Itera
         "random": [TrainAndTestArguments, RandomArguments],
         "most_common_ans": TrainAndTestArguments,
         "closest_rtr":  [TrainAndTestArguments, ClosestRetrievalArguments],
-        "T5_train": TrainAndTestArguments,
-        "T5_zero_shot": [TrainAndTestArguments, T5ZeroShotArguments],
-        "T5_text_and_visual": [TrainAndTestArguments, T5TextVisualTrainArguments],
-        "T5_evidence": [TrainAndTestArguments, T5EvidenceFindingTrainArguments],
-        "T5_evidence_IO": [TrainAndTestArguments, T5EvidenceIOTrainArguments],
-        "T5_multi_task": [TrainAndTestArguments, T5MultiTaskTrainArguments],
+        "t5_train": TrainAndTestArguments,
+        "t5_zero_shot": TrainAndTestArguments,
+        "t5_text_and_visual": [TrainAndTestArguments, T5TextVisualTrainArguments],
+        "t5_evidence": [TrainAndTestArguments, T5EvidenceFindingTrainArguments],
+        "t5_evidence_io": [TrainAndTestArguments, T5EvidenceIOTrainArguments],
+        "t5_multi_task": [TrainAndTestArguments, T5MultiTaskTrainArguments],
         "violet_decoder": [TrainAndTestArguments, VIOLETDecoderTrainArguments],
         "clip_decoder": [TrainAndTestArguments, CLIPDecoderTrainArguments],
     }[model_type]

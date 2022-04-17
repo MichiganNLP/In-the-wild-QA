@@ -165,7 +165,7 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
     def _create_dataset(data_path: str, args: argparse.Namespace,
                         encoder_tokenizer: PreTrainedTokenizerBase | None = None,
                         decoder_tokenizer: PreTrainedTokenizerBase | None = None) -> VideoQAWithEvidenceDataset:
-        include_visual = args.model_type.startswith(("T5_text_and_visual", "T5_evidence", "T5_multi_task", "clip_",
+        include_visual = args.model_type.startswith(("t5_text_and_visual", "t5_evidence", "t5_multi_task", "clip_",
                                                      "violet_"))
         return VideoQAWithEvidenceDataset(data_path=data_path, encoder_tokenizer=encoder_tokenizer,
                                           decoder_tokenizer=decoder_tokenizer,
@@ -175,7 +175,7 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
                                           visual_features_path=getattr(args, "visual_features_path", None),
                                           frames_path=getattr(args, "frames_path", None),
                                           include_visual=include_visual,
-                                          use_t5_format=args.model_type == "T5_zero_shot")
+                                          use_t5_format=args.model_type == "t5_zero_shot")
 
     def _create_data_loader(self, data_path: str, is_train: bool = True) -> DataLoader:
         dataset = self._create_dataset(encoder_tokenizer=self.encoder_tokenizer,

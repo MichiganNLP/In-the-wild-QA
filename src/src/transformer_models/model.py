@@ -14,7 +14,7 @@ from transformers import PreTrainedTokenizerBase, T5ForConditionalGeneration, ge
 from src.decoding import compute_answer_prob, compute_answer_probs
 from src.metrics import Perplexity, get_best_evidence_spans
 from src.model import AnswerWithEvidenceModule, TYPE_BATCH, TYPE_SPLIT
-from src.transformer_models.clip_decoder import CLIPWithDecoder
+from src.transformer_models.clip_decoder import ClipWithDecoder
 from src.transformer_models.t5_and_visual import T5AndVisual, T5AndVisualEvidence, T5AndVisualEvidenceIO, T5MultiTask
 from src.transformer_models.violet_decoder.model import VioletWithDecoder
 
@@ -35,7 +35,7 @@ def model_type_to_class(model_type: str) -> type[T5ForConditionalGeneration]:  #
         "t5_train": T5ForConditionalGeneration,
         "t5_zero_shot": T5ForConditionalGeneration,
         "violet_decoder": VioletWithDecoder,
-        "clip_decoder": CLIPWithDecoder,
+        "clip_decoder": ClipWithDecoder,
     }[model_type]
 
 
@@ -54,6 +54,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
             model_kwargs["pretrained_violet_ckpt_path"] = self.hparams.pretrained_violet_ckpt_path
         elif self.hparams.model_type == "clip_decoder":
             model_kwargs["pretrained_clip_ckpt_path"] = self.hparams.pretrained_clip_ckpt_path
+            model_kwargs["max_seq"] = self.hparams.max_seq_length
         self.model = model_class.from_pretrained(self.hparams.model_name_or_path, **model_kwargs)
 
         self.answers_generation_enabled = isinstance(self.model, T5ForConditionalGeneration)

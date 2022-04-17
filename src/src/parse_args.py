@@ -169,7 +169,7 @@ class VIOLETDecoderTrainArguments(T5TextVisualTrainArguments):
         default="ckpts/pre-trained_violet/ckpt_violet_pretrain.pt",
         metadata={"help": "path to the pre-trained VIOLET model checkpoint"}
     )
-    path_to_frames: str = field(
+    frames_path: str = field(
         default="video_features/frames",
         metadata={"help": "path to the directory that contains all the extracted frames"}
     )
@@ -185,7 +185,7 @@ class CLIPDecoderBasics:
         default="openai/clip-vit-base-patch32",
         metadata={"help": "ckpt name to the pre-trained CLIP model"}
     )
-    path_to_frames: str = field(
+    frames_path: str = field(
         default="video_features/frames",
         metadata={"help": "path to the directory that contains all the extracted frames"}
     )

@@ -4,11 +4,10 @@ export CUDA_VISIBLE_DEVICES=0
 
 output_ckpt_dir=ckpts/t5/evidence_finetuned/
 num_train_epochs=50
-train_batch_size=1
-eval_batch_size=1
+train_batch_size=16
+eval_batch_size=16
 log_dir=logs/t5_evidence/
 log_path=logs/t5_evidence/baseline.log
-gradient_accumulation_steps=16
 max_seq_length=512
 max_vid_length=2048
 visual_avg_pool_size=1
@@ -21,7 +20,6 @@ mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}
 
 python -m src t5_evidence \
-    --gradient_accumulation_steps ${gradient_accumulation_steps} \
     --output_ckpt_dir ${output_ckpt_dir} \
     --num_train_epochs ${num_train_epochs} \
     --train_batch_size ${train_batch_size} \

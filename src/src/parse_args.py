@@ -48,10 +48,10 @@ class TrainAndTestArguments:
     weight_decay: float = 0.0
     adam_epsilon: float = 1e-8
     warmup_steps: int = 0
-    train_batch_size: Optional[int] = 8
-    eval_batch_size: Optional[int] = 8
+    train_batch_size: Optional[int] = 32
+    eval_batch_size: Optional[int] = 32
     num_train_epochs: int = 100
-    gradient_accumulation_steps: int = 16
+    gradient_accumulation_steps: Optional[int] = None
     n_gpu: int = 1
     early_stop_callback: bool = field(
         default=False,

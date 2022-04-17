@@ -92,7 +92,8 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         return self.model(input_ids, attention_mask=attention_mask, **kwargs)
 
     def _evidence_loss(self, start_scores: torch.Tensor, end_scores: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
-        starts, ends = batch["evidence"][..., :]
+        evidence = batch["evidence"]
+        starts, ends = evidence[..., 0], evidence[..., 1]
 
         start_loss = self.cross_entropy_loss(start_scores, starts[:, 0])  # FIXME: we predict only one evidence.
         end_loss = self.cross_entropy_loss(end_scores, ends[:, 0])
@@ -100,7 +101,8 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         return start_loss + end_loss
 
     def _evidence_io_loss(self, visual_scores: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
-        starts, ends = batch["evidence"][..., :]
+        evidence = batch["evidence"]
+        starts, ends = evidence[..., 0], evidence[..., 1]
         batch_size, evidence_number = starts.shape
 
         ground_truth = torch.zeros_like(visual_scores)

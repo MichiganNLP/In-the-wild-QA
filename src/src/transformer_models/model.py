@@ -54,7 +54,6 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
             model_kwargs["pretrained_violet_ckpt_path"] = self.hparams.pretrained_violet_ckpt_path
         elif self.hparams.model_type == "clip_decoder":
             model_kwargs["pretrained_clip_ckpt_path"] = self.hparams.pretrained_clip_ckpt_path
-            model_kwargs["max_seq"] = self.hparams.max_seq_length
         self.model = model_class.from_pretrained(self.hparams.model_name_or_path, **model_kwargs)
 
         self.answers_generation_enabled = isinstance(self.model, T5ForConditionalGeneration)

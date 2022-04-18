@@ -13,8 +13,7 @@ from src.transformer_models.t5_and_visual import _combine_attention_masks
 
 
 class ClipWithDecoder(T5ForConditionalGeneration):
-    def __init__(self, config: T5Config, pretrained_clip_ckpt_path: str, max_seq: int,
-                 max_visual_features: int = 500) -> None:
+    def __init__(self, config: T5Config, pretrained_clip_ckpt_path: str, max_visual_features: int = 500) -> None:
         super().__init__(config)
 
         self.model = AutoModel.from_pretrained(pretrained_clip_ckpt_path)

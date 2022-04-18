@@ -1,8 +1,11 @@
+from __future__ import annotations
+
 import argparse
 import datetime
 import os
 import re
-from typing import Any, Iterable, Mapping, Optional, Sequence, Union
+from collections.abc import Iterable, Mapping, Sequence
+from typing import Any
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -76,8 +79,8 @@ def dm_info(args: argparse.Namespace, domain: str, plot_all: bool = False) -> Se
     plt_duration_hist(args, domain, durations)
 
 
-def plt_duration_hist(args: argparse.Namespace, domain: Optional[str],
-                      durations: Union[Iterable[float], Mapping[Any, Sequence[float]]], plot_all: bool = False) -> None:
+def plt_duration_hist(args: argparse.Namespace, domain: str | None,
+                      durations: Iterable[float] | Mapping[Any, Sequence[float]], plot_all: bool = False) -> None:
     # draw figures of duration distribution for video clips
 
     fig, ax = plt.subplots()

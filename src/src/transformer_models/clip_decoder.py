@@ -14,19 +14,14 @@ from src.transformer_models.t5_and_visual import _combine_attention_masks
 
 class ClipWithDecoder(T5ForConditionalGeneration):
     def __init__(self, config: T5Config, pretrained_clip_ckpt_path: str, max_seq: int,
-                 max_visual_seq: int = 500) -> None:
+                 max_visual_features: int = 500) -> None:
         super().__init__(config)
 
         self.model = AutoModel.from_pretrained(pretrained_clip_ckpt_path)
 
-        # FIXME(santi): Why are we doing this?
-        self.model.text_model.embeddings.position_ids = torch.arange(max_seq).unsqueeze(dim=0)
-        self.model.text_model.embeddings.position_embedding = nn.Embedding(max_seq,
-                                                                           self.model.config.text_config.hidden_size)
-
-        # TODO: change later - santi: what thing??
-        self.emb_temporal = nn.Parameter(0.02 * torch.randn(max_visual_seq, self.model.config.text_config.hidden_size))
-        self.linear = nn.Linear(self.model.config.text_config.hidden_size, self.model.config.vision_config.hidden_size)
+        text_or_visual_encoded_size = self.model.config.text_config.hidden_size
+        self.embed_temporal = nn.Parameter(0.02 * torch.randn(max_visual_features, text_or_visual_encoded_size))
+        self.linear = nn.Linear(text_or_visual_encoded_size, config.d_model)
 
     @overrides(check_signature=False)
     def _prepare_encoder_decoder_kwargs_for_generation(self, input_ids: torch.Tensor,
@@ -45,7 +40,7 @@ class ClipWithDecoder(T5ForConditionalGeneration):
             visual = visual.view(batch_size * frame_count, *visual.shape[2:])
 
             encoded_visual = (self.model.get_image_features(visual).view(batch_size, frame_count, -1)
-                              + self.emb_temporal.expand(batch_size, -1, -1)[:, :frame_count])
+                              + self.embed_temporal.expand(batch_size, -1, -1)[:, :frame_count])
 
             encoded = self.linear(torch.cat([encoded_text.unsqueeze(dim=1), encoded_visual], dim=1))
             model_kwargs["encoder_outputs"] = BaseModelOutput(last_hidden_state=encoded)

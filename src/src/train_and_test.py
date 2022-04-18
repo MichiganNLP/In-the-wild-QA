@@ -32,10 +32,7 @@ def train_and_test(args: argparse.Namespace) -> None:
     should_train = args.model_type not in {"random", "most_common_ans", "closest_rtr", "t5_zero_shot"}
 
     os.environ["TOKENIZERS_PARALLELISM"] = "0"
-    if args.model_type == "violet_decoder":
-        encoder_tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-        decoder_tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
-    elif args.model_type == "clip_decoder":
+    if args.model_type == "clip_decoder":
         encoder_tokenizer = AutoTokenizer.from_pretrained(args.pretrained_clip_ckpt_path)
         decoder_tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
     elif args.model_type in {"random", "most_common_ans", "closest_rtr"}:

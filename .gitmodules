@@ -1,3 +1,0 @@
-[submodule "src/src/violet_decoder/pytorch_violet"]
-	path = src/src/violet_decoder/pytorch_violet
-	url = https://github.com/tsujuifu/pytorch_violet

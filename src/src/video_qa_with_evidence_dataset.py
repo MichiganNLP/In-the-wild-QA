@@ -183,8 +183,7 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
                         encoder_tokenizer: PreTrainedTokenizerBase | None = None,
                         decoder_tokenizer: PreTrainedTokenizerBase | None = None,
                         transform: Callable[[torch.Tensor], torch.Tensor] | None = None) -> VideoQAWithEvidenceDataset:
-        include_visual = args.model_type.startswith(("t5_text_and_visual", "t5_evidence", "t5_multi_task", "clip_",
-                                                     "violet_"))
+        include_visual = args.model_type.startswith(("t5_text_and_visual", "t5_evidence", "t5_multi_task", "clip_"))
         return VideoQAWithEvidenceDataset(data_path=data_path, encoder_tokenizer=encoder_tokenizer,
                                           decoder_tokenizer=decoder_tokenizer, transform=transform,
                                           max_len=getattr(args, "max_seq_length", 512),
@@ -200,7 +199,6 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
 
         image_size = getattr(self.args, "size_img", 224)
 
-        # FIXME: these transforms functions probably don't work with VIOLET. Need to check what to use with it.
         if is_train:
             transform = T.Compose([
                 # ConvertBHWCtoBCHW(),

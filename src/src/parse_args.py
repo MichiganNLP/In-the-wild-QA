@@ -19,7 +19,6 @@ MODEL_CHOICES = [
     "t5_evidence",
     "t5_evidence_io",
     "t5_multi_task",
-    "violet_decoder",
     "clip_decoder",
 ]
 
@@ -163,24 +162,7 @@ class T5MultiTaskTrainArguments(T5TextVisualTrainArguments):
 
 #########################################################################################
 #########################################################################################
-# Argument classes for Pre-trained model, VIOLET encoder + T5 decoder and CLIP encoder + T5 decoder
-
-
-@dataclass
-class VIOLETDecoderTrainArguments(T5TextVisualTrainArguments):
-    pretrained_violet_ckpt_path: str = field(
-        default="https://www.dropbox.com/s/pot01hsefgbzlud/ckpt_violet_pretrain.pt?dl=1",
-        metadata={"help": "path to the pre-trained VIOLET model checkpoint"}
-    )
-    frames_path: str = field(
-        default="/scratch/mihalcea_root/mihalcea0/shared_data/video_features/frames",
-        metadata={"help": "path to the directory that contains all the extracted frames"}
-    )
-    size_img: int = field(
-        default=224,
-        metadata={"help": "image size to convert. We use 224 as the the default to be consistent with the original "
-                          "VIOLET paper."}
-    )
+# Argument classes for the CLIP models
 
 
 @dataclass
@@ -210,6 +192,5 @@ def model_type_to_dataclass_types(model_type: str) -> Union[DataClassType, Itera
         "t5_evidence": [TrainAndTestArguments, T5EvidenceFindingTrainArguments],
         "t5_evidence_io": [TrainAndTestArguments, T5EvidenceIOTrainArguments],
         "t5_multi_task": [TrainAndTestArguments, T5MultiTaskTrainArguments],
-        "violet_decoder": [TrainAndTestArguments, VIOLETDecoderTrainArguments],
         "clip_decoder": [TrainAndTestArguments, CLIPDecoderTrainArguments],
     }[model_type]

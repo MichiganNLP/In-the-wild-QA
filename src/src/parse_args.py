@@ -77,7 +77,7 @@ class TrainAndTestArguments:
         metadata={"help": "name of this run."}
     )
     wandb_entity: str = field(
-        default=None,
+        default="in-the-wild-vqa-um",
         metadata={"help": "your account to for wandb."}
     )
     wandb_offline: bool = field(
@@ -102,7 +102,10 @@ class ClosestRetrievalArguments:
 
 @dataclass
 class _VisualBaseArguments:
-    visual_avg_pool_size: int = field(metadata={"help": "sampling rate for visual features."})
+    visual_avg_pool_size: Optional[int] = field(
+        default=None,
+        metadata={"help": "sampling rate for visual features. Only Used for visual features."}
+    )
     visual_features_path: str = "https://www.dropbox.com/s/vt2kjdqr7mnxg2q/WildQA_I3D_avg_pool.hdf5?dl=1"
     visual_size: int = field(
         default=1024,
@@ -175,7 +178,8 @@ class VIOLETDecoderTrainArguments(T5TextVisualTrainArguments):
     )
     size_img: int = field(
         default=224,
-        metadata={"help": "image size to convert. We use the default 224 consistent with the original Violet paper."}
+        metadata={"help": "image size to convert. We use 224 as the the default to be consistent with the original "
+                          "VIOLET paper."}
     )
 
 

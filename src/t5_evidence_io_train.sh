@@ -13,8 +13,6 @@ max_vid_length=2048
 visual_avg_pool_size=1
 seed=42
 wandb_name=t5_evidence_sr-${visual_avg_pool_size}_mvl-${max_vid_length}_sd-${seed}
-wandb_entity=in-the-wild-vqa-um
-wandb_project=trial
 
 mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}
@@ -24,9 +22,7 @@ python -m src t5_evidence_io \
     --num_train_epochs ${num_train_epochs} \
     --train_batch_size ${train_batch_size} \
     --eval_batch_size ${eval_batch_size} \
-    --wandb_project ${wandb_project} \
     --wandb_name ${wandb_name} \
-    --wandb_entity ${wandb_entity} \
     --max_seq_length ${max_seq_length} \
     --max_vid_length ${max_vid_length} \
     --visual_avg_pool_size ${visual_avg_pool_size} \

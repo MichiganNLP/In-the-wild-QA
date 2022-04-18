@@ -60,7 +60,9 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         self.answers_generation_enabled = isinstance(self.model, T5ForConditionalGeneration)
         self.evidence_selection_enabled = "evidence" in self.hparams.model_type or "multi" in self.hparams.model_type
 
-        self.visual_input_enabled = "visual" in self.hparams.model_type or self.evidence_selection_enabled
+        self.visual_input_enabled = ("visual" in self.hparams.model_type
+                                     or self.hparams.model_type.startswith(("clip_", "violet_"))
+                                     or self.evidence_selection_enabled)
 
         self.cross_entropy_loss = nn.CrossEntropyLoss()
 

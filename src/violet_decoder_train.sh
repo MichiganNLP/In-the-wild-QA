@@ -11,10 +11,8 @@ log_path=logs/violet_decoder/baseline.log
 gradient_accumulation_steps=16
 max_seq_length=128
 max_vid_length=2048
-visual_avg_pool_size=60
 seed=42
-wandb_name=t5_violet_decoder-${visual_avg_pool_size}_mvl-${max_vid_length}_sd-${seed}
-wandb_entity=in-the-wild-vqa-um
+wandb_name=t5_violet_decoder-_mvl-${max_vid_length}_sd-${seed}
 
 mkdir -p ${output_ckpt_dir}
 mkdir -p ${log_dir}
@@ -28,8 +26,6 @@ python -m src violet_decoder \
     --max_seq_length ${max_seq_length} \
     --seed ${seed} \
     --wandb_name ${wandb_name} \
-    --wandb_entity ${wandb_entity} \
-    --max_vid_length ${max_vid_length} \
-    --visual_avg_pool_size ${visual_avg_pool_size}
+    --max_vid_length ${max_vid_length}
 
 # > ${log_path}

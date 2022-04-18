@@ -15,9 +15,12 @@ from overrides import overrides
 from torch import nn
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader, Dataset
+from torchvision import transforms as T
 from torchvision.datasets.folder import default_loader
 from torchvision.transforms.functional import to_tensor
 from transformers import PreTrainedTokenizerBase
+
+from src.transforms import RandomResizedCropWithRandomInterpolation
 
 torchvision.set_image_backend("accimage")
 
@@ -99,8 +102,11 @@ class VideoQAWithEvidenceDataset(Dataset):
             output["visual"] = self.visual_avg_pool(self.visual_features[video_id])[:self.max_vid_len]
         elif self.frames_path_by_video_id:
             frames_tensor = torch.stack([to_tensor(default_loader(video_frame_path))
-                                         for video_frame_path in self.frames_path_by_video_id[video_id]])
+                                         for video_frame_path in self.frames_path_by_video_id[video_id]][::2])
+            # frames_tensor = frames_tensor.permute(0, 2, 3, 1)
             output["visual"] = self.transform(frames_tensor)
+
+        # TODO: add an option to load directly from the videos.
 
         return output
 
@@ -150,6 +156,17 @@ class VideoQAWithEvidenceDataset(Dataset):
         return len(self.instances)
 
 
+def precision_to_dtype(precision: str | int) -> torch.dtype:
+    if precision == 32:
+        return torch.float
+    elif precision == 64:
+        return torch.float64
+    elif precision in {16, "mixed"}:
+        return torch.float16
+    else:
+        raise ValueError(f"Unsupported precision value: {precision}")
+
+
 class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
     def __init__(self, args: argparse.Namespace, encoder_tokenizer: PreTrainedTokenizerBase | None = None,
                  decoder_tokenizer: PreTrainedTokenizerBase | None = None) -> None:
@@ -164,11 +181,12 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
     @staticmethod
     def _create_dataset(data_path: str, args: argparse.Namespace,
                         encoder_tokenizer: PreTrainedTokenizerBase | None = None,
-                        decoder_tokenizer: PreTrainedTokenizerBase | None = None) -> VideoQAWithEvidenceDataset:
+                        decoder_tokenizer: PreTrainedTokenizerBase | None = None,
+                        transform: Callable[[torch.Tensor], torch.Tensor] | None = None) -> VideoQAWithEvidenceDataset:
         include_visual = args.model_type.startswith(("t5_text_and_visual", "t5_evidence", "t5_multi_task", "clip_",
                                                      "violet_"))
         return VideoQAWithEvidenceDataset(data_path=data_path, encoder_tokenizer=encoder_tokenizer,
-                                          decoder_tokenizer=decoder_tokenizer,
+                                          decoder_tokenizer=decoder_tokenizer, transform=transform,
                                           max_len=getattr(args, "max_seq_length", 512),
                                           max_vid_len=getattr(args, "max_vid_length", None),
                                           visual_avg_pool_size=getattr(args, "visual_avg_pool_size", None),
@@ -178,8 +196,31 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
                                           use_t5_format=args.model_type == "t5_zero_shot")
 
     def _create_data_loader(self, data_path: str, is_train: bool = True) -> DataLoader:
+        dtype = precision_to_dtype(self.trainer.precision_plugin.precision)
+
+        image_size = getattr(self.args, "size_img", 224)
+
+        # FIXME: these transforms functions probably don't work with VIOLET. Need to check what to use with it.
+        if is_train:
+            transform = T.Compose([
+                # ConvertBHWCtoBCHW(),
+                T.ConvertImageDtype(dtype),
+                RandomResizedCropWithRandomInterpolation(image_size, scale=(0.5, 1.0)),
+                T.RandomHorizontalFlip(),
+                T.Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711)),
+            ])
+        else:
+            transform = T.Compose([
+                # ConvertBHWCtoBCHW(),
+                T.ConvertImageDtype(dtype),
+                T.Resize(image_size, interpolation=T.InterpolationMode.BICUBIC),
+                T.CenterCrop(image_size),
+                T.Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711)),
+            ])
+
         dataset = self._create_dataset(encoder_tokenizer=self.encoder_tokenizer,
-                                       decoder_tokenizer=self.decoder_tokenizer, data_path=data_path, args=self.args)
+                                       decoder_tokenizer=self.decoder_tokenizer, transform=transform,
+                                       data_path=data_path, args=self.args)
         return DataLoader(dataset, batch_size=self.args.train_batch_size if is_train else self.eval_batch_size,
                           drop_last=is_train, shuffle=is_train, collate_fn=getattr(dataset, "collate", None),
                           num_workers=self.num_workers, pin_memory=True, persistent_workers=self.num_workers > 0)

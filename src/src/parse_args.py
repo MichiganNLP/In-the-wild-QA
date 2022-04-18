@@ -170,7 +170,7 @@ class VIOLETDecoderTrainArguments(T5TextVisualTrainArguments):
         metadata={"help": "path to the pre-trained VIOLET model checkpoint"}
     )
     frames_path: str = field(
-        default="video_features/frames",
+        default="/scratch/mihalcea_root/mihalcea0/shared_data/video_features/frames",
         metadata={"help": "path to the directory that contains all the extracted frames"}
     )
     size_img: int = field(
@@ -186,7 +186,7 @@ class CLIPDecoderBasics:
         metadata={"help": "ckpt name to the pre-trained CLIP model"}
     )
     frames_path: str = field(
-        default="video_features/frames",
+        default="/scratch/mihalcea_root/mihalcea0/shared_data/video_features/frames",
         metadata={"help": "path to the directory that contains all the extracted frames"}
     )
 

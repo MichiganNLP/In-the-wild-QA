@@ -253,6 +253,10 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
             generated_prob = compute_answer_prob(generated_probs)
             self.log(f"generated_prob/{split}", generated_prob, batch_size=batch_size)
 
+
+    def _num_training_steps(self) -> int:
+        return len(self.trainer.train_dataloader) * max(self.trainer.num_train_epochs, 1)  # * self.trainer.gradient_accumulation_steps
+
     @overrides
     def configure_optimizers(self) -> Mapping[str, Any]:
         no_decay = {"bias", "LayerNorm.weight"}
@@ -268,7 +272,16 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         ]
         optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate, eps=self.hparams.adam_epsilon)
 
+        # NOTE: issues with the scheduling for mult-GPU training, specifically with estimated stepping batches
+        # https://github.com/PyTorchLightning/pytorch-lightning/issues/12317
+        # Issues not fixed yet at Pytorch_lightning version 1.6.1. 
+        # https://github.com/PyTorchLightning/pytorch-lightning/pull/11952#
+
+        self.trainer.reset_train_dataloader()
+        num_training_steps = self._num_training_steps()
+
         scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=self.hparams.warmup_steps,
-                                                    num_training_steps=self.trainer.estimated_stepping_batches)
+                                                    num_training_steps=num_training_steps)
 
         return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "step"}}
+

@@ -57,6 +57,7 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
     def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],
                         generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
+        print("Updating metrics....")
         batch_size = len(batch["question"])
 
         if generated := generative_step_output.get("generated"):
@@ -86,6 +87,7 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
                                       for generated_instance, id_instance in zip(normalized_generated, id_)]
             squad_format_answers = [{"answers": {"text": answers_instance}, "id": id_instance}
                                     for answers_instance, id_instance in zip(normalized_answers, id_)]
+            
             self.squad.update(squad_format_generated, squad_format_answers)
 
             # BERTScore doesn't support multiple targets, and we have a variable number of answer.
@@ -123,7 +125,6 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
             unused_weights_filter = UnusedWeightsFilter()
             logging.getLogger("transformers.modeling_utils").addFilter(unused_weights_filter)
-
             self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
                            for k, v in self.bert_score.compute().items()}, batch_size=instance_count)
 

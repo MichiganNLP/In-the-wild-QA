@@ -2,11 +2,13 @@
 import argparse
 import logging
 import os
+import math
 
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import RichProgressBar
 from pytorch_lightning.loggers import TensorBoardLogger, WandbLogger
 from transformers import AutoTokenizer
+from torch.utils.data import DataLoader, Dataset
 
 from src.closest_rtr.closest_rtr import ClosestAnswerWithEvidenceModule
 from src.mca.mca import MostCommonAnswerWithEvidenceModule
@@ -75,7 +77,8 @@ def train_and_test(args: argparse.Namespace) -> None:
     trainer = pl.Trainer(accumulate_grad_batches=args.gradient_accumulation_steps, gpus=args.n_gpu,
                          max_epochs=args.num_train_epochs, precision=16 if args.fp_16 else 32,
                          amp_level=args.opt_level, gradient_clip_val=args.max_grad_norm, profiler=args.profiler,
-                         log_every_n_steps=1, logger=loggers, callbacks=callbacks)
+                         log_every_n_steps=1, logger=loggers, callbacks=callbacks,
+                         accelerator=args.accelerator)
 
     if should_train:
         trainer.fit(model, datamodule=data_module)

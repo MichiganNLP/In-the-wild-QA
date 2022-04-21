@@ -1,6 +1,6 @@
 import os
 from dataclasses import dataclass, field
-from typing import Iterable, Literal, Optional, Union
+from typing import Iterable, Optional, Union
 
 import torch
 from transformers.hf_argparser import DataClassType
@@ -67,7 +67,7 @@ class TrainAndTestArguments:
     )
     max_grad_norm: float = 1.0
     seed: int = 42
-    profiler: Optional[Literal["simple", "advanced", "pytorch"]] = None
+    profiler: Optional[str] = None
     use_tpu: bool = False
     test_after_train: bool = False
     wandb_project: str = "In-the-wild-QA"

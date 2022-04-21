@@ -63,7 +63,7 @@ def train_and_test(args: argparse.Namespace) -> None:
     loggers = [
         WandbLogger(name=args.wandb_name, project=args.wandb_project, entity=args.wandb_entity,
                     offline=args.wandb_offline),
-        TensorBoardLogger(save_dir="transformer_models"),
+        TensorBoardLogger(save_dir="."),
     ]
 
     callbacks = [

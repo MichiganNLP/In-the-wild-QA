@@ -2,12 +2,12 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
-import glob
-from collections.abc import Mapping, Sequence
-from typing import Any, Callable
-
 import math
+import os
+import warnings
+from collections.abc import Iterable, Mapping, Sequence
+from typing import Any, Callable, NoReturn
+
 import h5py
 import pytorch_lightning as pl
 import torch
@@ -17,9 +17,11 @@ from overrides import overrides
 from torch import nn
 from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader, Dataset
+from torch.utils.data.datapipes.utils.common import get_file_pathnames_from_root
 from torchvision import transforms as T
 from torchvision.datasets.folder import default_loader
 from torchvision.transforms.functional import to_tensor
+from tqdm.auto import tqdm
 from transformers import PreTrainedTokenizerBase
 
 from src.transforms import RandomResizedCropWithRandomInterpolation
@@ -38,13 +40,35 @@ def pad_sequence_and_get_mask(sequence: Sequence[torch.Tensor]) -> tuple[torch.T
     return sequence, get_mask_from_sequence_lengths(lengths)
 
 
+def is_image_file(path: str) -> bool:
+    return path.lower().endswith((".bmp", ".jpg", ".jpeg", ".png", ".tiff", ".tif"))
+
+
+def _get_recursive_image_paths(path: str) -> Iterable[str]:
+    for image_path in get_file_pathnames_from_root(path, recursive=True, masks=[]):
+        if is_image_file(image_path):
+            yield image_path
+
+
+def _on_walk_error(error: OSError) -> NoReturn:
+    warnings.warn(f"{error.filename}: {error.strerror}")
+    raise error
+
+
+def _get_recursive_image_folders(root: str) -> Iterable[str]:
+    for path, dirs, filenames in os.walk(root, onerror=_on_walk_error):
+        if any(is_image_file(os.path.join(path, filename)) for filename in filenames):
+            yield path
+        dirs.sort()
+
+
 class VideoQAWithEvidenceDataset(Dataset):
     def __init__(self, data_path: str, encoder_tokenizer: PreTrainedTokenizerBase | None = None,
                  decoder_tokenizer: PreTrainedTokenizerBase | None = None,
                  transform: Callable[[torch.Tensor], torch.Tensor] | None = None, use_t5_format: bool = False,
                  include_visual: bool = False, max_len: int = 512, max_vid_len: int | None = None,
-                 visual_features_path: str | None = None, frames_path: str | None = None,
-                 visual_avg_pool_size: int | None = None, is_tvqa: bool | None = None) -> None:
+                 visual_features_path: str | None = None, visual_avg_pool_size: int | None = None,
+                 frames_path: str | None = None, fps: int = 3) -> None:  # TVQA is at 3 fps.
         super().__init__()
 
         with open(data_path) as file:
@@ -54,27 +78,25 @@ class VideoQAWithEvidenceDataset(Dataset):
         self.decoder_tokenizer = decoder_tokenizer
         self.max_len = max_len  # FIXME: why defining it?
         self.use_t5_format = use_t5_format
-        self.is_tvqa = is_tvqa
+        self.transform = transform
+        self.fps = fps
+        self.max_vid_len = max_vid_len
 
         if include_visual:
-            self.max_vid_len = max_vid_len
-
             if frames_path:
-                self.transform = transform
-                self.frames_path_by_video_id = {}
-                
-                self.frames_path_by_video_id = {os.path.basename(dirpath): [f"{dirpath}/{fn}" for fn in filenames] for dirpath, dirnames, filenames in os.walk(frames_path) 
-                                                                if filenames and filenames[0].endswith(".jpg")}
+                self.frames_folders_by_video_id = {os.path.basename(video_folder): video_folder
+                                                   for video_folder in tqdm(_get_recursive_image_folders(frames_path),
+                                                                            desc="Scanning the video frame folders")}
 
                 self.visual_features = None
             elif visual_features_path:
                 with h5py.File(cached_path(visual_features_path)) as file:
                     self.visual_features = {v.name.strip("/"): torch.from_numpy(v[:]) for v in file.values()}
 
-                self.frames_path_by_video_id = None
+                self.frames_folders_by_video_id = None
             else:
                 self.visual_features = None
-                self.frames_path_by_video_id = None
+                self.frames_folders_by_video_id = None
 
             if visual_avg_pool_size:
                 self.visual_avg_pool = nn.AvgPool1d(visual_avg_pool_size, ceil_mode=True, count_include_pad=False)
@@ -82,7 +104,7 @@ class VideoQAWithEvidenceDataset(Dataset):
                 self.visual_avg_pool = nn.Identity()
         else:
             self.visual_features = None
-            self.frames_path_by_video_id = None
+            self.frames_folders_by_video_id = None
 
     @overrides
     def __getitem__(self, i: int) -> Mapping[str, Any]:
@@ -100,15 +122,21 @@ class VideoQAWithEvidenceDataset(Dataset):
 
         if self.visual_features:
             output["visual"] = self.visual_avg_pool(self.visual_features[video_id])[:self.max_vid_len]
-        elif self.frames_path_by_video_id:
-            if self.is_tvqa:
-                # video frames are extracted at 3 frames per second (FPS) for TVQA dataset
-                start, end = match.floor(instance["ts"][0]) * 3, (math.ceil(instance["ts"][1]) + 1) * 3
-                frames_tensor = torch.stack([to_tensor(default_loader(video_frame_path))
-                                            for video_frame_path in self.frames_path_by_video_id[video_id]][start: end])
+        elif self.frames_folders_by_video_id:
+            if time_span := instance.get("time_span"):
+                start_second, end_second = time_span
+                start = math.floor(start_second) * self.fps
+                end = (math.ceil(end_second) + 1) * self.fps
+                step = 1
             else:
-                frames_tensor = torch.stack([to_tensor(default_loader(video_frame_path))
-                                            for video_frame_path in self.frames_path_by_video_id[video_id]][::2])
+                start = 0
+                end = None
+                step = 2
+
+            video_folder = self.frames_folders_by_video_id[video_id]
+
+            frames_tensor = torch.stack([to_tensor(default_loader(os.path.join(video_folder, frame_filename)))
+                                         for frame_filename in sorted(os.listdir(video_folder))[start:end:step]])
             # frames_tensor = frames_tensor.permute(0, 2, 3, 1)
             output["visual"] = self.transform(frames_tensor)
 

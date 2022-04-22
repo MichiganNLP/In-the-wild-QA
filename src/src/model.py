@@ -48,14 +48,14 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
     def on_test_start(self) -> None:
         self._on_eval_start()
 
-    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> MutableMapping[str, torch.Tensor]:
+    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> MutableMapping[str, torch.Tensor]:  # noqa
         return {}
 
     @abstractmethod
     def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         raise NotImplementedError
 
-    def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],
+    def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],  # noqa
                         generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
         print("Updating metrics....")
         batch_size = len(batch["question"])

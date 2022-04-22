@@ -52,12 +52,11 @@ class TrainAndTestArguments:
     num_train_epochs: int = 100
     gradient_accumulation_steps: Optional[int] = None
     n_gpu: int = field(
-        default=1,
+        default=-1,
         metadata={"help": "number of gpus used"}
     )
-    accelerator: str = field(
+    strategy: str = field(
         default=None,
-        metadata={"help": "type of accelerator"}
     )
     early_stop_callback: bool = field(
         default=False,
@@ -89,10 +88,6 @@ class TrainAndTestArguments:
     wandb_offline: bool = field(
         default=False,
         metadata={"help": "if set true, we will not have wandb record online"}
-    )
-    is_tvqa: bool = field(
-        default=False,
-        metadata={"help": "if the dataset we use is tvqa dataset"}
     )
 
 

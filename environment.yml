@@ -3,6 +3,7 @@ variables:
   PYTHONPATH: .
 dependencies:
   - pip:
+    - git+https://github.com/ananthsub/pytorch-lightning@a98b070  # See https://github.com/PyTorchLightning/pytorch-lightning/issues/12317
     -            scenedetect
   - conda-forge::accimage
   -              beautifulsoup4
@@ -26,7 +27,7 @@ dependencies:
   - conda-forge::py-rouge=1.1
   -              python=3.9
   -     pytorch::pytorch=*=*cuda*
-  - conda-forge::pytorch-lightning=1.6
+#  - conda-forge::pytorch-lightning=1.6
   - conda-forge::pytube
   -              requests
   - conda-forge::rich  # For fancy output.

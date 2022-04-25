@@ -68,7 +68,7 @@ class VideoQAWithEvidenceDataset(Dataset):
                  transform: Callable[[torch.Tensor], torch.Tensor] | None = None, use_t5_format: bool = False,
                  include_visual: bool = False, max_len: int = 512, max_vid_len: int | None = None,
                  visual_features_path: str | None = None, visual_avg_pool_size: int | None = None,
-                 frames_path: str | None = None, fps: int = 3) -> None:  # TVQA is at 3 fps.
+                 frames_path: str | None = None, fps: int = 3, max_frames: int = 90) -> None:  # TVQA is at 3 fps.
         super().__init__()
 
         with open(data_path) as file:
@@ -79,8 +79,9 @@ class VideoQAWithEvidenceDataset(Dataset):
         self.max_len = max_len  # FIXME: why defining it?
         self.use_t5_format = use_t5_format
         self.transform = transform
-        self.fps = fps
         self.max_vid_len = max_vid_len
+        self.fps = fps
+        self.max_frames = max_frames
 
         if include_visual:
             if frames_path:
@@ -110,15 +111,15 @@ class VideoQAWithEvidenceDataset(Dataset):
     def __getitem__(self, i: int) -> Mapping[str, Any]:
         instance = self.instances[i]
 
+        video_id = instance["video_id"]
+
         output = {
-            "id": i,
+            "id": video_id,
             "question": instance["question"].strip(),
             "answers": [instance["answer"].strip()],
             "evidence": torch.tensor([(round(s), round(e)) for ev in instance["evidences"] for s, e in ev.values()]),
             "duration": float(instance.get("duration", 0.0)),
         }
-
-        video_id = instance["video_id"]
 
         if self.visual_features:
             output["visual"] = self.visual_avg_pool(self.visual_features[video_id])[:self.max_vid_len]
@@ -127,16 +128,19 @@ class VideoQAWithEvidenceDataset(Dataset):
                 start_second, end_second = time_span
                 start = math.floor(start_second) * self.fps
                 end = (math.ceil(end_second) + 1) * self.fps
-                step = 1
             else:
                 start = 0
                 end = None
-                step = 2
+
+            step = 2
+
+            # FIXME: check if `start` > frame files count
 
             video_folder = self.frames_folders_by_video_id[video_id]
 
+            frame_filenames = sorted(os.listdir(video_folder))[start:end:step][:self.max_frames]
             frames_tensor = torch.stack([to_tensor(default_loader(os.path.join(video_folder, frame_filename)))
-                                         for frame_filename in sorted(os.listdir(video_folder))[start:end:step]])
+                                         for frame_filename in frame_filenames])
             # frames_tensor = frames_tensor.permute(0, 2, 3, 1)
             output["visual"] = self.transform(frames_tensor)
 
@@ -151,9 +155,7 @@ class VideoQAWithEvidenceDataset(Dataset):
         for k in keys:
             stack = batch[k]
 
-            first_val = next(iter(stack), None)
-            if isinstance(first_val, str) or (isinstance(first_val, Sequence)
-                                              and isinstance(next(iter(first_val), None), str)):
+            if k in {"question", "answers"}:
                 if k == "answers":
                     stack = [answers[0] for answers in stack]  # We tokenize only the first answer.
                     k = "answer"

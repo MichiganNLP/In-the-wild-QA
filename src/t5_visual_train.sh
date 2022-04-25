@@ -22,6 +22,5 @@ python -m src t5_text_and_visual \
     --seed ${seed} \
     --wandb_name ${wandb_name} \
     --max_vid_length ${max_vid_length} \
-    --visual_avg_pool_size ${visual_avg_pool_size}
-
-# > ${log_path}
+    --visual_avg_pool_size ${visual_avg_pool_size} \
+    | tee ${log_path}

@@ -26,6 +26,5 @@ python -m src t5_evidence \
     --max_seq_length ${max_seq_length} \
     --max_vid_length ${max_vid_length} \
     --visual_avg_pool_size ${visual_avg_pool_size} \
-    --seed ${seed}
-
-# > ${log_path}
+    --seed ${seed} \
+    | tee ${log_path}

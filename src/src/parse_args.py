@@ -53,11 +53,9 @@ class TrainAndTestArguments:
     gradient_accumulation_steps: Optional[int] = None
     n_gpu: int = field(
         default=-1,
-        metadata={"help": "number of gpus used"}
+        metadata={"help": "number of GPUs to use"}
     )
-    strategy: str = field(
-        default=None,
-    )
+    strategy: Optional[str] = None
     early_stop_callback: bool = field(
         default=False,
         metadata={"help": "whether we allow early stop in training."}

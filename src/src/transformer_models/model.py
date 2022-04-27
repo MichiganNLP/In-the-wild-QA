@@ -1,15 +1,14 @@
 from __future__ import annotations
 
 import inspect
-from collections.abc import Mapping, MutableMapping
-from typing import Any
-
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
+from collections.abc import Mapping, MutableMapping
 from overrides import overrides
 from torch.optim import AdamW
 from transformers import PreTrainedTokenizerBase, T5ForConditionalGeneration, get_linear_schedule_with_warmup
+from typing import Any
 
 from src.decoding import compute_answer_prob, compute_answer_probs
 from src.metrics import Perplexity, get_best_evidence_spans

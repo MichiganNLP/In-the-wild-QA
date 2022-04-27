@@ -8,23 +8,23 @@ from pytorch_lightning.callbacks import RichProgressBar
 from pytorch_lightning.loggers import TensorBoardLogger, WandbLogger
 from transformers import AutoTokenizer
 
-from src.closest_rtr.closest_rtr import ClosestAnswerWithEvidenceModule
-from src.mca.mca import MostCommonAnswerWithEvidenceModule
 from src.model import AnswerWithEvidenceModule
-from src.rdm.random import RandomAnswerWithEvidenceModule
-from src.transformer_models.model import TransformersAnswerWithEvidenceModule
 from src.utils.logger_utils import UninitializedWeightsFilter
 from src.video_qa_with_evidence_dataset import VideoQAWithEvidenceDataModule
 
 
 def model_type_to_class(model_type: str) -> type[AnswerWithEvidenceModule]:  # noqa
     if model_type == "random":
+        from src.rdm.random import RandomAnswerWithEvidenceModule
         return RandomAnswerWithEvidenceModule
     elif model_type == "most_common_ans":
+        from src.mca.mca import MostCommonAnswerWithEvidenceModule
         return MostCommonAnswerWithEvidenceModule
     elif model_type == "closest_rtr":
+        from src.closest_rtr.closest_rtr import ClosestAnswerWithEvidenceModule
         return ClosestAnswerWithEvidenceModule
     else:
+        from src.transformer_models.model import TransformersAnswerWithEvidenceModule
         return TransformersAnswerWithEvidenceModule
 
 

@@ -27,6 +27,5 @@ python -m src clip_decoder \
     --max_seq_length ${max_seq_length} \
     --seed ${seed} \
     --wandb_name ${wandb_name} \
-    --max_vid_length ${max_vid_length}
-
-# > ${log_path}
+    --max_vid_length ${max_vid_length} \
+    | tee ${log_path}

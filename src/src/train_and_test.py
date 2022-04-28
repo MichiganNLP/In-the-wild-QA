@@ -43,6 +43,7 @@ def train_and_test(args: argparse.Namespace) -> None:
     data_module = VideoQAWithEvidenceDataModule(args, encoder_tokenizer=encoder_tokenizer,
                                                 decoder_tokenizer=decoder_tokenizer)
 
+    args.train_data_length = data_module.train_data_length()
     if args.model_type in {"random", "most_common_ans", "closest_rtr"}:
         args.train_instances = data_module.train_dataloader().dataset
     else:

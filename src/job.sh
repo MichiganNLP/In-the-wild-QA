@@ -3,8 +3,8 @@
 #SBATCH --job-name=clip_decoder_source_training_parallel
 #SBATCH --mail-user=dnaihao@umich.edu
 #SBATCH --mail-type=BEGIN,END
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=46G
+#SBATCH --cpus-per-task=24
+#SBATCH --mem=100G
 #SBATCH --gres=gpu:4
 #SBATCH --time=5-00:00:00
 #SBATCH --account=mihalcea0

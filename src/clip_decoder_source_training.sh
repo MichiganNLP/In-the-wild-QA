@@ -2,8 +2,8 @@
 
 output_ckpt_dir=ckpts/clip_decoder/text_visual_source_trained
 num_train_epochs=100
-train_batch_size=8
-eval_batch_size=16
+train_batch_size=2
+eval_batch_size=2
 log_dir=logs/clip_decoder
 log_path=logs/clip_decoder/source_training_parallel_baseline.log
 max_seq_length=16
@@ -17,9 +17,8 @@ mkdir -p ${log_dir}
 python -m src clip_decoder \
     --train_data_path /scratch/mihalcea_root/mihalcea0/shared_data/tvqa_private_share/tvqa_qa_release/train.json \
     --dev_data_path /scratch/mihalcea_root/mihalcea0/shared_data/tvqa_private_share/tvqa_qa_release/val.json \
-    --test_data_path /scratch/mihalcea_root/mihalcea0/shared_data/tvqa_private_share/tvqa_qa_release/test.json \
     --frames_path /scratch/mihalcea_root/mihalcea0/shared_data/tvqa_private_share/previously_extracted/extracted_fns/frames_hq \
-    --strategy ddp_find_unused_parameters_false \
+    --strategy ddp \
     --output_ckpt_dir ${output_ckpt_dir} \
     --num_train_epochs ${num_train_epochs} \
     --train_batch_size ${train_batch_size} \

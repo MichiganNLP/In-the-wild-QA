@@ -94,7 +94,8 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
             # We don't complicate it much and just evaluate the first answer (the original one). It's good enough.
             first_normalized_answer = [normalized_answers_instance[0]
                                        for normalized_answers_instance in normalized_answers]
-            self.bert_score.update(normalized_generated, first_normalized_answer)
+            # BERTScore does not work on distributed training setting, disabled here
+            # self.bert_score.update(normalized_generated, first_normalized_answer)
 
         if pred_spans := generative_step_output.get("pred_spans"):
             self.iou_f1(pred_spans, batch["evidence"].tolist())
@@ -125,12 +126,12 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
             unused_weights_filter = UnusedWeightsFilter()
             logging.getLogger("transformers.modeling_utils").addFilter(unused_weights_filter)
-            self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
-                           for k, v in self.bert_score.compute().items()}, batch_size=instance_count)
+            # self.log_dict({f"bert_score_first_answer_{k}/{split}": sum(v) / len(v)
+            #                for k, v in self.bert_score.compute().items()}, batch_size=instance_count)
 
             logging.getLogger("transformers.modeling_utils").removeFilter(unused_weights_filter)
 
-            self.bert_score.reset()
+            # self.bert_score.reset()
 
     @overrides(check_signature=False)
     def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:

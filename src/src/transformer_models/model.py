@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import inspect
+import math
 import pytorch_lightning as pl
 import torch
 import torch.nn as nn
@@ -267,7 +268,11 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         ]
         optimizer = AdamW(optimizer_grouped_parameters, lr=self.hparams.learning_rate, eps=self.hparams.adam_epsilon)
 
-        scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=self.hparams.warmup_steps,
-                                                    num_training_steps=self.trainer.estimated_stepping_batches)
+        # NOTE: not working with parallel GPU setting
+        # scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=self.hparams.warmup_steps,
+        #                                             num_training_steps=self.trainer.estimated_stepping_batches)
+        estimated_stepping_batches = math.ceil(self.hparams.train_data_length / self.hparams.train_batch_size) * max(self.hparams.num_train_epochs, 1)
 
+        scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=self.hparams.warmup_steps,
+                                                    num_training_steps=estimated_stepping_batches)
         return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "step"}}

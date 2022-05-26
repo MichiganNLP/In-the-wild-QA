@@ -1,4 +1,4 @@
-from typing import Union
+from __future__ import annotations
 
 import torch
 import torch.nn as nn
@@ -41,8 +41,8 @@ class C3D(nn.Module):
         if pretrained:
             self.load_state_dict(torch.load("data/features/c3d.pickle"))
 
-    def forward(self, x: torch.Tensor, extract_features: bool = False) -> Union[torch.Tensor,
-                                                                                tuple[torch.Tensor, torch.Tensor]]:
+    def forward(self, x: torch.Tensor, extract_features: bool = False) -> torch.Tensor | tuple[torch.Tensor,
+                                                                                               torch.Tensor]:
         h = self.relu(self.conv1(x))
         h = self.pool1(h)
 

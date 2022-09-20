@@ -4,8 +4,9 @@
 dataset_analysis/sunburst_plot/*
 dataset_analysis/*.csv
 
-organize_phase1_annotation/raw_batches/*.csv
-organize_phase2_annotation/**/*.csv
-organize_phase2_annotation/**.json
+organize_stage1_annotation/raw_batches/*.csv
+organize_stage1_annotation/*.json
+organize_stage2_annotation/**/*.csv
+organize_stage2_annotation/*.json
 
-previous_phase2_inputs/*.csv
+previous_stage2_inputs/*.csv

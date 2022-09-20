@@ -9,7 +9,7 @@ MAX_VID_IDX = 5
 MAX_QUESTION_NUM = 100
 MAX_BAR_NUM = 5
 
-VIDEO_GENERAL_INFO_PATH = "general_info.json"
+VIDEO_GENERAL_INFO_PATH = "../drive_videos/general_info.json"
 
 
 def _minsec2sec(t):
@@ -36,15 +36,16 @@ def process(data):
 
     with open(VIDEO_GENERAL_INFO_PATH, 'r') as f:
         general_info = json.load(f)
-    general_info = {itm["video_name"].split(".mp4")[0]: itm["time_in_original_video"] for itm in general_info}
+    time_info = {itm["video_name"].split(".mp4")[0]: itm["time_in_original_video"] for itm in general_info}
+    url_info = {itm["video_name"].split(".mp4")[0]: itm["url_for_original_video"] for itm in general_info}
 
     # strip the \n in the time_in_original_video
-    for k, itm in general_info.items():
+    for k, itm in time_info.items():
         for t, ele in itm.items():
             if t == "split-method":
                 continue
             assert "end" in ele
-            general_info[k][t]["end"] = ele["end"].strip()
+            time_info[k][t]["end"] = ele["end"].strip()
     
     assignment_id_idx = data[0].split(",").index("\"AssignmentId\"")
     worker_id_idx = data[0].split(",").index("\"WorkerId\"")
@@ -128,8 +129,8 @@ def process(data):
                     bar_idx += 1
                 q_idx += 1
 
-                end = general_info[video_ids[vid_idx]]["seconds"]["end"]
-                start = general_info[video_ids[vid_idx]]["seconds"]["start"]
+                end = time_info[video_ids[vid_idx]]["seconds"]["end"]
+                start = time_info[video_ids[vid_idx]]["seconds"]["start"]
 
                 if ":" not in start and ":" not in end:
                     duration = float(end) - float(start)
@@ -153,7 +154,8 @@ def process(data):
                     "time_spent": time_spent,
                     "video_link": vid_links[vid_idx],
                     "video_id": video_ids[vid_idx],
-                    "time_in_original_video": general_info[video_ids[vid_idx]],
+                    "original_video_link": url_info[video_ids[vid_idx]],
+                    "time_in_original_video": time_info[video_ids[vid_idx]],
                     "duration": duration
                 })
             vid_idx += 1

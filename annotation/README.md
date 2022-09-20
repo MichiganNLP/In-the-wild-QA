@@ -10,7 +10,7 @@
 	in annotation_page
 
 - first annotation stage input data
-        * `python generate_phase1_input.py -f $your_video_links_csv_file`
+        * `python generate_stage1_input.py -f $your_video_links_csv_file`
         * `$your_video_links_csv_file` should include a column named as 'link'
         * output: first_stage_annotation.csv
 	

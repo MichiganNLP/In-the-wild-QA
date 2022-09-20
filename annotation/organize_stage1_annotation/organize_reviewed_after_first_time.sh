@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# organize reviewed to_review file
+# organize reviewed to_review.csv
 python process_to_review.py
 
 # put rest information back to reviewed file

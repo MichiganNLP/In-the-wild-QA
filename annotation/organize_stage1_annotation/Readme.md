@@ -1,17 +1,19 @@
+You can complete this annotation in several times, so some functions are devided into "the first time" version and the "After the first time" version. Please choose one accordingly.
+
 # generate raw results sheet
-`python process_raw_anns.py`
+* put Amazon Mechanical Turk annotation files into the `raw_batches` folder
+* run `python process_raw_anns.py`
 
-> keep file: `raw_result.csv` 
+> keep the file: `raw_result.csv` 
 
-# generate to review sheet
+# generate file for manual review
 * the first time
 ```bash
 csvsql --query \
 "alter table raw_result add column modified_question; \
 alter table raw_result add column modified_answer; \
-alter table raw_result add column modified_evidence; \
 select domain, assignment_id,video_link,question,modified_question, \
-correct_answer,modified_answer,evidences_in_min,modified_evidence \
+correct_answer,modified_answer,evidences_in_min \
 from raw_result" raw_result.csv > to_review.csv
 ```
 
@@ -20,21 +22,24 @@ from raw_result" raw_result.csv > to_review.csv
 csvsql --query \
 "alter table raw_result add column modified_question; \
 alter table raw_result add column modified_answer; \
-alter table raw_result add column modified_evidence; \
 select domain, assignment_id,video_link,question,modified_question, \
-correct_answer,modified_answer,evidences_in_min,modified_evidence \
+correct_answer,modified_answer,evidences_in_min \
 from raw_result as a \
 where a.assignment_id not in \
 (select assignment_id from processed_reviewed)" \
 raw_result.csv processed_reviewed.csv > to_review.csv
 ```
+* After review, name the reviewed file as `to_review.csv` and put into this folder
 
 # organize reviewed to_review file
-> keep file: `processed_reviewed.csv`, `processed_reviewed_rm_del.csv`
 * the first time:
 `./organize_reviewed_first_time.sh`
 * after the first time
 `./organize_reviewed_after_first_time.sh`
+* you can delete (not necessary) `processed_reviewed_old.csv` and `processed_reviewed_rm_del_old.csv`
+
+> keep files: `processed_reviewed.csv`, `processed_reviewed_rm_del.csv`
 
 # trans back to json file
-`python csv2json.py`
+* `python csv2json.py`
+* output:`processed_reviewed_rm_del.json`

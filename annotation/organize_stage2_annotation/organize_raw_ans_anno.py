@@ -13,7 +13,7 @@ def order_worker_answers_evidences_by_question(answer, durations, count=5):
               float(answer[f"end-bar-{i+1}-{subid}-{evid}"])/100.0*durations[i]]
              for evid in sorted(set([int(k.split("-")[4]) for k in start_bar_keys
              if k.startswith(f"start-bar-{i+1}-{subid}")]))], # evidence
-             [tp for tp, bln in answer[f"answer-based-{i+1}-{subid}"].items() if bln], # answer-vased
+             [tp for tp, bln in answer[f"answer-based-{i+1}-{subid}"].items() if bln], # answer-based
              [tp for tp, bln in answer[f"confidence-{i+1}-{subid}"].items() if bln][0] # confidence
              ]
           for subid in sorted(set([int(key.split("-")[3]) for key in start_bar_keys 
@@ -30,10 +30,11 @@ def reEscapeHtml(unsafe):
 
 
 def parse_hits(df, include_reject=False):
+  # parse Amazon Mechanical Turk annotation HITs
   def _minsec2sec(t):
     if ":" not in t:
       return float(t)
-    else:                
+    else:
       mins, sec = t.split(":")
       return float(mins) * 60 + float(sec)
 
@@ -62,26 +63,27 @@ def parse_hits(df, include_reject=False):
 
 
 def filter_evidence(x):
+  # filter out evidence that is longer than 1/4 the original video
   bar = x["duration"] / 4.0
-  evidence_delet = []; evidence_keep = []
+  evidence_del = []; evidence_keep = []
   for worker in x["evidences"]:
-    worker_delet = []; worker_keep = []
+    worker_del = []; worker_keep = []
     for answer in worker:
-      answer_delet = []; answer_keep = []
+      answer_del = []; answer_keep = []
       for ev in answer:
         if ev[1]-ev[0] > bar:
-          answer_delet.append(ev)
+          answer_del.append(ev)
         else:
           answer_keep.append(ev)
-      worker_delet.append(answer_delet)
+      worker_del.append(answer_del)
       worker_keep.append(answer_keep)
-    evidence_delet.append(worker_delet)
+    evidence_del.append(worker_del)
     evidence_keep.append(worker_keep)
-  return [evidence_keep,evidence_delet]
+  return [evidence_keep,evidence_del]
 
 
 if __name__ == "__main__":
-    with open("general_info.json", 'r') as f:
+    with open("../drive_videos/general_info.json", 'r') as f:
         general_info = json.load(f)
     general_info = {itm["video_name"].split(".mp4")[0]: itm["time_in_original_video"] for itm in general_info}
 
@@ -90,7 +92,7 @@ if __name__ == "__main__":
         csv_files = []
         for fn in [raw_file for raw_file in raw_files if raw_file.endswith(".csv")]:
             new_df = pd.read_csv(f"{annotator}_raw_batches/{fn}",converters={"Answer.taskAnswers": json.loads})
-            # fix some early annotation stage issue
+            # fix some early stage annotation issues
             if "Input.StdAnswer1" in new_df.columns:
               new_df.rename({f"Input.StdAnswer{i}":f"Input.stdAnswer{i}" for i in range(1,6)},
                 inplace=True,axis=1)
@@ -104,7 +106,7 @@ if __name__ == "__main__":
             continue
         anno_result = pd.concat(csv_files,join="inner")
         hits = parse_hits(anno_result)
-        # write out csv
+        # write out
         anno_df = pd.DataFrame.from_dict(
             {"file":[hit[f'Input.file{i+1}'] for hit in hits.values() for i in range(5)],
             "domain":[hit[f'Input.domain{i+1}'] for hit in hits.values() for i in range(5)],

@@ -8,10 +8,10 @@ import argparse
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Generate the input file for the second annotation stage.")
-    parser.add_argument("-hs","--hit-size",metavar="THE NUMBER OF TASKS PER HIT", 
-        help='''You can control the number of tasks per hit(a batch in Amazon Mechanical Turk).
-        In the original paper's setting, for example, if the `hit-size` is `3`, there will be 3 
-        tasks (with 3*5=15 questions) in one batch''',
+    parser.add_argument("-bs","--batch-size",metavar="THE NUMBER OF HITS PER BATCH", 
+        help='''You can control the number of hits (a task in Amazon Mechanical Turk) per batch.
+        In the original paper's setting, for example, if the `batch-size` is `3`, there will be 3 
+        hits (with 3*5=15 questions) in one batch''',
         type=int,default=np.inf)
 
     return parser.parse_args()
@@ -50,7 +50,7 @@ def escapeHtml(unsafe):
 
 
 if __name__ == "__main__":
-    HitSize = parse_args().hit_size
+    BatchSize = parse_args().batch_size
 
     df_all_stage1_anno = pd.read_csv(
         "organize_stage1_annotation/processed_reviewed_rm_del.csv") # all questions from stage 1
@@ -89,14 +89,14 @@ if __name__ == "__main__":
         \n{len(feasible_anno)} questions left\n')
 
     # organize questions into Amazon Mechanical Turk input
-    # each task has 5 questions
+    # each HIT has 5 questions
     new_hits = pd.DataFrame.from_dict(select_question_inputs(
         feasible_anno,HitNeeded=len(feasible_anno)//5))
     
-    # divide takes into hit(batch)
-    hitSize = min(len(new_hits),HitSize)
-    for i in range((len(new_hits)+hitSize-1)//hitSize):
-        new_hits.iloc[i*hitSize:min((i+1)*hitSize,len(new_hits))]\
+    # divide takes into batch
+    bs = min(len(new_hits),BatchSize)
+    for i in range((len(new_hits)+bs-1)//bs):
+        new_hits.iloc[i*bs:min((i+1)*bs,len(new_hits))]\
             .to_csv(f"second_stage_annotation_input_{i}.csv",index=False)
 
 
@@ -123,13 +123,13 @@ if __name__ == "__main__":
     no_mil_hits = pd.DataFrame.from_dict(select_question_inputs(
         no_mil_feasible_anno,HitNeeded=len(no_mil_feasible_anno)//5))
     
-    # divide takes into hit(batch)
-    MilHitSize = min(len(mil_hits),HitSize)
-    for i in range((len(mil_hits)+MilHitSize-1)//MilHitSize):
-        mil_hits.iloc[i*MilHitSize:min((i+1)*MilHitSize,len(mil_hits))]\
+    # divide takes into batch
+    MilBatchSize = min(len(mil_hits),BatchSize)
+    for i in range((len(mil_hits)+MilBatchSize-1)//MilBatchSize):
+        mil_hits.iloc[i*MilBatchSize:min((i+1)*MilBatchSize,len(mil_hits))]\
             .to_csv(f"mil_stage2_input_{i}.csv",index=False)
-    NoMilHitSize = min(len(no_mil_hits),HitSize)
-    for i in range((len(no_mil_hits)+NoMilHitSize-1)//NoMilHitSize):
-        no_mil_hits.iloc[i*NoMilHitSize:min((i+1)*NoMilHitSize,len(no_mil_hits))]\
+    NoMilBatchSize = min(len(no_mil_hits),BatchSize)
+    for i in range((len(no_mil_hits)+NoMilBatchSize-1)//NoMilBatchSize):
+        no_mil_hits.iloc[i*NoMilBatchSize:min((i+1)*NoMilBatchSize,len(no_mil_hits))]\
             .to_csv(f"no_mil_stage2_input_{i}.csv",index=False)
     '''

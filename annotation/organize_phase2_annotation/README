@@ -1,8 +1,0 @@
-# organize raw answer annotation files
-python organize_raw_ans_anno.py
-
-# merge answer annotation into question annotation
-python merge_answer_annotation.py
-
-# csv2json
-python csv2json.py

@@ -10,6 +10,7 @@ def parse_args():
 
     return parser.parse_args()
 
+
 def separate_links_to_channels(links):
     '''
     In case there are more than one channel, to separate links by channels
@@ -24,6 +25,7 @@ def separate_links_to_channels(links):
             new_group = []
     link_groups.append(new_group)
     return link_groups
+
 
 if __name__ == "__main__":
     args = parse_args()

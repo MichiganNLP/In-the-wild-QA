@@ -32,12 +32,14 @@ def look_dic(x,anno_dic,anno_dic_tmp,annotator):
         for cn in col_names:
             x[f"{annotator}_{cn}"].extend(rec[cn])
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--question_file', type=str, default="processed_reviewed_rm_del.csv")
+def parse_arg():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--question_file', type=str, default="processed_reviewed_rm_del.csv")
+    return parser.parse_args()
 
 
 if __name__ == "__main__":
-    args = parser.parse_args()
+    args = parse_arg()
     col_names = ['answers','evidences','deleted_evidences','answer_based_on', 'confidence', 'workerids']
     question_df = pd.read_csv(args.question_file)
 

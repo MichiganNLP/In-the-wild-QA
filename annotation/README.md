@@ -25,5 +25,5 @@
     * see `organize_stage2_annotation`
     * `organize_stage2_annotation/merged_annotation.csv` and `organize_stage2_annotation/merged_annotation.json` are the final annotation files
 
-human agreement
-data analysis
+- Human agreement calculation & data analysis
+    * in `data analysis`

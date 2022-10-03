@@ -22,11 +22,7 @@ conda activate wildqa
 
 ## Data
 
-Checkout the folder [`src/example_data/wildQA-data/`](src/example_data/wildQA-data). You can find the files:
-
-* [`train.json`](src/example_data/wildQA-data/train.json)
-* [`dev.json`](src/example_data/wildQA-data/dev.json)
-* [`test.json`](src/example_data/wildQA-data/test.json)
+Checkout the folder [`src/example_data/wildQA-data/`](src/example_data/wildQA-data).
 
 ## Run the code
 

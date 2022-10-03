@@ -1,0 +1,2204 @@
+[
+    {
+        "question": "Are there any people?",
+        "answer": "Yes, there are two.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there any people? How many?",
+        "original_answer": "Yes, there are three. ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    78.794,
+                    84.773
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:18.794",
+                    "01:24.773"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
+        "video_id": "TreadmillTV_7-clip-15",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:30:20.886",
+                "end": "00:32:21.439"
+            },
+            "seconds": {
+                "start": "1820.8857333333333",
+                "end": "1941.4395"
+            },
+            "split-method": "auto"
+        },
+        "duration": 120.55376666666666,
+        "alter_answers": [
+            "Yes, there are three people. One person is running down the trail and two people are walking in the opposite direction on the trail.",
+            "There are a few people."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    81.0121312,
+                    86.50938296
+                ]
+            ],
+            [
+                [
+                    79.75837202666666,
+                    85.73783885333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people in the video?",
+        "answer": "Yes, there are a lot of people. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there people here and if so how many?",
+        "original_answer": "Yes, there are a lot of people. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    57.754,
+                    61.764
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:57.754",
+                    "01:01.764"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/gc3wgfu6ifunhy9/The-Flying-Dutchman_6-clip-7.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:04.275",
+                "end": "00:09:07.714"
+            },
+            "seconds": {
+                "start": "484.2754583333333",
+                "end": "547.7138333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.43837499999995,
+        "alter_answers": [
+            "Yes, I can hear footsteps and see several people off in the distance, and a few different points in the video. ",
+            "Yes there are people in this video, quite a lot actually. You see people walking or hiking up/down the trail. ",
+            "There are people in this video. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.567562999999997,
+                    5.8870811999999955
+                ]
+            ],
+            [
+                [
+                    41.86932749999997,
+                    48.97442549999997
+                ],
+                [
+                    58.008050099999956,
+                    63.43837499999995
+                ]
+            ],
+            [
+                [
+                    37.30176449999997,
+                    51.10595489999996
+                ],
+                [
+                    58.41405569999995,
+                    63.43837499999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any structures nearby?",
+        "answer": "Yes, there are two on top of a ridge. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there any structures nearby? If so, how many and where?",
+        "original_answer": "Yes, there are two on top of a ridge. ",
+        "question_type": [
+            "Entity",
+            "Location",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.906,
+                    19.336
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.906",
+                    "00:19.336"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/gc3wgfu6ifunhy9/The-Flying-Dutchman_6-clip-7.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:04.275",
+                "end": "00:09:07.714"
+            },
+            "seconds": {
+                "start": "484.2754583333333",
+                "end": "547.7138333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.43837499999995,
+        "alter_answers": [
+            "There is a large structure atop a cliff.",
+            "Yes, there is a house in the distance.",
+            "There are structures such as buildings nearby."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.881372499999994,
+                    15.93571979999999
+                ]
+            ],
+            [
+                [
+                    52.628475899999955,
+                    63.43837499999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there cars in the video?",
+        "answer": "Yes.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "roads",
+        "confidence": "very_high",
+        "original_question": "How many cars are there?",
+        "original_answer": "6",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.466,
+                    14.943
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.466",
+                    "00:14.943"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/ds6rnnub95z7s5c/Nick-Gaillard_12-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.746",
+                "end": "00:02:06.498"
+            },
+            "seconds": {
+                "start": "62.746187124211765",
+                "end": "126.49765361489955"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.75146649068778,
+        "alter_answers": [
+            "Yes, some vehicles are driving down the winding road.",
+            "There are cars in the video."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are there any towns?",
+        "answer": "Yes, there is one along the ocean. ",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "topography",
+        "confidence": "very_high",
+        "original_question": "Are there any towns? If so, where?",
+        "original_answer": "Yes, there is one along the ocean. ",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.795,
+                    3.861
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.795",
+                    "00:03.861"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/pgkvfz88xs9o0pk/TK-Hinshaw_1-clip-1.mp4?raw=1",
+        "video_id": "TK-Hinshaw_1-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:53.380",
+                "end": "00:03:04.351"
+            },
+            "seconds": {
+                "start": "113.38004469669885",
+                "end": "184.3510144053152"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.97096970861634,
+        "alter_answers": [
+            "Small structures are visible in the far distance, suggesting there is a town.",
+            "Yes there is a town along the coast of the water.",
+            "There are a few towns."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    6.24544533435824
+                ]
+            ],
+            [
+                [
+                    3.974374303682515,
+                    20.382862500314616
+                ],
+                [
+                    37.813332660750795,
+                    45.1943135104469
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the vegetation sparse or dense across all terrain?",
+        "answer": "It is dense.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "Is the vegetation sparse or dense?",
+        "original_answer": "It is dense. ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    9.287
+                ]
+            },
+            {
+                "1": [
+                    42.403,
+                    48.758
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:09.287"
+                ]
+            },
+            {
+                "1": [
+                    "00:42.403",
+                    "00:48.758"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/fdn7bg0btcrsman/Primal-Earth-Sounds_11-clip-7.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:29.917",
+                "end": "00:34:02.667"
+            },
+            "seconds": {
+                "start": "1889.9166666666667",
+                "end": "2042.6666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 152.75,
+        "alter_answers": [
+            "The vegetation is very dense across all the areas besides the rocky tops of the hills and mountains.",
+            "The vegetation is quite dense through most of the terrain. The only spots I would say where it's sparse is along the ridges of the mountain, but there is still quite heavy vegetation there too. It's really dense along the flat parts of the mountain and the plains down at the bottom.",
+            "The vegetation is dense across all terrain."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    9.165
+                ],
+                [
+                    30.55,
+                    37.271
+                ],
+                [
+                    126.1104,
+                    137.10840000000002
+                ]
+            ],
+            [
+                [
+                    17.107999999999997,
+                    36.4156
+                ],
+                [
+                    42.403400000000005,
+                    60.8556
+                ],
+                [
+                    69.043,
+                    81.50739999999999
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    26.395200000000003
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many people are there?",
+        "answer": "Two",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "How many people are there?",
+        "original_answer": "Three. ",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    2.746
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:02.746"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/3hwxyoh8rf9tl46/Norwegian-Explorer_7-clip-0.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3,
+        "alter_answers": [
+            "There are only 2 people visibly present in the video. There may be a third person off camera, based on the sounds of footsteps I can hear during the video. ",
+            "There are two people in the video.",
+            "There are two people here. Both are skiing up a mountain."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    3.8741600000000003
+                ],
+                [
+                    50.364079999999994,
+                    61.3
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    3.8741600000000003
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    4.46264
+                ],
+                [
+                    50.21696,
+                    61.3
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there an area where more than 5 people are there?",
+        "answer": "Yes.",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Is there a high density of people?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    16.355
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:16.355"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/n1lcmdttr1qe45h/TreadmillTV_4-clip-5.mp4?raw=1",
+        "video_id": "TreadmillTV_4-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:19:48.487",
+                "end": "00:22:24.543"
+            },
+            "seconds": {
+                "start": "1188.4873",
+                "end": "1344.5432"
+            },
+            "split-method": "auto"
+        },
+        "duration": 156.0559000000001,
+        "alter_answers": [
+            "In the very beginning of the video, there are more than 5 people present in the video.",
+            "Yes there is way more than five people here. It seems to be a tourist type of spot for hiking.",
+            "There is an area where more than 5 people are there."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    7.1161490400000025
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    10.112422320000006
+                ],
+                [
+                    90.01304312000003,
+                    100.25031016000004
+                ],
+                [
+                    141.44906776000005,
+                    156.05590000000007
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    4.868944080000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many people are there to operate it?",
+        "answer": "six",
+        "assignment_id": "3E7TUJ2EGCLQ8GDEOK6EBON5DD69D3",
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "original_question": "How many people are needed to operate it?",
+        "original_answer": "six",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.006,
+                    7.063
+                ]
+            },
+            {
+                "1": [
+                    26.378,
+                    27.532
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.006",
+                    "00:07.063"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.378",
+                    "00:27.532"
+                ]
+            }
+        ],
+        "time_spent": 970.0,
+        "video_link": "https://www.dropbox.com/s/k41dzrdoivmq2ya/Military-Archive_11-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.059999999999995"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06,
+        "alter_answers": [
+            "There are six people operating it"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    14.078064000000001,
+                    22.198175999999997
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many vehicles are there?",
+        "answer": "five",
+        "assignment_id": "3E7TUJ2EGCLQ8GDEOK6EBON5DD69D3",
+        "objective": "I wish to learn about the tanks",
+        "confidence": "moderate",
+        "original_question": "how many where there?",
+        "original_answer": "five",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.417,
+                    5.364
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.417",
+                    "00:05.364"
+                ]
+            }
+        ],
+        "time_spent": 970.0,
+        "video_link": "https://www.dropbox.com/s/25tgi1xzbiminyw/AiirSource-Military_0-clip-2.mp4?raw=1",
+        "video_id": "AiirSource-Military_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.900",
+                "end": "00:04:12.400"
+            },
+            "seconds": {
+                "start": "125.9",
+                "end": "252.4"
+            },
+            "split-method": "auto"
+        },
+        "duration": 126.5,
+        "alter_answers": [
+            "There are well over 20 vehicles, between the tanks and jeeps. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.3636,
+                    26.4132
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many planes were there?",
+        "answer": "two",
+        "assignment_id": "3E7TUJ2EGCLQ8GDEOK6EBON5DD69D3",
+        "objective": "I wish to learn about the planes",
+        "confidence": "high",
+        "original_question": "How many planes were there?",
+        "original_answer": "two",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    50.036,
+                    52.266
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:50.036",
+                    "00:52.266"
+                ]
+            }
+        ],
+        "time_spent": 970.0,
+        "video_link": "https://www.dropbox.com/s/328thx2ytzycboa/Military-Archive_7-clip-4.mp4?raw=1",
+        "video_id": "Military-Archive_7-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:07.960",
+                "end": "00:07:19.440"
+            },
+            "seconds": {
+                "start": "367.96",
+                "end": "439.44"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.48000000000002,
+        "alter_answers": [
+            "There are 2 planes. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How many people are there?",
+        "answer": "At least 12",
+        "assignment_id": "38BQUHLA9WZWJXNX32OZR45OHQZOMT",
+        "objective": "Learn about the military capabilities",
+        "confidence": "very_high",
+        "original_question": "How many people are there?",
+        "original_answer": "At least 12",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    1.88
+                ]
+            },
+            {
+                "1": [
+                    13.305,
+                    14.888
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:01.880"
+                ]
+            },
+            {
+                "1": [
+                    "00:13.305",
+                    "00:14.888"
+                ]
+            }
+        ],
+        "time_spent": 2333.0,
+        "video_link": "https://www.dropbox.com/s/96jiv53rnzeyt9x/Army-military-2018_10-clip-0.mp4?raw=1",
+        "video_id": "Army-military-2018_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.828"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.82836034846273"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.828360348462716,
+        "alter_answers": [
+            "The heads of 4 men can be seen, with 2 others nearby. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.2752836608234284,
+                    5.094656892713329
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many planes are there?",
+        "answer": "thirty six",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the planes",
+        "confidence": "high",
+        "original_question": "How many are there?",
+        "original_answer": "thirty six",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.774,
+                    21.168
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.774",
+                    "00:21.168"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/bbxsv166v014dcd/WarLeaks-Military-Blog_3-manual.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_3-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "0:54"
+            },
+            "split-method": "manual"
+        },
+        "duration": 54.0,
+        "alter_answers": [
+            "There are 40 planes. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    13.392,
+                    21.6864
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many helicopters are in this video?",
+        "answer": "There are two helicopters in the video.",
+        "assignment_id": "3DIP6YHAPCRVMH84FNBKHAAFU0J8EZ",
+        "objective": "I want to learn about modern warfare.",
+        "confidence": "very_high",
+        "original_question": "How many helicopters are in this video?",
+        "original_answer": "There are two helicopters in the video.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.58,
+                    2.804
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.580",
+                    "00:02.804"
+                ]
+            }
+        ],
+        "time_spent": 3779.0,
+        "video_link": "https://www.dropbox.com/s/hjt66m0yfyi2eom/Military-Archive_8-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.427"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.42691122867071"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.42691122867071,
+        "alter_answers": [
+            "There are 2 helicopters. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.09668305796587315,
+                    3.673956202703179
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many drill sergeants are in this video?",
+        "answer": "There are two drill sergeants in this video.",
+        "assignment_id": "3DIP6YHAPCRVMH84FNBKHAAFU0J8EZ",
+        "objective": "I want to learn about the United States Marine Corps boot camp.",
+        "confidence": "very_high",
+        "original_question": "How many drill sergeants are in this video?",
+        "original_answer": "There are two drill sergeants in this video.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    55.0
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:55.000"
+                ]
+            }
+        ],
+        "time_spent": 3779.0,
+        "video_link": "https://www.dropbox.com/s/4rh2823saoa458p/AiirSource-Military_4-manual.mp4?raw=1",
+        "video_id": "AiirSource-Military_4-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:40",
+                "end": "1:35"
+            },
+            "split-method": "manual"
+        },
+        "duration": 55.0,
+        "alter_answers": [
+            "There are three sergeants"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    11.616
+                ],
+                [
+                    12.408,
+                    23.848
+                ],
+                [
+                    25.608,
+                    31.460000000000004
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many men can be seen shooting guns?",
+        "answer": "Three men can be seen shooting guns.",
+        "assignment_id": "3G5W44VEU7HD1W6WU7YB7I4I2CJGKQ",
+        "objective": "I want to learn about the recoil of weapons. ",
+        "confidence": "very_high",
+        "original_question": "How many men can be seen shooting guns?",
+        "original_answer": "Three men can be seen shooting guns.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.243,
+                    57.604
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.243",
+                    "00:57.604"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/llg22ah60duwp1t/Army-military-2018_11-clip-4.mp4?raw=1",
+        "video_id": "Army-military-2018_11-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:07.200",
+                "end": "00:06:12.600"
+            },
+            "seconds": {
+                "start": "307.2",
+                "end": "372.6"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.40000000000003,
+        "alter_answers": [
+            "There are 3 men on the line shooting. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    14.911200000000008,
+                    22.183680000000013
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many people can be seen inside the vehicle?",
+        "answer": "One person, the driver, can be seen inside the vehicle.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to survey the landscape after a heavy rain.",
+        "confidence": "very_high",
+        "original_question": "How many people can be seen inside the vehicle?",
+        "original_answer": "One person, the driver, can be seen inside the vehicle.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.698,
+                    60.794
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.698",
+                    "01:00.794"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/eonwwz2x75dtd5z/Military-Archive_1-clip-3.mp4?raw=1",
+        "video_id": "Military-Archive_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.157",
+                "end": "00:04:10.951"
+            },
+            "seconds": {
+                "start": "190.15663333333333",
+                "end": "250.9507"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.79406666666668,
+        "alter_answers": [
+            "One solider is seen inside the vehicle. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How many uniformed men are outside of the vehicle?",
+        "answer": "Two uniformed men are standing outside of the vehicle.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to survey the landscape after a heavy rain.",
+        "confidence": "very_high",
+        "original_question": "How many uniformed men are outside of the vehicle?",
+        "original_answer": "Two uniformed men are standing outside of the vehicle.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    31.759,
+                    35.261
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:31.759",
+                    "00:35.261"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/eonwwz2x75dtd5z/Military-Archive_1-clip-3.mp4?raw=1",
+        "video_id": "Military-Archive_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.157",
+                "end": "00:04:10.951"
+            },
+            "seconds": {
+                "start": "190.15663333333333",
+                "end": "250.9507"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.79406666666668,
+        "alter_answers": [
+            "There is 1 uniformed man outside the vehicle. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    31.46700890666667,
+                    36.281898986666675
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many men are shooting a gun?",
+        "answer": "Two men are shooting guns in the video.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want first person view of a field mission involving shooting guns.",
+        "confidence": "very_high",
+        "original_question": "How many men are shooting a gun?",
+        "original_answer": "Two men are shooting guns in the video.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    19.847,
+                    61.56
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:19.847",
+                    "01:01.560"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/rflxk5pa4019fki/Army-military-2018_1-clip-3.mp4?raw=1",
+        "video_id": "Army-military-2018_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:04.080",
+                "end": "00:04:05.640"
+            },
+            "seconds": {
+                "start": "184.08",
+                "end": "245.64"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.559999999999974,
+        "alter_answers": [
+            "2"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How many vehicles are in the video?",
+        "answer": "One heavily armored vehicle is in the video.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to survey the landscape after a heavy rain.",
+        "confidence": "very_high",
+        "original_question": "How many vehicles are in the video?",
+        "original_answer": "One heavily armored vehicle is in the video. ",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    22.469
+                ]
+            },
+            {
+                "1": [
+                    24.026,
+                    35.261
+                ]
+            },
+            {
+                "2": [
+                    35.698,
+                    60.794
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:22.469"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.026",
+                    "00:35.261"
+                ]
+            },
+            {
+                "2": [
+                    "00:35.698",
+                    "01:00.794"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/eonwwz2x75dtd5z/Military-Archive_1-clip-3.mp4?raw=1",
+        "video_id": "Military-Archive_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.157",
+                "end": "00:04:10.951"
+            },
+            "seconds": {
+                "start": "190.15663333333333",
+                "end": "250.9507"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.79406666666668,
+        "alter_answers": [
+            "There is 1 vehicle."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How many paratroopers are in the video?",
+        "answer": "There are three paratroopers in the video.",
+        "assignment_id": "3PIWWX1FJJ5SHEQFKSJ23GWLFNJJJX",
+        "objective": "I want to learn about modern warfare training exercises. ",
+        "confidence": "very_high",
+        "original_question": "How many paratroopers are in the video?",
+        "original_answer": "There are three paratroopers in the video.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    21.564
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:21.564"
+                ]
+            }
+        ],
+        "time_spent": 3627.0,
+        "video_link": "https://www.dropbox.com/s/335s1ga72939j7v/Army-military-2018_3-clip-6.mp4?raw=1",
+        "video_id": "Army-military-2018_3-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:16.042",
+                "end": "00:07:08.894"
+            },
+            "seconds": {
+                "start": "376.0415734661065",
+                "end": "428.8942666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 52.85269320056017,
+        "alter_answers": [
+            "There are three paratroopers here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.4228215456044814,
+                    6.257758874946324
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many pilots are in the video?",
+        "answer": "Two pilots are in the video.",
+        "assignment_id": "37XITHEISW8M7O3MI5BPI35HZFVRC0",
+        "objective": "I want to learn about military aircraft.",
+        "confidence": "very_high",
+        "original_question": "How many pilots are in the video?",
+        "original_answer": "Two pilots are in the video.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.251
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.251"
+                ]
+            }
+        ],
+        "time_spent": 3232.0,
+        "video_link": "https://www.dropbox.com/s/ntpk03rorc4q0io/Military-Archive_6-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:04.867"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "64.86666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.86666666666666,
+        "alter_answers": [
+            "There are 2 pilots."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.46703999999999996,
+                    10.067306666666665
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many different animals are detected?",
+        "answer": "three",
+        "assignment_id": "3D8YOU6S9EJP7ZM2C8TR1E0RAHKU6P",
+        "objective": "I wish to learn about the animals",
+        "confidence": "high",
+        "original_question": "How many different animals can we detect?",
+        "original_answer": "three",
+        "question_type": [
+            "Existence",
+            "Number",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.096,
+                    4.856
+                ]
+            },
+            {
+                "1": [
+                    11.293,
+                    13.282
+                ]
+            },
+            {
+                "2": [
+                    25.336,
+                    27.325
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.096",
+                    "00:04.856"
+                ]
+            },
+            {
+                "1": [
+                    "00:11.293",
+                    "00:13.282"
+                ]
+            },
+            {
+                "2": [
+                    "00:25.336",
+                    "00:27.325"
+                ]
+            }
+        ],
+        "time_spent": 1047.0,
+        "video_link": "https://www.dropbox.com/s/2hm0ykhbnjzwrsk/Chad-Zuber_6-clip-6.mp4?raw=1",
+        "video_id": "Chad-Zuber_6-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:28.221",
+                "end": "00:07:41.361"
+            },
+            "seconds": {
+                "start": "388.22116666666665",
+                "end": "461.3609"
+            },
+            "split-method": "auto"
+        },
+        "duration": 73.13973333333338,
+        "alter_answers": [
+            "There are three dolphins detected"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.329872213333336,
+                    17.612047786666675
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many windows were there?",
+        "answer": "One small one",
+        "assignment_id": "3LS2AMNW5FPN4CLPVVVG8DPTSW8OQ3",
+        "objective": "I wish to learn about the structure",
+        "confidence": "high",
+        "original_question": "How many windows were there?",
+        "original_answer": "One small one",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.545,
+                    15.702
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.545",
+                    "00:15.702"
+                ]
+            }
+        ],
+        "time_spent": 1217.0,
+        "video_link": "https://www.dropbox.com/s/agzg677wvoggww4/Chad-Zuber_12-clip-12.mp4?raw=1",
+        "video_id": "Chad-Zuber_12-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:13.092",
+                "end": "00:14:21.961"
+            },
+            "seconds": {
+                "start": "793.0923",
+                "end": "861.9611"
+            },
+            "split-method": "auto"
+        },
+        "duration": 68.86879999999996,
+        "alter_answers": [
+            "There is 1 small window in the back. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.195512319999998,
+                    17.07946239999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of fish did the man catch?",
+        "answer": "The man shows a fish and tells that he has caught a decent sized perch, 3 small trout, a couple of chubs, and a small perch.",
+        "assignment_id": "3OE22WJIGINIHH5MRH7P7JHIAQQUQW",
+        "objective": "I am curious about the types of fish he caught.",
+        "confidence": "moderate",
+        "original_question": "What kind of fish did the man catch?",
+        "original_answer": "The man shows a fish and tells that he has caught a decent sized perch, 3 small trout, a couple of chubs, and a small perch.",
+        "question_type": [
+            "Number",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.792,
+                    15.955
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.792",
+                    "00:15.955"
+                ]
+            }
+        ],
+        "time_spent": 3100.0,
+        "video_link": "https://www.dropbox.com/s/lamgvr1zqqhv4sy/Joe-Robinet_10-clip-8.mp4?raw=1",
+        "video_id": "Joe-Robinet_10-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:31.537",
+                "end": "00:10:39.839"
+            },
+            "seconds": {
+                "start": "571.5373680795052",
+                "end": "639.8389030470308"
+            },
+            "split-method": "auto"
+        },
+        "duration": 68.30153496752564,
+        "alter_answers": [
+            "The man cached a small perch"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.540489460414831,
+                    22.129697329478308
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many tornadoes are there?",
+        "answer": "One fully formed tornado.",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "How many tornadoes are there?",
+        "original_answer": "One fully formed tornado. ",
+        "question_type": [
+            "Entity",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.6,
+                    9.269
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.600",
+                    "00:09.269"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/7xivkh21n8dx282/Skip-Talbot_9-clip-0.mp4?raw=1",
+        "video_id": "Skip-Talbot_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:23.350"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "83.34993333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.34993333333334,
+        "alter_answers": [
+            "There is one tornado here"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How many tornadoes are there?",
+        "answer": "One.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "How many tornadoes are there?",
+        "original_answer": "One. ",
+        "question_type": [
+            "Entity",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    105.038
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:45.038"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/mxh1j82qiq6mtts/Dan-Robinson_0-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.884",
+                "end": "00:04:15.922"
+            },
+            "seconds": {
+                "start": "150.88408821077203",
+                "end": "255.9223698754139"
+            },
+            "split-method": "auto"
+        },
+        "duration": 105.03828166464186,
+        "alter_answers": [
+            "There is a single tornado. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there just one tornado?",
+        "answer": "No.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Is there just one tornado?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.489,
+                    12.299
+                ]
+            },
+            {
+                "1": [
+                    44.278,
+                    48.86
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.489",
+                    "00:12.299"
+                ]
+            },
+            {
+                "1": [
+                    "00:44.278",
+                    "00:48.860"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/sem8uqzn7b60h1v/Skip-Talbot_11-clip-3.mp4?raw=1",
+        "video_id": "Skip-Talbot_11-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:18.833",
+                "end": "00:04:19.125"
+            },
+            "seconds": {
+                "start": "198.83333333333334",
+                "end": "259.125"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.29166666666666,
+        "alter_answers": [
+            "There appears to only be one tornado shown at a time, although multiple tornadoes are depicted in the video."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.6270333333333332,
+                    15.097033333333332
+                ],
+                [
+                    41.046566666666656,
+                    46.738099999999996
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many seeds is planted in each row of the depicted field?",
+        "answer": "There are 123,000 seeds planted per acre.",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT94HFIO",
+        "objective": "Tractors play a key role in managing farmlands.",
+        "confidence": "very_high",
+        "original_question": "How many seeds is planted in each row of the depicted field?",
+        "original_answer": "There are 123,000 seeds planted per acre.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    39.359,
+                    46.427
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:39.359",
+                    "00:46.427"
+                ]
+            }
+        ],
+        "time_spent": 2522.0,
+        "video_link": "https://www.dropbox.com/s/5a333nor80gfdeb/Peterson-Farm-Bros_4-clip-2.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:26.279",
+                "end": "00:03:29.843"
+            },
+            "seconds": {
+                "start": "146.27946666666668",
+                "end": "209.84296666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.56350000000001,
+        "alter_answers": [
+            "There are 123000 seeds in each row of the field."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.0191852,
+                    47.2403932
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the benefits of straight-cutting canola?",
+        "answer": "Straight-cutting canola increases the oil content and thereby increases the total yield of the crop.",
+        "assignment_id": "36WLNQG78Z9EOF6BIZVU8C0G2DUEB8",
+        "objective": "Managing canola in farm fields.",
+        "confidence": "very_high",
+        "original_question": "What are they benefits of straight-cutting canola?",
+        "original_answer": "Straight-cutting canola increases the oil content and thereby increases the total yield of the crop.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    124.225,
+                    142.54
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "02:04.225",
+                    "02:22.540"
+                ]
+            }
+        ],
+        "time_spent": 1879.0,
+        "video_link": "https://www.dropbox.com/s/1qdpa5h5wht3wnr/RealAgriculture_6-clip-0.mp4?raw=1",
+        "video_id": "RealAgriculture_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:02:45.899"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "165.89906666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 165.89906666666667,
+        "alter_answers": [
+            "the benefits of straight-cutting canola because the crop is knitted together better.  "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    27.738323946666664,
+                    52.82226282666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many dogs are in the video?",
+        "answer": "There are two dogs in the video.",
+        "assignment_id": "3L70J4KAZGL4DZNJGQKE7JYPKL0ADC",
+        "objective": "Tractor maintenance.",
+        "confidence": "very_high",
+        "original_question": "How many dogs are in the video?",
+        "original_answer": "There are two dogs in the video.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    56.576,
+                    67.826
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:56.576",
+                    "01:07.826"
+                ]
+            }
+        ],
+        "time_spent": 4334.0,
+        "video_link": "https://www.dropbox.com/s/3ietx770t5uxy0w/Hamiltonville-Farm_4-clip-3.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_4-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:48.929",
+                "end": "00:04:56.863"
+            },
+            "seconds": {
+                "start": "228.9289008524048",
+                "end": "296.86349378863804"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.93459293623323,
+        "alter_answers": [
+            "There are two dogs. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    55.1085417898724,
+                    65.16286154443492
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of equipment is used in the video to irrigate the crop?",
+        "answer": "There is a floating pump to pump the water through the irrigation lines. There is a pivot which is a large arm that has sprinklers to spray water over the entire field.",
+        "assignment_id": "3Q5C1WP23M0DFYVQ5192Y6HU3YI155",
+        "objective": "I want to know more about how farmers irrigate their crops. ",
+        "confidence": "very_high",
+        "original_question": "What kind of equipment is used in the video to irrigate the crop?",
+        "original_answer": "There is a floating pump to pump the water through the irrigation lines. There is a pivot which is a large arm that has sprinklers to spray water over the entire field. ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    77.61,
+                    97.207
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:17.610",
+                    "01:37.207"
+                ]
+            }
+        ],
+        "time_spent": 2873.0,
+        "video_link": "https://www.dropbox.com/s/6fat2d1q82l2as3/Peterson-Farm-Bros_1-clip-2.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_1-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:06.753",
+                "end": "00:05:48.982"
+            },
+            "seconds": {
+                "start": "186.75323333333333",
+                "end": "348.98196666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 162.22873333333334,
+        "alter_answers": [
+            "The equipment used for irrigating crop is with a water pump"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    93.44375040000001,
+                    131.59994848
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many machines are harvesting the farm field in the video?",
+        "answer": "There are two machines harvesting the farm field in the video.",
+        "assignment_id": "3X87C8JFV6A224DI2CCPSIZUP4CQS5",
+        "objective": "Harvesting season.",
+        "confidence": "high",
+        "original_question": "How many machines are harvesting the farm field in the video?",
+        "original_answer": "There are two machines harvesting the farm field in the video.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    42.056,
+                    54.47
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:42.056",
+                    "00:54.470"
+                ]
+            }
+        ],
+        "time_spent": 2532.0,
+        "video_link": "https://www.dropbox.com/s/xm5fd8siomewd6j/Millennial-Farmer_4-clip-4.mp4?raw=1",
+        "video_id": "Millennial-Farmer_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:07.167",
+                "end": "00:05:09.233"
+            },
+            "seconds": {
+                "start": "247.16666666666666",
+                "end": "309.23333333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.06666666666669,
+        "alter_answers": [
+            "There are two machines harvesting the farm field"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    28.898240000000012,
+                    42.15568000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many cylinders does the engine of the tractor in the video have?",
+        "answer": "The tractor in the video has a 4 cylinder engine.",
+        "assignment_id": "3Z7ISHFUH0UTXCZ0BAPX2KBXIEIZ82",
+        "objective": "Clearing debris.",
+        "confidence": "high",
+        "original_question": "How many cylinders does the engine of the tractor in the video have?",
+        "original_answer": "The tractor in the video has a 4 cylinder engine.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    12.584
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:12.584"
+                ]
+            }
+        ],
+        "time_spent": 1820.0,
+        "video_link": "https://www.dropbox.com/s/potybkq3xb3x7hw/Hamiltonville-Farm_11-clip-0.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.929"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.928533333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92853333333333,
+        "alter_answers": [
+            "The tractor has 4 cylinder John deer on the engine"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.827766613333334,
+                    18.57856
+                ]
+            ]
+        ]
+    }
+]

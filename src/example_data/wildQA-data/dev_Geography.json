@@ -1,0 +1,2231 @@
+[
+    {
+        "question": "Are there any roads?",
+        "answer": "Yes, there are paved and unpaved roads. ",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Roads",
+        "confidence": "very_high",
+        "original_question": "Are there any roads? What kinds?",
+        "original_answer": "Yes, there are paved and unpaved roads. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    10.229
+                ]
+            },
+            {
+                "1": [
+                    103.174,
+                    109.524
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:10.229"
+                ]
+            },
+            {
+                "1": [
+                    "01:43.174",
+                    "01:49.524"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/12df7z0fn35rmm9/Primal-Earth-Sounds_0-clip-44.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_0-clip-44",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:53:18.625",
+                "end": "01:56:59.083"
+            },
+            "seconds": {
+                "start": "6798.625",
+                "end": "7019.083333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 220.458333333333,
+        "alter_answers": [
+            "There is a road for cars going over a bridge above the body of water.",
+            "There are some roads.",
+            "There are roads in this video.",
+            "Yes there is a dirt road at the very beginning of the video. There is also a town between the mountains where there are roads there. About two minutes into the video there is a long bridge."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    124.33849999999981,
+                    132.45136666666647
+                ]
+            ],
+            [
+                [
+                    17.107566666666642,
+                    35.97879999999995
+                ],
+                [
+                    75.30856666666655,
+                    128.92403333333314
+                ]
+            ],
+            [
+                [
+                    84.12689999999986,
+                    132.80409999999983
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    12.874766666666648
+                ],
+                [
+                    84.47963333333321,
+                    88.71243333333322
+                ],
+                [
+                    124.16213333333317,
+                    129.10039999999984
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the roads?",
+        "answer": "There are two in the forest and two in the mountains.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Roads",
+        "confidence": "very_high",
+        "original_question": "Where are they?",
+        "original_answer": "There are two in the forest and two in the mountains. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    10.758
+                ]
+            },
+            {
+                "1": [
+                    83.069,
+                    89.065
+                ]
+            },
+            {
+                "2": [
+                    100.529,
+                    110.935
+                ]
+            },
+            {
+                "3": [
+                    120.988,
+                    129.1
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:10.758"
+                ]
+            },
+            {
+                "1": [
+                    "01:23.069",
+                    "01:29.065"
+                ]
+            },
+            {
+                "2": [
+                    "01:40.529",
+                    "01:50.935"
+                ]
+            },
+            {
+                "3": [
+                    "02:00.988",
+                    "02:09.100"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/12df7z0fn35rmm9/Primal-Earth-Sounds_0-clip-44.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_0-clip-44",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:53:18.625",
+                "end": "01:56:59.083"
+            },
+            "seconds": {
+                "start": "6798.625",
+                "end": "7019.083333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 220.458333333333,
+        "alter_answers": [
+            "There are roads along the hills and over a bridge.",
+            "The roads are in the forests."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    107.93639999999986,
+                    113.05103333333318
+                ],
+                [
+                    126.98399999999984,
+                    131.74589999999984
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    14.814799999999979
+                ],
+                [
+                    68.07753333333324,
+                    89.94699999999987
+                ],
+                [
+                    123.10393333333316,
+                    129.10039999999984
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any cars on the roads?",
+        "answer": "Yes.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Roads",
+        "confidence": "very_high",
+        "original_question": "Are there any cars on the roads?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    10.758
+                ]
+            },
+            {
+                "1": [
+                    103.174,
+                    110.053
+                ]
+            },
+            {
+                "2": [
+                    119.224,
+                    126.984
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:10.758"
+                ]
+            },
+            {
+                "1": [
+                    "01:43.174",
+                    "01:50.053"
+                ]
+            },
+            {
+                "2": [
+                    "01:59.224",
+                    "02:06.984"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/12df7z0fn35rmm9/Primal-Earth-Sounds_0-clip-44.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_0-clip-44",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:53:18.625",
+                "end": "01:56:59.083"
+            },
+            "seconds": {
+                "start": "6798.625",
+                "end": "7019.083333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 220.458333333333,
+        "alter_answers": [
+            "There are about 4 cars on the roads. ",
+            "There are cars on the roads."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.7636666666666643,
+                    12.698399999999982
+                ],
+                [
+                    107.05456666666653,
+                    111.11099999999985
+                ]
+            ],
+            [
+                [
+                    5.114633333333326,
+                    14.285699999999983
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kinds of water features are there?",
+        "answer": "There are rivers.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What kinds of water features are there?",
+        "original_answer": "There are rivers. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.269
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.269"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
+            },
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
+        },
+        "duration": 117.45063994777658,
+        "alter_answers": [
+            "The water featured is a river.",
+            "There is a river, trees, and shadows cast upon the landscape.",
+            "The kinds of water features there are rivers and ponds."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.255052286997311,
+                    5.261788669660393
+                ],
+                [
+                    49.423229290024395,
+                    70.75226550454063
+                ]
+            ],
+            [
+                [
+                    1.7852497272062045,
+                    29.1277587070486
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the rivers?",
+        "answer": "They are in a deciduous forest environment.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Where are the rivers?",
+        "original_answer": "They are in a deciduous forest environment. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    9.49
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:09.490"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
+            },
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
+        },
+        "duration": 117.45063994777658,
+        "alter_answers": [
+            "The rivers follow bendy paths between the land.",
+            "The is no way to tell where the river lies.",
+            "The rivers are in a forested area."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    3.0067363826630813
+                ],
+                [
+                    26.027061812427295,
+                    34.67142891258366
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there any water vegetation?",
+        "answer": "No.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Is there any water vegetation?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    61.638,
+                    69.813
+                ]
+            },
+            {
+                "1": [
+                    0.0,
+                    13.061
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:01.638",
+                    "01:09.813"
+                ]
+            },
+            {
+                "1": [
+                    "00:00.000",
+                    "00:13.061"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
+            },
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
+        },
+        "duration": 117.45063994777658,
+        "alter_answers": [
+            "Yes, there looks to be moss or lily pads growing in the water. There also appears to be some type of tall grass growing along the edges of the water, where it meets the treeline. ",
+            "There is very little water vegetation.",
+            "There is vegetation lining the riparian zone of the river in the video.",
+            "There are trees alongside the river, and algae and grass growing over top of the water. There may be Lili pads too but it's hard to see since it's not up close."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    51.960163112896375,
+                    77.04761980574145
+                ]
+            ],
+            [
+                [
+                    48.483624170442184,
+                    72.72543625566327
+                ]
+            ],
+            [
+                [
+                    45.4768877877791,
+                    70.47038396866596
+                ],
+                [
+                    86.53763151352182,
+                    97.71893243655015
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any signs of human activity?",
+        "answer": "Yes, there are small roads and paths. ",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Are there any signs of human activity? If so what.",
+        "original_answer": "Yes, there are small roads and paths. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    3.758
+                ]
+            },
+            {
+                "1": [
+                    74.887,
+                    79.491
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:03.758"
+                ]
+            },
+            {
+                "1": [
+                    "01:14.887",
+                    "01:19.491"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/hukvp8a4jcjjwbm/4k-Relaxation_3-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:28.881",
+                "end": "00:19:26.332"
+            },
+            "seconds": {
+                "start": "1048.8809280563526",
+                "end": "1166.3315680041292"
+            },
+            "split-method": "auto"
+        },
+        "duration": 117.45063994777658,
+        "alter_answers": [
+            "There are manmade paths going through the natural environment.",
+            "There are signs of human activity."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    29.315679730965044,
+                    39.46341502245294
+                ]
+            ],
+            [
+                [
+                    93.58466991038841,
+                    97.71893243655015
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kinds of bodies of water are there?",
+        "answer": "There are rivers and lakes.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What kinds of bodies of water are there?",
+        "original_answer": "There are rivers and lakes. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.063,
+                    14.419
+                ]
+            },
+            {
+                "1": [
+                    24.332,
+                    28.588
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.063",
+                    "00:14.419"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.332",
+                    "00:28.588"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/4e40mdvmrleo8ks/Primal-Earth-Sounds_9-clip-26.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_9-clip-26",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:28:51.042",
+                "end": "00:29:53.625"
+            },
+            "seconds": {
+                "start": "1731.0416666666667",
+                "end": "1793.625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.58333333333325,
+        "alter_answers": [
+            "There is a stream, a marsh, a lake, and a river.",
+            "There are lakes and rivers."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.9105333333333245,
+                    19.87646666666664
+                ],
+                [
+                    20.577399999999976,
+                    32.49326666666663
+                ],
+                [
+                    33.59473333333329,
+                    45.51059999999994
+                ],
+                [
+                    46.36173333333328,
+                    48.91513333333327
+                ],
+                [
+                    54.77293333333326,
+                    62.58333333333326
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the lakes at?",
+        "answer": "One is in near a forest and the other is in a valley between mountains.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Where are the lakes at?",
+        "original_answer": "One is in near a forest and the other is in a valley between mountains. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    29.039,
+                    36.148
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:29.039",
+                    "00:36.148"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/4e40mdvmrleo8ks/Primal-Earth-Sounds_9-clip-26.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_9-clip-26",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:28:51.042",
+                "end": "00:29:53.625"
+            },
+            "seconds": {
+                "start": "1731.0416666666667",
+                "end": "1793.625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.58333333333325,
+        "alter_answers": [
+            "There is a large lake surrounded by land.",
+            "The lakes are in mountainous regions."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    21.37846666666664,
+                    27.636799999999965
+                ]
+            ],
+            [
+                [
+                    25.634133333333303,
+                    39.10206666666662
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the rivers?",
+        "answer": "One is in a tropical forest region and the other is in a temperate forest region.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Where are the rivers?",
+        "original_answer": "One is in a tropical forest region and the other is in a temperate forest region. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.215,
+                    15.571
+                ]
+            },
+            {
+                "1": [
+                    55.224,
+                    59.429
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.215",
+                    "00:15.571"
+                ]
+            },
+            {
+                "1": [
+                    "00:55.224",
+                    "00:59.429"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/4e40mdvmrleo8ks/Primal-Earth-Sounds_9-clip-26.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_9-clip-26",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:28:51.042",
+                "end": "00:29:53.625"
+            },
+            "seconds": {
+                "start": "1731.0416666666667",
+                "end": "1793.625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.58333333333325,
+        "alter_answers": [
+            "The river is between two heavily wooded land expanses.",
+            "The rivers seem to be in mountainous regions, forested regions, and tropical regions."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    54.5726666666666,
+                    57.5766666666666
+                ]
+            ],
+            [
+                [
+                    8.56139999999999,
+                    18.975266666666645
+                ],
+                [
+                    33.845066666666625,
+                    47.86373333333328
+                ],
+                [
+                    54.82299999999993,
+                    62.03259999999993
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any boats on the water?",
+        "answer": "yes, on the lake in the valley. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Are there any boats on the water? If so which one?",
+        "original_answer": "yes, on the lake in the valley. ",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    36.849,
+                    41.355
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:36.849",
+                    "00:41.355"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/4e40mdvmrleo8ks/Primal-Earth-Sounds_9-clip-26.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_9-clip-26",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:28:51.042",
+                "end": "00:29:53.625"
+            },
+            "seconds": {
+                "start": "1731.0416666666667",
+                "end": "1793.625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.58333333333325,
+        "alter_answers": [
+            "On a forest",
+            "Yes there are boats on the water. You can see the specific wake that the boat is making and you see the boat itself moving across the water.",
+            "There was one boat on the water. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    14.018666666666649
+                ]
+            ],
+            [
+                [
+                    34.59606666666662,
+                    45.00993333333328
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people around?",
+        "answer": "No, there is no one.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there people around? If so how many?",
+        "original_answer": "Yes, there is one person. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    3.483
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:03.483"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/f5oh7yvr8js9tpe/TreadmillTV_3-clip-12.mp4?raw=1",
+        "video_id": "TreadmillTV_3-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:02.715",
+                "end": "00:14:04.043"
+            },
+            "seconds": {
+                "start": "782.7149975140076",
+                "end": "844.0429097584763"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.32791224446875,
+        "alter_answers": [
+            "There are no signs of people.",
+            "No, there are no people seen in the video.",
+            "There are no people around.",
+            "No, there are no people around."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are there signs of human activity?",
+        "answer": "yes, there are trails, benches, and bridges. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there other signs of human activity? If so what?",
+        "original_answer": "yes, there are trails, benches, and bridges. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    43.175,
+                    48.179
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:43.175",
+                    "00:48.179"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/f5oh7yvr8js9tpe/TreadmillTV_3-clip-12.mp4?raw=1",
+        "video_id": "TreadmillTV_3-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:02.715",
+                "end": "00:14:04.043"
+            },
+            "seconds": {
+                "start": "782.7149975140076",
+                "end": "844.0429097584763"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.32791224446875,
+        "alter_answers": [
+            "There are bridges, paved paths, and other objects suggesting human activity.",
+            "There are signs of human activity."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    43.27297487969714,
+                    53.72325112615461
+                ]
+            ],
+            [
+                [
+                    41.16329469848741,
+                    49.45482843393959
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Based on the surroundings, is this an area that many people go to?",
+        "answer": "Yes.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Based on the surroundings, is this an area that many people go to?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.315,
+                    18.349
+                ]
+            },
+            {
+                "1": [
+                    43.42,
+                    48.719
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.315",
+                    "00:18.349"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.420",
+                    "00:48.719"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/f5oh7yvr8js9tpe/TreadmillTV_3-clip-12.mp4?raw=1",
+        "video_id": "TreadmillTV_3-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:02.715",
+                "end": "00:14:04.043"
+            },
+            "seconds": {
+                "start": "782.7149975140076",
+                "end": "844.0429097584763"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.32791224446875,
+        "alter_answers": [
+            "Yes this seems to be a place many people go to, there are trails and bridges. Benches are also apparent in this video. ",
+            "Yes it is an area many people go to. The pathway is formed probably because people have been walking there. There is also a bridge.",
+            "Based on the surroundings, this is an area that not many people go to."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    41.31048168787414,
+                    51.51544628535373
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this video set during the Fall Season?",
+        "answer": "Judging from the colors of the leaves on the trees, I believe it to be Fall time.",
+        "assignment_id": "3B4YI393V9VEFKSVUG1UNIEV64NSS9",
+        "objective": "I am curious about the time of year this video was taken",
+        "confidence": "moderate",
+        "original_question": "Is this video set during the Fall Season?",
+        "original_answer": "Judging from the colors of the leaves on the trees, I believe it to be Fall time.",
+        "question_type": [
+            "Location",
+            "Temporal relationship",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.453,
+                    41.647
+                ]
+            },
+            {
+                "1": [
+                    47.399,
+                    53.705
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.453",
+                    "00:41.647"
+                ]
+            },
+            {
+                "1": [
+                    "00:47.399",
+                    "00:53.705"
+                ]
+            }
+        ],
+        "time_spent": 1132.0,
+        "video_link": "https://www.dropbox.com/s/lefp9rdbecxboyn/Nick-Gaillard_1-clip-2.mp4?raw=1",
+        "video_id": "Nick-Gaillard_1-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:08.929",
+                "end": "00:03:18.065"
+            },
+            "seconds": {
+                "start": "128.9288",
+                "end": "198.06453333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.13573333333335,
+        "alter_answers": [
+            "The many red and orangeish leaves suggest it is fall.",
+            "This video seems to be set during the fall."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.51255808000001,
+                    38.218233386666675
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What did the man do in the beginning?",
+        "answer": "He jumped out of the plane.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "actions",
+        "confidence": "very_high",
+        "original_question": "What did the man do in the beginning?",
+        "original_answer": "He jumped out of the plane.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.083
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.083"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/67w4tjhtbcyywlt/TK-Hinshaw_7-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:03.697"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "63.69696666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.69696666666667,
+        "alter_answers": [
+            "The man jumped out of an airplane.",
+            "In the beginning, the man jumped out of the plane."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.395005946666666,
+                    6.063951226666666
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    7.03214512
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man doing the video?",
+        "answer": "They are skydiving.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "actions",
+        "confidence": "very_high",
+        "original_question": "What is happening?",
+        "original_answer": "They are skydiving.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    12.892
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:12.892"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/67w4tjhtbcyywlt/TK-Hinshaw_7-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:03.697"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "63.69696666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.69696666666667,
+        "alter_answers": [
+            "The man jumps out of a plane and skydives.",
+            "The man in the video is sky diving.",
+            "The man is jumping out of the plane and skydiving."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.8153211733333334,
+                    10.140557093333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What equipment did they use?",
+        "answer": "A parachute and a wingsuit.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "actions",
+        "confidence": "very_high",
+        "original_question": "What equipment did they use?",
+        "original_answer": "A parachute and a wingsuit. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    44.843,
+                    48.919
+                ]
+            },
+            {
+                "1": [
+                    54.525,
+                    58.295
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:44.843",
+                    "00:48.919"
+                ]
+            },
+            {
+                "1": [
+                    "00:54.525",
+                    "00:58.295"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/67w4tjhtbcyywlt/TK-Hinshaw_7-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:03.697"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "63.69696666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.69696666666667,
+        "alter_answers": [
+            "The people used parachutes.",
+            "The people used wingsuits.",
+            "They used an airplane, parachute, and helmet that was in view throughout the video.",
+            "The equipment they used were a parachute, plane, and a wingsuit."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    44.485961520000004,
+                    47.28862805333333
+                ]
+            ],
+            [
+                [
+                    55.951415520000005,
+                    59.87514866666667
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    7.592678426666667
+                ],
+                [
+                    44.79170696,
+                    51.16140362666666
+                ],
+                [
+                    50.75374304,
+                    63.69696666666667
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    7.388848133333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this part of a ski resort?",
+        "answer": "Judging by al the snow and mountains and the chair lift shown, I believe this to be part of a ski resort.",
+        "assignment_id": "3RJSC4XJ10TD89A89I52K1YKXSX50Y",
+        "objective": "I am curious about how/how long it took for the person to get on top of that steep hill ",
+        "confidence": "moderate",
+        "original_question": "Is this part of a ski resort?",
+        "original_answer": "Judging by al the snow and mountains and the chair lift shown, I believe this to be part of a ski resort.",
+        "question_type": [
+            "Location",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.134,
+                    6.87
+                ]
+            },
+            {
+                "1": [
+                    8.804,
+                    13.74
+                ]
+            },
+            {
+                "2": [
+                    15.007,
+                    26.813
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.134",
+                    "00:06.870"
+                ]
+            },
+            {
+                "1": [
+                    "00:08.804",
+                    "00:13.740"
+                ]
+            },
+            {
+                "2": [
+                    "00:15.007",
+                    "00:26.813"
+                ]
+            }
+        ],
+        "time_spent": 1643.0,
+        "video_link": "https://www.dropbox.com/s/p1rlx3dl7u9hds2/Nick-Gaillard_4-clip-2.mp4?raw=1",
+        "video_id": "Nick-Gaillard_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:06.542",
+                "end": "00:03:29.917"
+            },
+            "seconds": {
+                "start": "126.54166666666667",
+                "end": "209.91666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.37499999999999,
+        "alter_answers": [
+            "There are ski lifts suggesting the location is a ski resort.",
+            "This looks like it is part of a ski resort."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    3.2682999999999995
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    6.403199999999998
+                ],
+                [
+                    15.207599999999996,
+                    20.810399999999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people?",
+        "answer": "Yes, there is one.",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there people? How many?",
+        "original_answer": "Yes, there are two. ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.111,
+                    5.284
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.111",
+                    "00:05.284"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/opaigjq242y9tkq/TK-Hinshaw_9-clip-2.mp4?raw=1",
+        "video_id": "TK-Hinshaw_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:48.001",
+                "end": "00:03:06.553"
+            },
+            "seconds": {
+                "start": "168.00116666666668",
+                "end": "186.55303333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 18.551866666666655,
+        "alter_answers": [
+            "Yes, there seem to be 2 people. One is the main person in the video, which we cannot see, and they seem to have a companion nearby, who is also paraglidiing. ",
+            "Yes, there is one person in the distance preparing to land from sky diving.",
+            "There are people present.",
+            "Yes there are people. You can see a man parachuting and landing in an open field by a country club."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.748842773333326,
+                    14.930542293333325
+                ]
+            ],
+            [
+                [
+                    2.389480426666665,
+                    2.849566719999998
+                ],
+                [
+                    12.912099199999991,
+                    14.470455999999992
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are they doing?",
+        "answer": "They are parachuting.",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What are they doing?",
+        "original_answer": "They are parachuting. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.343,
+                    6.367
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.343",
+                    "00:06.367"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/opaigjq242y9tkq/TK-Hinshaw_9-clip-2.mp4?raw=1",
+        "video_id": "TK-Hinshaw_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:48.001",
+                "end": "00:03:06.553"
+            },
+            "seconds": {
+                "start": "168.00116666666668",
+                "end": "186.55303333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 18.551866666666655,
+        "alter_answers": [
+            "A person is paragliding.",
+            "They are paragliding, performing a landing"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    0.8014406399999995
+                ]
+            ],
+            [
+                [
+                    2.2559069866666652,
+                    3.2502870399999977
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did they land?",
+        "answer": "In a field in front of a skydiving facility.",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where did they land?",
+        "original_answer": "In a field in front of a skydiving facility. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.186,
+                    18.552
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.186",
+                    "00:18.552"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/opaigjq242y9tkq/TK-Hinshaw_9-clip-2.mp4?raw=1",
+        "video_id": "TK-Hinshaw_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:48.001",
+                "end": "00:03:06.553"
+            },
+            "seconds": {
+                "start": "168.00116666666668",
+                "end": "186.55303333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 18.551866666666655,
+        "alter_answers": [
+            "The person off camera landed In a grassy field, near some kind of business. ",
+            "They landed next to a rural runway.",
+            "They land near what seems to be like a small community center or maybe a store based on the banner hanging out front that says fest on it. It's a very flat terrain that they landed on."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.541061866666658,
+                    13.936162239999993
+                ],
+                [
+                    18.551866666666655,
+                    18.551866666666655
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this location an observatory?",
+        "answer": "The design of the building and the wooden walkways lead me to believe this is a type of observational building",
+        "assignment_id": "3C5W7UE9CFPJD61P4TBVAHWHTU7XMA",
+        "objective": "I want to know about this location.",
+        "confidence": "moderate",
+        "original_question": "Is this location an observatory?",
+        "original_answer": "The design of the building and the wooden walkways lead me to believe this is a type of observational building",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    121.469,
+                    128.739
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "02:01.469",
+                    "02:08.739"
+                ]
+            }
+        ],
+        "time_spent": 2888.0,
+        "video_link": "https://www.dropbox.com/s/5dx5h4fsenime59/4k-Relaxation_12-clip-6.mp4?raw=1",
+        "video_id": "4k-Relaxation_12-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "02:49:50.914",
+                "end": "02:53:00.237"
+            },
+            "seconds": {
+                "start": "10190.914066666666",
+                "end": "10380.236533333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 189.32246666666646,
+        "alter_answers": [
+            "This location is not an observatory.",
+            "This location is an observatory. ",
+            "There is an observatory in the location.",
+            "Yes this location is an observatory. There is a long wooden path through the forest showing that people can walk through and see any wildlife or just the vegetation in the area. There is also a huge tower that you can see all of the trees and water from above."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    120.25763082666657,
+                    139.9471673599999
+                ]
+            ],
+            [
+                [
+                    18.629330719999984,
+                    34.83533386666664
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this video taken in United States?",
+        "answer": "No. Seeing the scooter driving in the opposite lane as the United States, coupled with the palm trees, leads me to believe this was taken in a tropical country.",
+        "assignment_id": "3C5W7UE9CFPJD61P4TBVAHWHTU7XMA",
+        "objective": "The vegetation and sounds signify this is a warm, tropical region",
+        "confidence": "moderate",
+        "original_question": "Is this taken in another country?",
+        "original_answer": "Seeing the scooter driving in the opposite lane as the United States, coupled with the palm trees, leads me to believe this was taken in a tropical country.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    141.698,
+                    148.599
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "02:21.698",
+                    "02:28.599"
+                ]
+            }
+        ],
+        "time_spent": 2888.0,
+        "video_link": "https://www.dropbox.com/s/0mburxs2scgvtxy/TreadmillTV_9-clip-2.mp4?raw=1",
+        "video_id": "TreadmillTV_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:40.560",
+                "end": "00:10:52.252"
+            },
+            "seconds": {
+                "start": "460.56010000000003",
+                "end": "652.2516"
+            },
+            "split-method": "auto"
+        },
+        "duration": 191.6915,
+        "alter_answers": [
+            "This video is not taken in the United States, based on the fact that the person off camera is on the left side of the road. I can also see international road signs, which are in a language other than English. ",
+            "This video is not taken in the United States. The road signs indicate that it's from another country based on the different language or characters printed on them. Also, there was a person driving on the left side of the road rather than the right which also shows that this video wasn't taken in the united states.",
+            "This video is not taken in the United States."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    15.028613600000002,
+                    19.935916000000002
+                ],
+                [
+                    67.93546760000001,
+                    76.67660000000001
+                ]
+            ],
+            [
+                [
+                    70.3891188,
+                    71.30923800000002
+                ],
+                [
+                    140.01147160000002,
+                    147.5257784
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this a park of some kind?",
+        "answer": "I think that because of the number of people walking in both directions, this must be a park that people can visit and walk",
+        "assignment_id": "3C5W7UE9CFPJD61P4TBVAHWHTU7XMA",
+        "objective": "I am curious about all the people walking the other way",
+        "confidence": "moderate",
+        "original_question": "Is this a park of some kind?",
+        "original_answer": "I think that because of the number of people walking in both directions, this must be a park that people can visit and walk",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.41,
+                    3.358
+                ]
+            },
+            {
+                "1": [
+                    26.193,
+                    30.222
+                ]
+            },
+            {
+                "2": [
+                    57.959,
+                    64.407
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.410",
+                    "00:03.358"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.193",
+                    "00:30.222"
+                ]
+            },
+            {
+                "2": [
+                    "00:57.959",
+                    "01:04.407"
+                ]
+            }
+        ],
+        "time_spent": 2888.0,
+        "video_link": "https://www.dropbox.com/s/zbsd5jknzovwcoj/TreadmillTV_6-clip-2.mp4?raw=1",
+        "video_id": "TreadmillTV_6-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:41:04.195",
+                "end": "00:42:28.146"
+            },
+            "seconds": {
+                "start": "2464.1950666666667",
+                "end": "2548.1456"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.95053333333317,
+        "alter_answers": [
+            "This is a park.",
+            "This could be a park due to the high traffic but with no indications such as postage, I cannot determine with confidence.",
+            "This is a natural park of some kind."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are there any people?",
+        "answer": "No, there is no one.",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there any people? If so how many?",
+        "original_answer": "Yes, there is one. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.076
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.076"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/cga5a8b38cl5ghw/TreadmillTV_2-clip-1.mp4?raw=1",
+        "video_id": "TreadmillTV_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:12.205",
+                "end": "00:02:19.706"
+            },
+            "seconds": {
+                "start": "72.20546666666667",
+                "end": "139.70623333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.50076666666666,
+        "alter_answers": [
+            "While no people appear in the video, I can hear footsteps and breathing, indicating there is at least one person present, off camera. ",
+            "Yes there are people. You can see a person running way in the distance at the beginning of the video.",
+            "There are no people."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.152115306666666,
+                    25.812293173333334
+                ]
+            ],
+            [
+                [
+                    25.704291946666665,
+                    29.592336106666668
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is this person?",
+        "answer": "They are on a trail in a forest/grassland environment.",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where is this person?",
+        "original_answer": "They are on a trail in a forest/grassland environment. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    9.828
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:09.828"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/cga5a8b38cl5ghw/TreadmillTV_2-clip-1.mp4?raw=1",
+        "video_id": "TreadmillTV_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:12.205",
+                "end": "00:02:19.706"
+            },
+            "seconds": {
+                "start": "72.20546666666667",
+                "end": "139.70623333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.50076666666666,
+        "alter_answers": [
+            "There is no visible person.",
+            "This person is on a hiking trail in a forested mountainous area."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    3.0780349599999997
+                ],
+                [
+                    26.352299306666662,
+                    31.48235757333333
+                ],
+                [
+                    57.618654426666666,
+                    62.74871269333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the trail seem to be frequented?",
+        "answer": "Yes, the trail is worn. ",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Does the trail seem to be frequented?",
+        "original_answer": "Yes, the trail is worn. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    19.71,
+                    26.19
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:19.710",
+                    "00:26.190"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/cga5a8b38cl5ghw/TreadmillTV_2-clip-1.mp4?raw=1",
+        "video_id": "TreadmillTV_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:12.205",
+                "end": "00:02:19.706"
+            },
+            "seconds": {
+                "start": "72.20546666666667",
+                "end": "139.70623333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.50076666666666,
+        "alter_answers": [
+            "The trail is well maintained and clear suggesting it is frequented.",
+            "The trail seems to be frequented."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.906146586666667,
+                    16.52418768
+                ],
+                [
+                    48.06054586666667,
+                    51.300582666666664
+                ]
+            ],
+            [
+                [
+                    25.326287653333335,
+                    41.472471039999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many people are shown in his video?",
+        "answer": "There are 5 people shown flying through the sky; towards the end, the video focuses on 2 out of the 5 people.",
+        "assignment_id": "3IAS3U3I0FFMTZUVPF0T6BRR58T2BF",
+        "objective": "I am curious about how many people are shown in the video.",
+        "confidence": "moderate",
+        "original_question": "How many people are shown in his video?",
+        "original_answer": "There are 4 people shown flying through the sky; towards the end, the video focuses on 2 out of the 4 people.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.923,
+                    25.692
+                ]
+            },
+            {
+                "1": [
+                    33.188,
+                    42.933
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.923",
+                    "00:25.692"
+                ]
+            },
+            {
+                "1": [
+                    "00:33.188",
+                    "00:42.933"
+                ]
+            }
+        ],
+        "time_spent": 2304.0,
+        "video_link": "https://www.dropbox.com/s/y1m20fs38kivsgx/TK-Hinshaw_5-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:25.185"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "85.18517572297196"
+            },
+            "split-method": "auto"
+        },
+        "duration": 85.18517572297195,
+        "alter_answers": [
+            "There are four people in the video"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    17.854812831534925,
+                    25.759997138626723
+                ]
+            ]
+        ]
+    }
+]

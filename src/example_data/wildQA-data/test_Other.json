@@ -1,0 +1,491 @@
+[
+    {
+        "question": "What are they doing to the tank?",
+        "answer": "They are lining up the barrel for a shot.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "Determine what is happening to the tank.",
+        "confidence": "moderate",
+        "original_question": "What are they doing to the tank?",
+        "original_answer": "They are lining up the barrel for a shot.",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.003,
+                    12.389
+                ]
+            },
+            {
+                "1": [
+                    59.523,
+                    67.334
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.003",
+                    "00:12.389"
+                ]
+            },
+            {
+                "1": [
+                    "00:59.523",
+                    "01:07.334"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/bjjggxoc628jt7u/USA-Military-Channel_12-clip-7.mp4?raw=1",
+        "video_id": "USA-Military-Channel_12-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:27.741",
+                "end": "00:09:35.075"
+            },
+            "seconds": {
+                "start": "507.74056666666667",
+                "end": "575.0745000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.33393333333339,
+        "alter_answers": [
+            "They are performing cleaning and maintenance. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What command does the shooter in the video yell?",
+        "answer": "The command the shooter in the video yells are \"get down on the deck\" in English.",
+        "assignment_id": "3DIP6YHAPCRVMH84FNBKHAAFU0J8EZ",
+        "objective": "I want to learn about coming alongside an enemy marine vessel.",
+        "confidence": "very_high",
+        "original_question": "What command does the shooter in the video yell?",
+        "original_answer": "The command the shooter in the video yells are \"get down on the deck\" in English.",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    41.304,
+                    44.742
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:41.304",
+                    "00:44.742"
+                ]
+            }
+        ],
+        "time_spent": 3779.0,
+        "video_link": "https://www.dropbox.com/s/fj7z10wrihu6cmp/USA-Military-Channel_3-clip-1.mp4?raw=1",
+        "video_id": "USA-Military-Channel_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.932",
+                "end": "00:02:05.459"
+            },
+            "seconds": {
+                "start": "64.93161348985686",
+                "end": "125.45882154258058"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.52720805272372,
+        "alter_answers": [
+            "The command shooter yells in the video to get down on the floor"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    39.46373965037587,
+                    46.727004616702715
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How do farmers know if an herbcide is working?",
+        "answer": "If the weeds are gaining leaves then that means the weeds are growing and the herbicide is not working.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOV6MW6Z",
+        "objective": "I want to know more about how to manage weeds in a crop. ",
+        "confidence": "very_high",
+        "original_question": "How do I know if an herbicide is working.",
+        "original_answer": "If the weeds are gaining leaves then that means the weeds are growing and the herbicide is not working. ",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.85,
+                    72.626
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.850",
+                    "01:12.626"
+                ]
+            }
+        ],
+        "time_spent": 1120.0,
+        "video_link": "https://www.dropbox.com/s/xdi2808ircfyyf1/RealAgriculture_5-clip-0.mp4?raw=1",
+        "video_id": "RealAgriculture_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:49.376"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "109.37593333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 109.37593333333334,
+        "alter_answers": [
+            "They can check the weeds and see if they are coming up. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What kind of equipment are they advertising?",
+        "answer": "The men from the video were talking about a covered trailer used to transport grain or corn. The trailers are used a lot in big commercial farming operations.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOV6MW6Z",
+        "objective": "I want to know more about the farming operation of the men from the video. ",
+        "confidence": "high",
+        "original_question": "What kind of equipment are they advertising?",
+        "original_answer": "The men from the video were talking about a covered trailer used to transport grain or corn. The trailers are used a lot in big commercial farming operations. ",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.517,
+                    63.43
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.517",
+                    "01:03.430"
+                ]
+            }
+        ],
+        "time_spent": 1120.0,
+        "video_link": "https://www.dropbox.com/s/oxhheqpy2l2nguk/Welker-Farms-Inc_1-clip-13.mp4?raw=1",
+        "video_id": "Welker-Farms-Inc_1-clip-13",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:14:11.484",
+                "end": "00:15:14.914"
+            },
+            "seconds": {
+                "start": "851.4839666666667",
+                "end": "914.914"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.43003333333331,
+        "alter_answers": [
+            "The equipment they are advertising is truck and trailer"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    43.23391071999998,
+                    54.90503685333332
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the relationship like with this farmer and his livestock?",
+        "answer": "The farmer care for his livestock very much. He is invested and care for their wellbeing. The farmer's animals seem to care the about the farmer as well. The livestock seem very comfortable with the farmer.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOV6MW6Z",
+        "objective": "I want to know more about livestock.",
+        "confidence": "high",
+        "original_question": "What is the relationship like with this farmer and his livestock?",
+        "original_answer": "The farmer care for his livestock very much. He is invested and care for their wellbeing. The farmer's animals seem to care the about the farmer as well. The livestock seem very comfortable with the farmer. ",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.292,
+                    36.191
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.292",
+                    "00:36.191"
+                ]
+            }
+        ],
+        "time_spent": 1120.0,
+        "video_link": "https://www.dropbox.com/s/036yzebmkt0u6t7/Olly_s-Farm_5-clip-7.mp4?raw=1",
+        "video_id": "Olly's-Farm_5-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:43.430",
+                "end": "00:08:43.990"
+            },
+            "seconds": {
+                "start": "463.42963333333336",
+                "end": "523.9901333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.56049999999999,
+        "alter_answers": [
+            "The farmer and the live stock are friendly. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.348328,
+                    35.464228799999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of equipment is there?",
+        "answer": "A skid steer and a quad are in the video.",
+        "assignment_id": "3IJXV6UZ1XIDKRPMAF7BT63CCI2RIL",
+        "objective": "I want to understand more about what he is doing",
+        "confidence": "high",
+        "original_question": "What kind of equipment is there?",
+        "original_answer": "A skid steer and a quad are in the video. ",
+        "question_type": [
+            "Location",
+            "Other"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.383,
+                    40.914
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.383",
+                    "00:40.914"
+                ]
+            }
+        ],
+        "time_spent": 10002.0,
+        "video_link": "https://www.dropbox.com/s/gnvu7rkq9b35dkj/How-Farms-Work_11-clip-1.mp4?raw=1",
+        "video_id": "How-Farms-Work_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.861",
+                "end": "00:02:00.887"
+            },
+            "seconds": {
+                "start": "60.8608",
+                "end": "120.88743333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.026633333333336,
+        "alter_answers": [
+            "There is a tractor here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.324580933333333,
+                    24.154717253333338
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is being sprayed on the field in the video?",
+        "answer": "The tractor is spraying fertilizer that is high in nitrogen.",
+        "assignment_id": "3Q5C1WP23M0DFYVQ5192Y6HU3YI155",
+        "objective": "I want to know more about maintaining crops.",
+        "confidence": "very_high",
+        "original_question": "What is being sprayed on the field in the video?",
+        "original_answer": "The tractor is spraying fertilizer that is high in nitrogen. ",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    62.9,
+                    68.061
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:02.900",
+                    "01:08.061"
+                ]
+            }
+        ],
+        "time_spent": 2873.0,
+        "video_link": "https://www.dropbox.com/s/mwv945z30k6jmbq/Peterson-Farm-Bros_7-clip-1.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.427",
+                "end": "00:02:41.228"
+            },
+            "seconds": {
+                "start": "60.427033333333334",
+                "end": "161.22773333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 100.8007,
+        "alter_answers": [
+            "They are spraying nitrogen "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    56.28711088000001,
+                    80.88248168000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the brand of fungicide being used in the video?",
+        "answer": "The fungicide depicted is Trivapro.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNBIONHA",
+        "objective": "The power of three within fungicide.",
+        "confidence": "very_high",
+        "original_question": "What is the brand of fungicide being used in the video?",
+        "original_answer": "The fungicide depicted is Trivapro.",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.691,
+                    41.718
+                ]
+            },
+            {
+                "1": [
+                    48.126,
+                    56.349
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.691",
+                    "00:41.718"
+                ]
+            },
+            {
+                "1": [
+                    "00:48.126",
+                    "00:56.349"
+                ]
+            }
+        ],
+        "time_spent": 2043.0,
+        "video_link": "https://www.dropbox.com/s/ioxc65rhnu191vl/RealAgriculture_8-clip-0.mp4?raw=1",
+        "video_id": "RealAgriculture_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:02:31.151"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "151.15099999999998"
+            },
+            "split-method": "auto"
+        },
+        "duration": 151.15099999999995,
+        "alter_answers": [
+            "tribopro"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    25.997971999999994,
+                    38.936497599999996
+                ],
+                [
+                    59.00935039999999,
+                    70.13406399999998
+                ]
+            ]
+        ]
+    }
+]

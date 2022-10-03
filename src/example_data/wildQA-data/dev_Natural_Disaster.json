@@ -1,0 +1,3391 @@
+[
+    {
+        "question": "What is happening?",
+        "answer": "There is flooding.",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What is happening?",
+        "original_answer": "There is flooding. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    42.373,
+                    46.782
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:42.373",
+                    "00:46.782"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/4tkawj4uaky2vfl/Natural-Disaster_10-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.233"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.233333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.23333333333333,
+        "alter_answers": [
+            "The ocean tide is coming to the shore"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.09298666666667,
+                    37.13189333333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the flooding occuring?",
+        "answer": "In a city.",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the flooding occuring?",
+        "original_answer": "In a city. ",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.095
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.095"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/4tkawj4uaky2vfl/Natural-Disaster_10-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.233"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.233333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.23333333333333,
+        "alter_answers": [
+            "The flooding is occurring in the city "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    25.375093333333332,
+                    35.66229333333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather events or natural disasters occured?",
+        "answer": "Dust devil and a volcanic eruption.",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Weather events",
+        "confidence": "very_high",
+        "original_question": "What type of weather events or natural disasters occured?",
+        "original_answer": "Dust devil and a volcanic eruption. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.8,
+                    16.8
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.800",
+                    "00:16.800"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/mzahegej5rr9z3c/Disaster-Compilations_11-manual.mp4?raw=1",
+        "video_id": "Disaster-Compilations_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "0:40"
+            },
+            "split-method": "manual"
+        },
+        "duration": 40.0,
+        "alter_answers": [
+            "There is a sand twister in the back."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What was occurring before the volcano erupted?",
+        "answer": "The dust devil formed.",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Weather events",
+        "confidence": "very_high",
+        "original_question": "What was occurring before the volcano erupted?",
+        "original_answer": "The dust devil formed. ",
+        "question_type": [
+            "Motion",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.376,
+                    16.96
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.376",
+                    "00:16.960"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/mzahegej5rr9z3c/Disaster-Compilations_11-manual.mp4?raw=1",
+        "video_id": "Disaster-Compilations_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "0:40"
+            },
+            "split-method": "manual"
+        },
+        "duration": 40.0,
+        "alter_answers": [
+            "A tornado was travelling across the land."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where did the events occur?",
+        "answer": "Desert",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Weather events",
+        "confidence": "very_high",
+        "original_question": "Where did the events occur?",
+        "original_answer": "Desert",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    4.032
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:04.032"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/mzahegej5rr9z3c/Disaster-Compilations_11-manual.mp4?raw=1",
+        "video_id": "Disaster-Compilations_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "0:40"
+            },
+            "split-method": "manual"
+        },
+        "duration": 40.0,
+        "alter_answers": [
+            "The event is taking place in a desert. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.656,
+                    12.384
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of storm occurred?",
+        "answer": "A hurricane.",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Storm damage",
+        "confidence": "very_high",
+        "original_question": "What type of storm occurred?",
+        "original_answer": "A hurricane. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.439
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.439"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/w1l7ee0rofeew76/Ultimate-Chase_3-clip-4.mp4?raw=1",
+        "video_id": "Ultimate-Chase_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:35.969",
+                "end": "00:06:38.365"
+            },
+            "seconds": {
+                "start": "335.9689666666667",
+                "end": "398.36463333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.39566666666667,
+        "alter_answers": [
+            "there is a hurricane occurring"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.537396533333334,
+                    16.3227064
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What did the storm cause?",
+        "answer": "Flooding, rain, high wind, damage, and sand drifts. ",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Storm damage",
+        "confidence": "very_high",
+        "original_question": "What did the storm cause?",
+        "original_answer": "Flooding, rain, high wind, damage, and sand drifts. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.19
+                ]
+            },
+            {
+                "1": [
+                    18.22,
+                    27.754
+                ]
+            },
+            {
+                "2": [
+                    57.055,
+                    62.396
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.190"
+                ]
+            },
+            {
+                "1": [
+                    "00:18.220",
+                    "00:27.754"
+                ]
+            },
+            {
+                "2": [
+                    "00:57.055",
+                    "01:02.396"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/w1l7ee0rofeew76/Ultimate-Chase_3-clip-4.mp4?raw=1",
+        "video_id": "Ultimate-Chase_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:35.969",
+                "end": "00:06:38.365"
+            },
+            "seconds": {
+                "start": "335.9689666666667",
+                "end": "398.36463333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.39566666666667,
+        "alter_answers": [
+            "The stormed caused damage to several buildings and structures."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What type of damage did the storm cause?",
+        "answer": "Buildings collapsed and trees, power lines, and electrical poles were downed. ",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Storm damage",
+        "confidence": "very_high",
+        "original_question": "What type of damage did the storm cause?",
+        "original_answer": "Buildings collapsed and trees, power lines, and electrical poles were downed. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.181,
+                    15.624
+                ]
+            },
+            {
+                "1": [
+                    43.178,
+                    48.519
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.181",
+                    "00:15.624"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.178",
+                    "00:48.519"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/w1l7ee0rofeew76/Ultimate-Chase_3-clip-4.mp4?raw=1",
+        "video_id": "Ultimate-Chase_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:35.969",
+                "end": "00:06:38.365"
+            },
+            "seconds": {
+                "start": "335.9689666666667",
+                "end": "398.36463333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.39566666666667,
+        "alter_answers": [
+            "The storm caused light poles to go down"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    43.52721706666667,
+                    53.660273333333336
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather is happening?",
+        "answer": "Waterspout",
+        "assignment_id": "30ZX6P7VF8USBIS7D7DA4ZA4DWNJ24",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of weather is happening?",
+        "original_answer": "Waterspout",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.704,
+                    39.627
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.704",
+                    "00:39.627"
+                ]
+            }
+        ],
+        "time_spent": 1822.0,
+        "video_link": "https://www.dropbox.com/s/pvya5c2b53ed91w/Ultimate-Chase_8-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.333"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.333333333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.33333333333334,
+        "alter_answers": [
+            "There is a water spout occuring"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    49.85946666666667,
+                    57.24426666666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What affects did the waterspout have?",
+        "answer": "Increased wind speed.",
+        "assignment_id": "30ZX6P7VF8USBIS7D7DA4ZA4DWNJ24",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What affects did the waterspout have?",
+        "original_answer": "Increased wind speed. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.274,
+                    51.066
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.274",
+                    "00:51.066"
+                ]
+            }
+        ],
+        "time_spent": 1822.0,
+        "video_link": "https://www.dropbox.com/s/pvya5c2b53ed91w/Ultimate-Chase_8-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.333"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.333333333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.33333333333334,
+        "alter_answers": [
+            "The waterspout comes close to shore"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    41.074933333333334,
+                    53.720800000000004
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What types of natural disaster events happened?",
+        "answer": "Tropical storm, sinkhole, and an earthquake. ",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "Natural Phenomenon",
+        "confidence": "very_high",
+        "original_question": "What types of natural disaster events happened?",
+        "original_answer": "Tropical storm, sinkhole, and an earthquake. ",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.955,
+                    13.42
+                ]
+            },
+            {
+                "1": [
+                    43.188,
+                    48.946
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.955",
+                    "00:13.420"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.188",
+                    "00:48.946"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/axe5805abov9osm/Climate-Change_7-clip-3.mp4?raw=1",
+        "video_id": "Climate-Change_7-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:08.767",
+                "end": "00:04:09.767"
+            },
+            "seconds": {
+                "start": "188.76666666666668",
+                "end": "249.76666666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.0,
+        "alter_answers": [
+            "This is a hurricane flood natural disaster "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.564,
+                    14.981599999999998
+                ],
+                [
+                    31.036800000000003,
+                    42.944
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What did the natural disasters cause?",
+        "answer": "Flooding, rain, ground shaking and sinking",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "Natural Phenomenon",
+        "confidence": "very_high",
+        "original_question": "What did the natural disasters cause?",
+        "original_answer": "Flooding, rain, ground shaking and sinking",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    39.382,
+                    45.726
+                ]
+            },
+            {
+                "1": [
+                    14.347,
+                    18.349
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:39.382",
+                    "00:45.726"
+                ]
+            },
+            {
+                "1": [
+                    "00:14.347",
+                    "00:18.349"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/axe5805abov9osm/Climate-Change_7-clip-3.mp4?raw=1",
+        "video_id": "Climate-Change_7-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:08.767",
+                "end": "00:04:09.767"
+            },
+            "seconds": {
+                "start": "188.76666666666668",
+                "end": "249.76666666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.0,
+        "alter_answers": [
+            "The natural disasters cause flood and destruction"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.028,
+                    18.5928
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather is happening?",
+        "answer": "Hail, rain, and wind. ",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of weather is happening?",
+        "original_answer": "Hail, rain, and wind. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.551
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.551"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/1wnvnh4h43d2sef/Weathershot_3-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.160",
+                "end": "00:02:06.880"
+            },
+            "seconds": {
+                "start": "60.16",
+                "end": "126.88"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.72,
+        "alter_answers": [
+            "There is a storm happening"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    15.799296,
+                    32.0256
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there any damage caused by the weather?",
+        "answer": "No.",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Is there any damage caused by the weather?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Existence",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    4.857
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:04.857"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/1wnvnh4h43d2sef/Weathershot_3-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.160",
+                "end": "00:02:06.880"
+            },
+            "seconds": {
+                "start": "60.16",
+                "end": "126.88"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.72,
+        "alter_answers": [
+            "Yes there is some damage from the weather, such as cars getting hit by hail. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    31.331712,
+                    37.203072
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the weather occurring?",
+        "answer": "In a suburb.",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the weather occurring?",
+        "original_answer": "In a suburb. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.138,
+                    11.316
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.138",
+                    "00:11.316"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/1wnvnh4h43d2sef/Weathershot_3-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.160",
+                "end": "00:02:06.880"
+            },
+            "seconds": {
+                "start": "60.16",
+                "end": "126.88"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.72,
+        "alter_answers": [
+            "It is occurring in a city, but it is unclear where the city it. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What type of weather events happened?",
+        "answer": "Dust devil, snow storm, flooding, fire",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of weather events happened?",
+        "original_answer": "Dust devil, snow storm, flooding, fire",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.471,
+                    8.389
+                ]
+            },
+            {
+                "1": [
+                    25.408,
+                    31.049
+                ]
+            },
+            {
+                "2": [
+                    52.408,
+                    57.326
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.471",
+                    "00:08.389"
+                ]
+            },
+            {
+                "1": [
+                    "00:25.408",
+                    "00:31.049"
+                ]
+            },
+            {
+                "2": [
+                    "00:52.408",
+                    "00:57.326"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rrn4t636heho9c5/Climate-Change_2-clip-4.mp4?raw=1",
+        "video_id": "Climate-Change_2-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:05.000",
+                "end": "00:05:05.267"
+            },
+            "seconds": {
+                "start": "245.0",
+                "end": "305.26666666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.26666666666665,
+        "alter_answers": [
+            "The weather event that happened was flood and hurricane"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.207039999999999,
+                    18.369279999999996
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did the events happen?",
+        "answer": "Cities",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where did the events happen?",
+        "original_answer": "Cities",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.978
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.978"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rrn4t636heho9c5/Climate-Change_2-clip-4.mp4?raw=1",
+        "video_id": "Climate-Change_2-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:05.000",
+                "end": "00:05:05.267"
+            },
+            "seconds": {
+                "start": "245.0",
+                "end": "305.26666666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.26666666666665,
+        "alter_answers": [
+            "the events happened in Angola, Kyrgyzstan, Russia and Saudi Arabia"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.3017599999999998,
+                    5.255253333333332
+                ],
+                [
+                    9.064106666666664,
+                    15.283626666666663
+                ],
+                [
+                    20.587093333333325,
+                    27.626239999999996
+                ],
+                [
+                    33.749333333333325,
+                    45.65802666666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Did the weather events cause any damage?",
+        "answer": "Yes.",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Did they cause any damage?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    47.442,
+                    52.986
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:47.442",
+                    "00:52.986"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rrn4t636heho9c5/Climate-Change_2-clip-4.mp4?raw=1",
+        "video_id": "Climate-Change_2-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:05.000",
+                "end": "00:05:05.267"
+            },
+            "seconds": {
+                "start": "245.0",
+                "end": "305.26666666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.26666666666665,
+        "alter_answers": [
+            "The weather events caused a lot of damages in different parts of the city.  cars and houses"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.473066666666664,
+                    20.972799999999992
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what type of weather is happening?",
+        "answer": "tornado",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "people",
+        "confidence": "very_high",
+        "original_question": "what type of weather is happening?",
+        "original_answer": "tornado",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    23.661,
+                    28.523
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:23.661",
+                    "00:28.523"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/04rqk4p1exw3h9a/Tornado-Trackers_6-clip-2.mp4?raw=1",
+        "video_id": "Tornado-Trackers_6-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:07.627",
+                "end": "00:03:15.153"
+            },
+            "seconds": {
+                "start": "127.6275",
+                "end": "195.15329166666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.52579166666666,
+        "alter_answers": [
+            "There is a tornado happening"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.4573205333333332,
+                    16.800416966666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "what type of weather is happening?",
+        "answer": "tornado.",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "people",
+        "confidence": "very_high",
+        "original_question": "what type of weather is happening?",
+        "original_answer": "tornado.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.528,
+                    15.758
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.528",
+                    "00:15.758"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rqzsz03t4pn1gzd/Ultimate-Chase_9-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:33.800"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "93.8"
+            },
+            "split-method": "auto"
+        },
+        "duration": 93.8,
+        "alter_answers": [
+            "There is tornado"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.884,
+                    30.166079999999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many people are there?",
+        "answer": "six",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "people",
+        "confidence": "very_high",
+        "original_question": "how many people are there?",
+        "original_answer": "six ",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    53.353,
+                    58.381
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:53.353",
+                    "00:58.381"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rqzsz03t4pn1gzd/Ultimate-Chase_9-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:33.800"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "93.8"
+            },
+            "split-method": "auto"
+        },
+        "duration": 93.8,
+        "alter_answers": [
+            "There are 4 people. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    50.727039999999995,
+                    58.98144
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the people doing?",
+        "answer": "They are chasing the storm.",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "people",
+        "confidence": "very_high",
+        "original_question": "What are the people doing?",
+        "original_answer": "They are chasing the storm. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    52.978,
+                    62.508
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:52.978",
+                    "01:02.508"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/rqzsz03t4pn1gzd/Ultimate-Chase_9-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:33.800"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "93.8"
+            },
+            "split-method": "auto"
+        },
+        "duration": 93.8,
+        "alter_answers": [
+            "They are filming the tornado and celebrating. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    53.35344,
+                    58.60624
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather event occurred?",
+        "answer": "Hurricane and rain storms.",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Cities",
+        "confidence": "very_high",
+        "original_question": "What type of weather event occurred?",
+        "original_answer": "Hurricane and rain storms. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.356,
+                    6.916
+                ]
+            },
+            {
+                "1": [
+                    30.766,
+                    35.597
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.356",
+                    "00:06.916"
+                ]
+            },
+            {
+                "1": [
+                    "00:30.766",
+                    "00:35.597"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/k3epb44gopmvhyt/Climate-Change_6-clip-7.mp4?raw=1",
+        "video_id": "Climate-Change_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:21.867",
+                "end": "00:08:25.433"
+            },
+            "seconds": {
+                "start": "441.8666666666667",
+                "end": "505.43333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.56666666666666,
+        "alter_answers": [
+            "There was a hurricane that occurred here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.899333333333333,
+                    19.069999999999997
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How were the cities affected by the weather?",
+        "answer": "There was flooding and buildings were destroyed.",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Cities",
+        "confidence": "very_high",
+        "original_question": "How were the cities affected by the weather?",
+        "original_answer": "There was flooding and buildings were destroyed. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.493,
+                    17.341
+                ]
+            },
+            {
+                "1": [
+                    33.055,
+                    38.649
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.493",
+                    "00:17.341"
+                ]
+            },
+            {
+                "1": [
+                    "00:33.055",
+                    "00:38.649"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/k3epb44gopmvhyt/Climate-Change_6-clip-7.mp4?raw=1",
+        "video_id": "Climate-Change_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:21.867",
+                "end": "00:08:25.433"
+            },
+            "seconds": {
+                "start": "441.8666666666667",
+                "end": "505.43333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.56666666666666,
+        "alter_answers": [
+            "There is a lot of damage and broken buildings. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.323226666666665,
+                    23.901066666666665
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What area is the storm affecting?",
+        "answer": "A town on the coast",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What area is the storm affecting?",
+        "original_answer": "A town on the coast",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.603,
+                    42.797
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.603",
+                    "00:42.797"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/i5xz62sycs19mq5/Disaster-Compilations_10-clip-0.mp4?raw=1",
+        "video_id": "Disaster-Compilations_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:05.160"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "65.16"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.16,
+        "alter_answers": [
+            "The storm is affecting the shore area"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    17.879904,
+                    27.62784
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the storm causing?",
+        "answer": "Flooding, rain, property damage, high wind.",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What is the storm causing?",
+        "original_answer": "Flooding, rain, property damage, high wind. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.35
+                ]
+            },
+            {
+                "1": [
+                    56.402,
+                    65.16
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.350"
+                ]
+            },
+            {
+                "1": [
+                    "00:56.402",
+                    "01:05.160"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/i5xz62sycs19mq5/Disaster-Compilations_10-clip-0.mp4?raw=1",
+        "video_id": "Disaster-Compilations_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:05.160"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "65.16"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.16,
+        "alter_answers": [
+            "The storm is causing flood and destruction"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    42.119423999999995,
+                    53.58758399999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of natural disaster occurred?",
+        "answer": "Volcanic eruption",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Natural disasters",
+        "confidence": "very_high",
+        "original_question": "What type of natural disaster occurred?",
+        "original_answer": "Volcanic eruption",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.337,
+                    54.336
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.337",
+                    "00:54.336"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/mcu3aa8xtzpxi9m/Disaster-Compilations_9-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.280",
+                "end": "00:03:38.200"
+            },
+            "seconds": {
+                "start": "150.28",
+                "end": "218.2"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.91999999999999,
+        "alter_answers": [
+            "There is a volcano occurring forming large clouds"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.986303999999999,
+                    29.884799999999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What environment is the water spout occurring in?",
+        "answer": "Chaparral environment.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What environment is the water spout occurring in?",
+        "original_answer": "Chaparral environment. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.964,
+                    25.858
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.964",
+                    "00:25.858"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/2i2p92p7u9h7g7w/Natural-Disaster_5-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:52.900"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "52.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 52.9,
+        "alter_answers": [
+            "The water spout is occurring on the ocean"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.218,
+                    32.3748
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of body of water is the water spout happening on?",
+        "answer": "A lake.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of body of water is the water spout happening on?",
+        "original_answer": "A lake. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.299,
+                    14.093
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.299",
+                    "00:14.093"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/2i2p92p7u9h7g7w/Natural-Disaster_5-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:52.900"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "52.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 52.9,
+        "alter_answers": [
+            "It is happening on a large lake. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What type of weather phenomenon is occurring?",
+        "answer": "Water spout.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of weather phenomenon is occurring?",
+        "original_answer": "Water spout. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.566,
+                    4.613
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.566",
+                    "00:04.613"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/2i2p92p7u9h7g7w/Natural-Disaster_5-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:52.900"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "52.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 52.9,
+        "alter_answers": [
+            "There is a waterspout occurring "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    31.99392,
+                    43.801199999999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What were the effects of the natural disaster?",
+        "answer": "Smoke and soot in the sky.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Natural disasters",
+        "confidence": "very_high",
+        "original_question": "What were the effects of the natural disaster?",
+        "original_answer": "Smoke and soot in the sky. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.118
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.118"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/mcu3aa8xtzpxi9m/Disaster-Compilations_9-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.280",
+                "end": "00:03:38.200"
+            },
+            "seconds": {
+                "start": "150.28",
+                "end": "218.2"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.91999999999999,
+        "alter_answers": [
+            "There is a heavy cloud occurring for the natural disaster"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    21.191039999999997,
+                    30.971519999999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather is occurring?",
+        "answer": "A tornado.",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of weather is occurring?",
+        "original_answer": "A tornado. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    55.081,
+                    58.338
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:55.081",
+                    "00:58.338"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/od1jtlo6d5jn8dm/Tornado-Trackers_1-clip-0.mp4?raw=1",
+        "video_id": "Tornado-Trackers_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.769"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.76904166666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.76904166666666,
+        "alter_answers": [
+            "There is a tornado occuring"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.764886466666665,
+                    22.119931166666664
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the effects of the tornado?",
+        "answer": "High winds, rain, debris.",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What are the effects of the tornado?",
+        "original_answer": "High winds, rain, debris. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    37.288,
+                    41.517
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:37.288",
+                    "00:41.517"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/od1jtlo6d5jn8dm/Tornado-Trackers_1-clip-0.mp4?raw=1",
+        "video_id": "Tornado-Trackers_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.769"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.76904166666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.76904166666666,
+        "alter_answers": [
+            "The tornado is destroying trees"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.59312623333333,
+                    43.89955569999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kinds of weather phenomenon are occurring?",
+        "answer": "Thunderstorms, rain, hail.",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What kinds of weather phenomenon are occurring?",
+        "original_answer": "Thunderstorms, rain, hail. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.126
+                ]
+            },
+            {
+                "1": [
+                    77.643,
+                    84.695
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.126"
+                ]
+            },
+            {
+                "1": [
+                    "01:17.643",
+                    "01:24.695"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/ebv6tuhfofqq1ue/Weathershot_7-clip-0.mp4?raw=1",
+        "video_id": "Weathershot_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:29.040"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "89.04"
+            },
+            "split-method": "auto"
+        },
+        "duration": 89.04,
+        "alter_answers": [
+            "There is a storm and hail rain occurring here "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    48.936384000000004,
+                    61.18828800000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the weather happening?",
+        "answer": "A city in Denmark.",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the weather happening?",
+        "original_answer": "A city in Denmark. ",
+        "question_type": [
+            "Location",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.057
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.057"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/ebv6tuhfofqq1ue/Weathershot_7-clip-0.mp4?raw=1",
+        "video_id": "Weathershot_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:29.040"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "89.04"
+            },
+            "split-method": "auto"
+        },
+        "duration": 89.04,
+        "alter_answers": [
+            "There is a storm forming"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    51.571968000000005,
+                    69.593664
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the rain and hail happening?",
+        "answer": "In cities",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Precipitation",
+        "confidence": "very_high",
+        "original_question": "Where is the rain and hail happening?",
+        "original_answer": "In cities",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.28,
+                    49.588
+                ]
+            },
+            {
+                "1": [
+                    60.408,
+                    64.1
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.280",
+                    "00:49.588"
+                ]
+            },
+            {
+                "1": [
+                    "01:00.408",
+                    "01:04.100"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/37ojgfhc8zjdtq9/Climate-Change_0-clip-4.mp4?raw=1",
+        "video_id": "Climate-Change_0-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:10.067",
+                "end": "00:05:14.167"
+            },
+            "seconds": {
+                "start": "250.06666666666666",
+                "end": "314.1666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.10000000000002,
+        "alter_answers": [
+            "Rain and hail is happening in the city"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.639680000000006,
+                    45.639200000000024
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What types of precipitation are happening?",
+        "answer": "Snow, rain, and hail.",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Precipitation",
+        "confidence": "very_high",
+        "original_question": "What types of precipitation are happening?",
+        "original_answer": "Snow, rain, and hail. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.178,
+                    37.691
+                ]
+            },
+            {
+                "1": [
+                    45.537,
+                    50.254
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.178",
+                    "00:37.691"
+                ]
+            },
+            {
+                "1": [
+                    "00:45.537",
+                    "00:50.254"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/37ojgfhc8zjdtq9/Climate-Change_0-clip-4.mp4?raw=1",
+        "video_id": "Climate-Change_0-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:10.067",
+                "end": "00:05:14.167"
+            },
+            "seconds": {
+                "start": "250.06666666666666",
+                "end": "314.1666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.10000000000002,
+        "alter_answers": [
+            "Yes there is snow. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.332000000000015,
+                    39.99840000000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the funnel cloud?",
+        "answer": "The funnel cloud is over the water.",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather ",
+        "confidence": "very_high",
+        "original_question": "Where is the funnel cloud?",
+        "original_answer": "The funnel cloud is over the water. ",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.399,
+                    14.738
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.399",
+                    "00:14.738"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/h0s9e0q1d0t0pmx/Natural-Disaster_11-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:31.331"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "31.3313"
+            },
+            "split-method": "auto"
+        },
+        "duration": 31.3313,
+        "alter_answers": [
+            "It is a twister and a tornado"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.3336503200000003,
+                    7.093406320000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the tornado and the funnel cloud?",
+        "answer": "In a field.",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where are the tornado and the funnel cloud?",
+        "original_answer": "In a field. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.671,
+                    12.569
+                ]
+            },
+            {
+                "1": [
+                    31.712,
+                    40.172
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.671",
+                    "00:12.569"
+                ]
+            },
+            {
+                "1": [
+                    "00:31.712",
+                    "00:40.172"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/8owtb65oudujcst/Dan-Robinson_3-clip-3.mp4?raw=1",
+        "video_id": "Dan-Robinson_3-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:30.944",
+                "end": "00:04:31.371"
+            },
+            "seconds": {
+                "start": "210.94406666666666",
+                "end": "271.3711"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.427033333333355,
+        "alter_answers": [
+            "The tornado and funnel clouds are in the distance, far from the camera crew"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there any hail?",
+        "answer": "No",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Is there any hail?",
+        "original_answer": "No",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    60.427
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:00.427"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/8owtb65oudujcst/Dan-Robinson_3-clip-3.mp4?raw=1",
+        "video_id": "Dan-Robinson_3-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:30.944",
+                "end": "00:04:31.371"
+            },
+            "seconds": {
+                "start": "210.94406666666666",
+                "end": "271.3711"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.427033333333355,
+        "alter_answers": [
+            "There is no hail here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.689137786666668,
+                    13.052239200000006
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the funnel cloud ever fully form?",
+        "answer": "No.",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather ",
+        "confidence": "very_high",
+        "original_question": "Does the funnel cloud ever fully form?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    30.705
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:30.705"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/h0s9e0q1d0t0pmx/Natural-Disaster_11-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:31.331"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "31.3313"
+            },
+            "split-method": "auto"
+        },
+        "duration": 31.3313,
+        "alter_answers": [
+            "The funnel cloud does not fully form"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    14.512658159999999,
+                    19.776316559999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather phenomenon is ocurring?",
+        "answer": "Funnel cloud and a tornado.",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of weather phenomenon is ocurring?",
+        "original_answer": "Funnel cloud and a tornado. ",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    4.254
+                ]
+            },
+            {
+                "1": [
+                    50.71,
+                    55.931
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:04.254"
+                ]
+            },
+            {
+                "1": [
+                    "00:50.710",
+                    "00:55.931"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/8owtb65oudujcst/Dan-Robinson_3-clip-3.mp4?raw=1",
+        "video_id": "Dan-Robinson_3-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:30.944",
+                "end": "00:04:31.371"
+            },
+            "seconds": {
+                "start": "210.94406666666666",
+                "end": "271.3711"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.427033333333355,
+        "alter_answers": [
+            "There is a tornado occuring"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.683499493333336,
+                    14.889221013333339
+                ],
+                [
+                    29.246684133333343,
+                    39.30174248000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather event is happening?",
+        "answer": "A funnel cloud",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather ",
+        "confidence": "very_high",
+        "original_question": "What type of weather event is happening?",
+        "original_answer": "A funnel cloud",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    2.857
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:02.857"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/h0s9e0q1d0t0pmx/Natural-Disaster_11-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:31.331"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "31.3313"
+            },
+            "split-method": "auto"
+        },
+        "duration": 31.3313,
+        "alter_answers": [
+            "There is a water spout happening"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.479788319999999,
+                    16.31734104
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any boats nearby?",
+        "answer": "Yes",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather ",
+        "confidence": "very_high",
+        "original_question": "Are there any boats nearby?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    2.206
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:02.206"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/h0s9e0q1d0t0pmx/Natural-Disaster_11-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:31.331"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "31.3313"
+            },
+            "split-method": "auto"
+        },
+        "duration": 31.3313,
+        "alter_answers": [
+            "Yes there is one boat with people on it. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What type of precipitation?",
+        "answer": "Hail",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Clouds",
+        "confidence": "very_high",
+        "original_question": "What type of precipitation?",
+        "original_answer": "Hail",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    43.743,
+                    54.51
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:43.743",
+                    "00:54.510"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/reetzq1jb7prdh8/Tornado-Trackers_10-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_10-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:44.284",
+                "end": "00:05:44.636"
+            },
+            "seconds": {
+                "start": "284.284",
+                "end": "344.6359583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.3519583333333,
+        "alter_answers": [
+            "This is a tornado"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    26.023764433333316,
+                    36.93539849999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there properties on the river?",
+        "answer": "Yes",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Are there properties on the river?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    23.89,
+                    27.678
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:23.890",
+                    "00:27.678"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/3reu3lpv1yirx0c/Natural-Disaster_9-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:41.533"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "41.53333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 41.53333333333333,
+        "alter_answers": [
+            "Yes there are property on the water"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.702186666666666,
+                    19.803093333333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there any precipitation?",
+        "answer": "Yes",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Clouds",
+        "confidence": "very_high",
+        "original_question": "Is there any precipitation?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    22.016,
+                    27.086
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:22.016",
+                    "00:27.086"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/reetzq1jb7prdh8/Tornado-Trackers_10-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_10-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:44.284",
+                "end": "00:05:44.636"
+            },
+            "seconds": {
+                "start": "284.284",
+                "end": "344.6359583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.3519583333333,
+        "alter_answers": [
+            "There is precipitation at the end of the video"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    39.49432153333331,
+                    51.999247299999965
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the funnel cloud ever fully form into a tornado?",
+        "answer": "No",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Clouds",
+        "confidence": "very_high",
+        "original_question": "Does the funnel cloud ever fully form into a tornado?",
+        "original_answer": "No",
+        "question_type": [
+            "Motion",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    60.352
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:00.352"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/reetzq1jb7prdh8/Tornado-Trackers_10-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_10-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:44.284",
+                "end": "00:05:44.636"
+            },
+            "seconds": {
+                "start": "284.284",
+                "end": "344.6359583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.3519583333333,
+        "alter_answers": [
+            "yes the funnel cloud does form into a tornado"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    46.302022433333306,
+                    55.1375491333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the properties undamaged?",
+        "answer": "No",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Are the properties undamaged?",
+        "original_answer": "No",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    41.533
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:41.533"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/3reu3lpv1yirx0c/Natural-Disaster_9-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:41.533"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "41.53333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 41.53333333333333,
+        "alter_answers": [
+            "Yes there is a large amount of property damage. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.6313066666666667,
+                    9.237013333333332
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the clouds forming?",
+        "answer": "A funnel cloud",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Clouds",
+        "confidence": "very_high",
+        "original_question": "What are the clouds forming?",
+        "original_answer": "A funnel cloud",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.118
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.118"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/reetzq1jb7prdh8/Tornado-Trackers_10-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_10-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:44.284",
+                "end": "00:05:44.636"
+            },
+            "seconds": {
+                "start": "284.284",
+                "end": "344.6359583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.3519583333333,
+        "alter_answers": [
+            "the clouds are forming a tornado"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.933744166666653,
+                    33.217717866666646
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is flooding?",
+        "answer": "A river",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "What is flooding?",
+        "original_answer": "A river",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    3.788
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:03.788"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/3reu3lpv1yirx0c/Natural-Disaster_9-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:41.533"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "41.53333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 41.53333333333333,
+        "alter_answers": [
+            "The river is flooding into the city"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.68816,
+                    12.327093333333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the fires in forests?",
+        "answer": "Yes.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are the fires in forests?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.619,
+                    11.429
+                ]
+            },
+            {
+                "1": [
+                    27.247,
+                    29.851
+                ]
+            },
+            {
+                "2": [
+                    45.138,
+                    49.092
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.619",
+                    "00:11.429"
+                ]
+            },
+            {
+                "1": [
+                    "00:27.247",
+                    "00:29.851"
+                ]
+            },
+            {
+                "2": [
+                    "00:45.138",
+                    "00:49.092"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/dp27bugy7moem1z/Disaster-Compilations_5-clip-0.mp4?raw=1",
+        "video_id": "Disaster-Compilations_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.280"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.28"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.28,
+        "alter_answers": [
+            "Yes the fires are in the forest. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are the fires in cities?",
+        "answer": "No, they are in forests.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where are the fires in cities?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    60.28
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:00.280"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/dp27bugy7moem1z/Disaster-Compilations_5-clip-0.mp4?raw=1",
+        "video_id": "Disaster-Compilations_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.280"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.28"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.28,
+        "alter_answers": [
+            "No, the fires are along the highways. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.8224,
+                    17.60176
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the people doing?",
+        "answer": "Attempting to put out fires or get away from them.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What are the people doing?",
+        "original_answer": "Attempting to put out fires or get away from them. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.594
+                ]
+            },
+            {
+                "1": [
+                    20.399,
+                    25.221
+                ]
+            },
+            {
+                "2": [
+                    37.808,
+                    44.221
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.594"
+                ]
+            },
+            {
+                "1": [
+                    "00:20.399",
+                    "00:25.221"
+                ]
+            },
+            {
+                "2": [
+                    "00:37.808",
+                    "00:44.221"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/dp27bugy7moem1z/Disaster-Compilations_5-clip-0.mp4?raw=1",
+        "video_id": "Disaster-Compilations_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.280"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.28"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.28,
+        "alter_answers": [
+            "The people are putting out the fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.776768,
+                    21.94192
+                ]
+            ]
+        ]
+    }
+]

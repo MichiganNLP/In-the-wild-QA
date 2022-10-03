@@ -1,0 +1,1039 @@
+[
+    {
+        "question": "What is one way that can help to protect further injury from a broken bone?",
+        "answer": "By using a SAM splint that the Combat Medic carries in their field medical bag.",
+        "assignment_id": "3X08E93BHVH45OW1GQVOL8MB6Q566R",
+        "objective": "How to protect further injury for a broken bone.",
+        "confidence": "very_high",
+        "original_question": "What is one way we can help to protect further injury from a broken bone?",
+        "original_answer": "By using a SAM splint that the Combat Medic carries in their field medical bag.",
+        "question_type": [
+            "Motion",
+            "Reasoning",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    19.072
+                ]
+            },
+            {
+                "1": [
+                    31.066,
+                    56.513
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:19.072"
+                ]
+            },
+            {
+                "1": [
+                    "00:31.066",
+                    "00:56.513"
+                ]
+            }
+        ],
+        "time_spent": 2113.0,
+        "video_link": "https://www.dropbox.com/s/vp0okfmj0bwk1my/MilitaryNotes_4-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:07.534"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "67.53413333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.53413333333333,
+        "alter_answers": [
+            "help support the bone"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    23.555905706666664,
+                    27.553926399999998
+                ],
+                [
+                    46.1933472,
+                    54.83771626666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man using to start a flame?",
+        "answer": "The man is using dry moss and twigs to start a fire.",
+        "assignment_id": "3FE2ERCCZX7240KAVIGR88ZJN09OPZ",
+        "objective": "Determine what he is using to start a fire.",
+        "confidence": "very_high",
+        "original_question": "What is the man using to start a flame?",
+        "original_answer": "The man is using dry moss and twigs to start a fire.",
+        "question_type": [
+            "Motion",
+            "Reasoning",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.917,
+                    10.638
+                ]
+            },
+            {
+                "1": [
+                    30.361,
+                    33.29
+                ]
+            },
+            {
+                "2": [
+                    52.236,
+                    55.642
+                ]
+            },
+            {
+                "3": [
+                    67.297,
+                    69.807
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.917",
+                    "00:10.638"
+                ]
+            },
+            {
+                "1": [
+                    "00:30.361",
+                    "00:33.290"
+                ]
+            },
+            {
+                "2": [
+                    "00:52.236",
+                    "00:55.642"
+                ]
+            },
+            {
+                "3": [
+                    "01:07.297",
+                    "01:09.807"
+                ]
+            }
+        ],
+        "time_spent": 2045.0,
+        "video_link": "https://www.dropbox.com/s/bw6popq80c8a540/BC-Bushcraft_7-clip-2.mp4?raw=1",
+        "video_id": "BC-Bushcraft_7-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:24.044",
+                "end": "00:03:38.752"
+            },
+            "seconds": {
+                "start": "144.0439",
+                "end": "218.75186666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.70796666666666,
+        "alter_answers": [
+            "He is going to be using dried moss and leaves as kindling, along with wood. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.518881706666667,
+                    25.04211042666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does combining the clay and reeds make the result hold its form?",
+        "answer": "Yes, the combing of clay (pliable solid) and reeds (a stiff solid) makes the clay hold its form.",
+        "assignment_id": "3FE2ERCCZX7240KAVIGR88ZJN09OPZ",
+        "objective": "Determine why the man is mixing clay and reeds",
+        "confidence": "very_high",
+        "original_question": "Does combining the clay and reeds make the result hold its form?",
+        "original_answer": "Yes, the combing of clay (pliable solid) and reeds (a stiff solid) makes the clay hold its form.",
+        "question_type": [
+            "Existence",
+            "Reasoning",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.883,
+                    18.819
+                ]
+            },
+            {
+                "1": [
+                    22.623,
+                    26.36
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.883",
+                    "00:18.819"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.623",
+                    "00:26.360"
+                ]
+            }
+        ],
+        "time_spent": 2045.0,
+        "video_link": "https://www.dropbox.com/s/ym268j80ljohnyj/Primitive-Technology_12-clip-3.mp4?raw=1",
+        "video_id": "Primitive-Technology_12-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:12.734",
+                "end": "00:04:36.151"
+            },
+            "seconds": {
+                "start": "192.73420833333333",
+                "end": "276.150875"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.41666666666666,
+        "alter_answers": [
+            "Yes mixing the two together will make it hold better when dry. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the human doing to the coconut?",
+        "answer": "Due to social isolation, the human is Humanizing a coconut.",
+        "assignment_id": "339ANSOTR51RXNCRKVYESUHYHPFIKO",
+        "objective": "Determine why the human is humanizing a coconut.",
+        "confidence": "very_high",
+        "original_question": "What is the human doing to the coconut?",
+        "original_answer": "Due to social isolation, the human is Humanizing a coconut.",
+        "question_type": [
+            "Motion",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    16.751,
+                    20.04
+                ]
+            },
+            {
+                "1": [
+                    20.914,
+                    23.431
+                ]
+            },
+            {
+                "2": [
+                    38.538,
+                    40.697
+                ]
+            },
+            {
+                "3": [
+                    53.08,
+                    56.883
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:16.751",
+                    "00:20.040"
+                ]
+            },
+            {
+                "1": [
+                    "00:20.914",
+                    "00:23.431"
+                ]
+            },
+            {
+                "2": [
+                    "00:38.538",
+                    "00:40.697"
+                ]
+            },
+            {
+                "3": [
+                    "00:53.080",
+                    "00:56.883"
+                ]
+            }
+        ],
+        "time_spent": 1175.0,
+        "video_link": "https://www.dropbox.com/s/b63zpwusw0ih69e/Chad-Zuber_7-clip-7.mp4?raw=1",
+        "video_id": "Chad-Zuber_7-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:45.965",
+                "end": "00:08:50.196"
+            },
+            "seconds": {
+                "start": "465.96519633537986",
+                "end": "530.1959878101816"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.23079147480172,
+        "alter_answers": [
+            "The human is carving a face onto the coconut. He has named the coconut Carl."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.225542002788435,
+                    12.640619762240979
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the funnel cloud ever develop into a full tornado?",
+        "answer": "No",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Weather Development",
+        "confidence": "very_high",
+        "original_question": "Does the funnel cloud ever develop into a full tornado?",
+        "original_answer": "No",
+        "question_type": [
+            "Existence",
+            "Motion",
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    69.069
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:09.069"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/1784lrenliolcd1/Skip-Talbot_6-clip-5.mp4?raw=1",
+        "video_id": "Skip-Talbot_6-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:41.434",
+                "end": "00:07:50.503"
+            },
+            "seconds": {
+                "start": "401.4343666666667",
+                "end": "470.5033666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.06900000000002,
+        "alter_answers": [
+            "Yes it becomes a full tornado. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What was the person doing when they crashed into the median?",
+        "answer": "They were drifting into the left lane.",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6PUZEKY",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What was the person doing when they crashed into the median?",
+        "original_answer": "They were drifting into the left lane. ",
+        "question_type": [
+            "Motion",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.761,
+                    15.052
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.761",
+                    "00:15.052"
+                ]
+            }
+        ],
+        "time_spent": 2348.0,
+        "video_link": "https://www.dropbox.com/s/07revy2lweb0so6/Skip-Talbot_3-clip-9.mp4?raw=1",
+        "video_id": "Skip-Talbot_3-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:13.213",
+                "end": "00:11:23.416"
+            },
+            "seconds": {
+                "start": "613.2126000000001",
+                "end": "683.4160666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.2034666666666,
+        "alter_answers": [
+            "The person attempted to cut east to get ahead of the line before the crash"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.8533715199999983,
+                    12.355810133333323
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Did the lightning appear with the rain or the hail?",
+        "answer": "The rain.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Precipitation",
+        "confidence": "very_high",
+        "original_question": "Did the lightning appear with the rain or the hail?",
+        "original_answer": "The rain. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.06,
+                    51.33
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.060",
+                    "00:51.330"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/ndqdau3pgbd25bl/Dan-Robinson_1-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_1-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.425",
+                "end": "00:03:07.120"
+            },
+            "seconds": {
+                "start": "125.42530000000001",
+                "end": "187.12026666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.69496666666667,
+        "alter_answers": [
+            "There does seem to be rain and hail"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is snow beneficial for plants during a frost?",
+        "answer": "Snow is beneficial to plants during a frost.",
+        "assignment_id": "392CY0QWG1Q6JLNOZ3BYLDS2KGC4IX",
+        "objective": "Frost dilemmas.",
+        "confidence": "very_high",
+        "original_question": "Is snow beneficial for plants during a frost?",
+        "original_answer": "Snow is beneficial to plants during a frost.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.879,
+                    71.571
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.879",
+                    "01:11.571"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/t689xy9w2y3zy87/RealAgriculture_11-clip-1.mp4?raw=1",
+        "video_id": "RealAgriculture_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:00.495",
+                "end": "00:03:44.766"
+            },
+            "seconds": {
+                "start": "120.495375",
+                "end": "224.7662083333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 104.27083333333331,
+        "alter_answers": [
+            "Yes it can insulate the plants. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What crop is the farmer planting in January?",
+        "answer": "The farmer is planting iceberg lettuce in January.",
+        "assignment_id": "39RP059MEHSC03YOZXJDLK5PBG1MBN",
+        "objective": "Winter planting.",
+        "confidence": "very_high",
+        "original_question": "What crop is the farmer planting in January?",
+        "original_answer": "The farmer is planting iceberg lettuce in January.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    56.392,
+                    69.664
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:56.392",
+                    "01:09.664"
+                ]
+            }
+        ],
+        "time_spent": 2526.0,
+        "video_link": "https://www.dropbox.com/s/jcnde9to28xg2i6/Welker-Farms-Inc_11-manual.mp4?raw=1",
+        "video_id": "Welker-Farms-Inc_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:40",
+                "end": "1:50"
+            },
+            "split-method": "manual"
+        },
+        "duration": 70.0,
+        "alter_answers": [
+            "The farmer is planting lettuce in january"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    52.584,
+                    68.656
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What was the temperature mentioned by the farmer in the video?",
+        "answer": "The farmer stated it was 91 degree heat index while they were setting posts.",
+        "assignment_id": "3ERMJ6L4DYRPYRVYMG7XGIJTSPUM7J",
+        "objective": "Working conditions on a farm.",
+        "confidence": "high",
+        "original_question": "What was the temperature mentioned by the farmer in the video?",
+        "original_answer": "The farmer stated it was 91 degree heat index while they were setting posts.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    25.263,
+                    39.546
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:25.263",
+                    "00:39.546"
+                ]
+            }
+        ],
+        "time_spent": 2453.0,
+        "video_link": "https://www.dropbox.com/s/p4d419fqskfv706/How-Farms-Work_1-clip-8.mp4?raw=1",
+        "video_id": "How-Farms-Work_1-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:20.633",
+                "end": "00:09:21.361"
+            },
+            "seconds": {
+                "start": "500.63346666666666",
+                "end": "561.3608"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.72733333333339,
+        "alter_answers": [
+            "It is 91 degrees."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    30.849485333333355,
+                    39.83713066666669
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is irrigation a replacement for natural rainfall?",
+        "answer": "No, irrigation is a supplement for natural rain, not a replacement.",
+        "assignment_id": "3GGAI1SQEVXVA8QUDXF8W4B7T27MC2",
+        "objective": "Agricultural irrigation.",
+        "confidence": "very_high",
+        "original_question": "Is irrigation a replacement for natural rainfall?",
+        "original_answer": "Irrigation is a supplement for natural rain, not a replacement.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    65.021,
+                    105.643
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:05.021",
+                    "01:45.643"
+                ]
+            }
+        ],
+        "time_spent": 2350.0,
+        "video_link": "https://www.dropbox.com/s/6fat2d1q82l2as3/Peterson-Farm-Bros_1-clip-2.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_1-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:06.753",
+                "end": "00:05:48.982"
+            },
+            "seconds": {
+                "start": "186.75323333333333",
+                "end": "348.98196666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 162.22873333333334,
+        "alter_answers": [
+            "Yes irrigation is a replacement for natural rainfall"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    41.919904693333336,
+                    65.28084229333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why do they wait to harvest later in the season?",
+        "answer": "The farmer waits to harvest some crops to utilize the later seasonal rains and evade the higher temperatures.",
+        "assignment_id": "3HSYG7LRBJXI3I2FKYJQ5AWB959KKU",
+        "objective": "Planting and harvesting time.",
+        "confidence": "high",
+        "original_question": "Why do they wait to harvest later in the season?",
+        "original_answer": "The farmer waits to harvest some crops to utilize the later seasonal rains and evade the higher temperatures.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    26.563,
+                    42.8
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:26.563",
+                    "00:42.800"
+                ]
+            }
+        ],
+        "time_spent": 2034.0,
+        "video_link": "https://www.dropbox.com/s/ye9byb9pe8tnp7o/Peterson-Farm-Bros_3-clip-2.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_3-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:41.667",
+                "end": "00:03:48.208"
+            },
+            "seconds": {
+                "start": "161.66666666666666",
+                "end": "228.20833333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.54166666666669,
+        "alter_answers": [
+            "they wait to harvest later in the season is because the rain helps it"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    25.072900000000008,
+                    38.75386666666668
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What season is the farmer working in the video?",
+        "answer": "The season the farmer is working is the winter.",
+        "assignment_id": "3HSYG7LRBJXI3I2FKYJQ5AWB959KKU",
+        "objective": "Seasons on the farm.",
+        "confidence": "very_high",
+        "original_question": "What season is the farmer working in the video?",
+        "original_answer": "The season the farmer is working is the winter.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    19.769
+                ]
+            },
+            {
+                "1": [
+                    36.309,
+                    43.795
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:19.769"
+                ]
+            },
+            {
+                "1": [
+                    "00:36.309",
+                    "00:43.795"
+                ]
+            }
+        ],
+        "time_spent": 2034.0,
+        "video_link": "https://www.dropbox.com/s/38j2u1tw9ikltkg/Welker-Farms-Inc_8-clip-5.mp4?raw=1",
+        "video_id": "Welker-Farms-Inc_8-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:34.300",
+                "end": "00:06:35.467"
+            },
+            "seconds": {
+                "start": "334.3",
+                "end": "395.46666666666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.16666666666663,
+        "alter_answers": [
+            "The farmer is working in the winter season"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.939733333333326,
+                    18.105333333333324
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When could they start combining in the video?",
+        "answer": "The farmer in the video states they could be combining the week of June 30th.",
+        "assignment_id": "3L70J4KAZGL4DZNJGQKE7JYPKL0ADC",
+        "objective": "Soy bean yield.",
+        "confidence": "very_high",
+        "original_question": "When could they start combining in the video?",
+        "original_answer": "The farmer in the video states they could be combining the week of June 30th.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    90.668,
+                    121.457
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:30.668",
+                    "02:01.457"
+                ]
+            }
+        ],
+        "time_spent": 4334.0,
+        "video_link": "https://www.dropbox.com/s/mqlb12bae8b1nxs/RealAgriculture_1-clip-0.mp4?raw=1",
+        "video_id": "RealAgriculture_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:02:31.518"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "151.51803333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 151.51803333333334,
+        "alter_answers": [
+            "They could be combining the weeds around june 30th"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    70.54679632,
+                    100.97161741333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why might the herbicide not be working to prevent the growth of weeds?",
+        "answer": "A lack of moisture in the soil prevents the herbicide from activating.",
+        "assignment_id": "3ND9UOO81K1KIOEEUCEU8L3LLB6LWB",
+        "objective": "How to assess the growth of weeds on an agricultural field.",
+        "confidence": "very_high",
+        "original_question": "Why might the herbicide not be working to prevent the growth of weeds?",
+        "original_answer": "A lack of moisture in the soil prevents the herbicide from activating. ",
+        "question_type": [
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    31.85,
+                    42.0
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:31.850",
+                    "00:42.000"
+                ]
+            }
+        ],
+        "time_spent": 2193.0,
+        "video_link": "https://www.dropbox.com/s/xdi2808ircfyyf1/RealAgriculture_5-clip-0.mp4?raw=1",
+        "video_id": "RealAgriculture_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:49.376"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "109.37593333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 109.37593333333334,
+        "alter_answers": [
+            "It may not be working due to a lack of moisture. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What weather condition is the farmer anticipating in the video?",
+        "answer": "The farmer is anticipating rain in the video due to the dark sky.",
+        "assignment_id": "3OUYGIZWR7XH1JSRTXEGI731PHA0P6",
+        "objective": "Anticipating the weather.",
+        "confidence": "very_high",
+        "original_question": "What weather condition is the farmer anticipating in the video?",
+        "original_answer": "The farmer is anticipating rain in the video due to the dark sky.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    37.154,
+                    47.474
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:37.154",
+                    "00:47.474"
+                ]
+            }
+        ],
+        "time_spent": 2235.0,
+        "video_link": "https://www.dropbox.com/s/4grv67a5gd2jzow/Olly_s-Farm_11-clip-1.mp4?raw=1",
+        "video_id": "Olly's-Farm_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.696",
+                "end": "00:02:05.626"
+            },
+            "seconds": {
+                "start": "62.69596666666667",
+                "end": "125.6255"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.92953333333333,
+        "alter_answers": [
+            "The farmer is anticipating rain"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    36.2474112,
+                    47.67541445333334
+                ]
+            ]
+        ]
+    }
+]

@@ -1,0 +1,5043 @@
+[
+    {
+        "question": "Where are the people?",
+        "answer": "They are on a road in a snowy forest.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where are they?",
+        "original_answer": "They are on a road in a snowy forest. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.005
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.005"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/4oubmsef0kr10bb/TreadmillTV_7-clip-15.mp4?raw=1",
+        "video_id": "TreadmillTV_7-clip-15",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:30:20.886",
+                "end": "00:32:21.439"
+            },
+            "seconds": {
+                "start": "1820.8857333333333",
+                "end": "1941.4395"
+            },
+            "split-method": "auto"
+        },
+        "duration": 120.55376666666666,
+        "alter_answers": [
+            "The people are walking down a snowy path.",
+            "The people seem to be on a forest trail, or maybe a park trail based on the tiny little hut and building, also based on the trees, the little wood things on the side of the path. There is also more than one person in the video so it makes me think that it's public rather than like a private estate. ",
+            "The people are on the path."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    80.72280215999999,
+                    86.50938296
+                ]
+            ],
+            [
+                [
+                    100.39717687999999,
+                    105.31577056
+                ],
+                [
+                    83.42320653333334,
+                    90.17421746666666
+                ],
+                [
+                    34.14082672,
+                    44.74955818666666
+                ]
+            ],
+            [
+                [
+                    80.24058709333333,
+                    83.9054216
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kinds of major features are present?",
+        "answer": "There is a lake, a river, and several small trails. ",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Topography",
+        "confidence": "very_high",
+        "original_question": "What kinds of major features are present?",
+        "original_answer": "There is a lake, a river, and several small trails. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    16.848,
+                    21.096
+                ]
+            },
+            {
+                "1": [
+                    58.68,
+                    63.792
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:16.848",
+                    "00:21.096"
+                ]
+            },
+            {
+                "1": [
+                    "00:58.680",
+                    "01:03.792"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/3e4d0vw7fvlvxm2/TreadmillTV_12-manual.mp4?raw=1",
+        "video_id": "TreadmillTV_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:30"
+            },
+            "split-method": "manual"
+        },
+        "duration": 90.0,
+        "alter_answers": [
+            "There are big trees and shrubs. ",
+            "The major features that are present are a lake and a mountain range in the distance. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    16.992
+                ],
+                [
+                    31.896,
+                    46.224
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of environment is this?",
+        "answer": "Savannah.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "Topography",
+        "confidence": "very_high",
+        "original_question": "What kind of environment is this?",
+        "original_answer": "Savannah. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    22.68,
+                    29.088
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:22.680",
+                    "00:29.088"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/3e4d0vw7fvlvxm2/TreadmillTV_12-manual.mp4?raw=1",
+        "video_id": "TreadmillTV_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:30"
+            },
+            "split-method": "manual"
+        },
+        "duration": 90.0,
+        "alter_answers": [
+            "The environment is relatively arid with some shrubs and trees and lots of brownish grass.",
+            "This is a natural environment with a trail.",
+            "The environment is a dry grassland.",
+            "The environment looks very dry, except for the water down below. You can tell it's more dry because of the dead grass, dead shrubs, few are living though. It looks more vegetative on the other side of the water."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.408,
+                    13.68
+                ],
+                [
+                    57.74399999999999,
+                    66.816
+                ]
+            ],
+            [
+                [
+                    15.047999999999998,
+                    18.576
+                ],
+                [
+                    45.936,
+                    63.288
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What sort of environment is it based on the landscape and plant life?",
+        "answer": "Temperate mountain environment.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What sort of environment is it based on the landscape and plant life?",
+        "original_answer": "Temperate mountain environment. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.47,
+                    20.278
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.470",
+                    "00:20.278"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/zs3vvn5ynae4p2f/Virtual-Running-Videos_10-clip-25.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_10-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:25:19.551",
+                "end": "00:26:20.045"
+            },
+            "seconds": {
+                "start": "1519.5513666666666",
+                "end": "1580.0451333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.493766666666716,
+        "alter_answers": [
+            "On the forest",
+            "The environment, based on the landscape and plant life, is a deciduous forest."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    15.002454133333345,
+                    23.471581466666684
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any structures nearby?",
+        "answer": "Yes, there are two on top of a ridge. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there any structures nearby? If so, how many and where?",
+        "original_answer": "Yes, there are two on top of a ridge. ",
+        "question_type": [
+            "Entity",
+            "Location",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.906,
+                    19.336
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.906",
+                    "00:19.336"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/gc3wgfu6ifunhy9/The-Flying-Dutchman_6-clip-7.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:04.275",
+                "end": "00:09:07.714"
+            },
+            "seconds": {
+                "start": "484.2754583333333",
+                "end": "547.7138333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.43837499999995,
+        "alter_answers": [
+            "There is a large structure atop a cliff.",
+            "Yes, there is a house in the distance.",
+            "There are structures such as buildings nearby."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.881372499999994,
+                    15.93571979999999
+                ]
+            ],
+            [
+                [
+                    52.628475899999955,
+                    63.43837499999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Do people come vacation here?",
+        "answer": "Judging by how beautiful the scenery is and it being a tropical area, people probably take vacation trips here.",
+        "assignment_id": "3B4YI393V9VEFKSVUG1UNIEV64NSS9",
+        "objective": "I feel like this area would be nice to see in person",
+        "confidence": "moderate",
+        "original_question": "Do people come vacation here?",
+        "original_answer": "Judging by how beautiful the scenery is and it being a tropical area, people probably take vacation trips here.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.958,
+                    5.338
+                ]
+            },
+            {
+                "1": [
+                    22.349,
+                    26.573
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.958",
+                    "00:05.338"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.349",
+                    "00:26.573"
+                ]
+            }
+        ],
+        "time_spent": 1132.0,
+        "video_link": "https://www.dropbox.com/s/0s03ul8axnoagos/Primal-Earth-Sounds_2-manual.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_2-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "5:55",
+                "end": "6:43"
+            },
+            "split-method": "manual"
+        },
+        "duration": 48.0,
+        "alter_answers": [
+            "I cannot say with certainty if people vacation here, but it appears there are some great islands and fishing spots. I can see what looks like it could be a resort of some kind. ",
+            "A very broad question, but it seems like people would vacation or even live here. There are people boating, surfing, and swimming which are activities people do when on vacation.",
+            "People do come to vacation here."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.854400000000002,
+                    25.9968
+                ],
+                [
+                    38.6688,
+                    40.9344
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the white mist clouds, fog, or smoke?",
+        "answer": "Judging by the elevation of the mountains, I believe they are clouds",
+        "assignment_id": "3B4YI393V9VEFKSVUG1UNIEV64NSS9",
+        "objective": "I'm curious about the weather/climate here.",
+        "confidence": "moderate",
+        "original_question": "Is that clouds, fog, or smoke?",
+        "original_answer": "Judging by the elevation of the mountains, I believe they are clouds",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.203,
+                    10.599
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.203",
+                    "00:10.599"
+                ]
+            }
+        ],
+        "time_spent": 1132.0,
+        "video_link": "https://www.dropbox.com/s/6123xp6c5l3guio/Nick-Gaillard_6-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.958",
+                "end": "00:01:28.000"
+            },
+            "seconds": {
+                "start": "64.95833333333333",
+                "end": "88.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 23.04166666666667,
+        "alter_answers": [
+            "The white mist clouds look somewhat like smoke and a little bit like fog. ",
+            "It is clouds. It is cloud because of the shape and look, and it is not smoke because of the color and the fact that there is no source for the cloud"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.276600000000004,
+                    14.119933333333336
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the road at?",
+        "answer": "It is in a tundra environment",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "roads",
+        "confidence": "very_high",
+        "original_question": "Where is the road at?",
+        "original_answer": "It is in a tundra environment ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    12.495
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:12.495"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/ds6rnnub95z7s5c/Nick-Gaillard_12-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.746",
+                "end": "00:02:06.498"
+            },
+            "seconds": {
+                "start": "62.746187124211765",
+                "end": "126.49765361489955"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.75146649068778,
+        "alter_answers": [
+            "The road zig-zags across the landscape.",
+            "The road winds through a mountainous landscape.",
+            "The road is in an elevated area."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.885158380994281,
+                    14.178326147528962
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any towns?",
+        "answer": "Yes, there is one along the ocean. ",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "topography",
+        "confidence": "very_high",
+        "original_question": "Are there any towns? If so, where?",
+        "original_answer": "Yes, there is one along the ocean. ",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.795,
+                    3.861
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.795",
+                    "00:03.861"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/pgkvfz88xs9o0pk/TK-Hinshaw_1-clip-1.mp4?raw=1",
+        "video_id": "TK-Hinshaw_1-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:53.380",
+                "end": "00:03:04.351"
+            },
+            "seconds": {
+                "start": "113.38004469669885",
+                "end": "184.3510144053152"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.97096970861634,
+        "alter_answers": [
+            "Small structures are visible in the far distance, suggesting there is a town.",
+            "Yes there is a town along the coast of the water.",
+            "There are a few towns."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    6.24544533435824
+                ]
+            ],
+            [
+                [
+                    3.974374303682515,
+                    20.382862500314616
+                ],
+                [
+                    37.813332660750795,
+                    45.1943135104469
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What sorts of terrain are the vegetation present in?",
+        "answer": "Forest, plateaus, mountainous, valleys, and arboreal. ",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What sorts of terrain are the vegetation present in?",
+        "original_answer": "Forest, plateaus, mountainous, valleys, and arboreal. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.621
+                ]
+            },
+            {
+                "1": [
+                    22.118,
+                    30.917
+                ]
+            },
+            {
+                "2": [
+                    59.389,
+                    69.41
+                ]
+            },
+            {
+                "3": [
+                    90.917,
+                    100.326
+                ]
+            },
+            {
+                "4": [
+                    121.467,
+                    133.32
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.621"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.118",
+                    "00:30.917"
+                ]
+            },
+            {
+                "2": [
+                    "00:59.389",
+                    "01:09.410"
+                ]
+            },
+            {
+                "3": [
+                    "01:30.917",
+                    "01:40.326"
+                ]
+            },
+            {
+                "4": [
+                    "02:01.467",
+                    "02:13.320"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/fdn7bg0btcrsman/Primal-Earth-Sounds_11-clip-7.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:29.917",
+                "end": "00:34:02.667"
+            },
+            "seconds": {
+                "start": "1889.9166666666667",
+                "end": "2042.6666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 152.75,
+        "alter_answers": [
+            "Forest terrain",
+            "The vegetation is present in mountains.",
+            "The terrains in which the vegetation is present in are forests, tundra, mountains, and valleys."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the environment like?",
+        "answer": "It is a sunny day in a snowy canyon.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What is the environment like?",
+        "original_answer": "It is a sunny day in a snowy canyon. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    51.345,
+                    56.739
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:51.345",
+                    "00:56.739"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/3hwxyoh8rf9tl46/Norwegian-Explorer_7-clip-0.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.3,
+        "alter_answers": [
+            "It is cold, not frigid. It's a sunny day and the rays keep the skiiers warm. ",
+            "It is a canyon. There is snow and there is incline.",
+            "The environment is very polar."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    4.854959999999999
+                ],
+                [
+                    18.537119999999998,
+                    22.3132
+                ],
+                [
+                    47.56879999999999,
+                    61.3
+                ]
+            ],
+            [
+                [
+                    47.764959999999995,
+                    61.3
+                ],
+                [
+                    0.0,
+                    3.8741600000000003
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of environment is this?",
+        "answer": "It is a prairie and temperate forest environment",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "Landscape",
+        "confidence": "very_high",
+        "original_question": "What type of environment is this?",
+        "original_answer": "It is a prairie and temperate forest environment",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    20.949,
+                    26.09
+                ]
+            },
+            {
+                "1": [
+                    43.772,
+                    50.498
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:20.949",
+                    "00:26.090"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.772",
+                    "00:50.498"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/bh085q5yeerbu1r/Virtual-Running-Videos_1-clip-0.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.06006006006006"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06006006006006,
+        "alter_answers": [
+            "This seems to be some type of park or other nature area with many trails for walking, or riding bikes. There are plants with wire guards around them, meaning someone is taking care of the area, and encouraging new plant growth. ",
+            "This is a forest environment.",
+            "This seems to be a swamp or forest type of environment. Lots of vegetation, even a trail, and sounded like running water at the beginning and end. You do get a glimpse of a small stream, but it's very hard to see."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.73873873873874,
+                    28.34834834834835
+                ]
+            ],
+            [
+                [
+                    32.768768768768766,
+                    44.25225225225226
+                ]
+            ],
+            [
+                [
+                    39.87987987987988,
+                    46.46246246246246
+                ],
+                [
+                    57.32132132132132,
+                    58.85885885885886
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the rivers located?",
+        "answer": "In valleys.",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Where are the rivers located?",
+        "original_answer": "In valleys.  ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    36.632,
+                    42.154
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:36.632",
+                    "00:42.154"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/r6imsp6nqrjdq2q/Norwegian-Explorer_11-clip-54.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_11-clip-54",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:25.000",
+                "end": "00:59:41.700"
+            },
+            "seconds": {
+                "start": "3505.0",
+                "end": "3581.7"
+            },
+            "split-method": "auto"
+        },
+        "duration": 76.6999999999998,
+        "alter_answers": [
+            "ON a mountain",
+            "The rivers are located between what seems to be two different valleys based on the man stating that it was a valley. The first river you can see the higher elevation of ground where you see the bases of the trees look slanted. The second river looks further from the valley as you can see the valley looks distant from where the men are. Lastly, the second river seemed to be more plateaued than the first.",
+            "The rivers are located in the mountains near the bases."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    27.550639999999937,
+                    32.45943999999992
+                ],
+                [
+                    15.401359999999961,
+                    26.99839999999994
+                ],
+                [
+                    63.139439999999844,
+                    76.69999999999982
+                ]
+            ],
+            [
+                [
+                    35.28199999999992,
+                    42.1543199999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of environment is it?",
+        "answer": "Mountainous, temperate forest. ",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What type of environment is it?",
+        "original_answer": "Mountainous, temperate forest. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    9.449
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:09.449"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/r6imsp6nqrjdq2q/Norwegian-Explorer_11-clip-54.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_11-clip-54",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:25.000",
+                "end": "00:59:41.700"
+            },
+            "seconds": {
+                "start": "3505.0",
+                "end": "3581.7"
+            },
+            "split-method": "auto"
+        },
+        "duration": 76.6999999999998,
+        "alter_answers": [
+            "It is a varied environment with rocky areas, greenery, and a river.",
+            "It's environment type is an intermountain forest."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.18407999999999955,
+                    5.154239999999987
+                ],
+                [
+                    59.51919999999985,
+                    67.43463999999985
+                ]
+            ],
+            [
+                [
+                    40.31351999999991,
+                    49.08799999999989
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of environment is this?",
+        "answer": "Arboreal mountain environment.",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "Topography",
+        "confidence": "very_high",
+        "original_question": "What kind of environment is this?",
+        "original_answer": "Arboreal mountain environment. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.705,
+                    55.55
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.705",
+                    "00:55.550"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/8ysb4k9ur0jm46s/Nick-Gaillard_9-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.395"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.394666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.39466666666666,
+        "alter_answers": [
+            "The environment is hilly and snowy.",
+            "The environment is a tundra.",
+            "It looks to be a mountain based on the uphill slopes and the background showing high peaks. Also, there is water and snow on the mountain."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    37.4261888,
+                    52.701181866666666
+                ]
+            ],
+            [
+                [
+                    33.4478144,
+                    39.83285973333333
+                ],
+                [
+                    48.9192704,
+                    59.037111466666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there any signs that human frequent the area?",
+        "answer": "Yes, there is a hiking trail. ",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "Topography",
+        "confidence": "very_high",
+        "original_question": "Is there any signs that human frequent the area?",
+        "original_answer": "Yes, there is a hiking trail. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.067,
+                    53.192
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.067",
+                    "00:53.192"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/8ysb4k9ur0jm46s/Nick-Gaillard_9-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.395"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.394666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.39466666666666,
+        "alter_answers": [
+            "There are no clear paths or structures to suggest humans frequent the area.",
+            "No, there isn't a sign that human frequent the area. The aren't any people other than the group"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    30.942912,
+                    38.16292479999999
+                ],
+                [
+                    56.53220906666666,
+                    59.675616
+                ]
+            ],
+            [
+                [
+                    53.33968639999999,
+                    56.92513493333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of environments are they in?",
+        "answer": "Snowy mountains, a cliff face, racetrack, and on top of a building. ",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What kind of environments are they in?",
+        "original_answer": "Snowy mountains, a cliff face, racetrack, and on top of a building. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.342,
+                    13.879
+                ]
+            },
+            {
+                "1": [
+                    20.967,
+                    25.428
+                ]
+            },
+            {
+                "2": [
+                    28.849,
+                    31.426
+                ]
+            },
+            {
+                "3": [
+                    56.656,
+                    59.482
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.342",
+                    "00:13.879"
+                ]
+            },
+            {
+                "1": [
+                    "00:20.967",
+                    "00:25.428"
+                ]
+            },
+            {
+                "2": [
+                    "00:28.849",
+                    "00:31.426"
+                ]
+            },
+            {
+                "3": [
+                    "00:56.656",
+                    "00:59.482"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/zdjda8vochay0aw/Nick-Gaillard_5-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.960"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.96,
+        "alter_answers": [
+            "They are in and around the Los Angeles, California area.",
+            "This video depicts many environments that include; Hollywood, a rainforest, snow-covered mountains, race track, and a bustling city.",
+            "They are in several environments: forest, mountain, desert, and semi-arid."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.096864,
+                    7.385632
+                ],
+                [
+                    53.533440000000006,
+                    55.714432
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the islands inhabited?",
+        "answer": "No.",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "Topography ",
+        "confidence": "very_high",
+        "original_question": "Are the islands inhabited?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.656
+                ]
+            },
+            {
+                "1": [
+                    33.823,
+                    38.472
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.656"
+                ]
+            },
+            {
+                "1": [
+                    "00:33.823",
+                    "00:38.472"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/vi8cpvegr791wem/Primal-Earth-Sounds_3-clip-48.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_3-clip-48",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:39.250",
+                "end": "00:59:46.042"
+            },
+            "seconds": {
+                "start": "3519.25",
+                "end": "3586.0416666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.79166666666653,
+        "alter_answers": [
+            "The islands appear to be uninhabited.",
+            "The islands are not inhabited as depicted in this video.",
+            "The islands do not appear inhabited."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What sort of environment is this?",
+        "answer": "Tropical",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "Topography ",
+        "confidence": "very_high",
+        "original_question": "What sort of environment is this?",
+        "original_answer": "Tropical",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.824
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.824"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/vi8cpvegr791wem/Primal-Earth-Sounds_3-clip-48.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_3-clip-48",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:39.250",
+                "end": "00:59:46.042"
+            },
+            "seconds": {
+                "start": "3519.25",
+                "end": "3586.0416666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.79166666666653,
+        "alter_answers": [
+            "The environment is tropical. ",
+            "This seems to be an island since it is surrounded by water, very coastal. Very mountainous and green. There are lots of trees, except for palm trees which kind of indicates that it may not have a continuous warm climate.",
+            "This is a tropical environment."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.4426999999999968,
+                    10.953833333333307
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    8.923366666666647
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of environment is this?",
+        "answer": "Temperate rainforest.",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "Wildlife. ",
+        "confidence": "very_high",
+        "original_question": "What type of environment is this?",
+        "original_answer": "Temperate rainforest. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    36.559,
+                    43.128
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:36.559",
+                    "00:43.128"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/28hl6e4g3wnpwtl/The-Flying-Dutchman_4-clip-9.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_4-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:07.540",
+                "end": "00:11:18.945"
+            },
+            "seconds": {
+                "start": "607.5402666666666",
+                "end": "678.9449333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.40466666666669,
+        "alter_answers": [
+            "This is a lush environment with lots of greenery and some swamp-like water.",
+            "The environment type is a boreal forest."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    11.367622933333337
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there different climates/environments?",
+        "answer": "Yes. There is rainforest, tropical, tundra, and temperate. ",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Topography. ",
+        "confidence": "very_high",
+        "original_question": "Are there different climates/environments? If so, what are they?",
+        "original_answer": "Yes. There is rainforest, tropical, tundra, and temperate. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.353,
+                    13.946
+                ]
+            },
+            {
+                "1": [
+                    40.094,
+                    48.229
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.353",
+                    "00:13.946"
+                ]
+            },
+            {
+                "1": [
+                    "00:40.094",
+                    "00:48.229"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/mmnsaqbi73hui3j/Primal-Earth-Sounds_5-clip-20.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_5-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:44:24.667",
+                "end": "00:45:55.458"
+            },
+            "seconds": {
+                "start": "2664.6666666666665",
+                "end": "2755.4583333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 90.79166666666694,
+        "alter_answers": [
+            "Yes there seems to be several different envirnoments. A tropical environment, as well as a mountain terrain. ",
+            "Yes there are different climates and environments. One is of a forest and a coastal region. Second is a mountain range with lots of rocks. Third is a city with lots of vegetation and a river. Fourth seems to be a lot of valleys. Fifth is an icy or volcanic type or range, it's hard to tell.",
+            "There are different climates/environments."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.839233333333372,
+                    17.795166666666727
+                ],
+                [
+                    23.82373333333341,
+                    45.68636666666682
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    18.52150000000006
+                ],
+                [
+                    46.84850000000016,
+                    61.66570000000021
+                ],
+                [
+                    62.68256666666688,
+                    66.38686666666689
+                ],
+                [
+                    70.38170000000024,
+                    87.30526666666695
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What human features are there and where are they?",
+        "answer": "There are houses, a bridge, and a dam. They are in a valley within the temperate environment. ",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Topography. ",
+        "confidence": "very_high",
+        "original_question": "What is it and where are they?",
+        "original_answer": "There are houses, a bridge, and a dam. They are in a valley within the temperate environment. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.1,
+                    55.782
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.100",
+                    "00:55.782"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/mmnsaqbi73hui3j/Primal-Earth-Sounds_5-clip-20.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_5-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:44:24.667",
+                "end": "00:45:55.458"
+            },
+            "seconds": {
+                "start": "2664.6666666666665",
+                "end": "2755.4583333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 90.79166666666694,
+        "alter_answers": [
+            "There is a farm or ranch of some kind, with several buildings and a house. It looks like it could also be a small resort of some kind, or maybe a vacation home. ",
+            "The only human features there are in this video is what is man made which is houses, bridges, and a dam. ",
+            "There are human features such as coastal towns, mountainous villages, and a dam in the mountains."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    45.25056666666682,
+                    61.59306666666687
+                ]
+            ],
+            [
+                [
+                    27.23750000000009,
+                    43.87053333333348
+                ],
+                [
+                    45.97690000000015,
+                    61.447800000000214
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of environment is it located in?",
+        "answer": "Savannah/grassland.",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What type of environment is it located in?",
+        "original_answer": "Savannah/grassland. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.338
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.338"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/7vvm4korgwg9366/Virtual-Running-Videos_6-manual.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_6-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "4:50",
+                "end": "5:47"
+            },
+            "split-method": "manual"
+        },
+        "duration": 57.0,
+        "alter_answers": [
+            "It is a mountainous environment.",
+            "It is located in a temperate environment. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Except for the grassland and the river, what other types of features are nearby?",
+        "answer": "Hills and a dirt road.",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What other types of features are nearby?",
+        "original_answer": "Hills and a dirt road. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.062
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.062"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/7vvm4korgwg9366/Virtual-Running-Videos_6-manual.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_6-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "4:50",
+                "end": "5:47"
+            },
+            "split-method": "manual"
+        },
+        "duration": 57.0,
+        "alter_answers": [
+            "There are dirt paths.",
+            "Except for the grassland and the river, there are rolling hills features nearby.",
+            "There are quite big hills nearby. One is across from the river and the is on the other side of the trail."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    9.6672
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    11.080800000000002
+                ],
+                [
+                    17.692800000000002,
+                    27.8616
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the most prominent type of vegetation?",
+        "answer": "Grasses.",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What is the most prominent type of vegetation? What seems to be the environment?",
+        "original_answer": "Grasses. Savannah/grassland environment. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    16.186
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:16.186"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/47iq9fga59x2z07/Virtual-Running-Videos_5-clip-20.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_5-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:24:53.993",
+                "end": "00:26:55.147"
+            },
+            "seconds": {
+                "start": "1493.9925",
+                "end": "1615.1468666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 121.15436666666665,
+        "alter_answers": [
+            "The most common vegetation is brownish grass across the hills.",
+            "The most prominent type of vegetation is dry grass."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    5.815409599999999
+                ],
+                [
+                    70.85107362666665,
+                    80.05880549333331
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What seems to be the environment?",
+        "answer": "Savannah/grassland environment.",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What is the most prominent type of vegetation? What seems to be the environment?",
+        "original_answer": "Grasses. Savannah/grassland environment. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    16.186
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:16.186"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/47iq9fga59x2z07/Virtual-Running-Videos_5-clip-20.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_5-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:24:53.993",
+                "end": "00:26:55.147"
+            },
+            "seconds": {
+                "start": "1493.9925",
+                "end": "1615.1468666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 121.15436666666665,
+        "alter_answers": [
+            "There are hills and bluffs with lots of birds around. There's plenty of wildlife and great scenery. ",
+            "The environment seems to be a mountainous place. It's a place for hiking trail as shown by the yellow markers and a trail. There also is a lake down toward the base of the mountains. Lots of shrubs and tall grass.",
+            "The environment seems to be a semi-arid desert."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.300027066666666,
+                    28.689354026666663
+                ],
+                [
+                    40.514020213333325,
+                    47.49251173333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What sort of environment is this?",
+        "answer": "A rocky, dry region. ",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Landscape",
+        "confidence": "very_high",
+        "original_question": "What sort of environment is this?",
+        "original_answer": "A rocky, dry region. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.573,
+                    34.822
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.573",
+                    "00:34.822"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/osz568zrr9ylcp7/TK-Hinshaw_10-clip-0.mp4?raw=1",
+        "video_id": "TK-Hinshaw_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:51.451"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "51.45063333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 51.45063333333333,
+        "alter_answers": [
+            "mountain top and a lake",
+            "The environment seems to be very rocky and lots of cliffs which indicates maybe the mountains. Also, there seemed to be a small pond or swamp near the bottom of the cliff.",
+            "This environment is semi-arid and mountainous. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    8.931829946666666
+                ]
+            ],
+            [
+                [
+                    11.072176293333332,
+                    14.447337839999998
+                ],
+                [
+                    21.69158701333333,
+                    24.531661973333332
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of activities take place on this mountain?",
+        "answer": "Judging by the trails in the snow, it appears that people often hike this mountain.",
+        "assignment_id": "3IAS3U3I0FFMTZUVPF0T6BRR58T2BF",
+        "objective": "I want to know what people do on this mountain.",
+        "confidence": "moderate",
+        "original_question": "What kind of activities take place on this mountain?",
+        "original_answer": "Judging by the trails in the snow, it appears that people often hike this mountain.",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    26.512,
+                    35.577
+                ]
+            },
+            {
+                "1": [
+                    39.178,
+                    48.491
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:26.512",
+                    "00:35.577"
+                ]
+            },
+            {
+                "1": [
+                    "00:39.178",
+                    "00:48.491"
+                ]
+            }
+        ],
+        "time_spent": 2304.0,
+        "video_link": "https://www.dropbox.com/s/5yuo8u8k9kkprlu/Norwegian-Explorer_8-clip-1.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_8-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:36.530",
+                "end": "00:02:54.141"
+            },
+            "seconds": {
+                "start": "96.52976666666667",
+                "end": "174.14063333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.61086666666667,
+        "alter_answers": [
+            "hiking takes place on this mountain"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.27295872,
+                    51.906147626666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the location of this video?",
+        "answer": "Judging by the color of the rocks and levels of terrain, I am lead to believe this video takes place on the western side of the United States.",
+        "assignment_id": "3IAS3U3I0FFMTZUVPF0T6BRR58T2BF",
+        "objective": "I am wanting to know where this video takes place.",
+        "confidence": "moderate",
+        "original_question": "Where is the location of this video?",
+        "original_answer": "Judging by the color of the rocks and levels of terrain, I am lead to believe this video takes place on the western side of the United States. ",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    16.732,
+                    33.725
+                ]
+            },
+            {
+                "1": [
+                    50.98,
+                    76.731
+                ]
+            },
+            {
+                "2": [
+                    102.482,
+                    127.711
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:16.732",
+                    "00:33.725"
+                ]
+            },
+            {
+                "1": [
+                    "00:50.980",
+                    "01:16.731"
+                ]
+            },
+            {
+                "2": [
+                    "01:42.482",
+                    "02:07.711"
+                ]
+            }
+        ],
+        "time_spent": 2304.0,
+        "video_link": "https://www.dropbox.com/s/8a8g1yd38qnkuds/TreadmillTV_5-clip-7.mp4?raw=1",
+        "video_id": "TreadmillTV_5-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:02:52.168",
+                "end": "01:05:35.565"
+            },
+            "seconds": {
+                "start": "3772.1684",
+                "end": "3935.564966666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 163.3965666666668,
+        "alter_answers": [
+            "This is hoover damn"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    133.46231565333343,
+                    142.87395789333343
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of location is shown in the video?",
+        "answer": "Judging by all the people shown on the walkway, this location appears to be a spot for tourists to visit to view the waterfall and river below, along with other grand views.",
+        "assignment_id": "3IAS3U3I0FFMTZUVPF0T6BRR58T2BF",
+        "objective": "I am wondering what kind of place this is.",
+        "confidence": "moderate",
+        "original_question": "What type of location is shown in the video?",
+        "original_answer": "Judging by all the people shown on the walkway, this location appears to be a spot for tourists to visit to view the waterfall and river below, along with other grand views.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.736,
+                    18.298
+                ]
+            },
+            {
+                "1": [
+                    30.497,
+                    42.55
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.736",
+                    "00:18.298"
+                ]
+            },
+            {
+                "1": [
+                    "00:30.497",
+                    "00:42.550"
+                ]
+            }
+        ],
+        "time_spent": 2304.0,
+        "video_link": "https://www.dropbox.com/s/crjzh9fuqmkulzy/The-Flying-Dutchman_9-clip-5.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_9-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:18.585",
+                "end": "00:06:19.579"
+            },
+            "seconds": {
+                "start": "318.5849333333333",
+                "end": "379.5792"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.9942666666667,
+        "alter_answers": [
+            "A river and mountain is shown here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.978968000000005,
+                    22.397094720000013
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Do they have aircraft that they can do a touch and go landing like a heliocopter.",
+        "answer": "Yes they do, they uses the Osprey jet that has turbines that rotate 90 degrees to act like a helo does.",
+        "assignment_id": "3SB4CE2TJVUIB5S07QLQ1Q1HZDZAXK",
+        "objective": "How to do a touch and go landing",
+        "confidence": "high",
+        "original_question": "Do we have aircraft that we can do a touch and go landing like a heliocopter.",
+        "original_answer": "Yes we do, The USMC uses the Osprey jet that has turbines that rotate 90 degrees to act like a helo does.",
+        "question_type": [
+            "Location",
+            "Motion"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.556,
+                    26.477
+                ]
+            },
+            {
+                "1": [
+                    33.067,
+                    72.492
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.556",
+                    "00:26.477"
+                ]
+            },
+            {
+                "1": [
+                    "00:33.067",
+                    "01:12.492"
+                ]
+            }
+        ],
+        "time_spent": 1755.0,
+        "video_link": "https://www.dropbox.com/s/revet1kwgtt2db2/Gung-Ho-Vids_3-clip-0.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:12.900"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "72.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 72.9,
+        "alter_answers": [
+            "Yes, they have a twin rotor helicopter. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.689680000000001,
+                    26.885520000000003
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Do pilots perform maneuvers for air shows to the public.",
+        "answer": "Yes they do perform many different maneuvers to give a more thrilling view to the guests.",
+        "assignment_id": "3SB4CE2TJVUIB5S07QLQ1Q1HZDZAXK",
+        "objective": "Air show maneuvers",
+        "confidence": "high",
+        "original_question": "Do pilots perform maneuvers for air shows to the public.",
+        "original_answer": "Yes they do perform many different maneuvers to give a more thrilling view to the guests.",
+        "question_type": [
+            "Location",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.066,
+                    45.976
+                ]
+            },
+            {
+                "1": [
+                    54.325,
+                    71.48
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.066",
+                    "00:45.976"
+                ]
+            },
+            {
+                "1": [
+                    "00:54.325",
+                    "01:11.480"
+                ]
+            }
+        ],
+        "time_spent": 1755.0,
+        "video_link": "https://www.dropbox.com/s/328thx2ytzycboa/Military-Archive_7-clip-4.mp4?raw=1",
+        "video_id": "Military-Archive_7-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:07.960",
+                "end": "00:07:19.440"
+            },
+            "seconds": {
+                "start": "367.96",
+                "end": "439.44"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.48000000000002,
+        "alter_answers": [
+            "Yes, they perform a flip in tandem. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are they training for timed quick target acquisition?",
+        "answer": "More than likely this is not a timed scenario. Usually there is about 10 seconds to fire about 15 rounds etc. This video does not show a sense of hurry or quick means. This is probably a pre-qualification day that is used to get the soldier use to firing a pistol.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOUSM6WG",
+        "objective": "This is more than likely a boot camp live fire of the newly adopted Sig Sauer P320. It was the replacement from the long time 9mm Beretta 92. Live fire training is done after a few days practice of a laser/ mechanical simulated pistol that will have kickback to simulate live fire training. The soldiers in the video are more than likely doing their live fire 9mm qualifications",
+        "confidence": "very_high",
+        "original_question": "Are they training for timed quick target acquisition?",
+        "original_answer": "More than likely this is not a timed scenario. Usually there is about 10 seconds to fire about 15 rounds etc. This video does not show a sense of hurry or quick means. This is probably a pre-qualification day that is used to get the soldier use to firing a pistol.",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.511,
+                    16.588
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.511",
+                    "00:16.588"
+                ]
+            }
+        ],
+        "time_spent": 3676.0,
+        "video_link": "https://www.dropbox.com/s/79lfbls3gmycbmm/USA-Military-Channel_5-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_5-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:01.421",
+                "end": "00:02:57.310"
+            },
+            "seconds": {
+                "start": "121.42098042905533",
+                "end": "177.31"
+            },
+            "split-method": "auto"
+        },
+        "duration": 55.88901957094467,
+        "alter_answers": [
+            "Yes they are training on multiple targets. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is BEAST training in a nutshell?",
+        "answer": "A week away from normal Basic Training to learn weapon usage.",
+        "assignment_id": "3ZY8KE4ISJ2IUWUMW7HU35J1NK8VQ4",
+        "objective": "To give a brief description of US Air Force Beast training.",
+        "confidence": "high",
+        "original_question": "What is BEAST training in a nutshell?",
+        "original_answer": "A week away from normal Basic Training to learn weapon usage.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.489,
+                    60.06
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.489",
+                    "01:00.060"
+                ]
+            }
+        ],
+        "time_spent": 3433.0,
+        "video_link": "https://www.dropbox.com/s/rfj7b3r57v5nv8n/Sandboxx_8-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.06"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06,
+        "alter_answers": [
+            "The BEAST TRAINING IS basic expeditionary airman skill training"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.45944,
+                    29.885856
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How do you safely rig a heavy object to be moved?",
+        "answer": "By using proper equipment and hookups.",
+        "assignment_id": "3ZY8KE4ISJ2IUWUMW7HU35J1NK8VQ4",
+        "objective": "Safely rig a heavy object",
+        "confidence": "high",
+        "original_question": "How do you safely rig a heavy object to be moved?",
+        "original_answer": "By using proper equipment and hookups.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.61,
+                    29.47
+                ]
+            },
+            {
+                "1": [
+                    67.077,
+                    98.988
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.610",
+                    "00:29.470"
+                ]
+            },
+            {
+                "1": [
+                    "01:07.077",
+                    "01:38.988"
+                ]
+            }
+        ],
+        "time_spent": 3433.0,
+        "video_link": "https://www.dropbox.com/s/0chhm3u99lki06m/MilitaryNotes_3-manual.mp4?raw=1",
+        "video_id": "MilitaryNotes_3-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:15",
+                "end": "2:08"
+            },
+            "split-method": "manual"
+        },
+        "duration": 113.0,
+        "alter_answers": [
+            "it can be rigged with straps on the top and bottom. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is one way to unwind after working on a ship?",
+        "answer": "To play video games.",
+        "assignment_id": "3FK0YFF9PZFAZ4Q3I6B49SI94CNVVY",
+        "objective": "How to unwind on board a ship",
+        "confidence": "high",
+        "original_question": "What is one way to unwind after working on a ship?",
+        "original_answer": "To play video games.",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.629,
+                    35.41
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.629",
+                    "00:35.410"
+                ]
+            }
+        ],
+        "time_spent": 8333.0,
+        "video_link": "https://www.dropbox.com/s/qm2zfwxymdwrdv3/USA-Military-Channel_2-clip-1.mp4?raw=1",
+        "video_id": "USA-Military-Channel_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.861",
+                "end": "00:02:02.422"
+            },
+            "seconds": {
+                "start": "60.8608",
+                "end": "122.4223"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.56150000000001,
+        "alter_answers": [
+            "Videogames are one way to unwind."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    26.397571200000005,
+                    35.016181200000005
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "where is this place?",
+        "answer": "Tulsa oklahoma",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the situation",
+        "confidence": "high",
+        "original_question": "Where are they?",
+        "original_answer": "Tulsa oklahoma",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    25.789,
+                    28.649
+                ]
+            },
+            {
+                "1": [
+                    24.819,
+                    26.564
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:25.789",
+                    "00:28.649"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.819",
+                    "00:26.564"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/s7yf7b67z8nq7oa/USA-Military-Channel_1-clip-1.mp4?raw=1",
+        "video_id": "USA-Military-Channel_1-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:03.263",
+                "end": "00:02:03.857"
+            },
+            "seconds": {
+                "start": "63.2632",
+                "end": "123.85706666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.59386666666667,
+        "alter_answers": [
+            "This place is the Tulsa Air National Guard Base in Oklahoma."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.007692373333335,
+                    27.776228480000004
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where was the location of the video taken?",
+        "answer": "The location where the video was taken was on a marine vessel at sea.",
+        "assignment_id": "3DIP6YHAPCRVMH84FNBKHAAFU0J8EZ",
+        "objective": "I want to learn about coming alongside an enemy marine vessel.",
+        "confidence": "very_high",
+        "original_question": "Where was the location of the video taken?",
+        "original_answer": "The location where the video was taken was on a marine vessel at sea.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    56.363
+                ]
+            },
+            {
+                "1": [
+                    58.639,
+                    60.527
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:56.363"
+                ]
+            },
+            {
+                "1": [
+                    "00:58.639",
+                    "01:00.527"
+                ]
+            }
+        ],
+        "time_spent": 3779.0,
+        "video_link": "https://www.dropbox.com/s/fj7z10wrihu6cmp/USA-Military-Channel_3-clip-1.mp4?raw=1",
+        "video_id": "USA-Military-Channel_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.932",
+                "end": "00:02:05.459"
+            },
+            "seconds": {
+                "start": "64.93161348985686",
+                "end": "125.45882154258058"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.52720805272372,
+        "alter_answers": [
+            "on water(sea maybe)"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where was this video taken?",
+        "answer": "This video was taken at the United States Marine Corps Recruit Training Depot in San Diego, California.",
+        "assignment_id": "3DIP6YHAPCRVMH84FNBKHAAFU0J8EZ",
+        "objective": "I want to learn about the United States Marine Corps boot camp.",
+        "confidence": "high",
+        "original_question": "Where was this video taken?",
+        "original_answer": "This video was taken at the United States Marine Corps Recruit Training Depot in San Diego, California.",
+        "question_type": [
+            "Location",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    55.0
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:55.000"
+                ]
+            }
+        ],
+        "time_spent": 3779.0,
+        "video_link": "https://www.dropbox.com/s/4rh2823saoa458p/AiirSource-Military_4-manual.mp4?raw=1",
+        "video_id": "AiirSource-Military_4-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:40",
+                "end": "1:35"
+            },
+            "split-method": "manual"
+        },
+        "duration": 55.0,
+        "alter_answers": [
+            "They are inside a concrete building. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the landscape like in the video?",
+        "answer": "The landscape consists of the ocean in the video.",
+        "assignment_id": "3G5W44VEU7HD1W6WU7YB7I4I2CJGKQ",
+        "objective": "I want to learn about aircraft carriers in the United States Navy.",
+        "confidence": "very_high",
+        "original_question": "What is the landscape like in the video?",
+        "original_answer": "The landscape consists of the ocean in the video.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.531,
+                    27.034
+                ]
+            },
+            {
+                "1": [
+                    57.29,
+                    71.9
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.531",
+                    "00:27.034"
+                ]
+            },
+            {
+                "1": [
+                    "00:57.290",
+                    "01:11.900"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/sxtoc62v4m9rvcu/Gung-Ho-Vids_6-clip-0.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:11.900"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "71.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.9,
+        "alter_answers": [
+            "It is an aircraft carrier surrounded by water"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the landscape in the video?",
+        "answer": "The landscape is the open ocean.",
+        "assignment_id": "3G5W44VEU7HD1W6WU7YB7I4I2CJGKQ",
+        "objective": "I want to see how long a ship can stay capsized while under attack.",
+        "confidence": "very_high",
+        "original_question": "What is the landscape in the video?",
+        "original_answer": "The landscape is the open ocean.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    53.088
+                ]
+            },
+            {
+                "1": [
+                    70.656,
+                    120.0
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:53.088"
+                ]
+            },
+            {
+                "1": [
+                    "01:10.656",
+                    "02:00.000"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/p3zfzf4tfwovcaf/USA-Military-Channel_6-manual.mp4?raw=1",
+        "video_id": "USA-Military-Channel_6-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:10",
+                "end": "3:10"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0,
+        "alter_answers": [
+            "They are in the ocean. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.976,
+                    13.439999999999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of landscape is the helicopter flying over?",
+        "answer": "The helicopter is flying over fields and mountains.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to see an attack helicopter demonstration.",
+        "confidence": "very_high",
+        "original_question": "What type of landscape is the helicopter flying over?",
+        "original_answer": "The helicopter is flying over fields and mountains.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    36.582
+                ]
+            },
+            {
+                "1": [
+                    49.616,
+                    60.567
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:36.582"
+                ]
+            },
+            {
+                "1": [
+                    "00:49.616",
+                    "01:00.567"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/k0jtdkf65h60ik1/Army-military-2018_6-clip-1.mp4?raw=1",
+        "video_id": "Army-military-2018_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:07.167",
+                "end": "00:02:07.733"
+            },
+            "seconds": {
+                "start": "67.16666666666667",
+                "end": "127.73333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.56666666666666,
+        "alter_answers": [
+            "It appears to be rocky desert like terrain. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the weather like during the video?",
+        "answer": "The weather is sunny and partially cloudy.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to survey the landscape after a heavy rain.",
+        "confidence": "very_high",
+        "original_question": "What is the weather like during the video?",
+        "original_answer": "The weather is sunny and partially cloudy.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    18.044
+                ]
+            },
+            {
+                "1": [
+                    19.989,
+                    28.5
+                ]
+            },
+            {
+                "2": [
+                    46.106,
+                    48.635
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:18.044"
+                ]
+            },
+            {
+                "1": [
+                    "00:19.989",
+                    "00:28.500"
+                ]
+            },
+            {
+                "2": [
+                    "00:46.106",
+                    "00:48.635"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/eonwwz2x75dtd5z/Military-Archive_1-clip-3.mp4?raw=1",
+        "video_id": "Military-Archive_1-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.157",
+                "end": "00:04:10.951"
+            },
+            "seconds": {
+                "start": "190.15663333333333",
+                "end": "250.9507"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.79406666666668,
+        "alter_answers": [
+            "The skies are blue, but there is enough water to indicate it rained recently."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where is the jet flying in the video?",
+        "answer": "The jet in the video is flying near a coastal city and ocean.",
+        "assignment_id": "3PIWWX1FJJ5SHEQFKSJ23GWLFNJJJX",
+        "objective": "I want to know what it is like to be inside the cockpit of a flying jet.",
+        "confidence": "very_high",
+        "original_question": "Where is the jet flying in the video?",
+        "original_answer": "The jet in the video is flying near a coastal city and ocean.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    22.359
+                ]
+            },
+            {
+                "1": [
+                    31.28,
+                    67.706
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:22.359"
+                ]
+            },
+            {
+                "1": [
+                    "00:31.280",
+                    "01:07.706"
+                ]
+            }
+        ],
+        "time_spent": 3627.0,
+        "video_link": "https://www.dropbox.com/s/328thx2ytzycboa/Military-Archive_7-clip-4.mp4?raw=1",
+        "video_id": "Military-Archive_7-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:07.960",
+                "end": "00:07:19.440"
+            },
+            "seconds": {
+                "start": "367.96",
+                "end": "439.44"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.48000000000002,
+        "alter_answers": [
+            "The jet is flying across water and city"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.234496000000002,
+                    23.559808000000007
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where was the video taken?",
+        "answer": "The video was taken out at sea.",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0W9RXQ",
+        "objective": "I want to learn about patrolling for underwater vessels. ",
+        "confidence": "very_high",
+        "original_question": "Where was the video taken?",
+        "original_answer": "The video was taken out at sea.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    60.594
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:00.594"
+                ]
+            }
+        ],
+        "time_spent": 2699.0,
+        "video_link": "https://www.dropbox.com/s/q4wc44olqa2jgjm/WarLeaks-Military-Blog_8-clip-0.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.594"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.59386666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.59386666666667,
+        "alter_answers": [
+            "The video is taken in the ocean, above a submarine. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the vegetation like around this area?",
+        "answer": "Judging by what is shown and what the man says, he is on the boarder of barren land and tree line, further north trees are stunted even more, and following that, there are not trees anymore.",
+        "assignment_id": "3OE22WJIGINIHH5MRH7P7JHIAQQUQW",
+        "objective": "I am curious about the vegetation in this area.",
+        "confidence": "moderate",
+        "original_question": "What is the vegetation like around this area?",
+        "original_answer": "Judging by what is shown and what the man says, he is on the boarder of barren land and tree line, further north trees are stunted even more, and following that, there are not trees anymore.",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.03,
+                    36.537
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.030",
+                    "00:36.537"
+                ]
+            }
+        ],
+        "time_spent": 3100.0,
+        "video_link": "https://www.dropbox.com/s/8s7erfo9aaib9nw/Joe-Robinet_1-clip-20.mp4?raw=1",
+        "video_id": "Joe-Robinet_1-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:22:04.823",
+                "end": "00:23:09.421"
+            },
+            "seconds": {
+                "start": "1324.8232803779945",
+                "end": "1389.4211363359796"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.59785595798508,
+        "alter_answers": [
+            "The vegetation is is stunted in this area"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.702220118333493,
+                    36.43319076030358
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which direction is the wind blowing?",
+        "answer": "The wind is blowing to the left.",
+        "assignment_id": "3VFJCI1K4ZYZO0JRKR788UQWX2BGRD",
+        "objective": "Determine why the human is moving rocks\n",
+        "confidence": "very_high",
+        "original_question": "Which direction is the wind blowing?",
+        "original_answer": "The wind is blowing to the left.",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    51.661,
+                    54.126
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:51.661",
+                    "00:54.126"
+                ]
+            }
+        ],
+        "time_spent": 4299.0,
+        "video_link": "https://www.dropbox.com/s/on7q8y18j8lbnt0/Bertram-Craft_4-clip-0.mp4?raw=1",
+        "video_id": "Bertram-Craft_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:05.560"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "65.56"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.56,
+        "alter_answers": [
+            "The wind is blowing to the right of the man facing the trees"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    48.566848,
+                    60.420096
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the man going to be staying in the woods for the evening?",
+        "answer": "Judging by the man mentioning the time and how dark it was and then saying he would only be staying up a few more hours so he should start the fire now, I believe he will be sleeping in the wilderness for the night.",
+        "assignment_id": "3WSELTNVR31BUOJG2GKTCNGBNSVAT8",
+        "objective": "I want to know if this man is building a fire because he is staying out in the wilderness for the night.",
+        "confidence": "moderate",
+        "original_question": "Is the man going to be staying in the woods for the evening?",
+        "original_answer": "Judging by the man mentioning the time and how dark it was and then saying he would only be staying up a few more hours so he should start the fire now, I believe he will be sleeping in the wilderness for the night.",
+        "question_type": [
+            "Location",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    51.619,
+                    65.756
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:51.619",
+                    "01:05.756"
+                ]
+            }
+        ],
+        "time_spent": 2466.0,
+        "video_link": "https://www.dropbox.com/s/4996ikus3saxnr5/Joe-Robinet_3-clip-4.mp4?raw=1",
+        "video_id": "Joe-Robinet_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:38.471",
+                "end": "00:06:45.405"
+            },
+            "seconds": {
+                "start": "338.4714666666667",
+                "end": "405.40500000000003"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.93353333333334,
+        "alter_answers": [
+            "The man is going to be staying in the woods for the evening"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.56198144,
+                    34.323515893333344
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the flooding happening?",
+        "answer": "In cities.",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the flooding happening?",
+        "original_answer": "In cities. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    4.124
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:04.124"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/x8ydk25h6d8a43l/Disaster-Compilations_7-clip-1.mp4?raw=1",
+        "video_id": "Disaster-Compilations_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.200",
+                "end": "00:01:45.520"
+            },
+            "seconds": {
+                "start": "62.2",
+                "end": "105.52"
+            },
+            "split-method": "auto"
+        },
+        "duration": 43.31999999999999,
+        "alter_answers": [
+            "the flooding is happening in the city"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.347071999999999,
+                    16.149696
+                ],
+                [
+                    25.888031999999995,
+                    35.868959999999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where was the storm occurring?",
+        "answer": "A city",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Storm damage",
+        "confidence": "very_high",
+        "original_question": "Where was the storm occurring?",
+        "original_answer": "A city",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.521
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.521"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/wnzkowe4v24vibv/Weathershot_1-clip-0.mp4?raw=1",
+        "video_id": "Weathershot_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:07.367"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "67.36666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.36666666666666,
+        "alter_answers": [
+            "The storm was occurring in the city"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.56328,
+                    33.25218666666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where was the weather happening?",
+        "answer": "Fields.",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Weather ",
+        "confidence": "very_high",
+        "original_question": "Where was the weather happening?",
+        "original_answer": "Fields.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.189
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.189"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/6nkslvqfco6nc89/Skip-Talbot_4-clip-2.mp4?raw=1",
+        "video_id": "Skip-Talbot_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:57.200",
+                "end": "00:09:54.433"
+            },
+            "seconds": {
+                "start": "537.2",
+                "end": "594.4333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 57.23333333333324,
+        "alter_answers": [
+            "There is a tornado happening here"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where is the weather event happening?",
+        "answer": "A suburb.",
+        "assignment_id": "3ZOTGHDK5IAZHS02NZKL3D4UAKWOSV",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the weather event happening?",
+        "original_answer": "A suburb. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.455,
+                    24.29
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.455",
+                    "00:24.290"
+                ]
+            }
+        ],
+        "time_spent": 1515.0,
+        "video_link": "https://www.dropbox.com/s/2xpb6czn63l0z4t/Weathershot_0-clip-2.mp4?raw=1",
+        "video_id": "Weathershot_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:02.760",
+                "end": "00:03:08.480"
+            },
+            "seconds": {
+                "start": "122.76",
+                "end": "188.48"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.71999999999998,
+        "alter_answers": [
+            "There is heavy rain and storm occurring "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where is the person in the hat at?",
+        "answer": "In a city.",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where is the person in the hat at?",
+        "original_answer": "In a city. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.501,
+                    44.177
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.501",
+                    "00:44.177"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/c7mgg4tew4eupk6/Tornado-Trackers_11-clip-1.mp4?raw=1",
+        "video_id": "Tornado-Trackers_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.231",
+                "end": "00:02:27.648"
+            },
+            "seconds": {
+                "start": "64.23084228141124",
+                "end": "147.6475205689583"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.41667828754706,
+        "alter_answers": [
+            "They are in the middle of a hurricane."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where are the people at?",
+        "answer": "In a hotel.",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where are the people at?",
+        "original_answer": "In a hotel. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    60.411,
+                    64.322
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:00.411",
+                    "01:04.322"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/jho0knentfkgpwo/Ultimate-Chase_0-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:06.066"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "66.066"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.066,
+        "alter_answers": [
+            "The people are at hurricane katrina"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.8984976000000001,
+                    13.054641600000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there a city near the ocean?",
+        "answer": "Yes",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Is there a city near the ocean?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.229,
+                    18.104
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.229",
+                    "00:18.104"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/8ybab0jm4mkrs96/Natural-Disaster_6-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:37.467"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "37.46666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 37.46666666666667,
+        "alter_answers": [
+            "Yes you can see the city near the ocean. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where did the destruction take place?",
+        "answer": "A small town.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Affects of severe weather",
+        "confidence": "very_high",
+        "original_question": "Where did the destruction take place?",
+        "original_answer": "A small town. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.484,
+                    42.034
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.484",
+                    "00:42.034"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/gfofybj8f1wjatt/Weathershot_8-clip-2.mp4?raw=1",
+        "video_id": "Weathershot_8-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:26.320",
+                "end": "00:03:14.480"
+            },
+            "seconds": {
+                "start": "146.32",
+                "end": "194.48"
+            },
+            "split-method": "auto"
+        },
+        "duration": 48.16,
+        "alter_answers": [
+            "The destruction took place in a village"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.572224,
+                    30.783872
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did the flooding occur?",
+        "answer": "In a city and in a forest.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Where did the flooding occur?",
+        "original_answer": "In a city and in a forest. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.974,
+                    12.436
+                ]
+            },
+            {
+                "1": [
+                    40.477,
+                    45.062
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.974",
+                    "00:12.436"
+                ]
+            },
+            {
+                "1": [
+                    "00:40.477",
+                    "00:45.062"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/lyzpzliqvr7q1e5/Disaster-Compilations_0-clip-1.mp4?raw=1",
+        "video_id": "Disaster-Compilations_0-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:06.000",
+                "end": "00:02:06.960"
+            },
+            "seconds": {
+                "start": "66.0",
+                "end": "126.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.96,
+        "alter_answers": [
+            "The flooding occurred by the road in the city"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.53184,
+                    28.431743999999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the people tracking the tornado?",
+        "answer": "In a city in Nebraska",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where are the people tracking the tornado?",
+        "original_answer": "In a city in Nebraska",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.137,
+                    21.404
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.137",
+                    "00:21.404"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/7xivkh21n8dx282/Skip-Talbot_9-clip-0.mp4?raw=1",
+        "video_id": "Skip-Talbot_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:23.350"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "83.34993333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.34993333333334,
+        "alter_answers": [
+            "The people are tracking the tornado from a far"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    35.67377146666667,
+                    51.943678453333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the storm occurring?",
+        "answer": "In a coastal town/city.",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Storm",
+        "confidence": "very_high",
+        "original_question": "Where is the storm occurring?",
+        "original_answer": "In a coastal town/city. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.174,
+                    31.065
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.174",
+                    "00:31.065"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/ikari9aoy8hsp38/Tornado-Trackers_2-clip-2.mp4?raw=1",
+        "video_id": "Tornado-Trackers_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:08.337",
+                "end": "00:03:08.355"
+            },
+            "seconds": {
+                "start": "128.33654166666665",
+                "end": "188.35483333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.01829166666667,
+        "alter_answers": [
+            "The storm is occurring in an English speaking country. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    36.7311945,
+                    43.6453017
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the river?",
+        "answer": "In a city.",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Where is the river?",
+        "original_answer": "A city",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.199,
+                    17.913
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.199",
+                    "00:17.913"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/nwzatim05040p5d/Natural-Disaster_0-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:29.463"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "29.462766666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 29.46276666666667,
+        "alter_answers": [
+            "The river is running through the city. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where is the flooding happening?",
+        "answer": "In a city.",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Where is the flooding happening?",
+        "original_answer": "In a city. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.431,
+                    14.796
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.431",
+                    "00:14.796"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/1quc55iuz49rsee/Weathershot_11-clip-0.mp4?raw=1",
+        "video_id": "Weathershot_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.440"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.44"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.44,
+        "alter_answers": [
+            "The flood is happening in an unknown city. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where did the tornado happen?",
+        "answer": "In the desert.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Natural disasters. ",
+        "confidence": "very_high",
+        "original_question": "Where did the tornado happen?",
+        "original_answer": "In the desert. ",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    52.89,
+                    59.876
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:52.890",
+                    "00:59.876"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/whvc7cv3gtrv0oq/Climate-Change_8-clip-9.mp4?raw=1",
+        "video_id": "Climate-Change_8-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:24.733",
+                "end": "00:10:26.233"
+            },
+            "seconds": {
+                "start": "564.7333333333333",
+                "end": "626.2333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.5,
+        "alter_answers": [
+            "The tornado occurred in El Jauf, Saudi Arabia."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    42.6072,
+                    51.610800000000005
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the storm?",
+        "answer": "In a field.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Storm",
+        "confidence": "very_high",
+        "original_question": "Where is the storm?",
+        "original_answer": "In a field.",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    10.619
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:10.619"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/dp2as8x440qpzh8/Skip-Talbot_0-clip-9.mp4?raw=1",
+        "video_id": "Skip-Talbot_0-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:12:47.900",
+                "end": "00:14:11.384"
+            },
+            "seconds": {
+                "start": "767.9004666666667",
+                "end": "851.3838666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.48339999999995,
+        "alter_answers": [
+            "the storm is the in farm far away"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    42.74350079999998,
+                    55.16583071999997
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the fires taking place?",
+        "answer": "nearby cities and highways.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Fire",
+        "confidence": "very_high",
+        "original_question": "Where are the fires taking place?",
+        "original_answer": "nearby cities and highways. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.382
+                ]
+            },
+            {
+                "1": [
+                    25.6,
+                    30.155
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.382"
+                ]
+            },
+            {
+                "1": [
+                    "00:25.600",
+                    "00:30.155"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/j6a0ndgpjxh5vxf/Disaster-Compilations_2-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:01.040",
+                "end": "00:03:06.480"
+            },
+            "seconds": {
+                "start": "121.04",
+                "end": "186.48"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.43999999999998,
+        "alter_answers": [
+            "The fires are taking place in the forest"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where did the effects happen?",
+        "answer": "In a town and on the road.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Effects of severe weather ",
+        "confidence": "very_high",
+        "original_question": "Where did the effects happen?",
+        "original_answer": "In a town and on the road. ",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.158,
+                    27.816
+                ]
+            },
+            {
+                "1": [
+                    45.987,
+                    52.148
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.158",
+                    "00:27.816"
+                ]
+            },
+            {
+                "1": [
+                    "00:45.987",
+                    "00:52.148"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/v2r9byw79472w2o/Tornado-Trackers_4-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:40.530",
+                "end": "00:05:58.316"
+            },
+            "seconds": {
+                "start": "280.53024999999997",
+                "end": "358.31629166666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.78604166666669,
+        "alter_answers": [
+            "The effects happened on the street"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.023180833333333,
+                    26.011652333333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the tornado?",
+        "answer": "In a farm field",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the tornado?",
+        "original_answer": "In a farm field",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.121,
+                    27.721
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.121",
+                    "00:27.721"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/xaw3bbhx5bmahqn/Dan-Robinson_10-clip-0.mp4?raw=1",
+        "video_id": "Dan-Robinson_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:03.463"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "63.46334948207171"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.46334948207171,
+        "alter_answers": [
+            "the tornado is in the farm"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    37.92569765048606,
+                    46.86133725756176
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the tornado?",
+        "answer": "In a field.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "Where is the tornado?",
+        "original_answer": "In a field. ",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    22.52
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:22.520"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/mxh1j82qiq6mtts/Dan-Robinson_0-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.884",
+                "end": "00:04:15.922"
+            },
+            "seconds": {
+                "start": "150.88408821077203",
+                "end": "255.9223698754139"
+            },
+            "split-method": "auto"
+        },
+        "duration": 105.03828166464186,
+        "alter_answers": [
+            "The tornado is is occurring in the farm land"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.016023836908936,
+                    37.3936282726125
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the funnel cloud?",
+        "answer": "In a field.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Weather Development",
+        "confidence": "very_high",
+        "original_question": "Where is the funnel cloud?",
+        "original_answer": "In a field. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.68
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.680"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/1784lrenliolcd1/Skip-Talbot_6-clip-5.mp4?raw=1",
+        "video_id": "Skip-Talbot_6-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:41.434",
+                "end": "00:07:50.503"
+            },
+            "seconds": {
+                "start": "401.4343666666667",
+                "end": "470.5033666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.06900000000002,
+        "alter_answers": [
+            "The funnel cloud is above the area in the sky. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where is the flooding happening?",
+        "answer": "In cities.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Precipitation",
+        "confidence": "very_high",
+        "original_question": "Where is the flooding happening?",
+        "original_answer": "In cities. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.277
+                ]
+            },
+            {
+                "1": [
+                    24.844,
+                    29.026
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.277"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.844",
+                    "00:29.026"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/vwsyg7i1aaa60j1/Climate-Change_10-clip-14.mp4?raw=1",
+        "video_id": "Climate-Change_10-clip-14",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:14:48.833",
+                "end": "00:15:51.067"
+            },
+            "seconds": {
+                "start": "888.8333333333334",
+                "end": "951.0666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.23333333333335,
+        "alter_answers": [
+            "The flood is happening in Switzerland, Ukraine, Italy, and Canada. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where are the people at?",
+        "answer": "They are in a flooded intersection in a city.",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6PUZEKY",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where are the people at?",
+        "original_answer": "They are in a flooded intersection in a city. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.052,
+                    10.067
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.052",
+                    "00:10.067"
+                ]
+            }
+        ],
+        "time_spent": 2348.0,
+        "video_link": "https://www.dropbox.com/s/qyty6iss15dc891/Natural-Disaster_2-clip-1.mp4?raw=1",
+        "video_id": "Natural-Disaster_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.400",
+                "end": "00:01:39.000"
+            },
+            "seconds": {
+                "start": "60.4",
+                "end": "99.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 38.6,
+        "alter_answers": [
+            "The people are in the city flooded"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.784320000000001,
+                    19.05296
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the weather phenomenon occuring?",
+        "answer": "In an open field.",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6PUZEKY",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Where is the weather phenomenon occuring?",
+        "original_answer": "In an open field. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.667,
+                    11.852
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.667",
+                    "00:11.852"
+                ]
+            }
+        ],
+        "time_spent": 2348.0,
+        "video_link": "https://www.dropbox.com/s/x15hpstcx4wy1gh/Dan-Robinson_9-clip-0.mp4?raw=1",
+        "video_id": "Dan-Robinson_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.728"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.72833333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.72833333333333,
+        "alter_answers": [
+            "There is a tornado occurring "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.209857333333336,
+                    27.901206666666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the people at?",
+        "answer": "They are nearby the flooded street",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where are the people at?",
+        "original_answer": "They are nearby the flooded street",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.117,
+                    12.0
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.117",
+                    "00:12.000"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/30iwygd5rp17mem/Natural-Disaster_1-manual.mp4?raw=1",
+        "video_id": "Natural-Disaster_1-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "0:12"
+            },
+            "split-method": "manual"
+        },
+        "duration": 12.0,
+        "alter_answers": [
+            "The people are on the side of the road"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.171200000000001,
+                    9.638399999999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did the flooding happen?",
+        "answer": "In a city.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where did the flooding happen?",
+        "original_answer": "In a city. ",
+        "question_type": [
+            "Location",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.581,
+                    5.309
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.581",
+                    "00:05.309"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/30iwygd5rp17mem/Natural-Disaster_1-manual.mp4?raw=1",
+        "video_id": "Natural-Disaster_1-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "0:12"
+            },
+            "split-method": "manual"
+        },
+        "duration": 12.0,
+        "alter_answers": [
+            "The flood is happening on the road"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.492799999999999,
+                    7.055999999999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the tornado?",
+        "answer": "In a field.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "Where is the tornado?",
+        "original_answer": "In a field. ",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.784,
+                    13.388
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.784",
+                    "00:13.388"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/tbezb08dsiqcg58/Dan-Robinson_6-clip-6.mp4?raw=1",
+        "video_id": "Dan-Robinson_6-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:27.420",
+                "end": "00:12:32.285"
+            },
+            "seconds": {
+                "start": "687.4200666666667",
+                "end": "752.2848666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.86479999999995,
+        "alter_answers": [
+            "The tornado is off to the right in a field. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.646483839999998,
+                    16.968631679999987
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people in the city?",
+        "answer": "Yes.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Are there people in the city?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    32.032,
+                    37.371
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:32.032",
+                    "00:37.371"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/x84svcdloatwd79/Weathershot_4-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:03.433",
+                "end": "00:02:10.167"
+            },
+            "seconds": {
+                "start": "63.43333333333333",
+                "end": "130.16666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.73333333333332,
+        "alter_answers": [
+            "There are people in the city that is being flooded"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    28.775413333333326,
+                    39.23919999999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where has the flooding taken place?",
+        "answer": "In cities.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Where has the flooding taken place?",
+        "original_answer": "In cities. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    20.287,
+                    26.693
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:20.287",
+                    "00:26.693"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/x84svcdloatwd79/Weathershot_4-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:03.433",
+                "end": "00:02:10.167"
+            },
+            "seconds": {
+                "start": "63.43333333333333",
+                "end": "130.16666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.73333333333332,
+        "alter_answers": [
+            "The flooding has taken place on the road"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    13.293279999999998,
+                    24.878186666666664
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of equipment is there?",
+        "answer": "A skid steer and a quad are in the video.",
+        "assignment_id": "3IJXV6UZ1XIDKRPMAF7BT63CCI2RIL",
+        "objective": "I want to understand more about what he is doing",
+        "confidence": "high",
+        "original_question": "What kind of equipment is there?",
+        "original_answer": "A skid steer and a quad are in the video. ",
+        "question_type": [
+            "Location",
+            "Other"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.383,
+                    40.914
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.383",
+                    "00:40.914"
+                ]
+            }
+        ],
+        "time_spent": 10002.0,
+        "video_link": "https://www.dropbox.com/s/gnvu7rkq9b35dkj/How-Farms-Work_11-clip-1.mp4?raw=1",
+        "video_id": "How-Farms-Work_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.861",
+                "end": "00:02:00.887"
+            },
+            "seconds": {
+                "start": "60.8608",
+                "end": "120.88743333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.026633333333336,
+        "alter_answers": [
+            "There is a tractor here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.324580933333333,
+                    24.154717253333338
+                ]
+            ]
+        ]
+    }
+]

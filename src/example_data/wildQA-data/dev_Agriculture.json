@@ -1,0 +1,2055 @@
+[
+    {
+        "question": "What is the tractor being used for in the video?",
+        "answer": "The tractor is plowing snow in the video.",
+        "assignment_id": "33ISQZVXPPLI1ME308LUT86VZO3CCA",
+        "objective": "Jobs on the farm.",
+        "confidence": "very_high",
+        "original_question": "What is the tractor being used for in the video?",
+        "original_answer": "The tractor is plowing snow in the video.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    25.745,
+                    38.676
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:25.745",
+                    "00:38.676"
+                ]
+            }
+        ],
+        "time_spent": 2423.0,
+        "video_link": "https://www.dropbox.com/s/xuwcdvs5padhlp4/Peterson-Farm-Bros_2-clip-13.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_2-clip-13",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:31.297",
+                "end": "00:16:20.279"
+            },
+            "seconds": {
+                "start": "931.2970333333334",
+                "end": "980.2793"
+            },
+            "split-method": "auto"
+        },
+        "duration": 48.98226666666665,
+        "alter_answers": [
+            "It is being used to plow snow. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    26.72472469333332,
+                    35.03211711999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What tractor model is depicted in the video?",
+        "answer": "The tractor in the video is the model Galion T-400.",
+        "assignment_id": "33ISQZVXPPLI1ME308LUT86VZO3CCA",
+        "objective": "Tractor models.",
+        "confidence": "very_high",
+        "original_question": "What tractor model is depicted in the video?",
+        "original_answer": "The tractor in the video is the model Galion T-400.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.12,
+                    26.664
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.120",
+                    "00:26.664"
+                ]
+            }
+        ],
+        "time_spent": 2423.0,
+        "video_link": "https://www.dropbox.com/s/w5vq72kmuupxqt8/Hamiltonville-Farm_6-clip-18.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_6-clip-18",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:19:48.020",
+                "end": "00:20:55.354"
+            },
+            "seconds": {
+                "start": "1188.0201666666667",
+                "end": "1255.3541"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.33393333333333,
+        "alter_answers": [
+            "The tractor is a Gallion T-400"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.684984319999998,
+                    27.63384624
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What recreational vehicle is shown in the video?",
+        "answer": "The recreational vehicle in the video is a red four-wheeler.",
+        "assignment_id": "33ISQZVXPPLI1ME308LUT86VZO3CCA",
+        "objective": "Fun on the farm.",
+        "confidence": "very_high",
+        "original_question": "What recreational vehicle is shown in the video?",
+        "original_answer": "The recreational vehicle in the video is a red four-wheeler. ",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.388,
+                    14.131
+                ]
+            },
+            {
+                "1": [
+                    30.731,
+                    46.701
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.388",
+                    "00:14.131"
+                ]
+            },
+            {
+                "1": [
+                    "00:30.731",
+                    "00:46.701"
+                ]
+            }
+        ],
+        "time_spent": 2423.0,
+        "video_link": "https://www.dropbox.com/s/48sq92j5kdrk2z2/How-Farms-Work_5-clip-0.mp4?raw=1",
+        "video_id": "How-Farms-Work_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.494"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.493766666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.49376666666666,
+        "alter_answers": [
+            "The vehicles that are in the video are four wheel motor bikes"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    35.521939786666664,
+                    48.443408346666665
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the farmer's objective in the video?",
+        "answer": "The objective of the farmer is to cut down bushes with the mower.",
+        "assignment_id": "33ISQZVXPPLI1ME308LUT86VZO3CCA",
+        "objective": "Farmland maintenance.",
+        "confidence": "high",
+        "original_question": "What is the farmer's objective in the video?",
+        "original_answer": "The objective of the farmer is to cut down bushes with the mower.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.454,
+                    20.606
+                ]
+            },
+            {
+                "1": [
+                    39.292,
+                    63.029
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.454",
+                    "00:20.606"
+                ]
+            },
+            {
+                "1": [
+                    "00:39.292",
+                    "01:03.029"
+                ]
+            }
+        ],
+        "time_spent": 2423.0,
+        "video_link": "https://www.dropbox.com/s/9cu9nu0iizulgc2/How-Farms-Work_3-clip-2.mp4?raw=1",
+        "video_id": "How-Farms-Work_3-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:04.558",
+                "end": "00:03:07.688"
+            },
+            "seconds": {
+                "start": "124.55776666666667",
+                "end": "187.6875"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.12973333333333,
+        "alter_answers": [
+            "The farmer's objective is to clear the bushes around the area"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.9594468266666665,
+                    18.43388213333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of livestock is shown in the video?",
+        "answer": "The livestock consists of cows in the video.",
+        "assignment_id": "33ISQZVXPPLI1ME308LUT86VZO3CCA",
+        "objective": "Jobs on the farm.",
+        "confidence": "very_high",
+        "original_question": "What type of livestock is shown in the video?",
+        "original_answer": "The livestock consists of cows in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    16.928
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:16.928"
+                ]
+            }
+        ],
+        "time_spent": 2423.0,
+        "video_link": "https://www.dropbox.com/s/xuwcdvs5padhlp4/Peterson-Farm-Bros_2-clip-13.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_2-clip-13",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:31.297",
+                "end": "00:16:20.279"
+            },
+            "seconds": {
+                "start": "931.2970333333334",
+                "end": "980.2793"
+            },
+            "split-method": "auto"
+        },
+        "duration": 48.98226666666665,
+        "alter_answers": [
+            "Cows are shown in the video"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.801023893333332,
+                    13.088061653333327
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the issue the farmer is facing in the video?",
+        "answer": "The farmland is going through a drought for twelve months.",
+        "assignment_id": "36WLNQG78Z9EOF6BIZVU8C0G2DUEB8",
+        "objective": "Challenges in agriculture.",
+        "confidence": "high",
+        "original_question": "What is the issue the farmer is facing in the video?",
+        "original_answer": "The farmland is going through a drought for twelve months.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.914,
+                    18.709
+                ]
+            },
+            {
+                "1": [
+                    22.97,
+                    56.992
+                ]
+            },
+            {
+                "2": [
+                    63.29,
+                    72.799
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.914",
+                    "00:18.709"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.970",
+                    "00:56.992"
+                ]
+            },
+            {
+                "2": [
+                    "01:03.290",
+                    "01:12.799"
+                ]
+            }
+        ],
+        "time_spent": 1879.0,
+        "video_link": "https://www.dropbox.com/s/23qcm89du2s1ldb/Peterson-Farm-Bros_5-clip-2.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_5-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:15.137",
+                "end": "00:03:32.319"
+            },
+            "seconds": {
+                "start": "135.13662671384606",
+                "end": "212.31940363143798"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.18277691759192,
+        "alter_answers": [
+            "The farmer is having the grass to not be growing"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How do farmers know that their corn is healthy?",
+        "answer": "They count the kernels of the corn around the diameter and long way on the cob. They know how many kernels a healthy ear should have and they compare the number of kernels they counted to the number the farmer already knows.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOV6MW6Z",
+        "objective": "I want to know more about how farmers know how their crops are doing. ",
+        "confidence": "high",
+        "original_question": "How do farmers know that their corn is healthy?",
+        "original_answer": "They count the kernels of the corn around the diameter and long way on the cob. They know how many kernels a healthy ear should have and they compare the number of kernels they counted to the number the farmer already knows. ",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    44.172,
+                    65.499
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:44.172",
+                    "01:05.499"
+                ]
+            }
+        ],
+        "time_spent": 1120.0,
+        "video_link": "https://www.dropbox.com/s/f3enwea7xrf0v45/Millennial-Farmer_0-clip-11.mp4?raw=1",
+        "video_id": "Millennial-Farmer_0-clip-11",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:29.889",
+                "end": "00:12:35.388"
+            },
+            "seconds": {
+                "start": "689.8888833103582",
+                "end": "755.3876199101953"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.49873659983712,
+        "alter_answers": [
+            "If the stalk has been eroded then it is not healthy. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.8907828177577849,
+                    8.6458332311785
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What color is the machine being used in the video?",
+        "answer": "The machine in the video is red.",
+        "assignment_id": "39RP059MEHSC03YOZXJDLK5PBG1MBN",
+        "objective": "Potato harvest.",
+        "confidence": "very_high",
+        "original_question": "What color is the machine being used in the video?",
+        "original_answer": "The machine in the video is red.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    18.374,
+                    57.698
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:18.374",
+                    "00:57.698"
+                ]
+            }
+        ],
+        "time_spent": 2526.0,
+        "video_link": "https://www.dropbox.com/s/a3v0b5peynfadh8/Olly_s-Farm_6-clip-1.mp4?raw=1",
+        "video_id": "Olly's-Farm_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.600",
+                "end": "00:02:01.360"
+            },
+            "seconds": {
+                "start": "60.6",
+                "end": "121.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.76,
+        "alter_answers": [
+            "The machine being used is in red"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.034016000000001,
+                    20.901439999999997
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many acres of farmland has to be planted in the video?",
+        "answer": "The farmer has to plant seeds across 140 acres of farmland in the video.",
+        "assignment_id": "3A0EX8ZRN8NCUKN2I07OFFSWKP2YBA",
+        "objective": "Working into the night.",
+        "confidence": "very_high",
+        "original_question": "How many acres of farmland has to be planted in the video?",
+        "original_answer": "The farmer has to plant seeds across 140 acres of farmland in the video.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.594,
+                    43.99
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.594",
+                    "00:43.990"
+                ]
+            }
+        ],
+        "time_spent": 2958.0,
+        "video_link": "https://www.dropbox.com/s/n91nqxkudj74sii/Millennial-Farmer_7-clip-13.mp4?raw=1",
+        "video_id": "Millennial-Farmer_7-clip-13",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:55.968",
+                "end": "00:14:56.195"
+            },
+            "seconds": {
+                "start": "835.9684666666667",
+                "end": "896.1953"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.22683333333328,
+        "alter_answers": [
+            "140 acres of farmland has to be planted"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    31.94431239999997,
+                    44.4714937333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is being depicted in the video?",
+        "answer": "The video depicts aerial videography of farmland.",
+        "assignment_id": "3CN4LGXD5XNS9L2T3LX171MQAYJ4YA",
+        "objective": "Aerial videography.",
+        "confidence": "very_high",
+        "original_question": "What is being depicted in the video?",
+        "original_answer": "The video depicts aerial videography of farmland.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    93.983
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:33.983"
+                ]
+            }
+        ],
+        "time_spent": 3336.0,
+        "video_link": "https://www.dropbox.com/s/v75i6zpfk08gc9l/John-Suscovich_2-clip-3.mp4?raw=1",
+        "video_id": "John-Suscovich_2-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:44.233",
+                "end": "00:05:18.367"
+            },
+            "seconds": {
+                "start": "224.23333333333332",
+                "end": "318.3666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 94.13333333333335,
+        "alter_answers": [
+            "In the video a farm with machinery is being depicted"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.784640000000003,
+                    38.33109333333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What agricultural pest is the farmer digging to find?",
+        "answer": "The farmer is digging to find evidence of a cutworm or wireworm infestation that is affecting the corn crop.",
+        "assignment_id": "3CN4LGXD5XNS9L2T3LX171MQAYJ4YA",
+        "objective": "Digging for answers.",
+        "confidence": "high",
+        "original_question": "What agricultural pest is the farmer digging to find?",
+        "original_answer": "The farmer is digging to find evidence of a cutworm or wireworm infestation that is affecting the corn crop.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    46.425
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:46.425"
+                ]
+            }
+        ],
+        "time_spent": 3336.0,
+        "video_link": "https://www.dropbox.com/s/waxgfrrur5wiu69/RealAgriculture_9-clip-1.mp4?raw=1",
+        "video_id": "RealAgriculture_9-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:29.978",
+                "end": "00:02:51.368"
+            },
+            "seconds": {
+                "start": "89.97754557581146",
+                "end": "171.3678486734845"
+            },
+            "split-method": "auto"
+        },
+        "duration": 81.39030309767304,
+        "alter_answers": [
+            "farmer is digging to find cut worm"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.408285104490886,
+                    30.993427419593893
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What activity is the farmer doing throughout the video?",
+        "answer": "The farmer is fixing the tractor with various tools.",
+        "assignment_id": "3CN4LGXD5XNS9L2T3LX171MQAYJ4YA",
+        "objective": "Maintaining farm equipment.",
+        "confidence": "high",
+        "original_question": "What activity is the farmer doing throughout the video?",
+        "original_answer": "The farmer is fixing the tractor with various tools.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    15.967
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:15.967"
+                ]
+            }
+        ],
+        "time_spent": 3336.0,
+        "video_link": "https://www.dropbox.com/s/6z7cbuoalfczycj/Hamiltonville-Farm_2-clip-0.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_2-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:02.963"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "62.9629"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.9629,
+        "alter_answers": [
+            "They are performing maintenance on the tractor. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How cold was the previous day referenced in the video?",
+        "answer": "The previous day referenced in the video was approximately -15 degrees outside.",
+        "assignment_id": "3ERET4BTVM8YMMJOG1S1F1IVYB89K0",
+        "objective": "Weather hazards in the agricultural industry.",
+        "confidence": "very_high",
+        "original_question": "How cold was the previous day referenced in the video?",
+        "original_answer": "The previous day referenced in the video was approximately -15 degrees outside.",
+        "question_type": [
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.619,
+                    24.189
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.619",
+                    "00:24.189"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/4nv58dgzb6bj0ue/Millennial-Farmer_8-clip-16.mp4?raw=1",
+        "video_id": "Millennial-Farmer_8-clip-16",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:31.384",
+                "end": "00:19:05.578"
+            },
+            "seconds": {
+                "start": "1051.3836666666666",
+                "end": "1145.5777666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 94.19410000000015,
+        "alter_answers": [
+            "Yesterday the temperature was about 15 below zero the windshield was in the mid twenties belfore"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.906134240000021,
+                    32.025994000000054
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of recreational sport are the men demonstrating in the video?",
+        "answer": "The men in the video are ice fishing.",
+        "assignment_id": "3ERET4BTVM8YMMJOG1S1F1IVYB89K0",
+        "objective": "Ice fishing",
+        "confidence": "very_high",
+        "original_question": "What type of recreational sport are the men demonstrating in the video?",
+        "original_answer": "The men in the video are ice fishing.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.825,
+                    56.992
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.825",
+                    "00:56.992"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/lic732o14gne9xm/Welker-Farms-Inc_3-clip-4.mp4?raw=1",
+        "video_id": "Welker-Farms-Inc_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:21.862",
+                "end": "00:05:22.389"
+            },
+            "seconds": {
+                "start": "261.8616",
+                "end": "322.38873333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.52713333333333,
+        "alter_answers": [
+            "They are ice fishing. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.808458986666666,
+                    17.38339269333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What crop was being harvested throughout the video?",
+        "answer": "Bushels of corn were being harvested in the video.",
+        "assignment_id": "3ERET4BTVM8YMMJOG1S1F1IVYB89K0",
+        "objective": "Harvesting crops.",
+        "confidence": "high",
+        "original_question": "What crop was being harvested throughout the video?",
+        "original_answer": "Bushels of corn were being harvested in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    13.958
+                ]
+            },
+            {
+                "1": [
+                    20.708,
+                    49.882
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:13.958"
+                ]
+            },
+            {
+                "1": [
+                    "00:20.708",
+                    "00:49.882"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/sxmtzcuq3stew3c/How-Farms-Work_8-clip-4.mp4?raw=1",
+        "video_id": "How-Farms-Work_8-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:34.474",
+                "end": "00:05:45.979"
+            },
+            "seconds": {
+                "start": "274.4742",
+                "end": "345.9789666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.50476666666668,
+        "alter_answers": [
+            "corn crop was being harvested throughout the video"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.8877258400000003,
+                    17.561570693333337
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is happening?",
+        "answer": "The video shows combines harvesting a farm field.",
+        "assignment_id": "3ERMJ6L4DYRPYRVYMG7XGIJTSPUM7J",
+        "objective": "Aerial videography of farm fields.",
+        "confidence": "very_high",
+        "original_question": "What is the aerial video displaying throughout this video?",
+        "original_answer": "The video shows combines harvesting a farm field. ",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    20.379,
+                    142.423
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:20.379",
+                    "02:22.423"
+                ]
+            }
+        ],
+        "time_spent": 2453.0,
+        "video_link": "https://www.dropbox.com/s/6tcedzvmpmgm8gu/Peterson-Farm-Bros_6-clip-4.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_6-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:36.109",
+                "end": "00:06:59.219"
+            },
+            "seconds": {
+                "start": "276.1091666666667",
+                "end": "419.2188"
+            },
+            "split-method": "auto"
+        },
+        "duration": 143.10963333333333,
+        "alter_answers": [
+            "They are harvesting with a combine and putting it into the truck. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.731455066666665,
+                    28.392951253333326
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the poles being cut in the video?",
+        "answer": "Telephone poles are being cut in the video.",
+        "assignment_id": "3ERMJ6L4DYRPYRVYMG7XGIJTSPUM7J",
+        "objective": "Farmer's how to video.",
+        "confidence": "very_high",
+        "original_question": "What are the poles being cut in the video?",
+        "original_answer": "Telephone poles are being cut in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    19.735,
+                    37.028
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:19.735",
+                    "00:37.028"
+                ]
+            }
+        ],
+        "time_spent": 2453.0,
+        "video_link": "https://www.dropbox.com/s/o77hrq1dhueokzo/Hamiltonville-Farm_1-clip-4.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_1-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:54.667",
+                "end": "00:06:59.583"
+            },
+            "seconds": {
+                "start": "354.6666666666667",
+                "end": "419.5833333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.91666666666663,
+        "alter_answers": [
+            "They are cutting posts for a fence. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where will the posts be set by the farmer?",
+        "answer": "The farmer intends to set the posts 12.5-13 feet from the center.",
+        "assignment_id": "3ERMJ6L4DYRPYRVYMG7XGIJTSPUM7J",
+        "objective": "Farmer's how to video.",
+        "confidence": "high",
+        "original_question": "Where will the posts be set by the farmer?",
+        "original_answer": "The farmer intends to set the posts 12.5-13 feet from the center. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.336,
+                    14.749
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.336",
+                    "00:14.749"
+                ]
+            }
+        ],
+        "time_spent": 2453.0,
+        "video_link": "https://www.dropbox.com/s/o77hrq1dhueokzo/Hamiltonville-Farm_1-clip-4.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_1-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:54.667",
+                "end": "00:06:59.583"
+            },
+            "seconds": {
+                "start": "354.6666666666667",
+                "end": "419.5833333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.91666666666663,
+        "alter_answers": [
+            "the posts will be set 12 and half on center"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    14.177799999999992,
+                    24.51253333333332
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the farmer's compost smell according to him?",
+        "answer": "The farmer states his compost does not smell as it is properly composed.",
+        "assignment_id": "3GGAI1SQEVXVA8QUDXF8W4B7T27MC2",
+        "objective": "Composting on the farm.",
+        "confidence": "very_high",
+        "original_question": "Does the farmer's compost smell according to him?",
+        "original_answer": "The farmer states his compost does not smell as it is properly composed.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    32.515,
+                    52.175
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:32.515",
+                    "00:52.175"
+                ]
+            }
+        ],
+        "time_spent": 2350.0,
+        "video_link": "https://www.dropbox.com/s/6xwr8wnx4g50dir/John-Suscovich_12-clip-0.mp4?raw=1",
+        "video_id": "John-Suscovich_12-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:18.767"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "78.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 78.76666666666667,
+        "alter_answers": [
+            "He says it does smell, but not that bad.  "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What type of knot is demonstrated?",
+        "answer": "The bowline knot is being demonstrated in the video.",
+        "assignment_id": "3GGAI1SQEVXVA8QUDXF8W4B7T27MC2",
+        "objective": "Tying knots.",
+        "confidence": "very_high",
+        "original_question": "What type of know is demonstrated in the video?",
+        "original_answer": "The bowline knot is being demonstrated in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.67,
+                    115.171
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.670",
+                    "01:55.171"
+                ]
+            }
+        ],
+        "time_spent": 2350.0,
+        "video_link": "https://www.dropbox.com/s/t8n86l560qy39kh/John-Suscovich_10-manual.mp4?raw=1",
+        "video_id": "John-Suscovich_10-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "2:04"
+            },
+            "split-method": "manual"
+        },
+        "duration": 124.0,
+        "alter_answers": [
+            "A Bowline knot is shown. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.5872000000000002,
+                    18.0544
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the purpose of cutting up the telephone pole?",
+        "answer": "To build the framework for a gate that he is building.",
+        "assignment_id": "3IJXV6UZ1XIDKRPMAF7BT63CCI2RIL",
+        "objective": "I would like to know more about what he is building.",
+        "confidence": "high",
+        "original_question": "What is the purpose of cutting up the telephone pole?",
+        "original_answer": "To build the framework for a gate that he is building. ",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.762,
+                    18.125
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.762",
+                    "00:18.125"
+                ]
+            }
+        ],
+        "time_spent": 10002.0,
+        "video_link": "https://www.dropbox.com/s/o77hrq1dhueokzo/Hamiltonville-Farm_1-clip-4.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_1-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:54.667",
+                "end": "00:06:59.583"
+            },
+            "seconds": {
+                "start": "354.6666666666667",
+                "end": "419.5833333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.91666666666663,
+        "alter_answers": [
+            "The purpose of cutting the telephone pole is that it over hangs on the side "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    27.62853333333332,
+                    40.61186666666664
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of crop is being grown?",
+        "answer": "This field is a hay field being combined.",
+        "assignment_id": "3IJXV6UZ1XIDKRPMAF7BT63CCI2RIL",
+        "objective": "I want to know about the landscape of the area. ",
+        "confidence": "very_high",
+        "original_question": "What kind of crop is being grown?",
+        "original_answer": "This field is a hay field being combined. ",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    143.11
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "02:23.110"
+                ]
+            }
+        ],
+        "time_spent": 10002.0,
+        "video_link": "https://www.dropbox.com/s/6tcedzvmpmgm8gu/Peterson-Farm-Bros_6-clip-4.mp4?raw=1",
+        "video_id": "Peterson-Farm-Bros_6-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:36.109",
+                "end": "00:06:59.219"
+            },
+            "seconds": {
+                "start": "276.1091666666667",
+                "end": "419.2188"
+            },
+            "split-method": "auto"
+        },
+        "duration": 143.10963333333333,
+        "alter_answers": [
+            "Corn is being grown"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.142766639999998,
+                    48.31381221333332
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What personal protection equipment is being used when the man is welding?",
+        "answer": "The man welding has a face shield and gloves to protect him while welding.",
+        "assignment_id": "3L70J4KAZGL4DZNJGQKE7JYPKL0ADC",
+        "objective": "Maintaining farm machinery.",
+        "confidence": "high",
+        "original_question": "What personal protection equipment is being used when the man is welding?",
+        "original_answer": "The man welding has a face shield and gloves to protect him while welding.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    73.136,
+                    93.856
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:13.136",
+                    "01:33.856"
+                ]
+            }
+        ],
+        "time_spent": 4334.0,
+        "video_link": "https://www.dropbox.com/s/homo8emfjgyuued/How-Farms-Work_9-manual.mp4?raw=1",
+        "video_id": "How-Farms-Work_9-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:10",
+                "end": "3:30"
+            },
+            "split-method": "manual"
+        },
+        "duration": 140.0,
+        "alter_answers": [
+            "the man is using mask protection when welding"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    75.824,
+                    93.968
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many kernels of corn is normal on a cob of corn?",
+        "answer": "A normal cob of corn is 16 by 18 kernels around.",
+        "assignment_id": "3ND9UOO81K1KIOEEUCEU8L3LLB6LWB",
+        "objective": "Counting kernels of corn. ",
+        "confidence": "very_high",
+        "original_question": "How many kernels of corn is normal on a cob of corn?",
+        "original_answer": "A normal cob of corn is 16 by 18 kernels around.",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    59.84,
+                    64.975
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:59.840",
+                    "01:04.975"
+                ]
+            }
+        ],
+        "time_spent": 2193.0,
+        "video_link": "https://www.dropbox.com/s/f3enwea7xrf0v45/Millennial-Farmer_0-clip-11.mp4?raw=1",
+        "video_id": "Millennial-Farmer_0-clip-11",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:29.889",
+                "end": "00:12:35.388"
+            },
+            "seconds": {
+                "start": "689.8888833103582",
+                "end": "755.3876199101953"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.49873659983712,
+        "alter_answers": [
+            "There are 16 by 42 kernel of corn on a cob"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    42.285984348854846,
+                    48.04987316964051
+                ],
+                [
+                    53.02777715122813,
+                    58.21527708993522
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is a possible complication of raising chickens on a pasture rather than a barn system?",
+        "answer": "A possible issue with raising chickens on pasture is rain. The chickens will likely adjust their diet due to the weather.",
+        "assignment_id": "3OUYGIZWR7XH1JSRTXEGI731PHA0P6",
+        "objective": "Pasture raised chickens.",
+        "confidence": "high",
+        "original_question": "What is a possible complication of raising chickens on a pasture rather than a barn system?",
+        "original_answer": "A possible issue with raising chickens on pasture is rain. The chickens will likely adjust their diet due to the weather.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    43.233,
+                    75.171
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:43.233",
+                    "01:15.171"
+                ]
+            }
+        ],
+        "time_spent": 2235.0,
+        "video_link": "https://www.dropbox.com/s/rbslwukrbaw4xca/John-Suscovich_0-clip-1.mp4?raw=1",
+        "video_id": "John-Suscovich_0-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:29.200",
+                "end": "00:02:45.100"
+            },
+            "seconds": {
+                "start": "89.2",
+                "end": "165.1"
+            },
+            "split-method": "auto"
+        },
+        "duration": 75.89999999999998,
+        "alter_answers": [
+            "possible complication of raising chickens on a pasture rather than a barn system is that the temperature matches that of outside"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.12464,
+                    51.55128
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What does the farmer state people have to take care of?",
+        "answer": "The farmer states people have to take care of the Earth.",
+        "assignment_id": "3OUYGIZWR7XH1JSRTXEGI731PHA0P6",
+        "objective": "The Anthropocene.",
+        "confidence": "very_high",
+        "original_question": "What does the farmer state we have to take care of?",
+        "original_answer": "The farmer states we have to take care of the Earth.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    26.694,
+                    45.524
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:26.694",
+                    "00:45.524"
+                ]
+            }
+        ],
+        "time_spent": 2235.0,
+        "video_link": "https://www.dropbox.com/s/ed1yeixiwgrbsky/Olly_s-Farm_1-clip-5.mp4?raw=1",
+        "video_id": "Olly's-Farm_1-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:17.885",
+                "end": "00:06:22.549"
+            },
+            "seconds": {
+                "start": "317.88453927424536",
+                "end": "382.5492015093128"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.66466223506745,
+        "alter_answers": [
+            "He states that you need to look after the planet. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What are the benefits of this knot?",
+        "answer": "This knot will not slide at all. It is a very strong knot that is easy to undo.",
+        "assignment_id": "3Q5C1WP23M0DFYVQ5192Y6HU3YI155",
+        "objective": " I want to know more about practical applications of farming. ",
+        "confidence": "very_high",
+        "original_question": "What are the benefits of this knot?",
+        "original_answer": "This knot will not slide at all. It is a very strong knot that is easy to undo. ",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    75.392,
+                    93.744
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:15.392",
+                    "01:33.744"
+                ]
+            }
+        ],
+        "time_spent": 2873.0,
+        "video_link": "https://www.dropbox.com/s/t8n86l560qy39kh/John-Suscovich_10-manual.mp4?raw=1",
+        "video_id": "John-Suscovich_10-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "2:04"
+            },
+            "split-method": "manual"
+        },
+        "duration": 124.0,
+        "alter_answers": [
+            "The benefit of this knot is for rescue"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.732799999999997,
+                    45.135999999999996
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How could people know if their compost pile is working",
+        "answer": "Good compost shouldn't smell really bad. There is thermometer that tells you what temperature you should be at for a good compost pile.",
+        "assignment_id": "3Q5C1WP23M0DFYVQ5192Y6HU3YI155",
+        "objective": "I would like to know more about composting.",
+        "confidence": "very_high",
+        "original_question": "How do you know if your compost pile is working?",
+        "original_answer": "Good compost shouldn't smell really bad. There is thermometer that tells you what temperature you should be at for a good compost pile. ",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    66.101,
+                    78.767
+                ]
+            },
+            {
+                "1": [
+                    38.375,
+                    51.545
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:06.101",
+                    "01:18.767"
+                ]
+            },
+            {
+                "1": [
+                    "00:38.375",
+                    "00:51.545"
+                ]
+            }
+        ],
+        "time_spent": 2873.0,
+        "video_link": "https://www.dropbox.com/s/6xwr8wnx4g50dir/John-Suscovich_12-clip-0.mp4?raw=1",
+        "video_id": "John-Suscovich_12-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:18.767"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "78.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 78.76666666666667,
+        "alter_answers": [
+            "He has a thermometer that tells him if it is doing well. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    60.74485333333333,
+                    78.76666666666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there advantages to growing a specific type of potato?",
+        "answer": "Yes, certain potatoes are used for certain purposes because they have attributes that set them apart from others.",
+        "assignment_id": "3VNL7UK1XFI6QF0ODW6LQOR2K8OTFK",
+        "objective": "I want to understand how potatoes are commercially harvested.",
+        "confidence": "high",
+        "original_question": "Are there advantages to growing a specific type of potato?",
+        "original_answer": "Yes, certain potatoes are used for certain purposes because they have attributes that set them apart from others. ",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    30.769,
+                    38.157
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:30.769",
+                    "00:38.157"
+                ]
+            }
+        ],
+        "time_spent": 2580.0,
+        "video_link": "https://www.dropbox.com/s/a3v0b5peynfadh8/Olly_s-Farm_6-clip-1.mp4?raw=1",
+        "video_id": "Olly's-Farm_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.600",
+                "end": "00:02:01.360"
+            },
+            "seconds": {
+                "start": "60.6",
+                "end": "121.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.76,
+        "alter_answers": [
+            "Salad potato has good flavor"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.894368,
+                    32.761792
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are potatoes hand dug on a commercial level?",
+        "answer": "No, they use machines to dig the potatoes.",
+        "assignment_id": "3VNL7UK1XFI6QF0ODW6LQOR2K8OTFK",
+        "objective": "I want to understand how potatoes are commercially harvested.",
+        "confidence": "very_high",
+        "original_question": "Are potatoes hand dug on a commercial level?",
+        "original_answer": "No, they use machines to dig the potatoes. ",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.243
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A18BJWKNUEXZGA",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.243"
+                ]
+            }
+        ],
+        "time_spent": 2580.0,
+        "video_link": "https://www.dropbox.com/s/a3v0b5peynfadh8/Olly_s-Farm_6-clip-1.mp4?raw=1",
+        "video_id": "Olly's-Farm_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.600",
+                "end": "00:02:01.360"
+            },
+            "seconds": {
+                "start": "60.6",
+                "end": "121.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.76,
+        "alter_answers": [
+            "Yes potatoes hand are dug on a commercial level"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    40.1016,
+                    53.71184
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What colors does the man state are within the pack of wire nuts?",
+        "answer": "The wire nuts come in yellow, tan, and red in the assorted pack.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNBIONHA",
+        "objective": "Electrical wiring tutorial.",
+        "confidence": "very_high",
+        "original_question": "What colors does the man state are within the pack of wire nuts?",
+        "original_answer": "The wire nuts come in yellow, tan, and red in the assorted pack.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    40.368,
+                    46.858
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:40.368",
+                    "00:46.858"
+                ]
+            }
+        ],
+        "time_spent": 2043.0,
+        "video_link": "https://www.dropbox.com/s/g7vmtx74aibfp70/Hamiltonville-Farm_8-clip-3.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_8-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:09.322",
+                "end": "00:04:10.784"
+            },
+            "seconds": {
+                "start": "189.32246666666666",
+                "end": "250.78386666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.46140000000002,
+        "alter_answers": [
+            "the man states the wire nuts are yellow tan and red"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    39.876156320000014,
+                    51.18505392000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the red container on the tractor called?",
+        "answer": "The red container on the tractor is the spreading churn that dispenses seeds.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNBIONHA",
+        "objective": "Dispensing seeds over farmland.",
+        "confidence": "high",
+        "original_question": "What is the red container on the tractor called?",
+        "original_answer": "The red container on the tractor is the spreading churn that dispenses seeds.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    28.35,
+                    42.236
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:28.350",
+                    "00:42.236"
+                ]
+            }
+        ],
+        "time_spent": 2043.0,
+        "video_link": "https://www.dropbox.com/s/ud0us4vncuvy2jq/Millennial-Farmer_1-clip-11.mp4?raw=1",
+        "video_id": "Millennial-Farmer_1-clip-11",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:53.004",
+                "end": "00:12:53.272"
+            },
+            "seconds": {
+                "start": "713.0039583333332",
+                "end": "773.2724999999999"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.26854166666669,
+        "alter_answers": [
+            "The red container is called a funnel."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How many farms can they plant with the amount of soy beans they have?",
+        "answer": "They can plant up to two farms with the amount of soy beans they have.",
+        "assignment_id": "3X87C8JFV6A224DI2CCPSIZUP4CQS5",
+        "objective": "Preparing to dispense seeds",
+        "confidence": "very_high",
+        "original_question": "How many farms can they plant with the amount of soy beans they have?",
+        "original_answer": "They can plant up to two farms with the amount of soy beans they have.",
+        "question_type": [
+            "Number"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.289,
+                    59.592
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.289",
+                    "00:59.592"
+                ]
+            }
+        ],
+        "time_spent": 2532.0,
+        "video_link": "https://www.dropbox.com/s/6qufgo5duwh57wi/How-Farms-Work_10-clip-1.mp4?raw=1",
+        "video_id": "How-Farms-Work_10-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:19.546",
+                "end": "00:03:45.892"
+            },
+            "seconds": {
+                "start": "79.54610024290373",
+                "end": "225.8922393642862"
+            },
+            "split-method": "auto"
+        },
+        "duration": 146.34613912138246,
+        "alter_answers": [
+            "They have enough to plant 2 farms. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    38.16707308285654,
+                    70.5973775121549
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the stencil made out of in the video?",
+        "answer": "The stencil is made out of cardboard in the video.",
+        "assignment_id": "3Z7ISHFUH0UTXCZ0BAPX2KBXIEIZ82",
+        "objective": "Farm marketing solutions.",
+        "confidence": "very_high",
+        "original_question": "What is the stencil made out of in the video?",
+        "original_answer": "The stencil is made out of cardboard in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    10.397
+                ]
+            },
+            {
+                "1": [
+                    29.853,
+                    38.061
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:10.397"
+                ]
+            },
+            {
+                "1": [
+                    "00:29.853",
+                    "00:38.061"
+                ]
+            }
+        ],
+        "time_spent": 1820.0,
+        "video_link": "https://www.dropbox.com/s/profk75d7es4s8v/John-Suscovich_3-manual.mp4?raw=1",
+        "video_id": "John-Suscovich_3-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "3:00",
+                "end": "4:16"
+            },
+            "split-method": "manual"
+        },
+        "duration": 76.0,
+        "alter_answers": [
+            "The stencil is made out of paint and spray paint"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    17.9968,
+                    27.238400000000006
+                ]
+            ]
+        ]
+    }
+]

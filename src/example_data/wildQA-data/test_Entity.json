@@ -1,0 +1,4593 @@
+[
+    {
+        "question": "Is there any wildlife?",
+        "answer": "Yes. There are grasses, small trees, and birds. ",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "water",
+        "confidence": "very_high",
+        "original_question": "Is there any wildlife?",
+        "original_answer": "Yes. There are grasses, small trees, and birds. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.528
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.528"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/a3ewq55teqdujtq/4k-Relaxation_11-manual.mp4?raw=1",
+        "video_id": "4k-Relaxation_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "25:00",
+                "end": "27:00"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0,
+        "alter_answers": [
+            "There is wildlife in the video. ",
+            "Yes, there is wildlife. Voice of birds can be heard from the video."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    89.184,
+                    98.592
+                ]
+            ],
+            [
+                [
+                    3.168,
+                    7.968
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What types of vegetation is present?",
+        "answer": "Trees, bushes, and tall plants. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What types of vegetation is present?",
+        "original_answer": "Trees, bushes, and tall plants. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    4.017
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:04.017"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/zs3vvn5ynae4p2f/Virtual-Running-Videos_10-clip-25.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_10-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:25:19.551",
+                "end": "00:26:20.045"
+            },
+            "seconds": {
+                "start": "1519.5513666666666",
+                "end": "1580.0451333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.493766666666716,
+        "alter_answers": [
+            "There are many trees in this location.",
+            "There's lots of shrubs, plants, and brush in this area.",
+            "The vegetation present is trees, some ferns, dead leaves, and maybe some vines growing up the trees or moss.",
+            "The vegetation present are deciduous trees and shrubbery. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    35.715519840000034,
+                    40.6034161866667
+                ]
+            ],
+            [
+                [
+                    1.5970354400000013,
+                    6.678511840000005
+                ]
+            ],
+            [
+                [
+                    5.952586640000005,
+                    9.77579269333334
+                ],
+                [
+                    54.10562490666671,
+                    60.396976640000055
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people in the video?",
+        "answer": "Yes, there are a lot of people. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there people here and if so how many?",
+        "original_answer": "Yes, there are a lot of people. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    57.754,
+                    61.764
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:57.754",
+                    "01:01.764"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/gc3wgfu6ifunhy9/The-Flying-Dutchman_6-clip-7.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:04.275",
+                "end": "00:09:07.714"
+            },
+            "seconds": {
+                "start": "484.2754583333333",
+                "end": "547.7138333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.43837499999995,
+        "alter_answers": [
+            "Yes, I can hear footsteps and see several people off in the distance, and a few different points in the video. ",
+            "Yes there are people in this video, quite a lot actually. You see people walking or hiking up/down the trail. ",
+            "There are people in this video. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.567562999999997,
+                    5.8870811999999955
+                ]
+            ],
+            [
+                [
+                    41.86932749999997,
+                    48.97442549999997
+                ],
+                [
+                    58.008050099999956,
+                    63.43837499999995
+                ]
+            ],
+            [
+                [
+                    37.30176449999997,
+                    51.10595489999996
+                ],
+                [
+                    58.41405569999995,
+                    63.43837499999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any structures nearby?",
+        "answer": "Yes, there are two on top of a ridge. ",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there any structures nearby? If so, how many and where?",
+        "original_answer": "Yes, there are two on top of a ridge. ",
+        "question_type": [
+            "Entity",
+            "Location",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.906,
+                    19.336
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.906",
+                    "00:19.336"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/gc3wgfu6ifunhy9/The-Flying-Dutchman_6-clip-7.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_6-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:04.275",
+                "end": "00:09:07.714"
+            },
+            "seconds": {
+                "start": "484.2754583333333",
+                "end": "547.7138333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.43837499999995,
+        "alter_answers": [
+            "There is a large structure atop a cliff.",
+            "Yes, there is a house in the distance.",
+            "There are structures such as buildings nearby."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.881372499999994,
+                    15.93571979999999
+                ]
+            ],
+            [
+                [
+                    52.628475899999955,
+                    63.43837499999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the runner physically fit?",
+        "answer": "Judging by the pace of running and the controlled breathing, I would assume they work out often and thus are in decent physical shape.",
+        "assignment_id": "3B4YI393V9VEFKSVUG1UNIEV64NSS9",
+        "objective": "I am curious how often this person exercises",
+        "confidence": "moderate",
+        "original_question": "Are they physically fit?",
+        "original_answer": "Judging by the pace of running and the controlled breathing, I would assume they work out often and thus are in decent physical shape.",
+        "question_type": [
+            "Entity",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.976,
+                    21.526
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.976",
+                    "00:21.526"
+                ]
+            }
+        ],
+        "time_spent": 1132.0,
+        "video_link": "https://www.dropbox.com/s/3eyvz0a3wglx5oj/Virtual-Running-Videos_4-clip-16.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_4-clip-16",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:59:15.419",
+                "end": "01:00:22.352"
+            },
+            "seconds": {
+                "start": "3555.4185333333335",
+                "end": "3622.352066666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.93353333333334,
+        "alter_answers": [
+            "No runner is visible.",
+            "n/a"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    3.5340905600000005
+                ],
+                [
+                    28.058537173333338,
+                    31.913908693333337
+                ],
+                [
+                    52.15460917333334,
+                    55.36741877333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kinds of vegetation are there in the different terrains?",
+        "answer": "There are deciduous and coniferous forests, shrubbery, and grasses. ",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTCMQQ8D",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What kinds of vegetation are there in the different terrains?",
+        "original_answer": "There are deciduous and coniferous forests, shrubbery, and grasses. ",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    16.253,
+                    26.273
+                ]
+            },
+            {
+                "1": [
+                    51.446,
+                    62.689
+                ]
+            },
+            {
+                "2": [
+                    126.721,
+                    136.375
+                ]
+            },
+            {
+                "3": [
+                    43.137,
+                    50.957
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:16.253",
+                    "00:26.273"
+                ]
+            },
+            {
+                "1": [
+                    "00:51.446",
+                    "01:02.689"
+                ]
+            },
+            {
+                "2": [
+                    "02:06.721",
+                    "02:16.375"
+                ]
+            },
+            {
+                "3": [
+                    "00:43.137",
+                    "00:50.957"
+                ]
+            }
+        ],
+        "time_spent": 3598.0,
+        "video_link": "https://www.dropbox.com/s/fdn7bg0btcrsman/Primal-Earth-Sounds_11-clip-7.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:29.917",
+                "end": "00:34:02.667"
+            },
+            "seconds": {
+                "start": "1889.9166666666667",
+                "end": "2042.6666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 152.75,
+        "alter_answers": [
+            "There are many trees along the hills and more flat areas.",
+            "There's bushy greenery atop the rocky mountains.",
+            "There's lots of grass in the flatter areas.",
+            "The vegetation that is here is mainly trees. For example, the video showed lots of pine trees. Not sure if there were any other types, but the pine trees were in 90% of the video. ",
+            "In the rolling hills terrain there are leafy trees for vegetation. In the mountain terrain, there are pines and shorter shrubs for vegetation. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    15.6416
+                ]
+            ],
+            [
+                [
+                    21.8738,
+                    37.7598
+                ]
+            ],
+            [
+                [
+                    64.03280000000001,
+                    73.4422
+                ]
+            ],
+            [
+                [
+                    4.154800000000001,
+                    26.884000000000004
+                ],
+                [
+                    149.5728,
+                    152.75
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kinds of bodies of water are there?",
+        "answer": "There are rivers and streams.",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What kinds of bodies of water are there?",
+        "original_answer": "There are rivers and streams. ",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.24,
+                    14.236
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.240",
+                    "00:14.236"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/r6imsp6nqrjdq2q/Norwegian-Explorer_11-clip-54.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_11-clip-54",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:25.000",
+                "end": "00:59:41.700"
+            },
+            "seconds": {
+                "start": "3505.0",
+                "end": "3581.7"
+            },
+            "split-method": "auto"
+        },
+        "duration": 76.6999999999998,
+        "alter_answers": [
+            "There are bodies of water in this location.",
+            "There is a long stream or river between the valley.",
+            "The kinds of bodies of water there are streams."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.4859199999999815,
+                    11.719759999999972
+                ],
+                [
+                    58.84423999999986,
+                    64.79615999999984
+                ]
+            ],
+            [
+                [
+                    48.41303999999988,
+                    55.96031999999986
+                ],
+                [
+                    58.66015999999986,
+                    75.28871999999981
+                ]
+            ],
+            [
+                [
+                    51.17423999999988,
+                    63.50759999999985
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of forest is it?",
+        "answer": "Temperate rainforest.",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "Topography",
+        "confidence": "very_high",
+        "original_question": "What kind of forest is it?",
+        "original_answer": "Temperate rainforest. ",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.582,
+                    21.494
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.582",
+                    "00:21.494"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/hk9eyagv9kqtr60/The-Flying-Dutchman_5-clip-30.mp4?raw=1",
+        "video_id": "The-Flying-Dutchman_5-clip-30",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:35:01.433",
+                "end": "00:36:10.502"
+            },
+            "seconds": {
+                "start": "2101.4326666666666",
+                "end": "2170.5016666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.06899999999996,
+        "alter_answers": [
+            "It is a forest with tall trees and rivers.",
+            "I would say that this forest is a rain forest based on the moss growing, the running water, and lots of vegetation. It's hard to tell if this truly is a rain forest, but moss likes lots of water.",
+            "It is a boreal forest. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are there people in the area?",
+        "answer": "Yes.",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there people in the area?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.944,
+                    32.088
+                ]
+            },
+            {
+                "1": [
+                    43.344,
+                    47.936
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.944",
+                    "00:32.088"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.344",
+                    "00:47.936"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/qkawcecxkx76x28/Virtual-Running-Videos_0-manual.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_0-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "2:05",
+                "end": "3:15"
+            },
+            "split-method": "manual"
+        },
+        "duration": 70.0,
+        "alter_answers": [
+            "Yes there is at least one person off camera. I can hear them breathing heavy and I can hear their footsteps. There is one person visible in the video, who is pushing a baby stroller. ",
+            "Yes there are people in the area. There is a woman pushing a black stroller with pink blanket draped over it. The woman also has an arm band on. ",
+            "There are people in this area."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    26.376,
+                    30.240000000000002
+                ]
+            ],
+            [
+                [
+                    26.823999999999998,
+                    30.407999999999998
+                ]
+            ],
+            [
+                [
+                    25.872,
+                    29.624000000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people?",
+        "answer": "Yes",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are there people?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.334,
+                    15.663
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.334",
+                    "00:15.663"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/zdjda8vochay0aw/Nick-Gaillard_5-clip-0.mp4?raw=1",
+        "video_id": "Nick-Gaillard_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.960"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.96,
+        "alter_answers": [
+            "There are several people visible.",
+            "There are people."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.590271999999999,
+                    13.779904
+                ],
+                [
+                    22.256032,
+                    24.684864
+                ],
+                [
+                    35.986368,
+                    38.018656
+                ],
+                [
+                    56.457952,
+                    58.39110399999999
+                ]
+            ],
+            [
+                [
+                    12.887680000000001,
+                    23.296960000000002
+                ],
+                [
+                    30.484320000000004,
+                    38.811744
+                ],
+                [
+                    56.705792,
+                    58.688512
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What sort of features are present here?",
+        "answer": "Islands, mountains, forest, and an ocean. ",
+        "assignment_id": "33FBRBDW6OYGPJOQJW5PRMAC87SC8X",
+        "objective": "Topography ",
+        "confidence": "very_high",
+        "original_question": "What sort of features are present here?",
+        "original_answer": "Islands, mountains, forest, and an ocean. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.931
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.931"
+                ]
+            }
+        ],
+        "time_spent": 2713.0,
+        "video_link": "https://www.dropbox.com/s/vi8cpvegr791wem/Primal-Earth-Sounds_3-clip-48.mp4?raw=1",
+        "video_id": "Primal-Earth-Sounds_3-clip-48",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:39.250",
+                "end": "00:59:46.042"
+            },
+            "seconds": {
+                "start": "3519.25",
+                "end": "3586.0416666666665"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.79166666666653,
+        "alter_answers": [
+            "It appears to be a tropical scene, based on the color of the water and the shoreline. There are mountains or bluffs in the background. ",
+            "Beach, ocean, mountain, trees are present.",
+            "Mountainous beaches are present here."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    27.999066666666604,
+                    34.67823333333325
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any boats and/or other types of things on the water?",
+        "answer": "No.",
+        "assignment_id": "3KAKFY4PGU1L1P4KZP6FB80W5Q43II",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "Are there any boats and/or other types of things on the water?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    29.412,
+                    36.845
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:29.412",
+                    "00:36.845"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/7vvm4korgwg9366/Virtual-Running-Videos_6-manual.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_6-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "4:50",
+                "end": "5:47"
+            },
+            "split-method": "manual"
+        },
+        "duration": 57.0,
+        "alter_answers": [
+            "There are no visible boats or other objects on the body of water.",
+            "I didn't see any boats, the water seems very calm and not disturbed like if a boat was cruising by. I saw moss growing along the side of the water, but there isn't any plant or human life on the water, besides the man running on the trail next to it.",
+            "There are no boats and/or other types of things on the water."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    1.6872
+                ],
+                [
+                    28.9104,
+                    31.3728
+                ]
+            ],
+            [
+                [
+                    20.3832,
+                    24.760799999999996
+                ],
+                [
+                    45.32639999999999,
+                    52.8504
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the soldiers training for?",
+        "answer": "The soldiers are training for air assault missions.",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "Determine what the soldiers are training for.",
+        "confidence": "very_high",
+        "original_question": "What are the soldiers training for?",
+        "original_answer": "The soldiers are training for air assault missions.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    18.096,
+                    21.626
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:18.096",
+                    "00:21.626"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/521tuwvnrr0hta3/MilitaryNotes_0-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.29951789225324"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.29951789225325,
+        "alter_answers": [
+            "They are training for air assaults' courses. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    13.338775093354306,
+                    21.283192612190327
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the people loading things into the helicopter?",
+        "answer": "Yes",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "Determine what the People are doing.",
+        "confidence": "very_high",
+        "original_question": "Are the people loading things into the helicopter?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.889,
+                    14.477
+                ]
+            },
+            {
+                "1": [
+                    42.141,
+                    46.987
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.889",
+                    "00:14.477"
+                ]
+            },
+            {
+                "1": [
+                    "00:42.141",
+                    "00:46.987"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/y2v4rh5nybmn9qb/AiirSource-Military_8-clip-1.mp4?raw=1",
+        "video_id": "AiirSource-Military_8-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.060",
+                "end": "00:02:16.737"
+            },
+            "seconds": {
+                "start": "60.06",
+                "end": "136.7366"
+            },
+            "split-method": "auto"
+        },
+        "duration": 76.67660000000002,
+        "alter_answers": [
+            "Yes they are using a vehicle to load large boxes onto the helicopter. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.9814604800000002,
+                    14.905931040000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are they training for timed quick target acquisition?",
+        "answer": "More than likely this is not a timed scenario. Usually there is about 10 seconds to fire about 15 rounds etc. This video does not show a sense of hurry or quick means. This is probably a pre-qualification day that is used to get the soldier use to firing a pistol.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOUSM6WG",
+        "objective": "This is more than likely a boot camp live fire of the newly adopted Sig Sauer P320. It was the replacement from the long time 9mm Beretta 92. Live fire training is done after a few days practice of a laser/ mechanical simulated pistol that will have kickback to simulate live fire training. The soldiers in the video are more than likely doing their live fire 9mm qualifications",
+        "confidence": "very_high",
+        "original_question": "Are they training for timed quick target acquisition?",
+        "original_answer": "More than likely this is not a timed scenario. Usually there is about 10 seconds to fire about 15 rounds etc. This video does not show a sense of hurry or quick means. This is probably a pre-qualification day that is used to get the soldier use to firing a pistol.",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.511,
+                    16.588
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.511",
+                    "00:16.588"
+                ]
+            }
+        ],
+        "time_spent": 3676.0,
+        "video_link": "https://www.dropbox.com/s/79lfbls3gmycbmm/USA-Military-Channel_5-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_5-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:01.421",
+                "end": "00:02:57.310"
+            },
+            "seconds": {
+                "start": "121.42098042905533",
+                "end": "177.31"
+            },
+            "split-method": "auto"
+        },
+        "duration": 55.88901957094467,
+        "alter_answers": [
+            "Yes they are training on multiple targets. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What type of uniform is worn in the video?",
+        "answer": "The United Stated Marine Corps uniform is worn in the video.",
+        "assignment_id": "3DIP6YHAPCRVMH84FNBKHAAFU0J8EZ",
+        "objective": "I want to learn about military readiness.",
+        "confidence": "very_high",
+        "original_question": "What type of uniform is worn in the video?",
+        "original_answer": "The United Stated Marine Corps uniform is worn in the video.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.438,
+                    60.3
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.438",
+                    "01:00.300"
+                ]
+            }
+        ],
+        "time_spent": 3779.0,
+        "video_link": "https://www.dropbox.com/s/wbl3orjwuyt73zf/MilitaryNotes_5-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.3,
+        "alter_answers": [
+            "They are wearing military fatigues with helmets. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.1004000000000005,
+                    14.85792
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of helicopter is in the video?",
+        "answer": "A Russian MI-24 helicopter.",
+        "assignment_id": "3DIP6YHAPCRVMH84FNBKHAAFU0J8EZ",
+        "objective": "I want to learn about military attack helicopters.",
+        "confidence": "high",
+        "original_question": "What type of helicopter is in the video?",
+        "original_answer": "A Russian MI-24 helicopter.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    33.483
+                ]
+            },
+            {
+                "1": [
+                    36.951,
+                    45.231
+                ]
+            },
+            {
+                "2": [
+                    56.513,
+                    64.69
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:33.483"
+                ]
+            },
+            {
+                "1": [
+                    "00:36.951",
+                    "00:45.231"
+                ]
+            },
+            {
+                "2": [
+                    "00:56.513",
+                    "01:04.690"
+                ]
+            }
+        ],
+        "time_spent": 3779.0,
+        "video_link": "https://www.dropbox.com/s/2ff3colvum39jly/WarLeaks-Military-Blog_10-clip-3.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_10-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:10.655",
+                "end": "00:04:15.345"
+            },
+            "seconds": {
+                "start": "190.6551724137931",
+                "end": "255.3448275862069"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.68965517241378,
+        "alter_answers": [
+            "It is never stated what type of helicopter this is "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is the ship sailing in the video?",
+        "answer": "No the ship is capsized in the video.",
+        "assignment_id": "3G5W44VEU7HD1W6WU7YB7I4I2CJGKQ",
+        "objective": "I want to see how long a ship can stay capsized while under attack.",
+        "confidence": "very_high",
+        "original_question": "Is the ship sailing in the video?",
+        "original_answer": "No the ship is capsized in the video.",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.072,
+                    53.376
+                ]
+            },
+            {
+                "1": [
+                    70.944,
+                    120.0
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.072",
+                    "00:53.376"
+                ]
+            },
+            {
+                "1": [
+                    "01:10.944",
+                    "02:00.000"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/p3zfzf4tfwovcaf/USA-Military-Channel_6-manual.mp4?raw=1",
+        "video_id": "USA-Military-Channel_6-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:10",
+                "end": "3:10"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0,
+        "alter_answers": [
+            "It is shown floating for a time, but then it sinks. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.536,
+                    16.992
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Which United States military branch do the workers seen in the video belong to?",
+        "answer": "The workers seen in the video belong to the United States Army.",
+        "assignment_id": "3PIWWX1FJJ5SHEQFKSJ23GWLFNJJJX",
+        "objective": "I want to learn about different military vehicles. ",
+        "confidence": "very_high",
+        "original_question": "Which United States military branch do the workers seen in the video belong to?",
+        "original_answer": "The the workers seen in the video belong to the United States Army.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    51.612
+                ]
+            },
+            {
+                "1": [
+                    96.545,
+                    114.761
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:51.612"
+                ]
+            },
+            {
+                "1": [
+                    "01:36.545",
+                    "01:54.761"
+                ]
+            }
+        ],
+        "time_spent": 3627.0,
+        "video_link": "https://www.dropbox.com/s/25tgi1xzbiminyw/AiirSource-Military_0-clip-2.mp4?raw=1",
+        "video_id": "AiirSource-Military_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.900",
+                "end": "00:04:12.400"
+            },
+            "seconds": {
+                "start": "125.9",
+                "end": "252.4"
+            },
+            "split-method": "auto"
+        },
+        "duration": 126.5,
+        "alter_answers": [
+            "They are all army."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    14.066799999999999,
+                    40.8848
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of vehicle is actively being moved in the video?",
+        "answer": "The type of vehicle actively being moved in the video is a M2 Bradley.",
+        "assignment_id": "3PIWWX1FJJ5SHEQFKSJ23GWLFNJJJX",
+        "objective": "I want to learn about different military vehicles. ",
+        "confidence": "very_high",
+        "original_question": "What type of vehicle is actively being moved in the video?",
+        "original_answer": "The type of vehicle actively being moved in the video is a M2 Bradley.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    16.9
+                ]
+            },
+            {
+                "1": [
+                    26.514,
+                    126.5
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:16.900"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.514",
+                    "02:06.500"
+                ]
+            }
+        ],
+        "time_spent": 3627.0,
+        "video_link": "https://www.dropbox.com/s/25tgi1xzbiminyw/AiirSource-Military_0-clip-2.mp4?raw=1",
+        "video_id": "AiirSource-Military_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.900",
+                "end": "00:04:12.400"
+            },
+            "seconds": {
+                "start": "125.9",
+                "end": "252.4"
+            },
+            "split-method": "auto"
+        },
+        "duration": 126.5,
+        "alter_answers": [
+            "Tanks are being loaded onto trucks. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Which military branch is conducting the ceremony in the video?",
+        "answer": "The United States Army is conducting the ceremony in the video.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTDYS8QM",
+        "objective": "I am interested in military ceremonies.",
+        "confidence": "very_high",
+        "original_question": "Which military branch is conducting the ceremony in the video?",
+        "original_answer": "The United States Army is conducting the ceremony in the video.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.434
+                ]
+            },
+            {
+                "1": [
+                    11.666,
+                    31.133
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.434"
+                ]
+            },
+            {
+                "1": [
+                    "00:11.666",
+                    "00:31.133"
+                ]
+            }
+        ],
+        "time_spent": 3260.0,
+        "video_link": "https://www.dropbox.com/s/v35dxwq64vf8jxp/MilitaryNotes_9-manual.mp4?raw=1",
+        "video_id": "MilitaryNotes_9-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:09",
+                "end": "1:55"
+            },
+            "split-method": "manual"
+        },
+        "duration": 46.0,
+        "alter_answers": [
+            "Army - based on the patches worn on the uniforms."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    0.736
+                ],
+                [
+                    23.478399999999997,
+                    24.9136
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there pilots in the video?",
+        "answer": "Yes there are pilots in the video.",
+        "assignment_id": "37XITHEISW8M7O3MI5BPI35HZFVRC0",
+        "objective": "I want to learn about military aircraft.",
+        "confidence": "high",
+        "original_question": "Are the pilots in the video?",
+        "original_answer": "Yes there are pilots in the video. ",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.251
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.251"
+                ]
+            }
+        ],
+        "time_spent": 3232.0,
+        "video_link": "https://www.dropbox.com/s/ntpk03rorc4q0io/Military-Archive_6-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:04.867"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "64.86666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.86666666666666,
+        "alter_answers": [
+            "Yes there are 2"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.3632533333333334,
+                    10.067306666666665
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any dolphins under water?",
+        "answer": "Yes there is a dolphin.",
+        "assignment_id": "31Z0PCVWUKETBMLIVD892WELMEI7TV",
+        "objective": "Determine what the different types of animals in the water.",
+        "confidence": "high",
+        "original_question": "Are there any dolphins under water?",
+        "original_answer": "Yes there is a dolphin.",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.154,
+                    4.388
+                ]
+            },
+            {
+                "1": [
+                    19.367,
+                    22.527
+                ]
+            },
+            {
+                "2": [
+                    13.458,
+                    15.155
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.154",
+                    "00:04.388"
+                ]
+            },
+            {
+                "1": [
+                    "00:19.367",
+                    "00:22.527"
+                ]
+            },
+            {
+                "2": [
+                    "00:13.458",
+                    "00:15.155"
+                ]
+            }
+        ],
+        "time_spent": 2510.0,
+        "video_link": "https://www.dropbox.com/s/2hm0ykhbnjzwrsk/Chad-Zuber_6-clip-6.mp4?raw=1",
+        "video_id": "Chad-Zuber_6-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:28.221",
+                "end": "00:07:41.361"
+            },
+            "seconds": {
+                "start": "388.22116666666665",
+                "end": "461.3609"
+            },
+            "split-method": "auto"
+        },
+        "duration": 73.13973333333338,
+        "alter_answers": [
+            "He thinks he can hear them, but He cant see them. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    17.55353600000001,
+                    26.505839360000014
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why is the man cutting up the cactus?",
+        "answer": "The man is cutting the cactus in order to eat the insides.",
+        "assignment_id": "35USIKEBNRFCC92TF7H5NJ8X2LE6NW",
+        "objective": "Why is the man cutting the cactus?",
+        "confidence": "very_high",
+        "original_question": "Why is the man cutting up the cactus?",
+        "original_answer": "The man is cutting the cactus in order to eat the insides.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    89.906,
+                    94.682
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:29.906",
+                    "01:34.682"
+                ]
+            }
+        ],
+        "time_spent": 2540.0,
+        "video_link": "https://www.dropbox.com/s/9ap6rzj0nzv74xs/Chad-Zuber_11-clip-1.mp4?raw=1",
+        "video_id": "Chad-Zuber_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.367",
+                "end": "00:02:36.667"
+            },
+            "seconds": {
+                "start": "60.36666666666667",
+                "end": "156.66666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 96.29999999999998,
+        "alter_answers": [
+            "The man is cutting up the cactus in order to eat it."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    90.13679999999998,
+                    96.29999999999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the material look homogeneous?",
+        "answer": "No, the material does not look homogeneous.",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the structure made out of?",
+        "confidence": "very_high",
+        "original_question": "Does the material look homogeneous?",
+        "original_answer": "The material does not look homogenous.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    1.479
+                ]
+            },
+            {
+                "1": [
+                    38.903,
+                    43.441
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:01.479"
+                ]
+            },
+            {
+                "1": [
+                    "00:38.903",
+                    "00:43.441"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/xocm7ynhka3e9g8/Survival-Skills-Primitive_6-clip-4.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_6-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:07.467",
+                "end": "00:05:11.200"
+            },
+            "seconds": {
+                "start": "247.46666666666667",
+                "end": "311.2"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.73333333333332,
+        "alter_answers": [
+            "The material does look homogeneous"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    15.601919999999998,
+                    29.419306666666657
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the material packet tightly?",
+        "answer": "Yes the material is very packed",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the structure made out of?",
+        "confidence": "very_high",
+        "original_question": "Is the material packet tightly?",
+        "original_answer": "Yes the material is very packed",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    1.377
+                ]
+            },
+            {
+                "1": [
+                    55.015,
+                    56.34
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:01.377"
+                ]
+            },
+            {
+                "1": [
+                    "00:55.015",
+                    "00:56.340"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/xocm7ynhka3e9g8/Survival-Skills-Primitive_6-clip-4.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_6-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:07.467",
+                "end": "00:05:11.200"
+            },
+            "seconds": {
+                "start": "247.46666666666667",
+                "end": "311.2"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.73333333333332,
+        "alter_answers": [
+            "The material is packet very tightly"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.167679999999997,
+                    34.008106666666656
+                ],
+                [
+                    38.29098666666666,
+                    48.28437333333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are they creating notches in the bamboo?",
+        "answer": "Yes, they are using creating notches in the bamboo.",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What are the notches in the bamboo for?",
+        "confidence": "very_high",
+        "original_question": "Are they creating notches in the bamboo?",
+        "original_answer": "Yes, they are using creating notches in the bamboo.",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.962,
+                    12.659
+                ]
+            },
+            {
+                "1": [
+                    7.077,
+                    8.373
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.962",
+                    "00:12.659"
+                ]
+            },
+            {
+                "1": [
+                    "00:07.077",
+                    "00:08.373"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/kqqa6mi21ua6jvp/Survival-Skills-Primitive_5-clip-3.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_5-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:30.300",
+                "end": "00:04:32.600"
+            },
+            "seconds": {
+                "start": "210.3",
+                "end": "272.6"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.30000000000001,
+        "alter_answers": [
+            "Yes they are creating notches in the bamboo"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.977600000000001,
+                    16.098320000000005
+                ],
+                [
+                    24.969840000000005,
+                    32.994080000000004
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did the man find twigs?",
+        "answer": "Dead limbs on trees and twigs on limbs that have fallen.",
+        "assignment_id": "3FE2ERCCZX7240KAVIGR88ZJN09OPZ",
+        "objective": "Determine what he is using to start a fire.",
+        "confidence": "very_high",
+        "original_question": "Where can you find twigs?",
+        "original_answer": "Dead limbs on trees and twigs on limbs that have fallen.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.127,
+                    42.195
+                ]
+            },
+            {
+                "1": [
+                    44.227,
+                    48.65
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.127",
+                    "00:42.195"
+                ]
+            },
+            {
+                "1": [
+                    "00:44.227",
+                    "00:48.650"
+                ]
+            }
+        ],
+        "time_spent": 2045.0,
+        "video_link": "https://www.dropbox.com/s/bw6popq80c8a540/BC-Bushcraft_7-clip-2.mp4?raw=1",
+        "video_id": "BC-Bushcraft_7-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:24.044",
+                "end": "00:03:38.752"
+            },
+            "seconds": {
+                "start": "144.0439",
+                "end": "218.75186666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.70796666666666,
+        "alter_answers": [
+            "The man found twigs on the falling branches"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is the man working with wood?",
+        "answer": "Yes he is.",
+        "assignment_id": "3FE2ERCCZX7240KAVIGR88ZJN09OPZ",
+        "objective": "What is the frame for?",
+        "confidence": "very_high",
+        "original_question": "Is the man working with wood?",
+        "original_answer": "Yes he is.",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.861,
+                    11.981
+                ]
+            },
+            {
+                "1": [
+                    15.411,
+                    17.51
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.861",
+                    "00:11.981"
+                ]
+            },
+            {
+                "1": [
+                    "00:15.411",
+                    "00:17.510"
+                ]
+            }
+        ],
+        "time_spent": 2045.0,
+        "video_link": "https://www.dropbox.com/s/6m7l1wwyjad61k9/Survival-Instinct_0-clip-6.mp4?raw=1",
+        "video_id": "Survival-Instinct_0-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:41.960",
+                "end": "00:07:45.960"
+            },
+            "seconds": {
+                "start": "401.96",
+                "end": "465.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.0,
+        "alter_answers": [
+            "Yes the man is working with wood"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.278399999999998,
+                    33.638400000000004
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why is the human piling rocks by the fire?",
+        "answer": "The human is piling rocks by the fire to block the wind so the fire will not go out.",
+        "assignment_id": "3VFJCI1K4ZYZO0JRKR788UQWX2BGRD",
+        "objective": "Determine why the human is moving rocks\n",
+        "confidence": "very_high",
+        "original_question": "Why is the human piling rocks by the fire?",
+        "original_answer": "The human is piling rocks by the fire to block the wind so the fire will not go out.",
+        "question_type": [
+            "Entity",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    47.308,
+                    51.347
+                ]
+            },
+            {
+                "1": [
+                    42.011,
+                    43.899
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:47.308",
+                    "00:51.347"
+                ]
+            },
+            {
+                "1": [
+                    "00:42.011",
+                    "00:43.899"
+                ]
+            }
+        ],
+        "time_spent": 4299.0,
+        "video_link": "https://www.dropbox.com/s/on7q8y18j8lbnt0/Bertram-Craft_4-clip-0.mp4?raw=1",
+        "video_id": "Bertram-Craft_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:05.560"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "65.56"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.56,
+        "alter_answers": [
+            "It is not clear why he is piling rocks."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What Is the human creating by making a rectangular prism out of sticks?",
+        "answer": "The human is creating a shelter",
+        "assignment_id": "3VFJCI1K4ZYZO0JRKR788UQWX2BGRD",
+        "objective": "What is the human using the sticks to create?",
+        "confidence": "very_high",
+        "original_question": "What Is the human creating by making a rectangular prism out of sticks?",
+        "original_answer": "The human is creating a shelter",
+        "question_type": [
+            "Entity",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.618,
+                    17.751
+                ]
+            },
+            {
+                "1": [
+                    59.579,
+                    61.053
+                ]
+            },
+            {
+                "2": [
+                    76.162,
+                    76.777
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.618",
+                    "00:17.751"
+                ]
+            },
+            {
+                "1": [
+                    "00:59.579",
+                    "01:01.053"
+                ]
+            },
+            {
+                "2": [
+                    "01:16.162",
+                    "01:16.777"
+                ]
+            }
+        ],
+        "time_spent": 4299.0,
+        "video_link": "https://www.dropbox.com/s/abbp9z3ljxlnwq3/BC-Bushcraft_0-clip-4.mp4?raw=1",
+        "video_id": "BC-Bushcraft_0-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:31.538",
+                "end": "00:05:48.315"
+            },
+            "seconds": {
+                "start": "271.53793333333334",
+                "end": "348.31463333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 76.7767,
+        "alter_answers": [
+            "The human is making a fortress out of sticks"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    52.51526280000001,
+                    63.14115808
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human using the sticks for?",
+        "answer": "The human is using the sticks to create a wall to the shelter.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNB74NH4",
+        "objective": "Determine what the human is using the sticks for.",
+        "confidence": "very_high",
+        "original_question": "What is the human using the sticks for?",
+        "original_answer": "The human is using the sticks to create a wall to the shelter.",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    19.955,
+                    25.565
+                ]
+            },
+            {
+                "1": [
+                    68.883,
+                    77.902
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:19.955",
+                    "00:25.565"
+                ]
+            },
+            {
+                "1": [
+                    "01:08.883",
+                    "01:17.902"
+                ]
+            }
+        ],
+        "time_spent": 1191.0,
+        "video_link": "https://www.dropbox.com/s/trl1fcahk6pnmih/King-Kong-Amazon_8-clip-2.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_8-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.133",
+                "end": "00:03:33.900"
+            },
+            "seconds": {
+                "start": "125.13333333333334",
+                "end": "213.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 88.76666666666668,
+        "alter_answers": [
+            "The human is using the sticks to create a wall"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    54.04114666666667,
+                    70.09016
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human setting up using the stick and rope?",
+        "answer": "The human is setting up a trap for birds.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNB74NH4",
+        "objective": "Determine what the human is using the human is using the stick for.",
+        "confidence": "high",
+        "original_question": "What is the human setting up using the stick and stick?",
+        "original_answer": "The human is setting up a trap for birds.",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.055,
+                    12.366
+                ]
+            },
+            {
+                "1": [
+                    48.45,
+                    52.977
+                ]
+            },
+            {
+                "2": [
+                    67.911,
+                    71.222
+                ]
+            },
+            {
+                "3": [
+                    78.52,
+                    83.048
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.055",
+                    "00:12.366"
+                ]
+            },
+            {
+                "1": [
+                    "00:48.450",
+                    "00:52.977"
+                ]
+            },
+            {
+                "2": [
+                    "01:07.911",
+                    "01:11.222"
+                ]
+            },
+            {
+                "3": [
+                    "01:18.520",
+                    "01:23.048"
+                ]
+            }
+        ],
+        "time_spent": 1191.0,
+        "video_link": "https://www.dropbox.com/s/67liveevku7e05d/King-Kong-Amazon_3-clip-9.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_3-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:31.600",
+                "end": "00:11:56.067"
+            },
+            "seconds": {
+                "start": "631.6",
+                "end": "716.0666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 84.4666666666667,
+        "alter_answers": [
+            "He is setting up a trap. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the purpose of the man cutting vegetation?",
+        "answer": "The man will use the vegetation as a roof for his shelter.",
+        "assignment_id": "358010RM5ES23TVYILCMXDFUL0OVXL",
+        "objective": "Determine what the man is creating.",
+        "confidence": "very_high",
+        "original_question": "What is the purpose of the man cutting vegetation?",
+        "original_answer": "The man will use the vegetation as a roof for his shelter.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.223,
+                    36.091
+                ]
+            },
+            {
+                "1": [
+                    58.397,
+                    61.219
+                ]
+            },
+            {
+                "2": [
+                    65.126,
+                    67.786
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.223",
+                    "00:36.091"
+                ]
+            },
+            {
+                "1": [
+                    "00:58.397",
+                    "01:01.219"
+                ]
+            },
+            {
+                "2": [
+                    "01:05.126",
+                    "01:07.786"
+                ]
+            }
+        ],
+        "time_spent": 2177.0,
+        "video_link": "https://www.dropbox.com/s/swd2iooovp6aamf/Primitive-Technology_2-clip-2.mp4?raw=1",
+        "video_id": "Primitive-Technology_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:08.520",
+                "end": "00:03:16.360"
+            },
+            "seconds": {
+                "start": "128.52",
+                "end": "196.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.84,
+        "alter_answers": [
+            "He is using it to wrap the poles together. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there a fire?",
+        "answer": "Yes, there is a fire.",
+        "assignment_id": "36DSNE9QZ5X6IPHC05B7BCD7E9EJOL",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "Is there a fire?",
+        "original_answer": "Yes, there is a fire.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    33.205,
+                    36.667
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:33.205",
+                    "00:36.667"
+                ]
+            }
+        ],
+        "time_spent": 1536.0,
+        "video_link": "https://www.dropbox.com/s/9jiix9w1s3upsov/King-Kong-Amazon_2-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_2-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:52.500",
+                "end": "00:09:05.833"
+            },
+            "seconds": {
+                "start": "472.5",
+                "end": "545.8333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 73.33333333333337,
+        "alter_answers": [
+            "Yes there is a fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    28.864000000000015,
+                    45.23200000000003
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the human cooking and eating the animals that were caught?",
+        "answer": "Yes, the human is cooking and eating the animals that were caught.",
+        "assignment_id": "36DSNE9QZ5X6IPHC05B7BCD7E9EJOL",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "Is the human cooking and eating the animals that were caught?",
+        "original_answer": "Yes, the human is cooking and eating the animals that were caught.",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    36.021,
+                    39.952
+                ]
+            },
+            {
+                "1": [
+                    56.027,
+                    59.312
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:36.021",
+                    "00:39.952"
+                ]
+            },
+            {
+                "1": [
+                    "00:56.027",
+                    "00:59.312"
+                ]
+            }
+        ],
+        "time_spent": 1536.0,
+        "video_link": "https://www.dropbox.com/s/9jiix9w1s3upsov/King-Kong-Amazon_2-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_2-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:52.500",
+                "end": "00:09:05.833"
+            },
+            "seconds": {
+                "start": "472.5",
+                "end": "545.8333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 73.33333333333337,
+        "alter_answers": [
+            "the human is cooking and eating the animals that they caught"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the woven surface used for?",
+        "answer": "The woven surface is used to create a cage of bamboo.",
+        "assignment_id": "386PBUZZXFWYC4EFNDVFJV9DJ48LJ5",
+        "objective": "Determine what the human is creating.",
+        "confidence": "very_high",
+        "original_question": "What is the woven surface used for?",
+        "original_answer": "The woven surface is used to create a cage of bamboo.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    61.992,
+                    71.832
+                ]
+            },
+            {
+                "1": [
+                    48.085,
+                    52.939
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:01.992",
+                    "01:11.832"
+                ]
+            },
+            {
+                "1": [
+                    "00:48.085",
+                    "00:52.939"
+                ]
+            }
+        ],
+        "time_spent": 2621.0,
+        "video_link": "https://www.dropbox.com/s/kebms28yka8sn97/King-Kong-Amazon_4-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_4-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:16.233",
+                "end": "00:09:38.233"
+            },
+            "seconds": {
+                "start": "496.23333333333335",
+                "end": "578.2333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 82.0,
+        "alter_answers": [
+            "The woven surface is used to make a cage"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    38.4416,
+                    50.839999999999996
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What types of vehicles are being affected?",
+        "answer": "Cars, buses, motorcycles, mopeds. ",
+        "assignment_id": "30ZX6P7VF8USBIS7D7DA4ZA4DWNJ24",
+        "objective": "Vehicles",
+        "confidence": "very_high",
+        "original_question": "What types of vehicles are being affected?",
+        "original_answer": "Cars, buses, motorcycles, mopeds. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.096,
+                    12.681
+                ]
+            },
+            {
+                "1": [
+                    31.605,
+                    34.97
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.096",
+                    "00:12.681"
+                ]
+            },
+            {
+                "1": [
+                    "00:31.605",
+                    "00:34.970"
+                ]
+            }
+        ],
+        "time_spent": 1822.0,
+        "video_link": "https://www.dropbox.com/s/bkm0w24q7j3gusf/Climate-Change_12-clip-16.mp4?raw=1",
+        "video_id": "Climate-Change_12-clip-16",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:16:33.900",
+                "end": "00:17:34.867"
+            },
+            "seconds": {
+                "start": "993.9",
+                "end": "1054.8666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.966666666666576,
+        "alter_answers": [
+            "Buses and cars are being affected by the flood"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.827679999999985,
+                    18.77773333333331
+                ],
+                [
+                    22.484506666666636,
+                    28.288533333333294
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How are people being affected?",
+        "answer": "homes and power lines destroyed.",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "How are people being affected?",
+        "original_answer": "homes and power lines destroyed. ",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    36.361,
+                    54.618
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:36.361",
+                    "00:54.618"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/olc579gyx5p7vbx/Disaster-Compilations_4-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:37.960",
+                "end": "00:03:41.000"
+            },
+            "seconds": {
+                "start": "157.96",
+                "end": "221.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.03999999999999,
+        "alter_answers": [
+            "people are being affected by blown transformer "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    36.31104,
+                    46.548736
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What body of water is it?",
+        "answer": "Ocean",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What body of water is it?",
+        "original_answer": "Ocean",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    19.033,
+                    25.507
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:19.033",
+                    "00:25.507"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/8ybab0jm4mkrs96/Natural-Disaster_6-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:37.467"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "37.46666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 37.46666666666667,
+        "alter_answers": [
+            "It is an ocean during a storm"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.2371200000000004,
+                    11.959360000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of storm is happening?",
+        "answer": "A thunder storm",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What type of storm is happening?",
+        "original_answer": "A thunder storm",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.861,
+                    22.314
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.861",
+                    "00:22.314"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/5wqpo9uo4uiz5ml/Dan-Robinson_7-clip-1.mp4?raw=1",
+        "video_id": "Dan-Robinson_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.295",
+                "end": "00:02:05.860"
+            },
+            "seconds": {
+                "start": "61.29478072983748",
+                "end": "125.85950621281816"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.56472548298069,
+        "alter_answers": [
+            "There is a tornado storm happening"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.98923900953082,
+                    30.99106823183073
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any funnel clouds or tornadoes?",
+        "answer": "No",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Are there any funnel clouds or tornadoes?",
+        "original_answer": "No",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    64.565
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:04.565"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/5wqpo9uo4uiz5ml/Dan-Robinson_7-clip-1.mp4?raw=1",
+        "video_id": "Dan-Robinson_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.295",
+                "end": "00:02:05.860"
+            },
+            "seconds": {
+                "start": "61.29478072983748",
+                "end": "125.85950621281816"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.56472548298069,
+        "alter_answers": [
+            "There is some minor rotation on the ground. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are people being affected?",
+        "answer": "Yes",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are people being affected?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    63.04
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:03.040"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/olc579gyx5p7vbx/Disaster-Compilations_4-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:37.960",
+                "end": "00:03:41.000"
+            },
+            "seconds": {
+                "start": "157.96",
+                "end": "221.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.03999999999999,
+        "alter_answers": [
+            "Yes, people are being effected, and houses are being destroyed. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there any hail?",
+        "answer": "No",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Is there any hail?",
+        "original_answer": "No",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    55.8
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:55.800"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/wmx8haqg125l3no/Weathershot_2-clip-2.mp4?raw=1",
+        "video_id": "Weathershot_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:04.400",
+                "end": "00:03:00.200"
+            },
+            "seconds": {
+                "start": "124.4",
+                "end": "180.2"
+            },
+            "split-method": "auto"
+        },
+        "duration": 55.79999999999998,
+        "alter_answers": [],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there a thunder storm?",
+        "answer": "Yes",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Is there a thunder storm?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.625
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.625"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/wmx8haqg125l3no/Weathershot_2-clip-2.mp4?raw=1",
+        "video_id": "Weathershot_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:04.400",
+                "end": "00:03:00.200"
+            },
+            "seconds": {
+                "start": "124.4",
+                "end": "180.2"
+            },
+            "split-method": "auto"
+        },
+        "duration": 55.79999999999998,
+        "alter_answers": [
+            "There is a thunderstorm during this storm"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.508639999999999,
+                    10.847519999999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many tornadoes are there?",
+        "answer": "One fully formed tornado.",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "How many tornadoes are there?",
+        "original_answer": "One fully formed tornado. ",
+        "question_type": [
+            "Entity",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.6,
+                    9.269
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.600",
+                    "00:09.269"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/7xivkh21n8dx282/Skip-Talbot_9-clip-0.mp4?raw=1",
+        "video_id": "Skip-Talbot_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:23.350"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "83.34993333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 83.34993333333334,
+        "alter_answers": [
+            "There is one tornado here"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where is the river?",
+        "answer": "In a city.",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Where is the river?",
+        "original_answer": "A city",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.199,
+                    17.913
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.199",
+                    "00:17.913"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/nwzatim05040p5d/Natural-Disaster_0-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:29.463"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "29.462766666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 29.46276666666667,
+        "alter_answers": [
+            "The river is running through the city. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is flooded?",
+        "answer": "A river",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "What is flooded?",
+        "original_answer": "A river",
+        "question_type": [
+            "Entity",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    2.569
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:02.569"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/nwzatim05040p5d/Natural-Disaster_0-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:29.463"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "29.462766666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 29.46276666666667,
+        "alter_answers": [
+            "the street is flooded"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.572974746666668,
+                    16.99412381333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did the tornado happen?",
+        "answer": "In the desert.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Natural disasters. ",
+        "confidence": "very_high",
+        "original_question": "Where did the tornado happen?",
+        "original_answer": "In the desert. ",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    52.89,
+                    59.876
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:52.890",
+                    "00:59.876"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/whvc7cv3gtrv0oq/Climate-Change_8-clip-9.mp4?raw=1",
+        "video_id": "Climate-Change_8-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:24.733",
+                "end": "00:10:26.233"
+            },
+            "seconds": {
+                "start": "564.7333333333333",
+                "end": "626.2333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.5,
+        "alter_answers": [
+            "The tornado occurred in El Jauf, Saudi Arabia."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    42.6072,
+                    51.610800000000005
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any funnel clouds?",
+        "answer": "Yes.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Clouds",
+        "confidence": "very_high",
+        "original_question": "Are there any funnel clouds?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    43.372,
+                    49.354
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:43.372",
+                    "00:49.354"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/8x5p7e5tgn5yab4/Skip-Talbot_10-clip-0.mp4?raw=1",
+        "video_id": "Skip-Talbot_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:06.767"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "66.7667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.7667,
+        "alter_answers": [
+            "there are funnel clouds forming"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.90517728,
+                    20.03001
+                ],
+                [
+                    33.970896960000005,
+                    47.003756800000005
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Were there people caught in the flooding?",
+        "answer": "Yes.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Natural disasters. ",
+        "confidence": "very_high",
+        "original_question": "Were there people caught in the flooding?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.904,
+                    9.84
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.904",
+                    "00:09.840"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/whvc7cv3gtrv0oq/Climate-Change_8-clip-9.mp4?raw=1",
+        "video_id": "Climate-Change_8-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:24.733",
+                "end": "00:10:26.233"
+            },
+            "seconds": {
+                "start": "564.7333333333333",
+                "end": "626.2333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.5,
+        "alter_answers": [
+            "Yes there were people caught in the flooding"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.3136,
+                    15.448800000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there any tornadoes?",
+        "answer": "No.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Clouds",
+        "confidence": "very_high",
+        "original_question": "Are there any tornadoes?",
+        "original_answer": "No.",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    66.767
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:06.767"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/8x5p7e5tgn5yab4/Skip-Talbot_10-clip-0.mp4?raw=1",
+        "video_id": "Skip-Talbot_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:06.767"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "66.7667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.7667,
+        "alter_answers": [
+            "Yes there are tornadoes. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are there people nearby?",
+        "answer": "Yes.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "Are there people nearby?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    41.259,
+                    48.99
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:41.259",
+                    "00:48.990"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/mxh1j82qiq6mtts/Dan-Robinson_0-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.884",
+                "end": "00:04:15.922"
+            },
+            "seconds": {
+                "start": "150.88408821077203",
+                "end": "255.9223698754139"
+            },
+            "split-method": "auto"
+        },
+        "duration": 105.03828166464186,
+        "alter_answers": [
+            "There are people nearby"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    91.67741223689941,
+                    100.83675039805618
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of weather event is occurring?",
+        "answer": "Funnel cloud",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Weather Development",
+        "confidence": "very_high",
+        "original_question": "What type of weather event is occurring?",
+        "original_answer": "Funnel cloud",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.625,
+                    14.808
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.625",
+                    "00:14.808"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/1784lrenliolcd1/Skip-Talbot_6-clip-5.mp4?raw=1",
+        "video_id": "Skip-Talbot_6-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:41.434",
+                "end": "00:07:50.503"
+            },
+            "seconds": {
+                "start": "401.4343666666667",
+                "end": "470.5033666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.06900000000002,
+        "alter_answers": [
+            "There is a tornado occuring"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.068450400000003,
+                    31.108677600000004
+                ],
+                [
+                    40.55731680000001,
+                    55.53147600000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many tornadoes are there?",
+        "answer": "One.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "How many tornadoes are there?",
+        "original_answer": "One. ",
+        "question_type": [
+            "Entity",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    105.038
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:45.038"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/mxh1j82qiq6mtts/Dan-Robinson_0-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.884",
+                "end": "00:04:15.922"
+            },
+            "seconds": {
+                "start": "150.88408821077203",
+                "end": "255.9223698754139"
+            },
+            "split-method": "auto"
+        },
+        "duration": 105.03828166464186,
+        "alter_answers": [
+            "There is a single tornado. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Where is the tornado?",
+        "answer": "In a field.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "Where is the tornado?",
+        "original_answer": "In a field. ",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    22.52
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:22.520"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/mxh1j82qiq6mtts/Dan-Robinson_0-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.884",
+                "end": "00:04:15.922"
+            },
+            "seconds": {
+                "start": "150.88408821077203",
+                "end": "255.9223698754139"
+            },
+            "split-method": "auto"
+        },
+        "duration": 105.03828166464186,
+        "alter_answers": [
+            "The tornado is is occurring in the farm land"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.016023836908936,
+                    37.3936282726125
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What effects did the weather have?",
+        "answer": "Debris in the air, truck turnover, destruction of buildings.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Effects of severe weather ",
+        "confidence": "very_high",
+        "original_question": "What effects did the weather have?",
+        "original_answer": "Debris in the air, truck turnover, destruction of buildings. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.961
+                ]
+            },
+            {
+                "1": [
+                    29.932,
+                    33.168
+                ]
+            },
+            {
+                "2": [
+                    36.093,
+                    42.751
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.961"
+                ]
+            },
+            {
+                "1": [
+                    "00:29.932",
+                    "00:33.168"
+                ]
+            },
+            {
+                "2": [
+                    "00:36.093",
+                    "00:42.751"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/v2r9byw79472w2o/Tornado-Trackers_4-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:40.530",
+                "end": "00:05:58.316"
+            },
+            "seconds": {
+                "start": "280.53024999999997",
+                "end": "358.31629166666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.78604166666669,
+        "alter_answers": [
+            "The weather caused trucks to crash"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.91471416666667,
+                    44.86698883333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the funnel cloud?",
+        "answer": "In a field.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Weather Development",
+        "confidence": "very_high",
+        "original_question": "Where is the funnel cloud?",
+        "original_answer": "In a field. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.68
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.680"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/1784lrenliolcd1/Skip-Talbot_6-clip-5.mp4?raw=1",
+        "video_id": "Skip-Talbot_6-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:41.434",
+                "end": "00:07:50.503"
+            },
+            "seconds": {
+                "start": "401.4343666666667",
+                "end": "470.5033666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.06900000000002,
+        "alter_answers": [
+            "The funnel cloud is above the area in the sky. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What weather phenomenon occurred?",
+        "answer": "Rain and high winds.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Effects of severe weather ",
+        "confidence": "very_high",
+        "original_question": "What weather phenomenon occurred?",
+        "original_answer": "Rain and high winds. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.405
+                ]
+            },
+            {
+                "1": [
+                    33.106,
+                    39.142
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.405"
+                ]
+            },
+            {
+                "1": [
+                    "00:33.106",
+                    "00:39.142"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/v2r9byw79472w2o/Tornado-Trackers_4-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:40.530",
+                "end": "00:05:58.316"
+            },
+            "seconds": {
+                "start": "280.53024999999997",
+                "end": "358.31629166666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.78604166666669,
+        "alter_answers": [
+            "A tornado is formed in the distance."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.454444,
+                    27.629602000000006
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there just one tornado?",
+        "answer": "No.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "Is there just one tornado?",
+        "original_answer": "No. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.489,
+                    12.299
+                ]
+            },
+            {
+                "1": [
+                    44.278,
+                    48.86
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.489",
+                    "00:12.299"
+                ]
+            },
+            {
+                "1": [
+                    "00:44.278",
+                    "00:48.860"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/sem8uqzn7b60h1v/Skip-Talbot_11-clip-3.mp4?raw=1",
+        "video_id": "Skip-Talbot_11-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:18.833",
+                "end": "00:04:19.125"
+            },
+            "seconds": {
+                "start": "198.83333333333334",
+                "end": "259.125"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.29166666666666,
+        "alter_answers": [
+            "There appears to only be one tornado shown at a time, although multiple tornadoes are depicted in the video."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.6270333333333332,
+                    15.097033333333332
+                ],
+                [
+                    41.046566666666656,
+                    46.738099999999996
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the tornado?",
+        "answer": "In a field.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "Where is the tornado?",
+        "original_answer": "In a field. ",
+        "question_type": [
+            "Entity",
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.784,
+                    13.388
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.784",
+                    "00:13.388"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/tbezb08dsiqcg58/Dan-Robinson_6-clip-6.mp4?raw=1",
+        "video_id": "Dan-Robinson_6-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:11:27.420",
+                "end": "00:12:32.285"
+            },
+            "seconds": {
+                "start": "687.4200666666667",
+                "end": "752.2848666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.86479999999995,
+        "alter_answers": [
+            "The tornado is off to the right in a field. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.646483839999998,
+                    16.968631679999987
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there cars submerged?",
+        "answer": "Yes.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Are there cars submerged?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.727
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.727"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/x84svcdloatwd79/Weathershot_4-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:03.433",
+                "end": "00:02:10.167"
+            },
+            "seconds": {
+                "start": "63.43333333333333",
+                "end": "130.16666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.73333333333332,
+        "alter_answers": [
+            "There are cars submerged there"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.184159999999995,
+                    28.72202666666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What color is the tractor being loaded on the trailer?",
+        "answer": "The tractor being loaded on the trailer is red.",
+        "assignment_id": "392CY0QWG1Q6JLNOZ3BYLDS2KGC4IX",
+        "objective": "Hitching a trailer.",
+        "confidence": "very_high",
+        "original_question": "What color is the tractor being loaded on the trailer?",
+        "original_answer": "The tractor being loaded on the trailer is red.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.404,
+                    53.84
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.404",
+                    "00:53.840"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/1s8kio8votm0gjv/Hamiltonville-Farm_5-clip-1.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_5-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.798",
+                "end": "00:02:12.099"
+            },
+            "seconds": {
+                "start": "64.79806666666667",
+                "end": "132.09863333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 67.30056666666667,
+        "alter_answers": [
+            "The tractor is red. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What crop is being saved to feed livestock in the video?",
+        "answer": "The video depicts beets that are being saved to feed livestock.",
+        "assignment_id": "392CY0QWG1Q6JLNOZ3BYLDS2KGC4IX",
+        "objective": "Feed for livestock.",
+        "confidence": "very_high",
+        "original_question": "What crop is being saved to feed livestock in the video?",
+        "original_answer": "The video depicts beets that are being saved to feed livestock.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.262,
+                    25.728
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.262",
+                    "00:25.728"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/3awhngyp50ypgmc/Olly_s-Farm_2-clip-8.mp4?raw=1",
+        "video_id": "Olly's-Farm_2-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:44.760",
+                "end": "00:10:05.160"
+            },
+            "seconds": {
+                "start": "524.76",
+                "end": "605.16"
+            },
+            "split-method": "auto"
+        },
+        "duration": 80.39999999999998,
+        "alter_answers": [
+            "The beets are being saved"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.641919999999997,
+                    26.628479999999993
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What animal is shown in the video?",
+        "answer": "There was a dog in the video.",
+        "assignment_id": "392CY0QWG1Q6JLNOZ3BYLDS2KGC4IX",
+        "objective": "Life on the farm.",
+        "confidence": "very_high",
+        "original_question": "What animal is shown in the video?",
+        "original_answer": "There was a dog in the video.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.172,
+                    9.308
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.172",
+                    "00:09.308"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/lh0ctdzz6qsh1af/Hamiltonville-Farm_9-manual.mp4?raw=1",
+        "video_id": "Hamiltonville-Farm_9-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:05"
+            },
+            "split-method": "manual"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "There is a black dog sleeping on the floor"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.016,
+                    10.348
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What crop are they managing for in the video?",
+        "answer": "They are managing for soy beans throughout the video.",
+        "assignment_id": "39RP059MEHSC03YOZXJDLK5PBG1MBN",
+        "objective": "Crop management.",
+        "confidence": "very_high",
+        "original_question": "What crop are they managing for in the video?",
+        "original_answer": "They are managing for soy beans throughout the video.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.848,
+                    56.582
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.848",
+                    "00:56.582"
+                ]
+            }
+        ],
+        "time_spent": 2526.0,
+        "video_link": "https://www.dropbox.com/s/1wiihif7ir5w1cu/RealAgriculture_4-clip-0.mp4?raw=1",
+        "video_id": "RealAgriculture_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.193"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.1932142503498"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.1932142503498,
+        "alter_answers": [
+            "The top of crop they are managing in this video is soy beans"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.189745694198685,
+                    46.08392483006781
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What animals are depicted throughout the video?",
+        "answer": "The animals depicted in the video are chickens.",
+        "assignment_id": "3ERET4BTVM8YMMJOG1S1F1IVYB89K0",
+        "objective": "Livestock on farms.",
+        "confidence": "very_high",
+        "original_question": "What animals are depicted throughout the video?",
+        "original_answer": "The animals depicted in the video are chickens.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    32.394,
+                    40.212
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:32.394",
+                    "00:40.212"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/i0vcv17lgwlas3h/John-Suscovich_4-clip-0.mp4?raw=1",
+        "video_id": "John-Suscovich_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:10.300"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "70.3"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.3,
+        "alter_answers": [
+            "There are many chickens."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.3058399999999994,
+                    19.4028
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What issue is being identified in the video?",
+        "answer": "The video identifies a weed growing in the farmland.",
+        "assignment_id": "3HSYG7LRBJXI3I2FKYJQ5AWB959KKU",
+        "objective": "Agricultural problems.",
+        "confidence": "very_high",
+        "original_question": "What issue is being identified in the video?",
+        "original_answer": "The video identifies a weed growing in the farmland.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.256,
+                    39.013
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.256",
+                    "00:39.013"
+                ]
+            }
+        ],
+        "time_spent": 2034.0,
+        "video_link": "https://www.dropbox.com/s/m5cf89k0iup8p9a/RealAgriculture_12-clip-1.mp4?raw=1",
+        "video_id": "RealAgriculture_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:49.676",
+                "end": "00:03:12.192"
+            },
+            "seconds": {
+                "start": "109.67623333333333",
+                "end": "192.192"
+            },
+            "split-method": "auto"
+        },
+        "duration": 82.51576666666669,
+        "alter_answers": [],
+        "alter_evidences": []
+    },
+    {
+        "question": "What farm machinery is being demonstrated in the video?",
+        "answer": "The farm equipment being demonstrated in the video is a plow.",
+        "assignment_id": "3HSYG7LRBJXI3I2FKYJQ5AWB959KKU",
+        "objective": "Farm machinery.",
+        "confidence": "high",
+        "original_question": "What farm machinery is being demonstrated in the video?",
+        "original_answer": "The farm equipment being demonstrated in the video is a plow.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    19.091,
+                    73.2
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:19.091",
+                    "01:13.200"
+                ]
+            }
+        ],
+        "time_spent": 2034.0,
+        "video_link": "https://www.dropbox.com/s/82bxyrka3lf684y/Olly_s-Farm_10-clip-1.mp4?raw=1",
+        "video_id": "Olly's-Farm_10-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.400",
+                "end": "00:02:15.600"
+            },
+            "seconds": {
+                "start": "62.4",
+                "end": "135.6"
+            },
+            "split-method": "auto"
+        },
+        "duration": 73.19999999999997,
+        "alter_answers": [
+            "The farm machinery being demonstrated is a tractor"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.49632,
+                    48.95615999999999
+                ]
+            ]
+        ]
+    }
+]

@@ -1,0 +1,6271 @@
+[
+    {
+        "question": "Is there any shelter?",
+        "answer": "Yes, There are two shelters.",
+        "assignment_id": "31Z0PCVWUKETBMLIVD892WELMEI7TV",
+        "objective": "Determine if there is shelter.\n",
+        "confidence": "very_high",
+        "original_question": "Is there any shelter?",
+        "original_answer": "Yes, There are two shelters.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.912,
+                    7.956
+                ]
+            },
+            {
+                "1": [
+                    27.456,
+                    34.06
+                ]
+            },
+            {
+                "2": [
+                    0.0,
+                    0.052
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.912",
+                    "00:07.956"
+                ]
+            },
+            {
+                "1": [
+                    "00:27.456",
+                    "00:34.060"
+                ]
+            },
+            {
+                "2": [
+                    "00:00.000",
+                    "00:00.052"
+                ]
+            }
+        ],
+        "time_spent": 2510.0,
+        "video_link": "https://www.dropbox.com/s/ziljidqx9eon8w2/King-Kong-Amazon_11-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:16.900",
+                "end": "00:08:21.900"
+            },
+            "seconds": {
+                "start": "436.9",
+                "end": "501.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "yes there is shelter here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.748,
+                    35.151999999999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the shelter enclosed?",
+        "answer": "One of the shelters is enclosed.",
+        "assignment_id": "31Z0PCVWUKETBMLIVD892WELMEI7TV",
+        "objective": "Determine if there is shelter.\n",
+        "confidence": "very_high",
+        "original_question": "Is the shelter enclosed?",
+        "original_answer": "One of the shelters is enclosed.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    0.208
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:00.208"
+                ]
+            }
+        ],
+        "time_spent": 2510.0,
+        "video_link": "https://www.dropbox.com/s/ziljidqx9eon8w2/King-Kong-Amazon_11-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:16.900",
+                "end": "00:08:21.900"
+            },
+            "seconds": {
+                "start": "436.9",
+                "end": "501.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "It is tucked into a hill, but it is not enclosed. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "what is the structure made out of?",
+        "answer": "Dried leaves and logs",
+        "assignment_id": "3D8YOU6S9EJP7ZM2C8TR1E0RAHKU6P",
+        "objective": "I wish to learn about the structure",
+        "confidence": "high",
+        "original_question": "What is it made out of?",
+        "original_answer": "Dried leaves and logs",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.68,
+                    6.032
+                ]
+            },
+            {
+                "1": [
+                    26.208,
+                    28.392
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.680",
+                    "00:06.032"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.208",
+                    "00:28.392"
+                ]
+            }
+        ],
+        "time_spent": 1047.0,
+        "video_link": "https://www.dropbox.com/s/ziljidqx9eon8w2/King-Kong-Amazon_11-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:16.900",
+                "end": "00:08:21.900"
+            },
+            "seconds": {
+                "start": "436.9",
+                "end": "501.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "The structure is made out of bamboo and wood"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "how many logs support the structure?",
+        "answer": "Seven",
+        "assignment_id": "3D8YOU6S9EJP7ZM2C8TR1E0RAHKU6P",
+        "objective": "I wish to learn about the structure",
+        "confidence": "high",
+        "original_question": "how many logs support the structure?",
+        "original_answer": "Seven",
+        "question_type": [
+            "Existence",
+            "Number"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    20.956,
+                    23.244
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:20.956",
+                    "00:23.244"
+                ]
+            }
+        ],
+        "time_spent": 1047.0,
+        "video_link": "https://www.dropbox.com/s/ziljidqx9eon8w2/King-Kong-Amazon_11-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:16.900",
+                "end": "00:08:21.900"
+            },
+            "seconds": {
+                "start": "436.9",
+                "end": "501.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "There are 7 logs holding it up. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.332,
+                    30.576
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man doing?",
+        "answer": "Hunting for food",
+        "assignment_id": "3SKEMFQBZ34Y8H0EB9MNF5NKELCK84",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man doing?",
+        "original_answer": "Hunting for food",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.604,
+                    33.612
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.604",
+                    "00:33.612"
+                ]
+            }
+        ],
+        "time_spent": 1035.0,
+        "video_link": "https://www.dropbox.com/s/bt1n61jnbyzunyc/Survival-Instinct_2-clip-1.mp4?raw=1",
+        "video_id": "Survival-Instinct_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.400",
+                "end": "00:02:01.680"
+            },
+            "seconds": {
+                "start": "61.4",
+                "end": "121.68"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.28000000000001,
+        "alter_answers": [
+            "The man is catching crabs"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    30.332896,
+                    39.01321600000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man wearing?",
+        "answer": "Pants and a t-shirt",
+        "assignment_id": "3SKEMFQBZ34Y8H0EB9MNF5NKELCK84",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man wearing?",
+        "original_answer": "Pants and a t-shirt",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.949,
+                    17.071
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.949",
+                    "00:17.071"
+                ]
+            }
+        ],
+        "time_spent": 1035.0,
+        "video_link": "https://www.dropbox.com/s/bt1n61jnbyzunyc/Survival-Instinct_2-clip-1.mp4?raw=1",
+        "video_id": "Survival-Instinct_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.400",
+                "end": "00:02:01.680"
+            },
+            "seconds": {
+                "start": "61.4",
+                "end": "121.68"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.28000000000001,
+        "alter_answers": [
+            "the man is wearing pants and a black shirt"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    42.388896,
+                    52.80528
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "does the man have shoes?",
+        "answer": "no",
+        "assignment_id": "3SKEMFQBZ34Y8H0EB9MNF5NKELCK84",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "does the man have shoes?",
+        "original_answer": "no",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.454,
+                    16.203
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.454",
+                    "00:16.203"
+                ]
+            }
+        ],
+        "time_spent": 1035.0,
+        "video_link": "https://www.dropbox.com/s/bt1n61jnbyzunyc/Survival-Instinct_2-clip-1.mp4?raw=1",
+        "video_id": "Survival-Instinct_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.400",
+                "end": "00:02:01.680"
+            },
+            "seconds": {
+                "start": "61.4",
+                "end": "121.68"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.28000000000001,
+        "alter_answers": [
+            "The man does not have shoes. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.056000000000003,
+                    19.964736000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of body of water is there?",
+        "answer": "Ocean",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMPZVOX0",
+        "objective": "I wish to learn about the environment",
+        "confidence": "high",
+        "original_question": "What type of body of water is there?",
+        "original_answer": "Ocean",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    29.138,
+                    31.197
+                ]
+            },
+            {
+                "1": [
+                    56.059,
+                    57.748
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:29.138",
+                    "00:31.197"
+                ]
+            },
+            {
+                "1": [
+                    "00:56.059",
+                    "00:57.748"
+                ]
+            }
+        ],
+        "time_spent": 1144.0,
+        "video_link": "https://www.dropbox.com/s/26mnkkp15i4q3pr/Bertram-Craft_2-clip-3.mp4?raw=1",
+        "video_id": "Bertram-Craft_2-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:22.202",
+                "end": "00:04:28.185"
+            },
+            "seconds": {
+                "start": "202.202",
+                "end": "268.1845833333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.98258333333331,
+        "alter_answers": [
+            "There is an ocean beside the man camping"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What kind of land is here?",
+        "answer": "rocky beach with a grassy cliffside",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMPZVOX0",
+        "objective": "I wish to learn about the environment",
+        "confidence": "moderate",
+        "original_question": "What kind of land is here?",
+        "original_answer": "rocky beach with a grassy cliffside",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    56.059,
+                    57.59
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:56.059",
+                    "00:57.590"
+                ]
+            }
+        ],
+        "time_spent": 1144.0,
+        "video_link": "https://www.dropbox.com/s/26mnkkp15i4q3pr/Bertram-Craft_2-clip-3.mp4?raw=1",
+        "video_id": "Bertram-Craft_2-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:22.202",
+                "end": "00:04:28.185"
+            },
+            "seconds": {
+                "start": "202.202",
+                "end": "268.1845833333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.98258333333331,
+        "alter_answers": [
+            "They are on a rocky beach with a forest behind them. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    26.44581939999999,
+                    35.73616713333332
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man wearing?",
+        "answer": "A jacket with camo pants and boots",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMPZVOX0",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man wearing?",
+        "original_answer": "A jacket with camo pants and boots",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.374,
+                    8.599
+                ]
+            },
+            {
+                "1": [
+                    43.352,
+                    44.964
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.374",
+                    "00:08.599"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.352",
+                    "00:44.964"
+                ]
+            }
+        ],
+        "time_spent": 1144.0,
+        "video_link": "https://www.dropbox.com/s/1fw0q7jq5fh1rrf/Joe-Robinet_2-clip-5.mp4?raw=1",
+        "video_id": "Joe-Robinet_2-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:06.486",
+                "end": "00:09:21.127"
+            },
+            "seconds": {
+                "start": "486.486",
+                "end": "561.1272333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.64123333333339,
+        "alter_answers": [
+            "The man is wearing camel flowage pants and a sweater"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.64403240000001,
+                    29.19965048000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man doing?",
+        "answer": "Cooking breakfast",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMPZVOX0",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man doing?",
+        "original_answer": "Cooking breakfast",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.203,
+                    47.83
+                ]
+            },
+            {
+                "1": [
+                    64.191,
+                    66.52
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.203",
+                    "00:47.830"
+                ]
+            },
+            {
+                "1": [
+                    "01:04.191",
+                    "01:06.520"
+                ]
+            }
+        ],
+        "time_spent": 1144.0,
+        "video_link": "https://www.dropbox.com/s/1fw0q7jq5fh1rrf/Joe-Robinet_2-clip-5.mp4?raw=1",
+        "video_id": "Joe-Robinet_2-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:06.486",
+                "end": "00:09:21.127"
+            },
+            "seconds": {
+                "start": "486.486",
+                "end": "561.1272333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.64123333333339,
+        "alter_answers": [
+            "The man is cooking eggs and bacon"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.301645360000013,
+                    25.378019333333356
+                ],
+                [
+                    54.45824384000004,
+                    64.96772949333338
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the plant vines growing longer?",
+        "answer": "Yes the vines are growing larger.",
+        "assignment_id": "3G2UL9A02DDN9OA6Z00GRMM726976M",
+        "objective": "What is happening during the video?",
+        "confidence": "very_high",
+        "original_question": "Are the plant vines growing longer?",
+        "original_answer": "Yes the vines are growing larger.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.85,
+                    14.126
+                ]
+            },
+            {
+                "1": [
+                    28.877,
+                    36.468
+                ]
+            },
+            {
+                "2": [
+                    39.688,
+                    44.348
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.850",
+                    "00:14.126"
+                ]
+            },
+            {
+                "1": [
+                    "00:28.877",
+                    "00:36.468"
+                ]
+            },
+            {
+                "2": [
+                    "00:39.688",
+                    "00:44.348"
+                ]
+            }
+        ],
+        "time_spent": 2194.0,
+        "video_link": "https://www.dropbox.com/s/s6alpbhrc81wj6s/Primitive-Technology_6-clip-3.mp4?raw=1",
+        "video_id": "Primitive-Technology_6-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:03.475",
+                "end": "00:04:03.535"
+            },
+            "seconds": {
+                "start": "183.47483924833062",
+                "end": "243.5348002661974"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.05996101786678,
+        "alter_answers": [
+            "Yes the plant vines growing longer"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    37.044983955820236,
+                    48.91283225295071
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the plant a potato?",
+        "answer": "Yes the plant is a potato.",
+        "assignment_id": "3G2UL9A02DDN9OA6Z00GRMM726976M",
+        "objective": "What is happening during the video?",
+        "confidence": "very_high",
+        "original_question": "Is the plant a potato?",
+        "original_answer": "Yes the plant is a potato.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    46.847,
+                    50.306
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:46.847",
+                    "00:50.306"
+                ]
+            }
+        ],
+        "time_spent": 2194.0,
+        "video_link": "https://www.dropbox.com/s/s6alpbhrc81wj6s/Primitive-Technology_6-clip-3.mp4?raw=1",
+        "video_id": "Primitive-Technology_6-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:03.475",
+                "end": "00:04:03.535"
+            },
+            "seconds": {
+                "start": "183.47483924833062",
+                "end": "243.5348002661974"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.05996101786678,
+        "alter_answers": [
+            "Yes the plant is a potato. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    40.456389741635064,
+                    52.75666975809418
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How did the man cook the food?",
+        "answer": "using a bamboo cup he had over the fire",
+        "assignment_id": "3LS2AMNW5FPN4CLPVVVG8DPTSW8OQ3",
+        "objective": "I wish to learn about the food preparation",
+        "confidence": "moderate",
+        "original_question": "How did the man cook the food?",
+        "original_answer": "using a bamboo cup he had over the fire",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.043,
+                    3.593
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.043",
+                    "00:03.593"
+                ]
+            }
+        ],
+        "time_spent": 1217.0,
+        "video_link": "https://www.dropbox.com/s/ce6zzo34o72zz0j/King-Kong-Amazon_5-clip-14.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_5-clip-14",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:32.800",
+                "end": "00:17:00.867"
+            },
+            "seconds": {
+                "start": "932.8",
+                "end": "1020.8666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 88.06666666666672,
+        "alter_answers": [
+            "The man cooked the food with heated bamboo"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.706720000000004,
+                    26.631360000000015
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What did the man set the food on after cooking?",
+        "answer": "Bamboo table",
+        "assignment_id": "3LS2AMNW5FPN4CLPVVVG8DPTSW8OQ3",
+        "objective": "I wish to learn about the food preparation",
+        "confidence": "high",
+        "original_question": "What did the man set the food on after cooking?",
+        "original_answer": "Bamboo table",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.695,
+                    12.47
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.695",
+                    "00:12.470"
+                ]
+            }
+        ],
+        "time_spent": 1217.0,
+        "video_link": "https://www.dropbox.com/s/ce6zzo34o72zz0j/King-Kong-Amazon_5-clip-14.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_5-clip-14",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:32.800",
+                "end": "00:17:00.867"
+            },
+            "seconds": {
+                "start": "932.8",
+                "end": "1020.8666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 88.06666666666672,
+        "alter_answers": [
+            "The man set the food on bamboo sticks after cooking"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.327146666666671,
+                    24.940480000000015
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of terrain is it?",
+        "answer": "Forest",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the environment",
+        "confidence": "high",
+        "original_question": "What type of terrain is it?",
+        "original_answer": "Forest",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.339,
+                    13.324
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.339",
+                    "00:13.324"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/ow5p9uivd0mww8p/Joe-Robinet_4-clip-0.mp4?raw=1",
+        "video_id": "Joe-Robinet_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:02:57.177"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "177.177"
+            },
+            "split-method": "auto"
+        },
+        "duration": 177.17700000000005,
+        "alter_answers": [
+            "This is a snow terrain"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    79.6587792,
+                    104.18007599999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What time of year is it?",
+        "answer": "Winter time",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the environment",
+        "confidence": "high",
+        "original_question": "What time of year is it?",
+        "original_answer": "Winter time",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    126.15,
+                    132.103
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "02:06.150",
+                    "02:12.103"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/ow5p9uivd0mww8p/Joe-Robinet_4-clip-0.mp4?raw=1",
+        "video_id": "Joe-Robinet_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:02:57.177"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "177.177"
+            },
+            "split-method": "auto"
+        },
+        "duration": 177.17700000000005,
+        "alter_answers": [
+            "It is winter with snow on the ground. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.795788000000001,
+                    29.907477599999996
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man doing?",
+        "answer": "Making a tool out of wood",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man doing?",
+        "original_answer": "Making a tool out of wood",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.543,
+                    5.471
+                ]
+            },
+            {
+                "1": [
+                    42.643,
+                    45.378
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.543",
+                    "00:05.471"
+                ]
+            },
+            {
+                "1": [
+                    "00:42.643",
+                    "00:45.378"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/kxn4sa9nmrrp84d/Bertram-Craft_5-clip-33.mp4?raw=1",
+        "video_id": "Bertram-Craft_5-clip-33",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:40:48.404",
+                "end": "00:42:16.075"
+            },
+            "seconds": {
+                "start": "2448.4042916666663",
+                "end": "2536.075208333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 87.67091666666694,
+        "alter_answers": [
+            "The main painting on the wood"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How is the man making his tool?",
+        "answer": "Using an axe to chop at it",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the man",
+        "confidence": "moderate",
+        "original_question": "How is the man making his tool?",
+        "original_answer": "Using an axe to chop at it",
+        "question_type": [
+            "Entity",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    32.543,
+                    36.471
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:32.543",
+                    "00:36.471"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/kxn4sa9nmrrp84d/Bertram-Craft_5-clip-33.mp4?raw=1",
+        "video_id": "Bertram-Craft_5-clip-33",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:40:48.404",
+                "end": "00:42:16.075"
+            },
+            "seconds": {
+                "start": "2448.4042916666663",
+                "end": "2536.075208333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 87.67091666666694,
+        "alter_answers": [
+            "He is using a hand axe to chop the wood around the diagram. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the man wearing",
+        "answer": "Long sleeve thick shirt and pants",
+        "assignment_id": "3OJSZ2ATDSVRQKASUHQBZG876BC75K",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man wearing",
+        "original_answer": "Long sleeve thick shirt and pants",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.536,
+                    17.183
+                ]
+            },
+            {
+                "1": [
+                    43.134,
+                    45.869
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.536",
+                    "00:17.183"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.134",
+                    "00:45.869"
+                ]
+            }
+        ],
+        "time_spent": 1003.0,
+        "video_link": "https://www.dropbox.com/s/kxn4sa9nmrrp84d/Bertram-Craft_5-clip-33.mp4?raw=1",
+        "video_id": "Bertram-Craft_5-clip-33",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:40:48.404",
+                "end": "00:42:16.075"
+            },
+            "seconds": {
+                "start": "2448.4042916666663",
+                "end": "2536.075208333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 87.67091666666694,
+        "alter_answers": [
+            "The man is wearing a sweater"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.794438333333403,
+                    38.294656400000115
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What was being made?",
+        "answer": "bowls",
+        "assignment_id": "3PPTZCWALQJZ3GZWX46XOBWXC0BZQG",
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "original_question": "What was being made?",
+        "original_answer": "bowls",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.843,
+                    15.431
+                ]
+            },
+            {
+                "1": [
+                    47.681,
+                    49.368
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.843",
+                    "00:15.431"
+                ]
+            },
+            {
+                "1": [
+                    "00:47.681",
+                    "00:49.368"
+                ]
+            }
+        ],
+        "time_spent": 1136.0,
+        "video_link": "https://www.dropbox.com/s/dwbezm2yw8b78sq/Primitive-Technology_11-clip-8.mp4?raw=1",
+        "video_id": "Primitive-Technology_11-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:13.368",
+                "end": "00:09:15.388"
+            },
+            "seconds": {
+                "start": "493.36787499999997",
+                "end": "555.3881666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.02029166666665,
+        "alter_answers": [
+            "A pot was being made"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.858279766666664,
+                    23.27001343333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What were the bowls made of?",
+        "answer": "A metallic substance",
+        "assignment_id": "3PPTZCWALQJZ3GZWX46XOBWXC0BZQG",
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "original_question": "What were the bowls made of?",
+        "original_answer": "A metallic substance",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.725,
+                    12.404
+                ]
+            },
+            {
+                "1": [
+                    46.689,
+                    47.384
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.725",
+                    "00:12.404"
+                ]
+            },
+            {
+                "1": [
+                    "00:46.689",
+                    "00:47.384"
+                ]
+            }
+        ],
+        "time_spent": 1136.0,
+        "video_link": "https://www.dropbox.com/s/dwbezm2yw8b78sq/Primitive-Technology_11-clip-8.mp4?raw=1",
+        "video_id": "Primitive-Technology_11-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:13.368",
+                "end": "00:09:15.388"
+            },
+            "seconds": {
+                "start": "493.36787499999997",
+                "end": "555.3881666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.02029166666665,
+        "alter_answers": [
+            "Bowl is made out of stone"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.610198599999995,
+                    15.232183633333328
+                ],
+                [
+                    38.84951069999999,
+                    46.788108033333316
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What tool was the man making?",
+        "answer": "Chisel",
+        "assignment_id": "3PPTZCWALQJZ3GZWX46XOBWXC0BZQG",
+        "objective": "I wish to learn about the tools",
+        "confidence": "high",
+        "original_question": "What tool was the man making?",
+        "original_answer": "Chisel",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.985,
+                    9.944
+                ]
+            },
+            {
+                "1": [
+                    26.702,
+                    28.57
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.985",
+                    "00:09.944"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.702",
+                    "00:28.570"
+                ]
+            }
+        ],
+        "time_spent": 1136.0,
+        "video_link": "https://www.dropbox.com/s/6mw6pkqtulqm5rh/Primitive-Technology_3-clip-1.mp4?raw=1",
+        "video_id": "Primitive-Technology_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.329",
+                "end": "00:02:05.425"
+            },
+            "seconds": {
+                "start": "62.32893333333333",
+                "end": "125.42530000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.09636666666668,
+        "alter_answers": [
+            "the man was making a knife"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.279481893333337,
+                    37.100663600000004
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What was the chisel being used for?",
+        "answer": "to cut down trees",
+        "assignment_id": "3PPTZCWALQJZ3GZWX46XOBWXC0BZQG",
+        "objective": "I wish to learn about the tools",
+        "confidence": "high",
+        "original_question": "What was the chisel being used for?",
+        "original_answer": "to cut down trees",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    30.942,
+                    32.507
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:30.942",
+                    "00:32.507"
+                ]
+            }
+        ],
+        "time_spent": 1136.0,
+        "video_link": "https://www.dropbox.com/s/6mw6pkqtulqm5rh/Primitive-Technology_3-clip-1.mp4?raw=1",
+        "video_id": "Primitive-Technology_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.329",
+                "end": "00:02:05.425"
+            },
+            "seconds": {
+                "start": "62.32893333333333",
+                "end": "125.42530000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.09636666666668,
+        "alter_answers": [
+            "The chisel is being used to cut down tree"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.61774416000001,
+                    43.46077736
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of water source was there?",
+        "answer": "A well",
+        "assignment_id": "3PPTZCWALQJZ3GZWX46XOBWXC0BZQG",
+        "objective": "I wish to learn about the camp",
+        "confidence": "moderate",
+        "original_question": "What kind of water source was there?",
+        "original_answer": "A well",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    22.617,
+                    25.237
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:22.617",
+                    "00:25.237"
+                ]
+            }
+        ],
+        "time_spent": 1136.0,
+        "video_link": "https://www.dropbox.com/s/1i4d8yqyvy7f2ar/Survival-Skills-Primitive_11-clip-0.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.667"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.666666666666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.66666666666666,
+        "alter_answers": [
+            "There is a well. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.549866666666667,
+                    26.402133333333335
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What was the structure made out of",
+        "answer": "Clay bricks",
+        "assignment_id": "3PPTZCWALQJZ3GZWX46XOBWXC0BZQG",
+        "objective": "I wish to learn about the camp",
+        "confidence": "high",
+        "original_question": "What was the structure made out of",
+        "original_answer": "Clay bricks",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    41.108,
+                    43.146
+                ]
+            },
+            {
+                "1": [
+                    23.733,
+                    25.626
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:41.108",
+                    "00:43.146"
+                ]
+            },
+            {
+                "1": [
+                    "00:23.733",
+                    "00:25.626"
+                ]
+            }
+        ],
+        "time_spent": 1136.0,
+        "video_link": "https://www.dropbox.com/s/1i4d8yqyvy7f2ar/Survival-Skills-Primitive_11-clip-0.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.667"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.666666666666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.66666666666666,
+        "alter_answers": [
+            "The structure was made out of wood trees"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What has been built here?",
+        "answer": "A shelter and a log holder",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the constructions",
+        "confidence": "high",
+        "original_question": "What has been built here?",
+        "original_answer": "A shelter and a log holder",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.445,
+                    6.98
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.445",
+                    "00:06.980"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/760rgdsox3xrjj1/Survival-Instinct_8-clip-4.mp4?raw=1",
+        "video_id": "Survival-Instinct_8-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:12.480",
+                "end": "00:05:14.360"
+            },
+            "seconds": {
+                "start": "252.48",
+                "end": "314.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.88000000000002,
+        "alter_answers": [
+            "There was a house built here"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.652992000000012,
+                    38.86064000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the shelter and the log holder made out of?",
+        "answer": "Sticks and leaves",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the constructions",
+        "confidence": "high",
+        "original_question": "What are the shelter and the log holder made out of?",
+        "original_answer": "Sticks and leaves",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.93,
+                    23.613
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.930",
+                    "00:23.613"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/760rgdsox3xrjj1/Survival-Instinct_8-clip-4.mp4?raw=1",
+        "video_id": "Survival-Instinct_8-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:12.480",
+                "end": "00:05:14.360"
+            },
+            "seconds": {
+                "start": "252.48",
+                "end": "314.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.88000000000002,
+        "alter_answers": [
+            "They are made of wood and vines. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What kind of shelter is there?",
+        "answer": "Tent",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the camp",
+        "confidence": "high",
+        "original_question": "What kind of shelter is there?",
+        "original_answer": "Tent",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.344,
+                    29.926
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.344",
+                    "00:29.926"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/x9o9if18def7t9w/Bertram-Craft_12-clip-25.mp4?raw=1",
+        "video_id": "Bertram-Craft_12-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:25.717",
+                "end": "00:32:31.575"
+            },
+            "seconds": {
+                "start": "1885.7171666666666",
+                "end": "1951.574625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.8574583333334,
+        "alter_answers": [
+            "There wood shelter"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    28.028934266666695,
+                    43.518608466666706
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of tools are at the camp?",
+        "answer": "A knife and a handsaw",
+        "assignment_id": "39O5D9O87TRUOMIK7FAT0521TQC3CJ",
+        "objective": "I wish to learn about the camp",
+        "confidence": "high",
+        "original_question": "What kind of tools are at the camp?",
+        "original_answer": "A knife an a handsaw",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.168,
+                    11.327
+                ]
+            },
+            {
+                "1": [
+                    43.308,
+                    45.257
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.168",
+                    "00:11.327"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.308",
+                    "00:45.257"
+                ]
+            }
+        ],
+        "time_spent": 798.0,
+        "video_link": "https://www.dropbox.com/s/x9o9if18def7t9w/Bertram-Craft_12-clip-25.mp4?raw=1",
+        "video_id": "Bertram-Craft_12-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:25.717",
+                "end": "00:32:31.575"
+            },
+            "seconds": {
+                "start": "1885.7171666666666",
+                "end": "1951.574625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.8574583333334,
+        "alter_answers": [
+            "The man using as tools for the camp is a knife"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the man doing?",
+        "answer": "Surviving in the desert",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0MFXRI",
+        "objective": "I wish to learn about the man",
+        "confidence": "moderate",
+        "original_question": "What is the man doing?",
+        "original_answer": "Surviving in the desert",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    16.742,
+                    21.207
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:16.742",
+                    "00:21.207"
+                ]
+            }
+        ],
+        "time_spent": 934.0,
+        "video_link": "https://www.dropbox.com/s/crywm1zpgnlksz2/Chad-Zuber_5-clip-0.mp4?raw=1",
+        "video_id": "Chad-Zuber_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.661"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.6606"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6606,
+        "alter_answers": [
+            "The man is creating a fortress "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.78052176,
+                    32.22291072
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man trying to make?",
+        "answer": "Bricks for building",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0MFXRI",
+        "objective": "I wish to learn about the man",
+        "confidence": "high",
+        "original_question": "What is the man trying to make?",
+        "original_answer": "Bricks for building",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    30.476,
+                    33.436
+                ]
+            },
+            {
+                "1": [
+                    40.036,
+                    44.986
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:30.476",
+                    "00:33.436"
+                ]
+            },
+            {
+                "1": [
+                    "00:40.036",
+                    "00:44.986"
+                ]
+            }
+        ],
+        "time_spent": 934.0,
+        "video_link": "https://www.dropbox.com/s/crywm1zpgnlksz2/Chad-Zuber_5-clip-0.mp4?raw=1",
+        "video_id": "Chad-Zuber_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.661"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.6606"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6606,
+        "alter_answers": [
+            "He is making adobe bricks."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    29.6023728,
+                    42.559476960000005
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the man have water, food, fire, and shelter?",
+        "answer": "Yes the man has water, food, fire, and shelter.",
+        "assignment_id": "35USIKEBNRFCC92TF7H5NJ8X2LE6NW",
+        "objective": "Determine what allows the man to survive.",
+        "confidence": "very_high",
+        "original_question": "Does the man have water, food, fire, and shelter?",
+        "original_answer": "Yes the man has water, food, fire, and shelter.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    16.306,
+                    19.072
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:16.306",
+                    "00:19.072"
+                ]
+            }
+        ],
+        "time_spent": 2540.0,
+        "video_link": "https://www.dropbox.com/s/crywm1zpgnlksz2/Chad-Zuber_5-clip-0.mp4?raw=1",
+        "video_id": "Chad-Zuber_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.661"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.6606"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6606,
+        "alter_answers": [
+            "the man does have water, food, fire, and shelter"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.021597600000003,
+                    35.52284736
+                ],
+                [
+                    47.36379648,
+                    57.70036272000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the man working with wood?",
+        "answer": "Yes the man is working with wood.",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the man doing?",
+        "confidence": "very_high",
+        "original_question": "Is the man working with wood?",
+        "original_answer": "Yes the man is working with wood.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.907
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.907"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/8mzfl77keti1iv9/Joe-Robinet_5-clip-23.mp4?raw=1",
+        "video_id": "Joe-Robinet_5-clip-23",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:27:27.045",
+                "end": "00:28:27.072"
+            },
+            "seconds": {
+                "start": "1647.0454",
+                "end": "1707.0720333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.026633333333386,
+        "alter_answers": [
+            "The man is Working with wood there"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.00266333333334,
+                    14.934626373333348
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the man stacking wood?",
+        "answer": "Yes",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the man doing?",
+        "confidence": "very_high",
+        "original_question": "Is the man stacking wood?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.731,
+                    27.084
+                ]
+            },
+            {
+                "1": [
+                    30.061,
+                    32.078
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.731",
+                    "00:27.084"
+                ]
+            },
+            {
+                "1": [
+                    "00:30.061",
+                    "00:32.078"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/8mzfl77keti1iv9/Joe-Robinet_5-clip-23.mp4?raw=1",
+        "video_id": "Joe-Robinet_5-clip-23",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:27:27.045",
+                "end": "00:28:27.072"
+            },
+            "seconds": {
+                "start": "1647.0454",
+                "end": "1707.0720333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.026633333333386,
+        "alter_answers": [
+            "The man is stacking wood on the fire."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there fire?",
+        "answer": "Yes there is fire.",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the man doing?",
+        "confidence": "very_high",
+        "original_question": "Is there fire?",
+        "original_answer": "Yes there is fire.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.276,
+                    30.253
+                ]
+            },
+            {
+                "1": [
+                    49.846,
+                    52.439
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.276",
+                    "00:30.253"
+                ]
+            },
+            {
+                "1": [
+                    "00:49.846",
+                    "00:52.439"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/8mzfl77keti1iv9/Joe-Robinet_5-clip-23.mp4?raw=1",
+        "video_id": "Joe-Robinet_5-clip-23",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:27:27.045",
+                "end": "00:28:27.072"
+            },
+            "seconds": {
+                "start": "1647.0454",
+                "end": "1707.0720333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.026633333333386,
+        "alter_answers": [
+            "Yes there is a fire. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.53622437333335,
+                    32.846573760000034
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the man making a fire?",
+        "answer": "Yes, he is making a fire.",
+        "assignment_id": "37QW5D2ZRGLWW0DMGIVP6REUVFA8SU",
+        "objective": "What is the man doing?",
+        "confidence": "very_high",
+        "original_question": "Is he making a fire?",
+        "original_answer": "Yes, he is making a fire.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    44.756,
+                    47.973
+                ]
+            },
+            {
+                "1": [
+                    51.815,
+                    55.465
+                ]
+            },
+            {
+                "2": [
+                    19.401,
+                    23.002
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:44.756",
+                    "00:47.973"
+                ]
+            },
+            {
+                "1": [
+                    "00:51.815",
+                    "00:55.465"
+                ]
+            },
+            {
+                "2": [
+                    "00:19.401",
+                    "00:23.002"
+                ]
+            }
+        ],
+        "time_spent": 3373.0,
+        "video_link": "https://www.dropbox.com/s/8mzfl77keti1iv9/Joe-Robinet_5-clip-23.mp4?raw=1",
+        "video_id": "Joe-Robinet_5-clip-23",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:27:27.045",
+                "end": "00:28:27.072"
+            },
+            "seconds": {
+                "start": "1647.0454",
+                "end": "1707.0720333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.026633333333386,
+        "alter_answers": [
+            "Yes the man is making fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.327244266666685,
+                    27.996421786666694
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the men looking for?",
+        "answer": "The men are looking foe small crabs",
+        "assignment_id": "3FE2ERCCZX7240KAVIGR88ZJN09OPZ",
+        "objective": "What is the purpose of the dogs",
+        "confidence": "very_high",
+        "original_question": "What are the men looking for?",
+        "original_answer": "The men are looking foe small crabs",
+        "question_type": [
+            "Entity",
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    42.489,
+                    44.847
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:42.489",
+                    "00:44.847"
+                ]
+            }
+        ],
+        "time_spent": 2045.0,
+        "video_link": "https://www.dropbox.com/s/khee1pqb55kx3fx/Survival-Skills-Primitive_3-clip-0.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:04.067"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "64.06666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.06666666666666,
+        "alter_answers": [
+            "The men are looking for crabs"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    36.236106666666664,
+                    48.02437333333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the man resorting to building a shelter to stay out of the rain?",
+        "answer": "Since he mentions that it is raining and starts cutting branches, he should have the intention to stay in this shelter to get out of the rain.",
+        "assignment_id": "39N5ACM9HEMZXDG4TTX9BI4US25P96",
+        "objective": "I want to know to know if the man is building a shelter so he can stay in the woods.",
+        "confidence": "moderate",
+        "original_question": "Is he resorting to building a shelter to stay out of the rain?",
+        "original_answer": "I believe since he mentions that it is raining and starts cutting branches, that he has the intentions to either stay in this shelter to get out of the rain, or demonstrate what to do if you find yourself in this situation.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.223
+                ]
+            },
+            {
+                "1": [
+                    41.754,
+                    49.82
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.223"
+                ]
+            },
+            {
+                "1": [
+                    "00:41.754",
+                    "00:49.820"
+                ]
+            }
+        ],
+        "time_spent": 2770.0,
+        "video_link": "https://www.dropbox.com/s/a4hryxhwb15phhz/BC-Bushcraft_2-clip-2.mp4?raw=1",
+        "video_id": "BC-Bushcraft_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:34.521",
+                "end": "00:03:40.420"
+            },
+            "seconds": {
+                "start": "154.52103333333335",
+                "end": "220.4202"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.89916666666664,
+        "alter_answers": [
+            "Yes, he says its raining. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.2125446666666662,
+                    2.5832473333333326
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does this man craft all of his dishes by hand.",
+        "answer": "Judging by seeing multiple bowls/baskets in the video, I am assuming he has also made these himself and likely has more that aren't shown.",
+        "assignment_id": "39N5ACM9HEMZXDG4TTX9BI4US25P96",
+        "objective": "I want to know if he makes all of his own dishes/baskets.",
+        "confidence": "moderate",
+        "original_question": "Does this man craft all of his dishes by hand.",
+        "original_answer": "Judging by seeing multiple bowls/baskets in the video, I am assuming he has also made these himself and likely has more that aren't shown.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.576,
+                    5.183
+                ]
+            },
+            {
+                "1": [
+                    24.344,
+                    29.684
+                ]
+            },
+            {
+                "2": [
+                    57.325,
+                    62.142
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.576",
+                    "00:05.183"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.344",
+                    "00:29.684"
+                ]
+            },
+            {
+                "2": [
+                    "00:57.325",
+                    "01:02.142"
+                ]
+            }
+        ],
+        "time_spent": 2770.0,
+        "video_link": "https://www.dropbox.com/s/ydcydaq2415jxls/Primitive-Technology_7-clip-4.mp4?raw=1",
+        "video_id": "Primitive-Technology_7-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:19.680",
+                "end": "00:06:25.120"
+            },
+            "seconds": {
+                "start": "319.68",
+                "end": "385.12"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.44,
+        "alter_answers": [
+            "The man is making a bowl/dish. There are several other dishes that appear to also be manmade."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Did putting this shelter together take a long time?",
+        "answer": "Judging by being out in the middle of nowhere, and the complexity of the structures shown, I would imagine this was quite a time consuming project as he probably only used tools he made himself or was very limited in other tools as he is likely far away from society.",
+        "assignment_id": "39N5ACM9HEMZXDG4TTX9BI4US25P96",
+        "objective": "I am curious how long this took to craft this shelter setup.",
+        "confidence": "moderate",
+        "original_question": "Did putting this shelter together take a long time?",
+        "original_answer": "Judging by being out in the middle of nowhere, and the complexity of the structures shown, I would imagine this was quite a time consuming project as he probably only used tools he made himself or was very limited in other tools as he is likely far away from society.",
+        "question_type": [
+            "Location",
+            "Reasoning",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.407,
+                    18.633
+                ]
+            },
+            {
+                "1": [
+                    41.964,
+                    48.467
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.407",
+                    "00:18.633"
+                ]
+            },
+            {
+                "1": [
+                    "00:41.964",
+                    "00:48.467"
+                ]
+            }
+        ],
+        "time_spent": 2770.0,
+        "video_link": "https://www.dropbox.com/s/2k7pnjymjdqlgaa/Survival-Instinct_9-clip-2.mp4?raw=1",
+        "video_id": "Survival-Instinct_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:18.840",
+                "end": "00:03:23.360"
+            },
+            "seconds": {
+                "start": "138.84",
+                "end": "203.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.52000000000001,
+        "alter_answers": [
+            "It took less then 14 hours, as the sun never sets. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there a noose in the rope on the bent stick?",
+        "answer": "Yes, there is a noose in the rope on the bent stick.",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "What is the man creating?",
+        "confidence": "very_high",
+        "original_question": "Is there a noose in the rope on the bent stick?",
+        "original_answer": "Yes, there is a noose in the rope on the bent stick.",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.894,
+                    48.743
+                ]
+            },
+            {
+                "1": [
+                    49.354,
+                    51.185
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.894",
+                    "00:48.743"
+                ]
+            },
+            {
+                "1": [
+                    "00:49.354",
+                    "00:51.185"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/7mhmybzqzv3tgw8/Survival-Instinct_11-clip-10.mp4?raw=1",
+        "video_id": "Survival-Instinct_11-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:31.760",
+                "end": "00:14:35.360"
+            },
+            "seconds": {
+                "start": "811.76",
+                "end": "875.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.600000000000016,
+        "alter_answers": [
+            "there is a noose in the rope on the bent stick"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    21.216960000000007,
+                    33.42816000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why is the human blowing on the embers of a fire.",
+        "answer": "The human is blowing on the embers to start the fire.",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "Why is the human blowing on the embers of a fire.",
+        "original_answer": "The human is blowing on the embers to start the fire.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    40.623,
+                    42.375
+                ]
+            },
+            {
+                "1": [
+                    45.468,
+                    47.84
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:40.623",
+                    "00:42.375"
+                ]
+            },
+            {
+                "1": [
+                    "00:45.468",
+                    "00:47.840"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/6x3g93pevy2b08g/Joe-Robinet_0-clip-23.mp4?raw=1",
+        "video_id": "Joe-Robinet_0-clip-23",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:33:55.742",
+                "end": "00:35:00.181"
+            },
+            "seconds": {
+                "start": "2035.7415234451976",
+                "end": "2100.180882041416"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.43935859621865,
+        "alter_answers": [
+            "The human is blowing on the embers of a fire to create more fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.694150668204124,
+                    49.33477294126501
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the human have shelter?",
+        "answer": "Yes, the human has shelter",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "What does the human have in the way of things needed to survive?",
+        "confidence": "very_high",
+        "original_question": "Does the human have shelter?",
+        "original_answer": "Yes, the human has shelter",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.52,
+                    40.87
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.520",
+                    "00:40.870"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/okbqp98hguv3mlc/BC-Bushcraft_11-clip-31.mp4?raw=1",
+        "video_id": "BC-Bushcraft_11-clip-31",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:41:18.876",
+                "end": "00:44:42.413"
+            },
+            "seconds": {
+                "start": "2478.8759527019274",
+                "end": "2682.4125826416484"
+            },
+            "split-method": "auto"
+        },
+        "duration": 203.53662993972102,
+        "alter_answers": [
+            "The human does have shelter and fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    49.33727909738837,
+                    80.1120175442742
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What does the human use the fire for during the night?",
+        "answer": "The fire is used for heat.",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "What does the human have in the way of things needed to survive?",
+        "confidence": "high",
+        "original_question": "What does the human use the fire for during the night?",
+        "original_answer": "The fire is used for heat.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    30.449,
+                    34.357
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:30.449",
+                    "00:34.357"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/okbqp98hguv3mlc/BC-Bushcraft_11-clip-31.mp4?raw=1",
+        "video_id": "BC-Bushcraft_11-clip-31",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:41:18.876",
+                "end": "00:44:42.413"
+            },
+            "seconds": {
+                "start": "2478.8759527019274",
+                "end": "2682.4125826416484"
+            },
+            "split-method": "auto"
+        },
+        "duration": 203.53662993972102,
+        "alter_answers": [
+            "He is heating something in a thermos. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    138.8933962708656,
+                    184.48560137736314
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human blowing on?",
+        "answer": "The human is blowing on the embers of fire.",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "What is the human blowing on?",
+        "original_answer": "The human is blowing on the embers of fire.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    28.25,
+                    31.034
+                ]
+            },
+            {
+                "1": [
+                    29.436,
+                    31.034
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:28.250",
+                    "00:31.034"
+                ]
+            },
+            {
+                "1": [
+                    "00:29.436",
+                    "00:31.034"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/6x3g93pevy2b08g/Joe-Robinet_0-clip-23.mp4?raw=1",
+        "video_id": "Joe-Robinet_0-clip-23",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:33:55.742",
+                "end": "00:35:00.181"
+            },
+            "seconds": {
+                "start": "2035.7415234451976",
+                "end": "2100.180882041416"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.43935859621865,
+        "alter_answers": [
+            "the human is blowing on fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    31.60106145558563,
+                    45.51996291236886
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the purpose of the stick and rope?",
+        "answer": "The stick and rope is a trap. When small animals walk into the loop at the end, the stick snaps up and loop tightens, catching the prey.",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "What is the man creating?",
+        "confidence": "very_high",
+        "original_question": "What is the purpose of the stick and rope?",
+        "original_answer": "The stick and rope is a trap. When small animals walk into the loop at the end, the stick snaps up and loop tightens, catching the prey.",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.931,
+                    26.916
+                ]
+            },
+            {
+                "1": [
+                    50.626,
+                    52.763
+                ]
+            },
+            {
+                "2": [
+                    35.972,
+                    38.974
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.931",
+                    "00:26.916"
+                ]
+            },
+            {
+                "1": [
+                    "00:50.626",
+                    "00:52.763"
+                ]
+            },
+            {
+                "2": [
+                    "00:35.972",
+                    "00:38.974"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/7mhmybzqzv3tgw8/Survival-Instinct_11-clip-10.mp4?raw=1",
+        "video_id": "Survival-Instinct_11-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:31.760",
+                "end": "00:14:35.360"
+            },
+            "seconds": {
+                "start": "811.76",
+                "end": "875.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.600000000000016,
+        "alter_answers": [
+            "The purpose of the stick and rope is to catch food as a trap"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.75104000000001,
+                    49.40448000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the human have fire?",
+        "answer": "Yes, the human has fire.",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "What does the human have in the way of things needed to survive?",
+        "confidence": "very_high",
+        "original_question": "Does the human have fire?",
+        "original_answer": "Yes, the human has fire.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    3.908
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:03.908"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/okbqp98hguv3mlc/BC-Bushcraft_11-clip-31.mp4?raw=1",
+        "video_id": "BC-Bushcraft_11-clip-31",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:41:18.876",
+                "end": "00:44:42.413"
+            },
+            "seconds": {
+                "start": "2478.8759527019274",
+                "end": "2682.4125826416484"
+            },
+            "split-method": "auto"
+        },
+        "duration": 203.53662993972102,
+        "alter_answers": [
+            "The human has built a fire."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.1167809513730984,
+                    12.375027100335037
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the purpose of carrying the pot?",
+        "answer": "The men are using the pot to contain the small crabs they are catching.",
+        "assignment_id": "3DBQWDE4Y6XGT52FAO70VDUX6XUN52",
+        "objective": "I want to know why the men are carrying a pot with them.",
+        "confidence": "moderate",
+        "original_question": "What is the purpose of carrying the pot?",
+        "original_answer": "The men are using the pot to contain the small crabs they are catching.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.724,
+                    45.308
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.724",
+                    "00:45.308"
+                ]
+            }
+        ],
+        "time_spent": 2658.0,
+        "video_link": "https://www.dropbox.com/s/khee1pqb55kx3fx/Survival-Skills-Primitive_3-clip-0.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:04.067"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "64.06666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.06666666666666,
+        "alter_answers": [
+            "They are catching a small animal and using the pot to store it."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    39.106293333333326,
+                    45.41045333333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human doing with the fire.",
+        "answer": "The human is cooking one egg and six pieces of bacon.",
+        "assignment_id": "3EKVH9QMEY3F8WSF3BRZ11FR8KL2DK",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "What is the human doing with the fire.",
+        "original_answer": "The human is cooking one egg and six pieces of bacon.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.672,
+                    4.478
+                ]
+            },
+            {
+                "1": [
+                    46.755,
+                    49.383
+                ]
+            },
+            {
+                "2": [
+                    53.563,
+                    58.28
+                ]
+            },
+            {
+                "3": [
+                    73.447,
+                    74.104
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.672",
+                    "00:04.478"
+                ]
+            },
+            {
+                "1": [
+                    "00:46.755",
+                    "00:49.383"
+                ]
+            },
+            {
+                "2": [
+                    "00:53.563",
+                    "00:58.280"
+                ]
+            },
+            {
+                "3": [
+                    "01:13.447",
+                    "01:14.104"
+                ]
+            }
+        ],
+        "time_spent": 966.0,
+        "video_link": "https://www.dropbox.com/s/1fw0q7jq5fh1rrf/Joe-Robinet_2-clip-5.mp4?raw=1",
+        "video_id": "Joe-Robinet_2-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:06.486",
+                "end": "00:09:21.127"
+            },
+            "seconds": {
+                "start": "486.486",
+                "end": "561.1272333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.64123333333339,
+        "alter_answers": [
+            "The man is cooking with the fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    44.24732312000003,
+                    53.144558133333376
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human doing with the hammer?",
+        "answer": "The human is shaping metal with a hammer.",
+        "assignment_id": "3EKVH9QMEY3F8WSF3BRZ11FR8KL2DK",
+        "objective": "Determine what the human us using the hammer for.",
+        "confidence": "very_high",
+        "original_question": "What is the human doing with the hammer?",
+        "original_answer": "The human is shaping metal with a hammer.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    2.323
+                ]
+            },
+            {
+                "1": [
+                    5.754,
+                    7.126
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:02.323"
+                ]
+            },
+            {
+                "1": [
+                    "00:05.754",
+                    "00:07.126"
+                ]
+            }
+        ],
+        "time_spent": 966.0,
+        "video_link": "https://www.dropbox.com/s/26mnkkp15i4q3pr/Bertram-Craft_2-clip-3.mp4?raw=1",
+        "video_id": "Bertram-Craft_2-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:22.202",
+                "end": "00:04:28.185"
+            },
+            "seconds": {
+                "start": "202.202",
+                "end": "268.1845833333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.98258333333331,
+        "alter_answers": [
+            "The human is straightening the metal with the hammer"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.0088057999999984,
+                    18.000048733333326
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What does the man appear to be doing?",
+        "answer": "It looks as if this man is on a walk and exploring the area, judging by how he stops to look around at things for a moment and then continues on walking.",
+        "assignment_id": "3EQHHY4HQSRAJDLTNKU55TL05L95GD",
+        "objective": "I am curious what the man is doing.",
+        "confidence": "moderate",
+        "original_question": "What does the man appear to be doing?",
+        "original_answer": "It looks as if this man is on a walk and exploring the area, judging by how he stops to look around at things for a moment and then continues on walking.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    28.912,
+                    40.404
+                ]
+            },
+            {
+                "1": [
+                    44.46,
+                    55.64
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:28.912",
+                    "00:40.404"
+                ]
+            },
+            {
+                "1": [
+                    "00:44.460",
+                    "00:55.640"
+                ]
+            }
+        ],
+        "time_spent": 2227.0,
+        "video_link": "https://www.dropbox.com/s/ziljidqx9eon8w2/King-Kong-Amazon_11-clip-7.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_11-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:16.900",
+                "end": "00:08:21.900"
+            },
+            "seconds": {
+                "start": "436.9",
+                "end": "501.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "The man appears to be exploring a forest and walking through a small hut."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Why is the human gathering leaves?",
+        "answer": "The human is gathering leaves to create a roof for the shelter.",
+        "assignment_id": "3FTF2T8WLRHPHMD55FB43CCQL60W9E",
+        "objective": "Determine what the human is creating.",
+        "confidence": "very_high",
+        "original_question": "Why is the human gathering leaves?",
+        "original_answer": "The human is gathering leaves to create a roof for the shelter.",
+        "question_type": [
+            "Existence",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    62.345,
+                    64.508
+                ]
+            },
+            {
+                "1": [
+                    66.56,
+                    69.333
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:02.345",
+                    "01:04.508"
+                ]
+            },
+            {
+                "1": [
+                    "01:06.560",
+                    "01:09.333"
+                ]
+            }
+        ],
+        "time_spent": 1202.0,
+        "video_link": "https://www.dropbox.com/s/jtnyg1uwdk6zp4u/Primitive-Technology_5-clip-0.mp4?raw=1",
+        "video_id": "Primitive-Technology_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:09.333"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "69.33333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.33333333333333,
+        "alter_answers": [
+            "the human is gathering leaves to make a fortress "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    47.2576,
+                    60.73599999999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why is the human cutting wood?",
+        "answer": "The human is cutting wood to create a shelter.",
+        "assignment_id": "3FTF2T8WLRHPHMD55FB43CCQL60W9E",
+        "objective": "Determine what the human is creating.",
+        "confidence": "very_high",
+        "original_question": "Why is the human cutting wood?",
+        "original_answer": "The human is cutting wood to create a shelter.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.865,
+                    19.247
+                ]
+            },
+            {
+                "1": [
+                    34.889,
+                    38.327
+                ]
+            },
+            {
+                "2": [
+                    50.586,
+                    53.414
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.865",
+                    "00:19.247"
+                ]
+            },
+            {
+                "1": [
+                    "00:34.889",
+                    "00:38.327"
+                ]
+            },
+            {
+                "2": [
+                    "00:50.586",
+                    "00:53.414"
+                ]
+            }
+        ],
+        "time_spent": 1202.0,
+        "video_link": "https://www.dropbox.com/s/jtnyg1uwdk6zp4u/Primitive-Technology_5-clip-0.mp4?raw=1",
+        "video_id": "Primitive-Technology_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:09.333"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "69.33333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.33333333333333,
+        "alter_answers": [
+            "The human is cutting wood to create shelter"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the human doing with the axe?",
+        "answer": "The human is cutting a tree down with an axe.",
+        "assignment_id": "3FTF2T8WLRHPHMD55FB43CCQL60W9E",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "What is the human doing with the axe?",
+        "original_answer": "The human is cutting a tree down with an axe.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.994,
+                    17.849
+                ]
+            },
+            {
+                "1": [
+                    32.279,
+                    35.835
+                ]
+            },
+            {
+                "2": [
+                    61.481,
+                    65.858
+                ]
+            },
+            {
+                "3": [
+                    67.91,
+                    71.739
+                ]
+            },
+            {
+                "4": [
+                    78.92,
+                    81.109
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.994",
+                    "00:17.849"
+                ]
+            },
+            {
+                "1": [
+                    "00:32.279",
+                    "00:35.835"
+                ]
+            },
+            {
+                "2": [
+                    "01:01.481",
+                    "01:05.858"
+                ]
+            },
+            {
+                "3": [
+                    "01:07.910",
+                    "01:11.739"
+                ]
+            },
+            {
+                "4": [
+                    "01:18.920",
+                    "01:21.109"
+                ]
+            }
+        ],
+        "time_spent": 1202.0,
+        "video_link": "https://www.dropbox.com/s/obouuoh3aqi45lx/BC-Bushcraft_10-clip-8.mp4?raw=1",
+        "video_id": "BC-Bushcraft_10-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:46.219",
+                "end": "00:11:11.704"
+            },
+            "seconds": {
+                "start": "586.2189666666667",
+                "end": "671.7043666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 85.48540000000003,
+        "alter_answers": [
+            "The man is chopping wood tree with the axe"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    29.61214256000001,
+                    44.58918464000001
+                ],
+                [
+                    61.20754640000002,
+                    70.64513456000003
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Will the man cook the bacon before the eggs?",
+        "answer": "No, the man says that he will cook the bacon after the eggs because the bacon will not take long to cook.",
+        "assignment_id": "3G5F9DBFOPW5H3VJDHU0URR0X9NHVU",
+        "objective": "I am curious how the man plans to cook the eggs and bacon.",
+        "confidence": "moderate",
+        "original_question": "Will the man cook the bacon before the eggs?",
+        "original_answer": "No, the man says that he will cook the bacon after the eggs because the bacon will not take long to cook.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    45.979,
+                    51.473
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:45.979",
+                    "00:51.473"
+                ]
+            }
+        ],
+        "time_spent": 1913.0,
+        "video_link": "https://www.dropbox.com/s/1fw0q7jq5fh1rrf/Joe-Robinet_2-clip-5.mp4?raw=1",
+        "video_id": "Joe-Robinet_2-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:06.486",
+                "end": "00:09:21.127"
+            },
+            "seconds": {
+                "start": "486.486",
+                "end": "561.1272333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 74.64123333333339,
+        "alter_answers": [
+            "The man cooks the eggs before the bacon",
+            "The man cooks the eggs first then and then he cooks the bacon"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    14.868533680000013,
+                    23.049212853333348
+                ],
+                [
+                    36.42492186666669,
+                    52.905706186666706
+                ],
+                [
+                    47.29268544000003,
+                    64.07203469333338
+                ]
+            ],
+            [
+                [
+                    15.465663546666677,
+                    26.99026997333335
+                ],
+                [
+                    39.29114522666669,
+                    49.143788026666705
+                ],
+                [
+                    56.607911360000045,
+                    69.20735154666671
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is this man doing with the hammer?",
+        "answer": "It seems he is doing some kind of forgery and using the hammer to help shape the object, based on him hammering and sticking the metal item into the water and hearing it sizzle from being heated up.",
+        "assignment_id": "3G5F9DBFOPW5H3VJDHU0URR0X9NHVU",
+        "objective": "I am curious what the man is using the hammer to do.",
+        "confidence": "moderate",
+        "original_question": "What is this man doing with the hammer?",
+        "original_answer": "Based on him hammering and sticking the metal item into the water and hearing it sizzle from being heated up, I am assuming he is doing some kind of forgery and using the hammer to help shape the object.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.126
+                ]
+            },
+            {
+                "1": [
+                    7.496,
+                    18.739
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.126"
+                ]
+            },
+            {
+                "1": [
+                    "00:07.496",
+                    "00:18.739"
+                ]
+            }
+        ],
+        "time_spent": 1913.0,
+        "video_link": "https://www.dropbox.com/s/26mnkkp15i4q3pr/Bertram-Craft_2-clip-3.mp4?raw=1",
+        "video_id": "Bertram-Craft_2-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:22.202",
+                "end": "00:04:28.185"
+            },
+            "seconds": {
+                "start": "202.202",
+                "end": "268.1845833333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.98258333333331,
+        "alter_answers": [
+            "The man is straiting steel with the hammer"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.3783082666666657,
+                    10.187710866666661
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is being placed in the tube?",
+        "answer": "The objects going into the tube look like beans in my opinion.",
+        "assignment_id": "3J2UYBXQQLB9RDAME1F7C7CKUZA606",
+        "objective": "I am wondering what the objects being placed into the tube are.",
+        "confidence": "moderate",
+        "original_question": "What is being placed in the tube?",
+        "original_answer": "The objects going into the tube look like beans in my opinion.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.95,
+                    46.682
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.950",
+                    "00:46.682"
+                ]
+            }
+        ],
+        "time_spent": 2547.0,
+        "video_link": "https://www.dropbox.com/s/760rgdsox3xrjj1/Survival-Instinct_8-clip-4.mp4?raw=1",
+        "video_id": "Survival-Instinct_8-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:12.480",
+                "end": "00:05:14.360"
+            },
+            "seconds": {
+                "start": "252.48",
+                "end": "314.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.88000000000002,
+        "alter_answers": [
+            "Worms and maggots are being placed in the tube. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    31.187520000000013,
+                    42.77145600000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What tools are being used?",
+        "answer": "A small knife, a small hand saw, and a hatchet are shown being used.",
+        "assignment_id": "3J2UYBXQQLB9RDAME1F7C7CKUZA606",
+        "objective": "I am curious about the tools being used.",
+        "confidence": "moderate",
+        "original_question": "What tools are being used?",
+        "original_answer": "A small knife, a small hand saw, and a hatchet are shown being used.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    18.44,
+                    22.76
+                ]
+            },
+            {
+                "1": [
+                    42.36,
+                    50.42
+                ]
+            },
+            {
+                "2": [
+                    55.9,
+                    63.645
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:18.440",
+                    "00:22.760"
+                ]
+            },
+            {
+                "1": [
+                    "00:42.360",
+                    "00:50.420"
+                ]
+            },
+            {
+                "2": [
+                    "00:55.900",
+                    "01:03.645"
+                ]
+            }
+        ],
+        "time_spent": 2547.0,
+        "video_link": "https://www.dropbox.com/s/x9o9if18def7t9w/Bertram-Craft_12-clip-25.mp4?raw=1",
+        "video_id": "Bertram-Craft_12-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:25.717",
+                "end": "00:32:31.575"
+            },
+            "seconds": {
+                "start": "1885.7171666666666",
+                "end": "1951.574625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.8574583333334,
+        "alter_answers": [
+            "Tools that are being used here are a knife"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.011367033333343,
+                    22.391535833333357
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man chopping the tree with?",
+        "answer": "He appears to be chopping the tree with a tool made out of a sharped rock attached to a log, resembling an axe.",
+        "assignment_id": "3OE22WJIGINIHH5MRH7P7JHIAQQUQW",
+        "objective": "I want to know what the man is chopping the tree with.",
+        "confidence": "moderate",
+        "original_question": "What is the man chopping the tree with?",
+        "original_answer": "He appears to be chopping the tree with a tool made out of a sharped rock attached to a log, resembling an axe.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.339,
+                    14.075
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.339",
+                    "00:14.075"
+                ]
+            }
+        ],
+        "time_spent": 3100.0,
+        "video_link": "https://www.dropbox.com/s/1i4d8yqyvy7f2ar/Survival-Skills-Primitive_11-clip-0.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.667"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.666666666666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.66666666666666,
+        "alter_answers": [
+            "The man is chopping the tree with an axe"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.318399999999999,
+                    19.170666666666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man using the rock for?",
+        "answer": "He is shaping the rock to use as a tool and carve out or cut wood.",
+        "assignment_id": "3OE22WJIGINIHH5MRH7P7JHIAQQUQW",
+        "objective": "I am wondering what he is using the rock for.",
+        "confidence": "moderate",
+        "original_question": "What is the man using the rock for?",
+        "original_answer": "He is shaping the rock to use as a tool and carve out or cut wood.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    1.666,
+                    11.004
+                ]
+            },
+            {
+                "1": [
+                    27.359,
+                    44.117
+                ]
+            },
+            {
+                "2": [
+                    46.338,
+                    56.888
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:01.666",
+                    "00:11.004"
+                ]
+            },
+            {
+                "1": [
+                    "00:27.359",
+                    "00:44.117"
+                ]
+            },
+            {
+                "2": [
+                    "00:46.338",
+                    "00:56.888"
+                ]
+            }
+        ],
+        "time_spent": 3100.0,
+        "video_link": "https://www.dropbox.com/s/6mw6pkqtulqm5rh/Primitive-Technology_3-clip-1.mp4?raw=1",
+        "video_id": "Primitive-Technology_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.329",
+                "end": "00:02:05.425"
+            },
+            "seconds": {
+                "start": "62.32893333333333",
+                "end": "125.42530000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.09636666666668,
+        "alter_answers": [
+            "The man is using the rock to cut trees"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    28.014786800000003,
+                    39.32165570666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is going on in the video?",
+        "answer": "There is a rock-like object being burned and then having small materials extracted from it and placed into a bowl.",
+        "assignment_id": "3OE22WJIGINIHH5MRH7P7JHIAQQUQW",
+        "objective": "I am wondering what is going on here.",
+        "confidence": "moderate",
+        "original_question": "What is going on in the video?",
+        "original_answer": "There is a rock-like object being burned and then having small materials extracted from it and placed into a bowl.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.248,
+                    11.709
+                ]
+            },
+            {
+                "1": [
+                    24.362,
+                    40.189
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.248",
+                    "00:11.709"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.362",
+                    "00:40.189"
+                ]
+            }
+        ],
+        "time_spent": 3100.0,
+        "video_link": "https://www.dropbox.com/s/dwbezm2yw8b78sq/Primitive-Technology_11-clip-8.mp4?raw=1",
+        "video_id": "Primitive-Technology_11-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:13.368",
+                "end": "00:09:15.388"
+            },
+            "seconds": {
+                "start": "493.36787499999997",
+                "end": "555.3881666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.02029166666665,
+        "alter_answers": [
+            "The man is shaping a rock with fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.003564233333331,
+                    15.232183633333328
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How is the hot chocolate in this video made?",
+        "answer": "The man melts snow into water using the fire he has built and then scoops hot cocoa mix into a cup and pours the hot water in to make the hot chocolate.",
+        "assignment_id": "3PW9OPU9PQJLG1C3NI740ZEIJLI21Q",
+        "objective": "I am curious about how the hot chocolate is made.",
+        "confidence": "moderate",
+        "original_question": "How is the hot chocolate in this video made?",
+        "original_answer": "The man melts snow into water using the fire he has built and then scoops hot cocoa mix into a cup and pours the hot water in to make the hot chocolate.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.727,
+                    63.5
+                ]
+            },
+            {
+                "1": [
+                    96.81,
+                    115.378
+                ]
+            },
+            {
+                "2": [
+                    130.969,
+                    161.16
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.727",
+                    "01:03.500"
+                ]
+            },
+            {
+                "1": [
+                    "01:36.810",
+                    "01:55.378"
+                ]
+            },
+            {
+                "2": [
+                    "02:10.969",
+                    "02:41.160"
+                ]
+            }
+        ],
+        "time_spent": 1577.0,
+        "video_link": "https://www.dropbox.com/s/ow5p9uivd0mww8p/Joe-Robinet_4-clip-0.mp4?raw=1",
+        "video_id": "Joe-Robinet_4-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:02:57.177"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "177.177"
+            },
+            "split-method": "auto"
+        },
+        "duration": 177.17700000000005,
+        "alter_answers": [
+            "Chocolate powder is poured in a cup and melted"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    112.25934719999998,
+                    133.5205872
+                ],
+                [
+                    71.01254159999999,
+                    100.2113112
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is this man doing?",
+        "answer": "This man appears to be making a tool of some sort and cutting out th specific shape the needs from the wood he has traced on.",
+        "assignment_id": "3PW9OPU9PQJLG1C3NI740ZEIJLI21Q",
+        "objective": "I am wondering what the man is doing.",
+        "confidence": "moderate",
+        "original_question": "What is this man doing?",
+        "original_answer": "This man appears to be making a tool of some sort nd cutting out th specific shape he needs from the wood he has traced on.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.296,
+                    26.161
+                ]
+            },
+            {
+                "1": [
+                    35.77,
+                    50.428
+                ]
+            },
+            {
+                "2": [
+                    68.453,
+                    81.288
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.296",
+                    "00:26.161"
+                ]
+            },
+            {
+                "1": [
+                    "00:35.770",
+                    "00:50.428"
+                ]
+            },
+            {
+                "2": [
+                    "01:08.453",
+                    "01:21.288"
+                ]
+            }
+        ],
+        "time_spent": 1577.0,
+        "video_link": "https://www.dropbox.com/s/kxn4sa9nmrrp84d/Bertram-Craft_5-clip-33.mp4?raw=1",
+        "video_id": "Bertram-Craft_5-clip-33",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:40:48.404",
+                "end": "00:42:16.075"
+            },
+            "seconds": {
+                "start": "2448.4042916666663",
+                "end": "2536.075208333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 87.67091666666694,
+        "alter_answers": [
+            "He is cutting a piece of wood into the shape of his mold. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is being eaten?",
+        "answer": "It appears to be a mixture of meats and vegetables most likely.",
+        "assignment_id": "3QBD8R3Z21IGF7YRXYO35AOOWCL4OC",
+        "objective": "I am wondering what is being ate.",
+        "confidence": "moderate",
+        "original_question": "What is being eaten?",
+        "original_answer": "It appears to be a mixture of meats and vegetables most likely.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.607,
+                    25.715
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.607",
+                    "00:25.715"
+                ]
+            }
+        ],
+        "time_spent": 3717.0,
+        "video_link": "https://www.dropbox.com/s/ce6zzo34o72zz0j/King-Kong-Amazon_5-clip-14.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_5-clip-14",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:32.800",
+                "end": "00:17:00.867"
+            },
+            "seconds": {
+                "start": "932.8",
+                "end": "1020.8666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 88.06666666666672,
+        "alter_answers": [
+            "mushrooms are being eaten"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.75642666666668,
+                    39.17205333333335
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this a garden?",
+        "answer": "Based off seeing the fence that has been built around this area, and the vegetables being pulled from the ground, I am assuming this is a garden and the fence has been built around it to keep animals out.",
+        "assignment_id": "3QIYRE09Y3GH5N1W915OSNHGUG91NG",
+        "objective": "I am curious if this is a wild garden the man is harvesting from.",
+        "confidence": "moderate",
+        "original_question": "Is this a garden?",
+        "original_answer": "Based off seeing the fence that has been built around this area, and the vegetables being pulled from the ground, I am assuming this is a garden and the fence has been built around it to keep animals out.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.574,
+                    17.73
+                ]
+            },
+            {
+                "1": [
+                    39.928,
+                    55.495
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.574",
+                    "00:17.730"
+                ]
+            },
+            {
+                "1": [
+                    "00:39.928",
+                    "00:55.495"
+                ]
+            }
+        ],
+        "time_spent": 1619.0,
+        "video_link": "https://www.dropbox.com/s/s6alpbhrc81wj6s/Primitive-Technology_6-clip-3.mp4?raw=1",
+        "video_id": "Primitive-Technology_6-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:03.475",
+                "end": "00:04:03.535"
+            },
+            "seconds": {
+                "start": "183.47483924833062",
+                "end": "243.5348002661974"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.05996101786678,
+        "alter_answers": [
+            "Yes this is a garden"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    15.039014238873843,
+                    28.348301600433125
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the man's basic survival needs being met?",
+        "answer": "The man has water, food, fire, and shelter so he can now focus on improving his living conditions.",
+        "assignment_id": "3TK8OJTYM1KXUKT7WU2530TRJ3MVP8",
+        "objective": "I am wondering if the man's basic survival needs are met.",
+        "confidence": "moderate",
+        "original_question": "Are the man's basic survival needs being met?",
+        "original_answer": "The man has water, food, fire, and shelter so he can now focus on improving his living conditions.",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    16.209,
+                    26.157
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:16.209",
+                    "00:26.157"
+                ]
+            }
+        ],
+        "time_spent": 2806.0,
+        "video_link": "https://www.dropbox.com/s/crywm1zpgnlksz2/Chad-Zuber_5-clip-0.mp4?raw=1",
+        "video_id": "Chad-Zuber_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.661"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.6606"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6606,
+        "alter_answers": [
+            "The man's basic survival needs are being met with shelter, fire and rain"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is the human cooking food over the fire?",
+        "answer": "Yes, the human is cooking food over the fire with the use of a pan.",
+        "assignment_id": "3VFJCI1K4ZYZO0JRKR788UQWX2BGRD",
+        "objective": "What is the human doing?",
+        "confidence": "very_high",
+        "original_question": "Is the human cooking food over the fire?",
+        "original_answer": "Yes, the human is cooking food over the fire with the use of a pan.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    52.662,
+                    54.239
+                ]
+            },
+            {
+                "1": [
+                    65.447,
+                    67.925
+                ]
+            },
+            {
+                "2": [
+                    19.375,
+                    21.29
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:52.662",
+                    "00:54.239"
+                ]
+            },
+            {
+                "1": [
+                    "01:05.447",
+                    "01:07.925"
+                ]
+            },
+            {
+                "2": [
+                    "00:19.375",
+                    "00:21.290"
+                ]
+            }
+        ],
+        "time_spent": 4299.0,
+        "video_link": "https://www.dropbox.com/s/cfccti4ffp12dxh/Chad-Zuber_4-clip-2.mp4?raw=1",
+        "video_id": "Chad-Zuber_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:22.209",
+                "end": "00:03:32.612"
+            },
+            "seconds": {
+                "start": "142.20873333333333",
+                "end": "212.6124"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.4036666666667,
+        "alter_answers": [
+            "The human is cooking food over the fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.083948533333334,
+                    17.51643226666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there fire?",
+        "answer": "Yes there is a fire",
+        "assignment_id": "3VFJCI1K4ZYZO0JRKR788UQWX2BGRD",
+        "objective": "What is the human doing?",
+        "confidence": "very_high",
+        "original_question": "Is there fire?",
+        "original_answer": "Yes there is a fire",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    1.521
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:01.521"
+                ]
+            }
+        ],
+        "time_spent": 4299.0,
+        "video_link": "https://www.dropbox.com/s/cfccti4ffp12dxh/Chad-Zuber_4-clip-2.mp4?raw=1",
+        "video_id": "Chad-Zuber_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:22.209",
+                "end": "00:03:32.612"
+            },
+            "seconds": {
+                "start": "142.20873333333333",
+                "end": "212.6124"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.4036666666667,
+        "alter_answers": [
+            "There is fire in the video"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    3.604667733333334,
+                    18.642890933333337
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What did the human make from molten metal?",
+        "answer": "The human made a cup using casting with molten metal.",
+        "assignment_id": "3WETL7AQWT79P195S5NLMZWR1HO53R",
+        "objective": "Determine what is happening to the metal.",
+        "confidence": "very_high",
+        "original_question": "What did the human make from molten metal?",
+        "original_answer": "The human made a cup using casting with molten metal.",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    37.857,
+                    41.777
+                ]
+            },
+            {
+                "1": [
+                    54.528,
+                    56.959
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:37.857",
+                    "00:41.777"
+                ]
+            },
+            {
+                "1": [
+                    "00:54.528",
+                    "00:56.959"
+                ]
+            }
+        ],
+        "time_spent": 1263.0,
+        "video_link": "https://www.dropbox.com/s/dwbezm2yw8b78sq/Primitive-Technology_11-clip-8.mp4?raw=1",
+        "video_id": "Primitive-Technology_11-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:13.368",
+                "end": "00:09:15.388"
+            },
+            "seconds": {
+                "start": "493.36787499999997",
+                "end": "555.3881666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.02029166666665,
+        "alter_answers": [
+            "The human made a pot from molten metal"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    23.22039719999999,
+                    36.81524513333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human using the rock for?",
+        "answer": "The human is using the sharp rock to cut wood.",
+        "assignment_id": "3WETL7AQWT79P195S5NLMZWR1HO53R",
+        "objective": "Determine what the human is doing to the rock.",
+        "confidence": "very_high",
+        "original_question": "What is the human using the rock for?",
+        "original_answer": "The human is using the sharp rock to cut wood.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    31.75,
+                    35.132
+                ]
+            },
+            {
+                "1": [
+                    43.612,
+                    46.843
+                ]
+            },
+            {
+                "2": [
+                    54.818,
+                    57.544
+                ]
+            },
+            {
+                "3": [
+                    61.683,
+                    63.096
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:31.750",
+                    "00:35.132"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.612",
+                    "00:46.843"
+                ]
+            },
+            {
+                "2": [
+                    "00:54.818",
+                    "00:57.544"
+                ]
+            },
+            {
+                "3": [
+                    "01:01.683",
+                    "01:03.096"
+                ]
+            }
+        ],
+        "time_spent": 1263.0,
+        "video_link": "https://www.dropbox.com/s/6mw6pkqtulqm5rh/Primitive-Technology_3-clip-1.mp4?raw=1",
+        "video_id": "Primitive-Technology_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.329",
+                "end": "00:02:05.425"
+            },
+            "seconds": {
+                "start": "62.32893333333333",
+                "end": "125.42530000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.09636666666668,
+        "alter_answers": [
+            "He is smoothing the sides to make an axe head. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Why is the human rubbing the rock against another rock.",
+        "answer": "The human is shaping the rock into a sharp edge.",
+        "assignment_id": "3WETL7AQWT79P195S5NLMZWR1HO53R",
+        "objective": "Determine what the human is doing to the rock.",
+        "confidence": "very_high",
+        "original_question": "Why is the human rubbing the rock against another rock.",
+        "original_answer": "The human is shaping the rock into a sharp edge.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.692,
+                    10.903
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.692",
+                    "00:10.903"
+                ]
+            }
+        ],
+        "time_spent": 1263.0,
+        "video_link": "https://www.dropbox.com/s/6mw6pkqtulqm5rh/Primitive-Technology_3-clip-1.mp4?raw=1",
+        "video_id": "Primitive-Technology_3-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.329",
+                "end": "00:02:05.425"
+            },
+            "seconds": {
+                "start": "62.32893333333333",
+                "end": "125.42530000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.09636666666668,
+        "alter_answers": [
+            "the human is rubbing the rock against another rock to make a sharp rock"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.87843290666667,
+                    30.13482472
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the humans cutting?",
+        "answer": "The humans are cutting various sized sticks.",
+        "assignment_id": "3WETL7AQWT79P195S5NLMZWR1HO53R",
+        "objective": "Determine what he humans are doing.",
+        "confidence": "very_high",
+        "original_question": "What are the humans cutting?",
+        "original_answer": "The humans are cutting various sized sticks.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.59,
+                    11.454
+                ]
+            },
+            {
+                "1": [
+                    20.481,
+                    22.471
+                ]
+            },
+            {
+                "2": [
+                    50.378,
+                    53.144
+                ]
+            },
+            {
+                "3": [
+                    56.493,
+                    60.667
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.590",
+                    "00:11.454"
+                ]
+            },
+            {
+                "1": [
+                    "00:20.481",
+                    "00:22.471"
+                ]
+            },
+            {
+                "2": [
+                    "00:50.378",
+                    "00:53.144"
+                ]
+            },
+            {
+                "3": [
+                    "00:56.493",
+                    "01:00.667"
+                ]
+            }
+        ],
+        "time_spent": 1263.0,
+        "video_link": "https://www.dropbox.com/s/1i4d8yqyvy7f2ar/Survival-Skills-Primitive_11-clip-0.mp4?raw=1",
+        "video_id": "Survival-Skills-Primitive_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.667"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.666666666666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.66666666666666,
+        "alter_answers": [
+            "They are cutting trees. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.1647999999999998,
+                    13.977599999999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why is the metal red?",
+        "answer": "The metal is red as a result of the process of casting.",
+        "assignment_id": "3WETL7AQWT79P195S5NLMZWR1HO53R",
+        "objective": "Determine what is happening to the metal.",
+        "confidence": "very_high",
+        "original_question": "Why is the metal red?",
+        "original_answer": "The metal is red as a result of the process of casting.",
+        "question_type": [
+            "Existence",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.133,
+                    5.855
+                ]
+            },
+            {
+                "1": [
+                    10.667,
+                    12.95
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.133",
+                    "00:05.855"
+                ]
+            },
+            {
+                "1": [
+                    "00:10.667",
+                    "00:12.950"
+                ]
+            }
+        ],
+        "time_spent": 1263.0,
+        "video_link": "https://www.dropbox.com/s/dwbezm2yw8b78sq/Primitive-Technology_11-clip-8.mp4?raw=1",
+        "video_id": "Primitive-Technology_11-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:08:13.368",
+                "end": "00:09:15.388"
+            },
+            "seconds": {
+                "start": "493.36787499999997",
+                "end": "555.3881666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.02029166666665,
+        "alter_answers": [
+            "The metal is red because it is melting on fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.4884869999999997,
+                    11.21326873333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the human using fire for the warmth?",
+        "answer": "No, the human is using the fire to cook food.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNB74NH4",
+        "objective": "Determine what the human is doing.",
+        "confidence": "high",
+        "original_question": "Is the human using fire for the warmth?",
+        "original_answer": "No, the human is using the fire to cook food.",
+        "question_type": [
+            "Entity",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.897,
+                    23.717
+                ]
+            },
+            {
+                "1": [
+                    40.451,
+                    43.652
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.897",
+                    "00:23.717"
+                ]
+            },
+            {
+                "1": [
+                    "00:40.451",
+                    "00:43.652"
+                ]
+            }
+        ],
+        "time_spent": 1191.0,
+        "video_link": "https://www.dropbox.com/s/kcip9tg8wqmwemj/Survival-Instinct_7-clip-8.mp4?raw=1",
+        "video_id": "Survival-Instinct_7-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:40.914",
+                "end": "00:10:41.542"
+            },
+            "seconds": {
+                "start": "580.9142568284637",
+                "end": "641.5415517542144"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.627294925750675,
+        "alter_answers": [
+            "the human is using fire to cook and eat"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    29.537618087825727,
+                    42.681615627728476
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why is the human whittling wood and collecting dry vegetation?",
+        "answer": "The human is whittling wood and collecting vegetation to start a fire.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNB74NH4",
+        "objective": "Determine what the human is gathering.",
+        "confidence": "very_high",
+        "original_question": "Why is the human whittling wood and collecting dry vegetation?",
+        "original_answer": "The human is whittling wood and collecting vegetation to start a fire.",
+        "question_type": [
+            "Existence",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    3.1,
+                    6.607
+                ]
+            },
+            {
+                "1": [
+                    30.037,
+                    32.172
+                ]
+            },
+            {
+                "2": [
+                    45.945,
+                    49.35
+                ]
+            },
+            {
+                "3": [
+                    57.228,
+                    60.532
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:03.100",
+                    "00:06.607"
+                ]
+            },
+            {
+                "1": [
+                    "00:30.037",
+                    "00:32.172"
+                ]
+            },
+            {
+                "2": [
+                    "00:45.945",
+                    "00:49.350"
+                ]
+            },
+            {
+                "3": [
+                    "00:57.228",
+                    "01:00.532"
+                ]
+            }
+        ],
+        "time_spent": 1191.0,
+        "video_link": "https://www.dropbox.com/s/zqpz60kv9zqljg1/BC-Bushcraft_9-clip-5.mp4?raw=1",
+        "video_id": "BC-Bushcraft_9-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:17.744",
+                "end": "00:07:21.274"
+            },
+            "seconds": {
+                "start": "377.74403333333333",
+                "end": "441.2741666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.53013333333337,
+        "alter_answers": [
+            "the human is whittling wood and collecting dry vegetation to make fire"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    41.72659157333336,
+                    53.97520128000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the man doing?",
+        "answer": "Based on what is said and shown, it is determined that the man is collecting things to burn for later on.",
+        "assignment_id": "3ZDAD0O1T1CNQ1R9DQC7WVR9OEETX7",
+        "objective": "I am wondering what this man is doing.",
+        "confidence": "moderate",
+        "original_question": "What is the man doing?",
+        "original_answer": "Based on what is said and shown, it is determined that the man is collecting things to burn for later on.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.452,
+                    24.396
+                ]
+            },
+            {
+                "1": [
+                    46.453,
+                    63.225
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.452",
+                    "00:24.396"
+                ]
+            },
+            {
+                "1": [
+                    "00:46.453",
+                    "01:03.225"
+                ]
+            }
+        ],
+        "time_spent": 3042.0,
+        "video_link": "https://www.dropbox.com/s/zqpz60kv9zqljg1/BC-Bushcraft_9-clip-5.mp4?raw=1",
+        "video_id": "BC-Bushcraft_9-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:17.744",
+                "end": "00:07:21.274"
+            },
+            "seconds": {
+                "start": "377.74403333333333",
+                "end": "441.2741666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.53013333333337,
+        "alter_answers": [
+            "The man is trimming wood"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.927182933333338,
+                    24.344747093333346
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the man cooking vegetables?",
+        "answer": "No, the man appears to be cooking crabs in the fire.",
+        "assignment_id": "3ZDAD0O1T1CNQ1R9DQC7WVR9OEETX7",
+        "objective": "I am wondering what the man is doing here.",
+        "confidence": "moderate",
+        "original_question": "Is the man cooking vegetables?",
+        "original_answer": "No, the man appears to be cooking crabs in the fire.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.305,
+                    12.416
+                ]
+            },
+            {
+                "1": [
+                    26.87,
+                    39.577
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.305",
+                    "00:12.416"
+                ]
+            },
+            {
+                "1": [
+                    "00:26.870",
+                    "00:39.577"
+                ]
+            }
+        ],
+        "time_spent": 3042.0,
+        "video_link": "https://www.dropbox.com/s/kcip9tg8wqmwemj/Survival-Instinct_7-clip-8.mp4?raw=1",
+        "video_id": "Survival-Instinct_7-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:40.914",
+                "end": "00:10:41.542"
+            },
+            "seconds": {
+                "start": "580.9142568284637",
+                "end": "641.5415517542144"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.627294925750675,
+        "alter_answers": [
+            "The man is cooking vegetables"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.12675394743017,
+                    44.961201916936695
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human putting into the bamboo?",
+        "answer": "The human is putting grubs into the bamboo.",
+        "assignment_id": "339ANSOTR51RXNCRKVYESUHYHPFIKO",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "What is the human putting into the bamboo?",
+        "original_answer": "The human is putting grubs into the bamboo.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    38.019,
+                    40.197
+                ]
+            },
+            {
+                "1": [
+                    52.771,
+                    57.425
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:38.019",
+                    "00:40.197"
+                ]
+            },
+            {
+                "1": [
+                    "00:52.771",
+                    "00:57.425"
+                ]
+            }
+        ],
+        "time_spent": 1175.0,
+        "video_link": "https://www.dropbox.com/s/760rgdsox3xrjj1/Survival-Instinct_8-clip-4.mp4?raw=1",
+        "video_id": "Survival-Instinct_8-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:12.480",
+                "end": "00:05:14.360"
+            },
+            "seconds": {
+                "start": "252.48",
+                "end": "314.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.88000000000002,
+        "alter_answers": [
+            "The human is putting seeds or beans into the bamboo"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    35.93990400000001,
+                    48.01888000000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human doing with the wood?",
+        "answer": "The human is cutting notches into the wood.",
+        "assignment_id": "339ANSOTR51RXNCRKVYESUHYHPFIKO",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "What is the human doing with the wood?",
+        "original_answer": "The human is cutting notches into the wood.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    51.79,
+                    57.164
+                ]
+            },
+            {
+                "1": [
+                    18.493,
+                    21.496
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:51.790",
+                    "00:57.164"
+                ]
+            },
+            {
+                "1": [
+                    "00:18.493",
+                    "00:21.496"
+                ]
+            }
+        ],
+        "time_spent": 1175.0,
+        "video_link": "https://www.dropbox.com/s/x9o9if18def7t9w/Bertram-Craft_12-clip-25.mp4?raw=1",
+        "video_id": "Bertram-Craft_12-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:31:25.717",
+                "end": "00:32:31.575"
+            },
+            "seconds": {
+                "start": "1885.7171666666666",
+                "end": "1951.574625"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.8574583333334,
+        "alter_answers": [
+            "The human is cutting the wood"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    53.370884233333385,
+                    60.16737393333339
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the human have food?",
+        "answer": "Yes, the human has fish.",
+        "assignment_id": "3570Y55XZPI8L1VDYMZ2GQJT0RVYG6",
+        "objective": "Determine how the food was cooked.",
+        "confidence": "very_high",
+        "original_question": "Does the human have food?",
+        "original_answer": "Yes, the human has fish.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.889,
+                    9.018
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.889",
+                    "00:09.018"
+                ]
+            }
+        ],
+        "time_spent": 1244.0,
+        "video_link": "https://www.dropbox.com/s/ce6zzo34o72zz0j/King-Kong-Amazon_5-clip-14.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_5-clip-14",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:32.800",
+                "end": "00:17:00.867"
+            },
+            "seconds": {
+                "start": "932.8",
+                "end": "1020.8666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 88.06666666666672,
+        "alter_answers": [
+            "Yes, they are cooking food in bamboo tubes. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How was the food cooked in the bamboo?",
+        "answer": "The food was steamed while inside of the bamboo.",
+        "assignment_id": "3570Y55XZPI8L1VDYMZ2GQJT0RVYG6",
+        "objective": "Determine how the food was cooked.",
+        "confidence": "very_high",
+        "original_question": "How was the food cooked in the bamboo?",
+        "original_answer": "The food was steamed while inside of the bamboo.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.086,
+                    5.989
+                ]
+            },
+            {
+                "1": [
+                    10.709,
+                    13.597
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.086",
+                    "00:05.989"
+                ]
+            },
+            {
+                "1": [
+                    "00:10.709",
+                    "00:13.597"
+                ]
+            }
+        ],
+        "time_spent": 1244.0,
+        "video_link": "https://www.dropbox.com/s/ce6zzo34o72zz0j/King-Kong-Amazon_5-clip-14.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_5-clip-14",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:32.800",
+                "end": "00:17:00.867"
+            },
+            "seconds": {
+                "start": "932.8",
+                "end": "1020.8666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 88.06666666666672,
+        "alter_answers": [
+            "There is a fire behind him, and the food is steaming, so it was cooked on the fire. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What will the man do to stay warm in the cold?",
+        "answer": "Judging by what the man does and says, he starts a fire to stay warm as well as puts on a wool beanie while he is in his tent.",
+        "assignment_id": "369J354OFD962HL7S34AXZZ01F36GB",
+        "objective": "I am wondering how this man will handle the temperature dropping.",
+        "confidence": "moderate",
+        "original_question": "What will the man do to stay warm in the cold?",
+        "original_answer": "Judging by what the man does and says, he starts a fire to stay warm as well as puts on a wool beanie while he is in his tent.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    28.353,
+                    44.128
+                ]
+            },
+            {
+                "1": [
+                    50.624,
+                    59.851
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:28.353",
+                    "00:44.128"
+                ]
+            },
+            {
+                "1": [
+                    "00:50.624",
+                    "00:59.851"
+                ]
+            }
+        ],
+        "time_spent": 2424.0,
+        "video_link": "https://www.dropbox.com/s/6x3g93pevy2b08g/Joe-Robinet_0-clip-23.mp4?raw=1",
+        "video_id": "Joe-Robinet_0-clip-23",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:33:55.742",
+                "end": "00:35:00.181"
+            },
+            "seconds": {
+                "start": "2035.7415234451976",
+                "end": "2100.180882041416"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.43935859621865,
+        "alter_answers": [
+            "The man will create fire to stay warm in the cold"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the man shown in the video doing?",
+        "answer": "Judging from the actions the man is doing, it appears that he is building some type of trap to possibly use to catch animals.",
+        "assignment_id": "369J354OFD962HL7S34AXZZ01F36GB",
+        "objective": "I want to know what the man is doing in the woods.",
+        "confidence": "moderate",
+        "original_question": "What is the man shown in the video doing?",
+        "original_answer": "Judging from the actions the man is doing, it appears that he is building some type of trap to possibly use to catch animals.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.43,
+                    23.812
+                ]
+            },
+            {
+                "1": [
+                    24.27,
+                    51.898
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.430",
+                    "00:23.812"
+                ]
+            },
+            {
+                "1": [
+                    "00:24.270",
+                    "00:51.898"
+                ]
+            }
+        ],
+        "time_spent": 2424.0,
+        "video_link": "https://www.dropbox.com/s/7mhmybzqzv3tgw8/Survival-Instinct_11-clip-10.mp4?raw=1",
+        "video_id": "Survival-Instinct_11-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:13:31.760",
+                "end": "00:14:35.360"
+            },
+            "seconds": {
+                "start": "811.76",
+                "end": "875.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.600000000000016,
+        "alter_answers": [
+            "The man in the video is bending trees to make a trap"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    29.96832000000001,
+                    42.68832000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this man going to put the fire out while he sleeps?",
+        "answer": "No, he will not be putting the fire out, he is planning on leaving the fire going while he sleeps.",
+        "assignment_id": "369J354OFD962HL7S34AXZZ01F36GB",
+        "objective": "I am curious about the fire.",
+        "confidence": "moderate",
+        "original_question": "Is this man going to put the fire out while he sleeps?",
+        "original_answer": "Based on what the man says, no he will not be putting the fire out, he is planning on leaving the fire going while he sleeps.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.538,
+                    34.845
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.538",
+                    "00:34.845"
+                ]
+            }
+        ],
+        "time_spent": 2424.0,
+        "video_link": "https://www.dropbox.com/s/okbqp98hguv3mlc/BC-Bushcraft_11-clip-31.mp4?raw=1",
+        "video_id": "BC-Bushcraft_11-clip-31",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:41:18.876",
+                "end": "00:44:42.413"
+            },
+            "seconds": {
+                "start": "2478.8759527019274",
+                "end": "2682.4125826416484"
+            },
+            "split-method": "auto"
+        },
+        "duration": 203.53662993972102,
+        "alter_answers": [
+            "The man does not put the fire out while he sleeps"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    46.08069301835285,
+                    68.71396626764981
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "why is the human collecting vegetation?",
+        "answer": "The human is collecting vegetation and drying it to use for kindling and construction.",
+        "assignment_id": "36DSNE9QZ5X6IPHC05B7BCD7E9EJOL",
+        "objective": "Determine what the human is collecting.",
+        "confidence": "very_high",
+        "original_question": "why is the human collecting vegetation?",
+        "original_answer": "The human is collecting vegetation and drying it to use for kindling and construction.",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    18.014,
+                    21.317
+                ]
+            },
+            {
+                "1": [
+                    27.408,
+                    29.679
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:18.014",
+                    "00:21.317"
+                ]
+            },
+            {
+                "1": [
+                    "00:27.408",
+                    "00:29.679"
+                ]
+            }
+        ],
+        "time_spent": 1536.0,
+        "video_link": "https://www.dropbox.com/s/2k7pnjymjdqlgaa/Survival-Instinct_9-clip-2.mp4?raw=1",
+        "video_id": "Survival-Instinct_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:18.840",
+                "end": "00:03:23.360"
+            },
+            "seconds": {
+                "start": "138.84",
+                "end": "203.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.52000000000001,
+        "alter_answers": [
+            "The human is collecting vegetation to survive"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the human collecting?",
+        "answer": "The human is collecting tree bark and long vegetation.",
+        "assignment_id": "36DSNE9QZ5X6IPHC05B7BCD7E9EJOL",
+        "objective": "Determine what the human is collecting.",
+        "confidence": "very_high",
+        "original_question": "What is the human collecting?",
+        "original_answer": "The human is collecting tree bark and long vegetation.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.459,
+                    15.175
+                ]
+            },
+            {
+                "1": [
+                    20.337,
+                    24.569
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.459",
+                    "00:15.175"
+                ]
+            },
+            {
+                "1": [
+                    "00:20.337",
+                    "00:24.569"
+                ]
+            }
+        ],
+        "time_spent": 1536.0,
+        "video_link": "https://www.dropbox.com/s/2k7pnjymjdqlgaa/Survival-Instinct_9-clip-2.mp4?raw=1",
+        "video_id": "Survival-Instinct_9-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:18.840",
+                "end": "00:03:23.360"
+            },
+            "seconds": {
+                "start": "138.84",
+                "end": "203.36"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.52000000000001,
+        "alter_answers": [
+            "The human is collecting wood "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    17.859136000000003,
+                    26.066080000000003
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human doing?",
+        "answer": "The human is cutting branches into sticks.",
+        "assignment_id": "36DSNE9QZ5X6IPHC05B7BCD7E9EJOL",
+        "objective": "Determine what the human is doing.",
+        "confidence": "very_high",
+        "original_question": "What is the human doing?",
+        "original_answer": "The human is cutting branches into sticks.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    30.894,
+                    33.899
+                ]
+            },
+            {
+                "1": [
+                    47.395,
+                    52.245
+                ]
+            },
+            {
+                "2": [
+                    62.736,
+                    65.899
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:30.894",
+                    "00:33.899"
+                ]
+            },
+            {
+                "1": [
+                    "00:47.395",
+                    "00:52.245"
+                ]
+            },
+            {
+                "2": [
+                    "01:02.736",
+                    "01:05.899"
+                ]
+            }
+        ],
+        "time_spent": 1536.0,
+        "video_link": "https://www.dropbox.com/s/a4hryxhwb15phhz/BC-Bushcraft_2-clip-2.mp4?raw=1",
+        "video_id": "BC-Bushcraft_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:34.521",
+                "end": "00:03:40.420"
+            },
+            "seconds": {
+                "start": "154.52103333333335",
+                "end": "220.4202"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.89916666666664,
+        "alter_answers": [
+            "The human is cutting tree wood"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.171496666666664,
+                    17.81913466666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human creating out of the material?",
+        "answer": "The human is creating a bowl out of the material.",
+        "assignment_id": "36DSNE9QZ5X6IPHC05B7BCD7E9EJOL",
+        "objective": "Determine what the human is creating.",
+        "confidence": "very_high",
+        "original_question": "What is the human creating out of the material?",
+        "original_answer": "The human is creating a bowl out of the material.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    39.002,
+                    43.819
+                ]
+            },
+            {
+                "1": [
+                    59.262,
+                    62.613
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:39.002",
+                    "00:43.819"
+                ]
+            },
+            {
+                "1": [
+                    "00:59.262",
+                    "01:02.613"
+                ]
+            }
+        ],
+        "time_spent": 1536.0,
+        "video_link": "https://www.dropbox.com/s/ydcydaq2415jxls/Primitive-Technology_7-clip-4.mp4?raw=1",
+        "video_id": "Primitive-Technology_7-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:19.680",
+                "end": "00:06:25.120"
+            },
+            "seconds": {
+                "start": "319.68",
+                "end": "385.12"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.44,
+        "alter_answers": [
+            "The human is making a pot"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    32.929407999999995,
+                    47.1168
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the bowl made out of dirt?",
+        "answer": "No, the bowl is made out of clay.",
+        "assignment_id": "36DSNE9QZ5X6IPHC05B7BCD7E9EJOL",
+        "objective": "Determine what the human is creating.",
+        "confidence": "very_high",
+        "original_question": "Is the bowl made out of dirt?",
+        "original_answer": "No, the bowl is made out of clay.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.324,
+                    10.627
+                ]
+            },
+            {
+                "1": [
+                    39.526,
+                    44.342
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.324",
+                    "00:10.627"
+                ]
+            },
+            {
+                "1": [
+                    "00:39.526",
+                    "00:44.342"
+                ]
+            }
+        ],
+        "time_spent": 1536.0,
+        "video_link": "https://www.dropbox.com/s/ydcydaq2415jxls/Primitive-Technology_7-clip-4.mp4?raw=1",
+        "video_id": "Primitive-Technology_7-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:19.680",
+                "end": "00:06:25.120"
+            },
+            "seconds": {
+                "start": "319.68",
+                "end": "385.12"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.44,
+        "alter_answers": [
+            "The man uses dirt to form a bowl."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    4.764032,
+                    17.53792
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How much water did this man drink?",
+        "answer": "He drank close to 3 liters of water.",
+        "assignment_id": "39L1G8WVWQQA1J8MRIL9J9JAP0Y31K",
+        "objective": "I am wondering where the man got his water to drink.",
+        "confidence": "moderate",
+        "original_question": "How much water did this man drink?",
+        "original_answer": "He drank close to 3 liters of water.",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    23.941,
+                    29.052
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:23.941",
+                    "00:29.052"
+                ]
+            }
+        ],
+        "time_spent": 2007.0,
+        "video_link": "https://www.dropbox.com/s/zux7n6krez8zia7/Chad-Zuber_10-clip-20.mp4?raw=1",
+        "video_id": "Chad-Zuber_10-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:25:17.583",
+                "end": "00:26:22.781"
+            },
+            "seconds": {
+                "start": "1517.5827333333334",
+                "end": "1582.7812000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.19846666666672,
+        "alter_answers": [
+            "He drank a small coconuts worth of water. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.805849386666672,
+                    20.185445280000014
+                ]
+            ]
+        ]
+    }
+]

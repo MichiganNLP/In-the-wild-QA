@@ -1,0 +1,2983 @@
+[
+    {
+        "question": "Where is the creek in relation to the pond?",
+        "answer": "The creek leads into the pond.",
+        "assignment_id": "31IBVUNM9SYL374DIR60R6FNGILFVG",
+        "objective": "water",
+        "confidence": "very_high",
+        "original_question": "Where are they in relation to one another?",
+        "original_answer": "The creek leads into the pond. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.008
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.008"
+                ]
+            }
+        ],
+        "time_spent": 4548.0,
+        "video_link": "https://www.dropbox.com/s/a3ewq55teqdujtq/4k-Relaxation_11-manual.mp4?raw=1",
+        "video_id": "4k-Relaxation_11-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "25:00",
+                "end": "27:00"
+            },
+            "split-method": "manual"
+        },
+        "duration": 120.0,
+        "alter_answers": [
+            "The creek is to the left side of the pond looking towards the long line of trees.",
+            "The creek is to the left of the pond."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.384,
+                    31.295999999999996
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the climate like?",
+        "answer": "It is rocky and sunny. It is an arid environment.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Topography",
+        "confidence": "very_high",
+        "original_question": "What is the climate like?",
+        "original_answer": "It is rocky and sunny. It is an arid environment. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.346,
+                    36.756
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.346",
+                    "00:36.756"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/fjwuqxzw0soj5im/4k-Relaxation_4-clip-4.mp4?raw=1",
+        "video_id": "4k-Relaxation_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:32.999",
+                "end": "00:06:42.193"
+            },
+            "seconds": {
+                "start": "332.9993333333333",
+                "end": "402.1934583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.19412499999999,
+        "alter_answers": [
+            "There is a shallow stream and it looks to be cooler weather, based on the clothing the people are wearing. It is very shaded due to the cliffs on each side of the stream. ",
+            "It is a mild climate because students are wearing summer or spring clothes. The other couple walking is wearing a jacket. These show that it is neither cold nor warm.",
+            "The climate is semi-arid."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.079555499999994,
+                    38.25051229999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the distribution of plant life like?",
+        "answer": "It is very dense. Trees take up much of the forest while the other plants try to grow tall around them.",
+        "assignment_id": "3HL8HNGX450N60RAFQ14ZOQQPQMF9K",
+        "objective": "Vegetation",
+        "confidence": "very_high",
+        "original_question": "What is the distribution of plant life like?",
+        "original_answer": "It is very dense. Trees take up much of the forest while the other plants try to grow tall around them. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    22.552,
+                    30.198
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:22.552",
+                    "00:30.198"
+                ]
+            }
+        ],
+        "time_spent": 1798.0,
+        "video_link": "https://www.dropbox.com/s/zs3vvn5ynae4p2f/Virtual-Running-Videos_10-clip-25.mp4?raw=1",
+        "video_id": "Virtual-Running-Videos_10-clip-25",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:25:19.551",
+                "end": "00:26:20.045"
+            },
+            "seconds": {
+                "start": "1519.5513666666666",
+                "end": "1580.0451333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.493766666666716,
+        "alter_answers": [
+            "The plant life is very dense. ",
+            "The distribution of plant life is chaotic and normal for a healthy forest or rainforest. A thin hiking path splits the plant life on the ground. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    34.7960145866667,
+                    43.942672106666706
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the white mist clouds, fog, or smoke?",
+        "answer": "Judging by the elevation of the mountains, I believe they are clouds",
+        "assignment_id": "3B4YI393V9VEFKSVUG1UNIEV64NSS9",
+        "objective": "I'm curious about the weather/climate here.",
+        "confidence": "moderate",
+        "original_question": "Is that clouds, fog, or smoke?",
+        "original_answer": "Judging by the elevation of the mountains, I believe they are clouds",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.203,
+                    10.599
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.203",
+                    "00:10.599"
+                ]
+            }
+        ],
+        "time_spent": 1132.0,
+        "video_link": "https://www.dropbox.com/s/6123xp6c5l3guio/Nick-Gaillard_6-clip-1.mp4?raw=1",
+        "video_id": "Nick-Gaillard_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:04.958",
+                "end": "00:01:28.000"
+            },
+            "seconds": {
+                "start": "64.95833333333333",
+                "end": "88.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 23.04166666666667,
+        "alter_answers": [
+            "The white mist clouds look somewhat like smoke and a little bit like fog. ",
+            "It is clouds. It is cloud because of the shape and look, and it is not smoke because of the color and the fact that there is no source for the cloud"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.276600000000004,
+                    14.119933333333336
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kinds of bodies of water are there?",
+        "answer": "There are rivers and streams.",
+        "assignment_id": "3F0BG9B9MPMPS8KC5JV8AD600BO7YX",
+        "objective": "Water",
+        "confidence": "very_high",
+        "original_question": "What kinds of bodies of water are there?",
+        "original_answer": "There are rivers and streams. ",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.24,
+                    14.236
+                ]
+            }
+        ],
+        "domain": "Geography",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.240",
+                    "00:14.236"
+                ]
+            }
+        ],
+        "time_spent": 2414.0,
+        "video_link": "https://www.dropbox.com/s/r6imsp6nqrjdq2q/Norwegian-Explorer_11-clip-54.mp4?raw=1",
+        "video_id": "Norwegian-Explorer_11-clip-54",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:58:25.000",
+                "end": "00:59:41.700"
+            },
+            "seconds": {
+                "start": "3505.0",
+                "end": "3581.7"
+            },
+            "split-method": "auto"
+        },
+        "duration": 76.6999999999998,
+        "alter_answers": [
+            "There are bodies of water in this location.",
+            "There is a long stream or river between the valley.",
+            "The kinds of bodies of water there are streams."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.4859199999999815,
+                    11.719759999999972
+                ],
+                [
+                    58.84423999999986,
+                    64.79615999999984
+                ]
+            ],
+            [
+                [
+                    48.41303999999988,
+                    55.96031999999986
+                ],
+                [
+                    58.66015999999986,
+                    75.28871999999981
+                ]
+            ],
+            [
+                [
+                    51.17423999999988,
+                    63.50759999999985
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the vehicle moving towards something?",
+        "answer": "The vehicle is moving towards a docking station.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "Determine what the vehicles are doing.",
+        "confidence": "moderate",
+        "original_question": "Is the vehicle moving towards something?",
+        "original_answer": "The vehicle is moving towards a docking station.",
+        "question_type": [
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    44.867,
+                    50.927
+                ]
+            },
+            {
+                "1": [
+                    76.455,
+                    79.614
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:44.867",
+                    "00:50.927"
+                ]
+            },
+            {
+                "1": [
+                    "01:16.455",
+                    "01:19.614"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/j0jeypnrg5kyar5/USA-Military-Channel_7-clip-0.mp4?raw=1",
+        "video_id": "USA-Military-Channel_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:20.581"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "80.58053085276269"
+            },
+            "split-method": "auto"
+        },
+        "duration": 80.58053085276269,
+        "alter_answers": [
+            "Yes it is moving under a bridge. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What are some of the jobs of a Combat Controller?",
+        "answer": "There are many to include: air-to-ground liaison, blowing up enemy assets, manning different equipment on a day by day basis, high altitude-high opening night jump.",
+        "assignment_id": "3AUQQEL7U5SU63PNF9NFOZSJAG9V05",
+        "objective": "To describe some of the jobs of a Combat Controller.",
+        "confidence": "high",
+        "original_question": "What are some of the jobs of a Combat Controller?",
+        "original_answer": "There are many to include: air-to-ground liaison, blowing up enemy assets, manning different equipment on a day by day basis, high altitude-high opening night jump.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    18.517,
+                    33.836
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:18.517",
+                    "00:33.836"
+                ]
+            }
+        ],
+        "time_spent": 3766.0,
+        "video_link": "https://www.dropbox.com/s/l08l6iuyan5g76p/Sandboxx_6-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.594"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.59386666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.59386666666667,
+        "alter_answers": [
+            "They can blow up IED, Jumps, Air to Ground, and Demo. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is BEAST training in a nutshell?",
+        "answer": "A week away from normal Basic Training to learn weapon usage.",
+        "assignment_id": "3ZY8KE4ISJ2IUWUMW7HU35J1NK8VQ4",
+        "objective": "To give a brief description of US Air Force Beast training.",
+        "confidence": "high",
+        "original_question": "What is BEAST training in a nutshell?",
+        "original_answer": "A week away from normal Basic Training to learn weapon usage.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.489,
+                    60.06
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.489",
+                    "01:00.060"
+                ]
+            }
+        ],
+        "time_spent": 3433.0,
+        "video_link": "https://www.dropbox.com/s/rfj7b3r57v5nv8n/Sandboxx_8-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.06"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06,
+        "alter_answers": [
+            "The BEAST TRAINING IS basic expeditionary airman skill training"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.45944,
+                    29.885856
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How do you safely rig a heavy object to be moved?",
+        "answer": "By using proper equipment and hookups.",
+        "assignment_id": "3ZY8KE4ISJ2IUWUMW7HU35J1NK8VQ4",
+        "objective": "Safely rig a heavy object",
+        "confidence": "high",
+        "original_question": "How do you safely rig a heavy object to be moved?",
+        "original_answer": "By using proper equipment and hookups.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.61,
+                    29.47
+                ]
+            },
+            {
+                "1": [
+                    67.077,
+                    98.988
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.610",
+                    "00:29.470"
+                ]
+            },
+            {
+                "1": [
+                    "01:07.077",
+                    "01:38.988"
+                ]
+            }
+        ],
+        "time_spent": 3433.0,
+        "video_link": "https://www.dropbox.com/s/0chhm3u99lki06m/MilitaryNotes_3-manual.mp4?raw=1",
+        "video_id": "MilitaryNotes_3-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:15",
+                "end": "2:08"
+            },
+            "split-method": "manual"
+        },
+        "duration": 113.0,
+        "alter_answers": [
+            "it can be rigged with straps on the top and bottom. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is the man cooking the fish using the fire?",
+        "answer": "Yes, the man is cooking the fish with the fire.",
+        "assignment_id": "3FE2ERCCZX7240KAVIGR88ZJN09OPZ",
+        "objective": "Determine what the man is using the fire for.",
+        "confidence": "very_high",
+        "original_question": "Is the man cooking the fish using the fire?",
+        "original_answer": "Yes, the man is cooking the fish with the fire.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.159,
+                    10.085
+                ]
+            },
+            {
+                "1": [
+                    16.095,
+                    19.753
+                ]
+            },
+            {
+                "2": [
+                    32.712,
+                    34.646
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.159",
+                    "00:10.085"
+                ]
+            },
+            {
+                "1": [
+                    "00:16.095",
+                    "00:19.753"
+                ]
+            },
+            {
+                "2": [
+                    "00:32.712",
+                    "00:34.646"
+                ]
+            }
+        ],
+        "time_spent": 2045.0,
+        "video_link": "https://www.dropbox.com/s/ggxnopo5oxd00qq/Bertram-Craft_9-clip-11.mp4?raw=1",
+        "video_id": "Bertram-Craft_9-clip-11",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:15:59.600",
+                "end": "00:17:04.920"
+            },
+            "seconds": {
+                "start": "959.6",
+                "end": "1024.92"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.32000000000005,
+        "alter_answers": [
+            "Yes, he has the fish on a stick and is cooking it on the fire. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the vegetation like around this area?",
+        "answer": "Judging by what is shown and what the man says, he is on the boarder of barren land and tree line, further north trees are stunted even more, and following that, there are not trees anymore.",
+        "assignment_id": "3OE22WJIGINIHH5MRH7P7JHIAQQUQW",
+        "objective": "I am curious about the vegetation in this area.",
+        "confidence": "moderate",
+        "original_question": "What is the vegetation like around this area?",
+        "original_answer": "Judging by what is shown and what the man says, he is on the boarder of barren land and tree line, further north trees are stunted even more, and following that, there are not trees anymore.",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.03,
+                    36.537
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.030",
+                    "00:36.537"
+                ]
+            }
+        ],
+        "time_spent": 3100.0,
+        "video_link": "https://www.dropbox.com/s/8s7erfo9aaib9nw/Joe-Robinet_1-clip-20.mp4?raw=1",
+        "video_id": "Joe-Robinet_1-clip-20",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:22:04.823",
+                "end": "00:23:09.421"
+            },
+            "seconds": {
+                "start": "1324.8232803779945",
+                "end": "1389.4211363359796"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.59785595798508,
+        "alter_answers": [
+            "The vegetation is is stunted in this area"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.702220118333493,
+                    36.43319076030358
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the human setting up using the stick and rope?",
+        "answer": "The human is setting up a trap for birds.",
+        "assignment_id": "3X73LLYYQ1DS9YMABQ89KAXNB74NH4",
+        "objective": "Determine what the human is using the human is using the stick for.",
+        "confidence": "high",
+        "original_question": "What is the human setting up using the stick and stick?",
+        "original_answer": "The human is setting up a trap for birds.",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.055,
+                    12.366
+                ]
+            },
+            {
+                "1": [
+                    48.45,
+                    52.977
+                ]
+            },
+            {
+                "2": [
+                    67.911,
+                    71.222
+                ]
+            },
+            {
+                "3": [
+                    78.52,
+                    83.048
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.055",
+                    "00:12.366"
+                ]
+            },
+            {
+                "1": [
+                    "00:48.450",
+                    "00:52.977"
+                ]
+            },
+            {
+                "2": [
+                    "01:07.911",
+                    "01:11.222"
+                ]
+            },
+            {
+                "3": [
+                    "01:18.520",
+                    "01:23.048"
+                ]
+            }
+        ],
+        "time_spent": 1191.0,
+        "video_link": "https://www.dropbox.com/s/67liveevku7e05d/King-Kong-Amazon_3-clip-9.mp4?raw=1",
+        "video_id": "King-Kong-Amazon_3-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:31.600",
+                "end": "00:11:56.067"
+            },
+            "seconds": {
+                "start": "631.6",
+                "end": "716.0666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 84.4666666666667,
+        "alter_answers": [
+            "He is setting up a trap. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the human creating out of wood?",
+        "answer": "The human is creating a carrying case for knife out of wood.",
+        "assignment_id": "339ANSOTR51RXNCRKVYESUHYHPFIKO",
+        "objective": "Determine what the human is creating",
+        "confidence": "very_high",
+        "original_question": "What is the human creating out of wood?",
+        "original_answer": "The human is creating a carrying case for knife out of wood.",
+        "question_type": [
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    47.289,
+                    50.305
+                ]
+            },
+            {
+                "1": [
+                    6.442,
+                    12.885
+                ]
+            },
+            {
+                "2": [
+                    36.187,
+                    41.258
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:47.289",
+                    "00:50.305"
+                ]
+            },
+            {
+                "1": [
+                    "00:06.442",
+                    "00:12.885"
+                ]
+            },
+            {
+                "2": [
+                    "00:36.187",
+                    "00:41.258"
+                ]
+            }
+        ],
+        "time_spent": 1175.0,
+        "video_link": "https://www.dropbox.com/s/47q22r08ol48n2d/Bertram-Craft_0-clip-8.mp4?raw=1",
+        "video_id": "Bertram-Craft_0-clip-8",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:19.768",
+                "end": "00:10:45.436"
+            },
+            "seconds": {
+                "start": "559.7675416666666",
+                "end": "645.4364583333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 85.66891666666662,
+        "alter_answers": [
+            "the human is creating a pocket knife out of wood"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    35.980944999999984,
+                    53.11472833333331
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How are the people being affected by the weather?",
+        "answer": "The windshield is cracked.",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "People ",
+        "confidence": "very_high",
+        "original_question": "How are they being affected by the weather?",
+        "original_answer": "The windshield is cracked. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.449,
+                    18.275
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.449",
+                    "00:18.275"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/2wn7c2nm229afhp/Tornado-Trackers_5-clip-3.mp4?raw=1",
+        "video_id": "Tornado-Trackers_5-clip-3",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:45.375",
+                "end": "00:04:49.542"
+            },
+            "seconds": {
+                "start": "225.375",
+                "end": "289.5416666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.16666666666669,
+        "alter_answers": [
+            "The people are having trouble driving because of the hail"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How are the cities being affected?",
+        "answer": "The streets and waterways are flooded.",
+        "assignment_id": "3TE3O857307996BKLCMJ6QWVNDGR23",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "How are the cities being affected?",
+        "original_answer": "The streets and waterways are flooded. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    4.99
+                ]
+            },
+            {
+                "1": [
+                    12.753,
+                    17.605
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:04.990"
+                ]
+            },
+            {
+                "1": [
+                    "00:12.753",
+                    "00:17.605"
+                ]
+            }
+        ],
+        "time_spent": 2698.0,
+        "video_link": "https://www.dropbox.com/s/x8ydk25h6d8a43l/Disaster-Compilations_7-clip-1.mp4?raw=1",
+        "video_id": "Disaster-Compilations_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:02.200",
+                "end": "00:01:45.520"
+            },
+            "seconds": {
+                "start": "62.2",
+                "end": "105.52"
+            },
+            "split-method": "auto"
+        },
+        "duration": 43.31999999999999,
+        "alter_answers": [
+            "Cities are being flooded"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.580127999999998,
+                    19.407359999999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How are people being affected?",
+        "answer": "homes and power lines destroyed.",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "How are people being affected?",
+        "original_answer": "homes and power lines destroyed. ",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    36.361,
+                    54.618
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:36.361",
+                    "00:54.618"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/olc579gyx5p7vbx/Disaster-Compilations_4-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:37.960",
+                "end": "00:03:41.000"
+            },
+            "seconds": {
+                "start": "157.96",
+                "end": "221.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.03999999999999,
+        "alter_answers": [
+            "people are being affected by blown transformer "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    36.31104,
+                    46.548736
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are people being affected?",
+        "answer": "Yes",
+        "assignment_id": "39U1BHVTDLQBA3KVT15JPF25HNF3TR",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Are people being affected?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Entity",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    63.04
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:03.040"
+                ]
+            }
+        ],
+        "time_spent": 2940.0,
+        "video_link": "https://www.dropbox.com/s/olc579gyx5p7vbx/Disaster-Compilations_4-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_4-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:37.960",
+                "end": "00:03:41.000"
+            },
+            "seconds": {
+                "start": "157.96",
+                "end": "221.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.03999999999999,
+        "alter_answers": [
+            "Yes, people are being effected, and houses are being destroyed. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What were the effects of the flooding?",
+        "answer": "Flooded roads and rivers and debris.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "What were the effects of the flooding?",
+        "original_answer": "Flooded roads and rivers and debris. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.778,
+                    16.386
+                ]
+            },
+            {
+                "1": [
+                    49.451,
+                    55.059
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.778",
+                    "00:16.386"
+                ]
+            },
+            {
+                "1": [
+                    "00:49.451",
+                    "00:55.059"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/lyzpzliqvr7q1e5/Disaster-Compilations_0-clip-1.mp4?raw=1",
+        "video_id": "Disaster-Compilations_0-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:06.000",
+                "end": "00:02:06.960"
+            },
+            "seconds": {
+                "start": "66.0",
+                "end": "126.96"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.96,
+        "alter_answers": [
+            "The effects of the flood was damage to the vehicles "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    6.388608,
+                    19.409664
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What were the affects of the weather on the cities?",
+        "answer": "Streets flooded, cars swept away, various types of property damage.",
+        "assignment_id": "3GS6S824SQWA6OHZ6PU9LD7AQTBWN3",
+        "objective": "Cities",
+        "confidence": "very_high",
+        "original_question": "What were the affects of the weather on the cities?",
+        "original_answer": "Streets flooded, cars swept away, various types of property damage. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    2.26
+                ]
+            },
+            {
+                "1": [
+                    31.682,
+                    35.956
+                ]
+            },
+            {
+                "2": [
+                    41.752,
+                    45.289
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:02.260"
+                ]
+            },
+            {
+                "1": [
+                    "00:31.682",
+                    "00:35.956"
+                ]
+            },
+            {
+                "2": [
+                    "00:41.752",
+                    "00:45.289"
+                ]
+            }
+        ],
+        "time_spent": 2031.0,
+        "video_link": "https://www.dropbox.com/s/4ybd6mwvpgtpm0u/Climate-Change_1-clip-10.mp4?raw=1",
+        "video_id": "Climate-Change_1-clip-10",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:19.933",
+                "end": "00:11:21.333"
+            },
+            "seconds": {
+                "start": "619.9333333333333",
+                "end": "681.3333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.400000000000105,
+        "alter_answers": [
+            "In each of the cities the weather has caused structural damages to the roads, buildings, and cars .Excessive flooding in some areas and high winds with large hail in other areas making it unsafe for the residents who live there "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "How are the people and the animals affected by the hurricane?",
+        "answer": "There is a stray dog and a person in the middle of the storm.",
+        "assignment_id": "3KRVW3HTZNKBHPFQAJ58B9FPFQ6SML",
+        "objective": "People and animals",
+        "confidence": "very_high",
+        "original_question": "How are the people and the animals affected by the hurricane?",
+        "original_answer": "There is a stray dog and a person in the middle of the storm. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    28.756,
+                    33.523
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:28.756",
+                    "00:33.523"
+                ]
+            }
+        ],
+        "time_spent": 1203.0,
+        "video_link": "https://www.dropbox.com/s/5f80s6wwozag907/Ultimate-Chase_10-clip-2.mp4?raw=1",
+        "video_id": "Ultimate-Chase_10-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:03.567",
+                "end": "00:03:08.333"
+            },
+            "seconds": {
+                "start": "123.56666666666666",
+                "end": "188.33333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.76666666666668,
+        "alter_answers": [
+            "The man is in his car, while a stay dog is loose in the rain and is getting soaked. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What did the storm cause?",
+        "answer": "Flooding",
+        "assignment_id": "3MYYFCXHJ36SNUHT9FBV01FM5SKG4V",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What did the storm cause?",
+        "original_answer": "Flooding",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.451,
+                    13.913
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.451",
+                    "00:13.913"
+                ]
+            }
+        ],
+        "time_spent": 3194.0,
+        "video_link": "https://www.dropbox.com/s/qmswa6oi8aezpt7/Natural-Disaster_7-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:17.000"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "17.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 17.0,
+        "alter_answers": [
+            "The storm caused heavy flooding"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What caused the flooding?",
+        "answer": "Rain.",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "What caused the flooding?",
+        "original_answer": "Rain. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.593,
+                    5.586
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.593",
+                    "00:05.586"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/nwzatim05040p5d/Natural-Disaster_0-clip-0.mp4?raw=1",
+        "video_id": "Natural-Disaster_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:29.463"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "29.462766666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 29.46276666666667,
+        "alter_answers": [
+            "It is unclear what caused the flooding, but the weather looks rainy which may have contributed. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.99030232,
+                    14.802093973333335
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why is the flooding happening?",
+        "answer": "Rain",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Why is the flooding happening?",
+        "original_answer": "Rain ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.446
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.446"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/1quc55iuz49rsee/Weathershot_11-clip-0.mp4?raw=1",
+        "video_id": "Weathershot_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.440"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.44"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.44,
+        "alter_answers": [
+            "The flood is happening due to the heavy rain. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.918688,
+                    13.683616
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How are people being affected by the flooding?",
+        "answer": "Cars swept away, property damage, roads flooded.",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "How are people being affected by the flooding?",
+        "original_answer": "Cars swept away, property damage, roads flooded. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.35
+                ]
+            },
+            {
+                "1": [
+                    18.277,
+                    26.739
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.350"
+                ]
+            },
+            {
+                "1": [
+                    "00:18.277",
+                    "00:26.739"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/1quc55iuz49rsee/Weathershot_11-clip-0.mp4?raw=1",
+        "video_id": "Weathershot_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.440"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.44"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.44,
+        "alter_answers": [
+            "The street are flooded, with cars and buildings being ruined. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is the storm causing?",
+        "answer": "Flooding, high winds, rain, and large waves.",
+        "assignment_id": "3NGI5ARFTT4H88D9PGIGWCMBU0G1PS",
+        "objective": "Storm",
+        "confidence": "very_high",
+        "original_question": "What is the storm causing?",
+        "original_answer": "Flooding, high winds, rain, and large waves. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.194
+                ]
+            },
+            {
+                "1": [
+                    36.059,
+                    42.685
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.194"
+                ]
+            },
+            {
+                "1": [
+                    "00:36.059",
+                    "00:42.685"
+                ]
+            }
+        ],
+        "time_spent": 2573.0,
+        "video_link": "https://www.dropbox.com/s/ikari9aoy8hsp38/Tornado-Trackers_2-clip-2.mp4?raw=1",
+        "video_id": "Tornado-Trackers_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:08.337",
+                "end": "00:03:08.355"
+            },
+            "seconds": {
+                "start": "128.33654166666665",
+                "end": "188.35483333333332"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.01829166666667,
+        "alter_answers": [
+            "There is a hurricane causing massive flooding. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    11.571526633333335,
+                    26.504077600000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where is the smoke coming from?",
+        "answer": "Fire.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Fire",
+        "confidence": "very_high",
+        "original_question": "Where is the smoke coming from?",
+        "original_answer": "Fire. ",
+        "question_type": [
+            "Existence",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    26.228,
+                    28.584
+                ]
+            },
+            {
+                "1": [
+                    42.248,
+                    46.646
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:26.228",
+                    "00:28.584"
+                ]
+            },
+            {
+                "1": [
+                    "00:42.248",
+                    "00:46.646"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/j6a0ndgpjxh5vxf/Disaster-Compilations_2-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:01.040",
+                "end": "00:03:06.480"
+            },
+            "seconds": {
+                "start": "121.04",
+                "end": "186.48"
+            },
+            "split-method": "auto"
+        },
+        "duration": 65.43999999999998,
+        "alter_answers": [
+            "The smoke is coming from the forest"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    49.891455999999984,
+                    59.62892799999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Were there people caught in the flooding?",
+        "answer": "Yes.",
+        "assignment_id": "3R2UR8A0IAF7D9M1H9Q82LLMP5TXOJ",
+        "objective": "Natural disasters. ",
+        "confidence": "very_high",
+        "original_question": "Were there people caught in the flooding?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.904,
+                    9.84
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.904",
+                    "00:09.840"
+                ]
+            }
+        ],
+        "time_spent": 2277.0,
+        "video_link": "https://www.dropbox.com/s/whvc7cv3gtrv0oq/Climate-Change_8-clip-9.mp4?raw=1",
+        "video_id": "Climate-Change_8-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:09:24.733",
+                "end": "00:10:26.233"
+            },
+            "seconds": {
+                "start": "564.7333333333333",
+                "end": "626.2333333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.5,
+        "alter_answers": [
+            "Yes there were people caught in the flooding"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.3136,
+                    15.448800000000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people nearby?",
+        "answer": "Yes.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Tornado",
+        "confidence": "very_high",
+        "original_question": "Are there people nearby?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    41.259,
+                    48.99
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:41.259",
+                    "00:48.990"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/mxh1j82qiq6mtts/Dan-Robinson_0-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:30.884",
+                "end": "00:04:15.922"
+            },
+            "seconds": {
+                "start": "150.88408821077203",
+                "end": "255.9223698754139"
+            },
+            "split-method": "auto"
+        },
+        "duration": 105.03828166464186,
+        "alter_answers": [
+            "There are people nearby"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    91.67741223689941,
+                    100.83675039805618
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where did the effects happen?",
+        "answer": "In a town and on the road.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Effects of severe weather ",
+        "confidence": "very_high",
+        "original_question": "Where did the effects happen?",
+        "original_answer": "In a town and on the road. ",
+        "question_type": [
+            "Location",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.158,
+                    27.816
+                ]
+            },
+            {
+                "1": [
+                    45.987,
+                    52.148
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.158",
+                    "00:27.816"
+                ]
+            },
+            {
+                "1": [
+                    "00:45.987",
+                    "00:52.148"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/v2r9byw79472w2o/Tornado-Trackers_4-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:40.530",
+                "end": "00:05:58.316"
+            },
+            "seconds": {
+                "start": "280.53024999999997",
+                "end": "358.31629166666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.78604166666669,
+        "alter_answers": [
+            "The effects happened on the street"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.023180833333333,
+                    26.011652333333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the funnel cloud ever develop into a full tornado?",
+        "answer": "No",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Weather Development",
+        "confidence": "very_high",
+        "original_question": "Does the funnel cloud ever develop into a full tornado?",
+        "original_answer": "No",
+        "question_type": [
+            "Existence",
+            "Motion",
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    69.069
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:09.069"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/1784lrenliolcd1/Skip-Talbot_6-clip-5.mp4?raw=1",
+        "video_id": "Skip-Talbot_6-clip-5",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:41.434",
+                "end": "00:07:50.503"
+            },
+            "seconds": {
+                "start": "401.4343666666667",
+                "end": "470.5033666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.06900000000002,
+        "alter_answers": [
+            "Yes it becomes a full tornado. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What effects did the weather have?",
+        "answer": "Debris in the air, truck turnover, destruction of buildings.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Effects of severe weather ",
+        "confidence": "very_high",
+        "original_question": "What effects did the weather have?",
+        "original_answer": "Debris in the air, truck turnover, destruction of buildings. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.961
+                ]
+            },
+            {
+                "1": [
+                    29.932,
+                    33.168
+                ]
+            },
+            {
+                "2": [
+                    36.093,
+                    42.751
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.961"
+                ]
+            },
+            {
+                "1": [
+                    "00:29.932",
+                    "00:33.168"
+                ]
+            },
+            {
+                "2": [
+                    "00:36.093",
+                    "00:42.751"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/v2r9byw79472w2o/Tornado-Trackers_4-clip-4.mp4?raw=1",
+        "video_id": "Tornado-Trackers_4-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:40.530",
+                "end": "00:05:58.316"
+            },
+            "seconds": {
+                "start": "280.53024999999997",
+                "end": "358.31629166666664"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.78604166666669,
+        "alter_answers": [
+            "The weather caused trucks to crash"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    33.91471416666667,
+                    44.86698883333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the precipitation causing flooding?",
+        "answer": "Yes.",
+        "assignment_id": "3RWE2M8QWH9HYYGEDI1OEIY6PSQN0U",
+        "objective": "Precipitation",
+        "confidence": "very_high",
+        "original_question": "Is the precipitation causing flooding?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.028
+                ]
+            },
+            {
+                "1": [
+                    22.055,
+                    26.636
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.028"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.055",
+                    "00:26.636"
+                ]
+            }
+        ],
+        "time_spent": 2399.0,
+        "video_link": "https://www.dropbox.com/s/vwsyg7i1aaa60j1/Climate-Change_10-clip-14.mp4?raw=1",
+        "video_id": "Climate-Change_10-clip-14",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:14:48.833",
+                "end": "00:15:51.067"
+            },
+            "seconds": {
+                "start": "888.8333333333334",
+                "end": "951.0666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 62.23333333333335,
+        "alter_answers": [
+            "Yes there is major flooding. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What caused the person to crash into the median?",
+        "answer": "The person crashed into the median because their bald tires had no traction on the wet road.",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6PUZEKY",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What caused the person to crash into the median?",
+        "original_answer": "Faulty tire. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    40.381,
+                    44.706
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:40.381",
+                    "00:44.706"
+                ]
+            }
+        ],
+        "time_spent": 2348.0,
+        "video_link": "https://www.dropbox.com/s/07revy2lweb0so6/Skip-Talbot_3-clip-9.mp4?raw=1",
+        "video_id": "Skip-Talbot_3-clip-9",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:10:13.213",
+                "end": "00:11:23.416"
+            },
+            "seconds": {
+                "start": "613.2126000000001",
+                "end": "683.4160666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.2034666666666,
+        "alter_answers": [
+            "The person could have any response when they nudged the wheel to correct"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.18883498666666,
+                    18.365226879999984
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the people towing the car out of?",
+        "answer": "They are towing it out of a flooded road.",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6PUZEKY",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "Where are the people towing the car out of?",
+        "original_answer": "They are towing it out of a flooded road. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    13.525,
+                    16.86
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:13.525",
+                    "00:16.860"
+                ]
+            }
+        ],
+        "time_spent": 2348.0,
+        "video_link": "https://www.dropbox.com/s/qyty6iss15dc891/Natural-Disaster_2-clip-1.mp4?raw=1",
+        "video_id": "Natural-Disaster_2-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.400",
+                "end": "00:01:39.000"
+            },
+            "seconds": {
+                "start": "60.4",
+                "end": "99.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 38.6,
+        "alter_answers": [
+            "They are towing it out of a flooded street. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Did the lightning appear with the rain or the hail?",
+        "answer": "The rain.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Precipitation",
+        "confidence": "very_high",
+        "original_question": "Did the lightning appear with the rain or the hail?",
+        "original_answer": "The rain. ",
+        "question_type": [
+            "Motion",
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.06,
+                    51.33
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.060",
+                    "00:51.330"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/ndqdau3pgbd25bl/Dan-Robinson_1-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_1-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.425",
+                "end": "00:03:07.120"
+            },
+            "seconds": {
+                "start": "125.42530000000001",
+                "end": "187.12026666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.69496666666667,
+        "alter_answers": [
+            "There does seem to be rain and hail"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What natural phenomenon appeared with the precipitation?",
+        "answer": "Lightning.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Precipitation",
+        "confidence": "very_high",
+        "original_question": "What natural phenomenon appeared with the precipitation?",
+        "original_answer": "Lightning. ",
+        "question_type": [
+            "Existence",
+            "Motion",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    44.174,
+                    48.122
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:44.174",
+                    "00:48.122"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/ndqdau3pgbd25bl/Dan-Robinson_1-clip-2.mp4?raw=1",
+        "video_id": "Dan-Robinson_1-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:05.425",
+                "end": "00:03:07.120"
+            },
+            "seconds": {
+                "start": "125.42530000000001",
+                "end": "187.12026666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.69496666666667,
+        "alter_answers": [
+            "There appeared to be hail with the precipitation"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.06212008,
+                    36.81955610666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there cars submerged?",
+        "answer": "Yes.",
+        "assignment_id": "39GAF6DQWRZUDSA5BSRF24BTGJBV1R",
+        "objective": "Flooding",
+        "confidence": "very_high",
+        "original_question": "Are there cars submerged?",
+        "original_answer": "Yes. ",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    6.727
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:06.727"
+                ]
+            }
+        ],
+        "time_spent": 2100.0,
+        "video_link": "https://www.dropbox.com/s/x84svcdloatwd79/Weathershot_4-clip-1.mp4?raw=1",
+        "video_id": "Weathershot_4-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:03.433",
+                "end": "00:02:10.167"
+            },
+            "seconds": {
+                "start": "63.43333333333333",
+                "end": "130.16666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.73333333333332,
+        "alter_answers": [
+            "There are cars submerged there"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.184159999999995,
+                    28.72202666666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How much of the field depicted is impacted by the western bean cutworm?",
+        "answer": "Western bean cutworm impacts 1-2% of the field depicted.",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT94HFIO",
+        "objective": "Importance of managing for western bean cutworm.",
+        "confidence": "very_high",
+        "original_question": "How much of the field depicted is impacted by the western bean cutworm?",
+        "original_answer": "Western bean cutworm impacts 1-2% of the field depicted. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    61.462,
+                    71.387
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:01.462",
+                    "01:11.387"
+                ]
+            }
+        ],
+        "time_spent": 2522.0,
+        "video_link": "https://www.dropbox.com/s/bvgg53u3xlk873x/RealAgriculture_0-clip-1.mp4?raw=1",
+        "video_id": "RealAgriculture_0-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:20.129",
+                "end": "00:03:08.950"
+            },
+            "seconds": {
+                "start": "80.12895778364116",
+                "end": "188.95019788918205"
+            },
+            "split-method": "auto"
+        },
+        "duration": 108.82124010554092,
+        "alter_answers": [
+            "There is not that much field impacted by the western bean cutworm.  About 1 or 2 percent"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    63.02926226912929,
+                    73.91138627968338
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the material used for the top of the bar in the renovated barn from the video?",
+        "answer": "The material used for the top of the barn is siding from the outside of the barn.",
+        "assignment_id": "3A0EX8ZRN8NCUKN2I07OFFSWKP2YBA",
+        "objective": "Barn renovations.",
+        "confidence": "very_high",
+        "original_question": "What is the material used for the top of the bar in the renovated barn from the video?",
+        "original_answer": "The material used for the top of the barn is siding from the outside of the barn.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    31.616,
+                    49.92
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:31.616",
+                    "00:49.920"
+                ]
+            }
+        ],
+        "time_spent": 2958.0,
+        "video_link": "https://www.dropbox.com/s/5tgyyaljko0k292/John-Suscovich_9-manual.mp4?raw=1",
+        "video_id": "John-Suscovich_9-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "1:00",
+                "end": "3:10"
+            },
+            "split-method": "manual"
+        },
+        "duration": 130.0,
+        "alter_answers": [
+            "the material used for the top of the bar in the renovated barn is through poxy top and custom weld the frame"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    24.856,
+                    43.88799999999999
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why does the farmer restrict the available space for the chicks in the video?",
+        "answer": "The farmer restricts the space for the chicks when they are young because they are easily confused and may become stuck in a corner or too far from the heat lamps, food, or water.",
+        "assignment_id": "3A0EX8ZRN8NCUKN2I07OFFSWKP2YBA",
+        "objective": "Space allowance for livestock.",
+        "confidence": "very_high",
+        "original_question": "Why does the farmer restrict the available space for the chicks in the video?",
+        "original_answer": "The farmer restricts the space for the chicks when they are young because they are easily confused and may become stuck in a corner or too far from the heat lamps, food, or water.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.25,
+                    35.741
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.250",
+                    "00:35.741"
+                ]
+            }
+        ],
+        "time_spent": 2958.0,
+        "video_link": "https://www.dropbox.com/s/7hnrrxy1sqz42ey/John-Suscovich_1-clip-0.mp4?raw=1",
+        "video_id": "John-Suscovich_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:10.467"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "70.46666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 70.46666666666667,
+        "alter_answers": [
+            "They are restricted so that they dont wander away from the light and food. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What structure is being pointed at throughout the video?",
+        "answer": "The poles are being pointed at throughout the video.",
+        "assignment_id": "3ERET4BTVM8YMMJOG1S1F1IVYB89K0",
+        "objective": "Growing hops",
+        "confidence": "very_high",
+        "original_question": "What structure is being pointed at throughout the video?",
+        "original_answer": "The poles are being pointed at throughout the video.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    36.248,
+                    55.492
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:36.248",
+                    "00:55.492"
+                ]
+            }
+        ],
+        "time_spent": 1907.0,
+        "video_link": "https://www.dropbox.com/s/fwikisqabgk53kj/John-Suscovich_7-clip-0.mp4?raw=1",
+        "video_id": "John-Suscovich_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.900"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.9"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.9,
+        "alter_answers": [
+            "He is point at the trellis. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    21.4368,
+                    29.18328
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is an obstacle in the pasture that requires caution from the farmer?",
+        "answer": "The pasture has sink holes that requires caution from the farmer.",
+        "assignment_id": "3ERMJ6L4DYRPYRVYMG7XGIJTSPUM7J",
+        "objective": "Maintaining pastures.",
+        "confidence": "very_high",
+        "original_question": "What is an obstacle in the pasture that requires caution from the farmer?",
+        "original_answer": "The pasture has sink holes that requires caution from the farmer.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    23.29,
+                    29.389
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:23.290",
+                    "00:29.389"
+                ]
+            }
+        ],
+        "time_spent": 2453.0,
+        "video_link": "https://www.dropbox.com/s/gnvu7rkq9b35dkj/How-Farms-Work_11-clip-1.mp4?raw=1",
+        "video_id": "How-Farms-Work_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:00.861",
+                "end": "00:02:00.887"
+            },
+            "seconds": {
+                "start": "60.8608",
+                "end": "120.88743333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.026633333333336,
+        "alter_answers": [
+            "There are fallen logs in the field. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    29.389039680000003,
+                    41.874579413333336
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How does manure change the soil?",
+        "answer": "The manure helps lower the pH from a high complex to a neutral pH.",
+        "assignment_id": "3ND9UOO81K1KIOEEUCEU8L3LLB6LWB",
+        "objective": "The benefits of manure on croplands.",
+        "confidence": "very_high",
+        "original_question": "How does manure change the soil?",
+        "original_answer": "The manure helps lower the pH from a high complex to a neutral pH. ",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    34.145,
+                    45.087
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:34.145",
+                    "00:45.087"
+                ]
+            }
+        ],
+        "time_spent": 2193.0,
+        "video_link": "https://www.dropbox.com/s/y533ig2rtmanzwx/Welker-Farms-Inc_2-clip-16.mp4?raw=1",
+        "video_id": "Welker-Farms-Inc_2-clip-16",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:17:52.004",
+                "end": "00:18:53.065"
+            },
+            "seconds": {
+                "start": "1072.0042666666666",
+                "end": "1133.0652666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.06100000000015,
+        "alter_answers": [
+            "It changes the soil from High PH to neutral PH."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    36.14811200000009,
+                    48.50685840000012
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why might the herbicide not be working to prevent the growth of weeds?",
+        "answer": "A lack of moisture in the soil prevents the herbicide from activating.",
+        "assignment_id": "3ND9UOO81K1KIOEEUCEU8L3LLB6LWB",
+        "objective": "How to assess the growth of weeds on an agricultural field.",
+        "confidence": "very_high",
+        "original_question": "Why might the herbicide not be working to prevent the growth of weeds?",
+        "original_answer": "A lack of moisture in the soil prevents the herbicide from activating. ",
+        "question_type": [
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    31.85,
+                    42.0
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:31.850",
+                    "00:42.000"
+                ]
+            }
+        ],
+        "time_spent": 2193.0,
+        "video_link": "https://www.dropbox.com/s/xdi2808ircfyyf1/RealAgriculture_5-clip-0.mp4?raw=1",
+        "video_id": "RealAgriculture_5-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:49.376"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "109.37593333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 109.37593333333334,
+        "alter_answers": [
+            "It may not be working due to a lack of moisture. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What calve has grown and become friendly and docile?",
+        "answer": "Calve 659 has grown to be friendly and docile.",
+        "assignment_id": "3ND9UOO81K1KIOEEUCEU8L3LLB6LWB",
+        "objective": "The growth of calves.",
+        "confidence": "very_high",
+        "original_question": "What calve has grown and become friendly and docile@",
+        "original_answer": "Calve 659 has grown to be friendly and docile.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.829,
+                    24.951
+                ]
+            },
+            {
+                "1": [
+                    37.499,
+                    46.268
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.829",
+                    "00:24.951"
+                ]
+            },
+            {
+                "1": [
+                    "00:37.499",
+                    "00:46.268"
+                ]
+            }
+        ],
+        "time_spent": 2193.0,
+        "video_link": "https://www.dropbox.com/s/036yzebmkt0u6t7/Olly_s-Farm_5-clip-7.mp4?raw=1",
+        "video_id": "Olly's-Farm_5-clip-7",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:07:43.430",
+                "end": "00:08:43.990"
+            },
+            "seconds": {
+                "start": "463.42963333333336",
+                "end": "523.9901333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.56049999999999,
+        "alter_answers": [
+            "six five nine has grown and become friendly and docile"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    27.567139599999997,
+                    41.471830399999995
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why might you want to chisel plow?",
+        "answer": "You may want to chisel plow if you have spread manure and need to work it into the soil.",
+        "assignment_id": "3X87C8JFV6A224DI2CCPSIZUP4CQS5",
+        "objective": "Plowing the farmland.",
+        "confidence": "very_high",
+        "original_question": "Why might you want to chisel plow?",
+        "original_answer": "You may want to chisel plow if you have spread manure and need to work it into the soil.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    39.908,
+                    52.755
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:39.908",
+                    "00:52.755"
+                ]
+            }
+        ],
+        "time_spent": 2532.0,
+        "video_link": "https://www.dropbox.com/s/e9c46sgbsb8c0le/How-Farms-Work_6-clip-0.mp4?raw=1",
+        "video_id": "How-Farms-Work_6-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:08.335"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "68.33493333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 68.33493333333334,
+        "alter_answers": [
+            "Reason to chisel plow is that if you have spread manure you want to work those nutrients and organic matter into the soil"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    37.7208832,
+                    53.79325952000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is 40 gallons of fuel enough to make an entire round on the field?",
+        "answer": "The tractor will need more than 40 gallons of fuel to make an entire round on the field.",
+        "assignment_id": "3Z7ISHFUH0UTXCZ0BAPX2KBXIEIZ82",
+        "objective": "Fueling machinery.",
+        "confidence": "high",
+        "original_question": "Is 40 gallons of fuel enough to make an entire round on the field?",
+        "original_answer": "The tractor will need more than 40 gallons of fuel to make an entire round on the field.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    53.823,
+                    60.394
+                ]
+            }
+        ],
+        "domain": "Agriculture",
+        "worker_id": "A1TXHUEZEB0TX2",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:53.823",
+                    "01:00.394"
+                ]
+            }
+        ],
+        "time_spent": 1820.0,
+        "video_link": "https://www.dropbox.com/s/vlaks5vblrtxye9/Millennial-Farmer_9-clip-12.mp4?raw=1",
+        "video_id": "Millennial-Farmer_9-clip-12",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:12:44.363",
+                "end": "00:13:44.757"
+            },
+            "seconds": {
+                "start": "764.3634078147612",
+                "end": "824.7570592965457"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.393651481784445,
+        "alter_answers": [
+            "40 gallons of fuel is not enough for the entire round on the field"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    53.339672988712024,
+                    59.4273530580759
+                ]
+            ]
+        ]
+    }
+]

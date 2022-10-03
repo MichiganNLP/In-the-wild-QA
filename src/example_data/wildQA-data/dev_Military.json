@@ -1,0 +1,3737 @@
+[
+    {
+        "question": "Are there guns firing in the video?",
+        "answer": "There are guns firing in the video.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "I want to establish that there is a purpose to the firing of guns.",
+        "confidence": "very_high",
+        "original_question": "Are there guns firing in the video?",
+        "original_answer": "There are guns firing in the video.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    14.212,
+                    19.624
+                ]
+            },
+            {
+                "1": [
+                    32.519,
+                    35.201
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:14.212",
+                    "00:19.624"
+                ]
+            },
+            {
+                "1": [
+                    "00:32.519",
+                    "00:35.201"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/3b5uek23f0aav4u/AiirSource-Military_11-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:58.825"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "58.825433333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 58.825433333333336,
+        "alter_answers": [
+            "Yes, the guns are being fired. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    13.318078106666668,
+                    19.953586986666668
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are they firing at?",
+        "answer": "Practice tummy targets.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "I want to establish that there is a purpose to the firing of guns.",
+        "confidence": "high",
+        "original_question": "What are they firing at?",
+        "original_answer": "Practice tummy targets.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.484,
+                    40.425
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.484",
+                    "00:40.425"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/3b5uek23f0aav4u/AiirSource-Military_11-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:58.825"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "58.825433333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 58.825433333333336,
+        "alter_answers": [
+            "They are firing at a hill while training. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    14.918129893333333,
+                    22.353664666666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Why are they firing weapons?",
+        "answer": "They are firing the weapons for training purposes.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "I want to establish that there is a purpose to the firing of guns.",
+        "confidence": "very_high",
+        "original_question": "Why are they firing weapons?",
+        "original_answer": "They are firing the weapons for training purposes.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.306,
+                    13.412
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.306",
+                    "00:13.412"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/3b5uek23f0aav4u/AiirSource-Military_11-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:58.825"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "58.825433333333336"
+            },
+            "split-method": "auto"
+        },
+        "duration": 58.825433333333336,
+        "alter_answers": [
+            "They are practicing so that they can remain sharp. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are the airplanes turned on?",
+        "answer": "The airplanes are on",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "original_question": "Are the airplanes turned on?",
+        "original_answer": "The airplanes are on ",
+        "question_type": [
+            "Other"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    3.539
+                ]
+            },
+            {
+                "1": [
+                    28.458,
+                    32.336
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:03.539"
+                ]
+            },
+            {
+                "1": [
+                    "00:28.458",
+                    "00:32.336"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6,
+        "alter_answers": [
+            "Yes, they are moving. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is the airplane moving?",
+        "answer": "The airplane is moving.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "original_question": "Is the airplane moving?",
+        "original_answer": "The airplane is moving.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.133,
+                    7.369
+                ]
+            },
+            {
+                "1": [
+                    31.27,
+                    38.445
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.133",
+                    "00:07.369"
+                ]
+            },
+            {
+                "1": [
+                    "00:31.270",
+                    "00:38.445"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6,
+        "alter_answers": [
+            "Yes it moves into the launch position. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    14.3016
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How fast is the airplane moving?",
+        "answer": "The airplane is moving slowly.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "original_question": "How fast is the airplane moving?",
+        "original_answer": "The airplane is moving slowly.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.921,
+                    8.92
+                ]
+            },
+            {
+                "1": [
+                    29.718,
+                    34.178
+                ]
+            },
+            {
+                "2": [
+                    39.608,
+                    44.214
+                ]
+            },
+            {
+                "3": [
+                    55.752,
+                    57.643
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.921",
+                    "00:08.920"
+                ]
+            },
+            {
+                "1": [
+                    "00:29.718",
+                    "00:34.178"
+                ]
+            },
+            {
+                "2": [
+                    "00:39.608",
+                    "00:44.214"
+                ]
+            },
+            {
+                "3": [
+                    "00:55.752",
+                    "00:57.643"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6,
+        "alter_answers": [
+            "The airplane is moving slow"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    7.417440000000001,
+                    14.68944
+                ],
+                [
+                    32.9664,
+                    43.92288
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the airplane on the ground?",
+        "answer": "The airplane is on the ground.",
+        "assignment_id": "3S3AMIZX3U4S6EKH04G5DEODJYVCD9",
+        "objective": "Determine what the jets are getting ready to do.",
+        "confidence": "very_high",
+        "original_question": "Is the airplane on the ground?",
+        "original_answer": "The airplane is on the ground.",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.048,
+                    10.763
+                ]
+            },
+            {
+                "1": [
+                    47.704,
+                    54.976
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.048",
+                    "00:10.763"
+                ]
+            },
+            {
+                "1": [
+                    "00:47.704",
+                    "00:54.976"
+                ]
+            }
+        ],
+        "time_spent": 14177.0,
+        "video_link": "https://www.dropbox.com/s/m981ujhayw4sf67/Gung-Ho-Vids_12-clip-1.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_12-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.167",
+                "end": "00:02:01.767"
+            },
+            "seconds": {
+                "start": "61.166666666666664",
+                "end": "121.76666666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6,
+        "alter_answers": [
+            "yes"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    0.63024
+                ],
+                [
+                    18.32544,
+                    20.45856
+                ],
+                [
+                    53.328,
+                    55.46112
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there ammunition?",
+        "answer": "Yes",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "Determine what the men are preparing to do with the Weapon.",
+        "confidence": "very_high",
+        "original_question": "Is there ammunition?",
+        "original_answer": "Yes",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.804,
+                    21.333
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.804",
+                    "00:21.333"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/hl73s88768zdp09/MilitaryNotes_10-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.161"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.1611"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.1611,
+        "alter_answers": [
+            "Yes, there are multiple shells shown. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.73684712,
+                    23.388004640000002
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there a weapon?",
+        "answer": "Yes there is.",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "Determine what the men are preparing to do with the Weapon.",
+        "confidence": "high",
+        "original_question": "Is there a weapon?",
+        "original_answer": "Yes there is.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.104,
+                    9.933
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.104",
+                    "00:09.933"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/hl73s88768zdp09/MilitaryNotes_10-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.161"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.1611"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.1611,
+        "alter_answers": [
+            "Yes there is an AA gun"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    11.889717840000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the people loading ammunition into the weapon?",
+        "answer": "Yes they are",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "Determine what the men are preparing to do with the Weapon.",
+        "confidence": "very_high",
+        "original_question": "Are the people loading ammunition into the weapon?",
+        "original_answer": "Yes they are",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    54.262,
+                    57.394
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:54.262",
+                    "00:57.394"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/hl73s88768zdp09/MilitaryNotes_10-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_10-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:01.161"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "61.1611"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.1611,
+        "alter_answers": [
+            "Yes they load a shell into it. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    38.26238416,
+                    48.684235599999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there helicopter's?",
+        "answer": "Yes, there are helicopters.",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "What are the helicopter's doing.",
+        "confidence": "very_high",
+        "original_question": "Are there helicopter's?",
+        "original_answer": "Yes there are helicopters'?",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    24.892,
+                    29.82
+                ]
+            },
+            {
+                "1": [
+                    35.662,
+                    38.303
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:24.892",
+                    "00:29.820"
+                ]
+            },
+            {
+                "1": [
+                    "00:35.662",
+                    "00:38.303"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/8chxfvc7s1to4jk/Gung-Ho-Vids_2-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:17.067",
+                "end": "00:03:20.567"
+            },
+            "seconds": {
+                "start": "137.06666666666666",
+                "end": "200.56666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.5,
+        "alter_answers": [
+            "yes"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    1.1683999999999999
+                ],
+                [
+                    23.9268,
+                    26.669999999999998
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there people?",
+        "answer": "Yes there are",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "What are the helicopter's doing.",
+        "confidence": "very_high",
+        "original_question": "Are there people?",
+        "original_answer": "Yes there are",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    61.214,
+                    63.195
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:01.214",
+                    "01:03.195"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/8chxfvc7s1to4jk/Gung-Ho-Vids_2-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:17.067",
+                "end": "00:03:20.567"
+            },
+            "seconds": {
+                "start": "137.06666666666666",
+                "end": "200.56666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.5,
+        "alter_answers": [
+            "Yes there is a group that is walking in a line. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Are the People going into the helicopter's?",
+        "answer": "Yes, the people are going into the helicopter.",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "What are the helicopter's doing.",
+        "confidence": "very_high",
+        "original_question": "Are the People going into the helicopter's?",
+        "original_answer": "Yes, the people are going into the helicopter.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    62.992,
+                    63.5
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:02.992",
+                    "01:03.500"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/8chxfvc7s1to4jk/Gung-Ho-Vids_2-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_2-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:17.067",
+                "end": "00:03:20.567"
+            },
+            "seconds": {
+                "start": "137.06666666666666",
+                "end": "200.56666666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.5,
+        "alter_answers": [
+            "There are people marching, but they do no board the helicopter. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    40.081199999999995,
+                    54.4576
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the vehicles airborne?",
+        "answer": "Yes the vehicles are airborne?",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "Determine what these vehicles do.",
+        "confidence": "very_high",
+        "original_question": "Are the vehicles airborne?",
+        "original_answer": "Yes the vehicles are airborne?",
+        "question_type": [
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    4.988,
+                    11.161
+                ]
+            },
+            {
+                "1": [
+                    23.953,
+                    30.768
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:04.988",
+                    "00:11.161"
+                ]
+            },
+            {
+                "1": [
+                    "00:23.953",
+                    "00:30.768"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/w91u8wdsnrth209/Gung-Ho-Vids_5-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_5-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:17.600",
+                "end": "00:03:19.333"
+            },
+            "seconds": {
+                "start": "137.6",
+                "end": "199.33333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.73333333333335,
+        "alter_answers": [
+            "Yes they are airborne. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.617493333333334,
+                    17.97674666666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Do the vehicles have wings?",
+        "answer": "Yes all of the vehicles have wings.",
+        "assignment_id": "30LB5CDZNC9BFNUXG6CI955FZT0Z0Z",
+        "objective": "Determine what these vehicles do.",
+        "confidence": "very_high",
+        "original_question": "Do the vehicles have wings?",
+        "original_answer": "Yes all of the vehicles have wings.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    5.531
+                ]
+            },
+            {
+                "1": [
+                    13.878,
+                    17.631
+                ]
+            },
+            {
+                "2": [
+                    28.694,
+                    31.756
+                ]
+            },
+            {
+                "3": [
+                    39.164,
+                    42.966
+                ]
+            },
+            {
+                "4": [
+                    46.917,
+                    47.461
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:05.531"
+                ]
+            },
+            {
+                "1": [
+                    "00:13.878",
+                    "00:17.631"
+                ]
+            },
+            {
+                "2": [
+                    "00:28.694",
+                    "00:31.756"
+                ]
+            },
+            {
+                "3": [
+                    "00:39.164",
+                    "00:42.966"
+                ]
+            },
+            {
+                "4": [
+                    "00:46.917",
+                    "00:47.461"
+                ]
+            }
+        ],
+        "time_spent": 4052.0,
+        "video_link": "https://www.dropbox.com/s/w91u8wdsnrth209/Gung-Ho-Vids_5-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_5-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:17.600",
+                "end": "00:03:19.333"
+            },
+            "seconds": {
+                "start": "137.6",
+                "end": "199.33333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.73333333333335,
+        "alter_answers": [
+            "The vehicles do not have wings but the planes do"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    15.704960000000005,
+                    27.11328000000001
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this a live contact scenario?",
+        "answer": "More than likely this is a live contact scenario based on the fact that there is no blank firing device on the weapon. Strange things are that there are a minigun in the beginning on the right or starboard side yet in the video appears to be a M60 on the left or port side, indicates might be a mash up of two different scenarios. This is more than likely used to show the level of night vision quality.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOUSM6WG",
+        "objective": "Shows the helicopter crew doing prechecks on their minigun. He appears to be mounting a night vision locating light used for aiming with low light conditions, similar to a laser light. By the fact that there is no blank firing device on the barrel of the minigun it indicates that this is probably a live action contact scenario. More than likely an insertion or extraction of a squad of Army rangers or green beret.",
+        "confidence": "high",
+        "original_question": "Is this a live contact scenario?",
+        "original_answer": "More than likely this is a live contact scenario based on the fact that there is no blank firing device on the weapon. Strange things are that there are a minigun in the beginning on the right or starboard side yet in the video appears to be a M60 on the left or port side, indicates might be a mash up of two different scenarios. This is more than likely used to show the level of night vision quality.",
+        "question_type": [
+            "Location",
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.376,
+                    9.357
+                ]
+            },
+            {
+                "1": [
+                    49.11,
+                    58.758
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.376",
+                    "00:09.357"
+                ]
+            },
+            {
+                "1": [
+                    "00:49.110",
+                    "00:58.758"
+                ]
+            }
+        ],
+        "time_spent": 3676.0,
+        "video_link": "https://www.dropbox.com/s/h2g4ftqne1quizy/Gung-Ho-Vids_8-clip-0.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.600"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.6"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.6,
+        "alter_answers": [
+            "Yes, this is a live contact. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    46.97712,
+                    59.484959999999994
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is this a pre deployment physical fitness test?",
+        "answer": "It seems not to be a pre deployment physical fitness test because there's not enough depth on time standards and upper chain of command involvement to ensure accurate times are being recorded. There does not seem to be anything higher than a specialist within these videos",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOUSM6WG",
+        "objective": "This is obviously the Army National Guard physical fitness test as indicated in the video other indicators are the highly shiny glow belts required by military installations during mandatory group fitness testing for safety precautions. Physical fitness tests are done at a minimum of once every 6 months. Each branch has their own fitness tests. Navy is a 1.5 mile run as the Army is 2 miles. ",
+        "confidence": "high",
+        "original_question": "Is this a pre deployment physical fitness test?",
+        "original_answer": "I believe that it is not a pre deployment physical fitness test. Typically when there is that test there is a lot more in depth on time standards and upper chain of command involvement to ensure accurate times are being recorded. There does not seem to be anything higher than a specialist within these videos",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.691,
+                    45.991
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.691",
+                    "00:45.991"
+                ]
+            }
+        ],
+        "time_spent": 3676.0,
+        "video_link": "https://www.dropbox.com/s/5s233h8nrym5smv/MilitaryNotes_8-clip-0.mp4?raw=1",
+        "video_id": "MilitaryNotes_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:09.599"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "69.59945518590999"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.59945518591,
+        "alter_answers": [
+            "Yes, they do have a PT test. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    12.416542805166342,
+                    24.10925127639922
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are the safety Petty officers?",
+        "answer": "There doesn't seem to be any safety Petty Officers that wear the indicator by white hats or vests. This is an extremely unusual training environment as they are usually within arm's reach to ensure safe training.",
+        "assignment_id": "38YMOXR4MUY2Z3B7788SJ2LOUSM6WG",
+        "objective": "This is a Navy live fire training exercise. Typically there are no targets that are being engaged or shot at. Bullets are just shot at the water sometimes tracing rounds are used during night time live fires. Additionally safety glasses are being worn that indicates a training environment. Lastly the white gloves that you see in the video are fire retardant fire fighting gloves being used incase of hot brass hitting there uniform to prevent a fire from starting.",
+        "confidence": "very_high",
+        "original_question": "Where are the safety Petty officers?",
+        "original_answer": "There doesn't seem to be any safety Petty Officers that wear the indicator by white hats or vests. This is an extremely unusual training environment as they are usually within arm's reach to ensure safe training. ",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    12.11,
+                    15.92
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:12.110",
+                    "00:15.920"
+                ]
+            }
+        ],
+        "time_spent": 3676.0,
+        "video_link": "https://www.dropbox.com/s/dytf23ox0t25cxu/WarLeaks-Military-Blog_9-clip-0.mp4?raw=1",
+        "video_id": "WarLeaks-Military-Blog_9-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:11.071"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "71.071"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.071,
+        "alter_answers": [
+            "This is unclear from the video. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What kind of helicopter is it?",
+        "answer": "Chinook",
+        "assignment_id": "36ZN444YTRXANEX6INQ7ZBY70HGIO8",
+        "objective": "I wish to learn about the helicopter",
+        "confidence": "high",
+        "original_question": "What kind of helicopter is it?",
+        "original_answer": "Chinook ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.049,
+                    1.134
+                ]
+            },
+            {
+                "1": [
+                    5.423,
+                    6.36
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.049",
+                    "00:01.134"
+                ]
+            },
+            {
+                "1": [
+                    "00:05.423",
+                    "00:06.360"
+                ]
+            }
+        ],
+        "time_spent": 904.0,
+        "video_link": "https://www.dropbox.com/s/2q0cd43sma3a7d1/MilitaryNotes_11-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.495",
+                "end": "00:02:03.123"
+            },
+            "seconds": {
+                "start": "61.49476666666667",
+                "end": "123.123"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.62823333333333,
+        "alter_answers": [
+            "This is a chinook helicopter."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.1339594933333332,
+                    1.4790776
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of things can it transport?",
+        "answer": "People and cargo",
+        "assignment_id": "36ZN444YTRXANEX6INQ7ZBY70HGIO8",
+        "objective": "I wish to learn about the helicopter",
+        "confidence": "high",
+        "original_question": "What kind of things can it transport?",
+        "original_answer": "People and cargo",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.403,
+                    11.833
+                ]
+            },
+            {
+                "1": [
+                    19.869,
+                    22.285
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.403",
+                    "00:11.833"
+                ]
+            },
+            {
+                "1": [
+                    "00:19.869",
+                    "00:22.285"
+                ]
+            }
+        ],
+        "time_spent": 904.0,
+        "video_link": "https://www.dropbox.com/s/2q0cd43sma3a7d1/MilitaryNotes_11-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.495",
+                "end": "00:02:03.123"
+            },
+            "seconds": {
+                "start": "61.49476666666667",
+                "end": "123.123"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.62823333333333,
+        "alter_answers": [
+            "They are transporting cargo and troops"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.960089813333333,
+                    24.454082986666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of bombs will the B21 carry?",
+        "answer": "The B21 will carry the same as the B1B did, with additions of newer technology.",
+        "assignment_id": "3AUQQEL7U5SU63PNF9NFOZSJAG9V05",
+        "objective": "To determine the payload of the B21 bomber.",
+        "confidence": "moderate",
+        "original_question": "What type of bombs will the B21 carry?",
+        "original_answer": "The B21 will carry the same as the B1B did, with additions of newer technology.",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    31.823,
+                    64.049
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:31.823",
+                    "01:04.049"
+                ]
+            }
+        ],
+        "time_spent": 3766.0,
+        "video_link": "https://www.dropbox.com/s/t7k3pzytr8fhqww/Sandboxx_0-clip-4.mp4?raw=1",
+        "video_id": "Sandboxx_0-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:10.000",
+                "end": "00:05:21.933"
+            },
+            "seconds": {
+                "start": "250.0",
+                "end": "321.93333333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 71.93333333333334,
+        "alter_answers": [
+            "B61 variable yield nuke and long range stand off cruise missile. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What type of weapons are they carrying?",
+        "answer": "M4's",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6OJZEKB",
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "original_question": "What type of weapons are they carrying?",
+        "original_answer": "M4's",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.358,
+                    17.29
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.358",
+                    "00:17.290"
+                ]
+            }
+        ],
+        "time_spent": 1241.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589028,
+        "alter_answers": [
+            "They are carrying AR-15s and side arms. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    30.964312162945134,
+                    41.715121345919684
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are they wearing kevlar?",
+        "answer": "yes",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6OJZEKB",
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "original_question": "Are they wearing kevlar?",
+        "original_answer": "yes",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.835,
+                    19.124
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.835",
+                    "00:19.124"
+                ]
+            }
+        ],
+        "time_spent": 1241.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589028,
+        "alter_answers": [
+            "Yes they are wearing kevlar"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    22.195218958399074,
+                    32.89648524191291
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Besides M4's, what type of equipment are people using?",
+        "answer": "Night vision goggles and grenades",
+        "assignment_id": "32Q90QCQ1SKFHIA5OC8N7FJ6OJZEKB",
+        "objective": "I want to learn about the people",
+        "confidence": "very_high",
+        "original_question": "What type of equipment are they using?",
+        "original_answer": "Night vision goggles and grenades",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.992,
+                    29.676
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.992",
+                    "00:29.676"
+                ]
+            }
+        ],
+        "time_spent": 1241.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589028,
+        "alter_answers": [
+            "They are using ladders and platoon boats. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    28.140366893684536,
+                    42.30963613944822
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the F35 worth the cost?",
+        "answer": "For some operations the F35 has advantages over current model aircraft, but for the most part, the operating costs exceed the replacement of the whole fleet of aircraft.",
+        "assignment_id": "3FK0YFF9PZFAZ4Q3I6B49SI94CNVVY",
+        "objective": "Evaluating the F35 aircraft versus operating cost of other aircraft",
+        "confidence": "moderate",
+        "original_question": "Is the F35 worth the cost?",
+        "original_answer": "For some operations the F35 has advantages over current model aircraft, but for the most part, the operating costs exceed the replacement of the whole fleet of aircraft.",
+        "question_type": [
+            "Reasoning",
+            "Spatial relationship"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.138,
+                    14.425
+                ]
+            },
+            {
+                "1": [
+                    13.913,
+                    30.793
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.138",
+                    "00:14.425"
+                ]
+            },
+            {
+                "1": [
+                    "00:13.913",
+                    "00:30.793"
+                ]
+            }
+        ],
+        "time_spent": 8333.0,
+        "video_link": "https://www.dropbox.com/s/mftxy61zrwayk3z/Sandboxx_9-clip-4.mp4?raw=1",
+        "video_id": "Sandboxx_9-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:04:14.171",
+                "end": "00:05:18.109"
+            },
+            "seconds": {
+                "start": "254.17058333333333",
+                "end": "318.1094583333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 63.93887499999998,
+        "alter_answers": [
+            "The f35 costs an unknown amount, but it is a lot. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.744324599999988,
+                    30.588357799999986
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are they doing?",
+        "answer": "Defending a forest",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the people",
+        "confidence": "moderate",
+        "original_question": "What are they doing?",
+        "original_answer": "Defending a forest",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.539,
+                    3.523
+                ]
+            },
+            {
+                "1": [
+                    22.434,
+                    24.092
+                ]
+            },
+            {
+                "2": [
+                    36.579,
+                    38.082
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.539",
+                    "00:03.523"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.434",
+                    "00:24.092"
+                ]
+            },
+            {
+                "2": [
+                    "00:36.579",
+                    "00:38.082"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/1h6yq028wwi06zp/AiirSource-Military_7-clip-1.mp4?raw=1",
+        "video_id": "AiirSource-Military_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:03.363",
+                "end": "00:02:08.128"
+            },
+            "seconds": {
+                "start": "63.3633",
+                "end": "128.12800000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.7647,
+        "alter_answers": [
+            "holding their ground"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What branch of the military are they in?",
+        "answer": "Air Force",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the people",
+        "confidence": "high",
+        "original_question": "What branch of the military are they in?",
+        "original_answer": "Air Force",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    48.237,
+                    49.48
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:48.237",
+                    "00:49.480"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/1h6yq028wwi06zp/AiirSource-Military_7-clip-1.mp4?raw=1",
+        "video_id": "AiirSource-Military_7-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:03.363",
+                "end": "00:02:08.128"
+            },
+            "seconds": {
+                "start": "63.3633",
+                "end": "128.12800000000001"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.7647,
+        "alter_answers": [
+            "They are army"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    39.8950552,
+                    51.138207120000004
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What kind of craft were there?",
+        "answer": "speedboats, water apc's, rescue craft",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the watercraft",
+        "confidence": "moderate",
+        "original_question": "What kind of craft were there?",
+        "original_answer": "speedboats, water apc's, rescue craft",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.334,
+                    3.607
+                ]
+            },
+            {
+                "1": [
+                    22.966,
+                    24.504
+                ]
+            },
+            {
+                "2": [
+                    43.227,
+                    45.031
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.334",
+                    "00:03.607"
+                ]
+            },
+            {
+                "1": [
+                    "00:22.966",
+                    "00:24.504"
+                ]
+            },
+            {
+                "2": [
+                    "00:43.227",
+                    "00:45.031"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/5ekimeu9dpjq22s/USA-Military-Channel_0-clip-6.mp4?raw=1",
+        "video_id": "USA-Military-Channel_0-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:56.850",
+                "end": "00:08:03.149"
+            },
+            "seconds": {
+                "start": "416.84976666666665",
+                "end": "483.14933333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.29956666666669,
+        "alter_answers": [
+            "There are 3 kinds of boats. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    9.388018640000004,
+                    22.32969405333334
+                ],
+                [
+                    38.77198658666668,
+                    47.523529386666695
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What were they doing?",
+        "answer": "Landing on a beach",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the watercraft",
+        "confidence": "high",
+        "original_question": "What were they doing?",
+        "original_answer": "Landing on a beach",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.661,
+                    12.57
+                ]
+            },
+            {
+                "1": [
+                    43.493,
+                    45.031
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.661",
+                    "00:12.570"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.493",
+                    "00:45.031"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/5ekimeu9dpjq22s/USA-Military-Channel_0-clip-6.mp4?raw=1",
+        "video_id": "USA-Military-Channel_0-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:56.850",
+                "end": "00:08:03.149"
+            },
+            "seconds": {
+                "start": "416.84976666666665",
+                "end": "483.14933333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.29956666666669,
+        "alter_answers": [
+            "They are riding fighter boats"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    2.4398240533333344,
+                    16.495332186666673
+                ],
+                [
+                    42.32564336000002,
+                    57.38890490666669
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is their country of origin?",
+        "answer": "United States of America",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the watercraft",
+        "confidence": "very_high",
+        "original_question": "What is their country of origin?",
+        "original_answer": "United States of America",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    23.656,
+                    25.565
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:23.656",
+                    "00:25.565"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/5ekimeu9dpjq22s/USA-Military-Channel_0-clip-6.mp4?raw=1",
+        "video_id": "USA-Military-Channel_0-clip-6",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:06:56.850",
+                "end": "00:08:03.149"
+            },
+            "seconds": {
+                "start": "416.84976666666665",
+                "end": "483.14933333333335"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.29956666666669,
+        "alter_answers": [
+            "They are from the USA. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.901674106666667,
+                    5.993480826666668
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Where are they?",
+        "answer": "Explosive test site",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the location",
+        "confidence": "high",
+        "original_question": "Where are they?",
+        "original_answer": "Explosive test site",
+        "question_type": [
+            "Existence",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    5.368,
+                    6.726
+                ]
+            },
+            {
+                "1": [
+                    37.024,
+                    39.739
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:05.368",
+                    "00:06.726"
+                ]
+            },
+            {
+                "1": [
+                    "00:37.024",
+                    "00:39.739"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/0jqxja8ql26pjnt/Army-military-2018_8-clip-73.mp4?raw=1",
+        "video_id": "Army-military-2018_8-clip-73",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:25:45.300",
+                "end": "01:27:02.433"
+            },
+            "seconds": {
+                "start": "5145.3",
+                "end": "5222.433333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.13333333333321,
+        "alter_answers": [
+            "They are in the middle east."
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What kind of terrain is it?",
+        "answer": "flat grassland with walled compound",
+        "assignment_id": "3OCHAWUVGOJONI1MJHYFV44D4PUKXA",
+        "objective": "I wish to learn about the location",
+        "confidence": "high",
+        "original_question": "What kind of terrain is it?",
+        "original_answer": "flat grassland with walled compound",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    15.859,
+                    17.895
+                ]
+            },
+            {
+                "1": [
+                    32.026,
+                    34.0
+                ]
+            },
+            {
+                "2": [
+                    58.868,
+                    61.09
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:15.859",
+                    "00:17.895"
+                ]
+            },
+            {
+                "1": [
+                    "00:32.026",
+                    "00:34.000"
+                ]
+            },
+            {
+                "2": [
+                    "00:58.868",
+                    "01:01.090"
+                ]
+            }
+        ],
+        "time_spent": 950.0,
+        "video_link": "https://www.dropbox.com/s/0jqxja8ql26pjnt/Army-military-2018_8-clip-73.mp4?raw=1",
+        "video_id": "Army-military-2018_8-clip-73",
+        "time_in_original_video": {
+            "frames": {
+                "start": "01:25:45.300",
+                "end": "01:27:02.433"
+            },
+            "seconds": {
+                "start": "5145.3",
+                "end": "5222.433333333333"
+            },
+            "split-method": "auto"
+        },
+        "duration": 77.13333333333321,
+        "alter_answers": [
+            "It is a mix between a scrub land and a dessert. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Who are they?",
+        "answer": "Military Trainees",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT8G9IF6",
+        "objective": "I wish to learn about the people",
+        "confidence": "very_high",
+        "original_question": "Who are they?",
+        "original_answer": "Military Trainees",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.894,
+                    3.907
+                ]
+            },
+            {
+                "1": [
+                    14.808,
+                    15.821
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.894",
+                    "00:03.907"
+                ]
+            },
+            {
+                "1": [
+                    "00:14.808",
+                    "00:15.821"
+                ]
+            }
+        ],
+        "time_spent": 858.0,
+        "video_link": "https://www.dropbox.com/s/26k2r8v1ibrmgzl/Sandboxx_7-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.294"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.29356666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.29356666666667,
+        "alter_answers": [
+            "They are Marines in training. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    16.20691072,
+                    21.12686576
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are they training for?",
+        "answer": "To join the Marines",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT8G9IF6",
+        "objective": "I wish to learn about the people",
+        "confidence": "very_high",
+        "original_question": "What are they training for?",
+        "original_answer": "To join the Marines",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.805,
+                    11.335
+                ]
+            },
+            {
+                "1": [
+                    19.294,
+                    19.728
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.805",
+                    "00:11.335"
+                ]
+            },
+            {
+                "1": [
+                    "00:19.294",
+                    "00:19.728"
+                ]
+            }
+        ],
+        "time_spent": 858.0,
+        "video_link": "https://www.dropbox.com/s/26k2r8v1ibrmgzl/Sandboxx_7-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.294"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.29356666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.29356666666667,
+        "alter_answers": [
+            "They are training for BWT and Land Nav"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.28940912,
+                    6.174061226666668
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "how many fighters were there?",
+        "answer": "four",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT8G9IF6",
+        "objective": "I wish to learn about the Fighters",
+        "confidence": "high",
+        "original_question": "how many fighters were there?",
+        "original_answer": "four",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.11,
+                    12.3
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.110",
+                    "00:12.300"
+                ]
+            }
+        ],
+        "time_spent": 858.0,
+        "video_link": "https://www.dropbox.com/s/ms9n9l7tal5ist0/USA-Military-Channel_10-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_10-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:13.694",
+                "end": "00:04:15.689"
+            },
+            "seconds": {
+                "start": "193.6935",
+                "end": "255.68876666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.99526666666668,
+        "alter_answers": [
+            "There are 4 fighter jets. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.207602400000002,
+                    14.53169050666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What were the fighters doing?",
+        "answer": "Escorting the transport plane",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT8G9IF6",
+        "objective": "I wish to learn about the Fighters",
+        "confidence": "high",
+        "original_question": "What were the fighters doing?",
+        "original_answer": "Escorting the transport plane",
+        "question_type": [
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    8.58,
+                    10.018
+                ]
+            },
+            {
+                "1": [
+                    29.51,
+                    30.799
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:08.580",
+                    "00:10.018"
+                ]
+            },
+            {
+                "1": [
+                    "00:29.510",
+                    "00:30.799"
+                ]
+            }
+        ],
+        "time_spent": 858.0,
+        "video_link": "https://www.dropbox.com/s/ms9n9l7tal5ist0/USA-Military-Channel_10-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_10-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:13.694",
+                "end": "00:04:15.689"
+            },
+            "seconds": {
+                "start": "193.6935",
+                "end": "255.68876666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.99526666666668,
+        "alter_answers": [
+            "The fighters were flying side by side"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    21.326371733333335,
+                    34.61815690666668
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How many pilots in the fighter?",
+        "answer": "one",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT8G9IF6",
+        "objective": "I wish to learn about the Fighters",
+        "confidence": "high",
+        "original_question": "How many pilots in the fighter?",
+        "original_answer": "one",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    2.579,
+                    3.273
+                ]
+            },
+            {
+                "1": [
+                    7.836,
+                    8.283
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:02.579",
+                    "00:03.273"
+                ]
+            },
+            {
+                "1": [
+                    "00:07.836",
+                    "00:08.283"
+                ]
+            }
+        ],
+        "time_spent": 858.0,
+        "video_link": "https://www.dropbox.com/s/ms9n9l7tal5ist0/USA-Military-Channel_10-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_10-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:03:13.694",
+                "end": "00:04:15.689"
+            },
+            "seconds": {
+                "start": "193.6935",
+                "end": "255.68876666666668"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.99526666666668,
+        "alter_answers": [
+            "There are 5 pilots in the fighter jets"
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What time of the year is it?",
+        "answer": "Winter",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT8G9IF6",
+        "objective": "I wish to learn about the terrain",
+        "confidence": "high",
+        "original_question": "What time of the year is it?",
+        "original_answer": "Winter ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    6.633,
+                    7.326
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:06.633",
+                    "00:07.326"
+                ]
+            }
+        ],
+        "time_spent": 858.0,
+        "video_link": "https://www.dropbox.com/s/6v21s2trr9mqlpf/AiirSource-Military_6-clip-1.mp4?raw=1",
+        "video_id": "AiirSource-Military_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:12.272",
+                "end": "00:02:06.460"
+            },
+            "seconds": {
+                "start": "72.2722",
+                "end": "126.45966666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 54.18746666666666,
+        "alter_answers": [
+            "It is winter as there is snow on the ground. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.5201996799999999,
+                    7.2394455466666665
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What time of land are they on?",
+        "answer": "Forested area",
+        "assignment_id": "3634BBTX0OTGH1KDJK7HCHPT8G9IF6",
+        "objective": "I wish to learn about the terrain",
+        "confidence": "high",
+        "original_question": "What time of land are they on?",
+        "original_answer": "Forested area",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    35.634,
+                    36.804
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:35.634",
+                    "00:36.804"
+                ]
+            }
+        ],
+        "time_spent": 858.0,
+        "video_link": "https://www.dropbox.com/s/6v21s2trr9mqlpf/AiirSource-Military_6-clip-1.mp4?raw=1",
+        "video_id": "AiirSource-Military_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:12.272",
+                "end": "00:02:06.460"
+            },
+            "seconds": {
+                "start": "72.2722",
+                "end": "126.45966666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 54.18746666666666,
+        "alter_answers": [
+            "They are on snow"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.800044586666665,
+                    18.12028885333333
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What do you do in BWT training?",
+        "answer": "It teaches ground evolution's to include traversing many different obstacles on the ground and how to use a compass to navigate through unknown territory using a map.",
+        "assignment_id": "3TY7ZAOG5FJGQSVBG598MQH2UI80KU",
+        "objective": "To briefly describe BWT",
+        "confidence": "high",
+        "original_question": "What do you do in BWT training?",
+        "original_answer": "It teaches ground evolution's to include traversing many different obstacles on the ground and how to use a compass to navigate through unknown territory using a map.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Temporal relationship"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    11.769,
+                    35.549
+                ]
+            },
+            {
+                "1": [
+                    43.749,
+                    60.294
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:11.769",
+                    "00:35.549"
+                ]
+            },
+            {
+                "1": [
+                    "00:43.749",
+                    "01:00.294"
+                ]
+            }
+        ],
+        "time_spent": 1712.0,
+        "video_link": "https://www.dropbox.com/s/26k2r8v1ibrmgzl/Sandboxx_7-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.294"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.29356666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.29356666666667,
+        "alter_answers": [
+            "you crawl under bund wire",
+            "Land navigation which is map base with a compass"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    13.312819520000001,
+                    18.232774560000003
+                ]
+            ],
+            [
+                [
+                    37.14083706666667,
+                    48.57249730666667
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "How long does this training event last?",
+        "answer": "Typically land nav is a two day course. One that will consist of teaching the fundamentals of the land nav. The second day teaches application during the day and another event that takes place during the night.",
+        "assignment_id": "3YW4XOSQKQKU0DL562HA6I9A11V1UE",
+        "objective": "Marine boot camp teaching land navigation. Most branches of the service will teach land nav including the air force and navy as well.",
+        "confidence": "very_high",
+        "original_question": "How long does this training event last?",
+        "original_answer": "Typically land nav is a two day course. One that will consist of teaching the fundamentals of the land nav. The second day teaches application during the day and another event that takes place during the night.",
+        "question_type": [
+            "Entity",
+            "Existence",
+            "Location",
+            "Motion",
+            "Reasoning",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    38.298,
+                    45.003
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:38.298",
+                    "00:45.003"
+                ]
+            }
+        ],
+        "time_spent": 2440.0,
+        "video_link": "https://www.dropbox.com/s/26k2r8v1ibrmgzl/Sandboxx_7-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_7-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.294"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.29356666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.29356666666667,
+        "alter_answers": [
+            "The training event lasts a long time"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    5.884652106666667,
+                    15.821031893333332
+                ],
+                [
+                    28.2173892,
+                    40.03492826666667
+                ],
+                [
+                    42.97725432,
+                    51.27364909333334
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What is the purpose of these exercises?",
+        "answer": "These are designed to effectively train soldiers and sailors the ability to make changes in the field of battle with minimal effort or thought",
+        "assignment_id": "3YW4XOSQKQKU0DL562HA6I9A11V1UE",
+        "objective": "These are live fire tactical exercises that are designed to simulate enemy contacts. They simulate jams, changing mags, and gun swapping from primary to secondary.",
+        "confidence": "very_high",
+        "original_question": "What is the purpose of these exercises?",
+        "original_answer": "These are designed to effectively train soldiers and sailors the ability to make changes in the field of battle with minimal effort or thought",
+        "question_type": [
+            "Motion",
+            "Reasoning"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    7.976,
+                    28.871
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1VZYTIXNKKYLT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:07.976",
+                    "00:28.871"
+                ]
+            }
+        ],
+        "time_spent": 2440.0,
+        "video_link": "https://www.dropbox.com/s/6v21s2trr9mqlpf/AiirSource-Military_6-clip-1.mp4?raw=1",
+        "video_id": "AiirSource-Military_6-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:12.272",
+                "end": "00:02:06.460"
+            },
+            "seconds": {
+                "start": "72.2722",
+                "end": "126.45966666666666"
+            },
+            "split-method": "auto"
+        },
+        "duration": 54.18746666666666,
+        "alter_answers": [
+            "They are intended to teach how to swap between primary and secondary firearms. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.6068996266666667,
+                    13.6552416
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there a military facility in the video?",
+        "answer": "Yes there is a military facility in the video.",
+        "assignment_id": "3G5W44VEU7HD1W6WU7YB7I4I2CJGKQ",
+        "objective": "I want to learn about missile launches.",
+        "confidence": "very_high",
+        "original_question": "Is there a military facility in the video?",
+        "original_answer": "Yes there is a military facility in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    38.272,
+                    49.244
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:38.272",
+                    "00:49.244"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/hfhfyexg4w94urr/AiirSource-Military_12-manual.mp4?raw=1",
+        "video_id": "AiirSource-Military_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:05"
+            },
+            "split-method": "manual"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "Yes there is a military building. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    36.868,
+                    48.828
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there a missile launch from an ashore site?",
+        "answer": "Yes there is a missile launch from an ashore site.",
+        "assignment_id": "3G5W44VEU7HD1W6WU7YB7I4I2CJGKQ",
+        "objective": "I want to learn about missile launches.",
+        "confidence": "very_high",
+        "original_question": "Is there a missile launch from an ashore site?",
+        "original_answer": "Yes there is a missile launch from an ashore site.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    10.712,
+                    30.888
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:10.712",
+                    "00:30.888"
+                ]
+            }
+        ],
+        "time_spent": 2998.0,
+        "video_link": "https://www.dropbox.com/s/hfhfyexg4w94urr/AiirSource-Military_12-manual.mp4?raw=1",
+        "video_id": "AiirSource-Military_12-manual",
+        "time_in_original_video": {
+            "seconds": {
+                "start": "0:00",
+                "end": "1:05"
+            },
+            "split-method": "manual"
+        },
+        "duration": 65.0,
+        "alter_answers": [
+            "There is a missle launch from an ashore site"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    26.78,
+                    35.568
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are the men in the video uniformed?",
+        "answer": "Yes the men in the video are uniformed.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to learn about helicopter aviation experience in the military.",
+        "confidence": "very_high",
+        "original_question": "Are the men in the video uniformed?",
+        "original_answer": "Yes the men in the video are uniformed.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    9.17,
+                    35.005
+                ]
+            },
+            {
+                "1": [
+                    38.801,
+                    40.231
+                ]
+            },
+            {
+                "2": [
+                    49.894,
+                    61.628
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:09.170",
+                    "00:35.005"
+                ]
+            },
+            {
+                "1": [
+                    "00:38.801",
+                    "00:40.231"
+                ]
+            },
+            {
+                "2": [
+                    "00:49.894",
+                    "01:01.628"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/2q0cd43sma3a7d1/MilitaryNotes_11-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.495",
+                "end": "00:02:03.123"
+            },
+            "seconds": {
+                "start": "61.49476666666667",
+                "end": "123.123"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.62823333333333,
+        "alter_answers": [
+            "Yes, they are in uniform. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    8.677255253333334,
+                    16.171248426666665
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are soldiers interviewed?",
+        "answer": "Yes soldiers are interviewed.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to learn about helicopter aviation experience in the military.",
+        "confidence": "very_high",
+        "original_question": "Are soldiers interviewed?",
+        "original_answer": "Yes soldiers are interviewed. ",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    11.093
+                ]
+            },
+            {
+                "1": [
+                    25.835,
+                    30.124
+                ]
+            },
+            {
+                "2": [
+                    36.04,
+                    37.864
+                ]
+            },
+            {
+                "3": [
+                    41.02,
+                    54.923
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:11.093"
+                ]
+            },
+            {
+                "1": [
+                    "00:25.835",
+                    "00:30.124"
+                ]
+            },
+            {
+                "2": [
+                    "00:36.040",
+                    "00:37.864"
+                ]
+            },
+            {
+                "3": [
+                    "00:41.020",
+                    "00:54.923"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/2q0cd43sma3a7d1/MilitaryNotes_11-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.495",
+                "end": "00:02:03.123"
+            },
+            "seconds": {
+                "start": "61.49476666666667",
+                "end": "123.123"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.62823333333333,
+        "alter_answers": [
+            "Yes, the solider speaks several times about his job. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    25.242924373333334,
+                    30.814116666666667
+                ],
+                [
+                    42.44952712,
+                    55.51471258666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there helicopters in the video?",
+        "answer": "Yes there are helicopters in the video.",
+        "assignment_id": "3PH3VY7DJLW4NDVI9D53G0EJ08FZWL",
+        "objective": "I want to learn about helicopter aviation experience in the military.",
+        "confidence": "very_high",
+        "original_question": "Are there helicopters in the video?",
+        "original_answer": "Yes there are helicopters in the video.",
+        "question_type": [
+            "Entity"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    8.48
+                ]
+            },
+            {
+                "1": [
+                    10.156,
+                    31.997
+                ]
+            },
+            {
+                "2": [
+                    50.88,
+                    61.628
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:08.480"
+                ]
+            },
+            {
+                "1": [
+                    "00:10.156",
+                    "00:31.997"
+                ]
+            },
+            {
+                "2": [
+                    "00:50.880",
+                    "01:01.628"
+                ]
+            }
+        ],
+        "time_spent": 5628.0,
+        "video_link": "https://www.dropbox.com/s/2q0cd43sma3a7d1/MilitaryNotes_11-clip-1.mp4?raw=1",
+        "video_id": "MilitaryNotes_11-clip-1",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:01:01.495",
+                "end": "00:02:03.123"
+            },
+            "seconds": {
+                "start": "61.49476666666667",
+                "end": "123.123"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.62823333333333,
+        "alter_answers": [
+            "Yes there are helicopters in the video. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.8381439733333335,
+                    8.28283456
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Does the pilot house get secured by armed men in tactical gear?",
+        "answer": "Yes the pilot house gets secured by armed men in tactical gear.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTDYS8QM",
+        "objective": "I want to observe how to clear through a ship.",
+        "confidence": "very_high",
+        "original_question": "Does the pilot house get secured by armed men in tactical gear?",
+        "original_answer": "Yes the pilot house gets secured by armed men in tactical gear.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.493,
+                    61.929
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.493",
+                    "01:01.929"
+                ]
+            }
+        ],
+        "time_spent": 3260.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589028,
+        "alter_answers": [],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is there a ridged-hulled inflatable boat in the video?",
+        "answer": "Yes there is a ridged-hulled inflatable boat in the video.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTDYS8QM",
+        "objective": "I want to observe how to clear through a ship.",
+        "confidence": "very_high",
+        "original_question": "Is there a ridged-hulled inflatable boat in the video?",
+        "original_answer": "Yes there is a ridged-hulled inflatable boat in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    38.743,
+                    45.778
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:38.743",
+                    "00:45.778"
+                ]
+            }
+        ],
+        "time_spent": 3260.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589028,
+        "alter_answers": [
+            "Yes there is 1 such boat. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    39.08934767450194,
+                    46.966668688755185
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there a uniformed man climbing a Jacob's ladder?",
+        "answer": "Yes there is a uniformed man climbing a Jacob's ladder.",
+        "assignment_id": "3TU5ZICBRD0KJKY9OE6KBRZTDYS8QM",
+        "objective": "I want to observe how to clear through a ship.",
+        "confidence": "very_high",
+        "original_question": "Is there a uniformed man climbing a Jacob's ladder?",
+        "original_answer": "Yes there is a uniformed man climbing a Jacob's ladder.",
+        "question_type": [
+            "Existence",
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    9.364
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:09.364"
+                ]
+            }
+        ],
+        "time_spent": 3260.0,
+        "video_link": "https://www.dropbox.com/s/ulm2w6jjbk8nvlk/USA-Military-Channel_11-clip-2.mp4?raw=1",
+        "video_id": "USA-Military-Channel_11-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:23.644",
+                "end": "00:03:25.572"
+            },
+            "seconds": {
+                "start": "143.64371105762802",
+                "end": "205.5723353835183"
+            },
+            "split-method": "auto"
+        },
+        "duration": 61.92862432589028,
+        "alter_answers": [
+            "Yes there is a uniformed man climbing a Jacobs ladder. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.2881153859785175,
+                    11.493952674885232
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Are there SCBAs (self-contained breathing apparatus) being used in the video?",
+        "answer": "Yes, SCBAs (self-contained breathing apparatus) are being used in the video.",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0W9RXQ",
+        "objective": "I want to learn about fire control.",
+        "confidence": "very_high",
+        "original_question": "Are there SCBAs (self-contained breathing apparatus) being used in the video?",
+        "original_answer": "Yes, SCBAs (self-contained breathing apparatus) are being used in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    56.908
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:56.908"
+                ]
+            }
+        ],
+        "time_spent": 2699.0,
+        "video_link": "https://www.dropbox.com/s/np1lxbw7eufogsh/AiirSource-Military_1-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:09.536"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "69.53613333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.53613333333334,
+        "alter_answers": [
+            "Yes there are, they are fire fighter gear. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What were the people doing in the video?",
+        "answer": "The people in the video were practicing fire fighting.",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0W9RXQ",
+        "objective": "I want to learn about fire control.",
+        "confidence": "very_high",
+        "original_question": "What were the people doing in the video?",
+        "original_answer": "The people in the video were practicing fire fighting.",
+        "question_type": [
+            "Motion"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    21.695,
+                    69.536
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:21.695",
+                    "01:09.536"
+                ]
+            }
+        ],
+        "time_spent": 2699.0,
+        "video_link": "https://www.dropbox.com/s/np1lxbw7eufogsh/AiirSource-Military_1-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:09.536"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "69.53613333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.53613333333334,
+        "alter_answers": [
+            "They were gearing up to deal with a fire. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    32.542910400000004,
+                    45.504445653333335
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What are the people in the video wearing?",
+        "answer": "The people in the video are wearing personal protective equipment (PPE).",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0W9RXQ",
+        "objective": "I want to learn about fire control.",
+        "confidence": "very_high",
+        "original_question": "What are the people in the video wearing?",
+        "original_answer": "The people in the video are wearing personal protective equipment (PPE).",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    59.022
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:59.022"
+                ]
+            }
+        ],
+        "time_spent": 2699.0,
+        "video_link": "https://www.dropbox.com/s/np1lxbw7eufogsh/AiirSource-Military_1-clip-0.mp4?raw=1",
+        "video_id": "AiirSource-Military_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:09.536"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "69.53613333333334"
+            },
+            "split-method": "auto"
+        },
+        "duration": 69.53613333333334,
+        "alter_answers": [
+            "They are wearing fire resistant suits and masks. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "Is the aircraft in the video from the Untied Sates military?",
+        "answer": "Yes, the aircraft in the video is from the Untied Sates military.",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0W9RXQ",
+        "objective": "I want to see a military aircraft land.",
+        "confidence": "very_high",
+        "original_question": "Is the aircraft in the video from the Untied Sates military?",
+        "original_answer": "Yes, the aircraft in the video is from the Untied Sates military.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    75.983,
+                    89.433
+                ]
+            },
+            {
+                "1": [
+                    9.516,
+                    12.664
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "01:15.983",
+                    "01:29.433"
+                ]
+            },
+            {
+                "1": [
+                    "00:09.516",
+                    "00:12.664"
+                ]
+            }
+        ],
+        "time_spent": 2699.0,
+        "video_link": "https://www.dropbox.com/s/ovfvm733gyu8v52/Gung-Ho-Vids_0-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:06.667",
+                "end": "00:03:36.100"
+            },
+            "seconds": {
+                "start": "126.66666666666667",
+                "end": "216.1"
+            },
+            "split-method": "auto"
+        },
+        "duration": 89.43333333333332,
+        "alter_answers": [
+            "based on what I could see, I think so."
+        ],
+        "alter_evidences": [
+            [
+                [
+                    86.14218666666665,
+                    87.28693333333332
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is there a person on a motor bike in the video?",
+        "answer": "Yes there is a person on a motor bike in the video.",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0W9RXQ",
+        "objective": "I want to see a military aircraft land.",
+        "confidence": "very_high",
+        "original_question": "Is there a person on a motor bike in the video?",
+        "original_answer": "Yes there is a person on a motor bike in the video.",
+        "question_type": [
+            "Existence"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    7.942
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "00:07.942"
+                ]
+            }
+        ],
+        "time_spent": 2699.0,
+        "video_link": "https://www.dropbox.com/s/ovfvm733gyu8v52/Gung-Ho-Vids_0-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:06.667",
+                "end": "00:03:36.100"
+            },
+            "seconds": {
+                "start": "126.66666666666667",
+                "end": "216.1"
+            },
+            "split-method": "auto"
+        },
+        "duration": 89.43333333333332,
+        "alter_answers": [
+            "Yes there is a person on a motor bike. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    0.28618666666666664,
+                    7.94168
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What type of terrain was the video taken in?",
+        "answer": "The desert is the type of terrain the video was taken in.",
+        "assignment_id": "33M4IA01QG0AAMEH917CWGQR0W9RXQ",
+        "objective": "I want to see a military aircraft land.",
+        "confidence": "very_high",
+        "original_question": "What type of terrain was the video taken in?",
+        "original_answer": "The desert is the type of terrain the video was taken in.",
+        "question_type": [
+            "Location"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.0,
+                    89.433
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A1UXY4UGY259QT",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.000",
+                    "01:29.433"
+                ]
+            }
+        ],
+        "time_spent": 2699.0,
+        "video_link": "https://www.dropbox.com/s/ovfvm733gyu8v52/Gung-Ho-Vids_0-clip-2.mp4?raw=1",
+        "video_id": "Gung-Ho-Vids_0-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:06.667",
+                "end": "00:03:36.100"
+            },
+            "seconds": {
+                "start": "126.66666666666667",
+                "end": "216.1"
+            },
+            "split-method": "auto"
+        },
+        "duration": 89.43333333333332,
+        "alter_answers": [
+            "They are in a desert. "
+        ],
+        "alter_evidences": [
+            [
+                [
+                    1.1447466666666666,
+                    19.389146666666665
+                ]
+            ]
+        ]
+    }
+]

@@ -59,6 +59,16 @@
                     0.0,
                     11.04
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    59.136
+                ],
+                [
+                    76.032,
+                    119.52
+                ]
             ]
         ]
     },
@@ -115,6 +125,12 @@
                     24.384,
                     31.295999999999996
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    69.504
+                ]
             ]
         ]
     },
@@ -165,7 +181,20 @@
             "There are no boats.",
             "There are no boats."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    120.0
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    120.0
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there any wildlife?",
@@ -516,6 +545,12 @@
             [
                 [
                     0.0,
+                    90.0
+                ]
+            ],
+            [
+                [
+                    0.0,
                     16.992
                 ],
                 [
@@ -573,7 +608,26 @@
             "The only wildlife shown in the video are the various plant species.",
             "There is no wildlife."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    90.0
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    90.0
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    90.0
+                ]
+            ]
+        ]
     },
     {
         "question": "What kind of environment is this?",
@@ -633,6 +687,18 @@
                 [
                     57.74399999999999,
                     66.816
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    90.0
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    90.0
                 ]
             ],
             [
@@ -715,6 +781,16 @@
             ],
             [
                 [
+                    0.0,
+                    69.19412499999999
+                ]
+            ],
+            [
+                [
+                    1.7713695999999997,
+                    21.5332117
+                ],
+                [
                     24.245621399999994,
                     38.4719335
                 ]
@@ -779,6 +855,18 @@
                     24.079555499999994,
                     38.25051229999999
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    36.8666298
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    69.19412499999999
+                ]
             ]
         ]
     },
@@ -838,6 +926,12 @@
                 [
                     38.02909109999999,
                     47.43949209999999
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    22.529607099999996
                 ]
             ]
         ]
@@ -918,6 +1012,12 @@
                     54.10562490666671,
                     60.396976640000055
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    60.493766666666716
+                ]
             ]
         ]
     },
@@ -978,6 +1078,12 @@
                     34.7960145866667,
                     43.942672106666706
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    60.30018661333338
+                ]
             ]
         ]
     },
@@ -1037,6 +1143,12 @@
                 [
                     15.002454133333345,
                     23.471581466666684
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    60.493766666666716
                 ]
             ]
         ]
@@ -1100,6 +1212,10 @@
                 [
                     4.567562999999997,
                     5.8870811999999955
+                ],
+                [
+                    43.13809499999997,
+                    63.43837499999995
                 ]
             ],
             [
@@ -1113,6 +1229,10 @@
                 ]
             ],
             [
+                [
+                    0.0,
+                    28.87714829999998
+                ],
                 [
                     37.30176449999997,
                     51.10595489999996
@@ -1184,6 +1304,12 @@
                 ],
                 [
                     57.957299399999954,
+                    62.98161869999995
+                ]
+            ],
+            [
+                [
+                    40.54980929999997,
                     62.98161869999995
                 ]
             ],
@@ -1262,8 +1388,18 @@
             ],
             [
                 [
+                    5.582576999999996,
+                    28.06513709999998
+                ],
+                [
                     52.628475899999955,
                     63.43837499999995
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    28.52189339999998
                 ]
             ]
         ]
@@ -1331,12 +1467,24 @@
         "alter_evidences": [
             [
                 [
+                    11.2128,
+                    26.6496
+                ]
+            ],
+            [
+                [
                     18.854400000000002,
                     25.9968
                 ],
                 [
                     38.6688,
                     40.9344
+                ]
+            ],
+            [
+                [
+                    13.2096,
+                    26.112000000000002
                 ]
             ]
         ]
@@ -1395,6 +1543,16 @@
         ],
         "alter_evidences": [
             [
+                [
+                    0.0,
+                    23.04166666666667
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    6.009266666666667
+                ],
                 [
                     12.276600000000004,
                     14.119933333333336
@@ -1459,6 +1617,12 @@
                 [
                     27.09469429333333,
                     31.217799946666663
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    57.18801087999999
                 ]
             ],
             [
@@ -1536,6 +1700,12 @@
                     52.15460917333334,
                     55.36741877333334
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    66.93353333333334
+                ]
             ]
         ]
     },
@@ -1590,7 +1760,20 @@
             "Yes, some vehicles are driving down the winding road.",
             "There are cars in the video."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    4.182096201789118,
+                    22.9505279366476
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    22.338513858337
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the road at?",
@@ -1649,6 +1832,18 @@
                 [
                     6.885158380994281,
                     14.178326147528962
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    24.786570171579413
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    21.624497433641295
                 ]
             ]
         ]
@@ -1716,6 +1911,12 @@
                 [
                     60.63759651904181,
                     64.15775661658918
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    70.97096970861635
                 ]
             ]
         ]
@@ -1790,6 +1991,12 @@
                     37.813332660750795,
                     45.1943135104469
                 ]
+            ],
+            [
+                [
+                    4.031151079449408,
+                    26.68508461043975
+                ]
             ]
         ]
     },
@@ -1848,8 +2055,24 @@
         "alter_evidences": [
             [
                 [
+                    22.142942549088303,
+                    44.3426618739435
+                ]
+            ],
+            [
+                [
+                    3.974374303682515,
+                    24.52756713129781
+                ],
+                [
                     35.65581518160886,
                     41.844483740200204
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    70.97096970861635
                 ]
             ]
         ]
@@ -1954,7 +2177,30 @@
             "The vegetation is present in mountains.",
             "The terrains in which the vegetation is present in are forests, tundra, mountains, and valleys."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    41.548
+                ],
+                [
+                    0.0,
+                    38.493
+                ]
+            ],
+            [
+                [
+                    15.5194,
+                    152.75
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    152.75
+                ]
+            ]
+        ]
     },
     {
         "question": "What kinds of vegetation are there in the different terrains?",
@@ -2071,7 +2317,17 @@
                     26.884000000000004
                 ],
                 [
+                    53.2792,
+                    132.0982
+                ],
+                [
                     149.5728,
+                    152.75
+                ]
+            ],
+            [
+                [
+                    0.0,
                     152.75
                 ]
             ]
@@ -2422,6 +2678,12 @@
         "alter_evidences": [
             [
                 [
+                    8.0916,
+                    44.332159999999995
+                ]
+            ],
+            [
+                [
                     0.0,
                     4.854959999999999
                 ],
@@ -2686,6 +2948,12 @@
         "alter_evidences": [
             [
                 [
+                    0.0,
+                    60.06006006006006
+                ]
+            ],
+            [
+                [
                     16.144144144144143,
                     28.396396396396398
                 ],
@@ -2773,6 +3041,10 @@
             ],
             [
                 [
+                    6.626879999999985,
+                    28.041519999999934
+                ],
+                [
                     48.41303999999988,
                     55.96031999999986
                 ],
@@ -2842,6 +3114,12 @@
             "The rivers are located in the mountains near the bases."
         ],
         "alter_evidences": [
+            [
+                [
+                    0.0,
+                    25.09623999999994
+                ]
+            ],
             [
                 [
                     27.550639999999937,
@@ -3062,6 +3340,10 @@
         "alter_evidences": [
             [
                 [
+                    0.0,
+                    53.55838488000002
+                ],
+                [
                     73.03416120000003,
                     75.65590032000003
                 ],
@@ -3154,6 +3436,12 @@
                 [
                     93.00931640000003,
                     117.97826040000004
+                ]
+            ],
+            [
+                [
+                    30.961490560000012,
+                    134.95714232000006
                 ]
             ]
         ]
@@ -3304,6 +3592,18 @@
                     50.890039199999975,
                     59.28882959999997
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    69.06899999999996
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    69.06899999999996
+                ]
             ]
         ]
     },
@@ -3359,7 +3659,30 @@
             "I would say that this forest is a rain forest based on the moss growing, the running water, and lots of vegetation. It's hard to tell if this truly is a rain forest, but moss likes lots of water.",
             "It is a boreal forest. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    7.569962399999996,
+                    48.40355519999997
+                ],
+                [
+                    48.624575999999976,
+                    69.06899999999996
+                ]
+            ],
+            [
+                [
+                    16.24502879999999,
+                    34.589755199999985
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    69.06899999999996
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there any trails, structures, or other unnatural features?",
@@ -3678,6 +4001,12 @@
                     48.104,
                     52.136
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    70.0
+                ]
             ]
         ]
     },
@@ -3759,7 +4088,26 @@
             "Yes, this video could supplement a hydrology lesson by depicting the natural flow of water.",
             "This video could be used in a lecture to supplement teaching/learning about hydrology/hydrologic cycle."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    60.91666666666674
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    60.23440000000007
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    22.41733333333336
+                ]
+            ]
+        ]
     },
     {
         "question": "Are these skiiers at an advanced/expert level of skiing?",
@@ -3866,6 +4214,12 @@
                     33.89106666666667,
                     36.373533333333334
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    36.31956666666667
+                ]
             ]
         ]
     },
@@ -3926,6 +4280,12 @@
                 [
                     37.4261888,
                     52.701181866666666
+                ]
+            ],
+            [
+                [
+                    26.326033066666668,
+                    61.34555093333333
                 ]
             ],
             [
@@ -4035,6 +4395,10 @@
             ],
             [
                 [
+                    28.241546666666668,
+                    48.624576000000005
+                ],
+                [
                     51.031246933333335,
                     61.394666666666666
                 ]
@@ -4043,6 +4407,16 @@
                 [
                     12.524512,
                     26.915421866666666
+                ],
+                [
+                    45.28470613333334,
+                    61.394666666666666
+                ]
+            ],
+            [
+                [
+                    26.375148799999998,
+                    42.2886464
                 ]
             ],
             [
@@ -4471,6 +4845,18 @@
                     53.533440000000006,
                     55.714432
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    61.96
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    61.96
+                ]
             ]
         ]
     },
@@ -4532,6 +4918,18 @@
                 [
                     27.999066666666604,
                     34.67823333333325
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    66.79166666666652
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    66.79166666666652
                 ]
             ]
         ]
@@ -4601,7 +4999,26 @@
             "The islands are not inhabited as depicted in this video.",
             "The islands do not appear inhabited."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    66.79166666666652
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    66.79166666666652
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    66.79166666666652
+                ]
+            ]
+        ]
     },
     {
         "question": "What sort of environment is this?",
@@ -4660,6 +5077,12 @@
                 [
                     1.4426999999999968,
                     10.953833333333307
+                ]
+            ],
+            [
+                [
+                    26.022033333333276,
+                    43.38786666666657
                 ]
             ],
             [
@@ -4727,6 +5150,12 @@
                     0.0,
                     11.367622933333337
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    71.40466666666669
+                ]
             ]
         ]
     },
@@ -4787,6 +5216,12 @@
                 [
                     70.54781066666668,
                     71.40466666666669
+                ]
+            ],
+            [
+                [
+                    0.3998661333333335,
+                    70.89055306666668
                 ]
             ],
             [
@@ -4990,6 +5425,10 @@
                     18.52150000000006
                 ],
                 [
+                    20.26470000000007,
+                    43.652633333333476
+                ],
+                [
                     46.84850000000016,
                     61.66570000000021
                 ],
@@ -5000,6 +5439,12 @@
                 [
                     70.38170000000024,
                     87.30526666666695
+                ]
+            ],
+            [
+                [
+                    6.682266666666689,
+                    71.32593333333358
                 ]
             ]
         ]
@@ -5055,7 +5500,20 @@
             "No, there is no human at all.",
             "There are a few human features."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    90.79166666666697
+                ]
+            ],
+            [
+                [
+                    27.455400000000093,
+                    60.06776666666686
+                ]
+            ]
+        ]
     },
     {
         "question": "What human features are there and where are they?",
@@ -5126,6 +5584,12 @@
                     45.97690000000015,
                     61.447800000000214
                 ]
+            ],
+            [
+                [
+                    8.71600000000003,
+                    61.66570000000021
+                ]
             ]
         ]
     },
@@ -5181,6 +5645,12 @@
                 [
                     4.1496,
                     10.26
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    46.876799999999996
                 ]
             ]
         ]
@@ -5254,6 +5724,12 @@
                     45.32639999999999,
                     52.8504
                 ]
+            ],
+            [
+                [
+                    5.6544,
+                    50.75280000000001
+                ]
             ]
         ]
     },
@@ -5304,7 +5780,20 @@
             "It is a mountainous environment.",
             "It is located in a temperate environment. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    57.0
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    57.0
+                ]
+            ]
+        ]
     },
     {
         "question": "Except for the grassland and the river, what other types of features are nearby?",
@@ -5360,6 +5849,12 @@
                 [
                     0.0,
                     9.6672
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    16.188
                 ]
             ],
             [
@@ -5433,6 +5928,24 @@
                     0.0,
                     19.28777517333333
                 ]
+            ],
+            [
+                [
+                    72.20800253333331,
+                    110.0081649333333
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    121.15436666666665
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    121.15436666666665
+                ]
             ]
         ]
     },
@@ -5498,6 +6011,12 @@
                     70.85107362666665,
                     80.05880549333331
                 ]
+            ],
+            [
+                [
+                    0.0,
+                    121.15436666666665
+                ]
             ]
         ]
     },
@@ -5557,12 +6076,24 @@
         "alter_evidences": [
             [
                 [
+                    57.08793757333332,
+                    106.42199568
+                ]
+            ],
+            [
+                [
                     6.300027066666666,
                     28.689354026666663
                 ],
                 [
                     40.514020213333325,
                     47.49251173333333
+                ]
+            ],
+            [
+                [
+                    10.176966799999999,
+                    95.46964093333331
                 ]
             ]
         ]
@@ -5620,6 +6151,18 @@
             "There is a canyon that the man jumps off of, a small creek down below, and some vegetation at the bottom such as trees and some shrubs."
         ],
         "alter_evidences": [
+            [
+                [
+                    1.3582967199999998,
+                    15.06474544
+                ]
+            ],
+            [
+                [
+                    17.081610266666665,
+                    30.829219493333333
+                ]
+            ],
             [
                 [
                     2.1403463466666666,
@@ -5707,6 +6250,12 @@
                 [
                     21.69158701333333,
                     24.531661973333332
+                ]
+            ],
+            [
+                [
+                    0.0,
+                    51.45063333333333
                 ]
             ]
         ]
@@ -6121,7 +6670,14 @@
         "alter_answers": [
             "Yes there is a body of water. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    12.312705114302139,
+                    32.554534464516124
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there vehicles in the water?",
@@ -6245,7 +6801,14 @@
         "alter_answers": [
             "Yes it is moving under a bridge. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    29.91149305254551,
+                    56.53530044629831
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there a vehicle?",
@@ -6369,7 +6932,14 @@
         "alter_answers": [
             "They are performing cleaning and maintenance. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    28.06478341333336,
+                    58.06878410666671
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there water?",
@@ -6780,7 +7350,14 @@
         "alter_answers": [
             "It took about 30 seconds. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.528528,
+                    30.318287999999992
+                ]
+            ]
+        ]
     },
     {
         "question": "How many vehicles are there?",
@@ -6903,7 +7480,14 @@
         "alter_answers": [
             "The vehicles were being loaded on to flatbed rail cars for transport."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    9.613999999999999,
+                    48.7784
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of aircraft is it?",
@@ -7298,7 +7882,14 @@
         "alter_answers": [
             "They are performing an air show. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    11.093696000000003,
+                    52.952384000000016
+                ]
+            ]
+        ]
     },
     {
         "question": "How many planes were there?",
@@ -7351,7 +7942,14 @@
         "alter_answers": [
             "There are 2 planes. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    13.037952000000002,
+                    48.89232000000002
+                ]
+            ]
+        ]
     },
     {
         "question": "Where were the planes flying over?",
@@ -7408,6 +8006,10 @@
                 [
                     10.750592000000001,
                     16.583360000000003
+                ],
+                [
+                    33.45264000000001,
+                    65.24694400000003
                 ]
             ]
         ]
@@ -7548,7 +8150,14 @@
         "alter_answers": [
             "Yes, they perform a flip in tandem. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    12.237376000000005,
+                    48.32048000000001
+                ]
+            ]
+        ]
     },
     {
         "question": "What are the soldiers training for?",
@@ -7742,7 +8351,14 @@
         "alter_answers": [
             "Yes it does move after loading. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    49.01168272,
+                    76.67660000000001
+                ]
+            ]
+        ]
     },
     {
         "question": "Are they training for timed quick target acquisition?",
@@ -7799,7 +8415,14 @@
         "alter_answers": [
             "Yes they are training on multiple targets. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    5.588901957094468,
+                    20.03062461422657
+                ]
+            ]
+        ]
     },
     {
         "question": "What types of guns are there?",
@@ -7863,7 +8486,14 @@
         "alter_answers": [
             "These are belt fed heavy machine guns. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.0191679999999987,
+                    19.896191999999992
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of land is it?",
@@ -7974,7 +8604,14 @@
         "alter_answers": [
             "The roads are mostly mud and water. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.5836230400000001,
+                    33.07197226666668
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of aircraft is it?",
@@ -8374,7 +9011,14 @@
         "alter_answers": [
             "They can blow up IED, Jumps, Air to Ground, and Demo. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    23.219569706666668,
+                    40.57365312
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there aircraft that can have a vertical takeoff and landing off of an Aircraft Carrier that is not a fixed blade device?",
@@ -8438,7 +9082,14 @@
         "alter_answers": [
             "Yes, there is a harrier in the video. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    22.052430400000016,
+                    39.06430528000003
+                ]
+            ]
+        ]
     },
     {
         "question": "What is one way that can help to protect further injury from a broken bone?",
@@ -8645,7 +9296,14 @@
         "alter_answers": [
             "it can be rigged with straps on the top and bottom. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    10.124800000000002,
+                    39.685599999999994
+                ]
+            ]
+        ]
     },
     {
         "question": "Where are they?",
@@ -8756,7 +9414,14 @@
         "alter_answers": [
             "gravel"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    8.142534399999999,
+                    20.5205
+                ]
+            ]
+        ]
     },
     {
         "question": "What are they doing?",
@@ -8820,7 +9485,14 @@
         "alter_answers": [
             "They are doing an obstacle course. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.1888209666666667,
+                    12.497117966666668
+                ]
+            ]
+        ]
     },
     {
         "question": "What branch are they training to join?",
@@ -8884,7 +9556,14 @@
         "alter_answers": [
             "They are trying to join the marines. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    27.168908433333332,
+                    36.24454166666667
+                ]
+            ]
+        ]
     },
     {
         "question": "How many flags were there?",
@@ -9011,7 +9690,14 @@
         "alter_answers": [
             "Unknown"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    10.4144,
+                    24.3984
+                ]
+            ]
+        ]
     },
     {
         "question": "How many types of aircraft were there?",
@@ -9418,7 +10104,14 @@
         "alter_answers": [
             "It is slightly cloudy with thunder"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    43.1456,
+                    60.68320000000001
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of vegetation is around?",
@@ -9482,7 +10175,14 @@
         "alter_answers": [
             "There are some trees seen on the islands. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    6.570133333333334,
+                    25.86666666666667
+                ]
+            ]
+        ]
     },
     {
         "question": "What types of small arms?",
@@ -9664,7 +10364,14 @@
         "alter_answers": [
             "There are not any armored vehicles. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    60.96666666666658
+                ]
+            ]
+        ]
     },
     {
         "question": "Where are they from?",
@@ -10299,7 +11006,14 @@
         "alter_answers": [
             "A glitch in the system triggered suppression foam to flood the area. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    25.061623253333334,
+                    49.4445952
+                ]
+            ]
+        ]
     },
     {
         "question": "What kind of building?",
@@ -10435,7 +11149,14 @@
         "alter_answers": [
             "They are on a ship in the ocean. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    27.260539973333334
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the weather like?",
@@ -10760,7 +11481,14 @@
         "alter_answers": [
             "a vehicle"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    39.47047103999999,
+                    62.295566666666666
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the effective range of the M16?",
@@ -11120,7 +11848,14 @@
         "alter_answers": [
             "on water(sea maybe)"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    60.52720805272372
+                ]
+            ]
+        ]
     },
     {
         "question": "Where was this video taken?",
@@ -11169,7 +11904,14 @@
         "alter_answers": [
             "They are inside a concrete building. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.30800000000000005,
+                    25.476
+                ]
+            ]
+        ]
     },
     {
         "question": "How many drill sergeants are in this video?",
@@ -11368,7 +12110,14 @@
         "alter_answers": [
             "It is never stated what type of helicopter this is "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    64.68965517241378
+                ]
+            ]
+        ]
     },
     {
         "question": "Do the helicopters in the video use ordnance?",
@@ -11487,7 +12236,14 @@
         "alter_answers": [
             "Yes several shots are fired at it. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    62.59199999999999,
+                    93.792
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there a woman in the video?",
@@ -11539,7 +12295,14 @@
         "alter_answers": [
             "Yes there is a woman."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    38.88352,
+                    58.32528000000001
+                ]
+            ]
+        ]
     },
     {
         "question": "How many men can be seen shooting guns?",
@@ -11960,7 +12723,14 @@
         "alter_answers": [
             "It is an aircraft carrier surrounded by water"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.9335200000000006,
+                    27.494560000000003
+                ]
+            ]
+        ]
     },
     {
         "question": "Can gunshots be heard in the video?",
@@ -12300,7 +13070,14 @@
         "alter_answers": [
             "Yes, the missiles are loaded into the vehicle. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    42.326979310344825,
+                    62.172413793103445
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there communication over a radio frequency?",
@@ -12411,7 +13188,14 @@
         "alter_answers": [
             "One solider is seen inside the vehicle. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    34.190583093333345,
+                    53.69331968000001
+                ]
+            ]
+        ]
     },
     {
         "question": "How many uniformed men are outside of the vehicle?",
@@ -12522,7 +13306,14 @@
         "alter_answers": [
             "2"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    23.44204799999999,
+                    61.559999999999974
+                ]
+            ]
+        ]
     },
     {
         "question": "How many men are in the video?",
@@ -12574,7 +13365,14 @@
         "alter_answers": [
             "There are two men in the video, shooter and the loader. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.2804479999999994,
+                    20.73340799999999
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there guns used in the video?",
@@ -12786,7 +13584,14 @@
         "alter_answers": [
             "It appears to be rocky desert like terrain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    3.1494666666666666,
+                    24.032853333333332
+                ]
+            ]
+        ]
     },
     {
         "question": "How many vehicles are in the video?",
@@ -12862,7 +13667,14 @@
         "alter_answers": [
             "There is 1 vehicle."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    4.474443306666668,
+                    20.134994880000004
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the weather like during the video?",
@@ -12938,7 +13750,14 @@
         "alter_answers": [
             "The skies are blue, but there is enough water to indicate it rained recently."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    22.85856906666667
+                ]
+            ]
+        ]
     },
     {
         "question": "Are rockets fired?",
@@ -13062,7 +13881,14 @@
         "alter_answers": [
             "It is fed with a belt of ammo"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.166911999999999,
+                    20.33942399999999
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of aircraft is in the video?",
@@ -13173,7 +13999,14 @@
         "alter_answers": [
             "They are being loaded onto a transport. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    34.5092,
+                    80.0492
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of ordnance is used by the soldiers in the video?",
@@ -13226,7 +14059,14 @@
         "alter_answers": [
             "They load and fire an AA gun. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.528528,
+                    30.798768
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of ammunition is being used in the video?",
@@ -13278,7 +14118,14 @@
         "alter_answers": [
             "Large AA shells are being fired. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    3.3633599999999992,
+                    19.027007999999995
+                ]
+            ]
+        ]
     },
     {
         "question": "Which United States military branch do the workers seen in the video belong to?",
@@ -13543,7 +14390,14 @@
         "alter_answers": [
             "Tanks are being loaded onto trucks. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    29.0444,
+                    126.5
+                ]
+            ]
+        ]
     },
     {
         "question": "Is ordnance fired in the video?",
@@ -13668,7 +14522,14 @@
         "alter_answers": [
             "There are anti-aircraft weapons in the vehicles"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    36.49506666666666,
+                    51.92586666666666
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there a hand holding an EGA?",
@@ -14409,7 +15270,14 @@
         "alter_answers": [
             "Yes there is a submarine. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    23.607370453333335,
+                    59.67283989333334
+                ]
+            ]
+        ]
     },
     {
         "question": "Where was the video taken?",
@@ -14461,7 +15329,14 @@
         "alter_answers": [
             "The video is taken in the ocean, above a submarine. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.32680448,
+                    18.46901056
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there an Mk 19 grenade launcher in the video?",
@@ -14515,6 +15390,10 @@
         ],
         "alter_evidences": [
             [
+                [
+                    0.0,
+                    23.422358960000004
+                ],
                 [
                     26.828294826666674,
                     42.286003760000014
@@ -14572,7 +15451,14 @@
         "alter_answers": [
             "Yes there is one mounted to the deck."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.5763891466666669,
+                    19.335235920000006
+                ]
+            ]
+        ]
     },
     {
         "question": "Does the tanker connect with the receiver in the video?",
@@ -15302,7 +16188,14 @@
         "alter_answers": [
             "Yes it is shown."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    31.744993280000003,
+                    50.34405376000001
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there a body of water?",
@@ -15366,7 +16259,14 @@
         "alter_answers": [
             "Yes there is a body of water."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    31.53222072,
+                    51.66473312000001
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there a source of food?",
@@ -15737,7 +16637,14 @@
         "alter_answers": [
             "There is a large body of water."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    73.13973333333337
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there animals that fly in the body of water?",
@@ -16202,7 +17109,14 @@
         "alter_answers": [
             "There is a small river of water here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    9.674064400000002,
+                    26.459873440000003
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there fish in the water?",
@@ -17082,7 +17996,14 @@
         "alter_answers": [
             "It is sunny and clear out."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    15.308800000000003,
+                    32.62933333333334
+                ]
+            ]
+        ]
     },
     {
         "question": "What is he doing?",
@@ -17657,7 +18578,14 @@
         "alter_answers": [
             "They are digging them out of the sand and putting them in bamboo tubes. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    12.762026666666674,
+                    51.61784000000002
+                ]
+            ]
+        ]
     },
     {
         "question": "How are the men storing the crabs they find?",
@@ -18048,7 +18976,14 @@
         "alter_answers": [
             "yes the man creating spark to set the kindling on fire"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    19.027008000000002,
+                    37.261224
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man cooking and eating?",
@@ -18543,7 +19478,14 @@
         "alter_answers": [
             "The roof was made of bamboo wood"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    29.310561279999988,
+                    47.16135423999998
+                ]
+            ]
+        ]
     },
     {
         "question": "Were there any windows?",
@@ -19749,7 +20691,14 @@
         "alter_answers": [
             "The knife folder is there for safety"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    46.12414473333332,
+                    68.80927386666663
+                ]
+            ]
+        ]
     },
     {
         "question": "What kind of ground is there?",
@@ -20607,7 +21556,7 @@
         "original_question": "Is the man cutting wood?",
         "original_answer": "Yes the man is cutting wood?",
         "question_type": [
-            ""
+            "Motion"
         ],
         "question_base": [
             "scene"
@@ -22265,7 +23214,14 @@
         "alter_answers": [
             "The man found twigs on the falling branches"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    47.275201306666666,
+                    66.63950626666667
+                ]
+            ]
+        ]
     },
     {
         "question": "Are the reeds dry and stiff?",
@@ -22450,7 +23406,14 @@
         "alter_answers": [
             "Yes mixing the two together will make it hold better when dry. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    24.624599999999997,
+                    55.58886666666666
+                ]
+            ]
+        ]
     },
     {
         "question": "Does the man have a fish on the stick?",
@@ -22669,7 +23632,14 @@
         "alter_answers": [
             "Yes, he has the fish on a stick and is cooking it on the fire. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    5.904928000000004,
+                    27.64342400000002
+                ]
+            ]
+        ]
     },
     {
         "question": "Is the man working with wood?",
@@ -22864,7 +23834,14 @@
         "alter_answers": [
             "It is not clear if he taught himself or not. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    3.226666666666669,
+                    71.92533333333337
+                ]
+            ]
+        ]
     },
     {
         "question": "What is in the tube?",
@@ -23093,7 +24070,14 @@
         "alter_answers": [
             "The man is creating a house made out of wood "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    28.4928,
+                    47.75936000000001
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the purpose of this structure?",
@@ -23287,7 +24271,14 @@
         "alter_answers": [
             "People can eat the needles of the tree."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    30.584687466666672,
+                    64.79806666666667
+                ]
+            ]
+        ]
     },
     {
         "question": "Is the man cooking food in the video?",
@@ -23569,7 +24560,14 @@
         "alter_answers": [
             "The man is trying to help grow branches and find moss"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    10.459115333333333,
+                    30.241784906666666
+                ]
+            ]
+        ]
     },
     {
         "question": "What is going on in this video?",
@@ -23818,7 +24816,14 @@
         "alter_answers": [
             "He is cutting meat so that he can cook it"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.5355330000000005,
+                    20.23454766666667
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the human doing with the bamboo?",
@@ -23970,6 +24975,12 @@
             "The man is using his knife and flint stone to create sparks to start a fire  with the wood he has gathered"
         ],
         "alter_evidences": [
+            [
+                [
+                    1.6186837333333344,
+                    23.015659333333346
+                ]
+            ],
             [
                 [
                     22.813323866666682,
@@ -24582,7 +25593,14 @@
         "alter_answers": [
             "bamboo compromises this structure"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    39.01493333333334,
+                    55.25413333333334
+                ]
+            ]
+        ]
     },
     {
         "question": "What is this man eating?",
@@ -24717,7 +25735,14 @@
         "alter_answers": [
             "They are making it into a sheath for the knife. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    14.32384286666666,
+                    41.395220533333315
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the object the man is holding and carving?",
@@ -25097,7 +26122,14 @@
         "alter_answers": [
             "He is stripping all the branches off of it with an axe. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    39.395289266666694,
+                    58.79523650000004
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man doing with the fire?",
@@ -25482,7 +26514,14 @@
         "alter_answers": [
             "He is using dried sticks and leaves. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.58910752,
+                    25.281256
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the purpose of using this vegetation in the video?",
@@ -25559,7 +26598,14 @@
         "alter_answers": [
             "It is being used as a fire starter. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    9.3020928,
+                    41.753712
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man doing?",
@@ -25637,6 +26683,14 @@
         ],
         "alter_evidences": [
             [
+                [
+                    1.01517416,
+                    18.321476506666666
+                ],
+                [
+                    17.596352106666664,
+                    46.06957021333333
+                ],
                 [
                     50.42031661333333,
                     60.42703333333333
@@ -25718,7 +26772,14 @@
         "alter_answers": [
             "He is using it to build a enclosure. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    45.51593713333333,
+                    62.23710826666666
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man using the wood he has cut for?",
@@ -26083,7 +27144,14 @@
         "alter_answers": [
             "They are going to cook the meat in the bamboo. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    3.9411199999999993,
+                    32.350026666666665
+                ]
+            ]
+        ]
     },
     {
         "question": "Which direction is the wind blowing?",
@@ -26208,7 +27276,14 @@
         "alter_answers": [
             "It is not clear why he is piling rocks."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    4.353184000000001,
+                    31.993280000000002
+                ]
+            ]
+        ]
     },
     {
         "question": "What Is the human creating by making a rectangular prism out of sticks?",
@@ -26419,7 +27494,14 @@
         "alter_answers": [
             "They are using an axe and a saw."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    27.768301657542494,
+                    53.45038376050278
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the human creating out of the small stick?",
@@ -26472,7 +27554,14 @@
         "alter_answers": [
             "He is making a stake. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    57.55088426433679,
+                    89.41968642571327
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man doing by the water?",
@@ -26622,7 +27711,14 @@
         "alter_answers": [
             "He is cutting it up in preparation for cooking. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    24.479270132361194,
+                    47.210020969553725
+                ]
+            ]
+        ]
     },
     {
         "question": "Is the man going to be staying in the woods for the evening?",
@@ -27274,7 +28370,14 @@
         "alter_answers": [
             "He is setting up a trap. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    11.960480000000004,
+                    41.760320000000014
+                ]
+            ]
+        ]
     },
     {
         "question": "Does the human have shelter?",
@@ -27460,7 +28563,14 @@
         "alter_answers": [
             "Yes, he is setting a trap. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    15.541866666666673,
+                    43.11178666666668
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man working to achieve?",
@@ -27524,7 +28634,14 @@
         "alter_answers": [
             "He is working to build a hut or shack. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    5.041946666666666,
+                    39.128346666666665
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the human creating out of wood?",
@@ -27703,6 +28820,10 @@
                 [
                     10.225542002788435,
                     12.640619762240979
+                ],
+                [
+                    23.482777363187513,
+                    47.83909349043232
                 ]
             ]
         ]
@@ -27818,7 +28939,14 @@
         "alter_answers": [
             "He used a snare trap. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.6903680000000019,
+                    21.320448000000027
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the human creating.",
@@ -27966,7 +29094,14 @@
         "alter_answers": [
             "The human does have shelter and fire"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    21.359743999999996,
+                    37.847103999999995
+                ]
+            ]
+        ]
     },
     {
         "question": "Does the human have fire?",
@@ -28198,7 +29333,14 @@
         "alter_answers": [
             "They are cooking food over a fire. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    7.179946666666667,
+                    32.053333333333335
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the purpose of this rectangular molt?",
@@ -28408,7 +29550,14 @@
         "alter_answers": [
             "the purpose of pouring molten metal into the sand is to create a box frame"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    30.703999999999997,
+                    51.436800000000005
+                ]
+            ]
+        ]
     },
     {
         "question": "Why is the man bending the stick down?",
@@ -28796,7 +29945,14 @@
         "alter_answers": [
             "He is using it to wrap the poles together. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.682432,
+                    36.090880000000006
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man using to cut the vegetation?",
@@ -28956,7 +30112,14 @@
         "alter_answers": [
             "He is making the frame for a roof on a shack. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    6.51264,
+                    34.24563199999999
+                ]
+            ]
+        ]
     },
     {
         "question": "How can this vegetation be recognized as being a wild edible?",
@@ -29009,7 +30172,14 @@
         "alter_answers": [
             "The vegetation can be recognized as a wild edible based on the location and the two white lines "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    38.20494010666667,
+                    60.96202112
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the man doing at the beginning of the video?",
@@ -29061,7 +30231,14 @@
         "alter_answers": [
             "He is roping together a basket out of sticks. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    7.863562373333334,
+                    39.15567656
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there a fire?",
@@ -29185,7 +30362,14 @@
         "alter_answers": [
             "the human is cooking and eating the animals that they caught"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    22.70400000000001,
+                    41.36000000000002
+                ]
+            ]
+        ]
     },
     {
         "question": "Has the human caught any animals?",
@@ -29465,7 +30649,14 @@
         "alter_answers": [
             "He is building an oven or kiln."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    31.851819999999996,
+                    48.641926666666656
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the woven surface used for?",
@@ -30484,7 +31675,14 @@
         "alter_answers": [
             "The people are having trouble driving because of the hail"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    9.137333333333336,
+                    25.61533333333334
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather is happening?",
@@ -30743,7 +31941,14 @@
         "alter_answers": [
             "It is a hurricane with bad winds. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    8.461253333333334,
+                    30.665306666666666
+                ]
+            ]
+        ]
     },
     {
         "question": "Where was the storm occurring?",
@@ -30984,7 +32189,14 @@
         "alter_answers": [
             "There is a tornado happening here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    20.649786666666632,
+                    38.14029333333327
+                ]
+            ]
+        ]
     },
     {
         "question": "What weather event is happening?",
@@ -31158,7 +32370,14 @@
         "alter_answers": [
             "There is heavy rain and storm occurring "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    33.964096,
+                    51.051295999999994
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather is happening?",
@@ -31210,7 +32429,14 @@
         "alter_answers": [
             "The weather event happening here is heavy rain and heavy flooding"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    16.72925333333331,
+                    34.38519999999995
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there vehicles affected?",
@@ -31488,7 +32714,14 @@
         "alter_answers": [
             "There is a hurricane happening"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    17.375904,
+                    34.119072
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there structures being affected?",
@@ -31862,7 +33095,14 @@
         "alter_answers": [
             "They are damaged and water logged. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    9.229533333333332,
+                    22.7146
+                ]
+            ]
+        ]
     },
     {
         "question": "What kind of storm was it?",
@@ -31973,7 +33213,14 @@
         "alter_answers": [
             "There was heavy wind and rain that happened here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    16.04544274666667,
+                    37.356572586666665
+                ]
+            ]
+        ]
     },
     {
         "question": "What was the weather causing?",
@@ -32025,7 +33272,14 @@
         "alter_answers": [
             "The weather is causing a hurricane. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.185756906666667,
+                    18.628610000000002
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather is happening?",
@@ -32137,7 +33391,14 @@
         "alter_answers": [
             "The man in the hat is observing and commenting on a hurricane."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    83.41667828754706
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the person in the hat at?",
@@ -32189,7 +33450,14 @@
         "alter_answers": [
             "They are in the middle of a hurricane."
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    3.0697337609817317,
+                    32.699337888718446
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather is happening?",
@@ -32432,7 +33700,14 @@
         "alter_answers": [
             "The glass door was letting water seep in, but once it broke the water flooded in. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    37.3140768,
+                    55.1783232
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather is it?",
@@ -32484,7 +33759,14 @@
         "alter_answers": [
             "There is a heavy storm with a tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.0043504000000003,
+                    18.132379200000003
+                ]
+            ]
+        ]
     },
     {
         "question": "What happened after the tornado touched the ground",
@@ -32658,7 +33940,14 @@
         "alter_answers": [
             "There is some sort of high winds from the storm"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    32.85053232574058,
+                    50.153878755179406
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather phenomenon is occurring?",
@@ -32832,7 +34121,14 @@
         "alter_answers": [
             "There are tornadoes happening. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    13.969663999999998,
+                    39.589119999999994
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of storm is happening?",
@@ -32945,7 +34241,14 @@
         "alter_answers": [
             "Yes you can see the city near the ocean. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.7984000000000002,
+                    16.09568
+                ]
+            ]
+        ]
     },
     {
         "question": "Are there any funnel clouds or tornadoes?",
@@ -32998,7 +34301,14 @@
         "alter_answers": [
             "There is some minor rotation on the ground. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    21.177229958417666,
+                    38.377272827083715
+                ]
+            ]
+        ]
     },
     {
         "question": "Are people being affected?",
@@ -33052,7 +34362,14 @@
         "alter_answers": [
             "Yes, people are being effected, and houses are being destroyed. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    8.422144,
+                    36.41190399999999
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there any hail?",
@@ -33217,7 +34534,14 @@
         "alter_answers": [
             "The water is rising it's tide"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    13.607893333333335,
+                    23.43914666666667
+                ]
+            ]
+        ]
     },
     {
         "question": "Where did the destruction take place?",
@@ -33657,7 +34981,18 @@
         "alter_answers": [
             "In each of the cities the weather has caused structural damages to the roads, buildings, and cars .Excessive flooding in some areas and high winds with large hail in other areas making it unsafe for the residents who live there "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.0,
+                    38.46096000000006
+                ],
+                [
+                    39.78720000000006,
+                    61.301760000000094
+                ]
+            ]
+        ]
     },
     {
         "question": "What are the people in the video doing?",
@@ -33769,7 +35104,14 @@
         "alter_answers": [
             "The man is in his car, while a stay dog is loose in the rain and is getting soaked. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.502586666666667,
+                    32.38333333333334
+                ]
+            ]
+        ]
     },
     {
         "question": "Where are the people tracking the tornado?",
@@ -33881,7 +35223,14 @@
         "alter_answers": [
             "There is one tornado here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    17.270106186666666,
+                    50.14331989333333
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather are the people going through?",
@@ -33945,7 +35294,14 @@
         "alter_answers": [
             "There is a storm happening, with a tornado in the back. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    14.442761666666664,
+                    33.24461139999999
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of weather event is occuring?",
@@ -34010,7 +35366,14 @@
         "alter_answers": [
             "There is a hurricane occuring"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    30.932560000000006,
+                    47.357386666666685
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of event is happening?",
@@ -34062,7 +35425,14 @@
         "alter_answers": [
             "There has been an eruption and ash is falling. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    0.5341600000000002,
+                    16.996000000000006
+                ]
+            ]
+        ]
     },
     {
         "question": "What did the storm cause?",
@@ -34115,7 +35485,14 @@
         "alter_answers": [
             "The storm caused heavy flooding"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    7.3712,
+                    11.7776
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there ash?",
@@ -34361,7 +35738,14 @@
         "alter_answers": [
             "There is a strong storm, with a lot of lightning and flooding. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.9311999999999998,
+                    7.9288
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the storm occurring?",
@@ -34473,7 +35857,14 @@
         "alter_answers": [
             "The river is running through the city. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.7913362133333333,
+                    15.438489733333334
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the flooding happening?",
@@ -34525,7 +35916,14 @@
         "alter_answers": [
             "The flood is happening in an unknown city. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    10.105567999999998,
+                    46.321216
+                ]
+            ]
+        ]
     },
     {
         "question": "What caused the flooding?",
@@ -34708,7 +36106,14 @@
         "alter_answers": [
             "The street are flooded, with cars and buildings being ruined. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    21.371584,
+                    39.793696
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the storm causing?",
@@ -35017,7 +36422,14 @@
         "alter_answers": [
             "Yes there is rain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    8.348339999999997,
+                    38.33557727999998
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the smoke coming from?",
@@ -35324,7 +36736,14 @@
         "alter_answers": [
             "Yes there are tornadoes. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.3501878400000003,
+                    22.05971768
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there any precipitation?",
@@ -35377,7 +36796,14 @@
         "alter_answers": [
             "Yes, there is rain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    12.5521396,
+                    35.626711119999996
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the storm?",
@@ -35501,7 +36927,14 @@
         "alter_answers": [
             "The fires are taking place in the forest"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    21.673727999999993,
+                    38.112255999999995
+                ]
+            ]
+        ]
     },
     {
         "question": "What types of natural disasters occurred?",
@@ -36013,7 +37446,14 @@
         "alter_answers": [
             "There is a single tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    7.562756279854215,
+                    43.44383329649587
+                ]
+            ]
+        ]
     },
     {
         "question": "Does the funnel cloud ever develop into a full tornado?",
@@ -36068,7 +37508,14 @@
         "alter_answers": [
             "Yes it becomes a full tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    3.3705672000000004,
+                    26.246220000000008
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the tornado?",
@@ -36267,7 +37714,14 @@
         "alter_answers": [
             "The funnel cloud is above the area in the sky. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    5.801796000000002,
+                    28.014386400000006
+                ]
+            ]
+        ]
     },
     {
         "question": "What weather phenomenon occurred?",
@@ -36463,7 +37917,14 @@
         "alter_answers": [
             "The flood is happening in Switzerland, Ukraine, Italy, and Canada. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    4.331440000000001,
+                    56.258933333333346
+                ]
+            ]
+        ]
     },
     {
         "question": "Is the precipitation causing flooding?",
@@ -36528,7 +37989,14 @@
         "alter_answers": [
             "Yes there is major flooding. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.8918933333333339,
+                    19.61594666666667
+                ]
+            ]
+        ]
     },
     {
         "question": "What was the person doing when they crashed into the median?",
@@ -36640,7 +38108,14 @@
         "alter_answers": [
             "There is heavy rain happening"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    14.153018879999987,
+                    32.181269119999975
+                ]
+            ]
+        ]
     },
     {
         "question": "What caused the person to crash into the median?",
@@ -36752,7 +38227,14 @@
         "alter_answers": [
             "Yes, they are shaping in the wind. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    4.7457009600000015,
+                    21.841659840000005
+                ]
+            ]
+        ]
     },
     {
         "question": "Is there any rain?",
@@ -36804,7 +38286,14 @@
         "alter_answers": [
             "Yes there is a fair amount of rain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.2870848000000006,
+                    13.522388880000003
+                ]
+            ]
+        ]
     },
     {
         "question": "What are the clouds doing?",
@@ -36856,7 +38345,14 @@
         "alter_answers": [
             "They are moving rapidly in the wind, and are starting to form a funnel. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    7.032785760000002,
+                    21.470008560000004
+                ]
+            ]
+        ]
     },
     {
         "question": "What are the people doing?",
@@ -36968,7 +38464,14 @@
         "alter_answers": [
             "They are towing it out of a flooded street. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.79104,
+                    13.52544
+                ]
+            ]
+        ]
     },
     {
         "question": "Where are the people at?",
@@ -37151,7 +38654,14 @@
         "alter_answers": [
             "Yes it continues to reach to the ground. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    38.51848,
+                    59.604878666666664
+                ]
+            ]
+        ]
     },
     {
         "question": "Where is the weather phenomenon occuring?",
@@ -37375,7 +38885,14 @@
         "alter_answers": [
             "No there are still people. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.4304000000000001,
+                    10.944
+                ]
+            ]
+        ]
     },
     {
         "question": "Where did the flooding happen?",
@@ -37485,7 +39002,14 @@
         "alter_answers": [
             "There does seem to be rain and hail"
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    23.246663440000003,
+                    40.27447424
+                ]
+            ]
+        ]
     },
     {
         "question": "What natural phenomenon appeared with the precipitation?",
@@ -38713,7 +40237,14 @@
         "alter_answers": [
             "He is removing baby chicks. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.132213333333333,
+                    20.13370666666666
+                ]
+            ]
+        ]
     },
     {
         "question": "What type of equipment is shown through the aerial video?",
@@ -38825,7 +40356,14 @@
         "alter_answers": [
             "They can check the weeds and see if they are coming up. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    10.5000896,
+                    38.762830773333334
+                ]
+            ]
+        ]
     },
     {
         "question": "What kind of equipment are they advertising?",
@@ -39055,7 +40593,14 @@
         "alter_answers": [
             "Yes it can insulate the plants. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    50.88416666666666,
+                    88.75533333333333
+                ]
+            ]
+        ]
     },
     {
         "question": "What color is the tractor being loaded on the trailer?",
@@ -39107,7 +40652,14 @@
         "alter_answers": [
             "The tractor is red. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    27.29710984,
+                    46.14126850666667
+                ]
+            ]
+        ]
     },
     {
         "question": "What is the tractor being used for in the video?",
@@ -39626,7 +41178,14 @@
         "alter_answers": [
             "They are restricted so that they dont wander away from the light and food. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    27.284693333333333,
+                    45.267786666666666
+                ]
+            ]
+        ]
     },
     {
         "question": "What material are they installing on the pavilion in the video.",
@@ -39678,7 +41237,14 @@
         "alter_answers": [
             "They are installing wood to the roof of the pavilion. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    24.038233333333345,
+                    40.531266666666696
+                ]
+            ]
+        ]
     },
     {
         "question": "What are they installing a tank on in the video?",
@@ -39730,7 +41296,14 @@
         "alter_answers": [
             "They are installing a tank to increase the durability. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    5.478239999999997,
+                    28.506239999999984
+                ]
+            ]
+        ]
     },
     {
         "question": "What reason might a farmer have to use contractors on the farm?",
@@ -40330,7 +41903,14 @@
         "alter_answers": [
             "They have imaging software called field view that shows the felid condition. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.333119999999999,
+                    21.606719999999992
+                ]
+            ]
+        ]
     },
     {
         "question": "Why do they wait to harvest later in the season?",
@@ -40813,7 +42393,14 @@
         "alter_answers": [
             "It drives the post down into the ground. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.7489472000000013,
+                    17.197980800000014
+                ]
+            ]
+        ]
     },
     {
         "question": "When could they start combining in the video?",
@@ -41159,7 +42746,14 @@
         "alter_answers": [
             "It may not be working due to a lack of moisture. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    9.012576906666666,
+                    42.43786213333333
+                ]
+            ]
+        ]
     },
     {
         "question": "What calve has grown and become friendly and docile?",
@@ -41283,7 +42877,14 @@
         "alter_answers": [
             "They did not need to as there is another video that shows how to do it. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    2.5879453599999995,
+                    22.987044079999993
+                ]
+            ]
+        ]
     },
     {
         "question": "What weather condition is the farmer anticipating in the video?",
@@ -41633,7 +43234,14 @@
         "alter_answers": [
             "Field View allows them to view the field for damage, such as from a storm. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [
+            [
+                [
+                    1.6737599999999995,
+                    32.25791999999999
+                ]
+            ]
+        ]
     },
     {
         "question": "Is this batch of grain good?",

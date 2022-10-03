@@ -1,0 +1,427 @@
+[
+    {
+        "question": "How long did it take to fire the first shot?",
+        "answer": "thirty-two seconds",
+        "assignment_id": "3E7TUJ2EGCLQ8GDEOK6EBON5DD69D3",
+        "objective": "I wish to learn about the equipment",
+        "confidence": "high",
+        "original_question": "How long did it take to fire?",
+        "original_answer": "thirty-two seconds",
+        "question_type": [
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    0.913,
+                    6.054
+                ]
+            },
+            {
+                "1": [
+                    28.204,
+                    33.009
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A2KD4I8N1E3F0B",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:00.913",
+                    "00:06.054"
+                ]
+            },
+            {
+                "1": [
+                    "00:28.204",
+                    "00:33.009"
+                ]
+            }
+        ],
+        "time_spent": 970.0,
+        "video_link": "https://www.dropbox.com/s/k41dzrdoivmq2ya/Military-Archive_11-clip-0.mp4?raw=1",
+        "video_id": "Military-Archive_11-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.059999999999995"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06,
+        "alter_answers": [
+            "It took about 30 seconds. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What is BEAST training in a nutshell?",
+        "answer": "A week away from normal Basic Training to learn weapon usage.",
+        "assignment_id": "3ZY8KE4ISJ2IUWUMW7HU35J1NK8VQ4",
+        "objective": "To give a brief description of US Air Force Beast training.",
+        "confidence": "high",
+        "original_question": "What is BEAST training in a nutshell?",
+        "original_answer": "A week away from normal Basic Training to learn weapon usage.",
+        "question_type": [
+            "Existence",
+            "Location",
+            "Motion",
+            "Spatial relationship",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    17.489,
+                    60.06
+                ]
+            }
+        ],
+        "domain": "Military",
+        "worker_id": "A110G7DCN8782Y",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:17.489",
+                    "01:00.060"
+                ]
+            }
+        ],
+        "time_spent": 3433.0,
+        "video_link": "https://www.dropbox.com/s/rfj7b3r57v5nv8n/Sandboxx_8-clip-0.mp4?raw=1",
+        "video_id": "Sandboxx_8-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:00.060"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "60.06"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.06,
+        "alter_answers": [
+            "The BEAST TRAINING IS basic expeditionary airman skill training"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    19.45944,
+                    29.885856
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "When can people collect the Douglas Fur Tree needles?",
+        "answer": "People can collect them during spring time.",
+        "assignment_id": "3BQU611VFPJE5Q0XC41CPS4FN5E990",
+        "objective": "What is the man explaining in the video.",
+        "confidence": "very_high",
+        "original_question": "When can you collect the Douglas Fur Tree needles?",
+        "original_answer": "You can collect them during spring time.",
+        "question_type": [
+            "Time"
+        ],
+        "question_base": [
+            "audio"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    32.347,
+                    35.146
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A35LVQB4S4W7ZB",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:32.347",
+                    "00:35.146"
+                ]
+            }
+        ],
+        "time_spent": 3958.0,
+        "video_link": "https://www.dropbox.com/s/fvdm7d0vn4ye60e/BC-Bushcraft_3-clip-0.mp4?raw=1",
+        "video_id": "BC-Bushcraft_3-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:04.798"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "64.79806666666667"
+            },
+            "split-method": "auto"
+        },
+        "duration": 64.79806666666667,
+        "alter_answers": [
+            "you can collect the Douglas Fur Tree needles on spring time"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    31.56961808,
+                    41.937308746666666
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "Is the man going to be staying in the woods for the evening?",
+        "answer": "Judging by the man mentioning the time and how dark it was and then saying he would only be staying up a few more hours so he should start the fire now, I believe he will be sleeping in the wilderness for the night.",
+        "assignment_id": "3WSELTNVR31BUOJG2GKTCNGBNSVAT8",
+        "objective": "I want to know if this man is building a fire because he is staying out in the wilderness for the night.",
+        "confidence": "moderate",
+        "original_question": "Is the man going to be staying in the woods for the evening?",
+        "original_answer": "Judging by the man mentioning the time and how dark it was and then saying he would only be staying up a few more hours so he should start the fire now, I believe he will be sleeping in the wilderness for the night.",
+        "question_type": [
+            "Location",
+            "Time"
+        ],
+        "question_base": [
+            "audio",
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    51.619,
+                    65.756
+                ]
+            }
+        ],
+        "domain": "Human Survival",
+        "worker_id": "A3VTSFIMHEWR0L",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:51.619",
+                    "01:05.756"
+                ]
+            }
+        ],
+        "time_spent": 2466.0,
+        "video_link": "https://www.dropbox.com/s/4996ikus3saxnr5/Joe-Robinet_3-clip-4.mp4?raw=1",
+        "video_id": "Joe-Robinet_3-clip-4",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:05:38.471",
+                "end": "00:06:45.405"
+            },
+            "seconds": {
+                "start": "338.4714666666667",
+                "end": "405.40500000000003"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.93353333333334,
+        "alter_answers": [
+            "The man is going to be staying in the woods for the evening"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    20.56198144,
+                    34.323515893333344
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What happened before the roofs were ripped off?",
+        "answer": "A surge in wind.",
+        "assignment_id": "30ZX6P7VF8USBIS7D7DA4ZA4DWNJ24",
+        "objective": "Buildings",
+        "confidence": "very_high",
+        "original_question": "What happened before the roofs were ripped off?",
+        "original_answer": "A surge in wind. ",
+        "question_type": [
+            "Motion",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    49.743,
+                    54.075
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:49.743",
+                    "00:54.075"
+                ]
+            }
+        ],
+        "time_spent": 1822.0,
+        "video_link": "https://www.dropbox.com/s/o6gd06iay43miwq/Disaster-Compilations_6-clip-2.mp4?raw=1",
+        "video_id": "Disaster-Compilations_6-clip-2",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:02:01.160",
+                "end": "00:03:02.000"
+            },
+            "seconds": {
+                "start": "121.16",
+                "end": "182.0"
+            },
+            "split-method": "auto"
+        },
+        "duration": 60.84,
+        "alter_answers": [
+            "There were high winds and a storm happening while people were inside trying to stay safe"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    10.172448,
+                    19.176768
+                ],
+                [
+                    34.605792,
+                    40.203072
+                ]
+            ]
+        ]
+    },
+    {
+        "question": "What happened before the hotel flooded?",
+        "answer": "There was a storm surge.",
+        "assignment_id": "3VJ40NV2QIM0WSDHCZPBDI0GC3ATOP",
+        "objective": "People",
+        "confidence": "very_high",
+        "original_question": "What happened before the hotel flooded?",
+        "original_answer": "There was a storm surge. ",
+        "question_type": [
+            "Motion",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    46.14,
+                    54.068
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:46.140",
+                    "00:54.068"
+                ]
+            }
+        ],
+        "time_spent": 1857.0,
+        "video_link": "https://www.dropbox.com/s/jho0knentfkgpwo/Ultimate-Chase_0-clip-0.mp4?raw=1",
+        "video_id": "Ultimate-Chase_0-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:01:06.066"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "66.066"
+            },
+            "split-method": "auto"
+        },
+        "duration": 66.066,
+        "alter_answers": [
+            "The glass door was letting water seep in, but once it broke the water flooded in. "
+        ],
+        "alter_evidences": []
+    },
+    {
+        "question": "What happened after the tornado touched the ground",
+        "answer": "It dissipated.",
+        "assignment_id": "34S6N1K2ZVI2LYJPZDSU7ITY64AHLM",
+        "objective": "Weather",
+        "confidence": "very_high",
+        "original_question": "What happened after the tornado touched the ground",
+        "original_answer": "It dissipated. ",
+        "question_type": [
+            "Motion",
+            "Time"
+        ],
+        "question_base": [
+            "scene"
+        ],
+        "evidences": [
+            {
+                "0": [
+                    27.502,
+                    32.862
+                ]
+            }
+        ],
+        "domain": "Natural Disaster",
+        "worker_id": "A3CYKU3BMX9HWQ",
+        "evidences_in_min": [
+            {
+                "0": [
+                    "00:27.502",
+                    "00:32.862"
+                ]
+            }
+        ],
+        "time_spent": 1440.0,
+        "video_link": "https://www.dropbox.com/s/gvysolrv1x71vyj/Skip-Talbot_1-clip-0.mp4?raw=1",
+        "video_id": "Skip-Talbot_1-clip-0",
+        "time_in_original_video": {
+            "frames": {
+                "start": "00:00:00.000",
+                "end": "00:00:58.266"
+            },
+            "seconds": {
+                "start": "0.0",
+                "end": "58.266000000000005"
+            },
+            "split-method": "auto"
+        },
+        "duration": 58.26600000000001,
+        "alter_answers": [
+            "The tornado disappeared after it touched the ground"
+        ],
+        "alter_evidences": [
+            [
+                [
+                    18.5052816,
+                    32.862024
+                ]
+            ]
+        ]
+    }
+]

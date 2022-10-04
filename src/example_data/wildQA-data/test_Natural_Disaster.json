@@ -56,7 +56,8 @@
                     36.39923639988167
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=E_O0K8OsFAU"
     },
     {
         "question": "Are there any structure or natural features being affected?",
@@ -115,7 +116,8 @@
                     49.57279724809466
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=E_O0K8OsFAU"
     },
     {
         "question": "What type of weather is happening?",
@@ -174,7 +176,8 @@
                     51.68133333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=9rQHj46SFjs"
     },
     {
         "question": "Are there any buildings?",
@@ -233,7 +236,8 @@
                     34.63583333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=9rQHj46SFjs"
     },
     {
         "question": "Are the buildings being affected by the weather?",
@@ -292,7 +296,8 @@
                     35.958999999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=9rQHj46SFjs"
     },
     {
         "question": "What type of weather is happening?",
@@ -355,7 +360,8 @@
                     51.53866666666668
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1IfZolXW0jc"
     },
     {
         "question": "How are the people being affected by the weather?",
@@ -407,7 +413,8 @@
         "alter_answers": [
             "The people are having trouble driving because of the hail"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1IfZolXW0jc"
     },
     {
         "question": "What type of weather is happening?",
@@ -478,7 +485,8 @@
                     33.26976
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wnAabVFdd8k"
     },
     {
         "question": "Where is the flooding happening?",
@@ -541,7 +549,8 @@
                     35.868959999999994
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wnAabVFdd8k"
     },
     {
         "question": "How are the cities being affected?",
@@ -613,7 +622,8 @@
                     19.407359999999994
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wnAabVFdd8k"
     },
     {
         "question": "What type of storm was it?",
@@ -666,7 +676,8 @@
         "alter_answers": [
             "It is a hurricane with bad winds. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=dE9mL5JdhJ8"
     },
     {
         "question": "Where was the storm occurring?",
@@ -725,7 +736,8 @@
                     33.25218666666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=dE9mL5JdhJ8"
     },
     {
         "question": "What type of damage did the storm cause?",
@@ -796,7 +808,8 @@
                     23.12024
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=dE9mL5JdhJ8"
     },
     {
         "question": "What type of weather was occurring?",
@@ -855,7 +868,8 @@
                     52.608879999999914
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=99oNulXsdwU"
     },
     {
         "question": "Where was the weather happening?",
@@ -907,7 +921,8 @@
         "alter_answers": [
             "There is a tornado happening here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=99oNulXsdwU"
     },
     {
         "question": "What weather event is happening?",
@@ -970,7 +985,8 @@
                     30.020895999999993
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WT9W1nLDnz0"
     },
     {
         "question": "What is the weather event causing?",
@@ -1029,7 +1045,8 @@
                     16.929471999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WT9W1nLDnz0"
     },
     {
         "question": "Where is the weather event happening?",
@@ -1081,7 +1098,8 @@
         "alter_answers": [
             "There is heavy rain and storm occurring "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WT9W1nLDnz0"
     },
     {
         "question": "What type of weather is happening?",
@@ -1133,7 +1151,8 @@
         "alter_answers": [
             "The weather event happening here is heavy rain and heavy flooding"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0qodJuSaJzw"
     },
     {
         "question": "Are there vehicles affected?",
@@ -1192,7 +1211,8 @@
                     22.435733333333303
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0qodJuSaJzw"
     },
     {
         "question": "How are the vehicles being affected?",
@@ -1283,7 +1303,8 @@
                     36.77509333333328
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0qodJuSaJzw"
     },
     {
         "question": "What types of vehicles are being affected?",
@@ -1359,7 +1380,8 @@
                     28.288533333333294
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0qodJuSaJzw"
     },
     {
         "question": "What type of weather is happening?",
@@ -1411,7 +1433,8 @@
         "alter_answers": [
             "There is a hurricane happening"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rrHVEUCz-V4"
     },
     {
         "question": "Are there structures being affected?",
@@ -1470,7 +1493,8 @@
                     46.238400000000006
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rrHVEUCz-V4"
     },
     {
         "question": "How are the structures being affected?",
@@ -1541,7 +1565,8 @@
                     47.893248
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rrHVEUCz-V4"
     },
     {
         "question": "What happened before the roofs were ripped off?",
@@ -1605,7 +1630,8 @@
                     40.203072
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rrHVEUCz-V4"
     },
     {
         "question": "Were there structures affected by the storm?",
@@ -1669,7 +1695,8 @@
                     28.600499999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8MbSA0PimfY"
     },
     {
         "question": "What structures were affected?",
@@ -1733,7 +1760,8 @@
                     29.236066666666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8MbSA0PimfY"
     },
     {
         "question": "How were the structures affected?",
@@ -1785,7 +1813,8 @@
         "alter_answers": [
             "They are damaged and water logged. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8MbSA0PimfY"
     },
     {
         "question": "What kind of storm was it?",
@@ -1844,7 +1873,8 @@
                     27.46753333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8MbSA0PimfY"
     },
     {
         "question": "What was the weather phenomenon?",
@@ -1896,7 +1926,8 @@
         "alter_answers": [
             "There was heavy wind and rain that happened here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nRVqaDmmJyY"
     },
     {
         "question": "What was the weather causing?",
@@ -1948,7 +1979,8 @@
         "alter_answers": [
             "The weather is causing a hurricane. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nRVqaDmmJyY"
     },
     {
         "question": "What type of weather is happening?",
@@ -2007,7 +2039,8 @@
                     33.29993797238878
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1LKwFTN9Vlk"
     },
     {
         "question": "What is the person wearing the hat doing?",
@@ -2060,7 +2093,8 @@
         "alter_answers": [
             "The man in the hat is observing and commenting on a hurricane."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1LKwFTN9Vlk"
     },
     {
         "question": "Where is the person in the hat at?",
@@ -2112,7 +2146,8 @@
         "alter_answers": [
             "They are in the middle of a hurricane."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1LKwFTN9Vlk"
     },
     {
         "question": "What type of weather is happening?",
@@ -2183,7 +2218,8 @@
                     30.07685333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=q1vdZDA-4b8"
     },
     {
         "question": "What type of weather is happening?",
@@ -2242,7 +2278,8 @@
                     5.4966912
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=gd8WiiXNxho"
     },
     {
         "question": "Where are the people at?",
@@ -2302,7 +2339,8 @@
                     13.054641600000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=gd8WiiXNxho"
     },
     {
         "question": "What happened before the hotel flooded?",
@@ -2355,7 +2393,8 @@
         "alter_answers": [
             "The glass door was letting water seep in, but once it broke the water flooded in. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=gd8WiiXNxho"
     },
     {
         "question": "What type of weather is it?",
@@ -2407,7 +2446,8 @@
         "alter_answers": [
             "There is a heavy storm with a tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VGc0t9bBjuU"
     },
     {
         "question": "What happened after the tornado touched the ground",
@@ -2467,7 +2507,8 @@
                     32.862024
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VGc0t9bBjuU"
     },
     {
         "question": "How are people being affected?",
@@ -2528,7 +2569,8 @@
                     46.548736
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oXkOAapW64U"
     },
     {
         "question": "Are there high winds as a result of the storm?",
@@ -2581,7 +2623,8 @@
         "alter_answers": [
             "There is some sort of high winds from the storm"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cmx8GfDjetA"
     },
     {
         "question": "What type of weather phenomenon is occurring?",
@@ -2644,7 +2687,8 @@
                     23.882399999999993
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=7wVrWlczReE"
     },
     {
         "question": "What body of water is it?",
@@ -2703,7 +2747,8 @@
                     11.959360000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=bfnFD21YIAk"
     },
     {
         "question": "What type of weather phenomenon is happening?",
@@ -2755,7 +2800,8 @@
         "alter_answers": [
             "There are tornadoes happening. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oXkOAapW64U"
     },
     {
         "question": "What type of storm is happening?",
@@ -2815,7 +2861,8 @@
                     30.99106823183073
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cmx8GfDjetA"
     },
     {
         "question": "Is there a city near the ocean?",
@@ -2868,7 +2915,8 @@
         "alter_answers": [
             "Yes you can see the city near the ocean. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=bfnFD21YIAk"
     },
     {
         "question": "Are there any funnel clouds or tornadoes?",
@@ -2921,7 +2969,8 @@
         "alter_answers": [
             "There is some minor rotation on the ground. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cmx8GfDjetA"
     },
     {
         "question": "Are people being affected?",
@@ -2975,7 +3024,8 @@
         "alter_answers": [
             "Yes, people are being effected, and houses are being destroyed. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oXkOAapW64U"
     },
     {
         "question": "Is there any hail?",
@@ -3027,7 +3077,8 @@
         },
         "duration": 55.79999999999998,
         "alter_answers": [],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=7wVrWlczReE"
     },
     {
         "question": "Is there a thunder storm?",
@@ -3088,7 +3139,8 @@
                     10.847519999999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=7wVrWlczReE"
     },
     {
         "question": "What is happening to the water?",
@@ -3140,7 +3192,8 @@
         "alter_answers": [
             "The water is rising it's tide"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=bfnFD21YIAk"
     },
     {
         "question": "Where did the destruction take place?",
@@ -3199,7 +3252,8 @@
                     30.783872
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=FE32okeNlU4"
     },
     {
         "question": "What were the effects of the flooding?",
@@ -3271,7 +3325,8 @@
                     19.409664
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=f3XYkIfdevw"
     },
     {
         "question": "Where did the flooding occur?",
@@ -3342,7 +3397,8 @@
                     28.431743999999995
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=f3XYkIfdevw"
     },
     {
         "question": "What type of destruction occurred?",
@@ -3420,7 +3476,8 @@
                     36.832768
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=FE32okeNlU4"
     },
     {
         "question": "What type of weather were the cities affected by?",
@@ -3503,7 +3560,8 @@
                     20.04096000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=93RUXeh2nkg"
     },
     {
         "question": "What were the affects of the weather on the cities?",
@@ -3580,7 +3638,8 @@
         "alter_answers": [
             "In each of the cities the weather has caused structural damages to the roads, buildings, and cars .Excessive flooding in some areas and high winds with large hail in other areas making it unsafe for the residents who live there "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=93RUXeh2nkg"
     },
     {
         "question": "What are the people in the video doing?",
@@ -3639,7 +3698,8 @@
                     61.345550933333335
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=F40hxr6iLHM"
     },
     {
         "question": "How are the people and the animals affected by the hurricane?",
@@ -3692,7 +3752,8 @@
         "alter_answers": [
             "The man is in his car, while a stay dog is loose in the rain and is getting soaked. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wsaoH5WaT6s"
     },
     {
         "question": "Where are the people tracking the tornado?",
@@ -3751,7 +3812,8 @@
                     51.943678453333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=F40hxr6iLHM"
     },
     {
         "question": "How many tornadoes are there?",
@@ -3804,7 +3866,8 @@
         "alter_answers": [
             "There is one tornado here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=F40hxr6iLHM"
     },
     {
         "question": "What type of weather are the people going through?",
@@ -3868,7 +3931,8 @@
         "alter_answers": [
             "There is a storm happening, with a tornado in the back. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=G6IdeNMcegU"
     },
     {
         "question": "What type of weather event is occuring?",
@@ -3933,7 +3997,8 @@
         "alter_answers": [
             "There is a hurricane occuring"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wsaoH5WaT6s"
     },
     {
         "question": "What type of event is happening?",
@@ -3985,7 +4050,8 @@
         "alter_answers": [
             "There has been an eruption and ash is falling. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GIXjmv2ubPs"
     },
     {
         "question": "What did the storm cause?",
@@ -4038,7 +4104,8 @@
         "alter_answers": [
             "The storm caused heavy flooding"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=G5vMxvtWt6o"
     },
     {
         "question": "Is there ash?",
@@ -4097,7 +4164,8 @@
                     56.76664000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GIXjmv2ubPs"
     },
     {
         "question": "Is there lava?",
@@ -4156,7 +4224,8 @@
                     39.91632000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GIXjmv2ubPs"
     },
     {
         "question": "What are the people doing?",
@@ -4231,7 +4300,8 @@
                     27.24216000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GIXjmv2ubPs"
     },
     {
         "question": "What type of weather happened?",
@@ -4284,7 +4354,8 @@
         "alter_answers": [
             "There is a strong storm, with a lot of lightning and flooding. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=G5vMxvtWt6o"
     },
     {
         "question": "Where is the storm occurring?",
@@ -4343,7 +4414,8 @@
                     43.6453017
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4ep3o_y8_Oo"
     },
     {
         "question": "Where is the river?",
@@ -4396,7 +4468,8 @@
         "alter_answers": [
             "The river is running through the city. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=RtmCxjeikOA"
     },
     {
         "question": "Where is the flooding happening?",
@@ -4448,7 +4521,8 @@
         "alter_answers": [
             "The flood is happening in an unknown city. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cIwcAptwBOE"
     },
     {
         "question": "What caused the flooding?",
@@ -4508,7 +4582,8 @@
                     14.802093973333335
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=RtmCxjeikOA"
     },
     {
         "question": "Why is the flooding happening?",
@@ -4567,7 +4642,8 @@
                     13.683616
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cIwcAptwBOE"
     },
     {
         "question": "How are people being affected by the flooding?",
@@ -4631,7 +4707,8 @@
         "alter_answers": [
             "The street are flooded, with cars and buildings being ruined. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cIwcAptwBOE"
     },
     {
         "question": "What is the storm causing?",
@@ -4703,7 +4780,8 @@
                     26.504077600000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4ep3o_y8_Oo"
     },
     {
         "question": "What is flooded?",
@@ -4763,7 +4841,8 @@
                     16.99412381333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=RtmCxjeikOA"
     },
     {
         "question": "Where did the tornado happen?",
@@ -4823,7 +4902,8 @@
                     51.610800000000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0BaswO7xtQg"
     },
     {
         "question": "Are there any funnel clouds?",
@@ -4887,7 +4967,8 @@
                     47.003756800000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Rt1pcq06KHk"
     },
     {
         "question": "Is there rain?",
@@ -4940,7 +5021,8 @@
         "alter_answers": [
             "Yes there is rain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qNwA3ipryXY"
     },
     {
         "question": "Where is the smoke coming from?",
@@ -5013,7 +5095,8 @@
                     59.62892799999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5gJAdEXTTk8"
     },
     {
         "question": "Were the forests on fire?",
@@ -5073,7 +5156,8 @@
                     29.028000000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0BaswO7xtQg"
     },
     {
         "question": "Were there people caught in the flooding?",
@@ -5134,7 +5218,8 @@
                     15.448800000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0BaswO7xtQg"
     },
     {
         "question": "Is there any lightning?",
@@ -5194,7 +5279,8 @@
                     50.62433375999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qNwA3ipryXY"
     },
     {
         "question": "Are there any tornadoes?",
@@ -5247,7 +5333,8 @@
         "alter_answers": [
             "Yes there are tornadoes. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Rt1pcq06KHk"
     },
     {
         "question": "Is there any precipitation?",
@@ -5300,7 +5387,8 @@
         "alter_answers": [
             "Yes, there is rain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Rt1pcq06KHk"
     },
     {
         "question": "Where is the storm?",
@@ -5360,7 +5448,8 @@
                     55.16583071999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qNwA3ipryXY"
     },
     {
         "question": "Where are the fires taking place?",
@@ -5424,7 +5513,8 @@
         "alter_answers": [
             "The fires are taking place in the forest"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5gJAdEXTTk8"
     },
     {
         "question": "What types of natural disasters occurred?",
@@ -5508,7 +5598,8 @@
                     25.2396
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0BaswO7xtQg"
     },
     {
         "question": "What are the people doing?",
@@ -5567,7 +5658,8 @@
                     44.53623142580815
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qeBD5MQrUrU"
     },
     {
         "question": "Are there people nearby?",
@@ -5628,7 +5720,8 @@
                     100.83675039805618
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qeBD5MQrUrU"
     },
     {
         "question": "Where did the effects happen?",
@@ -5700,7 +5793,8 @@
                     26.011652333333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ADLYUhScSP8"
     },
     {
         "question": "Where is the tornado?",
@@ -5759,7 +5853,8 @@
                     46.86133725756176
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=m9APnX_xJxk"
     },
     {
         "question": "What types of precipitation are occurring?",
@@ -5819,7 +5914,8 @@
                     28.328613333333344
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ehrT5NCPjPo"
     },
     {
         "question": "What type of weather event is occurring?",
@@ -5883,7 +5979,8 @@
                     55.53147600000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUHexWFFZDs"
     },
     {
         "question": "How many tornadoes are there?",
@@ -5936,7 +6033,8 @@
         "alter_answers": [
             "There is a single tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qeBD5MQrUrU"
     },
     {
         "question": "Does the funnel cloud ever develop into a full tornado?",
@@ -5991,7 +6089,8 @@
         "alter_answers": [
             "Yes it becomes a full tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUHexWFFZDs"
     },
     {
         "question": "Where is the tornado?",
@@ -6051,7 +6150,8 @@
                     37.3936282726125
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qeBD5MQrUrU"
     },
     {
         "question": "What effects did the weather have?",
@@ -6136,7 +6236,8 @@
                     44.86698883333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ADLYUhScSP8"
     },
     {
         "question": "Where is the funnel cloud?",
@@ -6190,7 +6291,8 @@
         "alter_answers": [
             "The funnel cloud is above the area in the sky. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUHexWFFZDs"
     },
     {
         "question": "What weather phenomenon occurred?",
@@ -6263,7 +6365,8 @@
                     27.629602000000006
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ADLYUhScSP8"
     },
     {
         "question": "What type of weather is happening?",
@@ -6322,7 +6425,8 @@
                     23.81144872567331
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=m9APnX_xJxk"
     },
     {
         "question": "Where is the flooding happening?",
@@ -6386,7 +6490,8 @@
         "alter_answers": [
             "The flood is happening in Switzerland, Ukraine, Italy, and Canada. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ehrT5NCPjPo"
     },
     {
         "question": "Is the precipitation causing flooding?",
@@ -6451,7 +6556,8 @@
         "alter_answers": [
             "Yes there is major flooding. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ehrT5NCPjPo"
     },
     {
         "question": "What was the person doing when they crashed into the median?",
@@ -6511,7 +6617,8 @@
                     12.355810133333323
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=g2du7HCohzs"
     },
     {
         "question": "What type of weather is happening?",
@@ -6563,7 +6670,8 @@
         "alter_answers": [
             "There is heavy rain happening"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=g2du7HCohzs"
     },
     {
         "question": "What caused the person to crash into the median?",
@@ -6623,7 +6731,8 @@
                     18.365226879999984
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=g2du7HCohzs"
     },
     {
         "question": "Do the clouds change shape?",
@@ -6675,7 +6784,8 @@
         "alter_answers": [
             "Yes, they are shaping in the wind. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D6xm32R5k0o"
     },
     {
         "question": "Is there any rain?",
@@ -6727,7 +6837,8 @@
         "alter_answers": [
             "Yes there is a fair amount of rain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D6xm32R5k0o"
     },
     {
         "question": "What are the clouds doing?",
@@ -6779,7 +6890,8 @@
         "alter_answers": [
             "They are moving rapidly in the wind, and are starting to form a funnel. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D6xm32R5k0o"
     },
     {
         "question": "What are the people doing?",
@@ -6838,7 +6950,8 @@
                     8.6464
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1O1JHCFlumA"
     },
     {
         "question": "Where are the people towing the car out of?",
@@ -6891,7 +7004,8 @@
         "alter_answers": [
             "They are towing it out of a flooded street. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1O1JHCFlumA"
     },
     {
         "question": "Where are the people at?",
@@ -6950,7 +7064,8 @@
                     19.05296
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1O1JHCFlumA"
     },
     {
         "question": "What type of weather is happening?",
@@ -7022,7 +7137,8 @@
                     53.790000000000006
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0s2TGaeJVUM"
     },
     {
         "question": "Does the funnel cloud grow?",
@@ -7074,7 +7190,8 @@
         "alter_answers": [
             "Yes it continues to reach to the ground. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tub1a0qPjok"
     },
     {
         "question": "Where is the weather phenomenon occuring?",
@@ -7133,7 +7250,8 @@
                     27.901206666666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tub1a0qPjok"
     },
     {
         "question": "What types of weather phenomenon is happening?",
@@ -7193,7 +7311,8 @@
                     55.407352
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tub1a0qPjok"
     },
     {
         "question": "Where are the people at?",
@@ -7249,7 +7368,8 @@
                     9.638399999999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ty4ahgMc4tg"
     },
     {
         "question": "Were all the people in the city evacuated?",
@@ -7298,7 +7418,8 @@
         "alter_answers": [
             "No there are still people. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ty4ahgMc4tg"
     },
     {
         "question": "Where did the flooding happen?",
@@ -7354,7 +7475,8 @@
                     7.055999999999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ty4ahgMc4tg"
     },
     {
         "question": "Did the lightning appear with the rain or the hail?",
@@ -7408,7 +7530,8 @@
         "alter_answers": [
             "There does seem to be rain and hail"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=jM3688IEU9c"
     },
     {
         "question": "What natural phenomenon appeared with the precipitation?",
@@ -7469,7 +7592,8 @@
                     36.81955610666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=jM3688IEU9c"
     },
     {
         "question": "What types of precipitation appear?",
@@ -7541,7 +7665,8 @@
                     31.291687093333337
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=jM3688IEU9c"
     },
     {
         "question": "What sort of weather is happening?",
@@ -7605,7 +7730,8 @@
                     52.18846666666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=W4EhfkcH5t0"
     },
     {
         "question": "Is there just one tornado?",
@@ -7682,7 +7808,8 @@
                     46.738099999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=W4EhfkcH5t0"
     },
     {
         "question": "Is there rain?",
@@ -7741,7 +7868,8 @@
                     48.985896959999955
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=3LTxlQAHTZ4"
     },
     {
         "question": "Is there any large debris?",
@@ -7800,7 +7928,8 @@
                     48.15562751999995
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=3LTxlQAHTZ4"
     },
     {
         "question": "Where is the tornado?",
@@ -7860,7 +7989,8 @@
                     16.968631679999987
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=3LTxlQAHTZ4"
     },
     {
         "question": "Are there cars submerged?",
@@ -7921,7 +8051,8 @@
                     28.72202666666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pa2RyjZnvhY"
     },
     {
         "question": "Are there people in the city?",
@@ -7981,7 +8112,8 @@
                     39.23919999999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pa2RyjZnvhY"
     },
     {
         "question": "Where has the flooding taken place?",
@@ -8040,6 +8172,7 @@
                     24.878186666666664
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pa2RyjZnvhY"
     }
 ]

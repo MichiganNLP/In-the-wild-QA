@@ -61,7 +61,8 @@
         "alter_answers": [
             "It took about 30 seconds. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nrsPQje_Wjo"
     },
     {
         "question": "What is BEAST training in a nutshell?",
@@ -125,7 +126,8 @@
                     29.885856
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0iIESnjbGLg"
     },
     {
         "question": "When can people collect the Douglas Fur Tree needles?",
@@ -184,7 +186,8 @@
                     41.937308746666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5-VNrUKvdZc&pp=sAQA"
     },
     {
         "question": "Is the man going to be staying in the woods for the evening?",
@@ -245,7 +248,8 @@
                     34.323515893333344
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cV0DXKQFsk8&pp=sAQA"
     },
     {
         "question": "What happened before the roofs were ripped off?",
@@ -309,7 +313,8 @@
                     40.203072
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rrHVEUCz-V4"
     },
     {
         "question": "What happened before the hotel flooded?",
@@ -362,7 +367,8 @@
         "alter_answers": [
             "The glass door was letting water seep in, but once it broke the water flooded in. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=gd8WiiXNxho"
     },
     {
         "question": "What happened after the tornado touched the ground",
@@ -422,6 +428,7 @@
                     32.862024
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VGc0t9bBjuU"
     }
 ]

@@ -64,7 +64,8 @@
                     85.73783885333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=t4tRNBlX2P4&pp=sAQA"
     },
     {
         "question": "Are there people in the video?",
@@ -147,7 +148,8 @@
                     63.43837499999995
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Eo3srgRXW-0&pp=sAQA"
     },
     {
         "question": "Are there any structures nearby?",
@@ -216,7 +218,8 @@
                     63.43837499999995
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Eo3srgRXW-0&pp=sAQA"
     },
     {
         "question": "Are there cars in the video?",
@@ -269,7 +272,8 @@
             "Yes, some vehicles are driving down the winding road.",
             "There are cars in the video."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=AsLme0Y3yO8&pp=sAQA"
     },
     {
         "question": "Are there any towns?",
@@ -342,7 +346,8 @@
                     45.1943135104469
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=XkTWEp5hEZM&pp=sAQA"
     },
     {
         "question": "Is the vegetation sparse or dense across all terrain?",
@@ -444,7 +449,8 @@
                     26.395200000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4eiCKQkXbfU&pp=sAQA"
     },
     {
         "question": "How many people are there?",
@@ -525,7 +531,8 @@
                     61.3
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=_ZDK7BFY_eQ&pp=sAQA"
     },
     {
         "question": "Is there an area where more than 5 people are there?",
@@ -606,7 +613,8 @@
                     4.868944080000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=xvmPsxDVip4&pp=sAQA"
     },
     {
         "question": "How many people are there to operate it?",
@@ -677,7 +685,8 @@
                     22.198175999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nrsPQje_Wjo"
     },
     {
         "question": "How many vehicles are there?",
@@ -736,7 +745,8 @@
                     26.4132
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fYZcWC1O9F0"
     },
     {
         "question": "How many planes were there?",
@@ -789,7 +799,8 @@
         "alter_answers": [
             "There are 2 planes. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vc-rJD-WELk"
     },
     {
         "question": "How many people are there?",
@@ -860,7 +871,8 @@
                     5.094656892713329
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=uDTfCkqvo2M"
     },
     {
         "question": "How many planes are there?",
@@ -916,7 +928,8 @@
                     21.6864
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=9bxB4WQn5wU"
     },
     {
         "question": "How many helicopters are in this video?",
@@ -975,7 +988,8 @@
                     3.673956202703179
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=beeKX-DiLeU"
     },
     {
         "question": "How many drill sergeants are in this video?",
@@ -1038,7 +1052,8 @@
                     31.460000000000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=b0VNMnRdl5c"
     },
     {
         "question": "How many men can be seen shooting guns?",
@@ -1098,7 +1113,8 @@
                     22.183680000000013
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cQVj2nbUs6c"
     },
     {
         "question": "How many people can be seen inside the vehicle?",
@@ -1150,7 +1166,8 @@
         "alter_answers": [
             "One solider is seen inside the vehicle. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "How many uniformed men are outside of the vehicle?",
@@ -1209,7 +1226,8 @@
                     36.281898986666675
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "How many men are shooting a gun?",
@@ -1261,7 +1279,8 @@
         "alter_answers": [
             "2"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=u1FLYarJW2I"
     },
     {
         "question": "How many vehicles are in the video?",
@@ -1337,7 +1356,8 @@
         "alter_answers": [
             "There is 1 vehicle."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "How many paratroopers are in the video?",
@@ -1396,7 +1416,8 @@
                     6.257758874946324
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ry9MUR_BjNw"
     },
     {
         "question": "How many pilots are in the video?",
@@ -1455,7 +1476,8 @@
                     10.067306666666665
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ny74pZ8gxHc"
     },
     {
         "question": "How many different animals are detected?",
@@ -1540,7 +1562,8 @@
                     17.612047786666675
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUBntLjklHM&pp=sAQA"
     },
     {
         "question": "How many windows were there?",
@@ -1600,7 +1623,8 @@
                     17.07946239999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rg-wCA21sDQ&pp=sAQA"
     },
     {
         "question": "What kind of fish did the man catch?",
@@ -1661,7 +1685,8 @@
                     22.129697329478308
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=80f876LESSM&pp=sAQA"
     },
     {
         "question": "How many tornadoes are there?",
@@ -1714,7 +1739,8 @@
         "alter_answers": [
             "There is one tornado here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=F40hxr6iLHM"
     },
     {
         "question": "How many tornadoes are there?",
@@ -1767,7 +1793,8 @@
         "alter_answers": [
             "There is a single tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qeBD5MQrUrU"
     },
     {
         "question": "Is there just one tornado?",
@@ -1844,7 +1871,8 @@
                     46.738099999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=W4EhfkcH5t0"
     },
     {
         "question": "How many seeds is planted in each row of the depicted field?",
@@ -1903,7 +1931,8 @@
                     47.2403932
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=1Ovuawy2OYI"
     },
     {
         "question": "What are the benefits of straight-cutting canola?",
@@ -1962,7 +1991,8 @@
                     52.82226282666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ZlHjOR-74m0"
     },
     {
         "question": "How many dogs are in the video?",
@@ -2021,7 +2051,8 @@
                     65.16286154443492
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ItMKHdQRkIk"
     },
     {
         "question": "What kind of equipment is used in the video to irrigate the crop?",
@@ -2081,7 +2112,8 @@
                     131.59994848
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5n1OOhTOvmU"
     },
     {
         "question": "How many machines are harvesting the farm field in the video?",
@@ -2140,7 +2172,8 @@
                     42.15568000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6atf1tlNmkk"
     },
     {
         "question": "How many cylinders does the engine of the tractor in the video have?",
@@ -2199,6 +2232,7 @@
                     18.57856
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fQHq-e-s7-c"
     }
 ]

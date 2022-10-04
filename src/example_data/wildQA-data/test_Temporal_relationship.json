@@ -75,7 +75,8 @@
                     54.83771626666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=x4A95BcZZw4"
     },
     {
         "question": "What is the man using to start a flame?",
@@ -173,7 +174,8 @@
                     25.04211042666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=G4rsMYX47nM&pp=sAQA"
     },
     {
         "question": "Does combining the clay and reeds make the result hold its form?",
@@ -239,7 +241,8 @@
         "alter_answers": [
             "Yes mixing the two together will make it hold better when dry. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D59v74k5flU&pp=sAQA"
     },
     {
         "question": "What is the human doing to the coconut?",
@@ -336,7 +339,8 @@
                     12.640619762240979
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=R_tdLFshVq8&pp=sAQA"
     },
     {
         "question": "Does the funnel cloud ever develop into a full tornado?",
@@ -391,7 +395,8 @@
         "alter_answers": [
             "Yes it becomes a full tornado. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUHexWFFZDs"
     },
     {
         "question": "What was the person doing when they crashed into the median?",
@@ -451,7 +456,8 @@
                     12.355810133333323
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=g2du7HCohzs"
     },
     {
         "question": "Did the lightning appear with the rain or the hail?",
@@ -505,7 +511,8 @@
         "alter_answers": [
             "There does seem to be rain and hail"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=jM3688IEU9c"
     },
     {
         "question": "Is snow beneficial for plants during a frost?",
@@ -557,7 +564,8 @@
         "alter_answers": [
             "Yes it can insulate the plants. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=KR-f3yY3vy4"
     },
     {
         "question": "What crop is the farmer planting in January?",
@@ -612,7 +620,8 @@
                     68.656
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MTnJ5_m_xY0"
     },
     {
         "question": "What was the temperature mentioned by the farmer in the video?",
@@ -671,7 +680,8 @@
                     39.83713066666669
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=QE10KQiq7RY"
     },
     {
         "question": "Is irrigation a replacement for natural rainfall?",
@@ -730,7 +740,8 @@
                     65.28084229333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5n1OOhTOvmU"
     },
     {
         "question": "Why do they wait to harvest later in the season?",
@@ -789,7 +800,8 @@
                     38.75386666666668
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=AOuLtp0Ztu8"
     },
     {
         "question": "What season is the farmer working in the video?",
@@ -861,7 +873,8 @@
                     18.105333333333324
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=9x5u3KrkOPI"
     },
     {
         "question": "When could they start combining in the video?",
@@ -920,7 +933,8 @@
                     100.97161741333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=UK56-zrR8TM"
     },
     {
         "question": "Why might the herbicide not be working to prevent the growth of weeds?",
@@ -974,7 +988,8 @@
         "alter_answers": [
             "It may not be working due to a lack of moisture. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ETRwFB7w3-k"
     },
     {
         "question": "What weather condition is the farmer anticipating in the video?",
@@ -1034,6 +1049,7 @@
                     47.67541445333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6TdHWglFzUs"
     }
 ]

@@ -61,7 +61,8 @@
         "alter_answers": [
             "Yes there is a body of water."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=xBl_HE72Ys4&pp=sAQA"
     },
     {
         "question": "Is there a source of food?",
@@ -132,7 +133,8 @@
                     25.57090536
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=xBl_HE72Ys4&pp=sAQA"
     },
     {
         "question": "Does the person have access to food?",
@@ -203,7 +205,8 @@
                     13.469040000000009
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BdJuk7f2VHE&pp=sAQA"
     },
     {
         "question": "Does the Person have shelter?",
@@ -262,7 +265,8 @@
                     35.41858666666669
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BdJuk7f2VHE&pp=sAQA"
     },
     {
         "question": "Does he have a fire?",
@@ -321,7 +325,8 @@
                     40.10013333333336
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BdJuk7f2VHE&pp=sAQA"
     },
     {
         "question": "What type of environment is he in?",
@@ -380,7 +385,8 @@
                     34.574373333333355
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BdJuk7f2VHE&pp=sAQA"
     },
     {
         "question": "Is there a body of water?",
@@ -432,7 +438,8 @@
         "alter_answers": [
             "There is a large body of water."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUBntLjklHM&pp=sAQA"
     },
     {
         "question": "Are there animals that fly in the body of water?",
@@ -491,7 +498,8 @@
                     17.612047786666675
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUBntLjklHM&pp=sAQA"
     },
     {
         "question": "Are there any dolphins under water?",
@@ -576,7 +584,8 @@
                     26.505839360000014
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUBntLjklHM&pp=sAQA"
     },
     {
         "question": "Is the man working with wood.",
@@ -636,7 +645,8 @@
                     27.972878266666687
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=i3mLV4ANyXg&pp=sAQA"
     },
     {
         "question": "Is the man gathering wood?",
@@ -712,7 +722,8 @@
                     38.59549026666669
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=i3mLV4ANyXg&pp=sAQA"
     },
     {
         "question": "Is the man creating sparks?",
@@ -772,7 +783,8 @@
                     42.79395120000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=i3mLV4ANyXg&pp=sAQA"
     },
     {
         "question": "Is the man creating a fire?",
@@ -832,7 +844,8 @@
                     59.84071426666671
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=i3mLV4ANyXg&pp=sAQA"
     },
     {
         "question": "What type of body of water is it?",
@@ -897,7 +910,8 @@
         "alter_answers": [
             "There is a small river of water here"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=xBl_HE72Ys4&pp=sAQA"
     },
     {
         "question": "Are there fish in the water?",
@@ -956,7 +970,8 @@
                     33.98995600000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=xBl_HE72Ys4&pp=sAQA"
     },
     {
         "question": "Where is the house built at?",
@@ -1016,7 +1031,8 @@
                     34.53600000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BdJuk7f2VHE&pp=sAQA"
     },
     {
         "question": "Is there a body of water nearby?",
@@ -1076,7 +1092,8 @@
                     38.68032000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BdJuk7f2VHE&pp=sAQA"
     },
     {
         "question": "How many different animals are detected?",
@@ -1161,7 +1178,8 @@
                     17.612047786666675
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUBntLjklHM&pp=sAQA"
     },
     {
         "question": "What type of animals are there?",
@@ -1233,7 +1251,8 @@
                     14.335387733333341
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUBntLjklHM&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -1308,7 +1327,8 @@
                     49.167518400000034
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=i3mLV4ANyXg&pp=sAQA"
     },
     {
         "question": "What is the man wearing?",
@@ -1367,7 +1387,8 @@
                     13.202389200000008
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=i3mLV4ANyXg&pp=sAQA"
     },
     {
         "question": "What kind of campfire is there?",
@@ -1427,7 +1448,8 @@
                     57.94962426614776
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0xKPzcQeqlo&pp=sAQA"
     },
     {
         "question": "What kind of structure is used for sleeping?",
@@ -1486,7 +1508,8 @@
                     29.81618598811777
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0xKPzcQeqlo&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -1569,7 +1592,8 @@
                     24.791700266666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=DUm2VOqW7vY&pp=sAQA"
     },
     {
         "question": "What is the man using as tools?",
@@ -1640,7 +1664,8 @@
                     23.0922692
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=DUm2VOqW7vY&pp=sAQA"
     },
     {
         "question": "Where is this?",
@@ -1712,7 +1737,8 @@
                     47.69280000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=krIOajjLQiQ&pp=sAQA"
     },
     {
         "question": "What type of weather is there?",
@@ -1777,7 +1803,8 @@
         "alter_answers": [
             "It is sunny and clear out."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=krIOajjLQiQ&pp=sAQA"
     },
     {
         "question": "What is he doing?",
@@ -1848,7 +1875,8 @@
                     18.233173333333326
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VeIrlzocrjg&pp=sAQA"
     },
     {
         "question": "What is he using to dig into the ground?",
@@ -1907,7 +1935,8 @@
                     3.9141866666666654
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VeIrlzocrjg&pp=sAQA"
     },
     {
         "question": "Where is the man getting the seeds from?",
@@ -1978,7 +2007,8 @@
                     18.084533333333326
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VeIrlzocrjg&pp=sAQA"
     },
     {
         "question": "What type of shelter is there?",
@@ -2037,7 +2067,8 @@
                     51.25753966666668
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zR3jlITIYzY&pp=sAQA"
     },
     {
         "question": "What is being used for heat?",
@@ -2109,7 +2140,8 @@
                     26.64795466666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zR3jlITIYzY&pp=sAQA"
     },
     {
         "question": "What are the walls made out of?",
@@ -2168,7 +2200,8 @@
                     27.37173333333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=n23yHY9tpfw&pp=sAQA"
     },
     {
         "question": "How is the foundation supported?",
@@ -2240,7 +2273,8 @@
                     32.0188
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=n23yHY9tpfw&pp=sAQA"
     },
     {
         "question": "What are they doing?",
@@ -2299,7 +2333,8 @@
                     39.995280000000015
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=yN-wFCP291I&pp=sAQA"
     },
     {
         "question": "How are the men catching the crabs?",
@@ -2352,7 +2387,8 @@
         "alter_answers": [
             "They are digging them out of the sand and putting them in bamboo tubes. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=yN-wFCP291I&pp=sAQA"
     },
     {
         "question": "How are the men storing the crabs they find?",
@@ -2424,7 +2460,8 @@
                     39.65344000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=yN-wFCP291I&pp=sAQA"
     },
     {
         "question": "Is there an oven with fire in it?",
@@ -2483,7 +2520,8 @@
                     27.062982613333332
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=jwOSuLt2PmQ&pp=sAQA"
     },
     {
         "question": "Are they heating something in the Oven?",
@@ -2555,7 +2593,8 @@
                     54.36673909333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=jwOSuLt2PmQ&pp=sAQA"
     },
     {
         "question": "Is there water coming through the roof of the hut?",
@@ -2614,7 +2653,8 @@
                     11.618940666666665
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vAuO3bHxSpc&pp=sAQA"
     },
     {
         "question": "Is the man gathering kindling?",
@@ -2689,7 +2729,8 @@
                     23.2023792
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ZrPOS-O9bXc&pp=sAQA"
     },
     {
         "question": "Is the man creating spark to set the kindling on fire?",
@@ -2743,7 +2784,8 @@
         "alter_answers": [
             "yes the man creating spark to set the kindling on fire"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ZrPOS-O9bXc&pp=sAQA"
     },
     {
         "question": "What is the man cooking and eating?",
@@ -2830,7 +2872,8 @@
                     21.22197410666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Y8YCESV7se4&pp=sAQA"
     },
     {
         "question": "What is the man gethering?",
@@ -2914,7 +2957,8 @@
                     27.313019066666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Y8YCESV7se4&pp=sAQA"
     },
     {
         "question": "What are they using as silverware",
@@ -2985,7 +3029,8 @@
                     28.78389333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=X-gThfZPbHE&pp=sAQA"
     },
     {
         "question": "What are they using to cook the food",
@@ -3056,7 +3101,8 @@
                     18.2704
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=X-gThfZPbHE&pp=sAQA"
     },
     {
         "question": "Where do they put the food to cool down?",
@@ -3127,7 +3173,8 @@
                     20.514133333333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=X-gThfZPbHE&pp=sAQA"
     },
     {
         "question": "What were the walls made out of?",
@@ -3186,7 +3233,8 @@
                     44.57188735999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rg-wCA21sDQ&pp=sAQA"
     },
     {
         "question": "What was the roof made out of?",
@@ -3238,7 +3286,8 @@
         "alter_answers": [
             "The roof was made of bamboo wood"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rg-wCA21sDQ&pp=sAQA"
     },
     {
         "question": "Were there any windows?",
@@ -3297,7 +3346,8 @@
                     64.40610175999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rg-wCA21sDQ&pp=sAQA"
     },
     {
         "question": "How many windows were there?",
@@ -3357,7 +3407,8 @@
                     17.07946239999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rg-wCA21sDQ&pp=sAQA"
     },
     {
         "question": "What is he doing?",
@@ -3428,7 +3479,8 @@
                     36.51827199999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ku3OWHWEM-s&pp=sAQA"
     },
     {
         "question": "How is he surviving?",
@@ -3499,7 +3551,8 @@
                     38.634559999999986
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ku3OWHWEM-s&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -3570,7 +3623,8 @@
                     18.9696
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WghEQ0LTL1Y&pp=sAQA"
     },
     {
         "question": "How does he clean up his cast?",
@@ -3641,7 +3695,8 @@
                     61.5904
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WghEQ0LTL1Y&pp=sAQA"
     },
     {
         "question": "What is he doing?",
@@ -3700,7 +3755,8 @@
                     35.277141900000025
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=CCL6U9EmNPo&pp=sAQA"
     },
     {
         "question": "What is the man using for his task?",
@@ -3759,7 +3815,8 @@
                     41.13185743333335
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=CCL6U9EmNPo&pp=sAQA"
     },
     {
         "question": "What kind of shelter is there?",
@@ -3818,7 +3875,8 @@
                     58.86719999999994
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NUyDwdRkceQ&pp=sAQA"
     },
     {
         "question": "Are there tools around the camp?",
@@ -3905,7 +3963,8 @@
                     47.388095999999955
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NUyDwdRkceQ&pp=sAQA"
     },
     {
         "question": "What type of terrain is this?",
@@ -3977,7 +4036,8 @@
                     39.39675739999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=JgQ-07VgJuY&pp=sAQA"
     },
     {
         "question": "What kind of structures are there?",
@@ -4037,7 +4097,8 @@
                     27.96493699999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=JgQ-07VgJuY&pp=sAQA"
     },
     {
         "question": "How many types of fish were caught?",
@@ -4097,7 +4158,8 @@
                     17.321269267764503
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=80f876LESSM&pp=sAQA"
     },
     {
         "question": "What was the color of the perch?",
@@ -4156,7 +4218,8 @@
                     21.965773645556244
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=80f876LESSM&pp=sAQA"
     },
     {
         "question": "What type of ground is there?",
@@ -4215,7 +4278,8 @@
                     19.534391641694686
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4p-qiFdj0kg&pp=sAQA"
     },
     {
         "question": "Is there a body of water around?",
@@ -4274,7 +4338,8 @@
                     28.061308628148712
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4p-qiFdj0kg&pp=sAQA"
     },
     {
         "question": "Is the area forested?",
@@ -4333,7 +4398,8 @@
                     38.5003221509591
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4p-qiFdj0kg&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -4392,7 +4458,8 @@
                     57.50097686666665
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oQwIdfBmE2Q&pp=sAQA"
     },
     {
         "question": "What is the knife holder for?",
@@ -4444,7 +4511,8 @@
         "alter_answers": [
             "The knife folder is there for safety"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oQwIdfBmE2Q&pp=sAQA"
     },
     {
         "question": "What kind of ground is there?",
@@ -4515,7 +4583,8 @@
                     5.087078684804296
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=R_tdLFshVq8&pp=sAQA"
     },
     {
         "question": "What kind of body of water is there?",
@@ -4575,7 +4644,8 @@
                     8.838156906932717
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=R_tdLFshVq8&pp=sAQA"
     },
     {
         "question": "What kind of structures are there?",
@@ -4634,7 +4704,8 @@
                     32.62924206919927
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=R_tdLFshVq8&pp=sAQA"
     },
     {
         "question": "What color was the bird?",
@@ -4693,7 +4764,8 @@
                     18.04876800000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GMGv4Y6aypk&pp=sAQA"
     },
     {
         "question": "What did the man do with the bird?",
@@ -4752,7 +4824,8 @@
                     58.07232000000007
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GMGv4Y6aypk&pp=sAQA"
     },
     {
         "question": "What is he doing?",
@@ -4811,7 +4884,8 @@
                     44.86482
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=PlK2bokUuqQ&pp=sAQA"
     },
     {
         "question": "What is the man wearing?",
@@ -4882,7 +4956,8 @@
                     36.108072
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=PlK2bokUuqQ&pp=sAQA"
     },
     {
         "question": "What type of terrain is it?",
@@ -4942,7 +5017,8 @@
                     22.98501333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NdTcmK9YlRE&pp=sAQA"
     },
     {
         "question": "Are there any structures around?",
@@ -5001,7 +5077,8 @@
                     22.330000000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NdTcmK9YlRE&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -5076,7 +5153,8 @@
                     73.72728
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Dey5VZ9oLkk&pp=sAQA"
     },
     {
         "question": "What tools is the man using?",
@@ -5148,7 +5226,8 @@
                     24.036479999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Dey5VZ9oLkk&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -5219,7 +5298,8 @@
                     47.65046953333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wweJCtf464k&pp=sAQA"
     },
     {
         "question": "What does the man sleep on?",
@@ -5291,7 +5371,8 @@
                     19.4377183
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wweJCtf464k&pp=sAQA"
     },
     {
         "question": "Is the man cutting wood?",
@@ -5350,7 +5431,8 @@
                     61.621559999999995
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=PlK2bokUuqQ&pp=sAQA"
     },
     {
         "question": "Is the man creating spark?",
@@ -5410,7 +5492,8 @@
                     122.37825600000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=PlK2bokUuqQ&pp=sAQA"
     },
     {
         "question": "Is the man starting a fire?",
@@ -5469,7 +5552,8 @@
                     131.459328
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=PlK2bokUuqQ&pp=sAQA"
     },
     {
         "question": "Is there a fire?",
@@ -5528,7 +5612,8 @@
                     32.39338666666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NdTcmK9YlRE&pp=sAQA"
     },
     {
         "question": "Is there coal or charcoal?",
@@ -5587,7 +5672,8 @@
                     14.469840000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NdTcmK9YlRE&pp=sAQA"
     },
     {
         "question": "Is there a chimney?",
@@ -5646,7 +5732,8 @@
                     53.592
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NdTcmK9YlRE&pp=sAQA"
     },
     {
         "question": "Are they cleaning the chimney with something?",
@@ -5709,7 +5796,8 @@
                     52.341519999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NdTcmK9YlRE&pp=sAQA"
     },
     {
         "question": "Why is the man cutting up the cactus?",
@@ -5768,7 +5856,8 @@
                     96.29999999999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Dey5VZ9oLkk&pp=sAQA"
     },
     {
         "question": "Is it raning?",
@@ -5827,7 +5916,8 @@
                     43.82414703333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wweJCtf464k&pp=sAQA"
     },
     {
         "question": "Is the fire there to keep the man warm during the night?",
@@ -5886,7 +5976,8 @@
                     16.376660299999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wweJCtf464k&pp=sAQA"
     },
     {
         "question": "Does the material look homogeneous?",
@@ -5957,7 +6048,8 @@
                     29.419306666666657
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=KX6fUuv5p70&pp=sAQA"
     },
     {
         "question": "Is the material packet tightly?",
@@ -6033,7 +6125,8 @@
                     48.28437333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=KX6fUuv5p70&pp=sAQA"
     },
     {
         "question": "Does the material look like a mix of dirt, sand, and water?",
@@ -6108,7 +6201,8 @@
                     46.24490666666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=KX6fUuv5p70&pp=sAQA"
     },
     {
         "question": "Is there bamboo?",
@@ -6167,7 +6261,8 @@
                     14.254240000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qxsyBvXw2rA&pp=sAQA"
     },
     {
         "question": "Are they creating notches in the bamboo?",
@@ -6243,7 +6338,8 @@
                     32.994080000000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qxsyBvXw2rA&pp=sAQA"
     },
     {
         "question": "What are they creating notches with?",
@@ -6314,7 +6410,8 @@
                     18.69
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qxsyBvXw2rA&pp=sAQA"
     },
     {
         "question": "What are they doing with the reeds?",
@@ -6386,7 +6483,8 @@
                     28.907200000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qxsyBvXw2rA&pp=sAQA"
     },
     {
         "question": "What is the connection between the roaps and the notches?",
@@ -6457,7 +6555,8 @@
                     17.543680000000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=qxsyBvXw2rA&pp=sAQA"
     },
     {
         "question": "What does the man dong to the objects in his hand?",
@@ -6532,7 +6631,8 @@
                     29.121492399999983
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=aZ4KNMnTsIs&pp=sAQA"
     },
     {
         "question": "Is there a dead animal?",
@@ -6591,7 +6691,8 @@
                     19.189760000000007
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5_NVHgXTa-w&pp=sAQA"
     },
     {
         "question": "Is the man skinning the animal with a knife?",
@@ -6663,7 +6764,8 @@
                     25.43642666666668
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5_NVHgXTa-w&pp=sAQA"
     },
     {
         "question": "Is there a campfire?",
@@ -6734,7 +6836,8 @@
                     19.889386666666677
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5_NVHgXTa-w&pp=sAQA"
     },
     {
         "question": "Is the man cooking the animal on the fire?",
@@ -6798,7 +6901,8 @@
                     33.18229333333335
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5_NVHgXTa-w&pp=sAQA"
     },
     {
         "question": "What is the man using to start a flame?",
@@ -6896,7 +7000,8 @@
                     25.04211042666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=G4rsMYX47nM&pp=sAQA"
     },
     {
         "question": "Where did the man find twigs?",
@@ -6960,7 +7065,8 @@
         "alter_answers": [
             "The man found twigs on the falling branches"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=G4rsMYX47nM&pp=sAQA"
     },
     {
         "question": "Are the reeds dry and stiff?",
@@ -7020,7 +7126,8 @@
                     70.40366666666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D59v74k5flU&pp=sAQA"
     },
     {
         "question": "Is the clay stiff?",
@@ -7079,7 +7186,8 @@
                     4.471133333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D59v74k5flU&pp=sAQA"
     },
     {
         "question": "Does combining the clay and reeds make the result hold its form?",
@@ -7145,7 +7253,8 @@
         "alter_answers": [
             "Yes mixing the two together will make it hold better when dry. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D59v74k5flU&pp=sAQA"
     },
     {
         "question": "Does the man have a fish on the stick?",
@@ -7216,7 +7325,8 @@
                     20.432096000000016
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=bwBphhv6hc0&pp=sAQA"
     },
     {
         "question": "Is the fire?",
@@ -7287,7 +7397,8 @@
                     39.45328000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=bwBphhv6hc0&pp=sAQA"
     },
     {
         "question": "Is the man cooking the fish using the fire?",
@@ -7364,7 +7475,8 @@
         "alter_answers": [
             "Yes, he has the fish on a stick and is cooking it on the fire. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=bwBphhv6hc0&pp=sAQA"
     },
     {
         "question": "Is the man working with wood?",
@@ -7436,7 +7548,8 @@
                     33.638400000000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=IHnQvT0TFyI&pp=sAQA"
     },
     {
         "question": "Is the man making a frame out of wood?",
@@ -7507,7 +7620,8 @@
                     45.568000000000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=IHnQvT0TFyI&pp=sAQA"
     },
     {
         "question": "Did this man teach himself how to make a trap like this?",
@@ -7559,7 +7673,8 @@
         "alter_answers": [
             "It is not clear if he taught himself or not. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6nNt_b3w3ug&pp=sAQA"
     },
     {
         "question": "What is in the tube?",
@@ -7618,7 +7733,8 @@
                     45.26
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pFTG7X_XQ24&pp=sAQA"
     },
     {
         "question": "What are they using to scoop the materials?",
@@ -7677,7 +7793,8 @@
                     40.05482666666664
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wcMq3LXp674&pp=sAQA"
     },
     {
         "question": "What is happening to the tree branch?",
@@ -7736,7 +7853,8 @@
                     36.181632
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zZMmzjW7yng&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -7788,7 +7906,8 @@
         "alter_answers": [
             "The man is creating a house made out of wood "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ka2Eu6LxAKo&pp=sAQA"
     },
     {
         "question": "What is the purpose of this structure?",
@@ -7859,7 +7978,8 @@
                     49.50698666666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wrTDJbaxhOI&pp=sAQA"
     },
     {
         "question": "When can people collect the Douglas Fur Tree needles?",
@@ -7918,7 +8038,8 @@
                     41.937308746666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5-VNrUKvdZc&pp=sAQA"
     },
     {
         "question": "What wild edible can people collect from the Douglas Fur Tree?",
@@ -7982,7 +8103,8 @@
         "alter_answers": [
             "People can eat the needles of the tree."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5-VNrUKvdZc&pp=sAQA"
     },
     {
         "question": "Is the man cooking food in the video?",
@@ -8065,7 +8187,8 @@
                     35.2644292
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5LRGkOHBQGg&pp=sAQA"
     },
     {
         "question": "What is the man building?",
@@ -8136,7 +8259,8 @@
                     42.9568
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=IHnQvT0TFyI&pp=sAQA"
     },
     {
         "question": "How is the man mixing up this muddy substance to use it better?",
@@ -8199,7 +8323,8 @@
                     44.77806666666665
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D59v74k5flU&pp=sAQA"
     },
     {
         "question": "What is the man trying to do?",
@@ -8264,7 +8389,8 @@
         "alter_answers": [
             "The man is trying to help grow branches and find moss"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=G4rsMYX47nM&pp=sAQA"
     },
     {
         "question": "What is going on in this video?",
@@ -8339,7 +8465,8 @@
                     32.97353600000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=bwBphhv6hc0&pp=sAQA"
     },
     {
         "question": "What are the humans looking for in the sand?",
@@ -8411,7 +8538,8 @@
                     29.398240000000012
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=yN-wFCP291I&pp=sAQA"
     },
     {
         "question": "Why is the human cutting meat?",
@@ -8513,7 +8641,8 @@
         "alter_answers": [
             "He is cutting meat so that he can cook it"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zR3jlITIYzY&pp=sAQA"
     },
     {
         "question": "What is the human doing with the bamboo?",
@@ -8610,7 +8739,8 @@
                     18.843600000000006
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=n23yHY9tpfw&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -8677,7 +8807,8 @@
                     36.77447106666669
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=i3mLV4ANyXg&pp=sAQA"
     },
     {
         "question": "Is the man swimming?",
@@ -8736,7 +8867,8 @@
                     42.59658069333336
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zUBntLjklHM&pp=sAQA"
     },
     {
         "question": "What is the man rinsing out in the basket?",
@@ -8807,7 +8939,8 @@
                     23.16546232
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=xBl_HE72Ys4&pp=sAQA"
     },
     {
         "question": "Is this man eating?",
@@ -8879,7 +9012,8 @@
                     13.737653333333341
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BdJuk7f2VHE&pp=sAQA"
     },
     {
         "question": "Why is the human collecting leaves of plants?",
@@ -8939,7 +9073,8 @@
                     56.28568000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VrY0c-p5QyQ&pp=sAQA"
     },
     {
         "question": "What is the human Whittling?",
@@ -9011,7 +9146,8 @@
                     37.30752
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Yyi5hz9iMaQ&pp=sAQA"
     },
     {
         "question": "What is the human whittling?",
@@ -9083,7 +9219,8 @@
                     12.932480000000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VrY0c-p5QyQ&pp=sAQA"
     },
     {
         "question": "Does the human have food?",
@@ -9142,7 +9279,8 @@
                     49.58080000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=uvUGnwx5Q1M&pp=sAQA"
     },
     {
         "question": "What are the men digging for?",
@@ -9213,7 +9351,8 @@
                     43.86946666666668
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=yN-wFCP291I&pp=sAQA"
     },
     {
         "question": "What materials comprise this structure?",
@@ -9277,7 +9416,8 @@
         "alter_answers": [
             "bamboo compromises this structure"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=n23yHY9tpfw&pp=sAQA"
     },
     {
         "question": "What is this man eating?",
@@ -9348,7 +9488,8 @@
                     26.846820000000008
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zR3jlITIYzY&pp=sAQA"
     },
     {
         "question": "What is the purpose of this wooden object?",
@@ -9412,7 +9553,8 @@
         "alter_answers": [
             "They are making it into a sheath for the knife. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oQwIdfBmE2Q&pp=sAQA"
     },
     {
         "question": "What is the object the man is holding and carving?",
@@ -9484,7 +9626,8 @@
                     28.415702148452283
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=R_tdLFshVq8&pp=sAQA"
     },
     {
         "question": "How did the man catch this bird?",
@@ -9543,7 +9686,8 @@
                     11.232768000000014
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GMGv4Y6aypk&pp=sAQA"
     },
     {
         "question": "What is the vegetation like around this area?",
@@ -9604,7 +9748,8 @@
                     36.43319076030358
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4p-qiFdj0kg&pp=sAQA"
     },
     {
         "question": "What kind of fish did the man catch?",
@@ -9665,7 +9810,8 @@
                     22.129697329478308
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=80f876LESSM&pp=sAQA"
     },
     {
         "question": "How does this man start his fire?",
@@ -9728,7 +9874,8 @@
                     16.335647999999985
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NUyDwdRkceQ&pp=sAQA"
     },
     {
         "question": "What is the man doing to the log on the ground?",
@@ -9792,7 +9939,8 @@
         "alter_answers": [
             "He is stripping all the branches off of it with an axe. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=CCL6U9EmNPo&pp=sAQA"
     },
     {
         "question": "What is the man doing with the fire?",
@@ -9863,7 +10011,8 @@
                     64.41154719999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=JgQ-07VgJuY&pp=sAQA"
     },
     {
         "question": "What is the man poking at?",
@@ -9923,7 +10072,8 @@
                     51.57836799999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ku3OWHWEM-s&pp=sAQA"
     },
     {
         "question": "What is the man holding?",
@@ -9982,7 +10132,8 @@
                     50.136486399999974
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rg-wCA21sDQ&pp=sAQA"
     },
     {
         "question": "What are the men in this video doing?",
@@ -10054,7 +10205,8 @@
                     24.873386666666665
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=X-gThfZPbHE&pp=sAQA"
     },
     {
         "question": "What is being crafted in this video?",
@@ -10125,7 +10277,8 @@
                     47.728
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WghEQ0LTL1Y&pp=sAQA"
     },
     {
         "question": "What is the man using the fire for?",
@@ -10177,7 +10330,8 @@
         "alter_answers": [
             "He is using dried sticks and leaves. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=jwOSuLt2PmQ&pp=sAQA"
     },
     {
         "question": "What is the purpose of using this vegetation in the video?",
@@ -10254,7 +10408,8 @@
         "alter_answers": [
             "It is being used as a fire starter. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ZrPOS-O9bXc&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -10337,7 +10492,8 @@
                     60.42703333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Y8YCESV7se4&pp=sAQA"
     },
     {
         "question": "What is the man doing with all the wood he has cut?",
@@ -10413,7 +10569,8 @@
         "alter_answers": [
             "He is using it to build a enclosure. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vAuO3bHxSpc&pp=sAQA"
     },
     {
         "question": "What is the man using the wood he has cut for?",
@@ -10488,7 +10645,8 @@
                     32.540507999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=PlK2bokUuqQ&pp=sAQA"
     },
     {
         "question": "What are the men using the different sticks for?",
@@ -10571,7 +10729,8 @@
                     44.77909333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NdTcmK9YlRE&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -10643,7 +10802,8 @@
                     23.651279999999993
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Dey5VZ9oLkk&pp=sAQA"
     },
     {
         "question": "What is the man doing?",
@@ -10726,7 +10886,8 @@
                     10.050473766666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wweJCtf464k&pp=sAQA"
     },
     {
         "question": "Why is the human putting meat into the cylinder and vegetation kindling on top?",
@@ -10778,7 +10939,8 @@
         "alter_answers": [
             "They are going to cook the meat in the bamboo. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=uDSOIxmEfwA&pp=sAQA"
     },
     {
         "question": "Which direction is the wind blowing?",
@@ -10838,7 +11000,8 @@
                     60.420096
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vDgS-w-Be5k&pp=sAQA"
     },
     {
         "question": "Why is the human piling rocks by the fire?",
@@ -10903,7 +11066,8 @@
         "alter_answers": [
             "It is not clear why he is piling rocks."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vDgS-w-Be5k&pp=sAQA"
     },
     {
         "question": "What Is the human creating by making a rectangular prism out of sticks?",
@@ -10987,7 +11151,8 @@
                     63.14115808
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=JzlTisRtP-E&pp=sAQA"
     },
     {
         "question": "What is the human putting into cylinders?",
@@ -11062,7 +11227,8 @@
                     91.87736
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=uDSOIxmEfwA&pp=sAQA"
     },
     {
         "question": "What is the human using to create these toggles?",
@@ -11114,7 +11280,8 @@
         "alter_answers": [
             "They are using an axe and a saw."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=reV1WaPaSm8&pp=sAQA"
     },
     {
         "question": "What is the human creating out of the small stick?",
@@ -11167,7 +11334,8 @@
         "alter_answers": [
             "He is making a stake. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=reV1WaPaSm8&pp=sAQA"
     },
     {
         "question": "What is the man doing by the water?",
@@ -11239,7 +11407,8 @@
                     8.061812423556537
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4p-qiFdj0kg&pp=sAQA"
     },
     {
         "question": "What is the human doing to the fish?",
@@ -11317,7 +11486,8 @@
         "alter_answers": [
             "He is cutting it up in preparation for cooking. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=80f876LESSM&pp=sAQA"
     },
     {
         "question": "Is the man going to be staying in the woods for the evening?",
@@ -11378,7 +11548,8 @@
                     34.323515893333344
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cV0DXKQFsk8&pp=sAQA"
     },
     {
         "question": "What kind of structure is the man building?",
@@ -11449,7 +11620,8 @@
                     59.236799999999995
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VtP10zvoZ8A&pp=sAQA"
     },
     {
         "question": "What is the man using the knife making?",
@@ -11520,7 +11692,8 @@
                     41.157984000000035
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NBvFJKC6I8Y&pp=sAQA"
     },
     {
         "question": "Is this man cleaning off these branches to add them to the shelter behind him?",
@@ -11604,7 +11777,8 @@
                     22.54099199999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=EWuZDHtOh1Y&pp=sAQA"
     },
     {
         "question": "What is the man crafting out of sticks, leaves, and mud?",
@@ -11687,7 +11861,8 @@
                     52.444391999999986
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GzLvqCTvOQY&pp=sAQA"
     },
     {
         "question": "Does the human have water?",
@@ -11746,7 +11921,8 @@
                     57.49594517333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=myBDhgF1whw&pp=sAQA"
     },
     {
         "question": "What is the human using the sticks for?",
@@ -11818,7 +11994,8 @@
                     70.09016
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6hz6ld8vOGA&pp=sAQA"
     },
     {
         "question": "Does the human have fire?",
@@ -11878,7 +12055,8 @@
                     28.940911999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=myBDhgF1whw&pp=sAQA"
     },
     {
         "question": "What is the human setting up using the stick and rope?",
@@ -11969,7 +12147,8 @@
         "alter_answers": [
             "He is setting up a trap. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=KhrnefkJHXU&pp=sAQA"
     },
     {
         "question": "Does the human have shelter?",
@@ -12028,7 +12207,8 @@
                     31.497359226666664
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=myBDhgF1whw&pp=sAQA"
     },
     {
         "question": "Why is the man disassembling his shelter?",
@@ -12091,7 +12271,8 @@
                     51.514823359999994
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=myBDhgF1whw&pp=sAQA"
     },
     {
         "question": "What is the man doing by the tree?",
@@ -12155,7 +12336,8 @@
         "alter_answers": [
             "Yes, he is setting a trap. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=KhrnefkJHXU&pp=sAQA"
     },
     {
         "question": "What is the man working to achieve?",
@@ -12219,7 +12401,8 @@
         "alter_answers": [
             "He is working to build a hut or shack. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6hz6ld8vOGA&pp=sAQA"
     },
     {
         "question": "What is the human creating out of wood?",
@@ -12303,7 +12486,8 @@
                     53.11472833333331
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oQwIdfBmE2Q&pp=sAQA"
     },
     {
         "question": "What is the human doing to the coconut?",
@@ -12400,7 +12584,8 @@
                     12.640619762240979
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=R_tdLFshVq8&pp=sAQA"
     },
     {
         "question": "Why did the human catch the bird?",
@@ -12460,7 +12645,8 @@
                     53.92819200000007
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GMGv4Y6aypk&pp=sAQA"
     },
     {
         "question": "How did the human catch the bird?",
@@ -12513,7 +12699,8 @@
         "alter_answers": [
             "He used a snare trap. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GMGv4Y6aypk&pp=sAQA"
     },
     {
         "question": "What is the human creating.",
@@ -12609,7 +12796,8 @@
                     27.106759679999985
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rg-wCA21sDQ&pp=sAQA"
     },
     {
         "question": "Does the human have shelter?",
@@ -12661,7 +12849,8 @@
         "alter_answers": [
             "The human does have shelter and fire"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ku3OWHWEM-s&pp=sAQA"
     },
     {
         "question": "Does the human have fire?",
@@ -12732,7 +12921,8 @@
                     32.48255999999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ku3OWHWEM-s&pp=sAQA"
     },
     {
         "question": "Does the human have food?",
@@ -12816,7 +13006,8 @@
                     37.55180799999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ku3OWHWEM-s&pp=sAQA"
     },
     {
         "question": "What are the humans doing?",
@@ -12893,7 +13084,8 @@
         "alter_answers": [
             "They are cooking food over a fire. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=X-gThfZPbHE&pp=sAQA"
     },
     {
         "question": "What is the purpose of this rectangular molt?",
@@ -12965,7 +13157,8 @@
                     48.1536
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WghEQ0LTL1Y&pp=sAQA"
     },
     {
         "question": "What is the human pouring into the sand.",
@@ -13038,7 +13231,8 @@
                     28.9408
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WghEQ0LTL1Y&pp=sAQA"
     },
     {
         "question": "What is the purpose of pouring molten metal into the sand?",
@@ -13103,7 +13297,8 @@
         "alter_answers": [
             "the purpose of pouring molten metal into the sand is to create a box frame"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WghEQ0LTL1Y&pp=sAQA"
     },
     {
         "question": "Why is the man bending the stick down?",
@@ -13175,7 +13370,8 @@
                     42.569632
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=zZMmzjW7yng&pp=sAQA"
     },
     {
         "question": "What is the human doing with the bricks?",
@@ -13259,7 +13455,8 @@
                     46.65453333333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=wrTDJbaxhOI&pp=sAQA"
     },
     {
         "question": "Other than sticks what is the man placing in the ground?",
@@ -13355,7 +13552,8 @@
                     61.2032
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pFTG7X_XQ24&pp=sAQA"
     },
     {
         "question": "Why is the man placing sticks into the soil?",
@@ -13415,7 +13613,8 @@
                     19.3888
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pFTG7X_XQ24&pp=sAQA"
     },
     {
         "question": "What is the purpose of the man cutting vegetation?",
@@ -13491,7 +13690,8 @@
         "alter_answers": [
             "He is using it to wrap the poles together. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ka2Eu6LxAKo&pp=sAQA"
     },
     {
         "question": "What is the man using to cut the vegetation?",
@@ -13575,7 +13775,8 @@
                     59.807744
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ka2Eu6LxAKo&pp=sAQA"
     },
     {
         "question": "What structure is the man creating out of sticks?",
@@ -13651,7 +13852,8 @@
         "alter_answers": [
             "He is making the frame for a roof on a shack. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ka2Eu6LxAKo&pp=sAQA"
     },
     {
         "question": "How can this vegetation be recognized as being a wild edible?",
@@ -13704,7 +13906,8 @@
         "alter_answers": [
             "The vegetation can be recognized as a wild edible based on the location and the two white lines "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5-VNrUKvdZc&pp=sAQA"
     },
     {
         "question": "What is the man doing at the beginning of the video?",
@@ -13756,7 +13959,8 @@
         "alter_answers": [
             "He is roping together a basket out of sticks. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5LRGkOHBQGg&pp=sAQA"
     },
     {
         "question": "Is there a fire?",
@@ -13815,7 +14019,8 @@
                     45.23200000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6nNt_b3w3ug&pp=sAQA"
     },
     {
         "question": "Is the human cooking and eating the animals that were caught?",
@@ -13880,7 +14085,8 @@
         "alter_answers": [
             "the human is cooking and eating the animals that they caught"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6nNt_b3w3ug&pp=sAQA"
     },
     {
         "question": "Has the human caught any animals?",
@@ -13951,7 +14157,8 @@
                     22.00000000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=6nNt_b3w3ug&pp=sAQA"
     },
     {
         "question": "What is the human doing?",
@@ -14023,7 +14230,8 @@
                     60.343723440000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=4DrrKlbhNwg&pp=sAQA"
     },
     {
         "question": "What is the human using in the video?",
@@ -14095,7 +14303,8 @@
                     34.64479685333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cV0DXKQFsk8&pp=sAQA"
     },
     {
         "question": "What is the man creating?",
@@ -14160,7 +14369,8 @@
         "alter_answers": [
             "He is building an oven or kiln."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GzLvqCTvOQY&pp=sAQA"
     },
     {
         "question": "What is the woven surface used for?",
@@ -14231,7 +14441,8 @@
                     50.839999999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VtP10zvoZ8A&pp=sAQA"
     },
     {
         "question": "What is the human using to create the weaved plane.",
@@ -14318,7 +14529,8 @@
                     79.704
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=VtP10zvoZ8A&pp=sAQA"
     },
     {
         "question": "What is the human doing in the video?",
@@ -14401,7 +14613,8 @@
                     49.60367999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=EWuZDHtOh1Y&pp=sAQA"
     },
     {
         "question": "Why is the human running the knife along the piece of leather.",
@@ -14472,7 +14685,8 @@
                     14.373408000000014
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=NBvFJKC6I8Y&pp=sAQA"
     },
     {
         "question": "What object are they creating?",
@@ -14543,7 +14757,8 @@
                     29.865599999999965
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=HhXhnNI20sU&pp=sAQA"
     },
     {
         "question": "What is the man doing with these logs?",
@@ -14627,7 +14842,8 @@
                     41.27123000000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ojRfxvdE3bo&pp=sAQA"
     },
     {
         "question": "Are these men camping?",
@@ -14698,7 +14914,8 @@
                     52.30265039999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=sQlQXYrE4UI&pp=sAQA"
     },
     {
         "question": "What is happening in the video?",
@@ -14769,6 +14986,7 @@
                     39.62171546666669
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MicW_5jcBBI&pp=sAQA"
     }
 ]

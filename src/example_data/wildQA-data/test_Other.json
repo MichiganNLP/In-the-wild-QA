@@ -62,7 +62,8 @@
         "alter_answers": [
             "They are performing cleaning and maintenance. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rXmgVefTyNk"
     },
     {
         "question": "What command does the shooter in the video yell?",
@@ -121,7 +122,8 @@
                     46.727004616702715
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=lzErW4bLjCw"
     },
     {
         "question": "How do farmers know if an herbcide is working?",
@@ -173,7 +175,8 @@
         "alter_answers": [
             "They can check the weeds and see if they are coming up. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ETRwFB7w3-k"
     },
     {
         "question": "What kind of equipment are they advertising?",
@@ -232,7 +235,8 @@
                     54.90503685333332
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=2ktFZv1nIIU"
     },
     {
         "question": "What is the relationship like with this farmer and his livestock?",
@@ -292,7 +296,8 @@
                     35.464228799999994
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=CBAYX1lkksE"
     },
     {
         "question": "What kind of equipment is there?",
@@ -352,7 +357,8 @@
                     24.154717253333338
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=T-8-o_rpLXM"
     },
     {
         "question": "What is being sprayed on the field in the video?",
@@ -411,7 +417,8 @@
                     80.88248168000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=C_W0IUOj5cU"
     },
     {
         "question": "What is the brand of fungicide being used in the video?",
@@ -486,6 +493,7 @@
                     70.13406399999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=HGcKHeDDLE4"
     }
 ]

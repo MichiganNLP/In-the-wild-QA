@@ -49,7 +49,8 @@
         "alter_answers": [
             "Yes there is a body of water. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pYCVXAtqNMQ"
     },
     {
         "question": "Are there vehicles in the water?",
@@ -108,7 +109,8 @@
                     52.66743496536569
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pYCVXAtqNMQ"
     },
     {
         "question": "Is the vehicle moving towards something?",
@@ -173,7 +175,8 @@
         "alter_answers": [
             "Yes it is moving under a bridge. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=pYCVXAtqNMQ"
     },
     {
         "question": "Is there a vehicle?",
@@ -232,7 +235,8 @@
                     6.194721866666672
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rXmgVefTyNk"
     },
     {
         "question": "What are they doing to the tank?",
@@ -297,7 +301,8 @@
         "alter_answers": [
             "They are performing cleaning and maintenance. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rXmgVefTyNk"
     },
     {
         "question": "Is there water?",
@@ -356,7 +361,8 @@
                     7.943936
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vvsZZsGZBDk"
     },
     {
         "question": "Are there any vehicles?",
@@ -431,7 +437,8 @@
                     27.1583312
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vvsZZsGZBDk"
     },
     {
         "question": "Are the planes moving?",
@@ -502,7 +509,8 @@
                     18.9164976
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vvsZZsGZBDk"
     },
     {
         "question": "What type of equipment is it?",
@@ -573,7 +581,8 @@
                     35.69966399999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nrsPQje_Wjo"
     },
     {
         "question": "How many people are there to operate it?",
@@ -644,7 +653,8 @@
                     22.198175999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nrsPQje_Wjo"
     },
     {
         "question": "How long did it take to fire the first shot?",
@@ -708,7 +718,8 @@
         "alter_answers": [
             "It took about 30 seconds. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nrsPQje_Wjo"
     },
     {
         "question": "How many vehicles are there?",
@@ -767,7 +778,8 @@
                     26.4132
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fYZcWC1O9F0"
     },
     {
         "question": "What were the vehicles doing?",
@@ -831,7 +843,8 @@
         "alter_answers": [
             "The vehicles were being loaded on to flatbed rail cars for transport."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fYZcWC1O9F0"
     },
     {
         "question": "What type of aircraft is it?",
@@ -902,7 +915,8 @@
                     39.71592
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Z_JM0GqHCFs"
     },
     {
         "question": "How many engines does it have?",
@@ -973,7 +987,8 @@
                     24.669360000000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Z_JM0GqHCFs"
     },
     {
         "question": "How many sets of wheels are on it?",
@@ -1032,7 +1047,8 @@
                     66.25152
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Z_JM0GqHCFs"
     },
     {
         "question": "Where is this?",
@@ -1091,7 +1107,8 @@
                     21.944438216872584
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ry9MUR_BjNw"
     },
     {
         "question": "What type of locations is this?",
@@ -1162,7 +1179,8 @@
                     10.189999249068
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ry9MUR_BjNw"
     },
     {
         "question": "What are the planes doing?",
@@ -1226,7 +1244,8 @@
         "alter_answers": [
             "They are performing an air show. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vc-rJD-WELk"
     },
     {
         "question": "How many planes were there?",
@@ -1279,7 +1298,8 @@
         "alter_answers": [
             "There are 2 planes. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vc-rJD-WELk"
     },
     {
         "question": "Where were the planes flying over?",
@@ -1338,7 +1358,8 @@
                     16.583360000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vc-rJD-WELk"
     },
     {
         "question": "Do they have aircraft that they can do a touch and go landing like a heliocopter.",
@@ -1411,7 +1432,8 @@
                     26.885520000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Z_JM0GqHCFs"
     },
     {
         "question": "Do pilots perform maneuvers for air shows to the public.",
@@ -1476,7 +1498,8 @@
         "alter_answers": [
             "Yes, they perform a flip in tandem. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vc-rJD-WELk"
     },
     {
         "question": "What are the soldiers training for?",
@@ -1535,7 +1558,8 @@
                     21.283192612190327
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=GL2al0aGflI"
     },
     {
         "question": "Are the people loading things into the helicopter?",
@@ -1606,7 +1630,8 @@
                     14.905931040000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vD6WoYz4KM8"
     },
     {
         "question": "Is the helicopter moving after loading?",
@@ -1670,7 +1695,8 @@
         "alter_answers": [
             "Yes it does move after loading. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vD6WoYz4KM8"
     },
     {
         "question": "Are they training for timed quick target acquisition?",
@@ -1727,7 +1753,8 @@
         "alter_answers": [
             "Yes they are training on multiple targets. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=sc-pQH9GSxA"
     },
     {
         "question": "What types of guns are there?",
@@ -1791,7 +1818,8 @@
         "alter_answers": [
             "These are belt fed heavy machine guns. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=u1FLYarJW2I"
     },
     {
         "question": "What type of land is it?",
@@ -1850,7 +1878,8 @@
                     15.952363093333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "What kind of roads do they have?",
@@ -1902,7 +1931,8 @@
         "alter_answers": [
             "The roads are mostly mud and water. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "What type of aircraft is it?",
@@ -1961,7 +1991,8 @@
                     12.355599999999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=d8TFebU8TC0"
     },
     {
         "question": "What kind of weaponry does it have?",
@@ -2048,7 +2079,8 @@
                     54.51
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=d8TFebU8TC0"
     },
     {
         "question": "What type of equipment is it?",
@@ -2119,7 +2151,8 @@
                     55.20910344827586
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tKIgLksGdTI"
     },
     {
         "question": "How does the rocket artillery load it's ammo?",
@@ -2178,7 +2211,8 @@
                     61.52582068965516
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tKIgLksGdTI"
     },
     {
         "question": "How does the rocket artillery travel?",
@@ -2249,7 +2283,8 @@
                     54.66198620689655
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tKIgLksGdTI"
     },
     {
         "question": "What are some of the jobs of a Combat Controller?",
@@ -2302,7 +2337,8 @@
         "alter_answers": [
             "They can blow up IED, Jumps, Air to Ground, and Demo. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=neLECMM5rsE"
     },
     {
         "question": "Are there aircraft that can have a vertical takeoff and landing off of an Aircraft Carrier that is not a fixed blade device?",
@@ -2366,7 +2402,8 @@
         "alter_answers": [
             "Yes, there is a harrier in the video. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=BOsl5jrVOTU"
     },
     {
         "question": "What is one way that can help to protect further injury from a broken bone?",
@@ -2444,7 +2481,8 @@
                     54.83771626666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=x4A95BcZZw4"
     },
     {
         "question": "What is BEAST training in a nutshell?",
@@ -2508,7 +2546,8 @@
                     29.885856
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0iIESnjbGLg"
     },
     {
         "question": "How do you safely rig a heavy object to be moved?",
@@ -2573,7 +2612,8 @@
         "alter_answers": [
             "it can be rigged with straps on the top and bottom. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=CoQqRMqfL_g"
     },
     {
         "question": "Where are they?",
@@ -2632,7 +2672,8 @@
                     20.3399196
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Vca5P07RwHw"
     },
     {
         "question": "What type of access roads do they have?",
@@ -2684,7 +2725,8 @@
         "alter_answers": [
             "gravel"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Vca5P07RwHw"
     },
     {
         "question": "What are they doing?",
@@ -2748,7 +2790,8 @@
         "alter_answers": [
             "They are doing an obstacle course. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=sopPaY9zVt8"
     },
     {
         "question": "What branch are they training to join?",
@@ -2812,7 +2855,8 @@
         "alter_answers": [
             "They are trying to join the marines. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=sopPaY9zVt8"
     },
     {
         "question": "How many flags were there?",
@@ -2879,7 +2923,8 @@
                     8.243200000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=kmboDTWWe-A"
     },
     {
         "question": "What songs were playing?",
@@ -2939,7 +2984,8 @@
         "alter_answers": [
             "Unknown"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=kmboDTWWe-A"
     },
     {
         "question": "How many types of aircraft were there?",
@@ -3010,7 +3056,8 @@
                     4.310826666666666
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MDSVJfuyJlk"
     },
     {
         "question": "How many engines did the fighters have?",
@@ -3081,7 +3128,8 @@
                     29.538959999999992
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MDSVJfuyJlk"
     },
     {
         "question": "How many pilots were in the fighters?",
@@ -3152,7 +3200,8 @@
                     11.364906666666663
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MDSVJfuyJlk"
     },
     {
         "question": "how many weapons emplacements are there?",
@@ -3223,7 +3272,8 @@
                     20.230239506017003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=uDTfCkqvo2M"
     },
     {
         "question": "How many people are there?",
@@ -3294,7 +3344,8 @@
                     5.094656892713329
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=uDTfCkqvo2M"
     },
     {
         "question": "What type of weather is experienced?",
@@ -3346,7 +3397,8 @@
         "alter_answers": [
             "It is slightly cloudy with thunder"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=QodxR4vV1BQ"
     },
     {
         "question": "What type of vegetation is around?",
@@ -3410,7 +3462,8 @@
         "alter_answers": [
             "There are some trees seen on the islands. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=QodxR4vV1BQ"
     },
     {
         "question": "What types of small arms?",
@@ -3469,7 +3522,8 @@
                     25.313359999999967
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oUpC99V7TQk"
     },
     {
         "question": "What types of explosives",
@@ -3540,7 +3594,8 @@
                     20.387253333333305
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oUpC99V7TQk"
     },
     {
         "question": "Are there armored vehicles?",
@@ -3592,7 +3647,8 @@
         "alter_answers": [
             "There are not any armored vehicles. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=oUpC99V7TQk"
     },
     {
         "question": "Where are they from?",
@@ -3655,7 +3711,8 @@
                     48.84384
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Zh7WOE6mGUw"
     },
     {
         "question": "What language are they speaking?",
@@ -3714,7 +3771,8 @@
                     47.3236
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Zh7WOE6mGUw"
     },
     {
         "question": "What are they doing?",
@@ -3793,7 +3851,8 @@
                     40.3216
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rGcPMTAQptM"
     },
     {
         "question": "What are they training to join?",
@@ -3848,7 +3907,8 @@
                     46.0288
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=rGcPMTAQptM"
     },
     {
         "question": "Why is there a person behind the operator?",
@@ -3919,7 +3979,8 @@
                     10.651707733333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=gWt4s94ouik"
     },
     {
         "question": "What is one way to unwind after working on a ship?",
@@ -3979,7 +4040,8 @@
                     35.016181200000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=YgB4pgw-QA4"
     },
     {
         "question": "How many planes are there?",
@@ -4035,7 +4097,8 @@
                     21.6864
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=9bxB4WQn5wU"
     },
     {
         "question": "how many planes are to the squad?",
@@ -4091,7 +4154,8 @@
                     24.926399999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=9bxB4WQn5wU"
     },
     {
         "question": "where is this place?",
@@ -4163,7 +4227,8 @@
                     27.776228480000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ngCgSelPwbw"
     },
     {
         "question": "What's going on?",
@@ -4227,7 +4292,8 @@
         "alter_answers": [
             "A glitch in the system triggered suppression foam to flood the area. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ngCgSelPwbw"
     },
     {
         "question": "What kind of building?",
@@ -4299,7 +4365,8 @@
                     35.19291776
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ngCgSelPwbw"
     },
     {
         "question": "Where are they?",
@@ -4363,7 +4430,8 @@
         "alter_answers": [
             "They are on a ship in the ocean. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=g8ns6F09BAg"
     },
     {
         "question": "What is the weather like?",
@@ -4434,7 +4502,8 @@
                     18.140469013333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=g8ns6F09BAg"
     },
     {
         "question": "What are they doing?",
@@ -4493,7 +4562,8 @@
                     39.73173333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8dcNqNSxDUg"
     },
     {
         "question": "What are the snipers wearing?",
@@ -4564,7 +4634,8 @@
                     17.351200000000002
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8dcNqNSxDUg"
     },
     {
         "question": "What weapons were they using?",
@@ -4636,7 +4707,8 @@
                     39.78202666666667
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8dcNqNSxDUg"
     },
     {
         "question": "What are they receiving?",
@@ -4688,7 +4760,8 @@
         "alter_answers": [
             "a vehicle"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=g8ns6F09BAg"
     },
     {
         "question": "What is the effective range of the M16?",
@@ -4747,7 +4820,8 @@
                     23.688160000000003
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=8dcNqNSxDUg"
     },
     {
         "question": "What command does the shooter in the video yell?",
@@ -4806,7 +4880,8 @@
                     46.727004616702715
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=lzErW4bLjCw"
     },
     {
         "question": "Is someone shot in the video?",
@@ -4866,7 +4941,8 @@
                     41.64271914027392
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=lzErW4bLjCw"
     },
     {
         "question": "What type of uniform is worn in the video?",
@@ -4925,7 +5001,8 @@
                     14.85792
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=yPSA6DRxHGI"
     },
     {
         "question": "How many helicopters are in this video?",
@@ -4984,7 +5061,8 @@
                     3.673956202703179
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=beeKX-DiLeU"
     },
     {
         "question": "Where was the location of the video taken?",
@@ -5048,7 +5126,8 @@
         "alter_answers": [
             "on water(sea maybe)"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=lzErW4bLjCw"
     },
     {
         "question": "Where was this video taken?",
@@ -5097,7 +5176,8 @@
         "alter_answers": [
             "They are inside a concrete building. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=b0VNMnRdl5c"
     },
     {
         "question": "How many drill sergeants are in this video?",
@@ -5160,7 +5240,8 @@
                     31.460000000000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=b0VNMnRdl5c"
     },
     {
         "question": "Are there helicopters in the video?",
@@ -5220,7 +5301,8 @@
                     7.686303108286915
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=beeKX-DiLeU"
     },
     {
         "question": "What type of helicopter is in the video?",
@@ -5296,7 +5378,8 @@
         "alter_answers": [
             "It is never stated what type of helicopter this is "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ANPmLohXpNE"
     },
     {
         "question": "Do the helicopters in the video use ordnance?",
@@ -5367,7 +5450,8 @@
                     2.8980965517241377
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ANPmLohXpNE"
     },
     {
         "question": "Is the ship attacked in the video?",
@@ -5415,7 +5499,8 @@
         "alter_answers": [
             "Yes several shots are fired at it. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tV-Zffei4kI"
     },
     {
         "question": "Is there a woman in the video?",
@@ -5467,7 +5552,8 @@
         "alter_answers": [
             "Yes there is a woman."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fRErNkYEDaE"
     },
     {
         "question": "How many men can be seen shooting guns?",
@@ -5527,7 +5613,8 @@
                     22.183680000000013
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cQVj2nbUs6c"
     },
     {
         "question": "Are there open wounds in the video?",
@@ -5606,7 +5693,8 @@
                     27.1168
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D2TzjcyLHQE"
     },
     {
         "question": "Are there Army medics in the video?",
@@ -5685,7 +5773,8 @@
                     20.4896
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D2TzjcyLHQE"
     },
     {
         "question": "Is the ship sailing in the video?",
@@ -5753,7 +5842,8 @@
                     16.992
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tV-Zffei4kI"
     },
     {
         "question": "What type of ship is in the video?",
@@ -5824,7 +5914,8 @@
                     41.06928
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fRErNkYEDaE"
     },
     {
         "question": "What is the landscape like in the video?",
@@ -5888,7 +5979,8 @@
         "alter_answers": [
             "It is an aircraft carrier surrounded by water"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fRErNkYEDaE"
     },
     {
         "question": "Can gunshots be heard in the video?",
@@ -5947,7 +6039,8 @@
                     15.434400000000009
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cQVj2nbUs6c"
     },
     {
         "question": "What is the landscape in the video?",
@@ -6014,7 +6107,8 @@
                     13.439999999999998
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tV-Zffei4kI"
     },
     {
         "question": "Are there Navy corpsmen in the video?",
@@ -6105,7 +6199,8 @@
                     17.9968
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=D2TzjcyLHQE"
     },
     {
         "question": "Are soldiers walking in the video?",
@@ -6164,7 +6259,8 @@
                     11.248800000000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=cQVj2nbUs6c"
     },
     {
         "question": "Are vehicles used to transport artillery?",
@@ -6228,7 +6324,8 @@
         "alter_answers": [
             "Yes, the missiles are loaded into the vehicle. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tKIgLksGdTI"
     },
     {
         "question": "Is there communication over a radio frequency?",
@@ -6287,7 +6384,8 @@
                     34.353413333333336
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=d8TFebU8TC0"
     },
     {
         "question": "How many people can be seen inside the vehicle?",
@@ -6339,7 +6437,8 @@
         "alter_answers": [
             "One solider is seen inside the vehicle. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "How many uniformed men are outside of the vehicle?",
@@ -6398,7 +6497,8 @@
                     36.281898986666675
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "How many men are shooting a gun?",
@@ -6450,7 +6550,8 @@
         "alter_answers": [
             "2"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=u1FLYarJW2I"
     },
     {
         "question": "How many men are in the video?",
@@ -6502,7 +6603,8 @@
         "alter_answers": [
             "There are two men in the video, shooter and the loader. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=u1FLYarJW2I"
     },
     {
         "question": "Are there guns used in the video?",
@@ -6590,7 +6692,8 @@
                     56.108959999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=d8TFebU8TC0"
     },
     {
         "question": "Is a woman in uniform interviewed?",
@@ -6650,7 +6753,8 @@
                     22.03390344827586
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tKIgLksGdTI"
     },
     {
         "question": "What type of landscape is the helicopter flying over?",
@@ -6714,7 +6818,8 @@
         "alter_answers": [
             "It appears to be rocky desert like terrain. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=d8TFebU8TC0"
     },
     {
         "question": "How many vehicles are in the video?",
@@ -6790,7 +6895,8 @@
         "alter_answers": [
             "There is 1 vehicle."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "What is the weather like during the video?",
@@ -6866,7 +6972,8 @@
         "alter_answers": [
             "The skies are blue, but there is enough water to indicate it rained recently."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=ED3FGCNIdTI"
     },
     {
         "question": "Are rockets fired?",
@@ -6926,7 +7033,8 @@
                     5.123006896551724
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=tKIgLksGdTI"
     },
     {
         "question": "How is the machine gun loaded?",
@@ -6990,7 +7098,8 @@
         "alter_answers": [
             "It is fed with a belt of ammo"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=u1FLYarJW2I"
     },
     {
         "question": "What type of aircraft is in the video?",
@@ -7049,7 +7158,8 @@
                     25.660800000000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Z_JM0GqHCFs"
     },
     {
         "question": "What is happening to the military vehicles in the video?",
@@ -7101,7 +7211,8 @@
         "alter_answers": [
             "They are being loaded onto a transport. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fYZcWC1O9F0"
     },
     {
         "question": "What type of ordnance is used by the soldiers in the video?",
@@ -7154,7 +7265,8 @@
         "alter_answers": [
             "They load and fire an AA gun. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nrsPQje_Wjo"
     },
     {
         "question": "What type of ammunition is being used in the video?",
@@ -7206,7 +7318,8 @@
         "alter_answers": [
             "Large AA shells are being fired. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=nrsPQje_Wjo"
     },
     {
         "question": "Which United States military branch do the workers seen in the video belong to?",
@@ -7277,7 +7390,8 @@
                     40.8848
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fYZcWC1O9F0"
     },
     {
         "question": "Where is the jet flying in the video?",
@@ -7348,7 +7462,8 @@
                     23.559808000000007
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=vc-rJD-WELk"
     },
     {
         "question": "How many paratroopers are in the video?",
@@ -7407,7 +7522,8 @@
                     6.257758874946324
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ry9MUR_BjNw"
     },
     {
         "question": "What type of vehicle is actively being moved in the video?",
@@ -7471,7 +7587,8 @@
         "alter_answers": [
             "Tanks are being loaded onto trucks. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=fYZcWC1O9F0"
     },
     {
         "question": "Is ordnance fired in the video?",
@@ -7544,7 +7661,8 @@
                     52.758639999999986
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MDSVJfuyJlk"
     },
     {
         "question": "Are there anti-aircraft weapons in this video?",
@@ -7596,7 +7714,8 @@
         "alter_answers": [
             "There are anti-aircraft weapons in the vehicles"
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MDSVJfuyJlk"
     },
     {
         "question": "Is there a hand holding an EGA?",
@@ -7655,7 +7774,8 @@
                     33.489956500000005
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=sopPaY9zVt8"
     },
     {
         "question": "Are two men walking with weapons slung over their shoulders?",
@@ -7715,7 +7835,8 @@
                     20.5205
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Vca5P07RwHw"
     },
     {
         "question": "Is there background music in the video?",
@@ -7794,7 +7915,8 @@
                     12.0704
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=kmboDTWWe-A"
     },
     {
         "question": "What type of uniform is being worn in the video?",
@@ -7853,7 +7975,8 @@
                     5.0234184
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Vca5P07RwHw"
     },
     {
         "question": "Is a weapon fired in the video?",
@@ -7914,7 +8037,8 @@
                     7.0262192
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Vca5P07RwHw"
     },
     {
         "question": "Is there a Lockheed Martin F-22 Raptor in the video?",
@@ -7973,7 +8097,8 @@
                     12.638559999999996
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=MDSVJfuyJlk"
     },
     {
         "question": "Are women in this video?",
@@ -8032,7 +8157,8 @@
                     9.220611400000001
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=sopPaY9zVt8"
     },
     {
         "question": "Which military branch is conducting the ceremony in the video?",
@@ -8103,7 +8229,8 @@
                     24.9136
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=kmboDTWWe-A"
     },
     {
         "question": "Are there flags in the video?",
@@ -8182,7 +8309,8 @@
                     7.176
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=kmboDTWWe-A"
     },
     {
         "question": "Is there Iraq's national flag in the video?",
@@ -8273,7 +8401,8 @@
                     7.065599999999999
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=kmboDTWWe-A"
     },
     {
         "question": "Is there a submarine in the video?",
@@ -8337,7 +8466,8 @@
         "alter_answers": [
             "Yes there is a submarine. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=s22DZc0v6Xs"
     },
     {
         "question": "Where was the video taken?",
@@ -8389,7 +8519,8 @@
         "alter_answers": [
             "The video is taken in the ocean, above a submarine. "
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=s22DZc0v6Xs"
     },
     {
         "question": "Is there an Mk 19 grenade launcher in the video?",
@@ -8448,7 +8579,8 @@
                     42.286003760000014
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5PgsAYc6Mkk"
     },
     {
         "question": "Is there an M2 .50 caliber in the video?",
@@ -8500,7 +8632,8 @@
         "alter_answers": [
             "Yes there is one mounted to the deck."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5PgsAYc6Mkk"
     },
     {
         "question": "Does the tanker connect with the receiver in the video?",
@@ -8559,7 +8692,8 @@
                     24.939840000000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=WDYZ9pzddMc"
     },
     {
         "question": "Are the men in the video apart of the United states military?",
@@ -8618,7 +8752,8 @@
                     7.862400000000004
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=5xT4T0qhRB8"
     },
     {
         "question": "Is there a flying boom in the video?",
@@ -8677,7 +8812,8 @@
                     36.26453333333333
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=0v3XDK1WKhc"
     },
     {
         "question": "Is there a B-2 Spirit Stealth Bomber in the video?",
@@ -8740,7 +8876,8 @@
                     61.856853333333326
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ny74pZ8gxHc"
     },
     {
         "question": "Are there pilots in the video?",
@@ -8799,7 +8936,8 @@
                     10.067306666666665
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ny74pZ8gxHc"
     },
     {
         "question": "How many pilots are in the video?",
@@ -8858,7 +8996,8 @@
                     10.067306666666665
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ny74pZ8gxHc"
     },
     {
         "question": "What are the pilots in the video wearing?",
@@ -8917,7 +9056,8 @@
                     9.963519999999997
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=Ny74pZ8gxHc"
     },
     {
         "question": "Is there a fighter jet about to receive servicing?",
@@ -8976,7 +9116,8 @@
                     54.03989333333334
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=2RHkxY3X8rY"
     },
     {
         "question": "Is there a cargo plane in the video?",
@@ -9035,7 +9176,8 @@
                     18.576213333333335
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=2RHkxY3X8rY"
     },
     {
         "question": "What is the tail code of the fighter jet?",
@@ -9106,7 +9248,8 @@
                     31.558453333333336
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=2RHkxY3X8rY"
     },
     {
         "question": "Where is the fighter jet's unit assignment?",
@@ -9177,7 +9320,8 @@
                     47.865413333333336
                 ]
             ]
-        ]
+        ],
+        "url_for_original_video": "https://www.youtube.com//watch?v=2RHkxY3X8rY"
     },
     {
         "question": "Is a M320 grenade launcher module used in the video?",
@@ -9230,6 +9374,7 @@
         "alter_answers": [
             "Yes it is shown."
         ],
-        "alter_evidences": []
+        "alter_evidences": [],
+        "url_for_original_video": "https://www.youtube.com//watch?v=e1jhyXIPvJI"
     }
 ]

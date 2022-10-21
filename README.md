@@ -43,6 +43,7 @@ For the methods presented in the paper, check out the Bash scripts under [`src/`
     year = "2022",
     address = "Gyeongju, Republic of Korea",
     publisher = "International Committee on Computational Linguistics",
-    url = "https://aclanthology.org/events/coling-2022/",
+    url = "https://aclanthology.org/2022.coling-1.496",
+    pages = "5613--5635",
 }
 ```

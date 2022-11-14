@@ -167,7 +167,7 @@ def precision_to_dtype(precision: str | int) -> torch.dtype:
         raise ValueError(f"Unsupported precision value: {precision}")
 
 
-class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
+class VideoQAWithEvidenceDataModule(pl.LightningDataModule):
     def __init__(self, args: argparse.Namespace, encoder_tokenizer: PreTrainedTokenizerBase | None = None,
                  decoder_tokenizer: PreTrainedTokenizerBase | None = None) -> None:
         super().__init__()

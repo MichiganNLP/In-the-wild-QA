@@ -81,6 +81,3 @@ def train_and_test(args: argparse.Namespace) -> None:
         trainer.fit(model, datamodule=data_module)
     else:
         trainer.validate(model, datamodule=data_module)
-
-    if args.test_after_train:
-        trainer.test(model, datamodule=data_module)

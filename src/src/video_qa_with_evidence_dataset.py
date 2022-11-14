@@ -230,7 +230,3 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):  # noqa
     @overrides
     def val_dataloader(self) -> DataLoader:
         return self._create_data_loader(self.args.dev_data_path, is_train=False)
-
-    @overrides
-    def test_dataloader(self) -> DataLoader:
-        return self._create_data_loader(self.args.test_data_path, is_train=False)

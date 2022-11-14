@@ -32,9 +32,8 @@ EMBEDDING_CHOICES = [
 
 @dataclass
 class TrainAndTestArguments:
-    train_data_path: str = "example_data/wildQA-data/train.json"
-    dev_data_path: str = "example_data/wildQA-data/dev.json"
-    test_data_path: str = "example_data/wildQA-data/test.json"
+    train_data_path: str = "example_data/wildQA-data/dev.json"
+    dev_data_path: str = "example_data/wildQA-data/test.json"
     num_workers: int = len(os.sched_getaffinity(0)) // max(torch.cuda.device_count(), 1)
     output_ckpt_dir: Optional[str] = None
     model_name_or_path: str = "t5-base"
@@ -69,7 +68,6 @@ class TrainAndTestArguments:
     seed: int = 42
     profiler: Optional[str] = None
     use_tpu: bool = False
-    test_after_train: bool = False
     wandb_project: str = "In-the-wild-QA"
     wandb_name: str = field(
         default=None,

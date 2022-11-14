@@ -20,6 +20,8 @@ conda env create
 conda activate wildqa
 ```
 
+Set `export WANDB_MODE=offline` if you don't want to use [Weights & Biases](https://wandb.ai/site) in your run.
+
 ## Data
 
 Checkout the folder [`src/example_data/wildQA-data/`](src/example_data/wildQA-data).

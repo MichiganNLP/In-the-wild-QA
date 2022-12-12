@@ -108,6 +108,8 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
             for e_idx in range(evidence_number):
                 ground_truth[b_idx, starts[b_idx][e_idx]: ends[b_idx][e_idx]] = 1
 
+        # FIXME: is this fine? Cross entropy supposes exactly one class is true, which is not the case here (classes are
+        #  the 2nd index). Also, `ground_truth` should be a probability on that index
         return self.cross_entropy_loss(visual_scores, ground_truth)
 
     # Don't check the signature here because a transitive dependency has a bug when an argument has a `Literal` type

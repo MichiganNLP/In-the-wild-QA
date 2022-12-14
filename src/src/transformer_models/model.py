@@ -222,6 +222,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
                 end_scores[:-1] = visual_scores[:-1] + neg_visual_scores[1:]
 
             start, end = get_best_evidence_spans(start_scores, end_scores, mask=batch["visual_mask"])
+            # FIXME: the `end` should be summed 1 because it's going to be exclusive when measuring it.
             output["pred_spans"] = [list(zip(start_instance, end_instance))
                                     for start_instance, end_instance in zip(start.tolist(), end.tolist())]
 

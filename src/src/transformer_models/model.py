@@ -93,6 +93,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         evidence = batch["evidence"]
         starts, ends = evidence[..., 0], evidence[..., 1]
 
+        # FIXME: we should ignore the padding frames.
         start_loss = self.cross_entropy_loss(start_scores, starts[:, 0])  # FIXME: we predict only one evidence.
         end_loss = self.cross_entropy_loss(end_scores, ends[:, 0])
 
@@ -110,6 +111,8 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
         # FIXME: is this fine? Cross entropy supposes exactly one class is true, which is not the case here (classes are
         #  the 2nd index). Also, `ground_truth` should be a probability on that index
+        #
+        # FIXME: we should ignore the padding frames.
         return self.cross_entropy_loss(visual_scores, ground_truth)
 
     # Don't check the signature here because a transitive dependency has a bug when an argument has a `Literal` type

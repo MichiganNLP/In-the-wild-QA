@@ -95,6 +95,7 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
             self.bert_score.update(normalized_generated, first_normalized_answer)
 
         if pred_spans := generative_step_output.get("pred_spans"):
+            # FIXME: should delete the empty (padding) spans from the ground truth?
             self.iou_f1(pred_spans, batch["evidence"].tolist())
             self.log(f"iou_f1/{split}", self.iou_f1, batch_size=batch_size)
 

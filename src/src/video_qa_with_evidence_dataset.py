@@ -31,8 +31,8 @@ def get_mask_from_sequence_lengths(lengths: torch.Tensor) -> torch.Tensor:
 
 
 def pad_sequence_and_get_mask(sequence: Sequence[torch.Tensor]) -> tuple[torch.Tensor, torch.Tensor]:
-    sequence = pad_sequence(sequence, batch_first=True)  # noqa
     lengths = torch.as_tensor([s.shape[0] for s in sequence])
+    sequence = pad_sequence(sequence, batch_first=True)  # noqa
     return sequence, get_mask_from_sequence_lengths(lengths)
 
 

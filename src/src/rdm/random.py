@@ -24,7 +24,7 @@ class RandomAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
     def __init__(self, train_instances: Sequence[Mapping[str, Any]], span_prediction_count: int, **kwargs) -> None:
         super().__init__(**kwargs)
-        self.train_answers = [instance["answers"][0] for instance in train_instances]
+        self.train_answers = [instance["answer"] for instance in train_instances]
         self.span_prediction_count = span_prediction_count
 
     @overrides

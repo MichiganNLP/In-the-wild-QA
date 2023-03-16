@@ -81,7 +81,7 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
         if generated := generative_step_output.get("generated"):
             id_ = batch["id"]
-            answers = batch["answers"]
+            answer = batch["answer"]
 
             # We normalize the generated and the ground truth answers before computing the metrics.
             #
@@ -90,8 +90,7 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
             # evaluation (similar for the tokenization). But we do something on our end because BLEU doesn't do
             # any normalization.
             normalized_generated = [normalize_answer(generated_instance) for generated_instance in generated]
-            normalized_answers = [[normalize_answer(answer_instance) for answer_instance in answers_instance]
-                                  for answers_instance in answers]
+            normalized_answers = [[normalize_answer(answer_instance)] for answer_instance in answer]
 
             for name, metric in self.answer_metrics.items():
                 metric(normalized_generated, normalized_answers)

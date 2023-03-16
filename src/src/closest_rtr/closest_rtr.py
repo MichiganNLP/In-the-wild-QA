@@ -55,5 +55,5 @@ class ClosestAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         test_embeddings = self.embedding_model.encode(batch["question"], **self.embedding_model_kwargs)
         similarity_scores = test_embeddings @ self.train_embeddings.T
         most_similar_ids = similarity_scores.argmax(dim=-1)
-        return {"generated": [self.train_instances[most_similar_id.item()]["answers"][0]
+        return {"generated": [self.train_instances[most_similar_id.item()]["answer"]
                               for most_similar_id in most_similar_ids]}

@@ -13,7 +13,7 @@ class MostCommonAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
     def __init__(self, train_instances: Sequence[Mapping[str, Any]], **kwargs) -> None:
         super().__init__(**kwargs)
-        self.most_common_answer = Counter(instance["answers"][0] for instance in train_instances).most_common(n=1)[0][0]
+        self.most_common_answer = Counter(instance["answer"] for instance in train_instances).most_common(n=1)[0][0]
 
     @overrides
     def _generative_step(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:

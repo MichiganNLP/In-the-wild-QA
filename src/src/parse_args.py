@@ -131,6 +131,7 @@ class RandomArguments:
         metadata={"help": "number of predicted evidence"}
     )
 
+
 @dataclass
 class T5EvidenceFindingTrainArguments(T5TextVisualTrainArguments):
     pass
@@ -174,6 +175,7 @@ class CLIPDecoderBasics:
         metadata={"help": "path to the directory that contains all the extracted frames"}
     )
 
+
 @dataclass
 class CLIPDecoderTrainArguments(CLIPDecoderBasics, T5TextVisualTrainArguments):
     pass
@@ -183,7 +185,7 @@ def model_type_to_dataclass_types(model_type: str) -> Union[DataClassType, Itera
     return {
         "random": [TrainAndTestArguments, RandomArguments],
         "most_common_ans": TrainAndTestArguments,
-        "closest_rtr":  [TrainAndTestArguments, ClosestRetrievalArguments],
+        "closest_rtr": [TrainAndTestArguments, ClosestRetrievalArguments],
         "t5_train": TrainAndTestArguments,
         "t5_zero_shot": TrainAndTestArguments,
         "t5_text_and_visual": [TrainAndTestArguments, T5TextVisualTrainArguments],

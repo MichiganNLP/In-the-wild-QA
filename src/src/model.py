@@ -157,7 +157,6 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
     @overrides(check_signature=False)
     def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
         self._eval_epoch_end(split="val")
-        print(self.iou_f1.count.item(), self.iou_f1.compute())
 
     @overrides(check_signature=False)
     def test_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:

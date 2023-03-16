@@ -159,6 +159,11 @@ class VideoQAWithEvidenceDataset(Dataset):
 
 
 def precision_to_dtype(precision: str | int) -> torch.dtype:
+    try:
+        precision = int(precision)
+    except ValueError:
+        pass
+
     if precision == 32:
         return torch.float
     elif precision == 64:
@@ -197,7 +202,7 @@ class VideoQAWithEvidenceDataModule(pl.LightningDataModule):
                                           use_t5_format=args.model_type == "t5_zero_shot")
 
     def _create_data_loader(self, data_path: str, is_train: bool = True) -> DataLoader:
-        dtype = precision_to_dtype(self.trainer.precision_plugin.precision)
+        dtype = precision_to_dtype(self.trainer.precision_plugin.precision) if self.trainer else torch.float
 
         image_size = getattr(self.args, "size_img", 224)
 

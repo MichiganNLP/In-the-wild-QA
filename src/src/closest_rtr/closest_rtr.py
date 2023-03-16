@@ -8,7 +8,7 @@ from overrides import overrides
 from rich.progress import track
 from torch import nn
 
-from src.model import AnswerWithEvidenceModule, TYPE_BATCH
+from src.model import AnswerWithEvidenceModule, Batch
 from src.utils import iter_utils
 
 
@@ -51,7 +51,7 @@ class ClosestAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         self._on_eval_start()
 
     @overrides
-    def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
+    def _generative_step(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         test_embeddings = self.embedding_model.encode(batch["question"], **self.embedding_model_kwargs)
         similarity_scores = test_embeddings @ self.train_embeddings.T
         most_similar_ids = similarity_scores.argmax(dim=-1)

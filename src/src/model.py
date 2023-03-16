@@ -13,11 +13,11 @@ from torch import nn as nn
 from torchmetrics import BLEUScore, Metric, SQuAD
 from torchmetrics.text import BERTScore, ROUGEScore
 
-from src.metrics import IouF1, normalize_answer
+from src.metrics import IouF1, normalize_answer, AveragePrecision
 from src.utils.logger_utils import UnusedWeightsFilter
 
-TYPE_SPLIT = Literal["train", "val", "test"]
-TYPE_BATCH = Mapping[str, Any]
+Split = Literal["train", "val", "test"]
+Batch = Mapping[str, Any]
 
 
 class AnswerWithEvidenceModule(pl.LightningModule, ABC):
@@ -35,7 +35,11 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
         self.bert_score = BERTScore(model_name_or_path="roberta-large", num_threads=0)
         self.squad = SQuAD()
 
-        self.iou_f1 = IouF1()
+        iou_thresholds = torch.linspace(0, 1, steps=21)
+        self.iou_f1 = IouF1(iou_thresholds=iou_thresholds)
+        self.ap = AveragePrecision(iou_thresholds=iou_thresholds)
+
+        self.reference_iou_threshold_idx = 2
 
     def _on_eval_start(self) -> None:
         self.bert_score.embedding_device = self.device
@@ -48,15 +52,31 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
     def on_test_start(self) -> None:
         self._on_eval_start()
 
-    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> MutableMapping[str, torch.Tensor]:
+    def _on_eval_epoch_start(self) -> None:
+        # We handle the following ones manually:
+        self.rouge.reset()
+        self.squad.reset()
+        self.bert_score.reset()
+        self.iou_f1.reset()
+        self.ap.reset()
+
+    @overrides
+    def on_validation_epoch_start(self) -> None:
+        self._on_eval_epoch_start()
+
+    @overrides
+    def on_test_epoch_start(self) -> None:
+        self._on_eval_epoch_start()
+
+    def _step(self, batch: Batch, split: Split) -> MutableMapping[str, torch.Tensor]:
         return {}
 
     @abstractmethod
-    def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
+    def _generative_step(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         raise NotImplementedError
 
-    def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],
-                        generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
+    def _update_metrics(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor],
+                        generative_step_output: Mapping[str, Any], split: Split) -> None:
         batch_size = len(batch["question"])
 
         if generated := generative_step_output.get("generated"):
@@ -95,32 +115,37 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
             self.bert_score.update(normalized_generated, first_normalized_answer)
 
         if pred_spans := generative_step_output.get("pred_spans"):
-            # FIXME: should delete the empty (padding) spans from the ground truth?
-            self.iou_f1(pred_spans, batch["evidence"].tolist())
-            self.log(f"iou_f1/{split}", self.iou_f1, batch_size=batch_size)
+            gt_spans = [[t for t in target_instance if t != [0.0, 0.0]]
+                        for target_instance in batch["evidence"].tolist()]
+            alternative_gt_spans = [[[t
+                                      for t in evidences if t != [0.0, 0.0]]
+                                     for evidences in alternative_evidences_instance.tolist()]
+                                    for alternative_evidences_instance in batch["alternative_evidences"]]
 
-    def _eval_step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> None:
+            iou_f1 = self.iou_f1(pred_spans, gt_spans, alternative_gt_spans)
+            self.log(f"iou_f1/{split}", iou_f1[self.reference_iou_threshold_idx], batch_size=batch_size)
+
+            ap = self.ap(pred_spans, gt_spans, alternative_gt_spans)
+            self.log(f"ap/{split}", ap[self.reference_iou_threshold_idx], batch_size=batch_size)
+
+    def _eval_step(self, batch: Batch, split: Split) -> None:
         step_output = self._step(batch, split=split)
         generative_step_output = self._generative_step(batch, step_output)
         self._update_metrics(batch, step_output, generative_step_output, split)
 
     @overrides(check_signature=False)
-    def validation_step(self, batch: TYPE_BATCH, batch_idx) -> None:
+    def validation_step(self, batch: Batch, batch_idx) -> None:
         self._eval_step(batch, split="val")
 
     @overrides(check_signature=False)
-    def test_step(self, batch: TYPE_BATCH, batch_idx) -> None:
+    def test_step(self, batch: Batch, batch_idx) -> None:
         self._eval_step(batch, split="test")
 
-    def _eval_epoch_end(self, split: TYPE_SPLIT) -> None:
-        instance_count = sum(t.shape[0] for t in self.bert_score.preds_input_ids)
-
-        if instance_count:
+    def _eval_epoch_end(self, split: Split) -> None:
+        if instance_count := sum(t.shape[0] for t in self.bert_score.preds_input_ids):
             self.log_dict({f"{k}/{split}": v for k, v in self.rouge.compute().items()}, batch_size=instance_count)
-            self.rouge.reset()
 
             self.log_dict({f"{k}/{split}": v for k, v in self.squad.compute().items()}, batch_size=instance_count)
-            self.squad.reset()
 
             unused_weights_filter = UnusedWeightsFilter()
             logging.getLogger("transformers.modeling_utils").addFilter(unused_weights_filter)
@@ -130,11 +155,10 @@ class AnswerWithEvidenceModule(pl.LightningModule, ABC):
 
             logging.getLogger("transformers.modeling_utils").removeFilter(unused_weights_filter)
 
-            self.bert_score.reset()
-
     @overrides(check_signature=False)
     def validation_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:
         self._eval_epoch_end(split="val")
+        print(self.iou_f1.count.item(), self.iou_f1.compute())
 
     @overrides(check_signature=False)
     def test_epoch_end(self, outputs: EPOCH_OUTPUT) -> None:

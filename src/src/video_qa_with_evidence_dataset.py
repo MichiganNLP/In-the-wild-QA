@@ -88,11 +88,18 @@ class VideoQAWithEvidenceDataset(Dataset):
     def __getitem__(self, i: int) -> Mapping[str, Any]:
         instance = self.instances[i]
 
+        if instance["alter_evidences"]:
+            alternative_evidences = pad_sequence([torch.tensor(evidences) for evidences in instance["alter_evidences"]],
+                                                 batch_first=True)
+        else:
+            alternative_evidences = torch.zeros(0)
+
         output = {
             "id": i,
             "question": instance["question"].strip(),
-            "answers": [instance["answer"].strip()],
+            "answer": instance["answer"].strip(),
             "evidence": torch.tensor([(round(s), round(e)) for ev in instance["evidences"] for s, e in ev.values()]),
+            "alternative_evidences": alternative_evidences,
             "duration": float(instance.get("duration", 0.0)),
         }
 
@@ -120,10 +127,7 @@ class VideoQAWithEvidenceDataset(Dataset):
             first_val = next(iter(stack), None)
             if isinstance(first_val, str) or (isinstance(first_val, Sequence)
                                               and isinstance(next(iter(first_val), None), str)):
-                if k == "answers":
-                    stack = [answers[0] for answers in stack]  # We tokenize only the first answer.
-                    k = "answer"
-
+                if k == "answer":
                     tokenizer = self.decoder_tokenizer
                 elif k == "question":
                     tokenizer = self.encoder_tokenizer
@@ -135,7 +139,7 @@ class VideoQAWithEvidenceDataset(Dataset):
                         # It's more efficient to use the private attribute (`_additional_special_tokens`) than the
                         # public one.
                         to_tokenize = [f"{q} {tokenizer._additional_special_tokens[0]}" for q in stack]
-                    elif self.use_t5_format and k == "answers":
+                    elif self.use_t5_format and k == "answer":
                         to_tokenize = [f"<extra_id_0> {a} <extra_id_1>" for a in stack]
                     else:
                         to_tokenize = stack
@@ -145,10 +149,8 @@ class VideoQAWithEvidenceDataset(Dataset):
                     batch[f"{k}_ids"] = tokenization["input_ids"]
                     batch[f"{k}_mask"] = tokenization["attention_mask"]
 
-        batch["evidence"], batch["evidence_mask"] = pad_sequence_and_get_mask(batch["evidence"])
-
-        if "visual" in keys:
-            batch["visual"], batch["visual_mask"] = pad_sequence_and_get_mask(batch["visual"])
+            elif k in {"evidence", "visual"}:
+                batch[k], batch[f"{k}_mask"] = pad_sequence_and_get_mask(stack)
 
         return batch
 

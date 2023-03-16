@@ -5,7 +5,7 @@ from typing import Any
 import torch
 from overrides import overrides
 
-from src.model import AnswerWithEvidenceModule, TYPE_BATCH
+from src.model import AnswerWithEvidenceModule, Batch
 
 
 class MostCommonAnswerWithEvidenceModule(AnswerWithEvidenceModule):
@@ -16,5 +16,5 @@ class MostCommonAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         self.most_common_answer = Counter(instance["answers"][0] for instance in train_instances).most_common(n=1)[0][0]
 
     @overrides
-    def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
+    def _generative_step(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         return {"generated": [self.most_common_answer] * len(batch["question"])}

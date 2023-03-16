@@ -5,7 +5,7 @@ from typing import Any
 import torch
 from overrides import overrides
 
-from src.model import AnswerWithEvidenceModule, TYPE_BATCH
+from src.model import AnswerWithEvidenceModule, Batch
 
 
 def _predict_random_span(duration: float) -> tuple[float, float]:
@@ -28,7 +28,7 @@ class RandomAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         self.span_prediction_count = span_prediction_count
 
     @overrides
-    def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
+    def _generative_step(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         return {"generated": random.choices(self.train_answers, k=len(batch["question"])),
                 "pred_spans": [[_predict_random_span(duration_instance) for _ in range(self.span_prediction_count)]
                                for duration_instance in batch["duration"]]}

@@ -13,7 +13,7 @@ from transformers import PreTrainedTokenizerBase, T5ForConditionalGeneration, ge
 
 from src.decoding import compute_answer_prob, compute_answer_probs
 from src.metrics import Perplexity, get_best_evidence_spans
-from src.model import AnswerWithEvidenceModule, TYPE_BATCH, TYPE_SPLIT
+from src.model import AnswerWithEvidenceModule, Batch, Split
 from src.transformer_models.clip_decoder import ClipWithDecoder
 from src.transformer_models.t5_and_visual import T5AndVisual, T5AndVisualEvidence, T5AndVisualEvidenceIO, T5MultiTask
 
@@ -89,7 +89,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
         return self.model(input_ids, attention_mask=attention_mask, **kwargs)
 
-    def _evidence_loss(self, start_scores: torch.Tensor, end_scores: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
+    def _evidence_loss(self, start_scores: torch.Tensor, end_scores: torch.Tensor, batch: Batch) -> torch.Tensor:
         evidence = batch["evidence"]
         starts, ends = evidence[..., 0], evidence[..., 1]
 
@@ -99,7 +99,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
 
         return start_loss + end_loss
 
-    def _evidence_io_loss(self, visual_scores: torch.Tensor, batch: TYPE_BATCH) -> torch.Tensor:
+    def _evidence_io_loss(self, visual_scores: torch.Tensor, batch: Batch) -> torch.Tensor:
         evidence = batch["evidence"]
         starts, ends = evidence[..., 0], evidence[..., 1]
         batch_size, evidence_number = starts.shape
@@ -118,7 +118,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
     # Don't check the signature here because a transitive dependency has a bug when an argument has a `Literal` type
     # with a string. See https://github.com/bojiang/typing_utils/issues/10
     @overrides(check_signature=False)
-    def _step(self, batch: TYPE_BATCH, split: TYPE_SPLIT) -> MutableMapping[str, torch.Tensor]:
+    def _step(self, batch: Batch, split: Split) -> MutableMapping[str, torch.Tensor]:
         output = super()._step(batch, split)
 
         kwargs = {}
@@ -167,7 +167,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         return output
 
     @overrides(check_signature=False)
-    def training_step(self, batch: TYPE_BATCH, batch_idx: int = 0) -> torch.Tensor:
+    def training_step(self, batch: Batch, batch_idx: int = 0) -> torch.Tensor:
         loss = self._step(batch, split="train")["loss"]
 
         batch_size = len(batch["question"])
@@ -178,7 +178,7 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
         return loss
 
     @overrides
-    def _generative_step(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
+    def _generative_step(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor]) -> Mapping[str, Any]:
         output = {}
 
         if self.answers_generation_enabled:
@@ -231,8 +231,8 @@ class TransformersAnswerWithEvidenceModule(AnswerWithEvidenceModule):
     # Don't check the signature here because a transitive dependency has a bug when an argument has a `Literal` type
     # with a string. See https://github.com/bojiang/typing_utils/issues/10
     @overrides(check_signature=False)
-    def _update_metrics(self, batch: TYPE_BATCH, step_output: MutableMapping[str, torch.Tensor],
-                        generative_step_output: Mapping[str, Any], split: TYPE_SPLIT) -> None:
+    def _update_metrics(self, batch: Batch, step_output: MutableMapping[str, torch.Tensor],
+                        generative_step_output: Mapping[str, Any], split: Split) -> None:
         super()._update_metrics(batch, step_output, generative_step_output, split)
 
         if (generated_ids := generative_step_output.get("generated_ids")) is not None:

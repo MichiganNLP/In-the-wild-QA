@@ -2,7 +2,7 @@
 
 This repo contains the data and PyTorch code that accompanies our COLING 2022 paper:
 
-[WildQA: In-the-Wild Video Question Answering](https://arxiv.org/pdf/2209.06650.pdf)
+[WildQA: In-the-Wild Video Question Answering](https://aclanthology.org/2022.coling-1.496)
 
 [Santiago Castro](https://santi.uy/)+, [Naihao Deng](https://dnaihao.github.io/)+, Pingxuan Huang+,
 [Mihai G. Burzo](https://sites.google.com/umich.edu/mburzo), and [Rada Mihalcea](https://web.eecs.umich.edu/~mihalcea/)
